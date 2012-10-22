@@ -1,0 +1,61 @@
+# Copyright (c) 2009, Code Aurora Forum. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright
+#       notice, this list of conditions and the following disclaimer in the
+#       documentation and/or other materials provided with the distribution.
+#     * Neither the name of Code Aurora nor
+#       the names of its contributors may be used to endorse or promote
+#       products derived from this software without specific prior written
+#       permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# NON-INFRINGEMENT ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+# CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+# EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+# OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+# ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#which android key to map linux key select? BUTTON_SELECT, ENTER or DPAD_CENTER? 
+#Currently I choose DPAD_CENTER.
+key 353		DPAD_CENTER				WAKE
+key	103		DPAD_UP						WAKE
+key	108		DPAD_DOWN					WAKE
+key	105		DPAD_LEFT					WAKE
+key	106		DPAD_RIGHT				WAKE
+key 139		MENU							WAKE
+key	174		BACK							WAKE
+key	512		0									WAKE
+key	513		1									WAKE
+key	514		2									WAKE
+key	515		3									WAKE
+key	516		4									WAKE
+key	517		5									WAKE
+key	518		6									WAKE
+key	519		7									WAKE
+key	520		8									WAKE
+key	521		9									WAKE
+key	28		ENTER							WAKE
+key	355		CLEAR							WAKE
+key	207		MEDIA_PLAY_PAUSE	WAKE
+key	119		MEDIA_PLAY_PAUSE	WAKE
+key	128		MEDIA_STOP				WAKE
+key	208		MEDIA_FAST_FORWARD	WAKE
+key	168		MEDIA_REWIND			WAKE
+key	159		MEDIA_NEXT				WAKE
+key	158		MEDIA_PREVIOUS		WAKE
+#key	59		F1								WAKE
+#key	60		F2								WAKE
+#key	61		F3								WAKE
+#key	62		F4								WAKE
+#key	63		F5								WAKE
+#key sound is used for audio sound track select but not defined in KeyEvent.java
+#key	213		SOUND						WAKE
+#key 161		MEDIA_EJECT				WAKE

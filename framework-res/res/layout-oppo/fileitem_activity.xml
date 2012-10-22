@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/lock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/encrypt_lock" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textAppearance="?textAppearanceLarge" android:layout_gravity="center_vertical" android:id="@id/text" android:paddingLeft="8.0dip" android:layout_width="170.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:singleLine="true" android:layout_toRightOf="@id/icon_layout" />
+    <TextView android:textAppearance="?textAppearanceSmall" android:textColor="@color/list_small_text_color" android:layout_gravity="center_vertical" android:id="@id/detail" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/icon" android:layout_below="@id/text" android:layout_alignLeft="@id/text" />
+    <TextView android:textSize="@dimen/empty_text_size" android:textColor="@color/large_text_color" android:gravity="center" android:id="@id/empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?listPreferredItemHeight" />
+    <CheckBox android:gravity="center_vertical" android:id="@id/selected_checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-17.0dip" android:button="@drawable/btn_radio" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="vertical" android:background="@drawable/large_edit_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/large_edit_container_bg" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/large_edit_margin_left" android:layout_marginTop="@dimen/large_edit_margin_top" android:layout_marginRight="@dimen/large_edit_margin_right" android:layout_marginBottom="@dimen/large_edit_margin_bottom">
+        <EditText android:textSize="88.0px" android:textColor="@color/large_edit_text_color" android:id="@id/edit" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" android:minLines="3" android:maxLength="1000" android:autoText="true" />
+    </LinearLayout>
+</LinearLayout>

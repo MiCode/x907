@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/display_am_pm" android:background="@drawable/am_and_pm_bg" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/display_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" style="@style/TimePickerDisplayTime_TextAppearance_style" />
+    <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <FrameLayout android:gravity="center" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <com.oppo.widget.OppoSelectPmorAmView android:id="@id/select_amorpm" android:layout_width="90.0dip" android:layout_height="170.0dip" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <ImageView android:id="@id/timepicker_first_line" android:background="@drawable/compart" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <com.oppo.widget.OppoTimeView android:id="@id/hour_view" android:layout_width="90.0dip" android:layout_height="170.0dip" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <ImageView android:background="@drawable/compart" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <com.oppo.widget.OppoTimeView android:id="@id/minute_view" android:layout_width="90.0dip" android:layout_height="170.0dip" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ImageView android:background="@drawable/backshadow" android:layout_width="fill_parent" android:layout_height="175.0dip" />
+        </FrameLayout>
+        <ImageView android:background="@drawable/hightlight" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

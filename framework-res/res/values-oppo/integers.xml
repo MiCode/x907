@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="config_shortAnimTime">100</integer>
+    <integer name="config_criticalBatteryWarningLevel">2</integer>
+    <integer name="config_lowBatteryWarningLevel">20</integer>
+    <integer name="config_lowBatteryCloseWarningLevel">24</integer>
+    <integer name="config_lightSensorWarmupTime">500</integer>
+    <integer name="longstand_mode">2</integer>
+    <integer name="config_minAnimTime">30</integer>
+    <integer name="config_lowAnimTime">150</integer>
+    <integer name="config_midLowBatteryWarningLevel">10</integer>
+    <integer name="default_mode">1</integer>
+    <integer name="shade_mode">3</integer>
+    <integer name="menu_config_animTime">200</integer>
+    <integer name="menu_config_alphaTime">100</integer>
+    <integer name="search_bar_edit_length">256</integer>
+    <integer name="config_absListViewMinMultiFreq">3</integer>
+    <integer name="roll_cover_render_delay">50</integer>
+    <integer name="scene_preview_track_scroll_fast_slop">20</integer>
+    <integer name="scene_preview_render_delay">40</integer>
+    <integer name="oppo_shortcutbar_max_child_count">4</integer>
+    <integer name="oppo_shortcutbar_childlike">2</integer>
+    <integer name="oppo_shortcutbar_during">300</integer>
+    <integer name="oppo_shortcutbar_category">0</integer>
+    <integer name="oppo_shortcutbar_keymore">-1</integer>
+    <integer name="touchsearch_popupwin_default_top_mincoordinate">60</integer>
+</resources>

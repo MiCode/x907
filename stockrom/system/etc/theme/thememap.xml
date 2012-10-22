@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Theme map is a map that decide which drawable resource should be redirect when theme is changed. -->
+<thememap>
+	<Module name="Framework" path="/system/framework/framework-res.apk">
+		<!--For Theme Wallpaper -->
+		<item>default_wallpaper.jpg</item>
+		<item>iphone_style_bg.png</item>
+	</Module>
+
+	<!-- Key page applications -->
+	<Module name="AccountAndSyncSettings" path="/system/app/AccountAndSyncSettings.apk">
+		<item>ic_launcher_accountsandsyncsettings.png</item>
+	</Module>
+
+	<Module name="Browser" path="/system/app/Browser.apk">
+		<item>ic_launcher_browser.png</item>
+	</Module>
+
+	<Module name="Contacts" path="/system/app/Contacts.apk">
+		<item>ic_launcher_oppo_contacts.png</item>
+	</Module>
+    
+	<Module name="DownloadProvider" path="/system/app/DownloadProvider.apk">
+		<item>ic_launcher_download.png</item>
+	</Module>
+
+	<Module name="Email" path="/system/app/Email.apk">
+		<item>ic_launcher_email.png</item>
+	</Module>
+
+	<Module name="FileManager" path="/system/app/FileManager.apk">
+		<item>ic_launcher_filemanager.png</item>
+	</Module>
+
+	<Module name="Gallery3D" path="/system/app/Gallery3D.apk">
+		<item>ic_launcher_gallery3d.png</item>
+	</Module>
+	
+	<Module name="Mms" path="/system/app/Mms.apk">
+		<item>ic_launcher_smsmms.png</item>
+	</Module>
+    
+	<Module name="NearMe_GameCenter" path="/system/app/NearMe_GameCenter.apk">
+		<item>ic_launcher_nearme_gamecenter.png</item>
+	</Module>
+    
+	<Module name="NearMe_Market" path="/system/app/NearMe_Market.apk">
+		<item>ic_launcher_nearme_market.png</item>
+	</Module>
+    
+	<Module name="NearMe_Music" path="/system/app/NearMe_Music.apk">
+		<item>ic_launcher_nearme_music.png</item>
+	</Module>
+    
+	<Module name="NearMe_CloudNote" path="/system/app/NearMe_CloudNote.apk">
+		<item>ic_launcher_nearme_note.png</item>
+	</Module>
+    
+	<Module name="NearMe_OTA" path="/system/app/NearMe_OTA.apk">
+		<item>ic_launcher_nearme_ota.png.png</item>
+	</Module>
+    
+	<Module name="NearMe_Reader" path="/system/app/NearMe_Reader.apk">
+		<item>ic_launcher_nearme_reader.png</item>
+	</Module>
+    
+	<Module name="NearMe_Sync" path="/system/app/NearMe_Sync.apk">
+		<item>ic_launcher_nearme_sync.png</item>
+	</Module>
+
+	<Module name="NewSoundRecorder" path="/system/app/NewSoundRecorder.apk">
+		<item>ic_launcher_recorder.png</item>
+	</Module>
+    
+	<Module name="OppoCalculator" path="/system/app/OppoCalculator.apk">
+		<item>ic_launcher_calcultor.png</item>
+	</Module>
+    
+	<Module name="OppoCalendar" path="/system/app/OppoCalendar.apk">
+		<item>ic_launcher_calender.png</item>
+		<item>ic_launcher_todolist.png</item>
+	</Module>
+	
+	<Module name="OppoCamera" path="/system/app/OppoCamera.apk">
+		<item>ic_launcher_camera.png</item>
+		<item>ic_launcher_lomo_camera.png</item>
+	</Module>
+    
+	<Module name="OppoClock" path="/system/app/OppoClock.apk">
+		<item>ic_launcher_clock.png</item>
+	</Module>
+        
+	<Module name="OppoCompass" path="/system/app/OppoCompass.apk">
+		<item>ic_launcher_compass.png</item>
+	</Module>
+
+	<Module name="OppoDialer" path="/system/app/OppoDialer.apk">
+		<item>ic_launcher_dialer.png</item>
+	</Module>
+    
+	<Module name="OppoFlashLight" path="/system/app/OppoFlashLight.apk">
+		<item>ic_launcher_flash_light.png</item>
+	</Module>
+	
+	<Module name="OppoLauncher" path="/system/app/OppoLauncher.apk">
+		<item>allapps_button_focused.png</item>
+		<item>allapps_button_normal.png</item>
+		<item>home_button_focused.png</item>
+		<item>home_button_normal.png</item>
+		<item>home_container_bg.png</item>
+		<item>hotseat_bg_total.png</item>
+		<item>hotseat_mms_focused.png</item>
+		<item>hotseat_mms_normal.png</item>
+		<item>hotseat_phone_focused.png</item>
+		<item>hotseat_phone_normal.png</item>
+		<item>hotseat_todesktop_focused.png</item>
+		<item>hotseat_todesktop_normal.png</item>
+		<item>ic_launcher_3dpreview_icon_focused.png</item>
+		<item>ic_launcher_3dpreview_icon_normal.png</item><div></div>
+		<item>ic_launcher_mainmenu_default_bg.png</item>
+		<item>ic_launcher_trashcan.png</item>
+		<item>ic_launcher_trashcan_hover.png</item>
+		<item>ic_launcher_page_point_normal.png</item>
+		<item>ic_launcher_page_point_focused.png</item>
+		<item>ic_launcher_folder.png</item>
+		<item>ic_launcher_folder_full.png</item>
+		<item>ic_launcher_folder_open.png</item>
+	</Module>
+    
+	<Module name="OppoMusic" path="/system/app/OppoMusic.apk">
+		<item>ic_launcher_music.png</item>
+	</Module>
+    
+	<Module name="OppoOperationManual" path="/system/app/OppoOperationManual.apk">
+		<item>ic_launcher_operation_manual.png</item>
+	</Module>
+    
+	<Module name="OppoTribune" path="/system/app/OppoTribune.apk">
+		<item>ic_launcher_tribune.png</item>
+	</Module>
+
+	<Module name="OppoWeather" path="/system/app/OppoWeather.apk">
+		<item>ic_launcher_weather.png</item>
+	</Module>
+
+	<Module name="PhoneNOAreaInquire" path="/system/app/PhoneNOAreaInquire.apk">
+		<item>ic_launcher_noquery.png</item>
+	</Module>
+    
+	<Module name="PowerManager" path="/system/app/PowerManager.apk">
+		<item>ic_launcher_save_power.png</item>
+	</Module>
+    
+	<Module name="SecureSafe" path="/system/app/SecureSafe.apk">
+		<item>ic_launcher_safe.png</item>
+	</Module>
+    
+	<Module name="Settings" path="/system/app/Settings.apk">
+		<item>ic_launcher_app_manager.png</item>
+		<item>ic_launcher_settings.png</item>
+		<item>ic_launcher_wifi_hotspot.png</item>
+		<item>ic_launcher_individuation_settings.png</item>
+	</Module>
+	
+	<Module name="VideoGallery" path="/system/app/VideoGallery.apk">
+		<item>ic_launcher_video.png</item>
+	</Module>
+	
+	<!-- NearMeNote ---------------------------------------------------------->
+	<Module name="NearMeCloudNote" path="/system/app/NearMeCloudNote"> 
+		<item>ic_launcher_nearme_note.png</item>
+	</Module>
+	
+  <!-- NearMusic ---------------------------------------------------------->
+	<Module name="NearMeMusic" path="/system/app/NearMeMusic">
+		<item>ic_launcher_nearme_music.png</item>
+	</Module>
+	
+	<!-- NearMarket ----------------------------------------------------------->
+	
+	<Module name="NearMeMarket" path="/system/app/NearMeMarket">
+		<item>ic_launcher_nearme_market.png</item>
+	</Module>
+
+	<!-- NearMeReader ------------------------------------------------------------>
+
+	<Module name="NearMeReader" path="/system/app/NearMeReader">
+		<item>ic_launcher_nearme_reader.png</item>
+	</Module>
+	
+	<!-- NearMeGameCenter ---------------------------------------------------------->
+
+	<Module name="NearMeGameCenter" path="/system/app/GameCenter">
+		<item>ic_launcher_nearme_gamecenter.png</item>
+	</Module>
+	
+	<!-- NearMeSync ------------------------------------------------------------------>
+
+	<Module name="NearMeSync" path="/system/app/NearMeSync">
+		<item>ic_launcher_nearme_sync.png</item>
+	</Module>
+	
+ 	<!-- -NearMeOta --------------------------------------------------------------------->
+	<Module name="NearMeOta" path="/system/app/NearMeOta">
+		<item>ic_launcher_nearme_ota.png</item>
+	</Module>
+	
+	<!-- OppoLockNow------------------------------------------------------------->
+	<Module name="OppoLockNow" path="/system/app/OppoLockNow">
+		<item>ic_launcher_locknow.png</item>
+	</Module>
+	
+	<!--NearMeOTA --------------------------------------------------------------->
+	<Module name="NearMeOTA" path="/system/app/NearMeOTA">
+		<item>ic_launcher_nearme_ota.png</item>
+	</Module>
+	
+	<!--Feedback----------------------------------------------------------------------->
+	<Module name="Feedback" path="/system/app/Feedback">
+		<item>ic_launcher_nearme_feedback.png</item>
+	</Module>
+	
+</thememap>
+

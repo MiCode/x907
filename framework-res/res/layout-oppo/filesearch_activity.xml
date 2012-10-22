@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/toptext" android:text="@string/searchResult" style="?android:attr/listSeparatorTextViewStyle" />
+    <TextView android:textSize="16.0sp" android:gravity="center_horizontal" android:id="@id/emptyResult" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/emptyresult" android:layout_below="@id/toptext" />
+    <ListView android:id="@id/searchresult_list" android:layout_width="fill_parent" android:layout_height="190.0dip" android:singleLine="true" android:layout_below="@id/toptext" />
+    <TextView android:id="@id/middletext" android:layout_marginTop="190.0dip" android:text="@string/searchConfiguration" style="?android:attr/listSeparatorTextViewStyle" />
+    <TextView android:textSize="16.0sp" android:id="@id/filetypelabel" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filetype" android:layout_below="@id/middletext" />
+    <CheckBox android:textSize="15.0sp" android:id="@id/pictue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/picture" android:layout_below="@id/filetypelabel" />
+    <CheckBox android:textSize="15.0sp" android:id="@id/audio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/audio" android:layout_toRightOf="@id/pictue" android:layout_alignTop="@id/pictue" />
+    <CheckBox android:textSize="15.0sp" android:id="@id/video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video" android:layout_toRightOf="@id/audio" android:layout_alignTop="@id/pictue" />
+    <CheckBox android:textSize="15.0sp" android:id="@id/other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/other" android:layout_toRightOf="@id/video" android:layout_alignTop="@id/pictue" />
+    <TextView android:textSize="16.0sp" android:id="@id/filenamelabel" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filename" android:layout_below="@id/pictue" />
+    <EditText android:id="@id/filename" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_below="@id/filenamelabel" />
+    <TextView android:textSize="16.0sp" android:id="@id/filepathlabel" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filepath" android:layout_below="@id/filename" />
+    <Spinner android:textSize="16.0sp" android:id="@id/filepath" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_below="@id/filepathlabel" />
+    <ToggleButton android:textSize="14.0sp" android:id="@id/toggle1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="@string/stopButton" android:textOff="@string/searchButton" android:layout_below="@id/filepath" />
+    <ProgressBar android:id="@id/progress" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/toggle1" android:layout_below="@id/filepath" />
+</RelativeLayout>

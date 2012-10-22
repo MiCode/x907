@@ -1,0 +1,3 @@
+post-build=OPPO/msm8660_surf/msm8660_surf:4.0.3/IML74K/eng.oppo.svn6289.20120831.120836:user/test-keys
+post-timestamp=1346386307
+pre-device=msm8660_surf

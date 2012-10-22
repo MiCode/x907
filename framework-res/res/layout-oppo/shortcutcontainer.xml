@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/candidates_container" android:background="#ff808080" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/arrow_left_btn" android:background="@drawable/arrow_bg" android:clickable="true" android:layout_width="30.0dip" android:layout_height="fill_parent" android:src="@drawable/arrow_left" android:layout_alignParentLeft="true" />
+    <ImageButton android:id="@id/arrow_right_btn" android:background="@drawable/arrow_bg" android:clickable="true" android:layout_width="30.0dip" android:layout_height="fill_parent" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" />
+</LinearLayout>

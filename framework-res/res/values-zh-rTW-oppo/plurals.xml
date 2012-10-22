@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">%d 秒以前</item>
+        <item quantity="one">1 秒以前</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">%d 分鐘以前</item>
+        <item quantity="one">1 分鐘以前</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">%d 小時以前</item>
+        <item quantity="one">1 小時以前</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">%d 天以前</item>
+        <item quantity="one">昨天</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">%d 小時以前</item>
+        <item quantity="one">1 小時以前</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">%d 天以前</item>
+        <item quantity="one">昨天</item>
+    </plurals>
+</resources>

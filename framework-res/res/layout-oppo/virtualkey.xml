@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sysfivekey_ll" android:background="@drawable/vfivekey_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:layout_gravity="center" android:id="@id/sysfivekey_up" android:background="@drawable/vfivekey_up" android:layout_width="75.0px" android:layout_height="75.0px" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">	android:gravity="center" >
+<Button android:layout_gravity="center" android:id="@id/sysfivekey_left" android:background="@drawable/vfivekey_left" android:layout_width="75.0px" android:layout_height="75.0px" />
+            <Button android:layout_gravity="center" android:id="@id/sysfivekey_ok" android:background="@drawable/vfivekey_ok" android:layout_width="77.0px" android:layout_height="77.0px" />
+            <Button android:layout_gravity="center" android:id="@id/sysfivekey_right" android:background="@drawable/vfivekey_right" android:layout_width="75.0px" android:layout_height="75.0px" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:layout_gravity="center" android:id="@id/sysfivekey_down" android:background="@drawable/vfivekey_down" android:layout_width="75.0px" android:layout_height="75.0px" />
+        </LinearLayout>
+    </LinearLayout>
+</AbsoluteLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="phoneTypes">
+        <item>家庭</item>
+        <item>行動電話</item>
+        <item>公司</item>
+        <item>公司傳真</item>
+        <item>家庭傳真</item>
+        <item>其他</item>
+        <item>自訂</item>
+    </string-array>
+    <string-array name="postalAddressTypes">
+        <item>家庭</item>
+        <item>公司</item>
+        <item>其他</item>
+        <item>自訂</item>
+    </string-array>
+    <string-array name="imAddressTypes">
+        <item>家庭</item>
+        <item>工作</item>
+        <item>其他</item>
+        <item>自訂</item>
+    </string-array>
+    <string-array name="select_music_path_DefualtsItem">
+        <item>從本機</item>
+        <item>自訂</item>
+        <item>更多行動電話鈴聲</item>
+        <item>恢復默認鈴聲</item>
+    </string-array>
+    <string-array name="select_music_path_noDefualtItem">
+        <item>從本機</item>
+        <item>自訂</item>
+        <item>更多行動電話鈴聲</item>
+    </string-array>
+    <string-array name="two_list">
+        <item>從本機</item>
+        <item>自定義</item>
+    </string-array>
+    <string-array name="default_folder_names">
+        <item>我的课件</item>
+        <item>我的铃声</item>
+        <item>我的录音</item>
+        <item>我的视频</item>
+        <item>我的书籍</item>
+        <item>我的图片</item>
+        <item>我的下载</item>
+        <item>我的音乐</item>
+        <item>我的照片</item>
+        <item>我的主题</item>
+    </string-array>
+    <string-array name="select_dialog_items">
+        <item>詳細信息模式</item>
+        <item>縮略圖模式</item>
+    </string-array>
+    <string-array name="sort_dialog_items">
+        <item>按名稱</item>
+        <item>按类型</item>
+        <item>按時間倒序</item>
+        <item>按時間順序</item>
+        <item>按大小</item>
+    </string-array>
+    <string-array name="send_dialog_items_ofThree">
+        <item>藍牙發送</item>
+        <item>彩信發送</item>
+        <item>郵件發送</item>
+    </string-array>
+    <string-array name="send_dialog_items_ofTwo">
+        <item>藍牙發送</item>
+        <item>y郵件發送</item>
+    </string-array>
+    <string-array name="setting_titles">
+        <item>浏覽模式</item>
+        <item>排序方式</item>
+        <item>加密開關</item>
+        <item>修改加密密碼</item>
+        <item>刪除前確認</item>
+        <item>存儲狀態</item>
+        <item>格式化</item>
+    </string-array>
+    <string-array name="setting_summarys">
+        <item>詳細</item>
+        <item>按名字</item>
+        <item>加密啟用</item>
+        <item>修改密碼</item>
+        <item>啟用</item>
+        <item>查看行動電話目前的儲存狀態</item>
+        <item>格式化將會刪除所有的資料</item>
+    </string-array>
+    <string-array name="filebrowser_shortcutbar_title1">
+        <item>返回</item>
+        <item>新建</item>
+        <item>剪切板</item>
+        <item>標記</item>
+        <item>更多</item>
+    </string-array>
+    <string-array name="filebrowser_shortcutbar_title2">
+        <item>搜索</item>
+        <item>收藏夹</item>
+        <item>曆史記錄</item>
+        <item>設定</item>
+    </string-array>
+    <string-array name="file_select_shortcutbar_title">
+        <item>確定</item>
+        <item>取消</item>
+    </string-array>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/widget_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:oppo="http://schemas.android.com/apk/res/oppo">
+    <com.oppo.widget.OppoPathBar android:id="@id/path_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/filelist" android:background="@drawable/oppospringlistviewbackground" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.oppo.widget.OppoListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:springEnabled="true" android:fillDivider="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/emptyFile" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/music_edit" android:background="@color/filehandler_select_muisc_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:textColor="@color/widget_background_color" android:layout_gravity="center_vertical" android:id="@id/checkbox_music_full" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/btn_radio" android:text="@string/entire_song" />
+        <CheckBox android:textColor="@color/widget_background_color" android:layout_gravity="center_vertical" android:id="@id/checkbox_music_clips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:button="@drawable/btn_radio" android:text="@string/sound_clips" />
+    </LinearLayout>
+    <com.oppo.widget.OppoShortCutButton android:id="@id/shortcutbutton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:child_count="2" android:button_positive_string="@string/alert_dialog_ok" android:button_negative_string="@string/alert_dialog_cancel" />
+</LinearLayout>

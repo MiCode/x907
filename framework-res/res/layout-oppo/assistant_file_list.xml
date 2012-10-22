@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:oppo="http://schemas.android.com/apk/res/oppo">
+    <TextView android:textSize="18.0sp" android:gravity="center_horizontal" android:id="@id/emptyFile" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/empty" />
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="48.0dip" android:singleLine="true" />
+    <com.oppo.widget.OppoShortCutBar android:layout_gravity="bottom" android:id="@id/shortcutbar" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="48.0dip" android:textsize="18.0sp" />
+</FrameLayout>

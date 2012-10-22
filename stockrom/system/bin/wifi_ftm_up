@@ -1,0 +1,8 @@
+#!/system/bin/sh
+ifconfig wlan0 down
+
+echo -n "/system/etc/firmware/fw_bcmdhd_ftm.bin" > /sys/module/bcmdhd/parameters/firmware_path
+
+ifconfig wlan0 up
+
+

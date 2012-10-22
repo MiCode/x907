@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/topDisplayGroup" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceLarge" android:ellipsize="marquee" android:gravity="center" android:id="@id/headerText" android:background="@drawable/oppo_mark_title_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" />
+        <TextView android:textAppearance="?textAppearanceMedium" android:ellipsize="marquee" android:gravity="center" android:id="@id/carrier" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="6.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/pukDisplay" android:background="@drawable/editbox_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="@string/keyguard_password_enter_puk_prompt" android:maxLines="1" android:maxLength="8" android:inputType="textPassword" android:textSelectable="false" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/pinDisplay" android:background="@drawable/editbox_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="@string/keyguard_password_enter_pin_prompt" android:maxLines="1" android:maxLength="8" android:inputType="textPassword" android:textSelectable="false" />
+            </LinearLayout>
+        </LinearLayout>
+        <include android:id="@id/keyPad" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/oppo_twelve_key_entry" />
+        <com.oppo.widget.OppoShortCutButton android:id="@id/oppo_unlock_port_shourt_cut_button" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:child_count="2" android:button_positive_string="@string/ok" android:button_negative_string="@string/cancel" android:button_positive_disable="true" android:button_negative_disable="true" android:button_text_color="@color/black" android:broadcast_enabled="false" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <Button android:textAppearance="?textAppearanceLarge" android:gravity="center" android:id="@id/emergencyCallButton" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="@string/lockscreen_emergency_call" android:shadowColor="#ddffffff" android:shadowDx="0.0" android:shadowDy="-0.1" android:shadowRadius="0.1" />
+    </LinearLayout>
+</RelativeLayout>

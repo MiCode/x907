@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emailAddressTypes">
+        <item>Home</item>
+        <item>Office</item>
+        <item>Others</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="phoneTypes">
+        <item>Home</item>
+        <item>Cell phone</item>
+        <item>Office</item>
+        <item>Office Fax</item>
+        <item>Home Fax</item>
+        <item>Pager</item>
+        <item>Others</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="postalAddressTypes">
+        <item>Home</item>
+        <item>Office</item>
+        <item>Others</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="config_statusBarIcons">
+        <item>phone_evdo_signal</item>
+        <item>data_connection</item>
+        <item>cdma_eri</item>
+        <item>alarm_clock</item>
+        <item>hdmi</item>
+        <item>headset</item>
+        <item>volume</item>
+        <item>mute</item>
+        <item>speakerphone</item>
+        <item>wifi</item>
+        <item>tty</item>
+        <item>bluetooth</item>
+        <item>gps</item>
+        <item>ime</item>
+        <item>sync_failing</item>
+        <item>sync_active</item>
+        <item>nfc</item>
+        <item>secure</item>
+        <item>clock</item>
+    </string-array>
+    <string-array name="config_tether_usb_regexs">
+        <item>usb\\d</item>
+        <item>rndis\\d</item>
+    </string-array>
+    <string-array name="config_tether_wifi_regexs">
+        <item>wlan0</item>
+    </string-array>
+    <integer-array name="config_longPressVibePattern">
+        <item>15</item>
+        <item>15</item>
+        <item>15</item>
+        <item>15</item>
+    </integer-array>
+    <integer-array name="config_virtualKeyVibePattern">
+        <item>15</item>
+        <item>15</item>
+        <item>15</item>
+        <item>15</item>
+    </integer-array>
+    <integer-array name="config_safeModeDisabledVibePattern">
+        <item>0</item>
+        <item>1</item>
+        <item>20</item>
+        <item>50</item>
+    </integer-array>
+    <integer-array name="config_autoBrightnessLevels">
+        <item>50</item>
+        <item>1000</item>
+        <item>3000</item>
+        <item>65535</item>
+    </integer-array>
+    <integer-array name="config_autoBrightnessLcdBacklightValues">
+        <item>70</item>
+        <item>125</item>
+        <item>170</item>
+        <item>255</item>
+    </integer-array>
+    <integer-array name="config_autoBrightnessButtonBacklightValues">
+        <item>70</item>
+        <item>125</item>
+        <item>170</item>
+        <item>255</item>
+    </integer-array>
+    <integer-array name="config_autoBrightnessKeyboardBacklightValues">
+        <item>70</item>
+        <item>125</item>
+        <item>170</item>
+        <item>255</item>
+    </integer-array>
+    <string-array name="dayofweek">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+    <string-array name="select_music_path_DefualtsItem">
+        <item>System</item>
+        <item>Custom</item>
+        <item>More Ringtones</item>
+        <item>Resume default</item>
+    </string-array>
+    <string-array name="select_music_path_noDefualtItem">
+        <item>System</item>
+        <item>Custom</item>
+        <item>More Ringtones</item>
+    </string-array>
+    <string-array name="plmn_mcc_mnc">
+        <item>46001mmcmnc</item>
+        <item>46000mmcmnc</item>
+        <item>46002mmcmnc</item>
+        <item>45406mmcmnc</item>
+        <item>45410mmcmnc</item>
+        <item>45412mmcmnc</item>
+        <item>45415mmcmnc</item>
+        <item>45416mmcmnc</item>
+        <item>45419mmcmnc</item>
+        <item>45500mmcmnc</item>
+        <item>45501mmcmnc</item>
+        <item>45503mmcmnc</item>
+        <item>45504mmcmnc</item>
+        <item>45505mmcmnc</item>
+        <item>46601mmcmnc</item>
+        <item>46688mmcmnc</item>
+        <item>46689mmcmnc</item>
+        <item>46692mmcmnc</item>
+        <item>46693mmcmnc</item>
+        <item>46697mmcmnc</item>
+        <item>46699mmcmnc</item>
+    </string-array>
+    <array name="plmn_oppo_name">
+        <item>@string/mmcmnc46001</item>
+        <item>@string/mmcmnc46000</item>
+        <item>@string/mmcmnc46002</item>
+        <item>@string/mmcmnc45406</item>
+        <item>@string/mmcmnc45410</item>
+        <item>@string/mmcmnc45412</item>
+        <item>@string/mmcmnc45415</item>
+        <item>@string/mmcmnc45416</item>
+        <item>@string/mmcmnc45419</item>
+        <item>@string/mmcmnc45500</item>
+        <item>@string/mmcmnc45501</item>
+        <item>@string/mmcmnc45503</item>
+        <item>@string/mmcmnc45504</item>
+        <item>@string/mmcmnc45505</item>
+        <item>@string/mmcmnc46601</item>
+        <item>@string/mmcmnc46688</item>
+        <item>@string/mmcmnc46689</item>
+        <item>@string/mmcmnc46692</item>
+        <item>@string/mmcmnc46693</item>
+        <item>@string/mmcmnc46697</item>
+        <item>@string/mmcmnc46699</item>
+    </array>
+    <string-array name="config_tether_upstream_regexs">
+        <item>rmnet\\d</item>
+        <item>rmnet_sdio\\d</item>
+    </string-array>
+    <string-array name="two_list">
+        <item>From System</item>
+        <item>From File</item>
+    </string-array>
+    <string-array name="default_folder_names">
+        <item>My Courseware</item>
+        <item>My Ring</item>
+        <item>My Recording</item>
+        <item>My Video</item>
+        <item>My Book</item>
+        <item>My Picture</item>
+        <item>My Download</item>
+        <item>My music</item>
+        <item>My Photo</item>
+        <item>My Theme</item>
+    </string-array>
+    <string-array name="select_dialog_items">
+        <item>Detail</item>
+        <item>Thumbnail</item>
+    </string-array>
+    <string-array name="sort_dialog_items">
+        <item>By Name</item>
+        <item>By Type</item>
+        <item>By Reverse Time</item>
+        <item>By Time</item>
+        <item>By Size</item>
+    </string-array>
+    <string-array name="send_dialog_items_ofThree">
+        <item>Send via Bluetooth</item>
+        <item>Send as Multimedia message</item>
+        <item>Send via Email</item>
+    </string-array>
+    <string-array name="send_dialog_items_ofTwo">
+        <item>Send via Bluetooth</item>
+        <item>Send via Email</item>
+    </string-array>
+    <string-array name="setting_titles">
+        <item>Browser Modes</item>
+        <item>Sort Patterns</item>
+        <item>File-Encrypt Toggle</item>
+        <item>Modify File-Encrypt Password</item>
+        <item>Check before deleting</item>
+        <item>Storage Status</item>
+        <item>Format</item>
+    </string-array>
+    <string-array name="setting_summarys">
+        <item>details</item>
+        <item>by Name</item>
+        <item>Enable file encrypt function</item>
+        <item>Modify password</item>
+        <item>Enable</item>
+        <item>Check the storage status of your phone</item>
+        <item>All data will be removed after formatting</item>
+    </string-array>
+    <string-array name="filebrowser_shortcutbar_title1">
+        <item>Back</item>
+        <item>New</item>
+        <item>Clipboard</item>
+        <item>Mark</item>
+        <item>More</item>
+    </string-array>
+    <string-array name="filebrowser_shortcutbar_title2">
+        <item>Search</item>
+        <item>Favorites</item>
+        <item>History</item>
+        <item>Settings</item>
+    </string-array>
+    <string-array name="file_select_shortcutbar_title">
+        <item>OK</item>
+        <item>Cancel</item>
+    </string-array>
+    <string-array name="normal_touchsearch_keys">
+        <item>\#</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+    <string-array name="union_touchsearch_keys">
+        <item>\#</item>
+        <item>A</item>
+        <item>•</item>
+        <item>D</item>
+        <item>•</item>
+        <item>G</item>
+        <item>•</item>
+        <item>I</item>
+        <item>•</item>
+        <item>L</item>
+        <item>•</item>
+        <item>O</item>
+        <item>•</item>
+        <item>R</item>
+        <item>•</item>
+        <item>T</item>
+        <item>•</item>
+        <item>W</item>
+        <item>•</item>
+        <item>Z</item>
+    </string-array>
+    <string-array name="touchsearch_side_keys_drawable">
+        <item>touchsearch_well</item>
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+        <item>e</item>
+        <item>f</item>
+        <item>g</item>
+        <item>h</item>
+        <item>i</item>
+        <item>j</item>
+        <item>k</item>
+        <item>l</item>
+        <item>m</item>
+        <item>n</item>
+        <item>o</item>
+        <item>p</item>
+        <item>q</item>
+        <item>r</item>
+        <item>s</item>
+        <item>t</item>
+        <item>u</item>
+        <item>v</item>
+        <item>w</item>
+        <item>x</item>
+        <item>y</item>
+        <item>z</item>
+    </string-array>
+</resources>

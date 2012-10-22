@@ -1,0 +1,91 @@
+assert(getprop("ro.product.device") == "msm8660_surf" ||
+       getprop("ro.build.product") == "msm8660_surf");
+show_progress(0.500000, 0);
+ui_print("Formatting system...");
+unmount("/system");
+format("ext4", "EMMC", "/dev/block/mmcblk0p12", "0");
+ui_print("Installing system files...");
+mount("ext4", "EMMC", "/dev/block/mmcblk0p12", "/system");
+package_extract_dir("system", "/system");
+ui_print("Creating system links...");
+symlink("Roboto-Bold.ttf", "/system/fonts/DroidSans-Bold.ttf");
+symlink("Roboto-Regular.ttf", "/system/fonts/DroidSans.ttf");
+symlink("amss.mbn", "/system/etc/firmware/amss.mbn");
+symlink("dbl.mbn", "/system/etc/firmware/dbl.mbn");
+symlink("dsp1.mbn", "/system/etc/firmware/dsp1.mbn");
+symlink("dsp2.mbn", "/system/etc/firmware/dsp2.mbn");
+symlink("efs1.mbn", "/system/etc/firmware/efs1.mbn");
+symlink("efs2.mbn", "/system/etc/firmware/efs2.mbn");
+symlink("efs3.mbn", "/system/etc/firmware/efs3.mbn");
+symlink("libwiperjni_v01.so", "/system/lib/libwiperjni.so");
+symlink("libxt_v01.so", "/system/lib/libxt_native.so");
+symlink("mksh", "/system/bin/sh");
+symlink("modem.b00", "/system/etc/firmware/modem.b00");
+symlink("modem.b01", "/system/etc/firmware/modem.b01");
+symlink("modem.b02", "/system/etc/firmware/modem.b02");
+symlink("modem.b03", "/system/etc/firmware/modem.b03");
+symlink("modem.b04", "/system/etc/firmware/modem.b04");
+symlink("modem.b05", "/system/etc/firmware/modem.b05");
+symlink("modem.b06", "/system/etc/firmware/modem.b06");
+symlink("modem.b07", "/system/etc/firmware/modem.b07");
+symlink("modem.b08", "/system/etc/firmware/modem.b08");
+symlink("modem.b09", "/system/etc/firmware/modem.b09");
+symlink("modem.b10", "/system/etc/firmware/modem.b10");
+symlink("modem.mdt", "/system/etc/firmware/modem.mdt");
+symlink("osbl.mbn", "/system/etc/firmware/osbl.mbn");
+symlink("q6.b00", "/system/etc/firmware/q6.b00");
+symlink("q6.b01", "/system/etc/firmware/q6.b01");
+symlink("q6.b02", "/system/etc/firmware/q6.b02");
+symlink("q6.b03", "/system/etc/firmware/q6.b03");
+symlink("q6.b04", "/system/etc/firmware/q6.b04");
+symlink("q6.b05", "/system/etc/firmware/q6.b05");
+symlink("q6.b06", "/system/etc/firmware/q6.b06");
+symlink("q6.b07", "/system/etc/firmware/q6.b07");
+symlink("q6.mdt", "/system/etc/firmware/q6.mdt");
+symlink("toolbox", "/system/bin/cat", "/system/bin/chmod",
+        "/system/bin/chown", "/system/bin/cmp", "/system/bin/date",
+        "/system/bin/dd", "/system/bin/df", "/system/bin/dmesg",
+        "/system/bin/getevent", "/system/bin/getprop", "/system/bin/hd",
+        "/system/bin/id", "/system/bin/ifconfig", "/system/bin/iftop",
+        "/system/bin/insmod", "/system/bin/ioctl", "/system/bin/ionice",
+        "/system/bin/kill", "/system/bin/ln", "/system/bin/log",
+        "/system/bin/ls", "/system/bin/lsmod", "/system/bin/lsof",
+        "/system/bin/mkdir", "/system/bin/mount", "/system/bin/mv",
+        "/system/bin/nandread", "/system/bin/netstat",
+        "/system/bin/newfs_msdos", "/system/bin/notify", "/system/bin/printenv",
+        "/system/bin/ps", "/system/bin/reboot", "/system/bin/renice",
+        "/system/bin/rm", "/system/bin/rmdir", "/system/bin/rmmod",
+        "/system/bin/route", "/system/bin/schedtop", "/system/bin/sendevent",
+        "/system/bin/setconsole", "/system/bin/setprop", "/system/bin/sleep",
+        "/system/bin/smd", "/system/bin/start", "/system/bin/stop",
+        "/system/bin/sync", "/system/bin/top", "/system/bin/touch",
+        "/system/bin/umount", "/system/bin/uptime", "/system/bin/vmstat",
+        "/system/bin/watchprops",
+        "/system/bin/wipe");
+symlink("wiperiface_v01.so", "/system/bin/wiperiface");
+ui_print("Set permission...");
+set_perm_recursive(0, 0, 0755, 0644, "/system");
+set_perm_recursive(0, 2000, 0755, 0755, "/system/bin");
+set_perm(0, 1000, 04755, "/system/bin/diag_mdlog");
+set_perm(0, 1000, 04750, "/system/bin/iptables");
+set_perm(0, 3003, 02750, "/system/bin/netcfg");
+set_perm(0, 3004, 02755, "/system/bin/ping");
+set_perm(0, 2000, 06750, "/system/bin/run-as");
+set_perm(0, 1000, 04750, "/system/bin/tc");
+set_perm(0, 2000, 04755, "/system/bin/usbhub");
+set_perm_recursive(1002, 1002, 0755, 0440, "/system/etc/bluetooth");
+set_perm(0, 0, 0755, "/system/etc/bluetooth");
+set_perm(1000, 1000, 0640, "/system/etc/bluetooth/auto_pairing.conf");
+set_perm(3002, 3002, 0444, "/system/etc/bluetooth/blacklist.conf");
+set_perm(1002, 1002, 0440, "/system/etc/dbus.conf");
+set_perm(1014, 2000, 0550, "/system/etc/dhcpcd/dhcpcd-run-hooks");
+set_perm(0, 0, 06755, "/system/xbin/busybox");
+ui_print("Update Boot image...");
+show_progress(0.200000, 0);
+show_progress(0.200000, 10);
+show_progress(0.100000, 0);
+mount("ext4", "EMMC", "/dev/block/mmcblk0p13", "/data");
+package_extract_dir("data", "/data");
+set_perm_recursive(1000, 1000, 0755, 0644, "/data/media/preinstall_apps");
+unmount("/data");
+unmount("/system");
