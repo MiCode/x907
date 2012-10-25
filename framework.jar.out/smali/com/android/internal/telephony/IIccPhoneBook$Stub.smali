@@ -48,6 +48,9 @@
 
 .field static final TRANSACTION_updateAdnRecordsInEfBySearch:I = 0x2
 
+.field static final TRANSACTION_getFreeAdn:I = 0xc
+
+.field static final TRANSACTION_getAdnCapacity:I = 0xd
 
 # direct methods
 .method public constructor <init>()V
@@ -512,84 +515,103 @@
 
     invoke-virtual {p2, v0}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
-    .line 165
     invoke-virtual {p0}, Lcom/android/internal/telephony/IIccPhoneBook$Stub;->oppoGetSimPhonebookAllSpace()I
 
     move-result v7
 
-    .line 166
     .local v7, _result:I
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 167
     invoke-virtual {p3, v7}, Landroid/os/Parcel;->writeInt(I)V
 
     goto/16 :goto_0
 
-    .line 172
     .end local v7           #_result:I
     :sswitch_9
     const-string v0, "com.android.internal.telephony.IIccPhoneBook"
 
     invoke-virtual {p2, v0}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
-    .line 173
     invoke-virtual {p0}, Lcom/android/internal/telephony/IIccPhoneBook$Stub;->oppoGetSimPhonebookUsedSpace()I
 
     move-result v7
 
-    .line 174
     .restart local v7       #_result:I
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 175
     invoke-virtual {p3, v7}, Landroid/os/Parcel;->writeInt(I)V
 
     goto/16 :goto_0
 
-    .line 180
     .end local v7           #_result:I
     :sswitch_a
     const-string v0, "com.android.internal.telephony.IIccPhoneBook"
 
     invoke-virtual {p2, v0}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
-    .line 181
     invoke-virtual {p0}, Lcom/android/internal/telephony/IIccPhoneBook$Stub;->oppoGetSimPhonebookNameLength()I
 
     move-result v7
 
-    .line 182
     .restart local v7       #_result:I
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 183
     invoke-virtual {p3, v7}, Landroid/os/Parcel;->writeInt(I)V
 
     goto/16 :goto_0
 
-    .line 188
     .end local v7           #_result:I
     :sswitch_b
     const-string v0, "com.android.internal.telephony.IIccPhoneBook"
 
     invoke-virtual {p2, v0}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
-    .line 189
     invoke-virtual {p0}, Lcom/android/internal/telephony/IIccPhoneBook$Stub;->oppoGetSimPhonebookNumberLength()I
 
     move-result v7
 
-    .line 190
     .restart local v7       #_result:I
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 191
     invoke-virtual {p3, v7}, Landroid/os/Parcel;->writeInt(I)V
 
     goto/16 :goto_0
 
-    .line 51
+    .end local v1           #_arg0:I
+    .end local v7           #_result:[I
+    :sswitch_miui_add1
+    const-string v0, "com.android.internal.telephony.IIccPhoneBook"
+
+    invoke-virtual {p2, v0}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lcom/android/internal/telephony/IIccPhoneBook$Stub;->getFreeAdn()I
+
+    move-result v7
+
+    .local v7, _result:I
+    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+
+    invoke-virtual {p3, v7}, Landroid/os/Parcel;->writeInt(I)V
+
+    goto/16 :goto_0
+
+    .end local v7           #_result:I
+    :sswitch_miui_add2
+    const-string v0, "com.android.internal.telephony.IIccPhoneBook"
+
+    invoke-virtual {p2, v0}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lcom/android/internal/telephony/IIccPhoneBook$Stub;->getAdnCapacity()I
+
+    move-result v7
+
+    .restart local v7       #_result:I
+    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+
+    invoke-virtual {p3, v7}, Landroid/os/Parcel;->writeInt(I)V
+
+    goto/16 :goto_0
+
     :sswitch_data_0
     .sparse-switch
         0x1 -> :sswitch_1
@@ -603,6 +625,8 @@
         0x9 -> :sswitch_9
         0xa -> :sswitch_a
         0xb -> :sswitch_b
+        0xc -> :sswitch_miui_add1
+        0xd -> :sswitch_miui_add2
         0x5f4e5446 -> :sswitch_0
     .end sparse-switch
 .end method
