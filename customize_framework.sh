@@ -21,4 +21,13 @@ then
     $APKTOOL b  "out/oppoframework.jar.out" "out/oppoframework.jar"
     cp "out/oppoframework.jar" "out/ZIP/system/framework/oppoframework.jar"
 
+elif [ $2 = "out/android.policy" ];then
+    curdir=`pwd`
+    cd overlay/android.policy.jar.out
+    for file in `find . -name *.smali`
+    do
+        dstfile="$curdir/out/android.policy/$file"
+        cat $file >> $dstfile
+    done
+    cd -
 fi
