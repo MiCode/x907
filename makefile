@@ -19,7 +19,6 @@ local-miui-removed-apps :=
 
 # All apps need to be removed from original ZIP file
 
-
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
 # (1) be defined after including porting.mk if using any global variable(see porting.mk)
@@ -30,11 +29,10 @@ local-after-zip:=
 # The local targets after the zip file is generated, could include 'zip2sd' to 
 # deliver the zip file to phone, or to customize other actions
 
-local-apktool := other/tools/apktool
+# Apktool for finder
+override APKTOOL := other/tools/apktool
 
 include $(PORT_BUILD)/porting.mk
-
-
 
 # To define any local-target
 local-zip-misc:
