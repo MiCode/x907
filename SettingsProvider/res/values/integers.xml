@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="def_screen_off_timeout">30000</integer>
+    <integer name="def_screen_brightness">160</integer>
+    <integer name="def_network_preference">1</integer>
+    <integer name="def_power_sounds_enabled">1</integer>
+    <integer name="def_dock_sounds_enabled">0</integer>
+    <integer name="def_lockscreen_sounds_enabled">1</integer>
+    <integer name="def_user_rotation">0</integer>
+    <integer name="def_download_manager_max_bytes_over_mobile">-1</integer>
+    <integer name="def_download_manager_recommended_max_bytes_over_mobile">-1</integer>
+    <integer name="def_long_press_timeout_millis">500</integer>
+    <integer name="def_pointer_speed">0</integer>
+    <integer name="def_lid_sounds_enabled">1</integer>
+    <integer name="def_file_encrypt_status">0</integer>
+    <integer name="def_privacy_protect_status">0</integer>
+    <integer name="def_show_password">0</integer>
+    <integer name="def_screen_effect">1</integer>
+    <integer name="def_holiday_wallpaper">1</integer>
+    <integer name="def_boot_authentication">0</integer>
+    <integer name="def_button_light_mode">1</integer>
+    <integer name="def_button_light_timeout">6000</integer>
+    <integer name="call_vibrate_method">0</integer>
+    <integer name="power_save_mode">1</integer>
+    <integer name="notification_on_connected">2</integer>
+    <integer name="mock_location">0</integer>
+    <integer name="display_power_percent">1</integer>
+    <integer name="auto_redial">0</integer>
+</resources>

@@ -12,12 +12,13 @@ local-out-zip-file := MIUI_finder.zip
 local-miui-modified-apps := 
 
 # All apps from original ZIP, but has smali files chanded
-local-modified-apps := 
+local-modified-apps := SettingsProvider
 
 # All apks from MIUI
-local-miui-removed-apps := 
+local-miui-removed-apps := SettingsProvider
 
 # All apps need to be removed from original ZIP file
+local-phone-apps := SettingsProvider
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:

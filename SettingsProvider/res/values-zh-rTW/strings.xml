@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">設定儲存空間</string>
+    <string name="screen_timeout_notify">請注意，你的屏幕背光時間已經被設置為超過30分鐘</string>
+</resources>

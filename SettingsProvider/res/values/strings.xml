@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_airplane_mode_radios">cell,bluetooth,wifi,nfc,wimax</string>
+    <string name="airplane_mode_toggleable_radios">bluetooth,wifi,nfc</string>
+    <string name="def_location_providers_allowed">gps</string>
+    <string name="def_backup_transport">android/com.android.internal.backup.LocalTransport</string>
+    <string name="def_low_battery_sound">/system/media/audio/ui/LowBattery.ogg</string>
+    <string name="def_desk_dock_sound">/system/media/audio/ui/Dock.ogg</string>
+    <string name="def_desk_undock_sound">/system/media/audio/ui/Undock.ogg</string>
+    <string name="def_car_dock_sound">/system/media/audio/ui/Dock.ogg</string>
+    <string name="def_car_undock_sound">/system/media/audio/ui/Undock.ogg</string>
+    <string name="def_lock_sound">/system/media/audio/ui/Lock.ogg</string>
+    <string name="def_unlock_sound">/system/media/audio/ui/Unlock.ogg</string>
+    <string name="def_accessibility_web_content_key_bindings">0x13=0x01000100; 0x14=0x01010100; 0x15=0x02000001; 0x16=0x02010001; 0x200000013=0x02000601; 0x200000014=0x02010601; 0x200000015=0x03020101; 0x200000016=0x03010201; 0x200000023=0x02000301; 0x200000024=0x02010301; 0x200000037=0x03070201; 0x200000038=0x03000701:0x03010701:0x03020701;</string>
+    <string name="def_time_12_24">24</string>
+    <string name="def_power_on_sound">1</string>
+    <string name="def_power_off_sound">0</string>
+    <string name="def_breath_light">1</string>
+    <string name="def_lid_open_sound">/system/media/audio/ui/uncover.mp3</string>
+    <string name="def_lid_close_sound">/system/media/audio/ui/cover.mp3</string>
+    <string name="def_private_password" />
+    <string name="def_file_password" />
+    <string name="def_fontsize_value">0</string>
+    <string name="def_date_format">yyyy-MM-dd</string>
+    <string name="def_msm_time_lockscreen">0</string>
+    <string name="def_msm_state_lockscreen">0</string>
+    <string name="def_call_time_lockscreen">0</string>
+    <string name="def_call_state_lockscreen">0</string>
+    <string name="def_setup_wizard_has_run">0</string>
+    <string name="def_timepower_config">070010230000080010000000</string>
+    <string name="def_screen_effect">1</string>
+    <string name="def_restore_password">0000</string>
+    <string name="def_find_phone_num_config" />
+    <string name="oppo_unlock_change_pkg">com.oppo.glassboard.service.LockService</string>
+    <string name="def_oppo_unlock_change_process">com.oppo.glassboard</string>
+    <string name="phone_ip_prefix" />
+    <string name="event_log">disabled</string>
+    <string name="event_data">disabled</string>
+    <string name="system_app_strictmode">disabled</string>
+    <string name="public_text_disabled">disabled</string>
+    <string name="app_label">Settings Storage</string>
+    <string name="screen_timeout_notify">Please note that the screen backlight time is set to more than 30 minutes</string>
+</resources>
