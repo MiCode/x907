@@ -138,7 +138,7 @@
 
 .field private final mButtonLightState:Lcom/android/server/PowerManagerService$ButtonLightState;
 
-.field private mContext:Landroid/content/Context;
+.field mContext:Landroid/content/Context;
 
 .field private mDimDelay:I
 

@@ -69,6 +69,23 @@
 
     .line 1443
     :cond_1
+    const-string v15, "android.intent.action.RESTORE_FINISH"
+
+    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v15
+
+    if-eqz v15, :cond_miui_add1
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/android/server/AppWidgetService$3;->this$0:Lcom/android/server/AppWidgetService;
+
+    invoke-virtual {v15}, Lcom/android/server/AppWidgetService;->reload()V
+
+    goto :goto_0
+
+    :cond_miui_add1
     const-string v15, "android.intent.action.CONFIGURATION_CHANGED"
 
     invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
