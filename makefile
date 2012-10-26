@@ -15,10 +15,12 @@ local-miui-modified-apps := Phone
 local-modified-apps := SettingsProvider
 
 # All apks from MIUI
-local-miui-removed-apps := SettingsProvider
+local-miui-removed-apps := SettingsProvider MediaProvider Stk
 
 # All apps need to be removed from original ZIP file
-local-phone-apps := SettingsProvider
+local-phone-apps := SettingsProvider ApplicationsProvider MediaProvider DefaultContainerService CertInstaller DrmProvider \
+                    SharedStorageBackup OppoCamera UserDictionaryProvider Stk Wiper Provision LiveWallpapersPicker \
+                    BackupRestoreConfirmation LiveWallpapers WAPPushManager VpnDialogs 
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
