@@ -9,7 +9,7 @@ local-zip-file     := stockrom.zip
 local-out-zip-file := MIUI_finder.zip
 
 #
-local-miui-modified-apps := 
+local-miui-modified-apps := Phone
 
 # All apps from original ZIP, but has smali files chanded
 local-modified-apps := SettingsProvider
