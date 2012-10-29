@@ -39,3 +39,10 @@ include $(PORT_BUILD)/porting.mk
 
 # To define any local-target
 local-zip-misc:
+	@echo replace bootanimation
+	cp other/bootanimation out/ZIP/system/bin/bootanimation
+
+	@echo remove useless files
+	rm out/ZIP/system/media/poweroff.mp3
+	rm out/ZIP/system/media/poweron.mp3
+	rm out/ZIP/system/media/rbootanimation.zip
