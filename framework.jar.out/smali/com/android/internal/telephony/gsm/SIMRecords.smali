@@ -2296,7 +2296,7 @@
 
     iput-object v0, p0, Lcom/android/internal/telephony/IccRecords;->spn:Ljava/lang/String;
     
-    iget-object v0, p0, Lcom/android/internal/telephony/gsm/IccRecords;->spn:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/internal/telephony/IccRecords;->spn:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
     
