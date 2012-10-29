@@ -22,27 +22,6 @@
         <item>Others</item>
         <item>Custom</item>
     </string-array>
-    <string-array name="config_statusBarIcons">
-        <item>phone_evdo_signal</item>
-        <item>data_connection</item>
-        <item>cdma_eri</item>
-        <item>alarm_clock</item>
-        <item>hdmi</item>
-        <item>headset</item>
-        <item>volume</item>
-        <item>mute</item>
-        <item>speakerphone</item>
-        <item>wifi</item>
-        <item>tty</item>
-        <item>bluetooth</item>
-        <item>gps</item>
-        <item>ime</item>
-        <item>sync_failing</item>
-        <item>sync_active</item>
-        <item>nfc</item>
-        <item>secure</item>
-        <item>clock</item>
-    </string-array>
     <string-array name="config_tether_usb_regexs">
         <item>usb\\d</item>
         <item>rndis\\d</item>

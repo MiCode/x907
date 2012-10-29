@@ -65,9 +65,9 @@
 
 .field static final INPUT_METHOD_LAYER:I = 0x9
 
-.field static final KEYGUARD_DIALOG_LAYER:I = 0xf
+.field static final KEYGUARD_DIALOG_LAYER:I = 0xc
 
-.field static final KEYGUARD_LAYER:I = 0xe
+.field static final KEYGUARD_LAYER:I = 0xb
 
 .field private static final LID_ABSENT:I = -0x1
 
@@ -117,11 +117,11 @@
 
 .field static final SHOW_STARTING_ANIMATIONS:Z = true
 
-.field static final STATUS_BAR_LAYER:I = 0xc
+.field static final STATUS_BAR_LAYER:I = 0xe
 
-.field static final STATUS_BAR_PANEL_LAYER:I = 0xd
+.field static final STATUS_BAR_PANEL_LAYER:I = 0xf
 
-.field static final STATUS_BAR_SUB_PANEL_LAYER:I = 0xb
+.field static final STATUS_BAR_SUB_PANEL_LAYER:I = 0xd
 
 .field private static final SUPPORTED_HEADSETS:I = 0x3f
 
@@ -6066,8 +6066,7 @@
     .locals 1
 
     .prologue
-    .line 1373
-    const/16 v0, 0xc
+    const/16 v0, 0xe
 
     return v0
 .end method
@@ -15691,7 +15690,7 @@
     .prologue
     const/16 v2, 0x10
 
-    const/16 v1, 0xf
+    const/16 v1, 0xc
 
     const/4 v0, 0x2
 
@@ -15740,19 +15739,19 @@
 
     .line 1296
     :pswitch_1
-    const/16 v0, 0xc
+    const/16 v0, 0xe
 
     goto :goto_0
 
     .line 1298
     :pswitch_2
-    const/16 v0, 0xd
+    const/16 v0, 0xf
 
     goto :goto_0
 
     .line 1301
     :pswitch_3
-    const/16 v0, 0xb
+    const/16 v0, 0xd
 
     goto :goto_0
 
@@ -15776,7 +15775,7 @@
 
     .line 1309
     :pswitch_7
-    const/16 v0, 0xe
+    const/16 v0, 0xb
 
     goto :goto_0
 
