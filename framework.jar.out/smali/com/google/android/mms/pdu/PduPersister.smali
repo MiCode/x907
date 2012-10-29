@@ -4806,6 +4806,8 @@
 
     .prologue
     .line 2128
+    return-object p0
+
     invoke-static {p0}, Lcom/google/android/mms/pdu/PduPersister;->isSmsMmsUri(Landroid/net/Uri;)Z
 
     move-result v1

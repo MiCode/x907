@@ -405,6 +405,8 @@
 
     .prologue
     .line 2279
+    return-object p0
+
     invoke-static {p0}, Landroid/provider/Telephony;->isSmsMmsUri(Landroid/net/Uri;)Z
 
     move-result v1
