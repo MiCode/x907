@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uid_label">媒體</string>
+    <string name="app_label">媒體儲存空間</string>
+    <string name="artist_label">歌手/創作人</string>
+    <string name="my_picture">我的图片</string>
+    <string name="my_photo">我的照片</string>
+</resources>

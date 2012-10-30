@@ -12,7 +12,7 @@ local-out-zip-file := MIUI_finder.zip
 local-miui-modified-apps := Phone MiuiGallery Settings
 
 # All apps from original ZIP, but has smali files chanded
-local-modified-apps := SettingsProvider
+local-modified-apps := SettingsProvider MediaProvider
 
 # All apks from MIUI
 local-miui-removed-apps := SettingsProvider MediaProvider Stk

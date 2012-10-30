@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.media" android:versionCode="15" android:versionName="4.0.3-eng.oppo.svn6289.20120831.120836" android:sharedUserLabel="@string/uid_label" package="com.android.providers.media"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application android:theme="@android:style/Theme" android:label="@string/app_label" android:allowClearUserData="false" android:persistent="true" android:process="android.process.media">
+        <provider android:name="MediaProvider" android:multiprocess="false" android:authorities="media" />
+        <receiver android:name="MediaScannerReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="oppo.intent.action.MEDIA_SCAN_ALL" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_SCAN_FILE" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="oppo.intent.action.MEDIA_SCAN_DIRECTORY" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.OPPO_PACKAGE_DATA_CLEARED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="oppo.intent.action.encrypt" />
+                <action android:name="oppo.intent.action.decrypt" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="oppo.intent.action.encrypt.stateChanged" />
+            </intent-filter>
+        </receiver>
+        <service android:name="MediaScannerService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.media.IMediaScannerService" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>
