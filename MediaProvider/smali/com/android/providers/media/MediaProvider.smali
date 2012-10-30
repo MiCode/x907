@@ -7217,7 +7217,9 @@
     .line 3344
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v4, v2}, Lcom/android/providers/media/MediaProvider;->setIsHiddenImages(Ljava/lang/String;Landroid/content/ContentValues;)V
+    #invoke-direct {v0, v4, v2}, Lcom/android/providers/media/MediaProvider;->setIsHiddenImages(Ljava/lang/String;Landroid/content/ContentValues;)V
+
+    invoke-direct {v0, v4, v2}, Lcom/android/providers/media/MediaProvider;->setAllImagesNoHidden(Ljava/lang/String;Landroid/content/ContentValues;)V
 
     .line 3345
     invoke-static {v2}, Lcom/android/providers/media/MediaProvider;->computeTakenTime(Landroid/content/ContentValues;)V
@@ -11695,6 +11697,35 @@
     const-string v0, "is_hidden"
 
     const/4 v1, 0x1
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {p2, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    goto/16 :goto_0
+.end method
+
+.method private setAllImagesNoHidden(Ljava/lang/String;Landroid/content/ContentValues;)V
+    .locals 3
+    .parameter
+    .parameter
+
+    .prologue
+    if-nez p1, :cond_0
+
+    :goto_0
+    return-void
+
+    :cond_0
+    invoke-virtual {p0}, Lcom/android/providers/media/MediaProvider;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-string v0, "is_hidden"
+
+    const/4 v1, 0x0
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
