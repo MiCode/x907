@@ -127,6 +127,8 @@
 
 .field public static final GET_SERVICES_TRANSACTION:I = 0x51
 
+.field public static final GET_SYSTEM_READY_FLAG_OF_AMS:I = 0x92
+
 .field public static final GET_TASKS_TRANSACTION:I = 0x17
 
 .field public static final GET_TASK_FOR_ACTIVITY_TRANSACTION:I = 0x1b
@@ -916,6 +918,14 @@
 .end method
 
 .method public abstract isKeyEventIntercepted(I)Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract isSystemReadyOfActivityManagerService()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -39,33 +39,33 @@
     .parameter "refCounted"
 
     .prologue
-    .line 325
+    .line 353
     iput-object p1, p0, Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;->this$0:Lcom/android/server/PowerManagerService;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 321
+    .line 349
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;->mCount:I
 
-    .line 326
+    .line 354
     iput p2, p0, Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;->mFlags:I
 
-    .line 327
+    .line 355
     iput-object p3, p0, Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;->mTag:Ljava/lang/String;
 
-    .line 328
+    .line 356
     new-instance v0, Landroid/os/Binder;
 
     invoke-direct {v0}, Landroid/os/Binder;-><init>()V
 
     iput-object v0, p0, Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;->mToken:Landroid/os/IBinder;
 
-    .line 329
+    .line 357
     iput-boolean p4, p0, Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;->mRefCounted:Z
 
-    .line 330
+    .line 358
     return-void
 .end method
 
@@ -75,7 +75,7 @@
     .locals 9
 
     .prologue
-    .line 333
+    .line 361
     iget-boolean v0, p0, Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;->mRefCounted:Z
 
     if-eqz v0, :cond_0
@@ -88,13 +88,13 @@
 
     if-nez v0, :cond_1
 
-    .line 334
+    .line 362
     :cond_0
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v7
 
-    .line 336
+    .line 364
     .local v7, ident:J
     :try_start_0
     iget-object v0, p0, Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;->this$0:Lcom/android/server/PowerManagerService;
@@ -123,22 +123,22 @@
 
     invoke-virtual/range {v0 .. v6}, Lcom/android/server/PowerManagerService;->acquireWakeLockLocked(ILandroid/os/IBinder;IILjava/lang/String;Landroid/os/WorkSource;)V
 
-    .line 338
+    .line 366
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;->mHeld:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 340
+    .line 368
     invoke-static {v7, v8}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 343
+    .line 371
     .end local v7           #ident:J
     :cond_1
     return-void
 
-    .line 340
+    .line 368
     .restart local v7       #ident:J
     :catchall_0
     move-exception v0
@@ -152,7 +152,7 @@
     .locals 1
 
     .prologue
-    .line 357
+    .line 385
     iget-boolean v0, p0, Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;->mHeld:Z
 
     return v0
@@ -164,7 +164,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 346
+    .line 374
     iget-boolean v0, p0, Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;->mRefCounted:Z
 
     if-eqz v0, :cond_0
@@ -177,7 +177,7 @@
 
     if-nez v0, :cond_1
 
-    .line 347
+    .line 375
     :cond_0
     iget-object v0, p0, Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;->this$0:Lcom/android/server/PowerManagerService;
 
@@ -186,16 +186,16 @@
     #calls: Lcom/android/server/PowerManagerService;->releaseWakeLockLocked(Landroid/os/IBinder;IZ)V
     invoke-static {v0, v1, v2, v2}, Lcom/android/server/PowerManagerService;->access$400(Lcom/android/server/PowerManagerService;Landroid/os/IBinder;IZ)V
 
-    .line 348
+    .line 376
     iput-boolean v2, p0, Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;->mHeld:Z
 
-    .line 350
+    .line 378
     :cond_1
     iget v0, p0, Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;->mCount:I
 
     if-gez v0, :cond_2
 
-    .line 351
+    .line 379
     new-instance v0, Ljava/lang/RuntimeException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -222,7 +222,7 @@
 
     throw v0
 
-    .line 353
+    .line 381
     :cond_2
     return-void
 .end method
@@ -231,7 +231,7 @@
     .locals 2
 
     .prologue
-    .line 361
+    .line 389
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

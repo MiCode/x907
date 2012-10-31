@@ -269,7 +269,7 @@
 
     .prologue
     .line 279
-    const v0, 0x1010466
+    const v0, 0x1010467
 
     invoke-direct {p0, p1, p2, v0}, Landroid/inputmethodservice/KeyboardView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 

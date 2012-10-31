@@ -118,7 +118,7 @@
 
     move-result-object v0
 
-    const v1, 0x106009e
+    const v1, 0x106009f
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -138,7 +138,7 @@
 
     move-result-object v0
 
-    const v1, 0x106009f
+    const v1, 0x10600a0
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -158,7 +158,7 @@
 
     move-result-object v0
 
-    const v1, 0x10600a0
+    const v1, 0x10600a1
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -199,7 +199,7 @@
     .locals 7
 
     .prologue
-    const v6, 0x1080745
+    const v6, 0x1080759
 
     const/4 v5, 0x0
 
@@ -243,7 +243,7 @@
 
     move-result-object v1
 
-    const v2, 0x1080747
+    const v2, 0x108075b
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -332,7 +332,7 @@
 
     move-result-object v1
 
-    const v2, 0x1080748
+    const v2, 0x108075c
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

@@ -517,6 +517,10 @@
     .line 175
     iget-object v0, p0, Lcom/google/android/mms/pdu/PduPart;->mUri:Landroid/net/Uri;
 
+    invoke-static {v0}, Lcom/google/android/mms/pdu/PduPersister;->setUriWithoutOppoTag(Landroid/net/Uri;)Landroid/net/Uri;
+
+    move-result-object v0
+
     return-object v0
 .end method
 
@@ -860,12 +864,16 @@
 .end method
 
 .method public setDataUri(Landroid/net/Uri;)V
-    .locals 0
+    .locals 1
     .parameter "uri"
 
     .prologue
     .line 166
-    iput-object p1, p0, Lcom/google/android/mms/pdu/PduPart;->mUri:Landroid/net/Uri;
+    invoke-static {p1}, Lcom/google/android/mms/pdu/PduPersister;->setUriWithoutOppoTag(Landroid/net/Uri;)Landroid/net/Uri;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/google/android/mms/pdu/PduPart;->mUri:Landroid/net/Uri;
 
     .line 167
     return-void

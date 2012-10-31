@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Theme map is a map that decide which drawable resource should be redirect when theme is changed. -->
+<thememap>
+	<Module
+        name="Framework"
+        path="/system/framework/framework-res.apk">
+	</Module>
+
+    <Module
+        name="ApplicationsProvider"
+        path="/system/app/ApplicationsProvider.apk" >
+    </Module>
+
+    <Module
+        name="BackupRestoreConfirmation"
+        path="/system/app/BackupRestoreConfirmation.apk" >
+    </Module>
+
+    <Module
+        name="Browser"
+        path="/system/app/Browser.apk" >
+    </Module>
+
+    <Module
+        name="CalendarProvider"
+        path="/system/app/CalendarProvider.apk" >
+    </Module>
+
+    <Module
+        name="CertInstaller"
+        path="/system/app/CertInstaller.apk" >
+    </Module>
+
+    <Module
+        name="Contacts"
+        path="/system/app/Contacts.apk" >
+    </Module>
+
+    <Module
+        name="ContactsProvider"
+        path="/system/app/ContactsProvider.apk" >
+    </Module>
+
+    <Module
+        name="DefaultContainerService"
+        path="/system/app/DefaultContainerService.apk" >
+    </Module>
+
+    <Module
+        name="Dolby"
+        path="/system/app/Dolby.apk" >
+    </Module>
+
+    <Module
+        name="DownloadProvider"
+        path="/system/app/DownloadProvider.apk" >
+    </Module>
+
+    <Module
+        name="DrmProvider"
+        path="/system/app/DrmProvider.apk" >
+    </Module>
+
+    <Module
+        name="Dumplog"
+        path="/system/app/Dumplog.apk" >
+    </Module>
+
+    <Module
+        name="Email"
+        path="/system/app/Email.apk" >
+    </Module>
+
+    <Module
+        name="Exchange"
+        path="/system/app/Exchange.apk" >
+    </Module>
+
+    <Module
+        name="Feedback"
+        path="/system/app/Feedback.apk" >
+    </Module>
+
+    <Module
+        name="FileHandler"
+        path="/system/app/FileHandler.apk" >
+    </Module>
+
+    <Module
+        name="FileManager"
+        path="/system/app/FileManager.apk" >
+    </Module>
+
+    <Module
+        name="FileProvider"
+        path="/system/app/FileProvider.apk" >
+    </Module>
+
+    <Module
+        name="FindMyPhone"
+        path="/system/app/FindMyPhone.apk" >
+    </Module>
+
+    <Module
+        name="Galaxy4"
+        path="/system/app/Galaxy4.apk" >
+    </Module>
+
+    <Module
+        name="Gallery3D"
+        path="/system/app/Gallery3D.apk" >
+    </Module>
+
+    <Module
+        name="HoloSpiralWallpaper"
+        path="/system/app/HoloSpiralWallpaper.apk" >
+    </Module>
+
+    <Module
+        name="HTMLViewer"
+        path="/system/app/HTMLViewer.apk" >
+    </Module>
+
+    <Module
+        name="KeyChain"
+        path="/system/app/KeyChain.apk" >
+    </Module>
+
+    <Module
+        name="LiveWallpapers"
+        path="/system/app/LiveWallpapers.apk" >
+    </Module>
+
+    <Module
+        name="LiveWallpapersPicker"
+        path="/system/app/LiveWallpapersPicker.apk" >
+    </Module>
+
+    <Module
+        name="ManageApplication"
+        path="/system/app/ManageApplication.apk" >
+    </Module>
+
+    <Module
+        name="MediaProvider"
+        path="/system/app/MediaProvider.apk" >
+    </Module>
+
+    <Module
+        name="MHeiPRCMedium"
+        path="/system/app/MHeiPRCMedium.apk" >
+    </Module>
+
+    <Module
+        name="Mms"
+        path="/system/app/Mms.apk" >
+    </Module>
+
+    <Module
+        name="MusicFX"
+        path="/system/app/MusicFX.apk" >
+    </Module>
+
+    <Module
+        name="MYuenPRCSemiBold"
+        path="/system/app/MYuenPRCSemiBold.apk" >
+    </Module>
+
+    <Module
+        name="NetworkLocation"
+        path="/system/app/NetworkLocation.apk" >
+    </Module>
+
+    <Module
+        name="NewSoundRecorder"
+        path="/system/app/NewSoundRecorder.apk" >
+    </Module>
+
+    <Module
+        name="NoiseField"
+        path="/system/app/NoiseField.apk" >
+    </Module>
+
+    <Module
+        name="OppoBigWeatherWidget"
+        path="/system/app/OppoBigWeatherWidget.apk" >
+    </Module>
+
+    <Module
+        name="OppoBluetooth"
+        path="/system/app/OppoBluetooth.apk" >
+    </Module>
+
+    <Module
+        name="OppoCalculator"
+        path="/system/app/OppoCalculator.apk" >
+    </Module>
+
+    <Module
+        name="OppoCalendar"
+        path="/system/app/OppoCalendar.apk" >
+    </Module>
+
+    <Module
+        name="OppoCalendarWidget"
+        path="/system/app/OppoCalendarWidget.apk" >
+    </Module>
+
+    <Module
+        name="OppoCamera"
+        path="/system/app/OppoCamera.apk" >
+    </Module>
+
+    <Module
+        name="OppoClock"
+        path="/system/app/OppoClock.apk" >
+    </Module>
+
+    <Module
+        name="OppoCompass"
+        path="/system/app/OppoCompass.apk" >
+    </Module>
+
+    <Module
+        name="OppoContactWidget"
+        path="/system/app/OppoContactWidget.apk" >
+    </Module>
+
+    <Module
+        name="OppoDialer"
+        path="/system/app/OppoDialer.apk" >
+    </Module>
+
+    <Module
+        name="OppoDigitalClockWidget"
+        path="/system/app/OppoDigitalClockWidget.apk" >
+    </Module>
+
+    <Module
+        name="OppoDualClockWidget"
+        path="/system/app/OppoDualClockWidget.apk" >
+    </Module>
+
+    <Module
+        name="OppoEmailWidget"
+        path="/system/app/OppoEmailWidget.apk" >
+    </Module>
+
+    <Module
+        name="OppoFlashLight"
+        path="/system/app/OppoFlashLight.apk" >
+    </Module>
+
+    <Module
+        name="OppoIme"
+        path="/system/app/OppoIme.apk" >
+    </Module>
+
+    <Module
+        name="OppoLauncher"
+        path="/system/app/OppoLauncher.apk" >
+    </Module>
+
+    <Module
+        name="OppoLockNow"
+        path="/system/app/OppoLockNow.apk" >
+    </Module>
+
+    <Module
+        name="OppoLockScreenGlass"
+        path="/system/app/OppoLockScreenGlass.apk" >
+    </Module>
+
+    <Module
+        name="OppoLockScreenSlider"
+        path="/system/app/OppoLockScreenSlider.apk" >
+    </Module>
+
+    <Module
+        name="OppoLockScreenWeather"
+        path="/system/app/OppoLockScreenWeather.apk" >
+    </Module>
+
+    <Module
+        name="OppoMessageWidget"
+        path="/system/app/OppoMessageWidget.apk" >
+    </Module>
+
+    <Module
+        name="OppoMusic"
+        path="/system/app/OppoMusic.apk" >
+    </Module>
+
+    <Module
+        name="OppoMusicWidget"
+        path="/system/app/OppoMusicWidget.apk" >
+    </Module>
+
+    <Module
+        name="OppoOperationManual"
+        path="/system/app/OppoOperationManual.apk" >
+    </Module>
+
+    <Module
+        name="OppoPhoneActivation"
+        path="/system/app/OppoPhoneActivation.apk" >
+    </Module>
+
+    <Module
+        name="OppoPictureWidget"
+        path="/system/app/OppoPictureWidget.apk" >
+    </Module>
+
+    <Module
+        name="OppoSmallWeatherWidget"
+        path="/system/app/OppoSmallWeatherWidget.apk" >
+    </Module>
+
+    <Module
+        name="OppoSpeechAssist"
+        path="/system/app/OppoSpeechAssist.apk" >
+    </Module>
+
+    <Module
+        name="OppoSwitcherWidget"
+        path="/system/app/OppoSwitcherWidget.apk" >
+    </Module>
+
+    <Module
+        name="OppoTouchAndroid"
+        path="/system/app/OppoTouchAndroid.apk" >
+    </Module>
+
+    <Module
+        name="OppoTribune"
+        path="/system/app/OppoTribune.apk" >
+    </Module>
+
+    <Module
+        name="OppoWeather"
+        path="/system/app/OppoWeather.apk" >
+    </Module>
+
+    <Module
+        name="OppoWeatherLocationService"
+        path="/system/app/OppoWeatherLocationService.apk" >
+    </Module>
+
+    <Module
+        name="PackageInstaller"
+        path="/system/app/PackageInstaller.apk" >
+    </Module>
+
+    <Module
+        name="PhaseBeam"
+        path="/system/app/PhaseBeam.apk" >
+    </Module>
+
+    <Module
+        name="Phone"
+        path="/system/app/Phone.apk" >
+    </Module>
+
+    <Module
+        name="PhoneNOAreaInquire"
+        path="/system/app/PhoneNOAreaInquire.apk" >
+    </Module>
+
+    <Module
+        name="PicoTts"
+        path="/system/app/PicoTts.apk" >
+    </Module>
+
+    <Module
+        name="PowerManager"
+        path="/system/app/PowerManager.apk" >
+    </Module>
+
+    <Module
+        name="PrivInit"
+        path="/system/app/PrivInit.apk" >
+    </Module>
+
+    <Module
+        name="Provision"
+        path="/system/app/Provision.apk" >
+    </Module>
+
+    <Module
+        name="QuickSearchBox"
+        path="/system/app/QuickSearchBox.apk" >
+    </Module>
+
+    <Module
+        name="SecureSafe"
+        path="/system/app/SecureSafe.apk" >
+    </Module>
+
+    <Module
+        name="SecureSafeProvider"
+        path="/system/app/SecureSafeProvider.apk" >
+    </Module>
+
+    <Module
+        name="SecureService"
+        path="/system/app/SecureService.apk" >
+    </Module>
+
+    <Module
+        name="Settings"
+        path="/system/app/Settings.apk" >
+    </Module>
+
+    <Module
+        name="SettingsProvider"
+        path="/system/app/SettingsProvider.apk" >
+    </Module>
+
+    <Module
+        name="SharedStorageBackup"
+        path="/system/app/SharedStorageBackup.apk" >
+    </Module>
+
+    <Module
+        name="Stk"
+        path="/system/app/Stk.apk" >
+    </Module>
+
+    <Module
+        name="SystemUI"
+        path="/system/app/SystemUI.apk" >
+    </Module>
+
+    <Module
+        name="TelephonyProvider"
+        path="/system/app/TelephonyProvider.apk" >
+    </Module>
+
+    <Module
+        name="UserCenter"
+        path="/system/app/UserCenter.apk" >
+    </Module>
+
+    <Module
+        name="UserDictionaryProvider"
+        path="/system/app/UserDictionaryProvider.apk" >
+    </Module>
+
+    <Module
+        name="VideoGallery"
+        path="/system/app/VideoGallery.apk" >
+    </Module>
+
+    <Module
+        name="VpnDialogs"
+        path="/system/app/VpnDialogs.apk" >
+    </Module>
+
+    <Module
+        name="WAPPushManager"
+        path="/system/app/WAPPushManager.apk" >
+    </Module>
+
+    <Module
+        name="Wiper"
+        path="/system/app/Wiper.apk" >
+    </Module>
+
+</thememap>

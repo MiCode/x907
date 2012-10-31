@@ -45,9 +45,9 @@ Please try again in %d seconds."</string>
     <string name="usb_charge_detail">Charge your phone via USB</string>
     <string name="usb_storage">Storage device</string>
     <string name="usb_storage_detail">Use your phone as storage device</string>
-    <string name="usb_adb">Serial interface/PC suit</string>
+    <string name="usb_adb">Serial interface/PhoneAssistant</string>
     <string name="usb_selection">Please select to change USB setting</string>
-    <string name="usb_adb_detail">Sync with PC suite</string>
+    <string name="usb_adb_detail">Sync with PhoneAssistant</string>
     <string name="usb_internet">USB binding</string>
     <string name="usb_internet_detail">"Share phone's mobile network with PC"</string>
     <string name="usb_selection_processing">Please wait while process...</string>

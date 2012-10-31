@@ -115,7 +115,7 @@
 
     .prologue
     .line 118
-    const v0, 0x1010412
+    const v0, 0x1010413
 
     invoke-direct {p0, p1, p2, v0}, Landroid/widget/Switch;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 

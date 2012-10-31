@@ -1782,7 +1782,7 @@
 
     .line 1193
     .local v3, textEntryView:Landroid/view/View;
-    const v5, 0x1020459
+    const v5, 0x102045a
 
     invoke-virtual {v3, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1946,7 +1946,7 @@
 
     .line 1298
     .local v3, textEntryView:Landroid/view/View;
-    const v4, 0x1020459
+    const v4, 0x102045a
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2091,7 +2091,7 @@
 
     .line 1246
     .local v3, textEntryView:Landroid/view/View;
-    const v4, 0x1020459
+    const v4, 0x102045a
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2228,7 +2228,7 @@
 
     .line 1272
     .local v3, textEntryView:Landroid/view/View;
-    const v4, 0x1020459
+    const v4, 0x102045a
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2929,7 +2929,7 @@
 
     move-result-object v6
 
-    const v7, 0x1080825
+    const v7, 0x1080839
 
     iput v7, v6, Landroid/app/Notification;->icon:I
 

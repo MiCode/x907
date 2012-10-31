@@ -30,7 +30,7 @@
     .parameter
 
     .prologue
-    .line 378
+    .line 379
     iput-object p1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager$3;->this$0:Lcom/android/internal/policy/impl/KeyguardViewManager;
 
     iput-object p2, p0, Lcom/android/internal/policy/impl/KeyguardViewManager$3;->val$lastView:Lcom/android/internal/policy/impl/PowerOnPassWordView;
@@ -46,12 +46,12 @@
     .locals 3
 
     .prologue
-    .line 380
+    .line 381
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager$3;->this$0:Lcom/android/internal/policy/impl/KeyguardViewManager;
 
     monitor-enter v1
 
-    .line 381
+    .line 382
     :try_start_0
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardViewManager$3;->this$0:Lcom/android/internal/policy/impl/KeyguardViewManager;
 
@@ -64,7 +64,7 @@
 
     invoke-interface {v0, v2}, Landroid/view/ViewManager;->removeView(Landroid/view/View;)V
 
-    .line 382
+    .line 383
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardViewManager$3;->this$0:Lcom/android/internal/policy/impl/KeyguardViewManager;
 
     const/4 v2, 0x0
@@ -72,13 +72,13 @@
     #setter for: Lcom/android/internal/policy/impl/KeyguardViewManager;->mPowerOnPasswordView:Lcom/android/internal/policy/impl/PowerOnPassWordView;
     invoke-static {v0, v2}, Lcom/android/internal/policy/impl/KeyguardViewManager;->access$302(Lcom/android/internal/policy/impl/KeyguardViewManager;Lcom/android/internal/policy/impl/PowerOnPassWordView;)Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
-    .line 383
+    .line 384
     monitor-exit v1
 
-    .line 384
+    .line 385
     return-void
 
-    .line 383
+    .line 384
     :catchall_0
     move-exception v0
 

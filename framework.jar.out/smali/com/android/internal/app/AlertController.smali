@@ -581,7 +581,7 @@
     .local v5, bottomMedium:I
     const/16 v19, 0x0
 
-    const v20, 0x108066e
+    const v20, 0x1080681
 
     move-object/from16 v0, p5
 
@@ -596,7 +596,7 @@
     .line 684
     const/16 v19, 0x1
 
-    const v20, 0x1080676
+    const v20, 0x1080689
 
     move-object/from16 v0, p5
 
@@ -611,7 +611,7 @@
     .line 686
     const/16 v19, 0x2
 
-    const v20, 0x108066a
+    const v20, 0x108067d
 
     move-object/from16 v0, p5
 
@@ -626,7 +626,7 @@
     .line 688
     const/16 v19, 0x3
 
-    const v20, 0x1080667
+    const v20, 0x108067a
 
     move-object/from16 v0, p5
 
@@ -641,7 +641,7 @@
     .line 690
     const/16 v19, 0x4
 
-    const v20, 0x108066d
+    const v20, 0x1080680
 
     move-object/from16 v0, p5
 
@@ -656,7 +656,7 @@
     .line 692
     const/16 v19, 0x5
 
-    const v20, 0x1080675
+    const v20, 0x1080688
 
     move-object/from16 v0, p5
 
@@ -671,7 +671,7 @@
     .line 694
     const/16 v19, 0x6
 
-    const v20, 0x1080669
+    const v20, 0x108067c
 
     move-object/from16 v0, p5
 
@@ -686,7 +686,7 @@
     .line 696
     const/16 v19, 0x7
 
-    const v20, 0x1080664
+    const v20, 0x1080677
 
     move-object/from16 v0, p5
 
@@ -701,7 +701,7 @@
     .line 698
     const/16 v19, 0x8
 
-    const v20, 0x1080668
+    const v20, 0x108067b
 
     move-object/from16 v0, p5
 

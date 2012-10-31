@@ -156,7 +156,7 @@
 
     .line 102
     .local v0, holder:Lcom/oppo/internal/usb/UsbSelectionAdapter$ViewHolder;
-    const v1, 0x102044b
+    const v1, 0x102044c
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -167,7 +167,7 @@
     iput-object v1, v0, Lcom/oppo/internal/usb/UsbSelectionAdapter$ViewHolder;->text:Landroid/widget/TextView;
 
     .line 103
-    const v1, 0x102044c
+    const v1, 0x102044d
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -178,7 +178,7 @@
     iput-object v1, v0, Lcom/oppo/internal/usb/UsbSelectionAdapter$ViewHolder;->detailText:Landroid/widget/TextView;
 
     .line 104
-    const v1, 0x102044d
+    const v1, 0x102044e
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

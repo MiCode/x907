@@ -167,7 +167,7 @@
 	</Module>
 	
 	<!-- NearMeNote ---------------------------------------------------------->
-	<Module name="NearMeCloudNote" path="/system/app/NearMeCloudNote"> 
+	<Module name="NearMeNote" path="/system/app/NearMeNote.apk"> 
 		<item>ic_launcher_nearme_note.png</item>
 	</Module>
 	

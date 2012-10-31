@@ -26,6 +26,9 @@
 .method public abstract goToSleep(J)V
 .end method
 
+.method public abstract isScreenLightOffWithoutSleep()Z
+.end method
+
 .method public abstract isScreenOn()Z
 .end method
 
@@ -39,6 +42,9 @@
 .end method
 
 .method public abstract setScreenBrightnessOverride(I)V
+.end method
+
+.method public abstract setScreenLightOffWithoutSleep(ZZ)Z
 .end method
 
 .method public abstract userActivity(JZI)V

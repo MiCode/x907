@@ -2006,7 +2006,7 @@
 
     move-result-object v1
 
-    const v2, 0x101040a
+    const v2, 0x101040b
 
     const/4 v3, 0x1
 
@@ -3683,7 +3683,7 @@
     .local v2, textLabel:Ljava/lang/String;
     iget-object v4, p0, Landroid/widget/SearchView;->mSubmitButton:Landroid/view/View;
 
-    const v5, 0x1080734
+    const v5, 0x1080747
 
     invoke-virtual {v4, v5}, Landroid/view/View;->setBackgroundResource(I)V
 

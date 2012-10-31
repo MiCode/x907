@@ -298,7 +298,7 @@
 
     sput-object v0, Lcom/android/providers/media/MediaProvider;->sDefaultFolderNames:[Ljava/lang/String;
 
-    .line 3689
+    .line 3696
     new-array v0, v5, [Ljava/lang/String;
 
     const-string v1, "_id"
@@ -311,7 +311,7 @@
 
     sput-object v0, Lcom/android/providers/media/MediaProvider;->GENRE_LOOKUP_PROJECTION:[Ljava/lang/String;
 
-    .line 4114
+    .line 4121
     new-instance v0, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;
 
     const/4 v1, 0x0
@@ -320,7 +320,7 @@
 
     sput-object v0, Lcom/android/providers/media/MediaProvider;->sGetTableAndWhereParam:Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;
 
-    .line 4763
+    .line 4770
     new-array v0, v3, [Ljava/lang/String;
 
     const-string v1, "_data"
@@ -329,12 +329,12 @@
 
     sput-object v0, Lcom/android/providers/media/MediaProvider;->openFileColumns:[Ljava/lang/String;
 
-    .line 5692
+    .line 5699
     const-string v0, "MediaProvider"
 
     sput-object v0, Lcom/android/providers/media/MediaProvider;->TAG:Ljava/lang/String;
 
-    .line 5797
+    .line 5804
     new-instance v0, Landroid/content/UriMatcher;
 
     const/4 v1, -0x1
@@ -343,7 +343,7 @@
 
     sput-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
-    .line 5800
+    .line 5807
     new-array v0, v3, [Ljava/lang/String;
 
     const-string v1, "_id"
@@ -352,7 +352,7 @@
 
     sput-object v0, Lcom/android/providers/media/MediaProvider;->ID_PROJECTION:[Ljava/lang/String;
 
-    .line 5804
+    .line 5811
     new-array v0, v5, [Ljava/lang/String;
 
     const-string v1, "_id"
@@ -365,7 +365,7 @@
 
     sput-object v0, Lcom/android/providers/media/MediaProvider;->PATH_PROJECTION:[Ljava/lang/String;
 
-    .line 5809
+    .line 5816
     new-array v0, v5, [Ljava/lang/String;
 
     const-string v1, "_id"
@@ -378,7 +378,7 @@
 
     sput-object v0, Lcom/android/providers/media/MediaProvider;->MIME_TYPE_PROJECTION:[Ljava/lang/String;
 
-    .line 5814
+    .line 5821
     new-array v0, v6, [Ljava/lang/String;
 
     const-string v1, "_id"
@@ -395,7 +395,7 @@
 
     sput-object v0, Lcom/android/providers/media/MediaProvider;->READY_FLAG_PROJECTION:[Ljava/lang/String;
 
-    .line 5827
+    .line 5834
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -404,7 +404,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5828
+    .line 5835
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -413,7 +413,7 @@
 
     invoke-virtual {v0, v1, v2, v5}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5829
+    .line 5836
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -422,7 +422,7 @@
 
     invoke-virtual {v0, v1, v2, v6}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5830
+    .line 5837
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -431,7 +431,7 @@
 
     invoke-virtual {v0, v1, v2, v7}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5832
+    .line 5839
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -442,7 +442,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5833
+    .line 5840
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -453,7 +453,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5834
+    .line 5841
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -464,7 +464,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5835
+    .line 5842
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -475,7 +475,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5836
+    .line 5843
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -486,7 +486,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5837
+    .line 5844
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -497,7 +497,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5838
+    .line 5845
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -508,7 +508,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5839
+    .line 5846
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -519,7 +519,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5840
+    .line 5847
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -530,7 +530,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5841
+    .line 5848
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -541,7 +541,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5842
+    .line 5849
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -552,7 +552,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5843
+    .line 5850
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -563,7 +563,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5844
+    .line 5851
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -574,7 +574,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5845
+    .line 5852
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -585,7 +585,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5846
+    .line 5853
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -596,7 +596,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5847
+    .line 5854
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -607,7 +607,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5848
+    .line 5855
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -618,7 +618,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5849
+    .line 5856
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -629,7 +629,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5850
+    .line 5857
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -640,7 +640,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5851
+    .line 5858
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -651,7 +651,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5852
+    .line 5859
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -662,7 +662,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5853
+    .line 5860
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -673,7 +673,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5854
+    .line 5861
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -684,7 +684,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5855
+    .line 5862
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -695,7 +695,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5856
+    .line 5863
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -706,7 +706,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5857
+    .line 5864
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -717,7 +717,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5858
+    .line 5865
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -728,7 +728,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5859
+    .line 5866
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -739,7 +739,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5860
+    .line 5867
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -750,7 +750,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5861
+    .line 5868
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -761,7 +761,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5862
+    .line 5869
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -772,7 +772,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5864
+    .line 5871
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -783,7 +783,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5866
+    .line 5873
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -794,7 +794,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5867
+    .line 5874
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -805,7 +805,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5869
+    .line 5876
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -816,7 +816,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5871
+    .line 5878
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -827,7 +827,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5872
+    .line 5879
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -838,7 +838,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5875
+    .line 5882
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -849,7 +849,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5876
+    .line 5883
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -860,7 +860,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5877
+    .line 5884
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -871,7 +871,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5878
+    .line 5885
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -882,7 +882,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5879
+    .line 5886
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -893,7 +893,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5884
+    .line 5891
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -904,7 +904,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5886
+    .line 5893
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -915,7 +915,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5890
+    .line 5897
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -926,7 +926,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5892
+    .line 5899
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -937,7 +937,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5894
+    .line 5901
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -948,7 +948,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5896
+    .line 5903
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -959,7 +959,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5900
+    .line 5907
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -970,7 +970,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5901
+    .line 5908
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -981,7 +981,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5902
+    .line 5909
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -992,7 +992,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5903
+    .line 5910
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -1003,7 +1003,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5904
+    .line 5911
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -1014,7 +1014,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5905
+    .line 5912
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -1025,7 +1025,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5906
+    .line 5913
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -1036,7 +1036,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5907
+    .line 5914
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -1047,7 +1047,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5908
+    .line 5915
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -1058,7 +1058,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5910
+    .line 5917
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     const-string v1, "media"
@@ -1069,7 +1069,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 5912
+    .line 5919
     return-void
 .end method
 
@@ -1158,7 +1158,7 @@
 
     aput-object v1, v0, v4
 
-    const-string v1, "(CASE WHEN grouporder=1 THEN 2130837505 ELSE CASE WHEN grouporder=2 THEN 2130837504 ELSE 2130837506 END END) AS suggest_icon_1"
+    const-string v1, "(CASE WHEN grouporder=1 THEN 2130837508 ELSE CASE WHEN grouporder=2 THEN 2130837507 ELSE 2130837509 END END) AS suggest_icon_1"
 
     aput-object v1, v0, v6
 
@@ -1266,7 +1266,7 @@
 
     aput-object v1, v0, v4
 
-    const-string v1, "2130837507 AS suggest_icon_1"
+    const-string v1, "2130837510 AS suggest_icon_1"
 
     aput-object v1, v0, v6
 
@@ -1299,7 +1299,7 @@
 
     aput-object v1, v0, v4
 
-    const-string v1, "(CASE WHEN grouporder=1 THEN 2130837505 ELSE CASE WHEN grouporder=2 THEN 2130837504 ELSE 2130837506 END END) AS suggest_icon_1"
+    const-string v1, "(CASE WHEN grouporder=1 THEN 2130837508 ELSE CASE WHEN grouporder=2 THEN 2130837507 ELSE 2130837509 END END) AS suggest_icon_1"
 
     aput-object v1, v0, v6
 
@@ -1358,7 +1358,7 @@
 
     iput-object v0, p0, Lcom/android/providers/media/MediaProvider;->mMtpServiceConnection:Landroid/content/ServiceConnection;
 
-    .line 5714
+    .line 5721
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/android/providers/media/MediaProvider;->mVolumeId:I
@@ -1582,7 +1582,7 @@
 
     const/4 v6, 0x0
 
-    .line 5494
+    .line 5501
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
     move-result v0
@@ -1593,7 +1593,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 5495
+    .line 5502
     new-instance v0, Ljava/lang/SecurityException;
 
     const-string v1, "Opening and closing databases not allowed."
@@ -1602,7 +1602,7 @@
 
     throw v0
 
-    .line 5499
+    .line 5506
     :cond_0
     invoke-static {}, Lcom/android/providers/media/MediaProvider;->isStorageMounted()Z
 
@@ -1610,12 +1610,12 @@
 
     iput-boolean v0, p0, Lcom/android/providers/media/MediaProvider;->mIsInternalMounted:Z
 
-    .line 5500
+    .line 5507
     iget-object v8, p0, Lcom/android/providers/media/MediaProvider;->mDatabases:Ljava/util/HashMap;
 
     monitor-enter v8
 
-    .line 5501
+    .line 5508
     :try_start_0
     iget-object v0, p0, Lcom/android/providers/media/MediaProvider;->mDatabases:Ljava/util/HashMap;
 
@@ -1625,7 +1625,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 5502
+    .line 5509
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1650,17 +1650,17 @@
 
     monitor-exit v8
 
-    .line 5647
+    .line 5654
     :goto_0
     return-object v0
 
-    .line 5505
+    .line 5512
     :cond_1
     invoke-virtual {p0}, Lcom/android/providers/media/MediaProvider;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    .line 5507
+    .line 5514
     const-string v0, "internal"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -1669,7 +1669,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 5508
+    .line 5515
     new-instance v0, Lcom/android/providers/media/MediaProvider$DatabaseHelper;
 
     const-string v2, "internal.db"
@@ -1682,7 +1682,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/android/providers/media/MediaProvider$DatabaseHelper;-><init>(Landroid/content/Context;Ljava/lang/String;ZZLandroid/database/sqlite/SQLiteDatabase$CustomFunction;)V
 
-    .line 5510
+    .line 5517
     sget-object v1, Lcom/android/providers/media/MediaProvider;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1705,18 +1705,18 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5569
+    .line 5576
     :goto_1
     iget-object v1, p0, Lcom/android/providers/media/MediaProvider;->mDatabases:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5571
+    .line 5578
     iget-boolean v0, v0, Lcom/android/providers/media/MediaProvider$DatabaseHelper;->mInternal:Z
 
     if-nez v0, :cond_16
 
-    .line 5576
+    .line 5583
     new-instance v0, Ljava/io/File;
 
     sget-object v1, Lcom/android/providers/media/MediaProvider;->mExternalStoragePaths:[Ljava/lang/String;
@@ -1733,14 +1733,14 @@
 
     move-result-object v1
 
-    .line 5577
+    .line 5584
     new-instance v7, Ljava/util/HashSet;
 
     invoke-direct {v7}, Ljava/util/HashSet;-><init>()V
 
     move v0, v6
 
-    .line 5578
+    .line 5585
     :goto_2
     if-eqz v1, :cond_a
 
@@ -1748,7 +1748,7 @@
 
     if-ge v0, v2, :cond_a
 
-    .line 5579
+    .line 5586
     aget-object v2, v1, v0
 
     invoke-virtual {v2}, Ljava/io/File;->getPath()Ljava/lang/String;
@@ -1757,12 +1757,12 @@
 
     invoke-virtual {v7, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 5578
+    .line 5585
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_2
 
-    .line 5511
+    .line 5518
     :cond_2
     const-string v0, "external"
 
@@ -1772,26 +1772,26 @@
 
     if-eqz v0, :cond_9
 
-    .line 5512
+    .line 5519
     invoke-static {}, Loppo/os/Environment;->isExternalStorageRemovable()Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    .line 5513
+    .line 5520
     sget-object v0, Lcom/android/providers/media/MediaProvider;->mExternalStoragePaths:[Ljava/lang/String;
 
     const/4 v2, 0x0
 
     aget-object v0, v0, v2
 
-    .line 5514
+    .line 5521
     invoke-static {v0}, Landroid/os/FileUtils;->getFatVolumeId(Ljava/lang/String;)I
 
     move-result v7
 
-    .line 5518
+    .line 5525
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1820,7 +1820,7 @@
 
     move-result-object v2
 
-    .line 5519
+    .line 5526
     new-instance v0, Lcom/android/providers/media/MediaProvider$DatabaseHelper;
 
     const/4 v3, 0x0
@@ -1831,7 +1831,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/android/providers/media/MediaProvider$DatabaseHelper;-><init>(Landroid/content/Context;Ljava/lang/String;ZZLandroid/database/sqlite/SQLiteDatabase$CustomFunction;)V
 
-    .line 5521
+    .line 5528
     sget-object v1, Lcom/android/providers/media/MediaProvider;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1854,12 +1854,12 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5522
+    .line 5529
     iput v7, p0, Lcom/android/providers/media/MediaProvider;->mVolumeId:I
 
     goto/16 :goto_1
 
-    .line 5644
+    .line 5651
     :catchall_0
     move-exception v0
 
@@ -1869,7 +1869,7 @@
 
     throw v0
 
-    .line 5528
+    .line 5535
     :cond_3
     :try_start_1
     const-string v0, "external.db"
@@ -1878,14 +1878,14 @@
 
     move-result-object v3
 
-    .line 5529
+    .line 5536
     invoke-virtual {v3}, Ljava/io/File;->exists()Z
 
     move-result v0
 
     if-nez v0, :cond_17
 
-    .line 5534
+    .line 5541
     invoke-virtual {v1}, Landroid/content/Context;->databaseList()[Ljava/lang/String;
 
     move-result-object v5
@@ -1899,7 +1899,7 @@
 
     aget-object v0, v5, v4
 
-    .line 5535
+    .line 5542
     const-string v9, "external-"
 
     invoke-virtual {v0, v9}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
@@ -1908,15 +1908,15 @@
 
     if-eqz v9, :cond_6
 
-    .line 5536
+    .line 5543
     invoke-virtual {v1, v0}, Landroid/content/Context;->getDatabasePath(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 
-    .line 5537
+    .line 5544
     if-nez v2, :cond_4
 
-    .line 5534
+    .line 5541
     :goto_4
     add-int/lit8 v2, v4, 0x1
 
@@ -1926,7 +1926,7 @@
 
     goto :goto_3
 
-    .line 5539
+    .line 5546
     :cond_4
     invoke-virtual {v0}, Ljava/io/File;->lastModified()J
 
@@ -1940,12 +1940,12 @@
 
     if-lez v9, :cond_5
 
-    .line 5540
+    .line 5547
     invoke-virtual {v2}, Ljava/io/File;->delete()Z
 
     goto :goto_4
 
-    .line 5543
+    .line 5550
     :cond_5
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
 
@@ -1954,18 +1954,18 @@
 
     goto :goto_4
 
-    .line 5547
+    .line 5554
     :cond_7
     if-eqz v2, :cond_17
 
-    .line 5548
+    .line 5555
     invoke-virtual {v2, v3}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
 
     move-result v0
 
     if-eqz v0, :cond_8
 
-    .line 5549
+    .line 5556
     sget-object v0, Lcom/android/providers/media/MediaProvider;->TAG:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -2006,7 +2006,7 @@
 
     move-object v7, v3
 
-    .line 5561
+    .line 5568
     :goto_5
     new-instance v0, Lcom/android/providers/media/MediaProvider$DatabaseHelper;
 
@@ -2022,7 +2022,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/android/providers/media/MediaProvider$DatabaseHelper;-><init>(Landroid/content/Context;Ljava/lang/String;ZZLandroid/database/sqlite/SQLiteDatabase$CustomFunction;)V
 
-    .line 5563
+    .line 5570
     sget-object v1, Lcom/android/providers/media/MediaProvider;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -2051,7 +2051,7 @@
 
     goto/16 :goto_1
 
-    .line 5552
+    .line 5559
     :cond_8
     sget-object v0, Lcom/android/providers/media/MediaProvider;->TAG:Ljava/lang/String;
 
@@ -2093,10 +2093,10 @@
 
     move-object v7, v2
 
-    .line 5556
+    .line 5563
     goto :goto_5
 
-    .line 5566
+    .line 5573
     :cond_9
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -2122,7 +2122,7 @@
 
     throw v0
 
-    .line 5582
+    .line 5589
     :cond_a
     new-instance v0, Ljava/io/File;
 
@@ -2140,7 +2140,7 @@
 
     move v0, v6
 
-    .line 5583
+    .line 5590
     :goto_6
     if-eqz v1, :cond_b
 
@@ -2148,7 +2148,7 @@
 
     if-ge v0, v2, :cond_b
 
-    .line 5585
+    .line 5592
     aget-object v2, v1, v0
 
     invoke-virtual {v2}, Ljava/io/File;->getPath()Ljava/lang/String;
@@ -2157,12 +2157,12 @@
 
     invoke-virtual {v7, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 5583
+    .line 5590
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_6
 
-    .line 5588
+    .line 5595
     :cond_b
     sget-object v1, Landroid/provider/MediaStore$Audio$Albums;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
@@ -2190,7 +2190,7 @@
 
     move-result-object v1
 
-    .line 5592
+    .line 5599
     :goto_7
     if-eqz v1, :cond_d
 
@@ -2201,7 +2201,7 @@
 
     if-eqz v0, :cond_d
 
-    .line 5593
+    .line 5600
     const/4 v0, 0x0
 
     invoke-interface {v1, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
@@ -2214,7 +2214,7 @@
 
     goto :goto_7
 
-    .line 5596
+    .line 5603
     :catchall_1
     move-exception v0
 
@@ -2231,7 +2231,7 @@
 
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 5599
+    .line 5606
     :cond_e
     sget-object v1, Lcom/android/providers/media/MediaProvider;->AUDIO_THUMB_URI:Landroid/net/Uri;
 
@@ -2259,7 +2259,7 @@
 
     move-result-object v1
 
-    .line 5604
+    .line 5611
     :cond_f
     :goto_8
     if-eqz v1, :cond_11
@@ -2271,17 +2271,17 @@
 
     if-eqz v0, :cond_11
 
-    .line 5606
+    .line 5613
     const/4 v0, 0x0
 
     invoke-interface {v1, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 5607
+    .line 5614
     if-eqz v0, :cond_f
 
-    .line 5609
+    .line 5616
     const/4 v0, 0x0
 
     invoke-interface {v1, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
@@ -2294,27 +2294,27 @@
 
     goto :goto_8
 
-    .line 5615
+    .line 5622
     :catchall_2
     move-exception v0
 
     if-eqz v1, :cond_10
 
-    .line 5616
+    .line 5623
     :try_start_5
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
     :cond_10
     throw v0
 
-    .line 5615
+    .line 5622
     :cond_11
     if-eqz v1, :cond_12
 
-    .line 5616
+    .line 5623
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 5619
+    .line 5626
     :cond_12
     sget-object v1, Landroid/provider/MediaStore$Audio$Artists;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
@@ -2342,7 +2342,7 @@
 
     move-result-object v1
 
-    .line 5624
+    .line 5631
     :goto_9
     if-eqz v1, :cond_14
 
@@ -2353,7 +2353,7 @@
 
     if-eqz v0, :cond_14
 
-    .line 5626
+    .line 5633
     const/4 v0, 0x0
 
     invoke-interface {v1, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
@@ -2366,33 +2366,33 @@
 
     goto :goto_9
 
-    .line 5631
+    .line 5638
     :catchall_3
     move-exception v0
 
     if-eqz v1, :cond_13
 
-    .line 5633
+    .line 5640
     :try_start_7
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
     :cond_13
     throw v0
 
-    .line 5631
+    .line 5638
     :cond_14
     if-eqz v1, :cond_15
 
-    .line 5633
+    .line 5640
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 5637
+    .line 5644
     :cond_15
     invoke-virtual {v7}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
-    .line 5638
+    .line 5645
     :goto_a
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -2400,14 +2400,14 @@
 
     if-eqz v0, :cond_16
 
-    .line 5639
+    .line 5646
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
-    .line 5641
+    .line 5648
     new-instance v2, Ljava/io/File;
 
     invoke-direct {v2, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -2416,13 +2416,13 @@
 
     goto :goto_a
 
-    .line 5644
+    .line 5651
     :cond_16
     monitor-exit v8
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
-    .line 5647
+    .line 5654
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -2905,7 +2905,7 @@
     .parameter
 
     .prologue
-    .line 5658
+    .line 5665
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
     move-result v0
@@ -2916,7 +2916,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 5659
+    .line 5666
     new-instance v0, Ljava/lang/SecurityException;
 
     const-string v1, "Opening and closing databases not allowed."
@@ -2925,7 +2925,7 @@
 
     throw v0
 
-    .line 5663
+    .line 5670
     :cond_0
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -2939,7 +2939,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 5664
+    .line 5671
     const-string v1, "internal"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -2948,7 +2948,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 5665
+    .line 5672
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     const-string v1, "Deleting the internal volume is not allowed"
@@ -2957,7 +2957,7 @@
 
     throw v0
 
-    .line 5667
+    .line 5674
     :cond_1
     const-string v1, "external"
 
@@ -2967,7 +2967,7 @@
 
     if-nez v1, :cond_2
 
-    .line 5668
+    .line 5675
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -2992,13 +2992,13 @@
 
     throw v1
 
-    .line 5672
+    .line 5679
     :cond_2
     iget-object v3, p0, Lcom/android/providers/media/MediaProvider;->mDatabases:Ljava/util/HashMap;
 
     monitor-enter v3
 
-    .line 5673
+    .line 5680
     :try_start_0
     iget-object v1, p0, Lcom/android/providers/media/MediaProvider;->mDatabases:Ljava/util/HashMap;
 
@@ -3008,18 +3008,18 @@
 
     check-cast v1, Lcom/android/providers/media/MediaProvider$DatabaseHelper;
 
-    .line 5674
+    .line 5681
     if-nez v1, :cond_3
 
     monitor-exit v3
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 5690
+    .line 5697
     :goto_0
     return-void
 
-    .line 5678
+    .line 5685
     :cond_3
     :try_start_1
     new-instance v2, Ljava/io/File;
@@ -3034,7 +3034,7 @@
 
     invoke-direct {v2, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 5679
+    .line 5686
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v4
@@ -3044,22 +3044,22 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 5684
+    .line 5691
     :goto_1
     :try_start_2
     iget-object v2, p0, Lcom/android/providers/media/MediaProvider;->mDatabases:Ljava/util/HashMap;
 
     invoke-virtual {v2, v0}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5685
+    .line 5692
     invoke-virtual {v1}, Lcom/android/providers/media/MediaProvider$DatabaseHelper;->close()V
 
-    .line 5686
+    .line 5693
     monitor-exit v3
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 5688
+    .line 5695
     invoke-virtual {p0}, Lcom/android/providers/media/MediaProvider;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -3074,11 +3074,11 @@
 
     goto :goto_0
 
-    .line 5680
+    .line 5687
     :catch_0
     move-exception v2
 
-    .line 5681
+    .line 5688
     :try_start_3
     sget-object v4, Lcom/android/providers/media/MediaProvider;->TAG:Ljava/lang/String;
 
@@ -3088,7 +3088,7 @@
 
     goto :goto_1
 
-    .line 5686
+    .line 5693
     :catchall_0
     move-exception v0
 
@@ -3858,12 +3858,12 @@
 
     const/4 v6, 0x0
 
-    .line 4087
+    .line 4094
     new-instance v2, Ljava/io/File;
 
     invoke-direct {v2, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 4088
+    .line 4095
     .local v2, file:Ljava/io/File;
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
@@ -3871,11 +3871,11 @@
 
     if-eqz v7, :cond_0
 
-    .line 4105
+    .line 4112
     :goto_0
     return v5
 
-    .line 4093
+    .line 4100
     :cond_0
     const/16 v7, 0x2f
 
@@ -3883,7 +3883,7 @@
 
     move-result v4
 
-    .line 4094
+    .line 4101
     .local v4, secondSlash:I
     if-ge v4, v5, :cond_1
 
@@ -3891,19 +3891,19 @@
 
     goto :goto_0
 
-    .line 4095
+    .line 4102
     :cond_1
     invoke-virtual {p1, v6, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 4096
+    .line 4103
     .local v1, directoryPath:Ljava/lang/String;
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 4097
+    .line 4104
     .local v0, directory:Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -3913,10 +3913,10 @@
 
     move v5, v6
 
-    .line 4098
+    .line 4105
     goto :goto_0
 
-    .line 4099
+    .line 4106
     :cond_2
     invoke-virtual {v2}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
@@ -3924,7 +3924,7 @@
 
     invoke-virtual {v5}, Ljava/io/File;->mkdirs()Z
 
-    .line 4101
+    .line 4108
     :try_start_0
     invoke-virtual {v2}, Ljava/io/File;->createNewFile()Z
     :try_end_0
@@ -3934,11 +3934,11 @@
 
     goto :goto_0
 
-    .line 4102
+    .line 4109
     :catch_0
     move-exception v3
 
-    .line 4103
+    .line 4110
     .local v3, ioe:Ljava/io/IOException;
     sget-object v5, Lcom/android/providers/media/MediaProvider;->TAG:Ljava/lang/String;
 
@@ -3948,7 +3948,7 @@
 
     move v5, v6
 
-    .line 4105
+    .line 4112
     goto :goto_0
 .end method
 
@@ -3959,7 +3959,7 @@
     .parameter "directoryName"
 
     .prologue
-    .line 4063
+    .line 4070
     const-wide/16 v4, -0x1
 
     move-object v0, p0
@@ -3985,10 +3985,10 @@
     .parameter "id"
 
     .prologue
-    .line 4068
+    .line 4075
     const/4 v0, 0x0
 
-    .line 4069
+    .line 4076
     .local v0, name:Ljava/lang/String;
     const-wide/16 v1, -0x1
 
@@ -3996,7 +3996,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 4071
+    .line 4078
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -4015,11 +4015,11 @@
 
     move-result-object v0
 
-    .line 4077
+    .line 4084
     :goto_0
     if-eqz p1, :cond_1
 
-    .line 4078
+    .line 4085
     new-instance v1, Ljava/lang/UnsupportedOperationException;
 
     const-string v2, "Writing to internal storage is not supported."
@@ -4028,7 +4028,7 @@
 
     throw v1
 
-    .line 4075
+    .line 4082
     :cond_0
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -4040,7 +4040,7 @@
 
     goto :goto_0
 
-    .line 4082
+    .line 4089
     :cond_1
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -4093,28 +4093,28 @@
     .parameter
 
     .prologue
-    .line 4968
+    .line 4975
     const/4 v0, 0x0
 
-    .line 4971
+    .line 4978
     :try_start_0
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 4972
+    .line 4979
     const/high16 v2, 0x1000
 
     invoke-static {v1, v2}, Landroid/os/ParcelFileDescriptor;->open(Ljava/io/File;I)Landroid/os/ParcelFileDescriptor;
 
     move-result-object v1
 
-    .line 4975
+    .line 4982
     new-instance v2, Landroid/media/MediaScanner;
 
     invoke-direct {v2, p0}, Landroid/media/MediaScanner;-><init>(Landroid/content/Context;)V
 
-    .line 4976
+    .line 4983
     invoke-virtual {v1}, Landroid/os/ParcelFileDescriptor;->getFileDescriptor()Ljava/io/FileDescriptor;
 
     move-result-object v3
@@ -4123,16 +4123,16 @@
 
     move-result-object v0
 
-    .line 4977
+    .line 4984
     invoke-virtual {v1}, Landroid/os/ParcelFileDescriptor;->close()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 5060
+    .line 5067
     :goto_0
     return-object v0
 
-    .line 5057
+    .line 5064
     :catch_0
     move-exception v1
 
@@ -4146,12 +4146,12 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 5428
+    .line 5435
     iget-object v1, p0, Lcom/android/providers/media/MediaProvider;->mDatabases:Ljava/util/HashMap;
 
     monitor-enter v1
 
-    .line 5429
+    .line 5436
     :try_start_0
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -4163,7 +4163,7 @@
 
     if-le v0, v2, :cond_2
 
-    .line 5430
+    .line 5437
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v0
@@ -4184,12 +4184,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 5432
+    .line 5439
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/providers/media/MediaProvider;->isAll:Z
 
-    .line 5433
+    .line 5440
     iget-object v0, p0, Lcom/android/providers/media/MediaProvider;->mDatabases:Ljava/util/HashMap;
 
     const-string v2, "external"
@@ -4202,11 +4202,11 @@
 
     monitor-exit v1
 
-    .line 5447
+    .line 5454
     :goto_0
     return-object v0
 
-    .line 5435
+    .line 5442
     :cond_0
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -4228,12 +4228,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 5437
+    .line 5444
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/providers/media/MediaProvider;->isAll:Z
 
-    .line 5438
+    .line 5445
     iget-object v0, p0, Lcom/android/providers/media/MediaProvider;->mDatabases:Ljava/util/HashMap;
 
     const-string v2, "external"
@@ -4248,7 +4248,7 @@
 
     goto :goto_0
 
-    .line 5446
+    .line 5453
     :catchall_0
     move-exception v0
 
@@ -4258,14 +4258,14 @@
 
     throw v0
 
-    .line 5442
+    .line 5449
     :cond_1
     const/4 v0, 0x0
 
     :try_start_1
     iput-boolean v0, p0, Lcom/android/providers/media/MediaProvider;->isAll:Z
 
-    .line 5443
+    .line 5450
     iget-object v0, p0, Lcom/android/providers/media/MediaProvider;->mDatabases:Ljava/util/HashMap;
 
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
@@ -4288,13 +4288,13 @@
 
     goto :goto_0
 
-    .line 5446
+    .line 5453
     :cond_2
     monitor-exit v1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 5447
+    .line 5454
     const/4 v0, 0x0
 
     goto :goto_0
@@ -4358,7 +4358,7 @@
     .end annotation
 
     .prologue
-    .line 5269
+    .line 5276
     if-eqz p5, :cond_0
 
     invoke-virtual/range {p5 .. p5}, Ljava/lang/String;->length()I
@@ -4367,20 +4367,20 @@
 
     if-nez v2, :cond_1
 
-    .line 5270
+    .line 5277
     :cond_0
     const-string p5, "<unknown>"
 
-    .line 5272
+    .line 5279
     :cond_1
     invoke-static/range {p5 .. p5}, Landroid/provider/MediaStore$Audio;->keyFor(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v10
 
-    .line 5274
+    .line 5281
     if-nez v10, :cond_3
 
-    .line 5276
+    .line 5283
     sget-object v2, Lcom/android/providers/media/MediaProvider;->TAG:Ljava/lang/String;
 
     const-string v3, "null key"
@@ -4391,15 +4391,15 @@
 
     invoke-static {v2, v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 5277
+    .line 5284
     const-wide/16 v2, -0x1
 
-    .line 5374
+    .line 5381
     :cond_2
     :goto_0
     return-wide v2
 
-    .line 5280
+    .line 5287
     :cond_3
     const-string v2, "albums"
 
@@ -4407,7 +4407,7 @@
 
     move-result v11
 
-    .line 5281
+    .line 5288
     const-string v2, "<unknown>"
 
     move-object/from16 v0, p5
@@ -4416,7 +4416,7 @@
 
     move-result v12
 
-    .line 5298
+    .line 5305
     const/4 v2, 0x1
 
     new-array v6, v2, [Ljava/lang/String;
@@ -4425,7 +4425,7 @@
 
     aput-object v10, v6, v2
 
-    .line 5299
+    .line 5306
     const/4 v4, 0x0
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -4462,7 +4462,7 @@
 
     move-result-object v4
 
-    .line 5302
+    .line 5309
     :try_start_0
     invoke-interface {v4}, Landroid/database/Cursor;->getCount()I
 
@@ -4470,7 +4470,7 @@
 
     packed-switch v2, :pswitch_data_0
 
-    .line 5363
+    .line 5370
     sget-object v2, Lcom/android/providers/media/MediaProvider;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -4505,23 +4505,23 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 5364
+    .line 5371
     const-wide/16 v2, -0x1
 
-    .line 5368
+    .line 5375
     :cond_4
     :goto_1
     if-eqz v4, :cond_5
 
     invoke-interface {v4}, Landroid/database/Cursor;->close()V
 
-    .line 5371
+    .line 5378
     :cond_5
     if-eqz p10, :cond_2
 
     if-nez v12, :cond_2
 
-    .line 5372
+    .line 5379
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v4
@@ -4534,26 +4534,26 @@
 
     goto :goto_0
 
-    .line 5305
+    .line 5312
     :pswitch_0
     :try_start_1
     new-instance v2, Landroid/content/ContentValues;
 
     invoke-direct {v2}, Landroid/content/ContentValues;-><init>()V
 
-    .line 5306
+    .line 5313
     move-object/from16 v0, p3
 
     invoke-virtual {v2, v0, v10}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5307
+    .line 5314
     move-object/from16 v0, p4
 
     move-object/from16 v1, p5
 
     invoke-virtual {v2, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5308
+    .line 5315
     if-eqz p7, :cond_6
 
     const-string v3, "/system/media"
@@ -4568,21 +4568,21 @@
 
     if-eqz v3, :cond_6
 
-    .line 5311
+    .line 5318
     const-wide/16 v2, -0x1
 
-    .line 5368
+    .line 5375
     if-eqz v4, :cond_2
 
     invoke-interface {v4}, Landroid/database/Cursor;->close()V
 
     goto/16 :goto_0
 
-    .line 5313
+    .line 5320
     :cond_6
     if-eqz v11, :cond_9
 
-    .line 5315
+    .line 5322
     :try_start_2
     const-string v3, "albums"
 
@@ -4590,7 +4590,7 @@
 
     invoke-direct {p0, v3, v0, v2}, Lcom/android/providers/media/MediaProvider;->updateAdditionalColumns(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)V
 
-    .line 5321
+    .line 5328
     :goto_2
     const-string v3, "duration"
 
@@ -4598,19 +4598,19 @@
 
     move-result-wide v2
 
-    .line 5322
+    .line 5329
     if-eqz p7, :cond_7
 
     if-eqz v11, :cond_7
 
     if-nez v12, :cond_7
 
-    .line 5324
+    .line 5331
     move-object/from16 v0, p7
 
     invoke-direct {p0, p1, v0, v2, v3}, Lcom/android/providers/media/MediaProvider;->makeThumbAsync(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;J)V
 
-    .line 5326
+    .line 5333
     :cond_7
     const-wide/16 v5, 0x0
 
@@ -4618,7 +4618,7 @@
 
     if-lez v5, :cond_4
 
-    .line 5327
+    .line 5334
     invoke-virtual/range {p11 .. p11}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object v5
@@ -4631,7 +4631,7 @@
 
     move-result-object v5
 
-    .line 5328
+    .line 5335
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -4674,7 +4674,7 @@
 
     move-result-object v5
 
-    .line 5329
+    .line 5336
     invoke-virtual {p0}, Lcom/android/providers/media/MediaProvider;->getContext()Landroid/content/Context;
 
     move-result-object v6
@@ -4691,7 +4691,7 @@
 
     goto/16 :goto_1
 
-    .line 5368
+    .line 5375
     :catchall_0
     move-exception v2
 
@@ -4702,7 +4702,7 @@
     :cond_8
     throw v2
 
-    .line 5319
+    .line 5326
     :cond_9
     :try_start_3
     const-string v3, "artists"
@@ -4713,59 +4713,59 @@
 
     goto :goto_2
 
-    .line 5335
+    .line 5342
     :pswitch_1
     invoke-interface {v4}, Landroid/database/Cursor;->moveToFirst()Z
 
-    .line 5336
+    .line 5343
     const/4 v2, 0x0
 
     invoke-interface {v4, v2}, Landroid/database/Cursor;->getLong(I)J
 
     move-result-wide v2
 
-    .line 5340
+    .line 5347
     const/4 v5, 0x2
 
     invoke-interface {v4, v5}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 5341
+    .line 5348
     move-object/from16 v0, p5
 
     invoke-virtual {p0, v0, v5}, Lcom/android/providers/media/MediaProvider;->makeBestName(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 5342
+    .line 5349
     invoke-virtual {v6, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v5
 
     if-nez v5, :cond_4
 
-    .line 5344
+    .line 5351
     new-instance v5, Landroid/content/ContentValues;
 
     invoke-direct {v5}, Landroid/content/ContentValues;-><init>()V
 
-    .line 5345
+    .line 5352
     move-object/from16 v0, p4
 
     invoke-virtual {v5, v0, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5346
+    .line 5353
     if-eqz v11, :cond_a
 
-    .line 5348
+    .line 5355
     const-string v6, "albums"
 
     move-object/from16 v0, p5
 
     invoke-direct {p0, v6, v0, v5}, Lcom/android/providers/media/MediaProvider;->updateAdditionalColumns(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)V
 
-    .line 5354
+    .line 5361
     :goto_3
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -4795,7 +4795,7 @@
 
     invoke-virtual {p1, p2, v5, v6, v7}, Landroid/database/sqlite/SQLiteDatabase;->update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 5355
+    .line 5362
     invoke-virtual/range {p11 .. p11}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object v5
@@ -4808,7 +4808,7 @@
 
     move-result-object v5
 
-    .line 5356
+    .line 5363
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -4851,7 +4851,7 @@
 
     move-result-object v5
 
-    .line 5357
+    .line 5364
     invoke-virtual {p0}, Lcom/android/providers/media/MediaProvider;->getContext()Landroid/content/Context;
 
     move-result-object v6
@@ -4866,7 +4866,7 @@
 
     goto/16 :goto_1
 
-    .line 5352
+    .line 5359
     :cond_a
     const-string v6, "artists"
 
@@ -4878,7 +4878,7 @@
 
     goto :goto_3
 
-    .line 5302
+    .line 5309
     nop
 
     :pswitch_data_0
@@ -4900,7 +4900,7 @@
 
     const/4 v5, 0x0
 
-    .line 3594
+    .line 3601
     const-string v1, "files"
 
     sget-object v2, Lcom/android/providers/media/MediaProvider;->mMediaTableColumns:[Ljava/lang/String;
@@ -4925,7 +4925,7 @@
 
     move-result-object v8
 
-    .line 3598
+    .line 3605
     .local v8, c:Landroid/database/Cursor;
     if-eqz v8, :cond_2
 
@@ -4936,14 +4936,14 @@
 
     if-eqz v0, :cond_2
 
-    .line 3599
+    .line 3606
     const/4 v0, 0x0
 
     invoke-interface {v8, v0}, Landroid/database/Cursor;->getLong(I)J
 
     move-result-wide v10
 
-    .line 3600
+    .line 3607
     .local v10, playlistId:J
     const/4 v0, 0x1
 
@@ -4953,26 +4953,26 @@
 
     move-result v9
 
-    .line 3601
+    .line 3608
     .local v9, mediaType:I
     const/4 v0, 0x4
 
     if-eq v9, v0, :cond_1
 
-    .line 3609
+    .line 3616
     if-eqz v8, :cond_0
 
-    .line 3610
+    .line 3617
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
-    .line 3613
+    .line 3620
     .end local v9           #mediaType:I
     .end local v10           #playlistId:J
     :cond_0
     :goto_0
     return-object v5
 
-    .line 3605
+    .line 3612
     .restart local v9       #mediaType:I
     .restart local v10       #playlistId:J
     :cond_1
@@ -4997,32 +4997,32 @@
 
     move-result-object v5
 
-    .line 3609
+    .line 3616
     if-eqz v8, :cond_0
 
-    .line 3610
+    .line 3617
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
     goto :goto_0
 
-    .line 3609
+    .line 3616
     .end local v9           #mediaType:I
     .end local v10           #playlistId:J
     :cond_2
     if-eqz v8, :cond_0
 
-    .line 3610
+    .line 3617
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
     goto :goto_0
 
-    .line 3609
+    .line 3616
     :catchall_0
     move-exception v0
 
     if-eqz v8, :cond_3
 
-    .line 3610
+    .line 3617
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
     :cond_3
@@ -5030,75 +5030,71 @@
 .end method
 
 .method private getParent(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)J
-    .locals 18
+    .locals 16
     .parameter "db"
     .parameter "path"
 
     .prologue
     .line 3251
-    const/16 v3, 0x2f
+    const/16 v1, 0x2f
 
     move-object/from16 v0, p2
 
-    invoke-virtual {v0, v3}, Ljava/lang/String;->lastIndexOf(I)I
+    invoke-virtual {v0, v1}, Ljava/lang/String;->lastIndexOf(I)I
 
-    move-result v16
+    move-result v14
 
     .line 3252
-    .local v16, lastSlash:I
-    if-lez v16, :cond_8
+    .local v14, lastSlash:I
+    if-lez v14, :cond_8
 
     .line 3253
-    const/4 v3, 0x0
+    const/4 v1, 0x0
 
     move-object/from16 v0, p2
 
-    move/from16 v1, v16
+    invoke-virtual {v0, v1, v14}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    invoke-virtual {v0, v3, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v17
+    move-result-object v15
 
     .line 3254
-    .local v17, parentPath:Ljava/lang/String;
-    const/4 v13, 0x0
+    .local v15, parentPath:Ljava/lang/String;
+    const/4 v11, 0x0
 
-    .local v13, i:I
+    .local v11, i:I
     :goto_0
-    sget-object v3, Lcom/android/providers/media/MediaProvider;->mExternalStoragePaths:[Ljava/lang/String;
+    sget-object v1, Lcom/android/providers/media/MediaProvider;->mExternalStoragePaths:[Ljava/lang/String;
 
-    array-length v3, v3
+    array-length v1, v1
 
-    if-ge v13, v3, :cond_2
+    if-ge v11, v1, :cond_2
 
     .line 3255
-    sget-object v3, Lcom/android/providers/media/MediaProvider;->mExternalStoragePaths:[Ljava/lang/String;
+    sget-object v1, Lcom/android/providers/media/MediaProvider;->mExternalStoragePaths:[Ljava/lang/String;
 
-    aget-object v3, v3, v13
+    aget-object v1, v1, v11
 
-    move-object/from16 v0, v17
+    invoke-virtual {v15, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result v1
 
-    move-result v3
-
-    if-eqz v3, :cond_1
+    if-eqz v1, :cond_1
 
     .line 3256
-    const-wide/16 v14, 0x0
+    const-wide/16 v12, 0x0
 
-    .line 3292
-    .end local v13           #i:I
-    .end local v17           #parentPath:Ljava/lang/String;
+    .line 3294
+    .end local v11           #i:I
+    .end local v15           #parentPath:Ljava/lang/String;
     :cond_0
     :goto_1
-    return-wide v14
+    return-wide v12
 
     .line 3254
-    .restart local v13       #i:I
-    .restart local v17       #parentPath:Ljava/lang/String;
+    .restart local v11       #i:I
+    .restart local v15       #parentPath:Ljava/lang/String;
     :cond_1
-    add-int/lit8 v13, v13, 0x1
+    add-int/lit8 v11, v11, 0x1
 
     goto :goto_0
 
@@ -5106,24 +5102,22 @@
     :cond_2
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/android/providers/media/MediaProvider;->mDirectoryCache:Ljava/util/HashMap;
+    iget-object v1, v0, Lcom/android/providers/media/MediaProvider;->mDirectoryCache:Ljava/util/HashMap;
 
-    move-object/from16 v0, v17
+    invoke-virtual {v1, v15}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-virtual {v3, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v10
 
-    move-result-object v12
-
-    check-cast v12, Ljava/lang/Long;
+    check-cast v10, Ljava/lang/Long;
 
     .line 3260
-    .local v12, cid:Ljava/lang/Long;
-    if-eqz v12, :cond_3
+    .local v10, cid:Ljava/lang/Long;
+    if-eqz v10, :cond_3
 
     .line 3262
-    invoke-virtual {v12}, Ljava/lang/Long;->longValue()J
+    invoke-virtual {v10}, Ljava/lang/Long;->longValue()J
 
-    move-result-wide v14
+    move-result-wide v12
 
     goto :goto_1
 
@@ -5131,139 +5125,129 @@
     :cond_3
     move-object/from16 v0, p0
 
-    iget-boolean v3, v0, Lcom/android/providers/media/MediaProvider;->mCaseInsensitivePaths:Z
+    iget-boolean v1, v0, Lcom/android/providers/media/MediaProvider;->mCaseInsensitivePaths:Z
 
-    if-eqz v3, :cond_5
+    if-eqz v1, :cond_5
 
-    const-string v6, "_data LIKE ?AND format=12289"
+    const-string v4, "_data LIKE ?AND format=12289"
 
     .line 3273
-    .local v6, selection:Ljava/lang/String;
+    .local v4, selection:Ljava/lang/String;
     :goto_2
-    const/4 v3, 0x1
+    const/4 v1, 0x1
 
-    new-array v7, v3, [Ljava/lang/String;
+    new-array v5, v1, [Ljava/lang/String;
 
-    const/4 v3, 0x0
+    const/4 v1, 0x0
 
-    aput-object v17, v7, v3
+    aput-object v15, v5, v1
 
     .line 3274
-    .local v7, selargs:[Ljava/lang/String;
-    const-string v4, "files"
+    .local v5, selargs:[Ljava/lang/String;
+    const-string v2, "files"
 
-    sget-object v5, Lcom/android/providers/media/MediaProvider;->sIdOnlyColumn:[Ljava/lang/String;
+    sget-object v3, Lcom/android/providers/media/MediaProvider;->sIdOnlyColumn:[Ljava/lang/String;
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
 
     const/4 v8, 0x0
 
-    const/4 v9, 0x0
-
-    const/4 v10, 0x0
-
-    move-object/from16 v3, p1
-
-    invoke-virtual/range {v3 .. v10}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
-
-    move-result-object v11
-
-    .line 3277
-    .local v11, c:Landroid/database/Cursor;
-    if-eqz v11, :cond_4
-
-    :try_start_0
-    invoke-interface {v11}, Landroid/database/Cursor;->getCount()I
-
-    move-result v3
-
-    if-nez v3, :cond_6
-
-    .line 3279
-    :cond_4
-    move-object/from16 v0, p0
-
     move-object/from16 v1, p1
 
-    move-object/from16 v2, v17
+    invoke-virtual/range {v1 .. v8}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
-    invoke-direct {v0, v1, v2}, Lcom/android/providers/media/MediaProvider;->insertDirectory(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)J
+    move-result-object v9
 
-    move-result-wide v14
+    .line 3277
+    .local v9, c:Landroid/database/Cursor;
+    if-eqz v9, :cond_4
 
-    .line 3286
-    .local v14, id:J
+    :try_start_0
+    invoke-interface {v9}, Landroid/database/Cursor;->getCount()I
+
+    move-result v1
+
+    if-nez v1, :cond_6
+
+    .line 3281
+    :cond_4
+    const-wide/16 v12, 0x0
+
+    .line 3288
+    .local v12, id:J
     :goto_3
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/android/providers/media/MediaProvider;->mDirectoryCache:Ljava/util/HashMap;
+    iget-object v1, v0, Lcom/android/providers/media/MediaProvider;->mDirectoryCache:Ljava/util/HashMap;
 
-    invoke-static {v14, v15}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-static {v12, v13}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    move-result-object v4
+    move-result-object v2
 
-    move-object/from16 v0, v17
-
-    invoke-virtual {v3, v0, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v15, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3289
-    if-eqz v11, :cond_0
+    .line 3291
+    if-eqz v9, :cond_0
 
-    invoke-interface {v11}, Landroid/database/Cursor;->close()V
+    invoke-interface {v9}, Landroid/database/Cursor;->close()V
 
     goto :goto_1
 
     .line 3269
-    .end local v6           #selection:Ljava/lang/String;
-    .end local v7           #selargs:[Ljava/lang/String;
-    .end local v11           #c:Landroid/database/Cursor;
-    .end local v14           #id:J
+    .end local v4           #selection:Ljava/lang/String;
+    .end local v5           #selargs:[Ljava/lang/String;
+    .end local v9           #c:Landroid/database/Cursor;
+    .end local v12           #id:J
     :cond_5
-    const-string v6, "_data=?"
+    const-string v4, "_data=?"
 
     goto :goto_2
 
-    .line 3282
-    .restart local v6       #selection:Ljava/lang/String;
-    .restart local v7       #selargs:[Ljava/lang/String;
-    .restart local v11       #c:Landroid/database/Cursor;
+    .line 3284
+    .restart local v4       #selection:Ljava/lang/String;
+    .restart local v5       #selargs:[Ljava/lang/String;
+    .restart local v9       #c:Landroid/database/Cursor;
     :cond_6
     :try_start_1
-    invoke-interface {v11}, Landroid/database/Cursor;->moveToFirst()Z
+    invoke-interface {v9}, Landroid/database/Cursor;->moveToFirst()Z
 
-    .line 3283
-    const/4 v3, 0x0
+    .line 3285
+    const/4 v1, 0x0
 
-    invoke-interface {v11, v3}, Landroid/database/Cursor;->getLong(I)J
+    invoke-interface {v9, v1}, Landroid/database/Cursor;->getLong(I)J
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    move-result-wide v14
+    move-result-wide v12
 
-    .restart local v14       #id:J
+    .restart local v12       #id:J
     goto :goto_3
 
-    .line 3289
-    .end local v14           #id:J
+    .line 3291
+    .end local v12           #id:J
     :catchall_0
-    move-exception v3
+    move-exception v1
 
-    if-eqz v11, :cond_7
+    if-eqz v9, :cond_7
 
-    invoke-interface {v11}, Landroid/database/Cursor;->close()V
+    invoke-interface {v9}, Landroid/database/Cursor;->close()V
 
     :cond_7
-    throw v3
+    throw v1
 
-    .line 3292
-    .end local v6           #selection:Ljava/lang/String;
-    .end local v7           #selargs:[Ljava/lang/String;
-    .end local v11           #c:Landroid/database/Cursor;
-    .end local v12           #cid:Ljava/lang/Long;
-    .end local v13           #i:I
-    .end local v17           #parentPath:Ljava/lang/String;
+    .line 3294
+    .end local v4           #selection:Ljava/lang/String;
+    .end local v5           #selargs:[Ljava/lang/String;
+    .end local v9           #c:Landroid/database/Cursor;
+    .end local v10           #cid:Ljava/lang/Long;
+    .end local v11           #i:I
+    .end local v15           #parentPath:Ljava/lang/String;
     :cond_8
-    const-wide/16 v14, 0x0
+    const-wide/16 v12, 0x0
 
     goto :goto_1
 .end method
@@ -5273,7 +5257,7 @@
     .parameter "path"
 
     .prologue
-    .line 3297
+    .line 3299
     const/4 v0, 0x0
 
     .local v0, i:I
@@ -5284,12 +5268,12 @@
 
     if-ge v0, v3, :cond_2
 
-    .line 3298
+    .line 3300
     sget-object v3, Lcom/android/providers/media/MediaProvider;->mExternalStoragePaths:[Ljava/lang/String;
 
     aget-object v2, v3, v0
 
-    .line 3299
+    .line 3301
     .local v2, test:Ljava/lang/String;
     invoke-virtual {p1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -5297,12 +5281,12 @@
 
     if-eqz v3, :cond_1
 
-    .line 3300
+    .line 3302
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    .line 3301
+    .line 3303
     .local v1, length:I
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -5318,26 +5302,26 @@
 
     if-ne v3, v4, :cond_1
 
-    .line 3302
+    .line 3304
     :cond_0
     invoke-static {v0}, Landroid/mtp/MtpStorage;->getStorageId(I)I
 
     move-result v3
 
-    .line 3307
+    .line 3309
     .end local v1           #length:I
     .end local v2           #test:Ljava/lang/String;
     :goto_1
     return v3
 
-    .line 3297
+    .line 3299
     .restart local v2       #test:Ljava/lang/String;
     :cond_1
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 3307
+    .line 3309
     .end local v2           #test:Ljava/lang/String;
     :cond_2
     const/4 v3, 0x0
@@ -5363,13 +5347,13 @@
 
     const/4 v2, 0x3
 
-    .line 4119
+    .line 4126
     const/4 v0, 0x0
 
-    .line 4120
+    .line 4127
     sparse-switch p2, :sswitch_data_0
 
-    .line 4264
+    .line 4271
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -5398,16 +5382,16 @@
 
     throw v0
 
-    .line 4122
+    .line 4129
     :sswitch_0
     const-string v0, "files"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4123
+    .line 4130
     const-string v0, "media_type=1"
 
-    .line 4269
+    .line 4276
     :goto_0
     invoke-static {p3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -5415,14 +5399,14 @@
 
     if-nez v1, :cond_2
 
-    .line 4270
+    .line 4277
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 4271
+    .line 4278
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -5453,17 +5437,17 @@
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->where:Ljava/lang/String;
 
-    .line 4278
+    .line 4285
     :goto_1
     return-void
 
-    .line 4127
+    .line 4134
     :sswitch_1
     const-string v0, "files"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4128
+    .line 4135
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -5494,7 +5478,7 @@
 
     goto :goto_0
 
-    .line 4132
+    .line 4139
     :sswitch_2
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -5524,7 +5508,7 @@
 
     move-result-object v0
 
-    .line 4134
+    .line 4141
     :sswitch_3
     const-string v1, "thumbnails"
 
@@ -5532,24 +5516,24 @@
 
     goto :goto_0
 
-    .line 4138
+    .line 4145
     :sswitch_4
     const-string v0, "files"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4139
+    .line 4146
     const-string v0, "media_type=2"
 
     goto :goto_0
 
-    .line 4143
+    .line 4150
     :sswitch_5
     const-string v0, "files"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4144
+    .line 4151
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -5580,13 +5564,13 @@
 
     goto/16 :goto_0
 
-    .line 4148
+    .line 4155
     :sswitch_6
     const-string v0, "audio_genres"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4149
+    .line 4156
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -5617,13 +5601,13 @@
 
     goto/16 :goto_0
 
-    .line 4153
+    .line 4160
     :sswitch_7
     const-string v0, "audio_genres"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4154
+    .line 4161
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -5674,13 +5658,13 @@
 
     goto/16 :goto_0
 
-    .line 4159
+    .line 4166
     :sswitch_8
     const-string v0, "audio_playlists"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4160
+    .line 4167
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -5711,13 +5695,13 @@
 
     goto/16 :goto_0
 
-    .line 4164
+    .line 4171
     :sswitch_9
     const-string v0, "audio_playlists"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4165
+    .line 4172
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -5768,7 +5752,7 @@
 
     goto/16 :goto_0
 
-    .line 4170
+    .line 4177
     :sswitch_a
     const-string v1, "audio_genres"
 
@@ -5776,13 +5760,13 @@
 
     goto/16 :goto_0
 
-    .line 4174
+    .line 4181
     :sswitch_b
     const-string v0, "audio_genres"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4175
+    .line 4182
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -5813,13 +5797,13 @@
 
     goto/16 :goto_0
 
-    .line 4179
+    .line 4186
     :sswitch_c
     const-string v0, "audio_genres"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4180
+    .line 4187
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -5850,24 +5834,24 @@
 
     goto/16 :goto_0
 
-    .line 4184
+    .line 4191
     :sswitch_d
     const-string v0, "files"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4185
+    .line 4192
     const-string v0, "media_type=4"
 
     goto/16 :goto_0
 
-    .line 4189
+    .line 4196
     :sswitch_e
     const-string v0, "files"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4190
+    .line 4197
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -5898,13 +5882,13 @@
 
     goto/16 :goto_0
 
-    .line 4194
+    .line 4201
     :sswitch_f
     const-string v0, "audio_playlists_map"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4195
+    .line 4202
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -5935,13 +5919,13 @@
 
     goto/16 :goto_0
 
-    .line 4199
+    .line 4206
     :sswitch_10
     const-string v0, "audio_playlists_map"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4200
+    .line 4207
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -5992,13 +5976,13 @@
 
     goto/16 :goto_0
 
-    .line 4205
+    .line 4212
     :sswitch_11
     const-string v0, "album_art"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4206
+    .line 4213
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -6029,35 +6013,35 @@
 
     goto/16 :goto_0
 
-    .line 4210
+    .line 4217
     :sswitch_12
     const-string v0, "files"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4211
+    .line 4218
     iget-boolean v0, p0, Lcom/android/providers/media/MediaProvider;->isAll:Z
 
     if-eqz v0, :cond_0
 
-    .line 4212
+    .line 4219
     const-string v0, "media_type=3"
 
     goto/16 :goto_0
 
-    .line 4214
+    .line 4221
     :cond_0
     const-string v0, "media_type=3 AND is_encrypted=0"
 
     goto/16 :goto_0
 
-    .line 4218
+    .line 4225
     :sswitch_13
     const-string v0, "files"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4219
+    .line 4226
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -6088,7 +6072,7 @@
 
     goto/16 :goto_0
 
-    .line 4223
+    .line 4230
     :sswitch_14
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -6118,7 +6102,7 @@
 
     move-result-object v0
 
-    .line 4225
+    .line 4232
     :sswitch_15
     const-string v1, "videothumbnails"
 
@@ -6126,7 +6110,7 @@
 
     goto/16 :goto_0
 
-    .line 4228
+    .line 4235
     :sswitch_16
     const-string v1, "ringtone_clip"
 
@@ -6134,7 +6118,7 @@
 
     goto/16 :goto_0
 
-    .line 4231
+    .line 4238
     :sswitch_17
     const-string v1, "now_playing"
 
@@ -6142,13 +6126,13 @@
 
     goto/16 :goto_0
 
-    .line 4234
+    .line 4241
     :sswitch_18
     const-string v0, "artists"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4235
+    .line 4242
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -6179,13 +6163,13 @@
 
     goto/16 :goto_0
 
-    .line 4238
+    .line 4245
     :sswitch_19
     const-string v0, "audio_thumb"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4239
+    .line 4246
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -6216,7 +6200,7 @@
 
     goto/16 :goto_0
 
-    .line 4243
+    .line 4250
     :sswitch_1a
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -6246,7 +6230,7 @@
 
     move-result-object v0
 
-    .line 4246
+    .line 4253
     :sswitch_1b
     const-string v1, "files"
 
@@ -6254,7 +6238,7 @@
 
     goto/16 :goto_0
 
-    .line 4249
+    .line 4256
     :sswitch_1c
     const-string v1, "SETTINGS"
 
@@ -6262,18 +6246,18 @@
 
     goto/16 :goto_0
 
-    .line 4252
+    .line 4259
     :sswitch_1d
     const-string v0, "SETTINGS"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4253
+    .line 4260
     const-string v0, "name = \'rec_storage\'"
 
     goto/16 :goto_0
 
-    .line 4256
+    .line 4263
     :sswitch_1e
     const-string v1, "other_files"
 
@@ -6281,13 +6265,13 @@
 
     goto/16 :goto_0
 
-    .line 4259
+    .line 4266
     :sswitch_1f
     const-string v0, "other_files"
 
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
 
-    .line 4260
+    .line 4267
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -6318,19 +6302,19 @@
 
     goto/16 :goto_0
 
-    .line 4273
+    .line 4280
     :cond_1
     iput-object p3, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->where:Ljava/lang/String;
 
     goto/16 :goto_1
 
-    .line 4276
+    .line 4283
     :cond_2
     iput-object v0, p4, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->where:Ljava/lang/String;
 
     goto/16 :goto_1
 
-    .line 4120
+    .line 4127
     :sswitch_data_0
     .sparse-switch
         0x1 -> :sswitch_0
@@ -6378,27 +6362,27 @@
     .parameter "albumart_uri"
 
     .prologue
-    .line 5147
+    .line 5154
     new-instance v0, Lcom/android/providers/media/MediaProvider$ThumbData;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p0, v1}, Lcom/android/providers/media/MediaProvider$ThumbData;-><init>(Lcom/android/providers/media/MediaProvider;Lcom/android/providers/media/MediaProvider$1;)V
 
-    .line 5148
+    .line 5155
     .local v0, d:Lcom/android/providers/media/MediaProvider$ThumbData;
     iput-object p1, v0, Lcom/android/providers/media/MediaProvider$ThumbData;->db:Landroid/database/sqlite/SQLiteDatabase;
 
-    .line 5149
+    .line 5156
     iput-object p2, v0, Lcom/android/providers/media/MediaProvider$ThumbData;->path:Ljava/lang/String;
 
-    .line 5150
+    .line 5157
     iput-wide p3, v0, Lcom/android/providers/media/MediaProvider$ThumbData;->album_id:J
 
-    .line 5151
+    .line 5158
     iput-object p5, v0, Lcom/android/providers/media/MediaProvider$ThumbData;->albumart_uri:Landroid/net/Uri;
 
-    .line 5152
+    .line 5159
     invoke-direct {p0, v0}, Lcom/android/providers/media/MediaProvider;->makeThumbInternal(Lcom/android/providers/media/MediaProvider$ThumbData;)Landroid/os/ParcelFileDescriptor;
 
     move-result-object v1
@@ -6411,23 +6395,23 @@
     .parameter "uri"
 
     .prologue
-    .line 4877
+    .line 4884
     invoke-direct {p0, p1}, Lcom/android/providers/media/MediaProvider;->getDatabaseForUri(Landroid/net/Uri;)Lcom/android/providers/media/MediaProvider$DatabaseHelper;
 
     move-result-object v11
 
-    .line 4878
+    .line 4885
     .local v11, database:Lcom/android/providers/media/MediaProvider$DatabaseHelper;
     if-nez v11, :cond_0
 
-    .line 4880
+    .line 4887
     const/4 v10, 0x0
 
-    .line 4930
+    .line 4937
     :goto_0
     return-object v10
 
-    .line 4882
+    .line 4889
     :cond_0
     sget-object v2, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
@@ -6435,34 +6419,34 @@
 
     move-result v13
 
-    .line 4883
+    .line 4890
     .local v13, match:I
     invoke-virtual {v11}, Lcom/android/providers/media/MediaProvider$DatabaseHelper;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
-    .line 4884
+    .line 4891
     .local v1, db:Landroid/database/sqlite/SQLiteDatabase;
     new-instance v0, Landroid/database/sqlite/SQLiteQueryBuilder;
 
     invoke-direct {v0}, Landroid/database/sqlite/SQLiteQueryBuilder;-><init>()V
 
-    .line 4885
+    .line 4892
     .local v0, qb:Landroid/database/sqlite/SQLiteQueryBuilder;
     const-string v2, "audio_meta"
 
     invoke-virtual {v0, v2}, Landroid/database/sqlite/SQLiteQueryBuilder;->setTables(Ljava/lang/String;)V
 
-    .line 4886
+    .line 4893
     const/4 v12, -0x1
 
-    .line 4887
+    .line 4894
     .local v12, id:I
     const/16 v2, 0x78
 
     if-ne v13, v2, :cond_3
 
-    .line 4889
+    .line 4896
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v2
@@ -6479,7 +6463,7 @@
 
     move-result v12
 
-    .line 4890
+    .line 4897
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -6500,7 +6484,7 @@
 
     invoke-virtual {v0, v2}, Landroid/database/sqlite/SQLiteQueryBuilder;->appendWhere(Ljava/lang/CharSequence;)V
 
-    .line 4898
+    .line 4905
     :goto_1
     const/4 v2, 0x1
 
@@ -6526,11 +6510,11 @@
 
     move-result-object v9
 
-    .line 4900
+    .line 4907
     .local v9, c:Landroid/database/Cursor;
     const/4 v8, 0x0
 
-    .line 4903
+    .line 4910
     .local v8, audiopath:Ljava/lang/String;
     if-eqz v9, :cond_1
 
@@ -6543,14 +6527,14 @@
 
     if-lt v2, v3, :cond_1
 
-    .line 4905
+    .line 4912
     invoke-interface {v9}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    .line 4907
+    .line 4914
     const/4 v2, 0x0
 
     invoke-interface {v9, v2}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
@@ -6559,23 +6543,23 @@
 
     move-result-object v8
 
-    .line 4913
+    .line 4920
     :cond_1
     if-eqz v9, :cond_2
 
-    .line 4915
+    .line 4922
     invoke-interface {v9}, Landroid/database/Cursor;->close()V
 
-    .line 4918
+    .line 4925
     :cond_2
     if-nez v8, :cond_5
 
-    .line 4920
+    .line 4927
     const/4 v10, 0x0
 
     goto :goto_0
 
-    .line 4894
+    .line 4901
     .end local v8           #audiopath:Ljava/lang/String;
     .end local v9           #c:Landroid/database/Cursor;
     :cond_3
@@ -6587,7 +6571,7 @@
 
     move-result v12
 
-    .line 4895
+    .line 4902
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -6610,7 +6594,7 @@
 
     goto :goto_1
 
-    .line 4913
+    .line 4920
     .restart local v8       #audiopath:Ljava/lang/String;
     .restart local v9       #c:Landroid/database/Cursor;
     :catchall_0
@@ -6618,13 +6602,13 @@
 
     if-eqz v9, :cond_4
 
-    .line 4915
+    .line 4922
     invoke-interface {v9}, Landroid/database/Cursor;->close()V
 
     :cond_4
     throw v2
 
-    .line 4923
+    .line 4930
     :cond_5
     new-instance v10, Lcom/android/providers/media/MediaProvider$ThumbData;
 
@@ -6632,22 +6616,22 @@
 
     invoke-direct {v10, p0, v2}, Lcom/android/providers/media/MediaProvider$ThumbData;-><init>(Lcom/android/providers/media/MediaProvider;Lcom/android/providers/media/MediaProvider$1;)V
 
-    .line 4924
+    .line 4931
     .local v10, d:Lcom/android/providers/media/MediaProvider$ThumbData;
     int-to-long v2, v12
 
     iput-wide v2, v10, Lcom/android/providers/media/MediaProvider$ThumbData;->album_id:J
 
-    .line 4925
+    .line 4932
     iput-object p1, v10, Lcom/android/providers/media/MediaProvider$ThumbData;->albumart_uri:Landroid/net/Uri;
 
-    .line 4926
+    .line 4933
     iput-object v1, v10, Lcom/android/providers/media/MediaProvider$ThumbData;->db:Landroid/database/sqlite/SQLiteDatabase;
 
-    .line 4927
+    .line 4934
     iput-object v8, v10, Lcom/android/providers/media/MediaProvider$ThumbData;->path:Ljava/lang/String;
 
-    .line 4928
+    .line 4935
     const/16 v2, 0x78
 
     if-ne v13, v2, :cond_6
@@ -6657,12 +6641,12 @@
     :goto_2
     iput-boolean v2, v10, Lcom/android/providers/media/MediaProvider$ThumbData;->bAlbum:Z
 
-    .line 4929
+    .line 4936
     invoke-interface {v9}, Landroid/database/Cursor;->close()V
 
     goto/16 :goto_0
 
-    .line 4928
+    .line 4935
     :cond_6
     const/4 v2, 0x0
 
@@ -6688,108 +6672,6 @@
     goto :goto_0
 .end method
 
-.method private insertDirectory(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)J
-    .locals 9
-    .parameter "db"
-    .parameter "path"
-
-    .prologue
-    .line 3236
-    new-instance v3, Landroid/content/ContentValues;
-
-    invoke-direct {v3}, Landroid/content/ContentValues;-><init>()V
-
-    .line 3237
-    .local v3, values:Landroid/content/ContentValues;
-    const-string v4, "format"
-
-    const/16 v5, 0x3001
-
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v5
-
-    invoke-virtual {v3, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    .line 3238
-    const-string v4, "_data"
-
-    invoke-virtual {v3, v4, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 3239
-    const-string v4, "parent"
-
-    invoke-direct {p0, p1, p2}, Lcom/android/providers/media/MediaProvider;->getParent(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)J
-
-    move-result-wide v5
-
-    invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v5
-
-    invoke-virtual {v3, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
-
-    .line 3240
-    const-string v4, "storage_id"
-
-    invoke-direct {p0, p2}, Lcom/android/providers/media/MediaProvider;->getStorageId(Ljava/lang/String;)I
-
-    move-result v5
-
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v5
-
-    invoke-virtual {v3, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    .line 3241
-    new-instance v0, Ljava/io/File;
-
-    invoke-direct {v0, p2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 3242
-    .local v0, file:Ljava/io/File;
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_0
-
-    .line 3243
-    const-string v4, "date_modified"
-
-    invoke-virtual {v0}, Ljava/io/File;->lastModified()J
-
-    move-result-wide v5
-
-    const-wide/16 v7, 0x3e8
-
-    div-long/2addr v5, v7
-
-    invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v5
-
-    invoke-virtual {v3, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
-
-    .line 3245
-    :cond_0
-    const-string v4, "files"
-
-    const-string v5, "date_modified"
-
-    invoke-virtual {p1, v4, v5, v3}, Landroid/database/sqlite/SQLiteDatabase;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
-
-    move-result-wide v1
-
-    .line 3246
-    .local v1, rowId:J
-    invoke-direct {p0, v1, v2}, Lcom/android/providers/media/MediaProvider;->sendObjectAdded(J)V
-
-    .line 3247
-    return-wide v1
-.end method
-
 .method private insertFile(Lcom/android/providers/media/MediaProvider$DatabaseHelper;Landroid/net/Uri;Landroid/content/ContentValues;IZ)J
     .locals 25
     .parameter
@@ -6799,29 +6681,29 @@
     .parameter
 
     .prologue
-    .line 3328
+    .line 3335
     invoke-virtual/range {p1 .. p1}, Lcom/android/providers/media/MediaProvider$DatabaseHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v3
 
-    .line 3329
+    .line 3336
     const/4 v2, 0x0
 
-    .line 3331
+    .line 3338
     packed-switch p4, :pswitch_data_0
 
-    .line 3466
+    .line 3473
     :goto_0
     if-nez v2, :cond_0
 
-    .line 3467
+    .line 3474
     new-instance v2, Landroid/content/ContentValues;
 
     move-object/from16 v0, p3
 
     invoke-direct {v2, v0}, Landroid/content/ContentValues;-><init>(Landroid/content/ContentValues;)V
 
-    .line 3469
+    .line 3476
     :cond_0
     const-string v4, "position"
 
@@ -6833,20 +6715,20 @@
 
     invoke-virtual {v2, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 3471
+    .line 3478
     const-string v4, "_data"
 
     invoke-virtual {v2, v4}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
-    .line 3472
+    .line 3479
     if-eqz v8, :cond_1
 
-    .line 3473
+    .line 3480
     invoke-static {v8, v2}, Lcom/android/providers/media/MediaProvider;->computeBucketValues(Ljava/lang/String;Landroid/content/ContentValues;)V
 
-    .line 3475
+    .line 3482
     :cond_1
     const-string v4, "date_added"
 
@@ -6864,39 +6746,39 @@
 
     invoke-virtual {v2, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 3477
+    .line 3484
     const-wide/16 v4, 0x0
 
-    .line 3478
+    .line 3485
     const-string v6, "media_scanner_new_object_id"
 
     invoke-virtual {v2, v6}, Landroid/content/ContentValues;->getAsInteger(Ljava/lang/String;)Ljava/lang/Integer;
 
     move-result-object v6
 
-    .line 3480
+    .line 3487
     if-eqz v6, :cond_2
 
-    .line 3481
+    .line 3488
     invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
 
     move-result v4
 
     int-to-long v4, v4
 
-    .line 3482
+    .line 3489
     new-instance v6, Landroid/content/ContentValues;
 
     invoke-direct {v6, v2}, Landroid/content/ContentValues;-><init>(Landroid/content/ContentValues;)V
 
-    .line 3483
+    .line 3490
     const-string v2, "media_scanner_new_object_id"
 
     invoke-virtual {v6, v2}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
     move-object v2, v6
 
-    .line 3486
+    .line 3493
     :cond_2
     const-string v6, "title"
 
@@ -6904,60 +6786,60 @@
 
     move-result-object v6
 
-    .line 3487
+    .line 3494
     if-nez v6, :cond_3
 
     if-eqz v8, :cond_3
 
-    .line 3488
+    .line 3495
     invoke-static {v8}, Landroid/media/MediaFile;->getFileTitle(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 3490
+    .line 3497
     :cond_3
     const-string v7, "title"
 
     invoke-virtual {v2, v7, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3492
+    .line 3499
     const-string v6, "mime_type"
 
     invoke-virtual {v2, v6}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 3493
+    .line 3500
     const-string v7, "format"
 
     invoke-virtual {v2, v7}, Landroid/content/ContentValues;->getAsInteger(Ljava/lang/String;)Ljava/lang/Integer;
 
     move-result-object v7
 
-    .line 3494
+    .line 3501
     if-nez v7, :cond_14
 
     const/4 v7, 0x0
 
-    .line 3495
+    .line 3502
     :goto_1
     if-nez v7, :cond_4
 
-    .line 3496
+    .line 3503
     invoke-static {v8}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v9
 
     if-eqz v9, :cond_16
 
-    .line 3498
+    .line 3505
     const/4 v9, 0x4
 
     move/from16 v0, p4
 
     if-ne v0, v9, :cond_15
 
-    .line 3499
+    .line 3506
     const-string v8, "format"
 
     const v9, 0xba05
@@ -6968,7 +6850,7 @@
 
     invoke-virtual {v2, v8, v9}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 3501
+    .line 3508
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -7003,12 +6885,12 @@
 
     move-result-object v8
 
-    .line 3503
+    .line 3510
     const-string v9, "_data"
 
     invoke-virtual {v2, v9, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3504
+    .line 3511
     const-string v9, "parent"
 
     move-object/from16 v0, p0
@@ -7023,12 +6905,12 @@
 
     invoke-virtual {v2, v9, v10}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 3512
+    .line 3519
     :cond_4
     :goto_2
     if-eqz v7, :cond_5
 
-    .line 3513
+    .line 3520
     const-string v9, "format"
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -7037,35 +6919,35 @@
 
     invoke-virtual {v2, v9, v10}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 3514
+    .line 3521
     if-nez v6, :cond_5
 
-    .line 3515
+    .line 3522
     invoke-static {v7}, Landroid/media/MediaFile;->getMimeTypeForFormatCode(I)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 3519
+    .line 3526
     :cond_5
     if-nez v6, :cond_6
 
     if-eqz v8, :cond_6
 
-    .line 3520
+    .line 3527
     invoke-static {v8}, Landroid/media/MediaFile;->getMimeTypeForFile(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 3522
+    .line 3529
     :cond_6
     if-eqz v6, :cond_7
 
-    .line 3523
+    .line 3530
     const-string v7, "mime_type"
 
     invoke-virtual {v2, v7, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3525
+    .line 3532
     if-nez p4, :cond_7
 
     invoke-static {v8}, Landroid/media/MediaScanner;->isNoMediaPath(Ljava/lang/String;)Z
@@ -7074,22 +6956,22 @@
 
     if-nez v7, :cond_7
 
-    .line 3526
+    .line 3533
     invoke-static {v6}, Landroid/media/MediaFile;->getFileTypeForMimeType(Ljava/lang/String;)I
 
     move-result v6
 
-    .line 3527
+    .line 3534
     invoke-static {v6}, Landroid/media/MediaFile;->isAudioFileType(I)Z
 
     move-result v7
 
     if-eqz v7, :cond_17
 
-    .line 3528
+    .line 3535
     const/16 p4, 0x2
 
-    .line 3538
+    .line 3545
     :cond_7
     :goto_3
     const-string v6, "media_type"
@@ -7100,33 +6982,33 @@
 
     invoke-virtual {v2, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 3540
+    .line 3547
     const-wide/16 v6, 0x0
 
     cmp-long v6, v4, v6
 
     if-nez v6, :cond_20
 
-    .line 3541
+    .line 3548
     const/4 v4, 0x4
 
     move/from16 v0, p4
 
     if-ne v0, v4, :cond_1a
 
-    .line 3542
+    .line 3549
     const-string v4, "name"
 
     invoke-virtual {v2, v4}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 3543
+    .line 3550
     if-nez v4, :cond_1b
 
     if-nez v8, :cond_1b
 
-    .line 3545
+    .line 3552
     new-instance v2, Ljava/lang/IllegalArgumentException;
 
     const-string v3, "no name was provided when inserting abstract playlist"
@@ -7135,7 +7017,7 @@
 
     throw v2
 
-    .line 3333
+    .line 3340
     :pswitch_0
     move-object/from16 v0, p1
 
@@ -7153,7 +7035,7 @@
 
     move-result-object v2
 
-    .line 3335
+    .line 3342
     const-string v4, "date_added"
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -7170,19 +7052,19 @@
 
     invoke-virtual {v2, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 3336
+    .line 3343
     const-string v4, "_data"
 
     invoke-virtual {v2, v4}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 3337
+    .line 3344
     move-object/from16 v0, p0
 
     iput-object v4, v0, Lcom/android/providers/media/MediaProvider;->data_img:Ljava/lang/String;
 
-    .line 3338
+    .line 3345
     const-string v5, "_display_name"
 
     invoke-virtual {v2, v5}, Landroid/content/ContentValues;->containsKey(Ljava/lang/String;)Z
@@ -7191,19 +7073,19 @@
 
     if-nez v5, :cond_8
 
-    .line 3339
+    .line 3346
     invoke-static {v4, v2}, Lcom/android/providers/media/MediaProvider;->computeDisplayName(Ljava/lang/String;Landroid/content/ContentValues;)V
 
-    .line 3341
+    .line 3348
     :cond_8
     invoke-static {v4, v2}, Lcom/android/providers/media/MediaProvider;->computeBucketValues(Ljava/lang/String;Landroid/content/ContentValues;)V
 
-    .line 3342
+    .line 3349
     move-object/from16 v0, p0
 
     invoke-direct {v0, v2}, Lcom/android/providers/media/MediaProvider;->setColumnPosition(Landroid/content/ContentValues;)V
 
-    .line 3343
+    .line 3350
     const-string v5, "stars"
 
     const/4 v6, 0x0
@@ -7214,19 +7096,16 @@
 
     invoke-virtual {v2, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 3344
     move-object/from16 v0, p0
 
     #invoke-direct {v0, v4, v2}, Lcom/android/providers/media/MediaProvider;->setIsHiddenImages(Ljava/lang/String;Landroid/content/ContentValues;)V
 
     invoke-direct {v0, v4, v2}, Lcom/android/providers/media/MediaProvider;->setAllImagesNoHidden(Ljava/lang/String;Landroid/content/ContentValues;)V
 
-    .line 3345
     invoke-static {v2}, Lcom/android/providers/media/MediaProvider;->computeTakenTime(Landroid/content/ContentValues;)V
 
     goto/16 :goto_0
 
-    .line 3355
     :pswitch_1
     new-instance v22, Landroid/content/ContentValues;
 
@@ -7236,7 +7115,7 @@
 
     invoke-direct {v0, v1}, Landroid/content/ContentValues;-><init>(Landroid/content/ContentValues;)V
 
-    .line 3357
+    .line 3364
     const-string v2, "album_artist"
 
     move-object/from16 v0, v22
@@ -7245,7 +7124,7 @@
 
     move-result-object v14
 
-    .line 3358
+    .line 3365
     const-string v2, "compilation"
 
     move-object/from16 v0, v22
@@ -7254,14 +7133,14 @@
 
     move-result-object v16
 
-    .line 3359
+    .line 3366
     const-string v2, "compilation"
 
     move-object/from16 v0, v22
 
     invoke-virtual {v0, v2}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 3363
+    .line 3370
     const-string v2, "artist"
 
     move-object/from16 v0, v22
@@ -7270,12 +7149,12 @@
 
     move-result-object v2
 
-    .line 3364
+    .line 3371
     if-nez v2, :cond_c
 
     const-string v7, ""
 
-    .line 3365
+    .line 3372
     :goto_4
     const-string v2, "artist"
 
@@ -7283,12 +7162,12 @@
 
     invoke-virtual {v0, v2}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 3367
+    .line 3374
     move-object/from16 v0, p1
 
     iget-object v12, v0, Lcom/android/providers/media/MediaProvider$DatabaseHelper;->mArtistCache:Ljava/util/HashMap;
 
-    .line 3368
+    .line 3375
     const-string v2, "_data"
 
     move-object/from16 v0, v22
@@ -7297,10 +7176,10 @@
 
     move-result-object v9
 
-    .line 3369
+    .line 3376
     monitor-enter v12
 
-    .line 3370
+    .line 3377
     :try_start_0
     invoke-virtual {v12, v7}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -7308,10 +7187,10 @@
 
     check-cast v2, Ljava/lang/Long;
 
-    .line 3371
+    .line 3378
     if-nez v2, :cond_d
 
-    .line 3372
+    .line 3379
     const-string v4, "artists"
 
     const-string v5, "artist_key"
@@ -7334,13 +7213,13 @@
 
     move-wide/from16 v23, v4
 
-    .line 3377
+    .line 3384
     :goto_5
     monitor-exit v12
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3381
+    .line 3388
     const-string v2, "album"
 
     move-object/from16 v0, v22
@@ -7349,12 +7228,12 @@
 
     move-result-object v2
 
-    .line 3382
+    .line 3389
     if-nez v2, :cond_e
 
     const-string v15, ""
 
-    .line 3383
+    .line 3390
     :goto_6
     const-string v2, "album"
 
@@ -7362,29 +7241,29 @@
 
     invoke-virtual {v0, v2}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 3385
+    .line 3392
     move-object/from16 v0, p1
 
     iget-object v0, v0, Lcom/android/providers/media/MediaProvider$DatabaseHelper;->mAlbumCache:Ljava/util/HashMap;
 
     move-object/from16 v20, v0
 
-    .line 3386
+    .line 3393
     monitor-enter v20
 
-    .line 3387
+    .line 3394
     const/16 v18, 0x0
 
-    .line 3388
+    .line 3395
     if-eqz v14, :cond_f
 
-    .line 3389
+    .line 3396
     :try_start_1
     invoke-virtual {v14}, Ljava/lang/String;->hashCode()I
 
     move-result v18
 
-    .line 3395
+    .line 3402
     :cond_9
     :goto_7
     new-instance v2, Ljava/lang/StringBuilder;
@@ -7405,7 +7284,7 @@
 
     move-result-object v16
 
-    .line 3396
+    .line 3403
     move-object/from16 v0, v20
 
     move-object/from16 v1, v16
@@ -7416,10 +7295,10 @@
 
     check-cast v2, Ljava/lang/Long;
 
-    .line 3397
+    .line 3404
     if-nez v2, :cond_11
 
-    .line 3398
+    .line 3405
     const-string v12, "albums"
 
     const-string v13, "album_key"
@@ -7440,13 +7319,13 @@
 
     move-result-wide v4
 
-    .line 3403
+    .line 3410
     :goto_8
     monitor-exit v20
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 3405
+    .line 3412
     const-string v2, "artist_id"
 
     move-wide/from16 v0, v23
@@ -7461,7 +7340,7 @@
 
     invoke-virtual {v0, v2, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3406
+    .line 3413
     const-string v2, "album_id"
 
     long-to-int v4, v4
@@ -7474,7 +7353,7 @@
 
     invoke-virtual {v0, v2, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3407
+    .line 3414
     const-string v2, "title"
 
     move-object/from16 v0, v22
@@ -7483,12 +7362,12 @@
 
     move-result-object v2
 
-    .line 3408
+    .line 3415
     if-nez v2, :cond_12
 
     const-string v2, ""
 
-    .line 3409
+    .line 3416
     :goto_9
     const-string v4, "title_key"
 
@@ -7500,14 +7379,14 @@
 
     invoke-virtual {v0, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3412
+    .line 3419
     const-string v4, "title"
 
     move-object/from16 v0, v22
 
     invoke-virtual {v0, v4}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 3413
+    .line 3420
     const-string v4, "title"
 
     invoke-virtual {v2}, Ljava/lang/String;->trim()Ljava/lang/String;
@@ -7518,7 +7397,7 @@
 
     invoke-virtual {v0, v4, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3415
+    .line 3422
     const-string v2, "_data"
 
     move-object/from16 v0, v22
@@ -7531,7 +7410,7 @@
 
     invoke-static {v2, v0}, Lcom/android/providers/media/MediaProvider;->computeDisplayName(Ljava/lang/String;Landroid/content/ContentValues;)V
 
-    .line 3417
+    .line 3424
     const-string v2, "_display_name"
 
     move-object/from16 v0, v22
@@ -7540,10 +7419,10 @@
 
     move-result-object v2
 
-    .line 3418
+    .line 3425
     if-eqz v2, :cond_a
 
-    .line 3422
+    .line 3429
     const-string v4, "."
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
@@ -7552,7 +7431,7 @@
 
     if-gez v4, :cond_13
 
-    .line 3428
+    .line 3435
     :goto_a
     const-string v4, "name_no_suffix"
 
@@ -7560,14 +7439,14 @@
 
     invoke-virtual {v0, v4, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3429
+    .line 3436
     move-object/from16 v0, p0
 
     move-object/from16 v1, v22
 
     invoke-direct {v0, v2, v1}, Lcom/android/providers/media/MediaProvider;->computeSortByTypeAndName(Ljava/lang/String;Landroid/content/ContentValues;)V
 
-    .line 3431
+    .line 3438
     :cond_a
     if-eqz v9, :cond_b
 
@@ -7579,7 +7458,7 @@
 
     if-nez v2, :cond_b
 
-    .line 3435
+    .line 3442
     const-string v2, "_display_name"
 
     move-object/from16 v0, v22
@@ -7588,19 +7467,19 @@
 
     move-result-object v2
 
-    .line 3436
+    .line 3443
     const/16 v4, 0x2e
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->lastIndexOf(I)I
 
     move-result v4
 
-    .line 3437
+    .line 3444
     const/4 v5, -0x1
 
     if-eq v4, v5, :cond_b
 
-    .line 3439
+    .line 3446
     const-string v5, "files"
 
     const/4 v6, 0x0
@@ -7615,7 +7494,7 @@
 
     invoke-direct {v0, v5, v2, v1}, Lcom/android/providers/media/MediaProvider;->updateAdditionalColumns(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)V
 
-    .line 3444
+    .line 3451
     :cond_b
     move-object/from16 v0, p0
 
@@ -7623,7 +7502,7 @@
 
     invoke-direct {v0, v9, v1}, Lcom/android/providers/media/MediaProvider;->setIsMusic(Ljava/lang/String;Landroid/content/ContentValues;)V
 
-    .line 3445
+    .line 3452
     const-string v2, "stars"
 
     const/4 v4, 0x0
@@ -7636,7 +7515,7 @@
 
     invoke-virtual {v0, v2, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 3446
+    .line 3453
     const-string v2, "is_hidden"
 
     const/4 v4, 0x0
@@ -7649,7 +7528,7 @@
 
     invoke-virtual {v0, v2, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 3447
+    .line 3454
     move-object/from16 v0, p0
 
     move-object/from16 v1, v22
@@ -7658,10 +7537,10 @@
 
     move-object/from16 v2, v22
 
-    .line 3449
+    .line 3456
     goto/16 :goto_0
 
-    .line 3364
+    .line 3371
     :cond_c
     invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -7669,7 +7548,7 @@
 
     goto/16 :goto_4
 
-    .line 3375
+    .line 3382
     :cond_d
     :try_start_2
     invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
@@ -7680,7 +7559,7 @@
 
     goto/16 :goto_5
 
-    .line 3377
+    .line 3384
     :catchall_0
     move-exception v2
 
@@ -7690,7 +7569,7 @@
 
     throw v2
 
-    .line 3382
+    .line 3389
     :cond_e
     invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -7698,7 +7577,7 @@
 
     goto/16 :goto_6
 
-    .line 3390
+    .line 3397
     :cond_f
     if-eqz v16, :cond_10
 
@@ -7713,7 +7592,7 @@
 
     if-nez v2, :cond_9
 
-    .line 3393
+    .line 3400
     :cond_10
     const/4 v2, 0x0
 
@@ -7733,7 +7612,7 @@
 
     goto/16 :goto_7
 
-    .line 3401
+    .line 3408
     :cond_11
     invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
 
@@ -7741,7 +7620,7 @@
 
     goto/16 :goto_8
 
-    .line 3403
+    .line 3410
     :catchall_1
     move-exception v2
 
@@ -7751,7 +7630,7 @@
 
     throw v2
 
-    .line 3408
+    .line 3415
     :cond_12
     invoke-virtual {v2}, Ljava/lang/String;->toString()Ljava/lang/String;
 
@@ -7759,7 +7638,7 @@
 
     goto/16 :goto_9
 
-    .line 3425
+    .line 3432
     :cond_13
     const/4 v4, 0x0
 
@@ -7775,7 +7654,7 @@
 
     goto/16 :goto_a
 
-    .line 3453
+    .line 3460
     :pswitch_2
     move-object/from16 v0, p1
 
@@ -7793,49 +7672,49 @@
 
     move-result-object v2
 
-    .line 3454
+    .line 3461
     const-string v4, "_data"
 
     invoke-virtual {v2, v4}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 3455
+    .line 3462
     move-object/from16 v0, p0
 
     iput-object v4, v0, Lcom/android/providers/media/MediaProvider;->data_video:Ljava/lang/String;
 
-    .line 3456
+    .line 3463
     invoke-static {v4, v2}, Lcom/android/providers/media/MediaProvider;->computeDisplayName(Ljava/lang/String;Landroid/content/ContentValues;)V
 
-    .line 3457
+    .line 3464
     const-string v4, "_display_name"
 
     invoke-virtual {v2, v4}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 3458
+    .line 3465
     move-object/from16 v0, p0
 
     invoke-direct {v0, v4, v2}, Lcom/android/providers/media/MediaProvider;->computeSortByTypeAndName(Ljava/lang/String;Landroid/content/ContentValues;)V
 
-    .line 3459
+    .line 3466
     move-object/from16 v0, p0
 
     invoke-direct {v0, v2}, Lcom/android/providers/media/MediaProvider;->setColumnPosition(Landroid/content/ContentValues;)V
 
-    .line 3460
+    .line 3467
     move-object/from16 v0, p0
 
     invoke-direct {v0, v2}, Lcom/android/providers/media/MediaProvider;->setDurationFormat(Landroid/content/ContentValues;)V
 
-    .line 3461
+    .line 3468
     invoke-static {v2}, Lcom/android/providers/media/MediaProvider;->computeTakenTime(Landroid/content/ContentValues;)V
 
     goto/16 :goto_0
 
-    .line 3494
+    .line 3501
     :cond_14
     invoke-virtual {v7}, Ljava/lang/Integer;->intValue()I
 
@@ -7843,7 +7722,7 @@
 
     goto/16 :goto_1
 
-    .line 3506
+    .line 3513
     :cond_15
     sget-object v9, Lcom/android/providers/media/MediaProvider;->TAG:Ljava/lang/String;
 
@@ -7853,7 +7732,7 @@
 
     goto/16 :goto_2
 
-    .line 3509
+    .line 3516
     :cond_16
     invoke-static {v8, v6}, Landroid/media/MediaFile;->getFormatCode(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -7861,7 +7740,7 @@
 
     goto/16 :goto_2
 
-    .line 3529
+    .line 3536
     :cond_17
     invoke-static {v6}, Landroid/media/MediaFile;->isVideoFileType(I)Z
 
@@ -7869,12 +7748,12 @@
 
     if-eqz v7, :cond_18
 
-    .line 3530
+    .line 3537
     const/16 p4, 0x3
 
     goto/16 :goto_3
 
-    .line 3531
+    .line 3538
     :cond_18
     invoke-static {v6}, Landroid/media/MediaFile;->isImageFileType(I)Z
 
@@ -7882,12 +7761,12 @@
 
     if-eqz v7, :cond_19
 
-    .line 3532
+    .line 3539
     const/16 p4, 0x1
 
     goto/16 :goto_3
 
-    .line 3533
+    .line 3540
     :cond_19
     invoke-static {v6}, Landroid/media/MediaFile;->isPlayListFileType(I)Z
 
@@ -7895,16 +7774,16 @@
 
     if-eqz v6, :cond_7
 
-    .line 3534
+    .line 3541
     const/16 p4, 0x4
 
     goto/16 :goto_3
 
-    .line 3549
+    .line 3556
     :cond_1a
     if-nez v8, :cond_1b
 
-    .line 3552
+    .line 3559
     new-instance v2, Ljava/lang/IllegalArgumentException;
 
     const-string v3, "no path was provided when inserting new file"
@@ -7913,23 +7792,23 @@
 
     throw v2
 
-    .line 3558
+    .line 3565
     :cond_1b
     if-eqz v8, :cond_1c
 
-    .line 3559
+    .line 3566
     new-instance v4, Ljava/io/File;
 
     invoke-direct {v4, v8}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 3560
+    .line 3567
     invoke-virtual {v4}, Ljava/io/File;->exists()Z
 
     move-result v5
 
     if-eqz v5, :cond_1c
 
-    .line 3561
+    .line 3568
     const-string v5, "date_modified"
 
     invoke-virtual {v4}, Ljava/io/File;->lastModified()J
@@ -7946,7 +7825,7 @@
 
     invoke-virtual {v2, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 3562
+    .line 3569
     const-string v5, "_size"
 
     invoke-virtual {v4}, Ljava/io/File;->length()J
@@ -7959,7 +7838,7 @@
 
     invoke-virtual {v2, v5, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 3566
+    .line 3573
     :cond_1c
     const-string v4, "parent"
 
@@ -7967,20 +7846,20 @@
 
     move-result-object v4
 
-    .line 3567
+    .line 3574
     if-nez v4, :cond_1d
 
-    .line 3568
+    .line 3575
     if-eqz v8, :cond_1d
 
-    .line 3569
+    .line 3576
     move-object/from16 v0, p0
 
     invoke-direct {v0, v3, v8}, Lcom/android/providers/media/MediaProvider;->getParent(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)J
 
     move-result-wide v4
 
-    .line 3570
+    .line 3577
     const-string v6, "parent"
 
     invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -7989,7 +7868,7 @@
 
     invoke-virtual {v2, v6, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 3573
+    .line 3580
     :cond_1d
     const-string v4, "storage_id"
 
@@ -7997,17 +7876,17 @@
 
     move-result-object v4
 
-    .line 3574
+    .line 3581
     if-nez v4, :cond_1e
 
-    .line 3575
+    .line 3582
     move-object/from16 v0, p0
 
     invoke-direct {v0, v8}, Lcom/android/providers/media/MediaProvider;->getStorageId(Ljava/lang/String;)I
 
     move-result v4
 
-    .line 3576
+    .line 3583
     const-string v5, "storage_id"
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -8016,7 +7895,7 @@
 
     invoke-virtual {v2, v5, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 3579
+    .line 3586
     :cond_1e
     const-string v4, "files"
 
@@ -8026,7 +7905,7 @@
 
     move-result-wide v4
 
-    .line 3582
+    .line 3589
     const-wide/16 v2, 0x0
 
     cmp-long v2, v4, v2
@@ -8035,17 +7914,17 @@
 
     if-eqz p5, :cond_1f
 
-    .line 3583
+    .line 3590
     move-object/from16 v0, p0
 
     invoke-direct {v0, v4, v5}, Lcom/android/providers/media/MediaProvider;->sendObjectAdded(J)V
 
-    .line 3590
+    .line 3597
     :cond_1f
     :goto_b
     return-wide v4
 
-    .line 3586
+    .line 3593
     :cond_20
     const-string v6, "files"
 
@@ -8067,7 +7946,7 @@
 
     goto :goto_b
 
-    .line 3331
+    .line 3338
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -8083,12 +7962,12 @@
     .parameter
 
     .prologue
-    .line 3735
+    .line 3742
     const/16 v0, 0x1f4
 
     if-ne p2, v0, :cond_1
 
-    .line 3736
+    .line 3743
     const-string v0, "volume"
 
     invoke-virtual {p3, v0}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
@@ -8097,47 +7976,47 @@
 
     iput-object v0, p0, Lcom/android/providers/media/MediaProvider;->mMediaScannerVolume:Ljava/lang/String;
 
-    .line 3737
+    .line 3744
     invoke-static {}, Landroid/provider/MediaStore;->getMediaScannerUri()Landroid/net/Uri;
 
     move-result-object v2
 
-    .line 4005
+    .line 4012
     :cond_0
     :goto_0
     return-object v2
 
-    .line 3740
+    .line 3747
     :cond_1
     const/4 v0, 0x0
 
-    .line 3741
+    .line 3748
     if-eqz p3, :cond_8
 
-    .line 3742
+    .line 3749
     const-string v0, "genre"
 
     invoke-virtual {p3, v0}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3743
+    .line 3750
     const-string v1, "genre"
 
     invoke-virtual {p3, v1}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
     move-object v6, v0
 
-    .line 3746
+    .line 3753
     :goto_1
     const/4 v7, 0x0
 
-    .line 3747
+    .line 3754
     invoke-direct {p0, p1}, Lcom/android/providers/media/MediaProvider;->getDatabaseForUri(Landroid/net/Uri;)Lcom/android/providers/media/MediaProvider$DatabaseHelper;
 
     move-result-object v1
 
-    .line 3748
+    .line 3755
     if-nez v1, :cond_2
 
     const/16 v0, 0x12c
@@ -8148,7 +8027,7 @@
 
     if-eq p2, v0, :cond_2
 
-    .line 3749
+    .line 3756
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -8173,7 +8052,7 @@
 
     throw v0
 
-    .line 3752
+    .line 3759
     :cond_2
     const/16 v0, 0x12c
 
@@ -8188,11 +8067,11 @@
 
     move-object v8, v0
 
-    .line 3755
+    .line 3762
     :goto_2
     sparse-switch p2, :sswitch_data_0
 
-    .line 4002
+    .line 4009
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -8217,7 +8096,7 @@
 
     throw v0
 
-    .line 3752
+    .line 3759
     :cond_4
     invoke-virtual {v1}, Lcom/android/providers/media/MediaProvider$DatabaseHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -8227,7 +8106,7 @@
 
     goto :goto_2
 
-    .line 3757
+    .line 3764
     :sswitch_0
     const/4 v4, 0x1
 
@@ -8243,14 +8122,14 @@
 
     move-result-wide v1
 
-    .line 3758
+    .line 3765
     const-wide/16 v3, 0x0
 
     cmp-long v0, v1, v3
 
     if-lez v0, :cond_7
 
-    .line 3759
+    .line 3766
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v0
@@ -8271,7 +8150,7 @@
 
     move-result-object v2
 
-    .line 3761
+    .line 3768
     iget-object v1, p0, Lcom/android/providers/media/MediaProvider;->data_img:Ljava/lang/String;
 
     const/16 v3, 0xa
@@ -8284,7 +8163,7 @@
 
     goto/16 :goto_0
 
-    .line 3769
+    .line 3776
     :sswitch_1
     iget-boolean v1, v1, Lcom/android/providers/media/MediaProvider$DatabaseHelper;->mInternal:Z
 
@@ -8302,7 +8181,7 @@
 
     move-result-object v0
 
-    .line 3771
+    .line 3778
     const-string v1, "thumbnails"
 
     const-string v2, "name"
@@ -8311,14 +8190,14 @@
 
     move-result-wide v1
 
-    .line 3772
+    .line 3779
     const-wide/16 v3, 0x0
 
     cmp-long v0, v1, v3
 
     if-lez v0, :cond_7
 
-    .line 3773
+    .line 3780
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v0
@@ -8341,7 +8220,7 @@
 
     goto/16 :goto_0
 
-    .line 3781
+    .line 3788
     :sswitch_2
     iget-boolean v0, v1, Lcom/android/providers/media/MediaProvider$DatabaseHelper;->mInternal:Z
 
@@ -8353,7 +8232,7 @@
 
     move-result-object v0
 
-    .line 3783
+    .line 3790
     const-string v1, "videothumbnails"
 
     const-string v2, "name"
@@ -8362,14 +8241,14 @@
 
     move-result-wide v1
 
-    .line 3784
+    .line 3791
     const-wide/16 v3, 0x0
 
     cmp-long v0, v1, v3
 
     if-lez v0, :cond_7
 
-    .line 3785
+    .line 3792
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v0
@@ -8392,7 +8271,7 @@
 
     goto/16 :goto_0
 
-    .line 3792
+    .line 3799
     :sswitch_3
     const/4 v4, 0x2
 
@@ -8408,26 +8287,26 @@
 
     move-result-wide v3
 
-    .line 3793
+    .line 3800
     const-wide/16 v0, 0x0
 
     cmp-long v0, v3, v0
 
     if-lez v0, :cond_7
 
-    .line 3794
+    .line 3801
     new-instance v0, Landroid/content/ContentValues;
 
     invoke-direct {v0, p3}, Landroid/content/ContentValues;-><init>(Landroid/content/ContentValues;)V
 
-    .line 3795
+    .line 3802
     const-string v1, "_data"
 
     invoke-virtual {v0, v1}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3796
+    .line 3803
     if-eqz v0, :cond_5
 
     const-string v1, "/system/media"
@@ -8438,23 +8317,23 @@
 
     if-nez v1, :cond_5
 
-    .line 3798
+    .line 3805
     new-instance v1, Lcom/android/providers/media/MediaProvider$ThumbData;
 
     const/4 v2, 0x0
 
     invoke-direct {v1, p0, v2}, Lcom/android/providers/media/MediaProvider$ThumbData;-><init>(Lcom/android/providers/media/MediaProvider;Lcom/android/providers/media/MediaProvider$1;)V
 
-    .line 3799
+    .line 3806
     iput-wide v3, v1, Lcom/android/providers/media/MediaProvider$ThumbData;->album_id:J
 
-    .line 3800
+    .line 3807
     iput-object v0, v1, Lcom/android/providers/media/MediaProvider$ThumbData;->path:Ljava/lang/String;
 
-    .line 3801
+    .line 3808
     iput-object v8, v1, Lcom/android/providers/media/MediaProvider$ThumbData;->db:Landroid/database/sqlite/SQLiteDatabase;
 
-    .line 3802
+    .line 3809
     sget-object v0, Lcom/android/providers/media/MediaProvider;->AUDIO_THUMB_URI:Landroid/net/Uri;
 
     invoke-static {v0, v3, v4}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
@@ -8463,12 +8342,12 @@
 
     iput-object v0, v1, Lcom/android/providers/media/MediaProvider$ThumbData;->albumart_uri:Landroid/net/Uri;
 
-    .line 3803
+    .line 3810
     const/4 v0, 0x0
 
     iput-boolean v0, v1, Lcom/android/providers/media/MediaProvider$ThumbData;->bAlbum:Z
 
-    .line 3804
+    .line 3811
     iget-object v0, p0, Lcom/android/providers/media/MediaProvider;->mThumbHandler:Landroid/os/Handler;
 
     const/4 v2, 0x3
@@ -8479,7 +8358,7 @@
 
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
-    .line 3806
+    .line 3813
     :cond_5
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -8501,15 +8380,15 @@
 
     move-result-object v2
 
-    .line 3807
+    .line 3814
     if-eqz v6, :cond_0
 
-    .line 3808
+    .line 3815
     invoke-direct {p0, v3, v4, v6}, Lcom/android/providers/media/MediaProvider;->updateGenre(JLjava/lang/String;)V
 
     goto/16 :goto_0
 
-    .line 3815
+    .line 3822
     :sswitch_4
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -8531,17 +8410,17 @@
 
     move-result-object v0
 
-    .line 3816
+    .line 3823
     new-instance v1, Landroid/content/ContentValues;
 
     invoke-direct {v1, p3}, Landroid/content/ContentValues;-><init>(Landroid/content/ContentValues;)V
 
-    .line 3817
+    .line 3824
     const-string v2, "audio_id"
 
     invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 3818
+    .line 3825
     const-string v0, "audio_genres_map"
 
     const-string v2, "genre_id"
@@ -8550,21 +8429,21 @@
 
     move-result-wide v0
 
-    .line 3819
+    .line 3826
     const-wide/16 v2, 0x0
 
     cmp-long v2, v0, v2
 
     if-lez v2, :cond_7
 
-    .line 3820
+    .line 3827
     invoke-static {p1, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
 
     move-result-object v2
 
     goto/16 :goto_0
 
-    .line 3826
+    .line 3833
     :sswitch_5
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -8586,17 +8465,17 @@
 
     move-result-object v0
 
-    .line 3827
+    .line 3834
     new-instance v1, Landroid/content/ContentValues;
 
     invoke-direct {v1, p3}, Landroid/content/ContentValues;-><init>(Landroid/content/ContentValues;)V
 
-    .line 3828
+    .line 3835
     const-string v2, "audio_id"
 
     invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 3829
+    .line 3836
     const-string v0, "audio_playlists_map"
 
     const-string v2, "playlist_id"
@@ -8605,21 +8484,21 @@
 
     move-result-wide v0
 
-    .line 3831
+    .line 3838
     const-wide/16 v2, 0x0
 
     cmp-long v2, v0, v2
 
     if-lez v2, :cond_7
 
-    .line 3832
+    .line 3839
     invoke-static {p1, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
 
     move-result-object v2
 
     goto/16 :goto_0
 
-    .line 3838
+    .line 3845
     :sswitch_6
     const-string v0, "audio_genres"
 
@@ -8629,14 +8508,14 @@
 
     move-result-wide v1
 
-    .line 3839
+    .line 3846
     const-wide/16 v3, 0x0
 
     cmp-long v0, v1, v3
 
     if-lez v0, :cond_7
 
-    .line 3840
+    .line 3847
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v0
@@ -8659,7 +8538,7 @@
 
     goto/16 :goto_0
 
-    .line 3846
+    .line 3853
     :sswitch_7
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -8681,17 +8560,17 @@
 
     move-result-object v0
 
-    .line 3847
+    .line 3854
     new-instance v1, Landroid/content/ContentValues;
 
     invoke-direct {v1, p3}, Landroid/content/ContentValues;-><init>(Landroid/content/ContentValues;)V
 
-    .line 3848
+    .line 3855
     const-string v2, "genre_id"
 
     invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 3849
+    .line 3856
     const-string v0, "audio_genres_map"
 
     const-string v2, "genre_id"
@@ -8700,27 +8579,27 @@
 
     move-result-wide v0
 
-    .line 3850
+    .line 3857
     const-wide/16 v2, 0x0
 
     cmp-long v2, v0, v2
 
     if-lez v2, :cond_7
 
-    .line 3851
+    .line 3858
     invoke-static {p1, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
 
     move-result-object v2
 
     goto/16 :goto_0
 
-    .line 3857
+    .line 3864
     :sswitch_8
     new-instance v3, Landroid/content/ContentValues;
 
     invoke-direct {v3, p3}, Landroid/content/ContentValues;-><init>(Landroid/content/ContentValues;)V
 
-    .line 3858
+    .line 3865
     const-string v0, "date_added"
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -8737,7 +8616,7 @@
 
     invoke-virtual {v3, v0, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 3859
+    .line 3866
     const/4 v4, 0x4
 
     const/4 v5, 0x1
@@ -8750,14 +8629,14 @@
 
     move-result-wide v1
 
-    .line 3860
+    .line 3867
     const-wide/16 v3, 0x0
 
     cmp-long v0, v1, v3
 
     if-lez v0, :cond_7
 
-    .line 3861
+    .line 3868
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v0
@@ -8780,7 +8659,7 @@
 
     goto/16 :goto_0
 
-    .line 3868
+    .line 3875
     :sswitch_9
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -8802,17 +8681,17 @@
 
     move-result-object v0
 
-    .line 3869
+    .line 3876
     new-instance v1, Landroid/content/ContentValues;
 
     invoke-direct {v1, p3}, Landroid/content/ContentValues;-><init>(Landroid/content/ContentValues;)V
 
-    .line 3870
+    .line 3877
     const-string v2, "playlist_id"
 
     invoke-virtual {v1, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 3871
+    .line 3878
     const-string v0, "audio_playlists_map"
 
     const-string v2, "playlist_id"
@@ -8821,21 +8700,21 @@
 
     move-result-wide v0
 
-    .line 3872
+    .line 3879
     const-wide/16 v2, 0x0
 
     cmp-long v2, v0, v2
 
     if-lez v2, :cond_7
 
-    .line 3873
+    .line 3880
     invoke-static {p1, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
 
     move-result-object v2
 
     goto/16 :goto_0
 
-    .line 3879
+    .line 3886
     :sswitch_a
     const/4 v4, 0x3
 
@@ -8851,14 +8730,14 @@
 
     move-result-wide v1
 
-    .line 3880
+    .line 3887
     const-wide/16 v3, 0x0
 
     cmp-long v0, v1, v3
 
     if-lez v0, :cond_7
 
-    .line 3881
+    .line 3888
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v0
@@ -8879,20 +8758,9 @@
 
     move-result-object v2
 
-    .line 3883
-    iget-object v1, p0, Lcom/android/providers/media/MediaProvider;->data_video:Ljava/lang/String;
-
-    const/16 v3, 0xa
-
-    const-wide/16 v4, 0x0
-
-    move-object v0, p0
-
-    invoke-direct/range {v0 .. v5}, Lcom/android/providers/media/MediaProvider;->requestMediaThumbnail(Ljava/lang/String;Landroid/net/Uri;IJ)Lcom/android/providers/media/MediaThumbRequest;
-
     goto/16 :goto_0
 
-    .line 3895
+    .line 3902
     :sswitch_b
     const/4 v0, 0x0
 
@@ -8907,7 +8775,7 @@
 
     move-result-object p3
 
-    .line 3900
+    .line 3907
     :goto_3
     const-string v0, "album_art"
 
@@ -8917,21 +8785,21 @@
 
     move-result-wide v0
 
-    .line 3901
+    .line 3908
     const-wide/16 v2, 0x0
 
     cmp-long v2, v0, v2
 
     if-lez v2, :cond_7
 
-    .line 3902
+    .line 3909
     invoke-static {p1, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
 
     move-result-object v2
 
     goto/16 :goto_0
 
-    .line 3907
+    .line 3914
     :sswitch_c
     const-string v0, "_data"
 
@@ -8939,7 +8807,7 @@
 
     move-result-object v0
 
-    .line 3908
+    .line 3915
     const-string v1, "ext"
 
     invoke-static {v0}, Lcom/oppo/file/OppoFileOperator;->getPostfix(Ljava/lang/String;)Ljava/lang/String;
@@ -8948,7 +8816,7 @@
 
     invoke-virtual {p3, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3909
+    .line 3916
     const-string v1, "type"
 
     invoke-static {v0}, Lcom/oppo/file/OppoFileOperator;->getFileType(Ljava/lang/String;)I
@@ -8961,10 +8829,10 @@
 
     invoke-virtual {p3, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 3910
+    .line 3917
     invoke-direct {p0, p3}, Lcom/android/providers/media/MediaProvider;->setColumnPosition(Landroid/content/ContentValues;)V
 
-    .line 3911
+    .line 3918
     const-string v1, "position"
 
     const/4 v2, 0x0
@@ -8975,10 +8843,10 @@
 
     invoke-virtual {p3, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 3912
+    .line 3919
     invoke-static {v0, p3}, Lcom/android/providers/media/MediaProvider;->computeDisplayName(Ljava/lang/String;Landroid/content/ContentValues;)V
 
-    .line 3913
+    .line 3920
     const-string v0, "other_files"
 
     const-string v1, "_data"
@@ -8987,21 +8855,21 @@
 
     move-result-wide v0
 
-    .line 3915
+    .line 3922
     const-wide/16 v2, 0x0
 
     cmp-long v2, v0, v2
 
     if-lez v2, :cond_7
 
-    .line 3917
+    .line 3924
     invoke-static {p1, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
 
     move-result-object v2
 
     goto/16 :goto_0
 
-    .line 3922
+    .line 3929
     :sswitch_d
     const-string v0, "name"
 
@@ -9015,24 +8883,24 @@
 
     goto/16 :goto_0
 
-    .line 3925
+    .line 3932
     :sswitch_e
     iget-object v1, p0, Lcom/android/providers/media/MediaProvider;->mMtpServiceConnection:Landroid/content/ServiceConnection;
 
     monitor-enter v1
 
-    .line 3926
+    .line 3933
     :try_start_1
     iget-object v0, p0, Lcom/android/providers/media/MediaProvider;->mMtpService:Lcom/android/providers/media/IMtpService;
 
     if-nez v0, :cond_6
 
-    .line 3927
+    .line 3934
     invoke-virtual {p0}, Lcom/android/providers/media/MediaProvider;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 3929
+    .line 3936
     new-instance v2, Landroid/content/Intent;
 
     const-class v3, Lcom/android/providers/media/MtpService;
@@ -9045,16 +8913,16 @@
 
     invoke-virtual {v0, v2, v3, v4}, Landroid/content/Context;->bindService(Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
 
-    .line 3932
+    .line 3939
     :cond_6
     monitor-exit v1
 
     move-object v2, v7
 
-    .line 3933
+    .line 3940
     goto/16 :goto_0
 
-    .line 3932
+    .line 3939
     :catchall_0
     move-exception v0
 
@@ -9064,7 +8932,7 @@
 
     throw v0
 
-    .line 3936
+    .line 3943
     :sswitch_f
     const/4 v4, 0x0
 
@@ -9080,14 +8948,14 @@
 
     move-result-wide v1
 
-    .line 3938
+    .line 3945
     const-wide/16 v3, 0x0
 
     cmp-long v0, v1, v3
 
     if-lez v0, :cond_7
 
-    .line 3939
+    .line 3946
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v0
@@ -9106,7 +8974,7 @@
 
     goto/16 :goto_0
 
-    .line 3945
+    .line 3952
     :sswitch_10
     const/4 v4, 0x0
 
@@ -9122,14 +8990,14 @@
 
     move-result-wide v1
 
-    .line 3947
+    .line 3954
     const-wide/16 v3, 0x0
 
     cmp-long v0, v1, v3
 
     if-lez v0, :cond_7
 
-    .line 3948
+    .line 3955
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v0
@@ -9148,7 +9016,7 @@
 
     goto/16 :goto_0
 
-    .line 3952
+    .line 3959
     :sswitch_11
     const-string v0, "now_playing"
 
@@ -9158,21 +9026,21 @@
 
     move-result-wide v0
 
-    .line 3953
+    .line 3960
     const-wide/16 v2, 0x0
 
     cmp-long v2, v0, v2
 
     if-lez v2, :cond_7
 
-    .line 3955
+    .line 3962
     invoke-static {p1, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
 
     move-result-object v2
 
     goto/16 :goto_0
 
-    .line 3962
+    .line 3969
     :sswitch_12
     const/4 v0, 0x0
 
@@ -9187,7 +9055,7 @@
 
     move-result-object p3
 
-    .line 3968
+    .line 3975
     :goto_4
     const-string v0, "audio_thumb"
 
@@ -9197,21 +9065,21 @@
 
     move-result-wide v0
 
-    .line 3969
+    .line 3976
     const-wide/16 v2, 0x0
 
     cmp-long v2, v0, v2
 
     if-lez v2, :cond_7
 
-    .line 3971
+    .line 3978
     invoke-static {p1, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
 
     move-result-object v2
 
     goto/16 :goto_0
 
-    .line 3976
+    .line 3983
     :sswitch_13
     const-string v0, "ringtone_clip"
 
@@ -9221,21 +9089,21 @@
 
     move-result-wide v0
 
-    .line 3977
+    .line 3984
     const-wide/16 v2, 0x0
 
     cmp-long v2, v0, v2
 
     if-lez v2, :cond_7
 
-    .line 3979
+    .line 3986
     invoke-static {p1, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
 
     move-result-object v2
 
     goto/16 :goto_0
 
-    .line 3984
+    .line 3991
     :sswitch_14
     const-string v0, "settings"
 
@@ -9245,21 +9113,21 @@
 
     move-result-wide v0
 
-    .line 3986
+    .line 3993
     const-wide/16 v2, 0x0
 
     cmp-long v2, v0, v2
 
     if-lez v2, :cond_7
 
-    .line 3988
+    .line 3995
     invoke-static {p1, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
 
     move-result-object v2
 
     goto/16 :goto_0
 
-    .line 3992
+    .line 3999
     :sswitch_15
     const-string v0, "name"
 
@@ -9267,7 +9135,7 @@
 
     invoke-virtual {p3, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3993
+    .line 4000
     const-string v0, "settings"
 
     const-string v1, "name"
@@ -9276,7 +9144,7 @@
 
     move-result-wide v0
 
-    .line 3995
+    .line 4002
     const-wide/16 v2, 0x0
 
     cmp-long v0, v0, v2
@@ -9285,16 +9153,16 @@
 
     move-object v2, p1
 
-    .line 3997
+    .line 4004
     goto/16 :goto_0
 
-    .line 3963
+    .line 3970
     :catch_0
     move-exception v0
 
     goto :goto_4
 
-    .line 3896
+    .line 3903
     :catch_1
     move-exception v0
 
@@ -9310,7 +9178,7 @@
 
     goto/16 :goto_1
 
-    .line 3755
+    .line 3762
     nop
 
     :sswitch_data_0
@@ -9395,16 +9263,16 @@
     .locals 3
 
     .prologue
-    .line 5472
+    .line 5479
     const/4 v0, 0x1
 
-    .line 5473
+    .line 5480
     .local v0, isStorageMounted:Z
     invoke-static {}, Loppo/os/Environment;->getInternalSdState()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 5474
+    .line 5481
     .local v1, status:Ljava/lang/String;
     const-string v2, "shared"
 
@@ -9438,11 +9306,11 @@
 
     if-eqz v2, :cond_1
 
-    .line 5479
+    .line 5486
     :cond_0
     const/4 v0, 0x0
 
-    .line 5481
+    .line 5488
     :cond_1
     return v0
 .end method
@@ -9454,12 +9322,12 @@
     .parameter "album_id"
 
     .prologue
-    .line 4935
+    .line 4942
     iget-object v3, p0, Lcom/android/providers/media/MediaProvider;->mPendingThumbs:Ljava/util/HashSet;
 
     monitor-enter v3
 
-    .line 4936
+    .line 4943
     :try_start_0
     iget-object v2, p0, Lcom/android/providers/media/MediaProvider;->mPendingThumbs:Ljava/util/HashSet;
 
@@ -9469,42 +9337,42 @@
 
     if-eqz v2, :cond_0
 
-    .line 4939
+    .line 4946
     monitor-exit v3
 
-    .line 4963
+    .line 4970
     :goto_0
     return-void
 
-    .line 4942
+    .line 4949
     :cond_0
     iget-object v2, p0, Lcom/android/providers/media/MediaProvider;->mPendingThumbs:Ljava/util/HashSet;
 
     invoke-virtual {v2, p2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 4943
+    .line 4950
     monitor-exit v3
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4945
+    .line 4952
     new-instance v0, Lcom/android/providers/media/MediaProvider$ThumbData;
 
     const/4 v2, 0x0
 
     invoke-direct {v0, p0, v2}, Lcom/android/providers/media/MediaProvider$ThumbData;-><init>(Lcom/android/providers/media/MediaProvider;Lcom/android/providers/media/MediaProvider$1;)V
 
-    .line 4946
+    .line 4953
     .local v0, d:Lcom/android/providers/media/MediaProvider$ThumbData;
     iput-object p1, v0, Lcom/android/providers/media/MediaProvider$ThumbData;->db:Landroid/database/sqlite/SQLiteDatabase;
 
-    .line 4947
+    .line 4954
     iput-object p2, v0, Lcom/android/providers/media/MediaProvider$ThumbData;->path:Ljava/lang/String;
 
-    .line 4948
+    .line 4955
     iput-wide p3, v0, Lcom/android/providers/media/MediaProvider$ThumbData;->album_id:J
 
-    .line 4949
+    .line 4956
     iget-object v2, p0, Lcom/android/providers/media/MediaProvider;->mAlbumArtBaseUri:Landroid/net/Uri;
 
     invoke-static {v2, p3, p4}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
@@ -9513,23 +9381,23 @@
 
     iput-object v2, v0, Lcom/android/providers/media/MediaProvider$ThumbData;->albumart_uri:Landroid/net/Uri;
 
-    .line 4956
+    .line 4963
     iget-object v3, p0, Lcom/android/providers/media/MediaProvider;->mThumbRequestStack:Ljava/util/Stack;
 
     monitor-enter v3
 
-    .line 4957
+    .line 4964
     :try_start_1
     iget-object v2, p0, Lcom/android/providers/media/MediaProvider;->mThumbRequestStack:Ljava/util/Stack;
 
     invoke-virtual {v2, v0}, Ljava/util/Stack;->push(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 4958
+    .line 4965
     monitor-exit v3
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 4961
+    .line 4968
     iget-object v2, p0, Lcom/android/providers/media/MediaProvider;->mThumbHandler:Landroid/os/Handler;
 
     const/4 v3, 0x1
@@ -9538,13 +9406,13 @@
 
     move-result-object v1
 
-    .line 4962
+    .line 4969
     .local v1, msg:Landroid/os/Message;
     invoke-virtual {v1}, Landroid/os/Message;->sendToTarget()V
 
     goto :goto_0
 
-    .line 4943
+    .line 4950
     .end local v0           #d:Lcom/android/providers/media/MediaProvider$ThumbData;
     .end local v1           #msg:Landroid/os/Message;
     :catchall_0
@@ -9557,7 +9425,7 @@
 
     throw v2
 
-    .line 4958
+    .line 4965
     .restart local v0       #d:Lcom/android/providers/media/MediaProvider$ThumbData;
     :catchall_1
     move-exception v2
@@ -9579,7 +9447,7 @@
 
     const/4 v7, 0x0
 
-    .line 5156
+    .line 5163
     invoke-virtual {p0}, Lcom/android/providers/media/MediaProvider;->getContext()Landroid/content/Context;
 
     move-result-object v8
@@ -9590,59 +9458,59 @@
 
     move-result-object v1
 
-    .line 5158
+    .line 5165
     .local v1, compressed:[B
     if-nez v1, :cond_1
 
     move-object v6, v7
 
-    .line 5244
+    .line 5251
     :cond_0
     :goto_0
     return-object v6
 
-    .line 5162
+    .line 5169
     :cond_1
     const/4 v0, 0x0
 
-    .line 5163
+    .line 5170
     .local v0, bm:Landroid/graphics/Bitmap;
     const/4 v3, 0x1
 
-    .line 5167
+    .line 5174
     .local v3, need_to_recompress:Z
     :try_start_0
     new-instance v4, Landroid/graphics/BitmapFactory$Options;
 
     invoke-direct {v4}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
-    .line 5168
+    .line 5175
     .local v4, opts:Landroid/graphics/BitmapFactory$Options;
     const/4 v8, 0x1
 
     iput-boolean v8, v4, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
 
-    .line 5169
+    .line 5176
     const/4 v8, 0x1
 
     iput v8, v4, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
 
-    .line 5170
+    .line 5177
     const/4 v8, 0x0
 
     array-length v9, v1
 
     invoke-static {v1, v8, v9, v4}, Landroid/graphics/BitmapFactory;->decodeByteArray([BIILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
 
-    .line 5185
+    .line 5192
     iget v8, v4, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
 
     if-ne v8, v10, :cond_3
 
-    .line 5188
+    .line 5195
     const/4 v3, 0x0
 
-    .line 5206
+    .line 5213
     .end local v4           #opts:Landroid/graphics/BitmapFactory$Options;
     :cond_2
     :goto_1
@@ -9652,22 +9520,22 @@
 
     move-object v6, v7
 
-    .line 5207
+    .line 5214
     goto :goto_0
 
-    .line 5191
+    .line 5198
     .restart local v4       #opts:Landroid/graphics/BitmapFactory$Options;
     :cond_3
     const/4 v8, 0x0
 
     iput-boolean v8, v4, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
 
-    .line 5192
+    .line 5199
     sget-object v8, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
     iput-object v8, v4, Landroid/graphics/BitmapFactory$Options;->inPreferredConfig:Landroid/graphics/Bitmap$Config;
 
-    .line 5193
+    .line 5200
     const/4 v8, 0x0
 
     array-length v9, v1
@@ -9676,7 +9544,7 @@
 
     move-result-object v0
 
-    .line 5195
+    .line 5202
     if-eqz v0, :cond_2
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;
@@ -9685,7 +9553,7 @@
 
     if-nez v8, :cond_2
 
-    .line 5196
+    .line 5203
     sget-object v8, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
     const/4 v9, 0x0
@@ -9694,23 +9562,23 @@
 
     move-result-object v2
 
-    .line 5197
+    .line 5204
     .local v2, nbm:Landroid/graphics/Bitmap;
     if-eqz v2, :cond_2
 
     if-eq v2, v0, :cond_2
 
-    .line 5198
+    .line 5205
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_3
 
-    .line 5199
+    .line 5206
     move-object v0, v2
 
     goto :goto_1
 
-    .line 5210
+    .line 5217
     .end local v2           #nbm:Landroid/graphics/Bitmap;
     .end local v4           #opts:Landroid/graphics/BitmapFactory$Options;
     :cond_4
@@ -9718,7 +9586,7 @@
 
     if-nez v8, :cond_5
 
-    .line 5214
+    .line 5221
     :try_start_1
     const-string v8, "albumthumb"
 
@@ -9730,26 +9598,26 @@
 
     goto :goto_0
 
-    .line 5222
+    .line 5229
     :cond_5
     iget-object v8, p1, Lcom/android/providers/media/MediaProvider$ThumbData;->db:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v8}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
-    .line 5224
+    .line 5231
     :try_start_2
     invoke-virtual {p0, p1}, Lcom/android/providers/media/MediaProvider;->getAlbumArtOutputUri(Lcom/android/providers/media/MediaProvider$ThumbData;)Landroid/net/Uri;
 
     move-result-object v5
 
-    .line 5226
+    .line 5233
     .local v5, out:Landroid/net/Uri;
     if-eqz v5, :cond_6
 
-    .line 5227
+    .line 5234
     invoke-direct {p0, v3, v5, v1, v0}, Lcom/android/providers/media/MediaProvider;->writeAlbumArt(ZLandroid/net/Uri;[BLandroid/graphics/Bitmap;)V
 
-    .line 5228
+    .line 5235
     invoke-virtual {p0}, Lcom/android/providers/media/MediaProvider;->getContext()Landroid/content/Context;
 
     move-result-object v8
@@ -9764,14 +9632,14 @@
 
     invoke-virtual {v8, v9, v10}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
 
-    .line 5229
+    .line 5236
     const-string v8, "r"
 
     invoke-virtual {p0, v5, v8}, Lcom/android/providers/media/MediaProvider;->openFileHelper(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
 
     move-result-object v6
 
-    .line 5230
+    .line 5237
     .local v6, pfd:Landroid/os/ParcelFileDescriptor;
     iget-object v8, p1, Lcom/android/providers/media/MediaProvider$ThumbData;->db:Landroid/database/sqlite/SQLiteDatabase;
 
@@ -9781,30 +9649,30 @@
     .catch Ljava/io/FileNotFoundException; {:try_start_2 .. :try_end_2} :catch_0
     .catch Ljava/lang/UnsupportedOperationException; {:try_start_2 .. :try_end_2} :catch_1
 
-    .line 5238
+    .line 5245
     iget-object v7, p1, Lcom/android/providers/media/MediaProvider$ThumbData;->db:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v7}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
-    .line 5239
+    .line 5246
     if-eqz v0, :cond_0
 
-    .line 5240
+    .line 5247
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
     goto :goto_0
 
-    .line 5238
+    .line 5245
     .end local v6           #pfd:Landroid/os/ParcelFileDescriptor;
     :cond_6
     iget-object v8, p1, Lcom/android/providers/media/MediaProvider$ThumbData;->db:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v8}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
-    .line 5239
+    .line 5246
     if-eqz v0, :cond_7
 
-    .line 5240
+    .line 5247
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
     .end local v5           #out:Landroid/net/Uri;
@@ -9812,44 +9680,44 @@
     :goto_2
     move-object v6, v7
 
-    .line 5244
+    .line 5251
     goto/16 :goto_0
 
-    .line 5233
+    .line 5240
     :catch_0
     move-exception v8
 
-    .line 5238
+    .line 5245
     iget-object v8, p1, Lcom/android/providers/media/MediaProvider$ThumbData;->db:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v8}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
-    .line 5239
+    .line 5246
     if-eqz v0, :cond_7
 
-    .line 5240
+    .line 5247
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
     goto :goto_2
 
-    .line 5235
+    .line 5242
     :catch_1
     move-exception v8
 
-    .line 5238
+    .line 5245
     iget-object v8, p1, Lcom/android/providers/media/MediaProvider$ThumbData;->db:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v8}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
-    .line 5239
+    .line 5246
     if-eqz v0, :cond_7
 
-    .line 5240
+    .line 5247
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
     goto :goto_2
 
-    .line 5238
+    .line 5245
     :catchall_0
     move-exception v7
 
@@ -9857,22 +9725,22 @@
 
     invoke-virtual {v8}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
-    .line 5239
+    .line 5246
     if-eqz v0, :cond_8
 
-    .line 5240
+    .line 5247
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
     :cond_8
     throw v7
 
-    .line 5215
+    .line 5222
     :catch_2
     move-exception v8
 
     goto :goto_2
 
-    .line 5203
+    .line 5210
     :catch_3
     move-exception v8
 
@@ -9973,21 +9841,21 @@
     .parameter
 
     .prologue
-    .line 4728
+    .line 4735
     if-ne p4, p5, :cond_0
 
-    .line 4729
+    .line 4736
     const/4 v0, 0x0
 
-    .line 4759
+    .line 4766
     :goto_0
     return v0
 
-    .line 4731
+    .line 4738
     :cond_0
     invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
-    .line 4734
+    .line 4741
     :try_start_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -10019,10 +9887,10 @@
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 4740
+    .line 4747
     if-ge p4, p5, :cond_1
 
-    .line 4741
+    .line 4748
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -10063,12 +9931,12 @@
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 4744
+    .line 4751
     sub-int v0, p5, p4
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 4751
+    .line 4758
     :goto_1
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -10100,10 +9968,10 @@
 
     invoke-virtual {p1, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 4753
+    .line 4760
     invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
 
-    .line 4754
+    .line 4761
     sget-object v1, Landroid/provider/MediaStore$Audio$Playlists;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
     invoke-virtual {v1}, Landroid/net/Uri;->buildUpon()Landroid/net/Uri$Builder;
@@ -10122,7 +9990,7 @@
 
     move-result-object v1
 
-    .line 4756
+    .line 4763
     invoke-virtual {p0}, Lcom/android/providers/media/MediaProvider;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -10137,12 +10005,12 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4759
+    .line 4766
     invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
     goto/16 :goto_0
 
-    .line 4746
+    .line 4753
     :cond_1
     :try_start_1
     new-instance v0, Ljava/lang/StringBuilder;
@@ -10187,14 +10055,14 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 4749
+    .line 4756
     sub-int v0, p4, p5
 
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 4759
+    .line 4766
     :catchall_0
     move-exception v0
 
@@ -10873,15 +10741,15 @@
     .parameter "magic"
 
     .prologue
-    .line 4045
+    .line 4052
     iget-object v10, p0, Lcom/android/providers/media/MediaProvider;->mMediaThumbQueue:Ljava/util/PriorityQueue;
 
     monitor-enter v10
 
-    .line 4046
+    .line 4053
     const/4 v8, 0x0
 
-    .line 4048
+    .line 4055
     .local v8, req:Lcom/android/providers/media/MediaThumbRequest;
     :try_start_0
     new-instance v0, Lcom/android/providers/media/MediaThumbRequest;
@@ -10907,7 +10775,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 4050
+    .line 4057
     .end local v8           #req:Lcom/android/providers/media/MediaThumbRequest;
     .local v0, req:Lcom/android/providers/media/MediaThumbRequest;
     :try_start_1
@@ -10915,7 +10783,7 @@
 
     invoke-virtual {v1, v0}, Ljava/util/PriorityQueue;->add(Ljava/lang/Object;)Z
 
-    .line 4052
+    .line 4059
     iget-object v1, p0, Lcom/android/providers/media/MediaProvider;->mThumbHandler:Landroid/os/Handler;
 
     const/4 v2, 0x2
@@ -10924,14 +10792,14 @@
 
     move-result-object v7
 
-    .line 4053
+    .line 4060
     .local v7, msg:Landroid/os/Message;
     invoke-virtual {v7}, Landroid/os/Message;->sendToTarget()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 4057
+    .line 4064
     .end local v7           #msg:Landroid/os/Message;
     :goto_0
     :try_start_2
@@ -10939,7 +10807,7 @@
 
     return-object v0
 
-    .line 4054
+    .line 4061
     .end local v0           #req:Lcom/android/providers/media/MediaThumbRequest;
     .restart local v8       #req:Lcom/android/providers/media/MediaThumbRequest;
     :catch_0
@@ -10947,7 +10815,7 @@
 
     move-object v0, v8
 
-    .line 4055
+    .line 4062
     .end local v8           #req:Lcom/android/providers/media/MediaThumbRequest;
     .restart local v0       #req:Lcom/android/providers/media/MediaThumbRequest;
     .local v9, t:Ljava/lang/Throwable;
@@ -10958,7 +10826,7 @@
 
     goto :goto_0
 
-    .line 4058
+    .line 4065
     .end local v9           #t:Ljava/lang/Throwable;
     :catchall_0
     move-exception v1
@@ -10981,7 +10849,7 @@
     .restart local v0       #req:Lcom/android/providers/media/MediaThumbRequest;
     goto :goto_2
 
-    .line 4054
+    .line 4061
     :catch_1
     move-exception v9
 
@@ -11549,25 +11417,29 @@
 .end method
 
 .method private setIsHiddenImages(Ljava/lang/String;Landroid/content/ContentValues;)V
-    .locals 3
+    .locals 5
     .parameter
     .parameter
 
     .prologue
-    .line 3312
+    const v4, 0x7f040008
+
+    const/4 v3, 0x0
+
+    .line 3314
     if-nez p1, :cond_0
 
-    .line 3324
+    .line 3331
     :goto_0
     return-void
 
-    .line 3315
+    .line 3317
     :cond_0
     invoke-virtual {p0}, Lcom/android/providers/media/MediaProvider;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 3316
+    .line 3318
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -11610,9 +11482,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f040008
-
-    invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -11656,6 +11526,172 @@
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "/"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v2, Lcom/android/providers/media/MediaProvider;->INTERNAL_SD_PATH:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "/"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "/"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v2, Lcom/android/providers/media/MediaProvider;->INTERNAL_SD_PATH:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "/"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const v2, 0x7f040009
+
+    invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "/"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v2, Lcom/android/providers/media/MediaProvider;->INTERNAL_SD_PATH:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "/"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const v2, 0x7f04000a
+
+    invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "/"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v2, Lcom/android/providers/media/MediaProvider;->INTERNAL_SD_PATH:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "/"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const v2, 0x7f04000b
+
+    invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
     move-result-object v0
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -11676,15 +11712,31 @@
 
     move-result v0
 
+    if-nez v0, :cond_1
+
+    const-string v0, "/"
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
+
+    move-result v0
+
+    invoke-virtual {p1, v3, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/android/providers/media/MediaProvider;->INTERNAL_SD_PATH:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
     if-eqz v0, :cond_2
 
-    .line 3320
+    .line 3327
     :cond_1
     const-string v0, "is_hidden"
 
-    const/4 v1, 0x0
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
 
@@ -11692,7 +11744,7 @@
 
     goto/16 :goto_0
 
-    .line 3322
+    .line 3329
     :cond_2
     const-string v0, "is_hidden"
 
@@ -11943,10 +11995,10 @@
     .parameter
 
     .prologue
-    .line 3618
+    .line 3625
     const-wide/16 v10, 0x0
 
-    .line 3619
+    .line 3626
     const-string v3, "files"
 
     sget-object v4, Lcom/android/providers/media/MediaProvider;->mMediaTableColumns:[Ljava/lang/String;
@@ -11977,7 +12029,7 @@
 
     move-result-object v4
 
-    .line 3623
+    .line 3630
     if-eqz v4, :cond_c
 
     :try_start_0
@@ -11987,7 +12039,7 @@
 
     if-eqz v2, :cond_c
 
-    .line 3624
+    .line 3631
     const/4 v2, 0x1
 
     invoke-interface {v4, v2}, Landroid/database/Cursor;->getInt(I)I
@@ -11996,26 +12048,26 @@
 
     move-result v2
 
-    .line 3625
+    .line 3632
     const/4 v3, 0x4
 
     if-eq v2, v3, :cond_1
 
-    .line 3627
+    .line 3634
     const/4 v2, 0x0
 
-    .line 3632
+    .line 3639
     if-eqz v4, :cond_0
 
-    .line 3633
+    .line 3640
     invoke-interface {v4}, Landroid/database/Cursor;->close()V
 
-    .line 3684
+    .line 3691
     :cond_0
     :goto_0
     return v2
 
-    .line 3629
+    .line 3636
     :cond_1
     const/4 v2, 0x0
 
@@ -12028,14 +12080,14 @@
 
     move-wide v15, v2
 
-    .line 3632
+    .line 3639
     :goto_1
     if-eqz v4, :cond_2
 
-    .line 3633
+    .line 3640
     invoke-interface {v4}, Landroid/database/Cursor;->close()V
 
-    .line 3636
+    .line 3643
     :cond_2
     const-wide/16 v2, 0x0
 
@@ -12043,24 +12095,24 @@
 
     if-nez v2, :cond_4
 
-    .line 3637
+    .line 3644
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 3632
+    .line 3639
     :catchall_0
     move-exception v2
 
     if-eqz v4, :cond_3
 
-    .line 3633
+    .line 3640
     invoke-interface {v4}, Landroid/database/Cursor;->close()V
 
     :cond_3
     throw v2
 
-    .line 3641
+    .line 3648
     :cond_4
     const-string v2, "audio_playlists_map"
 
@@ -12082,22 +12134,22 @@
 
     invoke-virtual {v0, v2, v3, v4}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 3645
+    .line 3652
     move-object/from16 v0, p3
 
     array-length v0, v0
 
     move/from16 v17, v0
 
-    .line 3646
+    .line 3653
     const/4 v10, 0x0
 
-    .line 3647
+    .line 3654
     move/from16 v0, v17
 
     new-array v11, v0, [Landroid/content/ContentValues;
 
-    .line 3648
+    .line 3655
     const/4 v2, 0x0
 
     move v14, v2
@@ -12107,10 +12159,10 @@
 
     if-ge v14, v0, :cond_8
 
-    .line 3650
+    .line 3657
     const-wide/16 v12, 0x0
 
-    .line 3651
+    .line 3658
     aget-object v2, p3, v14
 
     const-string v3, "_id"
@@ -12123,7 +12175,7 @@
 
     move-result-wide v7
 
-    .line 3652
+    .line 3659
     const-string v3, "files"
 
     sget-object v4, Lcom/android/providers/media/MediaProvider;->mMediaTableColumns:[Ljava/lang/String;
@@ -12154,7 +12206,7 @@
 
     move-result-object v4
 
-    .line 3656
+    .line 3663
     if-eqz v4, :cond_b
 
     :try_start_2
@@ -12164,7 +12216,7 @@
 
     if-eqz v2, :cond_b
 
-    .line 3657
+    .line 3664
     const/4 v2, 0x1
 
     invoke-interface {v4, v2}, Landroid/database/Cursor;->getInt(I)I
@@ -12173,20 +12225,20 @@
 
     move-result v2
 
-    .line 3658
+    .line 3665
     const/4 v3, 0x2
 
     if-eq v2, v3, :cond_5
 
-    .line 3665
+    .line 3672
     if-eqz v4, :cond_a
 
-    .line 3666
+    .line 3673
     invoke-interface {v4}, Landroid/database/Cursor;->close()V
 
     move v2, v10
 
-    .line 3648
+    .line 3655
     :goto_3
     add-int/lit8 v3, v14, 0x1
 
@@ -12196,7 +12248,7 @@
 
     goto :goto_2
 
-    .line 3662
+    .line 3669
     :cond_5
     const/4 v2, 0x0
 
@@ -12207,14 +12259,14 @@
 
     move-result-wide v2
 
-    .line 3665
+    .line 3672
     :goto_4
     if-eqz v4, :cond_6
 
-    .line 3666
+    .line 3673
     invoke-interface {v4}, Landroid/database/Cursor;->close()V
 
-    .line 3669
+    .line 3676
     :cond_6
     const-wide/16 v4, 0x0
 
@@ -12222,12 +12274,12 @@
 
     if-eqz v4, :cond_a
 
-    .line 3670
+    .line 3677
     new-instance v4, Landroid/content/ContentValues;
 
     invoke-direct {v4}, Landroid/content/ContentValues;-><init>()V
 
-    .line 3671
+    .line 3678
     const-string v5, "playlist_id"
 
     invoke-static/range {v15 .. v16}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -12236,7 +12288,7 @@
 
     invoke-virtual {v4, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 3672
+    .line 3679
     const-string v5, "audio_id"
 
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -12245,7 +12297,7 @@
 
     invoke-virtual {v4, v5, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 3673
+    .line 3680
     const-string v2, "play_order"
 
     invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -12254,42 +12306,42 @@
 
     invoke-virtual {v4, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 3674
+    .line 3681
     add-int/lit8 v2, v10, 0x1
 
     aput-object v4, v11, v10
 
     goto :goto_3
 
-    .line 3665
+    .line 3672
     :catchall_1
     move-exception v2
 
     if-eqz v4, :cond_7
 
-    .line 3666
+    .line 3673
     invoke-interface {v4}, Landroid/database/Cursor;->close()V
 
     :cond_7
     throw v2
 
-    .line 3677
+    .line 3684
     :cond_8
     move/from16 v0, v17
 
     if-ge v10, v0, :cond_9
 
-    .line 3680
+    .line 3687
     new-array v2, v10, [Landroid/content/ContentValues;
 
-    .line 3681
+    .line 3688
     const/4 v3, 0x0
 
     const/4 v4, 0x0
 
     invoke-static {v11, v3, v2, v4, v10}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 3684
+    .line 3691
     :goto_5
     const-string v3, "external"
 
@@ -14801,15 +14853,15 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 3695
-    .line 3697
+    .line 3702
+    .line 3704
     const-string v0, "external"
 
     invoke-static {v0}, Landroid/provider/MediaStore$Audio$Genres;->getContentUri(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v1
 
-    .line 3700
+    .line 3707
     :try_start_0
     sget-object v2, Lcom/android/providers/media/MediaProvider;->GENRE_LOOKUP_PROJECTION:[Ljava/lang/String;
 
@@ -14833,7 +14885,7 @@
 
     move-result-object v2
 
-    .line 3702
+    .line 3709
     if-eqz v2, :cond_0
 
     :try_start_1
@@ -14843,27 +14895,27 @@
 
     if-nez v0, :cond_4
 
-    .line 3704
+    .line 3711
     :cond_0
     new-instance v0, Landroid/content/ContentValues;
 
     invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
 
-    .line 3705
+    .line 3712
     const-string v3, "name"
 
     invoke-virtual {v0, v3, p3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3706
+    .line 3713
     invoke-virtual {p0, v1, v0}, Lcom/android/providers/media/MediaProvider;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
 
     move-result-object v0
 
-    .line 3712
+    .line 3719
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 3713
+    .line 3720
     const-string v1, "members"
 
     invoke-static {v0, v1}, Landroid/net/Uri;->withAppendedPath(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
@@ -14872,23 +14924,23 @@
 
     move-result-object v0
 
-    .line 3717
+    .line 3724
     :cond_1
     if-eqz v2, :cond_2
 
-    .line 3718
+    .line 3725
     invoke-interface {v2}, Landroid/database/Cursor;->close()V
 
-    .line 3722
+    .line 3729
     :cond_2
     if-eqz v0, :cond_3
 
-    .line 3724
+    .line 3731
     new-instance v1, Landroid/content/ContentValues;
 
     invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
 
-    .line 3725
+    .line 3732
     const-string v2, "audio_id"
 
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -14897,19 +14949,19 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 3726
+    .line 3733
     invoke-virtual {p0, v0, v1}, Lcom/android/providers/media/MediaProvider;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
 
-    .line 3728
+    .line 3735
     :cond_3
     return-void
 
-    .line 3709
+    .line 3716
     :cond_4
     :try_start_2
     invoke-interface {v2}, Landroid/database/Cursor;->moveToNext()Z
 
-    .line 3710
+    .line 3717
     const/4 v0, 0x0
 
     invoke-interface {v2, v0}, Landroid/database/Cursor;->getLong(I)J
@@ -14924,7 +14976,7 @@
 
     goto :goto_0
 
-    .line 3717
+    .line 3724
     :catchall_0
     move-exception v0
 
@@ -14933,13 +14985,13 @@
     :goto_1
     if-eqz v1, :cond_5
 
-    .line 3718
+    .line 3725
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
     :cond_5
     throw v0
 
-    .line 3717
+    .line 3724
     :catchall_1
     move-exception v0
 
@@ -15289,10 +15341,10 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 5120
+    .line 5127
     const/4 v2, 0x0
 
-    .line 5122
+    .line 5129
     .local v2, success:Z
     :try_start_0
     invoke-virtual {p0}, Lcom/android/providers/media/MediaProvider;->getContext()Landroid/content/Context;
@@ -15307,29 +15359,29 @@
 
     move-result-object v1
 
-    .line 5124
+    .line 5131
     .local v1, outstream:Ljava/io/OutputStream;
     if-nez p1, :cond_1
 
-    .line 5127
+    .line 5134
     invoke-virtual {v1, p3}, Ljava/io/OutputStream;->write([B)V
 
-    .line 5128
+    .line 5135
     const/4 v2, 0x1
 
-    .line 5133
+    .line 5140
     :goto_0
     invoke-virtual {v1}, Ljava/io/OutputStream;->close()V
     :try_end_0
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 5139
+    .line 5146
     .end local v1           #outstream:Ljava/io/OutputStream;
     :goto_1
     if-nez v2, :cond_0
 
-    .line 5141
+    .line 5148
     invoke-virtual {p0}, Lcom/android/providers/media/MediaProvider;->getContext()Landroid/content/Context;
 
     move-result-object v3
@@ -15340,11 +15392,11 @@
 
     invoke-virtual {v3, p2, v5, v5}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 5143
+    .line 5150
     :cond_0
     return-void
 
-    .line 5130
+    .line 5137
     .restart local v1       #outstream:Ljava/io/OutputStream;
     :cond_1
     :try_start_1
@@ -15361,12 +15413,12 @@
 
     goto :goto_0
 
-    .line 5134
+    .line 5141
     .end local v1           #outstream:Ljava/io/OutputStream;
     :catch_0
     move-exception v0
 
-    .line 5135
+    .line 5142
     .local v0, ex:Ljava/io/FileNotFoundException;
     sget-object v3, Lcom/android/providers/media/MediaProvider;->TAG:Ljava/lang/String;
 
@@ -15376,12 +15428,12 @@
 
     goto :goto_1
 
-    .line 5136
+    .line 5143
     .end local v0           #ex:Ljava/io/FileNotFoundException;
     :catch_1
     move-exception v0
 
-    .line 5137
+    .line 5144
     .local v0, ex:Ljava/io/IOException;
     sget-object v3, Lcom/android/providers/media/MediaProvider;->TAG:Ljava/lang/String;
 
@@ -15415,7 +15467,7 @@
     .end annotation
 
     .prologue
-    .line 4014
+    .line 4021
     .local p1, operations:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Landroid/content/ContentProviderOperation;>;"
     sget-object v6, Landroid/provider/MediaStore$Audio$Media;->INTERNAL_CONTENT_URI:Landroid/net/Uri;
 
@@ -15423,7 +15475,7 @@
 
     move-result-object v3
 
-    .line 4015
+    .line 4022
     .local v3, ihelper:Lcom/android/providers/media/MediaProvider$DatabaseHelper;
     sget-object v6, Landroid/provider/MediaStore$Audio$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
@@ -15431,49 +15483,49 @@
 
     move-result-object v1
 
-    .line 4016
+    .line 4023
     .local v1, ehelper:Lcom/android/providers/media/MediaProvider$DatabaseHelper;
     invoke-virtual {v3}, Lcom/android/providers/media/MediaProvider$DatabaseHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v2
 
-    .line 4017
+    .line 4024
     .local v2, idb:Landroid/database/sqlite/SQLiteDatabase;
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
-    .line 4018
+    .line 4025
     const/4 v0, 0x0
 
-    .line 4019
+    .line 4026
     .local v0, edb:Landroid/database/sqlite/SQLiteDatabase;
     if-eqz v1, :cond_0
 
-    .line 4020
+    .line 4027
     invoke-virtual {v1}, Lcom/android/providers/media/MediaProvider$DatabaseHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
-    .line 4021
+    .line 4028
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
-    .line 4024
+    .line 4031
     :cond_0
     :try_start_0
     invoke-super {p0, p1}, Landroid/content/ContentProvider;->applyBatch(Ljava/util/ArrayList;)[Landroid/content/ContentProviderResult;
 
     move-result-object v5
 
-    .line 4025
+    .line 4032
     .local v5, result:[Landroid/content/ContentProviderResult;
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
 
-    .line 4026
+    .line 4033
     if-eqz v0, :cond_1
 
-    .line 4027
+    .line 4034
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
 
-    .line 4032
+    .line 4039
     :cond_1
     invoke-virtual {p0}, Lcom/android/providers/media/MediaProvider;->getContext()Landroid/content/Context;
 
@@ -15483,7 +15535,7 @@
 
     move-result-object v4
 
-    .line 4033
+    .line 4040
     .local v4, res:Landroid/content/ContentResolver;
     const-string v6, "content://media/"
 
@@ -15497,19 +15549,19 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4036
+    .line 4043
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
-    .line 4037
+    .line 4044
     if-eqz v0, :cond_2
 
-    .line 4038
+    .line 4045
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
     :cond_2
     return-object v5
 
-    .line 4036
+    .line 4043
     .end local v4           #res:Landroid/content/ContentResolver;
     .end local v5           #result:[Landroid/content/ContentProviderResult;
     :catchall_0
@@ -15517,10 +15569,10 @@
 
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
-    .line 4037
+    .line 4044
     if-eqz v0, :cond_3
 
-    .line 4038
+    .line 4045
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
     :cond_3
@@ -15746,64 +15798,64 @@
 
     const/4 v1, 0x0
 
-    .line 4283
+    .line 4290
     sget-object v2, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     invoke-virtual {v2, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
     move-result v2
 
-    .line 4285
+    .line 4292
     const/16 v3, 0x1f4
 
     if-ne v2, v3, :cond_1
 
-    .line 4286
+    .line 4293
     iget-object v2, p0, Lcom/android/providers/media/MediaProvider;->mMediaScannerVolume:Ljava/lang/String;
 
     if-nez v2, :cond_0
 
     move v0, v1
 
-    .line 4408
+    .line 4415
     :goto_0
     return v0
 
-    .line 4289
+    .line 4296
     :cond_0
     iput-object v6, p0, Lcom/android/providers/media/MediaProvider;->mMediaScannerVolume:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 4293
+    .line 4300
     :cond_1
     const/16 v3, 0x12d
 
     if-ne v2, v3, :cond_2
 
-    .line 4294
+    .line 4301
     invoke-direct {p0, p1}, Lcom/android/providers/media/MediaProvider;->detachVolume(Landroid/net/Uri;)V
 
     goto :goto_0
 
-    .line 4296
+    .line 4303
     :cond_2
     const/16 v3, 0x2c1
 
     if-ne v2, v3, :cond_4
 
-    .line 4297
+    .line 4304
     iget-object v2, p0, Lcom/android/providers/media/MediaProvider;->mMtpServiceConnection:Landroid/content/ServiceConnection;
 
     monitor-enter v2
 
-    .line 4298
+    .line 4305
     :try_start_0
     iget-object v3, p0, Lcom/android/providers/media/MediaProvider;->mMtpService:Lcom/android/providers/media/IMtpService;
 
     if-eqz v3, :cond_3
 
-    .line 4300
+    .line 4307
     invoke-virtual {p0}, Lcom/android/providers/media/MediaProvider;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -15812,12 +15864,12 @@
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
 
-    .line 4304
+    .line 4311
     const/4 v1, 0x0
 
     iput-object v1, p0, Lcom/android/providers/media/MediaProvider;->mMtpService:Lcom/android/providers/media/IMtpService;
 
-    .line 4308
+    .line 4315
     :goto_1
     monitor-exit v2
 
@@ -15835,19 +15887,19 @@
     :cond_3
     move v0, v1
 
-    .line 4306
+    .line 4313
     goto :goto_1
 
-    .line 4310
+    .line 4317
     :cond_4
     invoke-direct {p0, p1}, Lcom/android/providers/media/MediaProvider;->getDatabaseForUri(Landroid/net/Uri;)Lcom/android/providers/media/MediaProvider$DatabaseHelper;
 
     move-result-object v0
 
-    .line 4311
+    .line 4318
     if-nez v0, :cond_5
 
-    .line 4312
+    .line 4319
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -15882,27 +15934,27 @@
 
     throw v0
 
-    .line 4315
+    .line 4322
     :cond_5
     invoke-virtual {v0}, Lcom/android/providers/media/MediaProvider$DatabaseHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v7
 
-    .line 4317
+    .line 4324
     sget-object v8, Lcom/android/providers/media/MediaProvider;->sGetTableAndWhereParam:Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;
 
     monitor-enter v8
 
-    .line 4318
+    .line 4325
     :try_start_1
     sget-object v0, Lcom/android/providers/media/MediaProvider;->sGetTableAndWhereParam:Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;
 
     invoke-direct {p0, p1, v2, p2, v0}, Lcom/android/providers/media/MediaProvider;->getTableAndWhere(Landroid/net/Uri;ILjava/lang/String;Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;)V
 
-    .line 4319
+    .line 4326
     sparse-switch v2, :sswitch_data_0
 
-    .line 4394
+    .line 4401
     :cond_6
     :goto_2
     sget-object v0, Lcom/android/providers/media/MediaProvider;->sGetTableAndWhereParam:Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;
@@ -15917,7 +15969,7 @@
 
     move-result v1
 
-    .line 4402
+    .line 4409
     :goto_3
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -15931,7 +15983,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 4403
+    .line 4410
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -15954,7 +16006,7 @@
 
     move-result-object v0
 
-    .line 4404
+    .line 4411
     invoke-virtual {p0}, Lcom/android/providers/media/MediaProvider;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -15967,7 +16019,7 @@
 
     invoke-virtual {v2, v0, v3}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
 
-    .line 4405
+    .line 4412
     monitor-exit v8
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
@@ -15976,14 +16028,14 @@
 
     goto/16 :goto_0
 
-    .line 4324
+    .line 4331
     :sswitch_0
     const/4 v0, 0x1
 
     :try_start_2
     iput-boolean v0, p0, Lcom/android/providers/media/MediaProvider;->mDisableMtpObjectCallbacks:Z
 
-    .line 4325
+    .line 4332
     const-string v0, "files"
 
     sget-object v1, Lcom/android/providers/media/MediaProvider;->sGetTableAndWhereParam:Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;
@@ -15996,7 +16048,7 @@
 
     move-result v1
 
-    .line 4327
+    .line 4334
     const/4 v0, 0x0
 
     :try_start_3
@@ -16004,7 +16056,7 @@
 
     goto :goto_3
 
-    .line 4405
+    .line 4412
     :catchall_1
     move-exception v0
 
@@ -16014,7 +16066,7 @@
 
     throw v0
 
-    .line 4327
+    .line 4334
     :catchall_2
     move-exception v0
 
@@ -16025,7 +16077,7 @@
 
     throw v0
 
-    .line 4331
+    .line 4338
     :sswitch_1
     const-string v0, "audio_genres_map"
 
@@ -16039,13 +16091,13 @@
 
     goto :goto_3
 
-    .line 4335
+    .line 4342
     :sswitch_2
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v1
 
-    .line 4336
+    .line 4343
     const/4 v0, 0x3
 
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -16062,7 +16114,7 @@
 
     move-result-wide v2
 
-    .line 4337
+    .line 4344
     const/4 v0, 0x5
 
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -16079,14 +16131,14 @@
 
     move-result v0
 
-    .line 4338
+    .line 4345
     const-string v1, "audio_playlists_map"
 
     invoke-virtual {v7, v1, p2, p3}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
 
     move-result v1
 
-    .line 4339
+    .line 4346
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -16121,7 +16173,7 @@
 
     goto/16 :goto_3
 
-    .line 4352
+    .line 4359
     :sswitch_3
     const/4 v0, 0x1
 
@@ -16150,7 +16202,7 @@
 
     move-result-object v1
 
-    .line 4355
+    .line 4362
     if-eqz v1, :cond_9
 
     :try_start_6
@@ -16160,19 +16212,19 @@
 
     if-lez v0, :cond_9
 
-    .line 4357
+    .line 4364
     invoke-interface {v1}, Landroid/database/Cursor;->moveToFirst()Z
 
-    .line 4358
+    .line 4365
     invoke-static {p1}, Landroid/media/MiniThumbFile;->instance(Landroid/net/Uri;)Landroid/media/MiniThumbFile;
 
     move-result-object v0
 
-    .line 4361
+    .line 4368
     :cond_7
     if-eqz v0, :cond_8
 
-    .line 4363
+    .line 4370
     const/4 v2, 0x0
 
     invoke-interface {v1, v2}, Landroid/database/Cursor;->getLong(I)J
@@ -16181,7 +16233,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/media/MiniThumbFile;->deleteMicroThumbFile(J)V
 
-    .line 4366
+    .line 4373
     :cond_8
     invoke-interface {v1}, Landroid/database/Cursor;->moveToNext()Z
     :try_end_6
@@ -16191,15 +16243,15 @@
 
     if-nez v2, :cond_7
 
-    .line 4371
+    .line 4378
     :cond_9
     if-eqz v1, :cond_a
 
-    .line 4373
+    .line 4380
     :try_start_7
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 4377
+    .line 4384
     :cond_a
     sget-object v0, Lcom/android/providers/media/MediaProvider;->sGetTableAndWhereParam:Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;
 
@@ -16215,7 +16267,7 @@
 
     goto/16 :goto_3
 
-    .line 4371
+    .line 4378
     :catchall_3
     move-exception v0
 
@@ -16224,13 +16276,13 @@
     :goto_4
     if-eqz v1, :cond_b
 
-    .line 4373
+    .line 4380
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
     :cond_b
     throw v0
 
-    .line 4383
+    .line 4390
     :sswitch_4
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -16252,35 +16304,35 @@
 
     move-result-wide v0
 
-    .line 4384
+    .line 4391
     const-wide/16 v2, -0x1
 
     cmp-long v2, v2, v0
 
     if-eqz v2, :cond_6
 
-    .line 4386
+    .line 4393
     invoke-static {p1}, Landroid/media/MiniThumbFile;->instance(Landroid/net/Uri;)Landroid/media/MiniThumbFile;
 
     move-result-object v2
 
-    .line 4387
+    .line 4394
     if-eqz v2, :cond_6
 
-    .line 4389
+    .line 4396
     invoke-virtual {v2, v0, v1}, Landroid/media/MiniThumbFile;->deleteMicroThumbFile(J)V
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_1
 
     goto/16 :goto_2
 
-    .line 4371
+    .line 4378
     :catchall_4
     move-exception v0
 
     goto :goto_4
 
-    .line 4319
+    .line 4326
     nop
 
     :sswitch_data_0
@@ -16305,20 +16357,20 @@
 
     const/4 v3, 0x0
 
-    .line 5065
-    .line 5066
+    .line 5072
+    .line 5073
     iget-object v1, p1, Lcom/android/providers/media/MediaProvider$ThumbData;->albumart_uri:Landroid/net/Uri;
 
-    .line 5067
+    .line 5074
     iget-wide v6, p1, Lcom/android/providers/media/MediaProvider$ThumbData;->album_id:J
 
-    .line 5068
+    .line 5075
     iget-object v8, p1, Lcom/android/providers/media/MediaProvider$ThumbData;->db:Landroid/database/sqlite/SQLiteDatabase;
 
-    .line 5071
+    .line 5078
     if-eqz v1, :cond_6
 
-    .line 5072
+    .line 5079
     const/4 v0, 0x1
 
     new-array v2, v0, [Ljava/lang/String;
@@ -16337,7 +16389,7 @@
 
     move-result-object v2
 
-    .line 5075
+    .line 5082
     if-eqz v2, :cond_3
 
     :try_start_0
@@ -16347,14 +16399,14 @@
 
     if-eqz v0, :cond_3
 
-    .line 5076
+    .line 5083
     const/4 v0, 0x0
 
     invoke-interface {v2, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 5077
+    .line 5084
     invoke-direct {p0, v0}, Lcom/android/providers/media/MediaProvider;->ensureFileExists(Ljava/lang/String;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -16368,35 +16420,35 @@
     :cond_0
     move-object v0, v3
 
-    .line 5084
+    .line 5091
     :goto_0
     if-eqz v2, :cond_1
 
-    .line 5085
+    .line 5092
     invoke-interface {v2}, Landroid/database/Cursor;->close()V
 
-    .line 5089
+    .line 5096
     :cond_1
     :goto_1
     if-nez v1, :cond_2
 
-    .line 5090
+    .line 5097
     new-instance v3, Landroid/content/ContentValues;
 
     invoke-direct {v3}, Landroid/content/ContentValues;-><init>()V
 
-    .line 5091
+    .line 5098
     const-string v2, "album_art"
 
-    .line 5092
+    .line 5099
     sget-object v1, Lcom/android/providers/media/MediaProvider;->ALBUMART_URI:Landroid/net/Uri;
 
-    .line 5093
+    .line 5100
     iget-boolean v4, p1, Lcom/android/providers/media/MediaProvider$ThumbData;->bAlbum:Z
 
     if-eqz v4, :cond_5
 
-    .line 5095
+    .line 5102
     const-string v4, "album_id"
 
     invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -16405,7 +16457,7 @@
 
     invoke-virtual {v3, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 5104
+    .line 5111
     :goto_2
     const/4 v4, 0x0
 
@@ -16418,28 +16470,28 @@
 
     move-result-object v3
 
-    .line 5105
+    .line 5112
     const-string v4, "_data"
 
     invoke-virtual {v8, v2, v4, v3}, Landroid/database/sqlite/SQLiteDatabase;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
 
     move-result-wide v2
 
-    .line 5106
+    .line 5113
     const-wide/16 v4, 0x0
 
     cmp-long v4, v2, v4
 
     if-lez v4, :cond_2
 
-    .line 5107
+    .line 5114
     invoke-static {v1, v2, v3}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
     :try_end_1
     .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_0
 
     move-result-object v0
 
-    .line 5113
+    .line 5120
     :cond_2
     :goto_3
     return-object v0
@@ -16449,22 +16501,22 @@
 
     move-object v0, v3
 
-    .line 5081
+    .line 5088
     goto :goto_0
 
-    .line 5084
+    .line 5091
     :catchall_0
     move-exception v0
 
     if-eqz v2, :cond_4
 
-    .line 5085
+    .line 5092
     invoke-interface {v2}, Landroid/database/Cursor;->close()V
 
     :cond_4
     throw v0
 
-    .line 5099
+    .line 5106
     :cond_5
     const-string v1, "audio_id"
 
@@ -16474,19 +16526,19 @@
 
     invoke-virtual {v3, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 5100
+    .line 5107
     const-string v2, "audio_thumb"
 
-    .line 5101
+    .line 5108
     sget-object v1, Lcom/android/providers/media/MediaProvider;->AUDIO_THUMB_URI:Landroid/net/Uri;
 
     goto :goto_2
 
-    .line 5109
+    .line 5116
     :catch_0
     move-exception v1
 
-    .line 5110
+    .line 5117
     sget-object v1, Lcom/android/providers/media/MediaProvider;->TAG:Ljava/lang/String;
 
     const-string v2, "error creating album thumb file"
@@ -16767,7 +16819,7 @@
     .prologue
     const/16 v2, 0x2c
 
-    .line 5397
+    .line 5404
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -16778,7 +16830,7 @@
 
     if-le v0, v1, :cond_3
 
-    .line 5409
+    .line 5416
     :cond_0
     :goto_0
     const-string v0, ", the"
@@ -16829,7 +16881,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 5412
+    .line 5419
     :cond_1
     invoke-virtual {p1, v2}, Ljava/lang/String;->lastIndexOf(I)I
 
@@ -16841,7 +16893,7 @@
 
     move-result-object v0
 
-    .line 5413
+    .line 5420
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -16878,11 +16930,11 @@
 
     move-result-object p1
 
-    .line 5417
+    .line 5424
     :cond_2
     return-object p1
 
-    .line 5401
+    .line 5408
     :cond_3
     invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -16900,7 +16952,7 @@
 
     move-object p1, p2
 
-    .line 5404
+    .line 5411
     goto :goto_0
 .end method
 
@@ -17164,8 +17216,8 @@
 
     const/4 v3, 0x0
 
-    .line 4771
-    .line 4773
+    .line 4778
+    .line 4780
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
@@ -17176,15 +17228,15 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 4775
+    .line 4782
     invoke-direct {p0, p1}, Lcom/android/providers/media/MediaProvider;->getDatabaseForUri(Landroid/net/Uri;)Lcom/android/providers/media/MediaProvider$DatabaseHelper;
 
     move-result-object v0
 
-    .line 4776
+    .line 4783
     if-nez v0, :cond_0
 
-    .line 4777
+    .line 4784
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -17209,16 +17261,16 @@
 
     throw v0
 
-    .line 4779
+    .line 4786
     :cond_0
     invoke-virtual {v0}, Lcom/android/providers/media/MediaProvider$DatabaseHelper;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
-    .line 4780
+    .line 4787
     if-nez v1, :cond_1
 
-    .line 4781
+    .line 4788
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -17243,13 +17295,13 @@
 
     throw v0
 
-    .line 4783
+    .line 4790
     :cond_1
     new-instance v0, Landroid/database/sqlite/SQLiteQueryBuilder;
 
     invoke-direct {v0}, Landroid/database/sqlite/SQLiteQueryBuilder;-><init>()V
 
-    .line 4784
+    .line 4791
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v2
@@ -17266,12 +17318,12 @@
 
     move-result v2
 
-    .line 4785
+    .line 4792
     const-string v4, "audio_meta"
 
     invoke-virtual {v0, v4}, Landroid/database/sqlite/SQLiteQueryBuilder;->setTables(Ljava/lang/String;)V
 
-    .line 4786
+    .line 4793
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -17292,7 +17344,7 @@
 
     invoke-virtual {v0, v2}, Landroid/database/sqlite/SQLiteQueryBuilder;->appendWhere(Ljava/lang/CharSequence;)V
 
-    .line 4787
+    .line 4794
     const/4 v2, 0x2
 
     new-array v2, v2, [Ljava/lang/String;
@@ -17317,24 +17369,24 @@
 
     move-result-object v0
 
-    .line 4792
+    .line 4799
     invoke-interface {v0}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
-    .line 4793
+    .line 4800
     invoke-interface {v0, v8}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 4794
+    .line 4801
     invoke-interface {v0, v9}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v2
 
-    .line 4798
+    .line 4805
     sget-object v4, Lcom/android/providers/media/MediaProvider;->ALBUMART_URI:Landroid/net/Uri;
 
     int-to-long v7, v2
@@ -17343,7 +17395,7 @@
 
     move-result-object v4
 
-    .line 4800
+    .line 4807
     :try_start_0
     invoke-virtual {p0, v4, p2}, Lcom/android/providers/media/MediaProvider;->openFileHelper(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     :try_end_0
@@ -17351,20 +17403,20 @@
 
     move-result-object v3
 
-    .line 4806
+    .line 4813
     :cond_2
     :goto_0
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
-    .line 4856
+    .line 4863
     :goto_1
     return-object v3
 
-    .line 4801
+    .line 4808
     :catch_0
     move-exception v4
 
-    .line 4803
+    .line 4810
     int-to-long v7, v2
 
     move-object v4, p0
@@ -17379,7 +17431,7 @@
 
     goto :goto_0
 
-    .line 4811
+    .line 4818
     :cond_3
     :try_start_1
     invoke-virtual {p0, p1, p2}, Lcom/android/providers/media/MediaProvider;->openFileHelper(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
@@ -17391,14 +17443,14 @@
     :cond_4
     move-object v3, v0
 
-    .line 4856
+    .line 4863
     goto :goto_1
 
-    .line 4812
+    .line 4819
     :catch_1
     move-exception v1
 
-    .line 4813
+    .line 4820
     const-string v0, "w"
 
     invoke-virtual {p2, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
@@ -17407,10 +17459,10 @@
 
     if-eqz v0, :cond_5
 
-    .line 4815
+    .line 4822
     throw v1
 
-    .line 4842
+    .line 4849
     :cond_5
     sget-object v0, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
@@ -17418,7 +17470,7 @@
 
     move-result v0
 
-    .line 4843
+    .line 4850
     const/16 v2, 0x78
 
     if-eq v0, v2, :cond_6
@@ -17427,29 +17479,29 @@
 
     if-ne v0, v2, :cond_8
 
-    .line 4845
+    .line 4852
     :cond_6
     invoke-direct {p0, p1}, Lcom/android/providers/media/MediaProvider;->getThumbData(Landroid/net/Uri;)Lcom/android/providers/media/MediaProvider$ThumbData;
 
     move-result-object v0
 
-    .line 4846
+    .line 4853
     if-nez v0, :cond_7
 
-    .line 4848
+    .line 4855
     throw v1
 
-    .line 4850
+    .line 4857
     :cond_7
     invoke-direct {p0, v0}, Lcom/android/providers/media/MediaProvider;->makeThumbInternal(Lcom/android/providers/media/MediaProvider$ThumbData;)Landroid/os/ParcelFileDescriptor;
 
     move-result-object v0
 
-    .line 4852
+    .line 4859
     :goto_2
     if-nez v0, :cond_4
 
-    .line 4853
+    .line 4860
     throw v1
 
     :cond_8
@@ -19830,10 +19882,10 @@
     .parameter
 
     .prologue
-    .line 4414
+    .line 4421
     const/4 v5, 0x0
 
-    .line 4416
+    .line 4423
     sget-object v4, Lcom/android/providers/media/MediaProvider;->URI_MATCHER:Landroid/content/UriMatcher;
 
     move-object/from16 v0, p1
@@ -19842,15 +19894,15 @@
 
     move-result v24
 
-    .line 4417
+    .line 4424
     invoke-direct/range {p0 .. p1}, Lcom/android/providers/media/MediaProvider;->getDatabaseForUri(Landroid/net/Uri;)Lcom/android/providers/media/MediaProvider$DatabaseHelper;
 
     move-result-object v17
 
-    .line 4418
+    .line 4425
     if-nez v17, :cond_0
 
-    .line 4419
+    .line 4426
     new-instance v4, Ljava/lang/UnsupportedOperationException;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -19877,20 +19929,20 @@
 
     throw v4
 
-    .line 4422
+    .line 4429
     :cond_0
     invoke-virtual/range {v17 .. v17}, Lcom/android/providers/media/MediaProvider$DatabaseHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v4
 
-    .line 4423
+    .line 4430
     const/16 v6, 0x320
 
     move/from16 v0, v24
 
     if-ne v6, v0, :cond_1
 
-    .line 4425
+    .line 4432
     :try_start_0
     move-object/from16 v0, p3
 
@@ -19901,27 +19953,27 @@
     :goto_0
     move v4, v5
 
-    .line 4725
+    .line 4732
     :goto_1
     return v4
 
-    .line 4426
+    .line 4433
     :catch_0
     move-exception v4
 
-    .line 4427
+    .line 4434
     invoke-virtual {v4}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
 
-    .line 4432
+    .line 4439
     :cond_1
     const/4 v5, 0x0
 
-    .line 4433
+    .line 4440
     if-eqz p2, :cond_27
 
-    .line 4434
+    .line 4441
     const-string v5, "genre"
 
     move-object/from16 v0, p2
@@ -19930,7 +19982,7 @@
 
     move-result-object v5
 
-    .line 4435
+    .line 4442
     const-string v6, "genre"
 
     move-object/from16 v0, p2
@@ -19939,13 +19991,13 @@
 
     move-object/from16 v23, v5
 
-    .line 4438
+    .line 4445
     :goto_2
     sget-object v25, Lcom/android/providers/media/MediaProvider;->sGetTableAndWhereParam:Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;
 
     monitor-enter v25
 
-    .line 4439
+    .line 4446
     :try_start_1
     sget-object v5, Lcom/android/providers/media/MediaProvider;->sGetTableAndWhereParam:Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;
 
@@ -19959,7 +20011,7 @@
 
     invoke-direct {v0, v1, v2, v3, v5}, Lcom/android/providers/media/MediaProvider;->getTableAndWhere(Landroid/net/Uri;ILjava/lang/String;Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;)V
 
-    .line 4444
+    .line 4451
     const/16 v5, 0x2be
 
     move/from16 v0, v24
@@ -19983,10 +20035,10 @@
 
     if-ne v5, v6, :cond_7
 
-    .line 4446
+    .line 4453
     const/4 v12, 0x0
 
-    .line 4447
+    .line 4454
     const-string v5, "_data"
 
     move-object/from16 v0, p2
@@ -19995,14 +20047,14 @@
 
     move-result-object v13
 
-    .line 4448
+    .line 4455
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/providers/media/MediaProvider;->mDirectoryCache:Ljava/util/HashMap;
 
     invoke-virtual {v5, v13}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 4450
+    .line 4457
     if-eqz v13, :cond_7
 
     new-instance v5, Ljava/io/File;
@@ -20015,7 +20067,7 @@
 
     if-eqz v5, :cond_7
 
-    .line 4451
+    .line 4458
     sget-object v5, Lcom/android/providers/media/MediaProvider;->sGetTableAndWhereParam:Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;
 
     iget-object v5, v5, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
@@ -20038,7 +20090,7 @@
 
     move-result-object v7
 
-    .line 4454
+    .line 4461
     if-eqz v7, :cond_26
 
     :try_start_2
@@ -20048,7 +20100,7 @@
 
     if-eqz v5, :cond_26
 
-    .line 4455
+    .line 4462
     const/4 v5, 0x1
 
     invoke-interface {v7, v5}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
@@ -20059,25 +20111,25 @@
 
     move-object v6, v5
 
-    .line 4458
+    .line 4465
     :goto_3
     if-eqz v7, :cond_3
 
     :try_start_3
     invoke-interface {v7}, Landroid/database/Cursor;->close()V
 
-    .line 4460
+    .line 4467
     :cond_3
     if-eqz v6, :cond_7
 
-    .line 4461
+    .line 4468
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/providers/media/MediaProvider;->mDirectoryCache:Ljava/util/HashMap;
 
     invoke-virtual {v5, v6}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 4463
+    .line 4470
     sget-object v5, Lcom/android/providers/media/MediaProvider;->sGetTableAndWhereParam:Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;
 
     iget-object v5, v5, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
@@ -20094,10 +20146,10 @@
 
     move-result v5
 
-    .line 4465
+    .line 4472
     if-lez v5, :cond_4
 
-    .line 4467
+    .line 4474
     const/4 v7, 0x2
 
     new-array v7, v7, [Ljava/lang/Object;
@@ -20146,12 +20198,12 @@
 
     aput-object v8, v7, v6
 
-    .line 4468
+    .line 4475
     const-string v6, "UPDATE files SET _data=REPLACE(_data, ?1, ?2);"
 
     invoke-virtual {v4, v6, v7}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 4471
+    .line 4478
     :cond_4
     if-lez v5, :cond_5
 
@@ -20161,7 +20213,7 @@
 
     if-nez v4, :cond_5
 
-    .line 4472
+    .line 4479
     invoke-virtual/range {p0 .. p0}, Lcom/android/providers/media/MediaProvider;->getContext()Landroid/content/Context;
 
     move-result-object v4
@@ -20176,7 +20228,7 @@
 
     invoke-virtual {v4, v0, v6}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
 
-    .line 4474
+    .line 4481
     :cond_5
     monitor-exit v25
 
@@ -20184,7 +20236,7 @@
 
     goto/16 :goto_1
 
-    .line 4458
+    .line 4465
     :catchall_0
     move-exception v4
 
@@ -20195,7 +20247,7 @@
     :cond_6
     throw v4
 
-    .line 4719
+    .line 4726
     :catchall_1
     move-exception v4
 
@@ -20205,11 +20257,11 @@
 
     throw v4
 
-    .line 4479
+    .line 4486
     :cond_7
     sparse-switch v24, :sswitch_data_0
 
-    .line 4715
+    .line 4722
     :cond_8
     :try_start_4
     sget-object v5, Lcom/android/providers/media/MediaProvider;->sGetTableAndWhereParam:Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;
@@ -20228,13 +20280,13 @@
 
     move-result v5
 
-    .line 4719
+    .line 4726
     :goto_4
     monitor-exit v25
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    .line 4722
+    .line 4729
     if-lez v5, :cond_9
 
     invoke-virtual {v4}, Landroid/database/sqlite/SQLiteDatabase;->inTransaction()Z
@@ -20243,7 +20295,7 @@
 
     if-nez v4, :cond_9
 
-    .line 4723
+    .line 4730
     invoke-virtual/range {p0 .. p0}, Lcom/android/providers/media/MediaProvider;->getContext()Landroid/content/Context;
 
     move-result-object v4
@@ -20261,10 +20313,10 @@
     :cond_9
     move v4, v5
 
-    .line 4725
+    .line 4732
     goto/16 :goto_1
 
-    .line 4483
+    .line 4490
     :sswitch_0
     :try_start_5
     new-instance v26, Landroid/content/ContentValues;
@@ -20275,7 +20327,7 @@
 
     invoke-direct {v0, v1}, Landroid/content/ContentValues;-><init>(Landroid/content/ContentValues;)V
 
-    .line 4484
+    .line 4491
     const-string v5, "album_artist"
 
     move-object/from16 v0, v26
@@ -20284,7 +20336,7 @@
 
     move-result-object v20
 
-    .line 4485
+    .line 4492
     const-string v5, "compilation"
 
     move-object/from16 v0, v26
@@ -20293,21 +20345,21 @@
 
     move-result-object v21
 
-    .line 4489
+    .line 4496
     const-string v5, "album_artist"
 
     move-object/from16 v0, v26
 
     invoke-virtual {v0, v5}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 4490
+    .line 4497
     const-string v5, "compilation"
 
     move-object/from16 v0, v26
 
     invoke-virtual {v0, v5}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 4494
+    .line 4501
     const-string v5, "artist"
 
     move-object/from16 v0, v26
@@ -20316,27 +20368,27 @@
 
     move-result-object v10
 
-    .line 4495
+    .line 4502
     const-string v5, "artist"
 
     move-object/from16 v0, v26
 
     invoke-virtual {v0, v5}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 4496
+    .line 4503
     if-eqz v10, :cond_a
 
-    .line 4498
+    .line 4505
     move-object/from16 v0, v17
 
     iget-object v15, v0, Lcom/android/providers/media/MediaProvider$DatabaseHelper;->mArtistCache:Ljava/util/HashMap;
 
-    .line 4499
+    .line 4506
     monitor-enter v15
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
-    .line 4500
+    .line 4507
     :try_start_6
     invoke-virtual {v15, v10}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -20344,10 +20396,10 @@
 
     check-cast v5, Ljava/lang/Long;
 
-    .line 4501
+    .line 4508
     if-nez v5, :cond_13
 
-    .line 4502
+    .line 4509
     const-string v7, "artists"
 
     const-string v8, "artist_key"
@@ -20372,13 +20424,13 @@
 
     move-result-wide v5
 
-    .line 4507
+    .line 4514
     :goto_5
     monitor-exit v15
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
-    .line 4508
+    .line 4515
     :try_start_7
     const-string v7, "artist_id"
 
@@ -20392,7 +20444,7 @@
 
     invoke-virtual {v0, v7, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4512
+    .line 4519
     :cond_a
     const-string v5, "album"
 
@@ -20402,7 +20454,7 @@
 
     move-result-object v5
 
-    .line 4513
+    .line 4520
     const-string v6, "_data"
 
     move-object/from16 v0, v26
@@ -20411,47 +20463,47 @@
 
     move-result-object v18
 
-    .line 4514
+    .line 4521
     const-string v6, "album"
 
     move-object/from16 v0, v26
 
     invoke-virtual {v0, v6}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 4515
+    .line 4522
     if-eqz v5, :cond_c
 
-    .line 4517
+    .line 4524
     const/16 v19, 0x0
 
-    .line 4518
+    .line 4525
     if-eqz v20, :cond_14
 
-    .line 4519
+    .line 4526
     invoke-virtual/range {v20 .. v20}, Ljava/lang/String;->hashCode()I
 
     move-result v19
 
-    .line 4552
+    .line 4559
     :cond_b
     :goto_6
     invoke-virtual {v5}, Ljava/lang/String;->toString()Ljava/lang/String;
 
     move-result-object v16
 
-    .line 4554
+    .line 4561
     move-object/from16 v0, v17
 
     iget-object v0, v0, Lcom/android/providers/media/MediaProvider$DatabaseHelper;->mAlbumCache:Ljava/util/HashMap;
 
     move-object/from16 v21, v0
 
-    .line 4555
+    .line 4562
     monitor-enter v21
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_1
 
-    .line 4556
+    .line 4563
     :try_start_8
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -20473,7 +20525,7 @@
 
     move-result-object v17
 
-    .line 4557
+    .line 4564
     move-object/from16 v0, v21
 
     move-object/from16 v1, v17
@@ -20484,10 +20536,10 @@
 
     check-cast v5, Ljava/lang/Long;
 
-    .line 4558
+    .line 4565
     if-nez v5, :cond_19
 
-    .line 4559
+    .line 4566
     const-string v13, "albums"
 
     const-string v14, "album_key"
@@ -20506,13 +20558,13 @@
 
     move-result-wide v5
 
-    .line 4564
+    .line 4571
     :goto_7
     monitor-exit v21
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_4
 
-    .line 4565
+    .line 4572
     :try_start_9
     const-string v7, "album_id"
 
@@ -20526,7 +20578,7 @@
 
     invoke-virtual {v0, v7, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4567
+    .line 4574
     :cond_c
     move-object/from16 v0, p0
 
@@ -20536,14 +20588,14 @@
 
     invoke-direct {v0, v1, v2}, Lcom/android/providers/media/MediaProvider;->setIsMusic(Ljava/lang/String;Landroid/content/ContentValues;)V
 
-    .line 4569
+    .line 4576
     const-string v5, "title_key"
 
     move-object/from16 v0, v26
 
     invoke-virtual {v0, v5}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 4571
+    .line 4578
     const-string v5, "title"
 
     move-object/from16 v0, v26
@@ -20552,15 +20604,15 @@
 
     move-result-object v5
 
-    .line 4572
+    .line 4579
     if-eqz v5, :cond_d
 
-    .line 4573
+    .line 4580
     invoke-virtual {v5}, Ljava/lang/String;->toString()Ljava/lang/String;
 
     move-result-object v6
 
-    .line 4574
+    .line 4581
     const-string v7, "title_key"
 
     invoke-static {v6}, Landroid/provider/MediaStore$Audio;->keyFor(Ljava/lang/String;)Ljava/lang/String;
@@ -20571,14 +20623,14 @@
 
     invoke-virtual {v0, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4577
+    .line 4584
     const-string v7, "title"
 
     move-object/from16 v0, v26
 
     invoke-virtual {v0, v7}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 4578
+    .line 4585
     const-string v7, "title"
 
     invoke-virtual {v6}, Ljava/lang/String;->trim()Ljava/lang/String;
@@ -20589,7 +20641,7 @@
 
     invoke-virtual {v0, v7, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4581
+    .line 4588
     :cond_d
     const-string v6, "_data"
 
@@ -20599,17 +20651,17 @@
 
     move-result-object v6
 
-    .line 4582
+    .line 4589
     if-eqz v6, :cond_f
 
     if-nez v5, :cond_f
 
-    .line 4583
+    .line 4590
     if-nez v6, :cond_1a
 
     const-string v5, ""
 
-    .line 4584
+    .line 4591
     :goto_8
     const/16 v6, 0x2f
 
@@ -20617,26 +20669,26 @@
 
     move-result v6
 
-    .line 4585
+    .line 4592
     const/16 v7, 0x2e
 
     invoke-virtual {v5, v7}, Ljava/lang/String;->lastIndexOf(I)I
 
     move-result v7
 
-    .line 4586
+    .line 4593
     if-ltz v6, :cond_e
 
     if-ltz v7, :cond_e
 
-    .line 4588
+    .line 4595
     add-int/lit8 v6, v6, 0x1
 
     invoke-virtual {v5, v6, v7}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 4590
+    .line 4597
     :cond_e
     const-string v6, "title_key"
 
@@ -20648,21 +20700,21 @@
 
     invoke-virtual {v0, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4591
+    .line 4598
     const-string v6, "title"
 
     move-object/from16 v0, v26
 
     invoke-virtual {v0, v6}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 4592
+    .line 4599
     const-string v6, "title"
 
     move-object/from16 v0, v26
 
     invoke-virtual {v0, v6, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4595
+    .line 4602
     :cond_f
     const-string v5, "_display_name"
 
@@ -20672,22 +20724,22 @@
 
     move-result-object v5
 
-    .line 4596
+    .line 4603
     if-eqz v5, :cond_10
 
-    .line 4598
+    .line 4605
     const/16 v6, 0x2e
 
     invoke-virtual {v5, v6}, Ljava/lang/String;->lastIndexOf(I)I
 
     move-result v6
 
-    .line 4599
+    .line 4606
     const/4 v7, -0x1
 
     if-eq v7, v6, :cond_10
 
-    .line 4601
+    .line 4608
     const-string v7, "files"
 
     const/4 v8, 0x0
@@ -20702,7 +20754,7 @@
 
     invoke-direct {v0, v7, v5, v1}, Lcom/android/providers/media/MediaProvider;->updateAdditionalColumns(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)V
 
-    .line 4605
+    .line 4612
     :cond_10
     sget-object v5, Lcom/android/providers/media/MediaProvider;->sGetTableAndWhereParam:Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;
 
@@ -20720,10 +20772,10 @@
 
     move-result v6
 
-    .line 4608
+    .line 4615
     if-eqz v23, :cond_11
 
-    .line 4609
+    .line 4616
     const/4 v5, 0x1
 
     if-ne v6, v5, :cond_1b
@@ -20734,7 +20786,7 @@
 
     if-ne v0, v5, :cond_1b
 
-    .line 4610
+    .line 4617
     invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v5
@@ -20751,19 +20803,19 @@
 
     move-result-wide v7
 
-    .line 4611
+    .line 4618
     move-object/from16 v0, p0
 
     move-object/from16 v1, v23
 
     invoke-direct {v0, v7, v8, v1}, Lcom/android/providers/media/MediaProvider;->updateGenre(JLjava/lang/String;)V
 
-    .line 4618
+    .line 4625
     :cond_11
     :goto_9
     if-lez v6, :cond_12
 
-    .line 4620
+    .line 4627
     invoke-virtual/range {p0 .. p0}, Lcom/android/providers/media/MediaProvider;->getContext()Landroid/content/Context;
 
     move-result-object v5
@@ -20787,10 +20839,10 @@
     :cond_12
     move v5, v6
 
-    .line 4623
+    .line 4630
     goto/16 :goto_4
 
-    .line 4505
+    .line 4512
     :cond_13
     :try_start_a
     invoke-virtual {v5}, Ljava/lang/Long;->longValue()J
@@ -20799,7 +20851,7 @@
 
     goto/16 :goto_5
 
-    .line 4507
+    .line 4514
     :catchall_2
     move-exception v4
 
@@ -20810,7 +20862,7 @@
     :try_start_b
     throw v4
 
-    .line 4520
+    .line 4527
     :cond_14
     if-eqz v21, :cond_15
 
@@ -20824,30 +20876,30 @@
 
     if-nez v6, :cond_b
 
-    .line 4523
+    .line 4530
     :cond_15
     if-nez v18, :cond_16
 
-    .line 4524
+    .line 4531
     const/16 v6, 0x64
 
     move/from16 v0, v24
 
     if-ne v0, v6, :cond_17
 
-    .line 4525
+    .line 4532
     sget-object v6, Lcom/android/providers/media/MediaProvider;->TAG:Ljava/lang/String;
 
     const-string v7, "Possible multi row album name update without path could give wrong album key"
 
     invoke-static {v6, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4547
+    .line 4554
     :cond_16
     :goto_a
     if-eqz v18, :cond_b
 
-    .line 4548
+    .line 4555
     const/4 v6, 0x0
 
     const/16 v7, 0x2f
@@ -20870,7 +20922,7 @@
 
     goto/16 :goto_6
 
-    .line 4529
+    .line 4536
     :cond_17
     const/4 v6, 0x1
 
@@ -20898,24 +20950,24 @@
 
     move-result-object v6
 
-    .line 4532
+    .line 4539
     if-eqz v6, :cond_16
 
-    .line 4534
+    .line 4541
     :try_start_c
     invoke-interface {v6}, Landroid/database/Cursor;->getCount()I
 
     move-result v7
 
-    .line 4535
+    .line 4542
     const/4 v8, 0x1
 
     if-ne v7, v8, :cond_18
 
-    .line 4536
+    .line 4543
     invoke-interface {v6}, Landroid/database/Cursor;->moveToFirst()Z
 
-    .line 4537
+    .line 4544
     const/4 v7, 0x0
 
     invoke-interface {v6, v7}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
@@ -20924,7 +20976,7 @@
 
     move-result-object v18
 
-    .line 4542
+    .line 4549
     :goto_b
     :try_start_d
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
@@ -20933,7 +20985,7 @@
 
     goto :goto_a
 
-    .line 4539
+    .line 4546
     :cond_18
     :try_start_e
     sget-object v8, Lcom/android/providers/media/MediaProvider;->TAG:Ljava/lang/String;
@@ -20974,7 +21026,7 @@
 
     goto :goto_b
 
-    .line 4542
+    .line 4549
     :catchall_3
     move-exception v4
 
@@ -20985,7 +21037,7 @@
     :try_end_f
     .catchall {:try_start_f .. :try_end_f} :catchall_1
 
-    .line 4562
+    .line 4569
     :cond_19
     :try_start_10
     invoke-virtual {v5}, Ljava/lang/Long;->longValue()J
@@ -20994,7 +21046,7 @@
 
     goto/16 :goto_7
 
-    .line 4564
+    .line 4571
     :catchall_4
     move-exception v4
 
@@ -21005,7 +21057,7 @@
     :try_start_11
     throw v4
 
-    .line 4583
+    .line 4590
     :cond_1a
     invoke-virtual {v6}, Ljava/lang/String;->toString()Ljava/lang/String;
 
@@ -21013,7 +21065,7 @@
 
     goto/16 :goto_8
 
-    .line 4614
+    .line 4621
     :cond_1b
     sget-object v5, Lcom/android/providers/media/MediaProvider;->TAG:Ljava/lang/String;
 
@@ -21051,7 +21103,7 @@
 
     goto/16 :goto_9
 
-    .line 4629
+    .line 4636
     :sswitch_1
     new-instance v6, Landroid/content/ContentValues;
 
@@ -21059,35 +21111,35 @@
 
     invoke-direct {v6, v0}, Landroid/content/ContentValues;-><init>(Landroid/content/ContentValues;)V
 
-    .line 4633
+    .line 4640
     const-string v5, "bucket_id"
 
     invoke-virtual {v6, v5}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 4634
+    .line 4641
     const-string v5, "bucket_display_name"
 
     invoke-virtual {v6, v5}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 4636
+    .line 4643
     const-string v5, "_data"
 
     invoke-virtual {v6, v5}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
 
-    .line 4637
+    .line 4644
     if-eqz v7, :cond_1d
 
-    .line 4638
+    .line 4645
     invoke-static {v7, v6}, Lcom/android/providers/media/MediaProvider;->computeBucketValues(Ljava/lang/String;Landroid/content/ContentValues;)V
 
-    .line 4639
+    .line 4646
     if-nez v7, :cond_22
 
     const-string v5, ""
 
-    .line 4640
+    .line 4647
     :goto_c
     const/16 v8, 0x2f
 
@@ -21095,14 +21147,14 @@
 
     move-result v8
 
-    .line 4641
+    .line 4648
     const/16 v9, 0x2e
 
     invoke-virtual {v5, v9}, Ljava/lang/String;->lastIndexOf(I)I
 
     move-result v9
 
-    .line 4642
+    .line 4649
     sget-object v10, Lcom/android/providers/media/MediaProvider;->TAG:Ljava/lang/String;
 
     new-instance v11, Ljava/lang/StringBuilder;
@@ -21125,7 +21177,7 @@
 
     invoke-static {v10, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4643
+    .line 4650
     sget-object v7, Lcom/android/providers/media/MediaProvider;->TAG:Ljava/lang/String;
 
     new-instance v10, Ljava/lang/StringBuilder;
@@ -21158,29 +21210,29 @@
 
     invoke-static {v7, v10}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4644
+    .line 4651
     if-ltz v8, :cond_1c
 
     if-ltz v9, :cond_1c
 
-    .line 4646
+    .line 4653
     add-int/lit8 v7, v8, 0x1
 
     invoke-virtual {v5, v7, v9}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 4648
+    .line 4655
     :cond_1c
     const-string v7, "title"
 
     invoke-virtual {v6, v7, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4650
+    .line 4657
     :cond_1d
     invoke-static {v6}, Lcom/android/providers/media/MediaProvider;->computeTakenTime(Landroid/content/ContentValues;)V
 
-    .line 4651
+    .line 4658
     const/4 v5, 0x2
 
     move/from16 v0, v24
@@ -21193,29 +21245,29 @@
 
     if-eq v0, v5, :cond_1e
 
-    .line 4654
+    .line 4661
     const-string v5, "_display_name"
 
     invoke-virtual {v6, v5}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 4655
+    .line 4662
     if-eqz v5, :cond_1e
 
-    .line 4657
+    .line 4664
     const/16 v7, 0x2e
 
     invoke-virtual {v5, v7}, Ljava/lang/String;->lastIndexOf(I)I
 
     move-result v7
 
-    .line 4658
+    .line 4665
     const/4 v8, -0x1
 
     if-eq v8, v7, :cond_1e
 
-    .line 4660
+    .line 4667
     const/4 v8, 0x0
 
     invoke-virtual {v5, v8, v7}, Ljava/lang/String;->substring(II)Ljava/lang/String;
@@ -21226,7 +21278,7 @@
 
     invoke-direct {v0, v5, v6}, Lcom/android/providers/media/MediaProvider;->computeSortByTypeAndName(Ljava/lang/String;Landroid/content/ContentValues;)V
 
-    .line 4668
+    .line 4675
     :cond_1e
     const/16 v5, 0xc8
 
@@ -21240,7 +21292,7 @@
 
     if-ne v0, v5, :cond_20
 
-    .line 4669
+    .line 4676
     :cond_1f
     const-string v5, "duration"
 
@@ -21250,12 +21302,12 @@
 
     if-eqz v5, :cond_20
 
-    .line 4670
+    .line 4677
     move-object/from16 v0, p0
 
     invoke-direct {v0, v6}, Lcom/android/providers/media/MediaProvider;->setDurationFormat(Landroid/content/ContentValues;)V
 
-    .line 4673
+    .line 4680
     :cond_20
     sget-object v5, Lcom/android/providers/media/MediaProvider;->sGetTableAndWhereParam:Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;
 
@@ -21271,7 +21323,7 @@
 
     move-result v12
 
-    .line 4678
+    .line 4685
     if-lez v12, :cond_24
 
     const-string v5, "_data"
@@ -21282,7 +21334,7 @@
 
     if-eqz v5, :cond_24
 
-    .line 4679
+    .line 4686
     sget-object v5, Lcom/android/providers/media/MediaProvider;->sGetTableAndWhereParam:Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;
 
     iget-object v5, v5, Lcom/android/providers/media/MediaProvider$GetTableAndWhereOutParameter;->table:Ljava/lang/String;
@@ -21307,10 +21359,10 @@
 
     move-result-object v11
 
-    .line 4682
+    .line 4689
     if-eqz v11, :cond_24
 
-    .line 4684
+    .line 4691
     :cond_21
     :goto_d
     :try_start_12
@@ -21320,21 +21372,21 @@
 
     if-eqz v5, :cond_23
 
-    .line 4685
+    .line 4692
     const/4 v5, 0x2
 
     invoke-interface {v11, v5}, Landroid/database/Cursor;->getLong(I)J
 
     move-result-wide v5
 
-    .line 4686
+    .line 4693
     const-wide/16 v7, 0x0
 
     cmp-long v5, v5, v7
 
     if-nez v5, :cond_21
 
-    .line 4687
+    .line 4694
     const/4 v5, 0x1
 
     invoke-interface {v11, v5}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
@@ -21355,7 +21407,7 @@
 
     goto :goto_d
 
-    .line 4692
+    .line 4699
     :catchall_5
     move-exception v4
 
@@ -21364,7 +21416,7 @@
 
     throw v4
 
-    .line 4639
+    .line 4646
     :cond_22
     invoke-virtual {v7}, Ljava/lang/String;->toString()Ljava/lang/String;
 
@@ -21372,17 +21424,17 @@
 
     goto/16 :goto_c
 
-    .line 4692
+    .line 4699
     :cond_23
     invoke-interface {v11}, Landroid/database/Cursor;->close()V
 
     :cond_24
     move v5, v12
 
-    .line 4697
+    .line 4704
     goto/16 :goto_4
 
-    .line 4700
+    .line 4707
     :sswitch_2
     const-string v5, "move"
 
@@ -21392,13 +21444,13 @@
 
     move-result-object v5
 
-    .line 4701
+    .line 4708
     if-eqz v5, :cond_8
 
-    .line 4702
+    .line 4709
     const-string v5, "play_order"
 
-    .line 4703
+    .line 4710
     move-object/from16 v0, p2
 
     invoke-virtual {v0, v5}, Landroid/content/ContentValues;->containsKey(Ljava/lang/String;)Z
@@ -21407,7 +21459,7 @@
 
     if-eqz v6, :cond_25
 
-    .line 4704
+    .line 4711
     move-object/from16 v0, p2
 
     invoke-virtual {v0, v5}, Landroid/content/ContentValues;->getAsInteger(Ljava/lang/String;)Ljava/lang/Integer;
@@ -21418,12 +21470,12 @@
 
     move-result v10
 
-    .line 4705
+    .line 4712
     invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v6
 
-    .line 4706
+    .line 4713
     const/4 v5, 0x3
 
     invoke-interface {v6, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -21440,7 +21492,7 @@
 
     move-result-wide v7
 
-    .line 4707
+    .line 4714
     const/4 v5, 0x5
 
     invoke-interface {v6, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -21461,7 +21513,7 @@
 
     move-object v6, v4
 
-    .line 4708
+    .line 4715
     invoke-direct/range {v5 .. v10}, Lcom/android/providers/media/MediaProvider;->movePlaylistEntry(Landroid/database/sqlite/SQLiteDatabase;JII)I
 
     move-result v4
@@ -21470,7 +21522,7 @@
 
     goto/16 :goto_1
 
-    .line 4710
+    .line 4717
     :cond_25
     new-instance v4, Ljava/lang/IllegalArgumentException;
 
@@ -21514,7 +21566,7 @@
 
     goto/16 :goto_2
 
-    .line 4479
+    .line 4486
     :sswitch_data_0
     .sparse-switch
         0x1 -> :sswitch_1

@@ -154,7 +154,7 @@
     .parameter "index"
 
     .prologue
-    .line 228
+    .line 231
     monitor-enter p0
 
     :try_start_0
@@ -170,7 +170,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 229
+    .line 232
     const-string v0, "RIL_UiccManager"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -193,14 +193,14 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 230
+    .line 233
     iget-object v0, p0, Lcom/android/internal/telephony/UiccManager;->mUiccCards:[Lcom/android/internal/telephony/UiccCard;
 
     aget-object v0, v0, p1
 
     invoke-virtual {v0}, Lcom/android/internal/telephony/UiccCard;->dispose()V
 
-    .line 231
+    .line 234
     iget-object v0, p0, Lcom/android/internal/telephony/UiccManager;->mUiccCards:[Lcom/android/internal/telephony/UiccCard;
 
     const/4 v1, 0x0
@@ -209,13 +209,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 233
+    .line 236
     :cond_0
     monitor-exit p0
 
     return-void
 
-    .line 228
+    .line 231
     :catchall_0
     move-exception v0
 
@@ -229,18 +229,18 @@
     .parameter "msg"
 
     .prologue
-    .line 126
+    .line 129
     new-instance v1, Ljava/lang/Integer;
 
     const/4 v2, 0x0
 
     invoke-direct {v1, v2}, Ljava/lang/Integer;-><init>(I)V
 
-    .line 133
+    .line 136
     .local v1, index:Ljava/lang/Integer;
     if-eqz p1, :cond_0
 
-    .line 134
+    .line 137
     iget-object v2, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     if-eqz v2, :cond_1
@@ -251,19 +251,19 @@
 
     if-eqz v2, :cond_1
 
-    .line 135
+    .line 138
     iget-object v1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     .end local v1           #index:Ljava/lang/Integer;
     check-cast v1, Ljava/lang/Integer;
 
-    .line 143
+    .line 146
     .restart local v1       #index:Ljava/lang/Integer;
     :cond_0
     :goto_0
     return-object v1
 
-    .line 136
+    .line 139
     :cond_1
     iget-object v2, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -275,12 +275,12 @@
 
     if-eqz v2, :cond_0
 
-    .line 137
+    .line 140
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Landroid/os/AsyncResult;
 
-    .line 138
+    .line 141
     .local v0, ar:Landroid/os/AsyncResult;
     iget-object v2, v0, Landroid/os/AsyncResult;->userObj:Ljava/lang/Object;
 
@@ -292,7 +292,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 139
+    .line 142
     iget-object v1, v0, Landroid/os/AsyncResult;->userObj:Ljava/lang/Object;
 
     .end local v1           #index:Ljava/lang/Integer;
@@ -393,7 +393,7 @@
     .parameter "index"
 
     .prologue
-    .line 147
+    .line 150
     monitor-enter p0
 
     :try_start_0
@@ -401,7 +401,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 148
+    .line 151
     const-string v1, "RIL_UiccManager"
 
     const-string v2, "Error getting ICC status. RIL_REQUEST_GET_ICC_STATUS should never return an error"
@@ -412,20 +412,20 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 166
+    .line 169
     :goto_0
     monitor-exit p0
 
     return-void
 
-    .line 154
+    .line 157
     :cond_0
     :try_start_1
     iget-object v0, p1, Landroid/os/AsyncResult;->result:Ljava/lang/Object;
 
     check-cast v0, Lcom/android/internal/telephony/IccCardStatus;
 
-    .line 156
+    .line 159
     .local v0, status:Lcom/android/internal/telephony/IccCardStatus;
     iget-object v1, p0, Lcom/android/internal/telephony/UiccManager;->mUiccCards:[Lcom/android/internal/telephony/UiccCard;
 
@@ -437,14 +437,14 @@
 
     if-nez v1, :cond_1
 
-    .line 157
+    .line 160
     const-string v1, "RIL_UiccManager"
 
     const-string v2, "Creating a new card"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 158
+    .line 161
     iget-object v1, p0, Lcom/android/internal/telephony/UiccManager;->mUiccCards:[Lcom/android/internal/telephony/UiccCard;
 
     invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
@@ -467,7 +467,7 @@
 
     aput-object v3, v1, v2
 
-    .line 164
+    .line 167
     :goto_1
     const-string v1, "RIL_UiccManager"
 
@@ -475,7 +475,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 165
+    .line 168
     iget-object v1, p0, Lcom/android/internal/telephony/UiccManager;->mIccChangedRegistrants:Landroid/os/RegistrantList;
 
     new-instance v2, Landroid/os/AsyncResult;
@@ -492,7 +492,7 @@
 
     goto :goto_0
 
-    .line 147
+    .line 150
     .end local v0           #status:Lcom/android/internal/telephony/IccCardStatus;
     :catchall_0
     move-exception v1
@@ -501,7 +501,7 @@
 
     throw v1
 
-    .line 160
+    .line 163
     .restart local v0       #status:Lcom/android/internal/telephony/IccCardStatus;
     :cond_1
     :try_start_2
@@ -511,7 +511,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 161
+    .line 164
     iget-object v1, p0, Lcom/android/internal/telephony/UiccManager;->mUiccCards:[Lcom/android/internal/telephony/UiccCard;
 
     invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
@@ -544,7 +544,7 @@
     .parameter "slotId"
 
     .prologue
-    .line 253
+    .line 256
     iget-object v0, p0, Lcom/android/internal/telephony/UiccManager;->mCatService:[Lcom/android/internal/telephony/cat/CatService;
 
     aget-object v0, v0, p1
@@ -556,7 +556,7 @@
     .locals 1
 
     .prologue
-    .line 182
+    .line 185
     monitor-enter p0
 
     :try_start_0
@@ -588,7 +588,7 @@
     .parameter "family"
 
     .prologue
-    .line 219
+    .line 222
     monitor-enter p0
 
     :try_start_0
@@ -596,18 +596,18 @@
 
     move-result-object v0
 
-    .line 220
+    .line 223
     .local v0, app:Lcom/android/internal/telephony/UiccCardApplication;
     if-eqz v0, :cond_0
 
-    .line 221
+    .line 224
     invoke-virtual {v0}, Lcom/android/internal/telephony/UiccCardApplication;->getIccFileHandler()Lcom/android/internal/telephony/IccFileHandler;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     move-result-object v1
 
-    .line 223
+    .line 226
     :goto_0
     monitor-exit p0
 
@@ -618,7 +618,7 @@
 
     goto :goto_0
 
-    .line 219
+    .line 222
     .end local v0           #app:Lcom/android/internal/telephony/UiccCardApplication;
     :catchall_0
     move-exception v1
@@ -633,7 +633,7 @@
     .parameter "family"
 
     .prologue
-    .line 215
+    .line 218
     monitor-enter p0
 
     const/4 v0, 0x0
@@ -663,7 +663,7 @@
     .parameter "family"
 
     .prologue
-    .line 206
+    .line 209
     monitor-enter p0
 
     :try_start_0
@@ -671,18 +671,18 @@
 
     move-result-object v0
 
-    .line 207
+    .line 210
     .local v0, app:Lcom/android/internal/telephony/UiccCardApplication;
     if-eqz v0, :cond_0
 
-    .line 208
+    .line 211
     invoke-virtual {v0}, Lcom/android/internal/telephony/UiccCardApplication;->getIccRecords()Lcom/android/internal/telephony/IccRecords;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     move-result-object v1
 
-    .line 210
+    .line 213
     :goto_0
     monitor-exit p0
 
@@ -693,7 +693,7 @@
 
     goto :goto_0
 
-    .line 206
+    .line 209
     .end local v0           #app:Lcom/android/internal/telephony/UiccCardApplication;
     :catchall_0
     move-exception v1
@@ -708,7 +708,7 @@
     .parameter "family"
 
     .prologue
-    .line 202
+    .line 205
     monitor-enter p0
 
     const/4 v0, 0x0
@@ -736,7 +736,7 @@
     .locals 1
 
     .prologue
-    .line 169
+    .line 172
     monitor-enter p0
 
     const/4 v0, 0x0
@@ -765,7 +765,7 @@
     .parameter "slotId"
 
     .prologue
-    .line 173
+    .line 176
     monitor-enter p0
 
     if-ltz p1, :cond_0
@@ -777,14 +777,14 @@
 
     if-ge p1, v0, :cond_0
 
-    .line 174
+    .line 177
     iget-object v0, p0, Lcom/android/internal/telephony/UiccManager;->mUiccCards:[Lcom/android/internal/telephony/UiccCard;
 
     aget-object v0, v0, p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 176
+    .line 179
     :goto_0
     monitor-exit p0
 
@@ -795,7 +795,7 @@
 
     goto :goto_0
 
-    .line 173
+    .line 176
     :catchall_0
     move-exception v0
 
@@ -810,7 +810,7 @@
     .parameter "family"
 
     .prologue
-    .line 191
+    .line 194
     monitor-enter p0
 
     if-ltz p1, :cond_0
@@ -822,23 +822,23 @@
 
     if-ge p1, v1, :cond_0
 
-    .line 192
+    .line 195
     iget-object v1, p0, Lcom/android/internal/telephony/UiccManager;->mUiccCards:[Lcom/android/internal/telephony/UiccCard;
 
     aget-object v0, v1, p1
 
-    .line 193
+    .line 196
     .local v0, c:Lcom/android/internal/telephony/UiccCard;
     if-eqz v0, :cond_0
 
-    .line 194
+    .line 197
     invoke-virtual {v0, p2}, Lcom/android/internal/telephony/UiccCard;->getApplication(Lcom/android/internal/telephony/UiccManager$AppFamily;)Lcom/android/internal/telephony/UiccCardApplication;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     move-result-object v1
 
-    .line 197
+    .line 200
     .end local v0           #c:Lcom/android/internal/telephony/UiccCard;
     :goto_0
     monitor-exit p0
@@ -850,7 +850,7 @@
 
     goto :goto_0
 
-    .line 191
+    .line 194
     :catchall_0
     move-exception v1
 
@@ -864,7 +864,7 @@
     .parameter "family"
 
     .prologue
-    .line 187
+    .line 190
     monitor-enter p0
 
     const/4 v0, 0x0
@@ -952,7 +952,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 122
+    .line 125
     :goto_0
     return-void
 
@@ -962,7 +962,7 @@
 
     packed-switch v2, :pswitch_data_0
 
-    .line 120
+    .line 123
     const-string v2, "RIL_UiccManager"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1076,7 +1076,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "EVENT_RADIO_UNAVAILABLE on index "
+    const-string v4, "EVENT_RADIO_UNAVAILABLE     on index "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1092,16 +1092,11 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 117
-    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
-
-    move-result v2
-
-    invoke-direct {p0, v2}, Lcom/android/internal/telephony/UiccManager;->disposeCard(I)V
-
     goto/16 :goto_0
 
     .line 104
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -1117,35 +1112,35 @@
     .parameter "obj"
 
     .prologue
-    .line 237
+    .line 240
     new-instance v0, Landroid/os/Registrant;
 
     invoke-direct {v0, p1, p2, p3}, Landroid/os/Registrant;-><init>(Landroid/os/Handler;ILjava/lang/Object;)V
 
-    .line 238
+    .line 241
     .local v0, r:Landroid/os/Registrant;
     iget-object v2, p0, Lcom/android/internal/telephony/UiccManager;->mIccChangedRegistrants:Landroid/os/RegistrantList;
 
     monitor-enter v2
 
-    .line 239
+    .line 242
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/telephony/UiccManager;->mIccChangedRegistrants:Landroid/os/RegistrantList;
 
     invoke-virtual {v1, v0}, Landroid/os/RegistrantList;->add(Landroid/os/Registrant;)V
 
-    .line 240
+    .line 243
     monitor-exit v2
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 243
+    .line 246
     invoke-virtual {v0}, Landroid/os/Registrant;->notifyRegistrant()V
 
-    .line 244
+    .line 247
     return-void
 
-    .line 240
+    .line 243
     :catchall_0
     move-exception v1
 
@@ -1162,24 +1157,24 @@
     .parameter "h"
 
     .prologue
-    .line 246
+    .line 249
     iget-object v1, p0, Lcom/android/internal/telephony/UiccManager;->mIccChangedRegistrants:Landroid/os/RegistrantList;
 
     monitor-enter v1
 
-    .line 247
+    .line 250
     :try_start_0
     iget-object v0, p0, Lcom/android/internal/telephony/UiccManager;->mIccChangedRegistrants:Landroid/os/RegistrantList;
 
     invoke-virtual {v0, p1}, Landroid/os/RegistrantList;->remove(Landroid/os/Handler;)V
 
-    .line 248
+    .line 251
     monitor-exit v1
 
-    .line 249
+    .line 252
     return-void
 
-    .line 248
+    .line 251
     :catchall_0
     move-exception v0
 

@@ -95,4 +95,7 @@
     <color name="config_defaultNotificationColor">#ff00ff00</color>
     <color name="oppo_alert_dialog_title_text_color">#ffc8c8c8</color>
     <color name="oppo_alert_dialog_content_text_color">#ffffffff</color>
+    <color name="status_bar_latest_event_title_color">#ff0f0f0f</color>
+    <color name="status_bar_latest_event_content_color">#ff191919</color>
+    <color name="status_bar_latest_event_time_color">#ff191919</color>
 </resources>

@@ -292,13 +292,13 @@
     invoke-virtual {v12, v1}, Lcom/android/internal/widget/SlidingTab;->setLeftHintText(I)V
 
     .line 388
-    const v1, 0x10803d6
+    const v1, 0x10803e9
 
-    const v2, 0x10804f9
+    const v2, 0x108050c
 
-    const v3, 0x10804da
+    const v3, 0x10804ed
 
-    const v4, 0x10804ed
+    const v4, 0x1080500
 
     invoke-virtual {v12, v1, v2, v3, v4}, Lcom/android/internal/widget/SlidingTab;->setLeftTabResources(IIII)V
 

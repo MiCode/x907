@@ -149,7 +149,7 @@
     .locals 5
 
     .prologue
-    const v4, 0x1020460
+    const v4, 0x1020461
 
     const/4 v3, 0x1
 
@@ -248,7 +248,7 @@
     .parameter "viewHeight"
 
     .prologue
-    const v3, 0x1020460
+    const v3, 0x1020461
 
     const/4 v6, 0x1
 

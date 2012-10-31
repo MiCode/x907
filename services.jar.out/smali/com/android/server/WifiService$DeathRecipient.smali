@@ -39,25 +39,25 @@
     .parameter "ws"
 
     .prologue
-    .line 1440
+    .line 1446
     iput-object p1, p0, Lcom/android/server/WifiService$DeathRecipient;->this$0:Lcom/android/server/WifiService;
 
-    .line 1441
+    .line 1447
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1442
+    .line 1448
     iput-object p3, p0, Lcom/android/server/WifiService$DeathRecipient;->mTag:Ljava/lang/String;
 
-    .line 1443
+    .line 1449
     iput p2, p0, Lcom/android/server/WifiService$DeathRecipient;->mMode:I
 
-    .line 1444
+    .line 1450
     iput-object p4, p0, Lcom/android/server/WifiService$DeathRecipient;->mBinder:Landroid/os/IBinder;
 
-    .line 1445
+    .line 1451
     iput-object p5, p0, Lcom/android/server/WifiService$DeathRecipient;->mWorkSource:Landroid/os/WorkSource;
 
-    .line 1447
+    .line 1453
     :try_start_0
     iget-object v1, p0, Lcom/android/server/WifiService$DeathRecipient;->mBinder:Landroid/os/IBinder;
 
@@ -67,15 +67,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1451
+    .line 1457
     :goto_0
     return-void
 
-    .line 1448
+    .line 1454
     :catch_0
     move-exception v0
 
-    .line 1449
+    .line 1455
     .local v0, e:Landroid/os/RemoteException;
     invoke-virtual {p0}, Lcom/android/server/WifiService$DeathRecipient;->binderDied()V
 
@@ -88,13 +88,13 @@
     .locals 2
 
     .prologue
-    .line 1454
+    .line 1460
     iget-object v0, p0, Lcom/android/server/WifiService$DeathRecipient;->mBinder:Landroid/os/IBinder;
 
     const/4 v1, 0x0
 
     invoke-interface {v0, p0, v1}, Landroid/os/IBinder;->unlinkToDeath(Landroid/os/IBinder$DeathRecipient;I)Z
 
-    .line 1455
+    .line 1461
     return-void
 .end method

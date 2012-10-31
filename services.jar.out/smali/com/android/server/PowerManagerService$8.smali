@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 1725
+    .line 1889
     iput-object p1, p0, Lcom/android/server/PowerManagerService$8;->this$0:Lcom/android/server/PowerManagerService;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,12 +41,12 @@
     .locals 1
 
     .prologue
-    .line 1727
+    .line 1891
     iget-object v0, p0, Lcom/android/server/PowerManagerService$8;->this$0:Lcom/android/server/PowerManagerService;
 
     #calls: Lcom/android/server/PowerManagerService;->forceReenableScreen()V
-    invoke-static {v0}, Lcom/android/server/PowerManagerService;->access$4400(Lcom/android/server/PowerManagerService;)V
+    invoke-static {v0}, Lcom/android/server/PowerManagerService;->access$4500(Lcom/android/server/PowerManagerService;)V
 
-    .line 1728
+    .line 1892
     return-void
 .end method

@@ -25,7 +25,7 @@
     .locals 3
 
     .prologue
-    .line 1842
+    .line 1845
     invoke-static {}, Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;->values()[Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;
 
     move-result-object v0
@@ -234,7 +234,7 @@
 
     goto :goto_5
 
-    .line 1842
+    .line 1845
     :catch_5
     move-exception v0
 

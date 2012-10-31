@@ -54,7 +54,7 @@
 
     const/4 v3, 0x0
 
-    .line 1756
+    .line 1759
     new-instance v0, Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;
 
     const-string v1, "Pattern"
@@ -63,7 +63,7 @@
 
     sput-object v0, Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;->Pattern:Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;
 
-    .line 1761
+    .line 1764
     new-instance v0, Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;
 
     const-string v1, "SimPin"
@@ -72,7 +72,7 @@
 
     sput-object v0, Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;->SimPin:Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;
 
-    .line 1766
+    .line 1769
     new-instance v0, Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;
 
     const-string v1, "Account"
@@ -81,7 +81,7 @@
 
     sput-object v0, Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;->Account:Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;
 
-    .line 1771
+    .line 1774
     new-instance v0, Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;
 
     const-string v1, "Password"
@@ -90,7 +90,7 @@
 
     sput-object v0, Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;->Password:Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;
 
-    .line 1776
+    .line 1779
     new-instance v0, Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;
 
     const-string v1, "SimPuk"
@@ -99,7 +99,7 @@
 
     sput-object v0, Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;->SimPuk:Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;
 
-    .line 1781
+    .line 1784
     new-instance v0, Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;
 
     const-string v1, "Unknown"
@@ -110,7 +110,7 @@
 
     sput-object v0, Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;->Unknown:Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;
 
-    .line 1751
+    .line 1754
     const/4 v0, 0x6
 
     new-array v0, v0, [Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;
@@ -157,7 +157,7 @@
     .end annotation
 
     .prologue
-    .line 1751
+    .line 1754
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -168,7 +168,7 @@
     .parameter "name"
 
     .prologue
-    .line 1751
+    .line 1754
     const-class v0, Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -184,7 +184,7 @@
     .locals 1
 
     .prologue
-    .line 1751
+    .line 1754
     sget-object v0, Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;->$VALUES:[Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;
 
     invoke-virtual {v0}, [Lcom/android/internal/policy/impl/KeyguardViewMediator$UnlockMode;->clone()Ljava/lang/Object;

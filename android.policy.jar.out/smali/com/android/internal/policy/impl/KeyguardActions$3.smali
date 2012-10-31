@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 167
+    .line 172
     iput-object p1, p0, Lcom/android/internal/policy/impl/KeyguardActions$3;->this$0:Lcom/android/internal/policy/impl/KeyguardActions;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 
     const/4 v2, 0x1
 
-    .line 170
+    .line 175
     iget-object v3, p0, Lcom/android/internal/policy/impl/KeyguardActions$3;->this$0:Lcom/android/internal/policy/impl/KeyguardActions;
 
     #getter for: Lcom/android/internal/policy/impl/KeyguardActions;->mAudioManager:Landroid/media/AudioManager;
@@ -62,19 +62,19 @@
 
     move v1, v2
 
-    .line 171
+    .line 176
     .local v1, silentModeOn:Z
     :goto_0
     if-eqz v1, :cond_1
 
-    .line 172
+    .line 177
     const-string v2, "KeyguardActions"
 
     const-string v3, "Now turn to RINGER_MODE_NORMAL!"
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 173
+    .line 178
     iget-object v2, p0, Lcom/android/internal/policy/impl/KeyguardActions$3;->this$0:Lcom/android/internal/policy/impl/KeyguardActions;
 
     #getter for: Lcom/android/internal/policy/impl/KeyguardActions;->mAudioManager:Landroid/media/AudioManager;
@@ -84,7 +84,7 @@
 
     invoke-virtual {v2, v4}, Landroid/media/AudioManager;->setRingerMode(I)V
 
-    .line 185
+    .line 190
     :goto_1
     iget-object v2, p0, Lcom/android/internal/policy/impl/KeyguardActions$3;->this$0:Lcom/android/internal/policy/impl/KeyguardActions;
 
@@ -95,17 +95,17 @@
 
     invoke-virtual {v2}, Lcom/android/internal/policy/impl/KeyguardViewManager;->hideKeyguardActions()V
 
-    .line 186
+    .line 191
     return-void
 
-    .line 170
+    .line 175
     .end local v1           #silentModeOn:Z
     :cond_0
     const/4 v1, 0x0
 
     goto :goto_0
 
-    .line 176
+    .line 181
     .restart local v1       #silentModeOn:Z
     :cond_1
     iget-object v3, p0, Lcom/android/internal/policy/impl/KeyguardActions$3;->this$0:Lcom/android/internal/policy/impl/KeyguardActions;
@@ -127,17 +127,17 @@
 
     if-ne v3, v2, :cond_2
 
-    .line 177
+    .line 182
     const-string v2, "KeyguardActions"
 
     const-string v3, "Now turn to RINGER_MODE_VIBRATE!"
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 178
+    .line 183
     const/4 v0, 0x1
 
-    .line 183
+    .line 188
     .local v0, ringerMode:I
     :goto_2
     iget-object v2, p0, Lcom/android/internal/policy/impl/KeyguardActions$3;->this$0:Lcom/android/internal/policy/impl/KeyguardActions;
@@ -151,7 +151,7 @@
 
     goto :goto_1
 
-    .line 180
+    .line 185
     .end local v0           #ringerMode:I
     :cond_2
     const-string v2, "KeyguardActions"
@@ -160,7 +160,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 181
+    .line 186
     const/4 v0, 0x0
 
     .restart local v0       #ringerMode:I

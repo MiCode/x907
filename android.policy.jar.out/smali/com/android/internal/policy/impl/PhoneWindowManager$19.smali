@@ -1,14 +1,11 @@
 .class Lcom/android/internal/policy/impl/PhoneWindowManager$19;
-.super Ljava/lang/Object;
+.super Landroid/content/BroadcastReceiver;
 .source "PhoneWindowManager.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/internal/policy/impl/PhoneWindowManager;->dismissKeyguardLw()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/internal/policy/impl/PhoneWindowManager;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,31 +24,35 @@
     .parameter
 
     .prologue
-    .line 3817
+    .line 3856
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$19;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 3
+.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 4
+    .parameter "context"
+    .parameter "intent"
 
     .prologue
-    .line 3819
+    .line 3859
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$19;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mKeyguardMediator:Lcom/android/internal/policy/impl/KeyguardViewMediator;
+    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mHandler:Landroid/os/Handler;
 
-    const/4 v1, 0x0
+    new-instance v1, Lcom/android/internal/policy/impl/PhoneWindowManager$19$1;
 
-    const/4 v2, 0x1
+    invoke-direct {v1, p0}, Lcom/android/internal/policy/impl/PhoneWindowManager$19$1;-><init>(Lcom/android/internal/policy/impl/PhoneWindowManager$19;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/internal/policy/impl/KeyguardViewMediator;->keyguardDone(ZZ)V
+    const-wide/16 v2, 0x3e8
 
-    .line 3820
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    .line 3867
     return-void
 .end method

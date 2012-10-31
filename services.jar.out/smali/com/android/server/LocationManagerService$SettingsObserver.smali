@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 443
+    .line 447
     iput-object p1, p0, Lcom/android/server/LocationManagerService$SettingsObserver;->this$0:Lcom/android/server/LocationManagerService;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .parameter "x1"
 
     .prologue
-    .line 443
+    .line 447
     invoke-direct {p0, p1}, Lcom/android/server/LocationManagerService$SettingsObserver;-><init>(Lcom/android/server/LocationManagerService;)V
 
     return-void
@@ -55,7 +55,7 @@
     .parameter "arg"
 
     .prologue
-    .line 446
+    .line 450
     iget-object v7, p0, Lcom/android/server/LocationManagerService$SettingsObserver;->this$0:Lcom/android/server/LocationManagerService;
 
     #getter for: Lcom/android/server/LocationManagerService;->mProvidersByName:Ljava/util/HashMap;
@@ -71,11 +71,11 @@
 
     check-cast v4, Lcom/android/server/location/LocationProviderInterface;
 
-    .line 447
+    .line 451
     .local v4, p:Lcom/android/server/location/LocationProviderInterface;
     if-eqz v4, :cond_0
 
-    .line 448
+    .line 452
     invoke-interface {v4}, Lcom/android/server/location/LocationProviderInterface;->getCapability()I
 
     move-result v7
@@ -86,7 +86,7 @@
 
     if-ne v7, v8, :cond_0
 
-    .line 454
+    .line 458
     check-cast p1, Landroid/content/ContentQueryMap;
 
     .end local p1
@@ -94,7 +94,7 @@
 
     move-result-object v2
 
-    .line 455
+    .line 459
     .local v2, kvs:Ljava/util/Map;,"Ljava/util/Map<Ljava/lang/String;Landroid/content/ContentValues;>;"
     if-eqz v2, :cond_0
 
@@ -104,7 +104,7 @@
 
     if-nez v7, :cond_0
 
-    .line 456
+    .line 460
     const-string v8, "LocationManagerService"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -139,7 +139,7 @@
 
     invoke-static {v8, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 458
+    .line 462
     const-string v7, "location_providers_allowed"
 
     invoke-interface {v2, v7}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -152,7 +152,7 @@
 
     move-result-object v5
 
-    .line 459
+    .line 463
     .local v5, providers:Ljava/lang/String;
     const-string v7, "gps"
 
@@ -160,7 +160,7 @@
 
     move-result v1
 
-    .line 460
+    .line 464
     .local v1, gpsSetting:Z
     const-string v7, "network"
 
@@ -168,7 +168,7 @@
 
     move-result v3
 
-    .line 461
+    .line 465
     .local v3, networkProvSetting:Z
     const-string v7, "wifi_on"
 
@@ -188,7 +188,7 @@
 
     move-result v6
 
-    .line 462
+    .line 466
     .local v6, wifiSetting:Z
     const-string v7, "assisted_gps_enabled"
 
@@ -208,11 +208,11 @@
 
     move-result v0
 
-    .line 470
+    .line 474
     .local v0, agpsSetting:Z
     invoke-interface {v4, v1, v3, v6, v0}, Lcom/android/server/location/LocationProviderInterface;->updateSettings(ZZZZ)Z
 
-    .line 474
+    .line 478
     .end local v0           #agpsSetting:Z
     .end local v1           #gpsSetting:Z
     .end local v2           #kvs:Ljava/util/Map;,"Ljava/util/Map<Ljava/lang/String;Landroid/content/ContentValues;>;"
@@ -229,20 +229,20 @@
 
     monitor-enter v8
 
-    .line 475
+    .line 479
     :try_start_0
     iget-object v7, p0, Lcom/android/server/LocationManagerService$SettingsObserver;->this$0:Lcom/android/server/LocationManagerService;
 
     #calls: Lcom/android/server/LocationManagerService;->updateProvidersLocked()V
     invoke-static {v7}, Lcom/android/server/LocationManagerService;->access$900(Lcom/android/server/LocationManagerService;)V
 
-    .line 476
+    .line 480
     monitor-exit v8
 
-    .line 477
+    .line 481
     return-void
 
-    .line 476
+    .line 480
     :catchall_0
     move-exception v7
 

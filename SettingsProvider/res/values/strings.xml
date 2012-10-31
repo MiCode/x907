@@ -31,8 +31,8 @@
     <string name="def_screen_effect">1</string>
     <string name="def_restore_password">0000</string>
     <string name="def_find_phone_num_config" />
-    <string name="oppo_unlock_change_pkg">com.oppo.glassboard.service.LockService</string>
-    <string name="def_oppo_unlock_change_process">com.oppo.glassboard</string>
+    <string name="oppo_unlock_change_pkg">com.oppo.lockscreenweather.service.LockService</string>
+    <string name="def_oppo_unlock_change_process">com.oppo.lockscreenweather</string>
     <string name="phone_ip_prefix" />
     <string name="event_log">disabled</string>
     <string name="event_data">disabled</string>

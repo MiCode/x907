@@ -46,7 +46,11 @@
 
 
 # instance fields
+.field private mBootComplted:Z
+
 .field private final mContext:Landroid/content/Context;
+
+.field private mFPDReceiver:Landroid/content/BroadcastReceiver;
 
 .field private mH:Landroid/os/Handler;
 
@@ -59,75 +63,110 @@
 
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
-    .locals 5
+    .locals 6
     .parameter "context"
 
     .prologue
-    const/16 v4, 0x8
+    const/16 v5, 0x8
 
-    .line 175
+    .line 235
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 58
-    new-array v1, v4, [Lcom/android/server/LightsService$Light;
+    .line 62
+    new-array v2, v5, [Lcom/android/server/LightsService$Light;
 
-    iput-object v1, p0, Lcom/android/server/LightsService;->mLights:[Lcom/android/server/LightsService$Light;
+    iput-object v2, p0, Lcom/android/server/LightsService;->mLights:[Lcom/android/server/LightsService$Light;
 
-    .line 140
-    new-instance v1, Lcom/android/server/LightsService$1;
+    .line 157
+    new-instance v2, Lcom/android/server/LightsService$1;
 
-    invoke-direct {v1, p0}, Lcom/android/server/LightsService$1;-><init>(Lcom/android/server/LightsService;)V
+    invoke-direct {v2, p0}, Lcom/android/server/LightsService$1;-><init>(Lcom/android/server/LightsService;)V
 
-    iput-object v1, p0, Lcom/android/server/LightsService;->mLegacyFlashlightHack:Landroid/os/IHardwareService$Stub;
+    iput-object v2, p0, Lcom/android/server/LightsService;->mLegacyFlashlightHack:Landroid/os/IHardwareService$Stub;
 
-    .line 196
-    new-instance v1, Lcom/android/server/LightsService$2;
+    .line 193
+    new-instance v2, Lcom/android/server/LightsService$2;
 
-    invoke-direct {v1, p0}, Lcom/android/server/LightsService$2;-><init>(Lcom/android/server/LightsService;)V
+    invoke-direct {v2, p0}, Lcom/android/server/LightsService$2;-><init>(Lcom/android/server/LightsService;)V
 
-    iput-object v1, p0, Lcom/android/server/LightsService;->mH:Landroid/os/Handler;
+    iput-object v2, p0, Lcom/android/server/LightsService;->mFPDReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 177
+    .line 265
+    new-instance v2, Lcom/android/server/LightsService$3;
+
+    invoke-direct {v2, p0}, Lcom/android/server/LightsService$3;-><init>(Lcom/android/server/LightsService;)V
+
+    iput-object v2, p0, Lcom/android/server/LightsService;->mH:Landroid/os/Handler;
+
+    .line 237
     invoke-static {}, Lcom/android/server/LightsService;->init_native()I
 
-    move-result v1
+    move-result v2
 
-    iput v1, p0, Lcom/android/server/LightsService;->mNativePointer:I
+    iput v2, p0, Lcom/android/server/LightsService;->mNativePointer:I
 
-    .line 178
+    .line 238
     iput-object p1, p0, Lcom/android/server/LightsService;->mContext:Landroid/content/Context;
 
-    .line 180
-    const-string v1, "hardware"
+    .line 240
+    const-string v2, "hardware"
 
-    iget-object v2, p0, Lcom/android/server/LightsService;->mLegacyFlashlightHack:Landroid/os/IHardwareService$Stub;
+    iget-object v3, p0, Lcom/android/server/LightsService;->mLegacyFlashlightHack:Landroid/os/IHardwareService$Stub;
 
-    invoke-static {v1, v2}, Landroid/os/ServiceManager;->addService(Ljava/lang/String;Landroid/os/IBinder;)V
+    invoke-static {v2, v3}, Landroid/os/ServiceManager;->addService(Ljava/lang/String;Landroid/os/IBinder;)V
 
-    .line 182
-    const/4 v0, 0x0
+    .line 244
+    const/4 v2, 0x0
 
-    .local v0, i:I
+    iput-boolean v2, p0, Lcom/android/server/LightsService;->mBootComplted:Z
+
+    .line 245
+    new-instance v0, Landroid/content/IntentFilter;
+
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
+
+    .line 246
+    .local v0, filter:Landroid/content/IntentFilter;
+    const-string v2, "android.intent.action.BOOT_COMPLETED"
+
+    invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    .line 247
+    const-string v2, "action.fpd.restore_lcd_brightness"
+
+    invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    .line 248
+    iget-object v2, p0, Lcom/android/server/LightsService;->mContext:Landroid/content/Context;
+
+    iget-object v3, p0, Lcom/android/server/LightsService;->mFPDReceiver:Landroid/content/BroadcastReceiver;
+
+    invoke-virtual {v2, v3, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+
+    .line 251
+    const/4 v1, 0x0
+
+    .local v1, i:I
     :goto_0
-    if-ge v0, v4, :cond_0
+    if-ge v1, v5, :cond_0
 
-    .line 183
-    iget-object v1, p0, Lcom/android/server/LightsService;->mLights:[Lcom/android/server/LightsService$Light;
+    .line 252
+    iget-object v2, p0, Lcom/android/server/LightsService;->mLights:[Lcom/android/server/LightsService$Light;
 
-    new-instance v2, Lcom/android/server/LightsService$Light;
+    new-instance v3, Lcom/android/server/LightsService$Light;
 
-    const/4 v3, 0x0
+    const/4 v4, 0x0
 
-    invoke-direct {v2, p0, v0, v3}, Lcom/android/server/LightsService$Light;-><init>(Lcom/android/server/LightsService;ILcom/android/server/LightsService$1;)V
+    invoke-direct {v3, p0, v1, v4}, Lcom/android/server/LightsService$Light;-><init>(Lcom/android/server/LightsService;ILcom/android/server/LightsService$1;)V
 
-    aput-object v2, v1, v0
+    aput-object v3, v2, v1
 
-    .line 182
-    add-int/lit8 v0, v0, 0x1
+    .line 251
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 185
+    .line 254
     :cond_0
     return-void
 .end method
@@ -137,24 +176,58 @@
     .parameter "x0"
 
     .prologue
-    .line 30
+    .line 34
     iget-object v0, p0, Lcom/android/server/LightsService;->mH:Landroid/os/Handler;
 
     return-object v0
 .end method
 
-.method static synthetic access$100(Lcom/android/server/LightsService;)I
+.method static synthetic access$100(Lcom/android/server/LightsService;)Z
     .locals 1
     .parameter "x0"
 
     .prologue
-    .line 30
+    .line 34
+    iget-boolean v0, p0, Lcom/android/server/LightsService;->mBootComplted:Z
+
+    return v0
+.end method
+
+.method static synthetic access$102(Lcom/android/server/LightsService;Z)Z
+    .locals 0
+    .parameter "x0"
+    .parameter "x1"
+
+    .prologue
+    .line 34
+    iput-boolean p1, p0, Lcom/android/server/LightsService;->mBootComplted:Z
+
+    return p1
+.end method
+
+.method static synthetic access$1200(Lcom/android/server/LightsService;)Landroid/content/BroadcastReceiver;
+    .locals 1
+    .parameter "x0"
+
+    .prologue
+    .line 34
+    iget-object v0, p0, Lcom/android/server/LightsService;->mFPDReceiver:Landroid/content/BroadcastReceiver;
+
+    return-object v0
+.end method
+
+.method static synthetic access$200(Lcom/android/server/LightsService;)I
+    .locals 1
+    .parameter "x0"
+
+    .prologue
+    .line 34
     iget v0, p0, Lcom/android/server/LightsService;->mNativePointer:I
 
     return v0
 .end method
 
-.method static synthetic access$200(IIIIIII)V
+.method static synthetic access$300(IIIIIII)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
@@ -165,19 +238,30 @@
     .parameter "x6"
 
     .prologue
-    .line 30
+    .line 34
     invoke-static/range {p0 .. p6}, Lcom/android/server/LightsService;->setLight_native(IIIIIII)V
 
     return-void
 .end method
 
-.method static synthetic access$300(Lcom/android/server/LightsService;)Landroid/content/Context;
+.method static synthetic access$400(Lcom/android/server/LightsService;)Landroid/content/Context;
     .locals 1
     .parameter "x0"
 
     .prologue
-    .line 30
+    .line 34
     iget-object v0, p0, Lcom/android/server/LightsService;->mContext:Landroid/content/Context;
+
+    return-object v0
+.end method
+
+.method static synthetic access$500(Lcom/android/server/LightsService;)[Lcom/android/server/LightsService$Light;
+    .locals 1
+    .parameter "x0"
+
+    .prologue
+    .line 34
+    iget-object v0, p0, Lcom/android/server/LightsService;->mLights:[Lcom/android/server/LightsService$Light;
 
     return-object v0
 .end method
@@ -202,15 +286,15 @@
     .end annotation
 
     .prologue
-    .line 188
+    .line 257
     iget v0, p0, Lcom/android/server/LightsService;->mNativePointer:I
 
     invoke-static {v0}, Lcom/android/server/LightsService;->finalize_native(I)V
 
-    .line 189
+    .line 258
     invoke-super {p0}, Ljava/lang/Object;->finalize()V
 
-    .line 190
+    .line 259
     return-void
 .end method
 
@@ -219,7 +303,7 @@
     .parameter "id"
 
     .prologue
-    .line 193
+    .line 262
     iget-object v0, p0, Lcom/android/server/LightsService;->mLights:[Lcom/android/server/LightsService$Light;
 
     aget-object v0, v0, p1

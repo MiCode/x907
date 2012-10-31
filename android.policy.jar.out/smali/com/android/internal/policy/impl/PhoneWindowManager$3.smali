@@ -1,6 +1,9 @@
 .class Lcom/android/internal/policy/impl/PhoneWindowManager$3;
-.super Landroid/os/UEventObserver;
+.super Ljava/lang/Object;
 .source "PhoneWindowManager.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # annotations
@@ -24,38 +27,25 @@
     .parameter
 
     .prologue
-    .line 555
+    .line 574
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$3;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    invoke-direct {p0}, Landroid/os/UEventObserver;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onUEvent(Landroid/os/UEventObserver$UEvent;)V
-    .locals 3
-    .parameter "event"
+.method public run()V
+    .locals 1
 
     .prologue
-    .line 558
+    .line 576
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$3;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    const-string v1, "1"
+    invoke-virtual {v0}, Lcom/android/internal/policy/impl/PhoneWindowManager;->launchHomeFromHotKey()V
 
-    const-string v2, "SWITCH_STATE"
-
-    invoke-virtual {p1, v2}, Landroid/os/UEventObserver$UEvent;->get(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/PhoneWindowManager;->setHdmiPlugged(Z)V
-
-    .line 559
+    .line 577
     return-void
 .end method

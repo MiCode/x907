@@ -394,6 +394,7 @@ system/etc/dhcpcd/dhcpcd-hooks/20-dns.conf 0 0 644
 system/etc/dhcpcd/dhcpcd-hooks/95-configured 0 0 644
 system/etc/dhcpcd/dhcpcd-run-hooks 1014 2000 550
 system/etc/dolby_coef 0 0 755
+system/etc/dolby_coef/coefs_48000.bin 0 0 644
 system/etc/event-log-tags 0 0 644
 system/etc/fallback_fonts.xml 0 0 644
 system/etc/NOTICE.html.gz 0 0 644

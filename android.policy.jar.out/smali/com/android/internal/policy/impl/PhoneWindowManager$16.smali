@@ -1,5 +1,5 @@
 .class Lcom/android/internal/policy/impl/PhoneWindowManager$16;
-.super Landroid/content/BroadcastReceiver;
+.super Landroid/os/Handler;
 .source "PhoneWindowManager.java"
 
 
@@ -24,35 +24,45 @@
     .parameter
 
     .prologue
-    .line 3679
+    .line 3248
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$16;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 4
-    .parameter "context"
-    .parameter "intent"
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 2
+    .parameter "msg"
 
     .prologue
-    .line 3682
+    .line 3251
+    const-string v0, "WindowManager"
+
+    const-string v1, "Headset detect: Inside handleMessage() for IntentHandler"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3252
+    iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$16;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+
+    iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    check-cast v0, Ljava/lang/String;
+
+    #calls: Lcom/android/internal/policy/impl/PhoneWindowManager;->sendIntents(Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/internal/policy/impl/PhoneWindowManager;->access$500(Lcom/android/internal/policy/impl/PhoneWindowManager;Ljava/lang/String;)V
+
+    .line 3253
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$16;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
-    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mHandler:Landroid/os/Handler;
+    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mBroadcastWakeLock:Landroid/os/PowerManager$WakeLock;
 
-    new-instance v1, Lcom/android/internal/policy/impl/PhoneWindowManager$16$1;
+    invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
 
-    invoke-direct {v1, p0}, Lcom/android/internal/policy/impl/PhoneWindowManager$16$1;-><init>(Lcom/android/internal/policy/impl/PhoneWindowManager$16;)V
-
-    const-wide/16 v2, 0x3e8
-
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    .line 3690
+    .line 3254
     return-void
 .end method

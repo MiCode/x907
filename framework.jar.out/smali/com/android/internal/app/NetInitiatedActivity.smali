@@ -305,7 +305,7 @@
 
     .line 90
     .local v0, context:Landroid/content/Context;
-    const v3, 0x10803c8
+    const v3, 0x10803db
 
     iput v3, v2, Lcom/android/internal/app/AlertController$AlertParams;->mIconId:I
 

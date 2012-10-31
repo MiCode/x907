@@ -57,11 +57,7 @@
 
 .field public static final launcher_mainmenu_default_text_color:I = 0x10600c3
 
-.field public static final listview_background_color:I = 0x10600c6
-
 .field public static final listview_item_color:I = 0x10600c5
-
-.field public static final menu_default_text_color:I = 0x10600ce
 
 .field public static final menu_disable_text_color:I = 0x10600cd
 
@@ -74,6 +70,12 @@
 .field public static final oppo_alert_dialog_content_text_color:I = 0x10600ca
 
 .field public static final oppo_alert_dialog_title_text_color:I = 0x10600c9
+
+.field public static final oppo_listview_background_color:I = 0x10600c6
+
+.field public static final oppo_menu_default_text_color:I = 0x10600ce
+
+.field public static final oppo_title_text_color:I = 0x10600c4
 
 .field public static final primary_text_dark:I = 0x1060001
 
@@ -109,8 +111,6 @@
 
 .field public static final tertiary_text_light:I = 0x1060011
 
-.field public static final title_text_color:I = 0x10600c4
-
 .field public static final transparent:I = 0x106000d
 
 .field public static final white:I = 0x106000b
@@ -125,7 +125,7 @@
     .locals 0
 
     .prologue
-    .line 10347
+    .line 10348
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void

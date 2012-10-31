@@ -49,33 +49,33 @@
     .parameter "criteria"
 
     .prologue
-    .line 1070
+    .line 1079
     iput-object p1, p0, Lcom/android/server/LocationManagerService$UpdateRecord;->this$0:Lcom/android/server/LocationManagerService;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1071
+    .line 1080
     iput-object p2, p0, Lcom/android/server/LocationManagerService$UpdateRecord;->mProvider:Ljava/lang/String;
 
-    .line 1072
+    .line 1081
     iput-object p7, p0, Lcom/android/server/LocationManagerService$UpdateRecord;->mReceiver:Lcom/android/server/LocationManagerService$Receiver;
 
-    .line 1073
+    .line 1082
     iput-wide p3, p0, Lcom/android/server/LocationManagerService$UpdateRecord;->mMinTime:J
 
-    .line 1074
+    .line 1083
     iput p5, p0, Lcom/android/server/LocationManagerService$UpdateRecord;->mMinDistance:F
 
-    .line 1075
+    .line 1084
     iput-boolean p6, p0, Lcom/android/server/LocationManagerService$UpdateRecord;->mSingleShot:Z
 
-    .line 1076
+    .line 1085
     iput p8, p0, Lcom/android/server/LocationManagerService$UpdateRecord;->mUid:I
 
-    .line 1077
+    .line 1086
     iput-object p9, p0, Lcom/android/server/LocationManagerService$UpdateRecord;->mCriteria:Landroid/location/Criteria;
 
-    .line 1079
+    .line 1088
     #getter for: Lcom/android/server/LocationManagerService;->mRecordsByProvider:Ljava/util/HashMap;
     invoke-static {p1}, Lcom/android/server/LocationManagerService;->access$1500(Lcom/android/server/LocationManagerService;)Ljava/util/HashMap;
 
@@ -87,17 +87,17 @@
 
     check-cast v0, Ljava/util/ArrayList;
 
-    .line 1080
+    .line 1089
     .local v0, records:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/server/LocationManagerService$UpdateRecord;>;"
     if-nez v0, :cond_0
 
-    .line 1081
+    .line 1090
     new-instance v0, Ljava/util/ArrayList;
 
     .end local v0           #records:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/server/LocationManagerService$UpdateRecord;>;"
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1082
+    .line 1091
     .restart local v0       #records:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/server/LocationManagerService$UpdateRecord;>;"
     #getter for: Lcom/android/server/LocationManagerService;->mRecordsByProvider:Ljava/util/HashMap;
     invoke-static {p1}, Lcom/android/server/LocationManagerService;->access$1500(Lcom/android/server/LocationManagerService;)Ljava/util/HashMap;
@@ -106,7 +106,7 @@
 
     invoke-virtual {v1, p2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1084
+    .line 1093
     :cond_0
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -114,10 +114,10 @@
 
     if-nez v1, :cond_1
 
-    .line 1085
+    .line 1094
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1087
+    .line 1096
     :cond_1
     return-void
 .end method
@@ -128,7 +128,7 @@
     .locals 3
 
     .prologue
-    .line 1094
+    .line 1103
     iget-object v1, p0, Lcom/android/server/LocationManagerService$UpdateRecord;->this$0:Lcom/android/server/LocationManagerService;
 
     #getter for: Lcom/android/server/LocationManagerService;->mRecordsByProvider:Ljava/util/HashMap;
@@ -144,14 +144,14 @@
 
     check-cast v0, Ljava/util/ArrayList;
 
-    .line 1095
+    .line 1104
     .local v0, records:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/server/LocationManagerService$UpdateRecord;>;"
     if-eqz v0, :cond_0
 
-    .line 1096
+    .line 1105
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 1098
+    .line 1107
     :cond_0
     return-void
 .end method
@@ -162,7 +162,7 @@
     .parameter "prefix"
 
     .prologue
-    .line 1108
+    .line 1117
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -181,7 +181,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1109
+    .line 1118
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -220,7 +220,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1110
+    .line 1119
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -259,7 +259,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1111
+    .line 1120
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -286,7 +286,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1112
+    .line 1121
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -313,7 +313,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1113
+    .line 1122
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -334,7 +334,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1114
+    .line 1123
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -381,12 +381,12 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1116
+    .line 1125
     iget-object v0, p0, Lcom/android/server/LocationManagerService$UpdateRecord;->mLastFixBroadcast:Landroid/location/Location;
 
     if-eqz v0, :cond_0
 
-    .line 1117
+    .line 1126
     iget-object v0, p0, Lcom/android/server/LocationManagerService$UpdateRecord;->mLastFixBroadcast:Landroid/location/Location;
 
     new-instance v1, Landroid/util/PrintWriterPrinter;
@@ -413,7 +413,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/location/Location;->dump(Landroid/util/Printer;Ljava/lang/String;)V
 
-    .line 1119
+    .line 1128
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -441,7 +441,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1120
+    .line 1129
     return-void
 .end method
 
@@ -449,7 +449,7 @@
     .locals 2
 
     .prologue
-    .line 1102
+    .line 1111
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

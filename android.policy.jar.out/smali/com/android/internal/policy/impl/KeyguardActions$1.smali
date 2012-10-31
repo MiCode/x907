@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 151
+    .line 156
     iput-object p1, p0, Lcom/android/internal/policy/impl/KeyguardActions$1;->this$0:Lcom/android/internal/policy/impl/KeyguardActions;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,19 +42,19 @@
     .parameter "v"
 
     .prologue
-    .line 154
+    .line 159
     const-string v0, "KeyguardActions"
 
     const-string v1, "Now shut down!"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 155
+    .line 160
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardActions$1;->this$0:Lcom/android/internal/policy/impl/KeyguardActions;
 
     #calls: Lcom/android/internal/policy/impl/KeyguardActions;->shutdown()V
     invoke-static {v0}, Lcom/android/internal/policy/impl/KeyguardActions;->access$000(Lcom/android/internal/policy/impl/KeyguardActions;)V
 
-    .line 156
+    .line 161
     return-void
 .end method

@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 189
+    .line 194
     iput-object p1, p0, Lcom/android/internal/policy/impl/KeyguardActions$4;->this$0:Lcom/android/internal/policy/impl/KeyguardActions;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -46,10 +46,10 @@
 
     const/4 v2, 0x1
 
-    .line 192
+    .line 197
     const/4 v1, 0x0
 
-    .line 194
+    .line 199
     .local v1, isFlightMode:Z
     :try_start_0
     iget-object v4, p0, Lcom/android/internal/policy/impl/KeyguardActions$4;->this$0:Lcom/android/internal/policy/impl/KeyguardActions;
@@ -75,7 +75,7 @@
 
     move v1, v2
 
-    .line 198
+    .line 203
     :goto_0
     const-string v5, "KeyguardActions"
 
@@ -110,7 +110,7 @@
 
     invoke-static {v5, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 199
+    .line 204
     iget-object v4, p0, Lcom/android/internal/policy/impl/KeyguardActions$4;->this$0:Lcom/android/internal/policy/impl/KeyguardActions;
 
     if-nez v1, :cond_2
@@ -119,7 +119,7 @@
     #calls: Lcom/android/internal/policy/impl/KeyguardActions;->changeAirplaneModeSystemSetting(Z)V
     invoke-static {v4, v2}, Lcom/android/internal/policy/impl/KeyguardActions;->access$500(Lcom/android/internal/policy/impl/KeyguardActions;Z)V
 
-    .line 200
+    .line 205
     iget-object v2, p0, Lcom/android/internal/policy/impl/KeyguardActions$4;->this$0:Lcom/android/internal/policy/impl/KeyguardActions;
 
     #getter for: Lcom/android/internal/policy/impl/KeyguardActions;->mKeyguardViewManager:Lcom/android/internal/policy/impl/KeyguardViewManager;
@@ -129,26 +129,26 @@
 
     invoke-virtual {v2}, Lcom/android/internal/policy/impl/KeyguardViewManager;->hideKeyguardActions()V
 
-    .line 201
+    .line 206
     return-void
 
     :cond_0
     move v1, v3
 
-    .line 194
+    .line 199
     goto :goto_0
 
-    .line 195
+    .line 200
     :catch_0
     move-exception v0
 
-    .line 196
+    .line 201
     .local v0, e:Landroid/provider/Settings$SettingNotFoundException;
     invoke-virtual {v0}, Landroid/provider/Settings$SettingNotFoundException;->printStackTrace()V
 
     goto :goto_0
 
-    .line 198
+    .line 203
     .end local v0           #e:Landroid/provider/Settings$SettingNotFoundException;
     :cond_1
     const-string v4, "ON"
@@ -158,6 +158,6 @@
     :cond_2
     move v2, v3
 
-    .line 199
+    .line 204
     goto :goto_2
 .end method

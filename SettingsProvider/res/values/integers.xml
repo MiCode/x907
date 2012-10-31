@@ -21,7 +21,7 @@
     <integer name="def_button_light_mode">1</integer>
     <integer name="def_button_light_timeout">6000</integer>
     <integer name="call_vibrate_method">0</integer>
-    <integer name="power_save_mode">1</integer>
+    <integer name="power_save_mode">0</integer>
     <integer name="notification_on_connected">2</integer>
     <integer name="mock_location">0</integer>
     <integer name="display_power_percent">1</integer>

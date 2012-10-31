@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final CommaEffectEnabled:I = 0x1010454
+.field public static final CommaEffectEnabled:I = 0x1010455
 
 .field public static final Dialog_Button_textAppearance:I = 0x10103e0
 
@@ -23,33 +23,33 @@
 
 .field public static final Dialog_Title_textAppearance:I = 0x10103df
 
-.field public static final ImgViewBottomPadding:I = 0x1010492
+.field public static final ImgViewBottomPadding:I = 0x1010493
 
-.field public static final ImgViewDrawableRes:I = 0x101048d
+.field public static final ImgViewDrawableRes:I = 0x101048e
 
-.field public static final ImgViewLeftPadding:I = 0x101048f
+.field public static final ImgViewLeftPadding:I = 0x1010490
 
-.field public static final ImgViewRightPadding:I = 0x1010490
+.field public static final ImgViewRightPadding:I = 0x1010491
 
-.field public static final ImgViewTopPadding:I = 0x1010491
+.field public static final ImgViewTopPadding:I = 0x1010492
 
-.field public static final SlidePieceBkgRes:I = 0x101048c
+.field public static final SlidePieceBkgRes:I = 0x101048d
 
-.field public static final TextOfTextView:I = 0x101048e
+.field public static final TextOfTextView:I = 0x101048f
 
-.field public static final TextSizeOfTextView:I = 0x1010498
+.field public static final TextSizeOfTextView:I = 0x1010499
 
-.field public static final TextViewBottomPadding:I = 0x1010496
+.field public static final TextViewBottomPadding:I = 0x1010497
 
-.field public static final TextViewColor:I = 0x1010499
+.field public static final TextViewColor:I = 0x101049a
 
-.field public static final TextViewLeftPadding:I = 0x1010493
+.field public static final TextViewLeftPadding:I = 0x1010494
 
-.field public static final TextViewRightPadding:I = 0x1010494
+.field public static final TextViewRightPadding:I = 0x1010495
 
-.field public static final TextViewShine:I = 0x1010497
+.field public static final TextViewShine:I = 0x1010498
 
-.field public static final TextViewTopPadding:I = 0x1010495
+.field public static final TextViewTopPadding:I = 0x1010496
 
 .field public static final absListViewStyle:I = 0x101006a
 
@@ -103,21 +103,21 @@
 
 .field public static final actionModeCutDrawable:I = 0x1010311
 
-.field public static final actionModeFindDrawable:I = 0x10103fe
+.field public static final actionModeFindDrawable:I = 0x10103ff
 
 .field public static final actionModePasteDrawable:I = 0x1010313
 
-.field public static final actionModePopupWindowStyle:I = 0x1010400
+.field public static final actionModePopupWindowStyle:I = 0x1010401
 
 .field public static final actionModeSelectAllDrawable:I = 0x101037e
 
-.field public static final actionModeShareDrawable:I = 0x10103fd
+.field public static final actionModeShareDrawable:I = 0x10103fe
 
 .field public static final actionModeSplitBackground:I = 0x101039d
 
 .field public static final actionModeStyle:I = 0x1010394
 
-.field public static final actionModeWebSearchDrawable:I = 0x10103ff
+.field public static final actionModeWebSearchDrawable:I = 0x1010400
 
 .field public static final actionOverflowButtonStyle:I = 0x10102f6
 
@@ -127,7 +127,7 @@
 
 .field public static final activatedBackgroundIndicator:I = 0x10102fd
 
-.field public static final activityChooserViewStyle:I = 0x10103fc
+.field public static final activityChooserViewStyle:I = 0x10103fd
 
 .field public static final activityCloseEnterAnimation:I = 0x10100ba
 
@@ -161,7 +161,7 @@
 
 .field public static final allowClearUserData:I = 0x1010005
 
-.field public static final allowMassStorage:I = 0x1010484
+.field public static final allowMassStorage:I = 0x1010485
 
 .field public static final allowParallelSyncs:I = 0x1010332
 
@@ -185,7 +185,7 @@
 
 .field public static final animateOnClick:I = 0x101025c
 
-.field public static final animated:I = 0x101049f
+.field public static final animated:I = 0x10104a0
 
 .field public static final animation:I = 0x10101cd
 
@@ -203,9 +203,9 @@
 
 .field public static final apiKey:I = 0x1010211
 
-.field public static final arch:I = 0x10104a1
+.field public static final arch:I = 0x10104a2
 
-.field public static final aspect:I = 0x1010476
+.field public static final aspect:I = 0x1010477
 
 .field public static final author:I = 0x10102b4
 
@@ -246,15 +246,15 @@
 
 .field public static final baselineAlignedChildIndex:I = 0x1010127
 
-.field public static final bitmap:I = 0x101047b
+.field public static final bitmap:I = 0x101047c
 
-.field public static final borderBottom:I = 0x101043b
+.field public static final borderBottom:I = 0x101043c
 
-.field public static final borderLeft:I = 0x101043c
+.field public static final borderLeft:I = 0x101043d
 
-.field public static final borderRight:I = 0x101043d
+.field public static final borderRight:I = 0x101043e
 
-.field public static final borderTop:I = 0x101043a
+.field public static final borderTop:I = 0x101043b
 
 .field public static final borderlessButtonStyle:I = 0x101032b
 
@@ -262,7 +262,7 @@
 
 .field public static final bottomBright:I = 0x10100cd
 
-.field public static final bottomChevronDrawable:I = 0x101046d
+.field public static final bottomChevronDrawable:I = 0x101046e
 
 .field public static final bottomDark:I = 0x10100c9
 
@@ -278,7 +278,7 @@
 
 .field public static final breadCrumbTitle:I = 0x1010303
 
-.field public static final broadcast_enabled:I = 0x10104bb
+.field public static final broadcast_enabled:I = 0x10104bc
 
 .field public static final bufferType:I = 0x101014e
 
@@ -296,7 +296,7 @@
 
 .field public static final buttonStyleToggle:I = 0x101004b
 
-.field public static final button_background:I = 0x10104b6
+.field public static final button_background:I = 0x10104b7
 
 .field public static final button_negative_disable:I = 0x10103bf
 
@@ -324,14 +324,14 @@
 
 .field public static final candidatesTextStyleSpans:I = 0x1010230
 
-.field public static final cantSaveState:I = 0x10104d7
+.field public static final cantSaveState:I = 0x10104d8
 
 .field public static final capitalize:I = 0x1010169
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
 
-.field public static final category:I = 0x10104a2
+.field public static final category:I = 0x10104a3
 
 .field public static final centerBright:I = 0x10100cc
 
@@ -361,7 +361,7 @@
 
 .field public static final checkedButton:I = 0x1010148
 
-.field public static final child:I = 0x101049a
+.field public static final child:I = 0x101049b
 
 .field public static final childDivider:I = 0x1010111
 
@@ -373,13 +373,13 @@
 
 .field public static final child_count:I = 0x10103b1
 
-.field public static final childlike:I = 0x101049e
+.field public static final childlike:I = 0x101049f
 
 .field public static final choiceMode:I = 0x101012b
 
 .field public static final clearTaskOnLaunch:I = 0x1010015
 
-.field public static final clickColor:I = 0x1010442
+.field public static final clickColor:I = 0x1010443
 
 .field public static final clickable:I = 0x10100e5
 
@@ -391,7 +391,7 @@
 
 .field public static final codes:I = 0x1010242
 
-.field public static final collapsEnabled:I = 0x10104a7
+.field public static final collapsEnabled:I = 0x10104a8
 
 .field public static final collapseColumns:I = 0x101014b
 
@@ -443,11 +443,11 @@
 
 .field public static final contentDescription:I = 0x1010273
 
-.field public static final createDelay:I = 0x10104d3
+.field public static final createDelay:I = 0x10104d4
 
 .field public static final cropToPadding:I = 0x1010123
 
-.field public static final curPath:I = 0x1010486
+.field public static final curPath:I = 0x1010487
 
 .field public static final cursorVisible:I = 0x1010152
 
@@ -469,9 +469,9 @@
 
 .field public static final dateTextAppearance:I = 0x1010349
 
-.field public static final date_picker_height:I = 0x10104b3
+.field public static final date_picker_height:I = 0x10104b4
 
-.field public static final date_picker_width:I = 0x10104b4
+.field public static final date_picker_width:I = 0x10104b5
 
 .field public static final debuggable:I = 0x101000f
 
@@ -495,7 +495,7 @@
 
 .field public static final dial:I = 0x1010102
 
-.field public static final dialogCustomTitleDecorLayout:I = 0x1010404
+.field public static final dialogCustomTitleDecorLayout:I = 0x1010405
 
 .field public static final dialogIcon:I = 0x10101f4
 
@@ -505,23 +505,23 @@
 
 .field public static final dialogPreferenceStyle:I = 0x1010091
 
-.field public static final dialogTextColorPrimary:I = 0x1010418
+.field public static final dialogTextColorPrimary:I = 0x1010419
 
-.field public static final dialogTextColorPrimaryDisableOnly:I = 0x101041a
+.field public static final dialogTextColorPrimaryDisableOnly:I = 0x101041b
 
-.field public static final dialogTextColorSecondary:I = 0x101041c
+.field public static final dialogTextColorSecondary:I = 0x101041d
 
-.field public static final dialogTextColorTertiary:I = 0x101041b
+.field public static final dialogTextColorTertiary:I = 0x101041c
 
 .field public static final dialogTheme:I = 0x1010308
 
 .field public static final dialogTitle:I = 0x10101f2
 
-.field public static final dialogTitleDecorLayout:I = 0x1010405
+.field public static final dialogTitleDecorLayout:I = 0x1010406
 
-.field public static final dialogTitleIconsDecorLayout:I = 0x1010403
+.field public static final dialogTitleIconsDecorLayout:I = 0x1010404
 
-.field public static final dialogWindowExitAnimation:I = 0x1010416
+.field public static final dialogWindowExitAnimation:I = 0x1010417
 
 .field public static final digits:I = 0x1010166
 
@@ -531,7 +531,7 @@
 
 .field public static final directionPriority:I = 0x10101d2
 
-.field public static final disableChildrenWhenDisabled:I = 0x1010459
+.field public static final disableChildrenWhenDisabled:I = 0x101045a
 
 .field public static final disableDependentsState:I = 0x10101f1
 
@@ -559,7 +559,7 @@
 
 .field public static final drawable:I = 0x1010199
 
-.field public static final drawableAlpha:I = 0x1010438
+.field public static final drawableAlpha:I = 0x1010439
 
 .field public static final drawableBottom:I = 0x101016e
 
@@ -603,9 +603,9 @@
 
 .field public static final duration:I = 0x1010198
 
-.field public static final during:I = 0x10104a0
+.field public static final during:I = 0x10104a1
 
-.field public static final edgeWidth:I = 0x10104ab
+.field public static final edgeWidth:I = 0x10104ac
 
 .field public static final editTextAppearance:I = 0x10103e2
 
@@ -630,7 +630,7 @@
 
 .field public static final ems:I = 0x1010158
 
-.field public static final emulated:I = 0x1010482
+.field public static final emulated:I = 0x1010483
 
 .field public static final enabled:I = 0x101000e
     .annotation runtime Ljava/lang/Deprecated;
@@ -659,7 +659,7 @@
 
 .field public static final exitFadeDuration:I = 0x101030d
 
-.field public static final expandActivityOverflowButtonDrawable:I = 0x1010465
+.field public static final expandActivityOverflowButtonDrawable:I = 0x1010466
 
 .field public static final expandableListPreferredChildIndicatorLeft:I = 0x1010052
 
@@ -712,9 +712,9 @@
 
 .field public static final fakethirdpart:I = 0x10103b7
 
-.field public static final fantasticScrollMode:I = 0x1010436
+.field public static final fantasticScrollMode:I = 0x1010437
 
-.field public static final fastLabelerEnable:I = 0x10104cc
+.field public static final fastLabelerEnable:I = 0x10104cd
 
 .field public static final fastScrollAlwaysVisible:I = 0x1010335
 
@@ -732,13 +732,13 @@
 
 .field public static final fastScrollTrackDrawable:I = 0x1010339
 
-.field public static final feedbackCount:I = 0x1010473
+.field public static final feedbackCount:I = 0x1010474
 
-.field public static final fileLaunchMode:I = 0x101048a
+.field public static final fileLaunchMode:I = 0x101048b
 
-.field public static final fileMode:I = 0x1010488
+.field public static final fileMode:I = 0x1010489
 
-.field public static final fileType:I = 0x1010487
+.field public static final fileType:I = 0x1010488
 
 .field public static final fillAfter:I = 0x10101bd
 
@@ -762,7 +762,7 @@
 
 .field public static final fitsSystemWindows:I = 0x10100dd
 
-.field public static final flingable:I = 0x101045f
+.field public static final flingable:I = 0x1010460
 
 .field public static final flipInterval:I = 0x1010179
 
@@ -778,7 +778,7 @@
 
 .field public static final foregroundGravity:I = 0x1010200
 
-.field public static final foregroundInsidePadding:I = 0x1010437
+.field public static final foregroundInsidePadding:I = 0x1010438
 
 .field public static final format:I = 0x1010105
 
@@ -796,15 +796,15 @@
 
 .field public static final fragmentOpenExitAnimation:I = 0x10102e6
 
-.field public static final frameDuration:I = 0x1010462
+.field public static final frameDuration:I = 0x1010463
 
 .field public static final frameMode:I = 0x10103c6
 
 .field public static final frameRadio:I = 0x10103cc
 
-.field public static final framesCount:I = 0x1010463
+.field public static final framesCount:I = 0x1010464
 
-.field public static final freezeActivity:I = 0x10104d4
+.field public static final freezeActivity:I = 0x10104d5
 
 .field public static final freezesText:I = 0x101016c
 
@@ -862,7 +862,7 @@
 
 .field public static final handle:I = 0x101025a
 
-.field public static final handleDrawable:I = 0x1010469
+.field public static final handleDrawable:I = 0x101046a
 
 .field public static final handleProfiling:I = 0x1010022
 
@@ -872,13 +872,13 @@
 
 .field public static final hasCode:I = 0x101000c
 
-.field public static final header:I = 0x10104c1
+.field public static final header:I = 0x10104c2
 
 .field public static final headerBackground:I = 0x101012f
 
 .field public static final headerDividersEnabled:I = 0x101022e
 
-.field public static final headerEnabled:I = 0x10104c3
+.field public static final headerEnabled:I = 0x10104c4
 
 .field public static final height:I = 0x1010155
 
@@ -886,7 +886,7 @@
 
 .field public static final hint:I = 0x1010150
 
-.field public static final hitRadius:I = 0x1010470
+.field public static final hitRadius:I = 0x1010471
 
 .field public static final homeAsUpIndicator:I = 0x101030b
 
@@ -896,9 +896,9 @@
 
 .field public static final horizontalGap:I = 0x101023f
 
-.field public static final horizontalOffset:I = 0x1010475
+.field public static final horizontalOffset:I = 0x1010476
 
-.field public static final horizontalProgressLayout:I = 0x1010426
+.field public static final horizontalProgressLayout:I = 0x1010427
 
 .field public static final horizontalScrollViewStyle:I = 0x1010353
 
@@ -906,9 +906,9 @@
 
 .field public static final host:I = 0x1010028
 
-.field public static final hotSpotX:I = 0x101047c
+.field public static final hotSpotX:I = 0x101047d
 
-.field public static final hotSpotY:I = 0x101047d
+.field public static final hotSpotY:I = 0x101047e
 
 .field public static final icon:I = 0x1010002
 
@@ -962,13 +962,13 @@
 
 .field public static final indeterminateProgressStyle:I = 0x1010318
 
-.field public static final indicateEnable:I = 0x1010430
+.field public static final indicateEnable:I = 0x1010431
 
-.field public static final indicateMaxWidth:I = 0x1010433
+.field public static final indicateMaxWidth:I = 0x1010434
 
-.field public static final indicateMinWidth:I = 0x1010432
+.field public static final indicateMinWidth:I = 0x1010433
 
-.field public static final indicateTextSize:I = 0x1010431
+.field public static final indicateTextSize:I = 0x1010432
 
 .field public static final indicatorLeft:I = 0x101010d
 
@@ -978,7 +978,7 @@
 
 .field public static final initOrder:I = 0x101001a
 
-.field public static final initialActivityCount:I = 0x1010464
+.field public static final initialActivityCount:I = 0x1010465
 
 .field public static final initialLayout:I = 0x1010251
 
@@ -1009,7 +1009,7 @@
 
 .field public static final isAuxiliary:I = 0x101037f
 
-.field public static final isCalendarDatePicker:I = 0x10104bf
+.field public static final isCalendarDatePicker:I = 0x10104c0
 
 .field public static final isDefault:I = 0x1010221
 
@@ -1017,9 +1017,9 @@
 
 .field public static final isModifier:I = 0x1010246
 
-.field public static final isOppo:I = 0x1010455
+.field public static final isOppo:I = 0x1010456
 
-.field public static final isOppoStyle:I = 0x1010427
+.field public static final isOppoStyle:I = 0x1010428
 
 .field public static final isRepeatable:I = 0x1010248
 
@@ -1027,13 +1027,13 @@
 
 .field public static final isSticky:I = 0x1010247
 
-.field public static final isalarmtimepicker:I = 0x10104b2
+.field public static final isalarmtimepicker:I = 0x10104b3
 
-.field public static final item:I = 0x10104c2
+.field public static final item:I = 0x10104c3
 
 .field public static final itemBackground:I = 0x1010130
 
-.field public static final itemCountOfPerPage:I = 0x101048b
+.field public static final itemCountOfPerPage:I = 0x101048c
 
 .field public static final itemIconDisabledAlpha:I = 0x1010131
 
@@ -1041,9 +1041,9 @@
 
 .field public static final itemTextAppearance:I = 0x101012c
 
-.field public static final item_expand_height:I = 0x10104a6
+.field public static final item_expand_height:I = 0x10104a7
 
-.field public static final item_normal_height:I = 0x10104a5
+.field public static final item_normal_height:I = 0x10104a6
 
 .field public static final keepScreenOn:I = 0x1010216
 
@@ -1075,11 +1075,11 @@
 
 .field public static final keyboardMode:I = 0x101024d
 
-.field public static final keyboardViewStyle:I = 0x1010466
+.field public static final keyboardViewStyle:I = 0x1010467
 
 .field public static final keycode:I = 0x10100c5
 
-.field public static final keymore:I = 0x10104a4
+.field public static final keymore:I = 0x10104a5
 
 .field public static final killAfterRestore:I = 0x101029c
 
@@ -1101,7 +1101,7 @@
 
 .field public static final layoutAnimation:I = 0x10100ec
 
-.field public static final layoutDirection:I = 0x101042a
+.field public static final layoutDirection:I = 0x101042b
 
 .field public static final layout_above:I = 0x1010184
 
@@ -1145,17 +1145,17 @@
 
 .field public static final layout_marginBottom:I = 0x10100fa
 
-.field public static final layout_marginEnd:I = 0x1010435
+.field public static final layout_marginEnd:I = 0x1010436
 
 .field public static final layout_marginLeft:I = 0x10100f7
 
 .field public static final layout_marginRight:I = 0x10100f9
 
-.field public static final layout_marginStart:I = 0x1010434
+.field public static final layout_marginStart:I = 0x1010435
 
 .field public static final layout_marginTop:I = 0x10100f8
 
-.field public static final layout_removeBorders:I = 0x101043e
+.field public static final layout_removeBorders:I = 0x101043f
 
 .field public static final layout_row:I = 0x101037b
 
@@ -1179,7 +1179,7 @@
 
 .field public static final left:I = 0x10101ad
 
-.field public static final leftChevronDrawable:I = 0x101046a
+.field public static final leftChevronDrawable:I = 0x101046b
 
 .field public static final lineSpacingExtra:I = 0x1010217
 
@@ -1199,9 +1199,9 @@
 
 .field public static final listDividerAlertDialog:I = 0x1010305
 
-.field public static final listItemLayout:I = 0x1010424
+.field public static final listItemLayout:I = 0x1010425
 
-.field public static final listLayout:I = 0x1010421
+.field public static final listLayout:I = 0x1010422
 
 .field public static final listPopupWindowStyle:I = 0x10102ff
 
@@ -1217,7 +1217,7 @@
 
 .field public static final listSelector:I = 0x10100fb
 
-.field public static final listSelectorBackground:I = 0x101041d
+.field public static final listSelectorBackground:I = 0x101041e
 
 .field public static final listSeparatorTextViewStyle:I = 0x1010208
 
@@ -1225,7 +1225,7 @@
 
 .field public static final listViewWhiteStyle:I = 0x1010075
 
-.field public static final listenEdges:I = 0x10104ac
+.field public static final listenEdges:I = 0x10104ad
 
 .field public static final lockAuthor:I = 0x10103d7
 
@@ -1243,19 +1243,19 @@
 
 .field public static final loopViews:I = 0x1010307
 
-.field public static final magnifier:I = 0x101042c
+.field public static final magnifier:I = 0x101042d
 
 .field public static final magnifierEnable:I = 0x10103c5
 
-.field public static final magnifierHeight:I = 0x101042e
+.field public static final magnifierHeight:I = 0x101042f
 
-.field public static final magnifierInterceptTouch:I = 0x101042f
+.field public static final magnifierInterceptTouch:I = 0x1010430
 
-.field public static final magnifierWidth:I = 0x101042d
+.field public static final magnifierWidth:I = 0x101042e
 
-.field public static final majorWeightMax:I = 0x101045d
+.field public static final majorWeightMax:I = 0x101045e
 
-.field public static final majorWeightMin:I = 0x101045b
+.field public static final majorWeightMin:I = 0x101045c
 
 .field public static final manageSpaceActivity:I = 0x1010004
 
@@ -1271,11 +1271,11 @@
 
 .field public static final maxEms:I = 0x1010157
 
-.field public static final maxFileSize:I = 0x1010485
+.field public static final maxFileSize:I = 0x1010486
 
 .field public static final maxHeight:I = 0x1010120
 
-.field public static final maxItems:I = 0x1010440
+.field public static final maxItems:I = 0x1010441
 
 .field public static final maxItemsPerRow:I = 0x1010134
 
@@ -1291,7 +1291,7 @@
 
 .field public static final maxWidth:I = 0x101011f
 
-.field public static final maxchild:I = 0x101049b
+.field public static final maxchild:I = 0x101049c
 
 .field public static final measureAllChildren:I = 0x101010a
 
@@ -1319,19 +1319,19 @@
 
 .field public static final minWidth:I = 0x101013f
 
-.field public static final minorWeightMax:I = 0x101045e
+.field public static final minorWeightMax:I = 0x101045f
 
-.field public static final minorWeightMin:I = 0x101045c
+.field public static final minorWeightMin:I = 0x101045d
 
 .field public static final mode:I = 0x101017e
 
 .field public static final moreIcon:I = 0x1010135
 
-.field public static final mountPoint:I = 0x101047e
+.field public static final mountPoint:I = 0x101047f
 
-.field public static final mtpReserve:I = 0x1010483
+.field public static final mtpReserve:I = 0x1010484
 
-.field public static final multiChoiceItemLayout:I = 0x1010422
+.field public static final multiChoiceItemLayout:I = 0x1010423
 
 .field public static final multiprocess:I = 0x1010013
 
@@ -1339,13 +1339,13 @@
 
 .field public static final navigationMode:I = 0x10102cf
 
-.field public static final needleOffsetRate:I = 0x10104cd
+.field public static final needleOffsetRate:I = 0x10104ce
 
 .field public static final neednobadgebackground:I = 0x10103d4
 
 .field public static final negativeButtonText:I = 0x10101f6
 
-.field public static final neverEncrypt:I = 0x10104d2
+.field public static final neverEncrypt:I = 0x10104d3
 
 .field public static final nextFocusDown:I = 0x10100e4
 
@@ -1367,13 +1367,13 @@
 
 .field public static final numStars:I = 0x1010144
 
-.field public static final numberPickerDownButtonStyle:I = 0x10103f9
+.field public static final numberPickerDownButtonStyle:I = 0x10103fa
 
-.field public static final numberPickerInputTextStyle:I = 0x10103fa
+.field public static final numberPickerInputTextStyle:I = 0x10103fb
 
-.field public static final numberPickerStyle:I = 0x10103f7
+.field public static final numberPickerStyle:I = 0x10103f8
 
-.field public static final numberPickerUpButtonStyle:I = 0x10103f8
+.field public static final numberPickerUpButtonStyle:I = 0x10103f9
 
 .field public static final numeric:I = 0x1010165
     .annotation runtime Ljava/lang/Deprecated;
@@ -1382,7 +1382,7 @@
 
 .field public static final numericShortcut:I = 0x10101e4
 
-.field public static final offsetFixed:I = 0x10104ce
+.field public static final offsetFixed:I = 0x10104cf
 
 .field public static final onClick:I = 0x101026f
 
@@ -1390,37 +1390,37 @@
 
 .field public static final opacity:I = 0x101031e
 
-.field public static final operable:I = 0x10104a8
+.field public static final operable:I = 0x10104a9
 
-.field public static final oppoStyle:I = 0x1010439
+.field public static final oppoStyle:I = 0x101043a
 
 .field public static final oppoTabWidgetStyle:I = 0x10103f4
 
-.field public static final oppo_tabwidget_align_mode:I = 0x1010446
+.field public static final oppo_tabwidget_align_mode:I = 0x1010447
 
-.field public static final oppo_tabwidget_content_height_land_ratio:I = 0x101044a
+.field public static final oppo_tabwidget_content_height_land_ratio:I = 0x101044b
 
-.field public static final oppo_tabwidget_content_height_port_ratio:I = 0x1010449
+.field public static final oppo_tabwidget_content_height_port_ratio:I = 0x101044a
 
-.field public static final oppo_tabwidget_hlbg_tran_area_width:I = 0x1010450
+.field public static final oppo_tabwidget_hlbg_tran_area_width:I = 0x1010451
 
-.field public static final oppo_tabwidget_icon_height_land_ratio:I = 0x101044c
+.field public static final oppo_tabwidget_icon_height_land_ratio:I = 0x101044d
 
-.field public static final oppo_tabwidget_icon_height_port_ratio:I = 0x101044b
+.field public static final oppo_tabwidget_icon_height_port_ratio:I = 0x101044c
 
-.field public static final oppo_tabwidget_icon_label_margin:I = 0x101044f
+.field public static final oppo_tabwidget_icon_label_margin:I = 0x1010450
 
-.field public static final oppo_tabwidget_icon_margin_top:I = 0x101044d
+.field public static final oppo_tabwidget_icon_margin_top:I = 0x101044e
 
-.field public static final oppo_tabwidget_icon_offset_to_non_hl_icon_diry:I = 0x1010451
+.field public static final oppo_tabwidget_icon_offset_to_non_hl_icon_diry:I = 0x1010452
 
-.field public static final oppo_tabwidget_label_focus_color:I = 0x1010448
+.field public static final oppo_tabwidget_label_focus_color:I = 0x1010449
 
-.field public static final oppo_tabwidget_label_margin_bottom:I = 0x101044e
+.field public static final oppo_tabwidget_label_margin_bottom:I = 0x101044f
 
-.field public static final oppo_tabwidget_label_normal_color:I = 0x1010447
+.field public static final oppo_tabwidget_label_normal_color:I = 0x1010448
 
-.field public static final oppo_tabwidget_side_margin_ratio:I = 0x1010452
+.field public static final oppo_tabwidget_side_margin_ratio:I = 0x1010453
 
 .field public static final order:I = 0x10101ea
 
@@ -1436,7 +1436,7 @@
 
 .field public static final outAnimation:I = 0x1010178
 
-.field public static final outerRadius:I = 0x101046f
+.field public static final outerRadius:I = 0x1010470
 
 .field public static final overScrollFooter:I = 0x10102c3
 
@@ -1454,17 +1454,17 @@
 
 .field public static final paddingBottom:I = 0x10100d9
 
-.field public static final paddingEnd:I = 0x1010429
+.field public static final paddingEnd:I = 0x101042a
 
 .field public static final paddingLeft:I = 0x10100d6
 
 .field public static final paddingRight:I = 0x10100d8
 
-.field public static final paddingStart:I = 0x1010428
+.field public static final paddingStart:I = 0x1010429
 
 .field public static final paddingTop:I = 0x10100d7
 
-.field public static final paddingcolor:I = 0x10104a3
+.field public static final paddingcolor:I = 0x10104a4
 
 .field public static final panelBackground:I = 0x101005e
 
@@ -1510,15 +1510,15 @@
 
 .field public static final pivotY:I = 0x10101b6
 
-.field public static final pointerIconArrow:I = 0x1010477
+.field public static final pointerIconArrow:I = 0x1010478
 
-.field public static final pointerIconSpotAnchor:I = 0x101047a
+.field public static final pointerIconSpotAnchor:I = 0x101047b
 
-.field public static final pointerIconSpotHover:I = 0x1010478
+.field public static final pointerIconSpotHover:I = 0x1010479
 
-.field public static final pointerIconSpotTouch:I = 0x1010479
+.field public static final pointerIconSpotTouch:I = 0x101047a
 
-.field public static final pointerStyle:I = 0x1010413
+.field public static final pointerStyle:I = 0x1010414
 
 .field public static final popupAnimationStyle:I = 0x10102c9
 
@@ -1532,7 +1532,7 @@
 
 .field public static final popupMenuStyle:I = 0x1010300
 
-.field public static final popupPromptView:I = 0x1010458
+.field public static final popupPromptView:I = 0x1010459
 
 .field public static final popupWindowStyle:I = 0x1010076
 
@@ -1542,33 +1542,33 @@
 
 .field public static final preferenceCategoryStyle:I = 0x101008c
 
-.field public static final preferenceFragmentStyle:I = 0x1010401
+.field public static final preferenceFragmentStyle:I = 0x1010402
 
-.field public static final preferenceFrameLayoutStyle:I = 0x1010411
+.field public static final preferenceFrameLayoutStyle:I = 0x1010412
 
 .field public static final preferenceInformationStyle:I = 0x101008d
 
 .field public static final preferenceLayoutChild:I = 0x1010094
 
-.field public static final preferencePanelStyle:I = 0x1010402
+.field public static final preferencePanelStyle:I = 0x1010403
 
 .field public static final preferenceScreenStyle:I = 0x101008b
 
 .field public static final preferenceStyle:I = 0x101008e
 
-.field public static final preserveIconSpacing:I = 0x101043f
+.field public static final preserveIconSpacing:I = 0x1010440
 
-.field public static final pretendingEnabled:I = 0x10104c0
+.field public static final pretendingEnabled:I = 0x10104c1
 
-.field public static final preview:I = 0x1010467
+.field public static final preview:I = 0x1010468
 
 .field public static final previewImage:I = 0x10102da
 
-.field public static final primary:I = 0x1010480
+.field public static final primary:I = 0x1010481
 
 .field public static final priority:I = 0x101001c
 
-.field public static final privacyGroup:I = 0x10104d6
+.field public static final privacyGroup:I = 0x10104d7
 
 .field public static final privateImeOptions:I = 0x1010223
 
@@ -1596,13 +1596,13 @@
 
 .field public static final progressDrawable:I = 0x101013c
 
-.field public static final progressLayout:I = 0x1010425
+.field public static final progressLayout:I = 0x1010426
 
 .field public static final prompt:I = 0x101017b
 
 .field public static final propertyName:I = 0x10102e1
 
-.field public static final protectable:I = 0x10104d5
+.field public static final protectable:I = 0x10104d6
 
 .field public static final protectionLevel:I = 0x1010009
 
@@ -1614,9 +1614,9 @@
 
 .field public static final queryHint:I = 0x1010358
 
-.field public static final quickContactBadgeOverlay:I = 0x10103f5
+.field public static final quickContactBadgeOverlay:I = 0x10103f6
 
-.field public static final quickContactBadgeSrc:I = 0x101041e
+.field public static final quickContactBadgeSrc:I = 0x101041f
 
 .field public static final quickContactBadgeStyleSmallWindowLarge:I = 0x10102b3
 
@@ -1630,7 +1630,7 @@
 
 .field public static final quickContactBadgeStyleWindowSmall:I = 0x10102ae
 
-.field public static final quickContactWindowSize:I = 0x101045a
+.field public static final quickContactWindowSize:I = 0x101045b
 
 .field public static final quickDelete:I = 0x10103aa
 
@@ -1648,11 +1648,11 @@
 
 .field public static final readPermission:I = 0x1010007
 
-.field public static final remainStringCount:I = 0x10104cb
+.field public static final remainStringCount:I = 0x10104cc
 
-.field public static final remoteViews:I = 0x10104aa
+.field public static final remoteViews:I = 0x10104ab
 
-.field public static final removable:I = 0x1010481
+.field public static final removable:I = 0x1010482
 
 .field public static final repeatCount:I = 0x10101bf
 
@@ -1674,7 +1674,7 @@
 
 .field public static final requiresSmallestWidthDp:I = 0x1010364
 
-.field public static final resOutColor:I = 0x1010441
+.field public static final resOutColor:I = 0x1010442
 
 .field public static final resizeMode:I = 0x1010363
 
@@ -1691,7 +1691,7 @@
 
 .field public static final right:I = 0x10101af
 
-.field public static final rightChevronDrawable:I = 0x101046b
+.field public static final rightChevronDrawable:I = 0x101046c
 
 .field public static final ringtonePreferenceStyle:I = 0x1010093
 
@@ -1771,18 +1771,18 @@
 
 .field public static final scrollingCache:I = 0x10100fe
 
-.field public static final searchBarWindowEnterAnimation:I = 0x1010414
+.field public static final searchBarWindowEnterAnimation:I = 0x1010415
 
-.field public static final searchBarWindowExitAnimation:I = 0x1010415
+.field public static final searchBarWindowExitAnimation:I = 0x1010416
 
 .field public static final searchButtonText:I = 0x1010205
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
 
-.field public static final searchDialogTheme:I = 0x1010410
+.field public static final searchDialogTheme:I = 0x1010411
 
-.field public static final searchDropdownBackground:I = 0x1010407
+.field public static final searchDropdownBackground:I = 0x1010408
 
 .field public static final searchMode:I = 0x10101d5
 
@@ -1802,21 +1802,21 @@
 
 .field public static final searchSuggestThreshold:I = 0x101026d
 
-.field public static final searchViewCloseIcon:I = 0x1010408
+.field public static final searchViewCloseIcon:I = 0x1010409
 
-.field public static final searchViewEditQuery:I = 0x101040c
+.field public static final searchViewEditQuery:I = 0x101040d
 
-.field public static final searchViewEditQueryBackground:I = 0x101040d
+.field public static final searchViewEditQueryBackground:I = 0x101040e
 
-.field public static final searchViewGoIcon:I = 0x1010409
+.field public static final searchViewGoIcon:I = 0x101040a
 
-.field public static final searchViewSearchIcon:I = 0x101040a
+.field public static final searchViewSearchIcon:I = 0x101040b
 
-.field public static final searchViewTextField:I = 0x101040e
+.field public static final searchViewTextField:I = 0x101040f
 
-.field public static final searchViewTextFieldRight:I = 0x101040f
+.field public static final searchViewTextFieldRight:I = 0x1010410
 
-.field public static final searchViewVoiceIcon:I = 0x101040b
+.field public static final searchViewVoiceIcon:I = 0x101040c
 
 .field public static final searchWidgetCorpusItemBackground:I = 0x10103db
 
@@ -1824,7 +1824,7 @@
 
 .field public static final seekBarStyle:I = 0x101007b
 
-.field public static final seekBarThumb:I = 0x101041f
+.field public static final seekBarThumb:I = 0x1010420
 
 .field public static final segmentedButtonStyle:I = 0x1010330
 
@@ -1838,9 +1838,9 @@
 
 .field public static final selectedWeekBackgroundColor:I = 0x1010342
 
-.field public static final selectionDivider:I = 0x1010460
+.field public static final selectionDivider:I = 0x1010461
 
-.field public static final selectionDividerHeight:I = 0x1010461
+.field public static final selectionDividerHeight:I = 0x1010462
 
 .field public static final settingsActivity:I = 0x1010225
 
@@ -1852,13 +1852,13 @@
 
 .field public static final shadowRadius:I = 0x1010164
 
-.field public static final shadow_color:I = 0x10104ba
+.field public static final shadow_color:I = 0x10104bb
 
-.field public static final shadow_r:I = 0x10104b9
+.field public static final shadow_r:I = 0x10104ba
 
-.field public static final shadow_x:I = 0x10104b7
+.field public static final shadow_x:I = 0x10104b8
 
-.field public static final shadow_y:I = 0x10104b8
+.field public static final shadow_y:I = 0x10104b9
 
 .field public static final shaowHeight:I = 0x10103c8
 
@@ -1870,7 +1870,7 @@
 
 .field public static final sharedUserLabel:I = 0x1010261
 
-.field public static final short_cut_button_background:I = 0x10104b5
+.field public static final short_cut_button_background:I = 0x10104b6
 
 .field public static final shouldDisableView:I = 0x10101ee
 
@@ -1880,7 +1880,7 @@
 
 .field public static final showDividers:I = 0x1010329
 
-.field public static final showImeAlwaysIfEditable:I = 0x1010453
+.field public static final showImeAlwaysIfEditable:I = 0x1010454
 
 .field public static final showSilent:I = 0x10101fb
 
@@ -1890,20 +1890,20 @@
 
 .field public static final shrinkColumns:I = 0x101014a
 
-.field public static final singleChoiceItemLayout:I = 0x1010423
+.field public static final singleChoiceItemLayout:I = 0x1010424
 
-.field public static final singleFrame:I = 0x10104a9
+.field public static final singleFrame:I = 0x10104aa
 
 .field public static final singleLine:I = 0x101015d
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
 
-.field public static final sliderRes:I = 0x10104d1
+.field public static final sliderRes:I = 0x10104d2
 
-.field public static final slider_height:I = 0x10104d0
+.field public static final slider_height:I = 0x10104d1
 
-.field public static final slider_width:I = 0x10104cf
+.field public static final slider_width:I = 0x10104d0
 
 .field public static final smallIcon:I = 0x101029e
 
@@ -1911,7 +1911,7 @@
 
 .field public static final smoothScrollbar:I = 0x1010231
 
-.field public static final snapMargin:I = 0x1010472
+.field public static final snapMargin:I = 0x1010473
 
 .field public static final solidColor:I = 0x101034a
 
@@ -1935,13 +1935,13 @@
 
 .field public static final springEnabled:I = 0x10103a8
 
-.field public static final springHsvEnabled:I = 0x1010457
+.field public static final springHsvEnabled:I = 0x1010458
 
 .field public static final src:I = 0x1010119
 
 .field public static final stackFromBottom:I = 0x10100fd
 
-.field public static final stackViewStyle:I = 0x10103f6
+.field public static final stackViewStyle:I = 0x10103f7
 
 .field public static final starStyle:I = 0x1010082
 
@@ -2003,7 +2003,7 @@
 
 .field public static final stopWithTask:I = 0x101036a
 
-.field public static final storageDescription:I = 0x101047f
+.field public static final storageDescription:I = 0x1010480
 
 .field public static final streamType:I = 0x1010209
 
@@ -2039,7 +2039,7 @@
 
 .field public static final switchPreferenceStyle:I = 0x101036d
 
-.field public static final switchStyle:I = 0x1010412
+.field public static final switchStyle:I = 0x1010413
 
 .field public static final switchTextAppearance:I = 0x101036e
 
@@ -2051,7 +2051,7 @@
 
 .field public static final tabHostStyle:I = 0x10103f3
 
-.field public static final tabLayout:I = 0x1010444
+.field public static final tabLayout:I = 0x1010445
 
 .field public static final tabStripEnabled:I = 0x10102bd
 
@@ -2059,13 +2059,13 @@
 
 .field public static final tabStripRight:I = 0x10102bc
 
-.field public static final tabTextColor:I = 0x1010417
+.field public static final tabTextColor:I = 0x1010418
 
 .field public static final tabWidgetStyle:I = 0x1010083
 
-.field public static final tab_align_mode:I = 0x1010443
+.field public static final tab_align_mode:I = 0x1010444
 
-.field public static final tabwidget_align_mode:I = 0x1010445
+.field public static final tabwidget_align_mode:I = 0x1010446
 
 .field public static final tag:I = 0x10100d1
 
@@ -2075,7 +2075,7 @@
 
 .field public static final targetDescriptions:I = 0x10103a0
 
-.field public static final targetDrawables:I = 0x1010468
+.field public static final targetDrawables:I = 0x1010469
 
 .field public static final targetPackage:I = 0x1010021
 
@@ -2145,6 +2145,8 @@
 
 .field public static final textAppearanceSubSmall:I = 0x10103e1
 
+.field public static final textAppearanceTextView:I = 0x10103f5
+
 .field public static final textCheckMark:I = 0x1010046
 
 .field public static final textCheckMarkInverse:I = 0x1010047
@@ -2193,7 +2195,7 @@
 
 .field public static final textCursorDrawable:I = 0x1010362
 
-.field public static final textDirection:I = 0x101042b
+.field public static final textDirection:I = 0x101042c
 
 .field public static final textEditNoPasteWindowLayout:I = 0x1010315
 
@@ -2215,11 +2217,11 @@
 
 .field public static final textOn:I = 0x1010124
 
-.field public static final textPositionY1:I = 0x10104bc
+.field public static final textPositionY1:I = 0x10104bd
 
-.field public static final textPositionY2:I = 0x10104bd
+.field public static final textPositionY2:I = 0x10104be
 
-.field public static final textPositionY3:I = 0x10104be
+.field public static final textPositionY3:I = 0x10104bf
 
 .field public static final textScaleX:I = 0x1010151
 
@@ -2231,7 +2233,7 @@
 
 .field public static final textSelectHandleWindowStyle:I = 0x10102c8
 
-.field public static final textSelectable:I = 0x1010456
+.field public static final textSelectable:I = 0x1010457
 
 .field public static final textSize:I = 0x1010095
 
@@ -2245,21 +2247,21 @@
 
 .field public static final textViewStyle:I = 0x1010084
 
-.field public static final text_color:I = 0x10104c9
+.field public static final text_color:I = 0x10104ca
 
-.field public static final text_shadow_color:I = 0x10104c8
+.field public static final text_shadow_color:I = 0x10104c9
 
-.field public static final text_shadow_dx:I = 0x10104c6
+.field public static final text_shadow_dx:I = 0x10104c7
 
-.field public static final text_shadow_dy:I = 0x10104c7
+.field public static final text_shadow_dy:I = 0x10104c8
 
-.field public static final text_shadow_radius:I = 0x10104c5
+.field public static final text_shadow_radius:I = 0x10104c6
 
-.field public static final text_size:I = 0x10104c4
+.field public static final text_size:I = 0x10104c5
 
-.field public static final textcolor:I = 0x101049c
+.field public static final textcolor:I = 0x101049d
 
-.field public static final texthlcolor:I = 0x101049d
+.field public static final texthlcolor:I = 0x101049e
 
 .field public static final textsize:I = 0x10103ca
 
@@ -2279,7 +2281,7 @@
 
 .field public static final tileMode:I = 0x1010201
 
-.field public static final timePickerStyle:I = 0x10103fb
+.field public static final timePickerStyle:I = 0x10103fc
 
 .field public static final tint:I = 0x1010121
 
@@ -2301,13 +2303,13 @@
 
 .field public static final toYScale:I = 0x10101c5
 
-.field public static final toastFrameBackground:I = 0x1010406
+.field public static final toastFrameBackground:I = 0x1010407
 
 .field public static final top:I = 0x10101ae
 
 .field public static final topBright:I = 0x10100cb
 
-.field public static final topChevronDrawable:I = 0x101046c
+.field public static final topChevronDrawable:I = 0x101046d
 
 .field public static final topDark:I = 0x10100c7
 
@@ -2317,9 +2319,9 @@
 
 .field public static final topRightRadius:I = 0x10101aa
 
-.field public static final touchPadding:I = 0x10104ca
+.field public static final touchPadding:I = 0x10104cb
 
-.field public static final touchsearch_key_bg:I = 0x10104ad
+.field public static final touchsearch_key_bg:I = 0x10104ae
 
 .field public static final touchsearch_key_bg_align_mode:I = 0x10103ae
 
@@ -2329,15 +2331,15 @@
 
 .field public static final touchsearch_key_union_enable:I = 0x10103ad
 
-.field public static final touchsearch_popupwin_height:I = 0x10104af
+.field public static final touchsearch_popupwin_height:I = 0x10104b0
 
-.field public static final touchsearch_popupwin_textcolor:I = 0x10104b1
+.field public static final touchsearch_popupwin_textcolor:I = 0x10104b2
 
 .field public static final touchsearch_popupwin_textsize:I = 0x10103ac
 
-.field public static final touchsearch_popupwin_top_mincoordinate:I = 0x10104b0
+.field public static final touchsearch_popupwin_top_mincoordinate:I = 0x10104b1
 
-.field public static final touchsearch_popupwin_width:I = 0x10104ae
+.field public static final touchsearch_popupwin_width:I = 0x10104af
 
 .field public static final track:I = 0x101036f
 
@@ -2395,15 +2397,15 @@
 
 .field public static final verticalGap:I = 0x1010240
 
-.field public static final verticalOffset:I = 0x1010474
+.field public static final verticalOffset:I = 0x1010475
 
 .field public static final verticalScrollbarPosition:I = 0x1010334
 
 .field public static final verticalSpacing:I = 0x1010115
 
-.field public static final vibrationDuration:I = 0x1010471
+.field public static final vibrationDuration:I = 0x1010472
 
-.field public static final viewMode:I = 0x1010489
+.field public static final viewMode:I = 0x101048a
 
 .field public static final visibility:I = 0x10100dc
 
@@ -2437,7 +2439,7 @@
 
 .field public static final wallpaperOpenExitAnimation:I = 0x1010294
 
-.field public static final waveDrawable:I = 0x101046e
+.field public static final waveDrawable:I = 0x101046f
 
 .field public static final webTextViewStyle:I = 0x10102b9
 
@@ -2451,7 +2453,7 @@
 
 .field public static final weightSum:I = 0x1010128
 
-.field public static final widgetEditTextColor:I = 0x1010419
+.field public static final widgetEditTextColor:I = 0x101041a
 
 .field public static final widgetLayout:I = 0x10101eb
 
@@ -2509,7 +2511,7 @@
 
 .field public static final windowSplitActionBar:I = 0x10103ec
 
-.field public static final windowTitleBackground:I = 0x1010420
+.field public static final windowTitleBackground:I = 0x1010421
 
 .field public static final windowTitleBackgroundStyle:I = 0x101005c
 

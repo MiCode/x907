@@ -379,7 +379,7 @@
     if-ge v3, v4, :cond_0
 
     .line 274
-    const v4, 0x10803be
+    const v4, 0x10803d1
 
     iput v4, p0, Lcom/oppo/widget/OppoContactHeaderWidget;->mNoPhotoResource:I
 
@@ -433,7 +433,7 @@
     if-ge v3, v4, :cond_1
 
     .line 279
-    const v4, 0x10803bf
+    const v4, 0x10803d2
 
     iput v4, p0, Lcom/oppo/widget/OppoContactHeaderWidget;->mNoPhotoResource:I
 
@@ -441,7 +441,7 @@
 
     .line 284
     :cond_1
-    const v4, 0x10803c0
+    const v4, 0x10803d3
 
     iput v4, p0, Lcom/oppo/widget/OppoContactHeaderWidget;->mNoPhotoResource:I
 
@@ -1926,7 +1926,7 @@
     .line 543
     iget-object v0, p0, Lcom/oppo/widget/OppoContactHeaderWidget;->mPhoneButton:Landroid/widget/ImageView;
 
-    const v1, 0x10805f0
+    const v1, 0x1080603
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -2019,14 +2019,14 @@
     .line 559
     iget-object v0, p0, Lcom/oppo/widget/OppoContactHeaderWidget;->mPhoneButton:Landroid/widget/ImageView;
 
-    const v1, 0x1080651
+    const v1, 0x1080664
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
     .line 560
     iget-object v0, p0, Lcom/oppo/widget/OppoContactHeaderWidget;->mNewBuildButton:Landroid/widget/ImageView;
 
-    const v1, 0x10805ad
+    const v1, 0x10805c0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 

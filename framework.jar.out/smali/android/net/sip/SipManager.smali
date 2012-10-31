@@ -553,7 +553,7 @@
     .local v0, e:Landroid/os/RemoteException;
     new-instance v1, Landroid/net/sip/SipException;
 
-    const-string v2, "isRegistered()"
+    const-string/jumbo v2, "isRegistered()"
 
     invoke-direct {v1, v2, v0}, Landroid/net/sip/SipException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 

@@ -697,7 +697,7 @@
     invoke-virtual {p1, v0}, Lcom/oppo/widget/OppoEditText;->setTextDeletedListener(Lcom/oppo/widget/OppoEditText$mPasswordTextDeletedListener;)V
 
     .line 140
-    const v0, 0x1080637
+    const v0, 0x108064a
 
     invoke-virtual {p1, v0}, Lcom/oppo/widget/OppoEditText;->setBackgroundResource(I)V
 

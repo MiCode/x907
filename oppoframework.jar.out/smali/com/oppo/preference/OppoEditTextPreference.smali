@@ -165,7 +165,7 @@
     invoke-virtual {v0, v2}, Lcom/oppo/widget/OppoEditText;->setText(Ljava/lang/CharSequence;)V
 
     .line 114
-    const v2, 0x10805f5
+    const v2, 0x1080608
 
     invoke-virtual {v0, v2}, Lcom/oppo/widget/OppoEditText;->setBackgroundResource(I)V
 

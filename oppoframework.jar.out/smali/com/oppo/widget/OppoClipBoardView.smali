@@ -165,7 +165,7 @@
     .line 134
     iget-object v0, p0, Lcom/oppo/widget/OppoClipBoardView;->mWindowParams:Landroid/view/WindowManager$LayoutParams;
 
-    const v1, 0x10302af
+    const v1, 0x10302b1
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->windowAnimations:I
 
@@ -665,7 +665,7 @@
 
     .line 241
     :cond_1
-    const v11, 0x10802e0
+    const v11, 0x10802f3
 
     invoke-virtual {v3, v11}, Landroid/view/View;->setBackgroundResource(I)V
 

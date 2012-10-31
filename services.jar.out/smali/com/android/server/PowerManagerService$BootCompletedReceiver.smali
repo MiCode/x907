@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 403
+    .line 431
     iput-object p1, p0, Lcom/android/server/PowerManagerService$BootCompletedReceiver;->this$0:Lcom/android/server/PowerManagerService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -38,7 +38,7 @@
     .parameter "x1"
 
     .prologue
-    .line 403
+    .line 431
     invoke-direct {p0, p1}, Lcom/android/server/PowerManagerService$BootCompletedReceiver;-><init>(Lcom/android/server/PowerManagerService;)V
 
     return-void
@@ -47,16 +47,52 @@
 
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 1
+    .locals 2
     .parameter "context"
     .parameter "intent"
 
     .prologue
-    .line 406
-    iget-object v0, p0, Lcom/android/server/PowerManagerService$BootCompletedReceiver;->this$0:Lcom/android/server/PowerManagerService;
+    .line 437
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
-    invoke-virtual {v0}, Lcom/android/server/PowerManagerService;->bootCompleted()V
+    move-result-object v0
 
-    .line 407
+    .line 438
+    .local v0, action:Ljava/lang/String;
+    const-string v1, "android.intent.action.BOOT_COMPLETED"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 440
+    iget-object v1, p0, Lcom/android/server/PowerManagerService$BootCompletedReceiver;->this$0:Lcom/android/server/PowerManagerService;
+
+    invoke-virtual {v1}, Lcom/android/server/PowerManagerService;->bootCompleted()V
+
+    .line 460
+    :cond_0
+    :goto_0
     return-void
+
+    .line 442
+    :cond_1
+    const-string v1, "android.fpd.boot_completed"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 447
+    new-instance v1, Lcom/android/server/PowerManagerService$BootCompletedReceiver$1;
+
+    invoke-direct {v1, p0}, Lcom/android/server/PowerManagerService$BootCompletedReceiver$1;-><init>(Lcom/android/server/PowerManagerService$BootCompletedReceiver;)V
+
+    invoke-virtual {v1}, Lcom/android/server/PowerManagerService$BootCompletedReceiver$1;->start()V
+
+    goto :goto_0
 .end method

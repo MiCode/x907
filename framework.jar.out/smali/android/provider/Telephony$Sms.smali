@@ -135,16 +135,14 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 353
     new-instance v0, Landroid/content/ContentValues;
 
     const/16 v1, 0x9
 
     invoke-direct {v0, v1}, Landroid/content/ContentValues;-><init>(I)V
 
-    .line 354
     .local v0, values:Landroid/content/ContentValues;
-    #const-string/jumbo v1, "sub_id"
+    #const-string v1, "sub_id"
 
     #invoke-static {p11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -152,27 +150,22 @@
 
     #invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 357
     #const-string v1, "groupaddress"
 
     #invoke-virtual {v0, v1, p10}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 360
     const-string v1, "address"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 361
     if-eqz p5, :cond_0
 
-    .line 362
     const-string v1, "date"
 
     invoke-virtual {v0, v1, p5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 364
     :cond_0
-    const-string/jumbo v2, "read"
+    const-string v2, "read"
 
     if-eqz p6, :cond_3
 
@@ -431,8 +424,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 319
-    #const-string/jumbo v1, "sub_id"
+    #const-string v1, "sub_id"
 
     #invoke-static {p10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -440,27 +432,22 @@
 
     #invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 321
     #const-string v1, "groupaddress"
 
     #invoke-virtual {v0, v1, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 324
     const-string v1, "address"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 325
     if-eqz p5, :cond_0
 
-    .line 326
     const-string v1, "date"
 
     invoke-virtual {v0, v1, p5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 328
     :cond_0
-    const-string/jumbo v2, "read"
+    const-string v2, "read"
 
     if-eqz p6, :cond_3
 

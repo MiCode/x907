@@ -17,7 +17,7 @@
     .locals 1
 
     .prologue
-    .line 335
+    .line 341
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct/range {v0 .. v0}, Ljava/lang/Object;-><init>()V
@@ -63,19 +63,19 @@
     .locals 1
 
     .prologue
-    .line 328
+    .line 334
     sget-object v0, Landroid/text/method/ArrowKeyMovementMethod;->sInstance:Landroid/text/method/ArrowKeyMovementMethod;
 
     if-nez v0, :cond_0
 
-    .line 329
+    .line 335
     new-instance v0, Landroid/text/method/ArrowKeyMovementMethod;
 
     invoke-direct {v0}, Landroid/text/method/ArrowKeyMovementMethod;-><init>()V
 
     sput-object v0, Landroid/text/method/ArrowKeyMovementMethod;->sInstance:Landroid/text/method/ArrowKeyMovementMethod;
 
-    .line 332
+    .line 338
     :cond_0
     sget-object v0, Landroid/text/method/ArrowKeyMovementMethod;->sInstance:Landroid/text/method/ArrowKeyMovementMethod;
 
@@ -325,52 +325,59 @@
 .end method
 
 .method public initialize(Landroid/widget/TextView;Landroid/text/Spannable;)V
-    .locals 2
+    .locals 5
     .parameter "widget"
     .parameter "text"
 
     .prologue
     .line 306
+    const/4 v2, 0x0
+
+    .line 308
+    .local v2, index:I
+    if-eqz p1, :cond_0
+
+    .line 309
     invoke-virtual {p1}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
-
-    move-result-object v1
-
-    iget-object v0, v1, Landroid/content/pm/ApplicationInfo;->manufacture:Ljava/lang/String;
-
-    .line 307
-    .local v0, manufacturer:Ljava/lang/String;
-    if-eqz v0, :cond_0
-
-    const-string/jumbo v1, "oppo"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
+    .line 310
+    .local v1, context:Landroid/content/Context;
     if-eqz v1, :cond_0
 
-    .line 308
-    invoke-interface {p2}, Landroid/text/Spannable;->length()I
+    .line 311
+    invoke-virtual {v1}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
-    move-result v1
-
-    invoke-static {p2, v1}, Landroid/text/Selection;->setSelection(Landroid/text/Spannable;I)V
-
-    .line 313
-    :goto_0
-    return-void
+    move-result-object v0
 
     .line 312
+    .local v0, ai:Landroid/content/pm/ApplicationInfo;
+    if-eqz v0, :cond_0
+
+    const-string/jumbo v3, "oppo"
+
+    iget-object v4, v0, Landroid/content/pm/ApplicationInfo;->manufacture:Ljava/lang/String;
+
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    .line 313
+    invoke-interface {p2}, Landroid/text/Spannable;->length()I
+
+    move-result v2
+
+    .line 318
+    .end local v0           #ai:Landroid/content/pm/ApplicationInfo;
+    .end local v1           #context:Landroid/content/Context;
     :cond_0
-    const/4 v1, 0x0
+    invoke-static {p2, v2}, Landroid/text/Selection;->setSelection(Landroid/text/Spannable;I)V
 
-    invoke-static {p2, v1}, Landroid/text/Selection;->setSelection(Landroid/text/Spannable;I)V
-
-    goto :goto_0
+    .line 319
+    return-void
 .end method
 
 .method protected left(Landroid/widget/TextView;Landroid/text/Spannable;)Z
@@ -521,31 +528,31 @@
     .parameter "dir"
 
     .prologue
-    .line 317
+    .line 323
     and-int/lit16 v0, p3, 0x82
 
     if-eqz v0, :cond_1
 
-    .line 318
+    .line 324
     invoke-virtual {p1}, Landroid/widget/TextView;->getLayout()Landroid/text/Layout;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
-    .line 320
+    .line 326
     invoke-interface {p2}, Landroid/text/Spannable;->length()I
 
     move-result v0
 
     invoke-static {p2, v0}, Landroid/text/Selection;->setSelection(Landroid/text/Spannable;I)V
 
-    .line 325
+    .line 331
     :cond_0
     :goto_0
     return-void
 
-    .line 323
+    .line 329
     :cond_1
     invoke-interface {p2}, Landroid/text/Spannable;->length()I
 

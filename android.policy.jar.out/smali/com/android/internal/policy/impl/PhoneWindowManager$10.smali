@@ -3,12 +3,12 @@
 .source "PhoneWindowManager.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/WindowManagerPolicy$OnKeyguardExitResult;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/internal/policy/impl/PhoneWindowManager;->finishAnimationLw()I
+    value = Lcom/android/internal/policy/impl/PhoneWindowManager;->launchHomeFromHotKey()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 2652
+    .line 2172
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -37,33 +37,42 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 1
+.method public onKeyguardExitResult(Z)V
+    .locals 2
+    .parameter "success"
 
     .prologue
-    .line 2653
-    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+    .line 2174
+    if-eqz p1, :cond_0
 
-    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
-
-    if-eqz v0, :cond_0
-
-    .line 2655
+    .line 2176
     :try_start_0
-    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+    invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
-    iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+    move-result-object v0
 
-    invoke-interface {v0}, Lcom/android/internal/statusbar/IStatusBarService;->collapse()V
+    invoke-interface {v0}, Landroid/app/IActivityManager;->stopAppSwitches()V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 2658
-    :cond_0
+    .line 2179
     :goto_0
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+
+    const-string v1, "homekey"
+
+    invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/PhoneWindowManager;->sendCloseSystemWindows(Ljava/lang/String;)V
+
+    .line 2180
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
+
+    invoke-virtual {v0}, Lcom/android/internal/policy/impl/PhoneWindowManager;->startDockOrHome()V
+
+    .line 2182
+    :cond_0
     return-void
 
-    .line 2656
+    .line 2177
     :catch_0
     move-exception v0
 

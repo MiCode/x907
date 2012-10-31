@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 1355
+    .line 1364
     iput-object p1, p0, Lcom/android/server/am/ActivityManagerService$2$3;->this$1:Lcom/android/server/am/ActivityManagerService$2;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
@@ -38,7 +38,7 @@
     .locals 2
 
     .prologue
-    .line 1357
+    .line 1366
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$2$3;->this$1:Lcom/android/server/am/ActivityManagerService$2;
 
     iget-object v0, v0, Lcom/android/server/am/ActivityManagerService$2;->this$0:Lcom/android/server/am/ActivityManagerService;
@@ -57,6 +57,6 @@
 
     invoke-virtual {v0, v1}, Landroid/os/PowerManager;->reboot(Ljava/lang/String;)V
 
-    .line 1358
+    .line 1367
     return-void
 .end method

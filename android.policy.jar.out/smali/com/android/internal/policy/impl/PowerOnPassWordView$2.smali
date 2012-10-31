@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 227
+    .line 226
     iput-object p1, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView$2;->this$0:Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -43,16 +43,16 @@
 
     const/4 v3, 0x0
 
-    .line 230
+    .line 229
     iget v1, p1, Landroid/os/Message;->what:I
 
     packed-switch v1, :pswitch_data_0
 
-    .line 251
+    .line 250
     :goto_0
     return-void
 
-    .line 232
+    .line 231
     :pswitch_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView$2;->this$0:Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
@@ -60,7 +60,7 @@
 
     goto :goto_0
 
-    .line 235
+    .line 234
     :pswitch_1
     iget-object v1, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView$2;->this$0:Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
@@ -71,7 +71,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 236
+    .line 235
     iget-object v1, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView$2;->this$0:Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
     #getter for: Lcom/android/internal/policy/impl/PowerOnPassWordView;->mContext:Landroid/content/Context;
@@ -83,7 +83,7 @@
 
     move-result-object v0
 
-    .line 237
+    .line 236
     .local v0, cr:Landroid/content/ContentResolver;
     const-string v1, "airplane_mode_on"
 
@@ -91,13 +91,13 @@
 
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 238
+    .line 237
     iget-object v1, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView$2;->this$0:Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
     #setter for: Lcom/android/internal/policy/impl/PowerOnPassWordView;->mDoOpenFly:Z
     invoke-static {v1, v3}, Lcom/android/internal/policy/impl/PowerOnPassWordView;->access$102(Lcom/android/internal/policy/impl/PowerOnPassWordView;Z)Z
 
-    .line 240
+    .line 239
     .end local v0           #cr:Landroid/content/ContentResolver;
     :cond_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView$2;->this$0:Lcom/android/internal/policy/impl/PowerOnPassWordView;
@@ -111,7 +111,7 @@
 
     goto :goto_0
 
-    .line 243
+    .line 242
     :pswitch_2
     iget-object v1, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView$2;->this$0:Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
@@ -135,7 +135,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 244
+    .line 243
     iget-object v1, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView$2;->this$0:Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
     #setter for: Lcom/android/internal/policy/impl/PowerOnPassWordView;->mIsPass:Z
@@ -143,7 +143,7 @@
 
     goto :goto_0
 
-    .line 247
+    .line 246
     :pswitch_3
     iget-object v1, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView$2;->this$0:Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
@@ -156,7 +156,7 @@
 
     goto :goto_0
 
-    .line 230
+    .line 229
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0

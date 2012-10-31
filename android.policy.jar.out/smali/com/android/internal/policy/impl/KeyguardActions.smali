@@ -55,7 +55,7 @@
     .line 61
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
-    .line 205
+    .line 210
     new-instance v2, Lcom/android/internal/policy/impl/KeyguardActions$5;
 
     invoke-direct {v2, p0}, Lcom/android/internal/policy/impl/KeyguardActions$5;-><init>(Lcom/android/internal/policy/impl/KeyguardActions;)V
@@ -373,7 +373,7 @@
     .parameter "on"
 
     .prologue
-    .line 233
+    .line 238
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardActions;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -389,33 +389,33 @@
     :goto_0
     invoke-static {v2, v3, v1}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 234
+    .line 239
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.intent.action.AIRPLANE_MODE"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 235
+    .line 240
     .local v0, intent:Landroid/content/Intent;
     const/high16 v1, 0x2000
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 236
+    .line 241
     const-string v1, "state"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 237
+    .line 242
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardActions;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 238
+    .line 243
     return-void
 
-    .line 233
+    .line 238
     .end local v0           #intent:Landroid/content/Intent;
     :cond_0
     const/4 v1, 0x0
@@ -427,7 +427,7 @@
     .locals 2
 
     .prologue
-    .line 151
+    .line 156
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardActions;->mShutdown:Landroid/widget/LinearLayout;
 
     new-instance v1, Lcom/android/internal/policy/impl/KeyguardActions$1;
@@ -436,7 +436,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 159
+    .line 164
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardActions;->mReboot:Landroid/widget/LinearLayout;
 
     new-instance v1, Lcom/android/internal/policy/impl/KeyguardActions$2;
@@ -445,7 +445,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 167
+    .line 172
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardActions;->mSilentMode:Landroid/widget/LinearLayout;
 
     new-instance v1, Lcom/android/internal/policy/impl/KeyguardActions$3;
@@ -454,7 +454,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 189
+    .line 194
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardActions;->mFlightMode:Landroid/widget/LinearLayout;
 
     new-instance v1, Lcom/android/internal/policy/impl/KeyguardActions$4;
@@ -463,7 +463,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 203
+    .line 208
     return-void
 .end method
 
@@ -471,14 +471,14 @@
     .locals 3
 
     .prologue
-    .line 146
+    .line 151
     const-string v0, "ro.SHUT_DOWN_DEVICE"
 
     const-string v1, "1"
 
     invoke-static {v0, v1}, Ljava/lang/System;->setProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 147
+    .line 152
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardActions;->mContext:Landroid/content/Context;
 
     const/4 v1, 0x0
@@ -487,7 +487,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/android/internal/app/ShutdownThread;->reboot(Landroid/content/Context;Ljava/lang/String;Z)V
 
-    .line 148
+    .line 153
     return-void
 .end method
 
@@ -495,21 +495,19 @@
     .locals 2
 
     .prologue
-    .line 141
+    .line 145
     const-string v0, "KeyguardActions"
 
-    const-string v1, "shutdown......."
+    const-string v1, "fpd restartSystem"
 
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 142
+    .line 146
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardActions;->mContext:Landroid/content/Context;
 
-    const/4 v1, 0x0
+    invoke-static {v0}, Lcom/android/internal/policy/impl/OppoFPDUtils;->restartSystem(Landroid/content/Context;)V
 
-    invoke-static {v0, v1}, Lcom/android/internal/app/ShutdownThread;->shutdown(Landroid/content/Context;Z)V
-
-    .line 143
+    .line 148
     return-void
 .end method
 
@@ -546,7 +544,7 @@
 
     move-result-object v6
 
-    const v7, 0x10803de
+    const v7, 0x10803f1
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -597,7 +595,7 @@
 
     move-result-object v4
 
-    const v5, 0x10803db
+    const v5, 0x10803ee
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -633,7 +631,7 @@
 
     move-result-object v6
 
-    const v7, 0x10803df
+    const v7, 0x10803f2
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -676,7 +674,7 @@
 
     move-result-object v4
 
-    const v5, 0x10803da
+    const v5, 0x10803ed
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -739,21 +737,21 @@
     .locals 2
 
     .prologue
-    .line 242
+    .line 247
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardActions;->mStatusBar:Landroid/app/StatusBarManager;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/app/StatusBarManager;->disable(I)V
 
-    .line 243
+    .line 248
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardActions;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardActions;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 244
+    .line 249
     return-void
 .end method
 
@@ -763,17 +761,17 @@
     .parameter "event"
 
     .prologue
-    .line 221
+    .line 226
     const/4 v0, 0x4
 
     if-ne p1, v0, :cond_0
 
-    .line 222
+    .line 227
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardActions;->mKeyguardViewManager:Lcom/android/internal/policy/impl/KeyguardViewManager;
 
     invoke-virtual {v0}, Lcom/android/internal/policy/impl/KeyguardViewManager;->hideKeyguardActions()V
 
-    .line 224
+    .line 229
     :cond_0
     const/4 v0, 0x1
 
@@ -786,7 +784,7 @@
     .parameter "event"
 
     .prologue
-    .line 229
+    .line 234
     const/4 v0, 0x1
 
     return v0

@@ -177,7 +177,7 @@
     .line 8255
     iget-object v3, p0, Landroid/widget/TextView$PinnedPopupWindow;->mContentView:Landroid/view/ViewGroup;
 
-    const v4, 0x10808b7
+    const v4, 0x10808cb
 
     invoke-virtual {v3, v4}, Landroid/view/ViewGroup;->setBackgroundResource(I)V
 

@@ -29,7 +29,7 @@
     .parameter "x4"
 
     .prologue
-    .line 132
+    .line 140
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions$1;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
     move-object v0, p0
@@ -58,10 +58,10 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 143
+    .line 151
     if-eqz p1, :cond_1
 
-    .line 144
+    .line 152
     iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions$1;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
     #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mAudioManager:Landroid/media/AudioManager;
@@ -91,17 +91,17 @@
     :goto_0
     invoke-virtual {v1, v0}, Landroid/media/AudioManager;->setRingerMode(I)V
 
-    .line 151
+    .line 159
     :goto_1
     return-void
 
-    .line 144
+    .line 152
     :cond_0
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 149
+    .line 157
     :cond_1
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$1;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
@@ -121,7 +121,7 @@
     .locals 1
 
     .prologue
-    .line 158
+    .line 166
     const/4 v0, 0x0
 
     return v0
@@ -131,7 +131,7 @@
     .locals 1
 
     .prologue
-    .line 154
+    .line 162
     const/4 v0, 0x1
 
     return v0
@@ -143,7 +143,7 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 136
+    .line 144
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$1;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
     #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
@@ -163,15 +163,15 @@
 
     if-ne v0, v2, :cond_0
 
-    const v0, 0x1080411
+    const v0, 0x1080424
 
     :goto_0
     iput v0, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mEnabledIconResId:I
 
-    .line 140
+    .line 148
     return-void
 
-    .line 136
+    .line 144
     :cond_0
     const v0, 0x1080031
 

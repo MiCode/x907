@@ -34,12 +34,12 @@
     .parameter
 
     .prologue
-    .line 4859
+    .line 4866
     iput-object p1, p0, Lcom/android/providers/media/MediaProvider$ThumbData;->this$0:Lcom/android/providers/media/MediaProvider;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4864
+    .line 4871
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/providers/media/MediaProvider$ThumbData;->bAlbum:Z
@@ -53,7 +53,7 @@
     .parameter "x1"
 
     .prologue
-    .line 4859
+    .line 4866
     invoke-direct {p0, p1}, Lcom/android/providers/media/MediaProvider$ThumbData;-><init>(Lcom/android/providers/media/MediaProvider;)V
 
     return-void

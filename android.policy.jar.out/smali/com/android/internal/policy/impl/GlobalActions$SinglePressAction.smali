@@ -30,16 +30,16 @@
     .parameter "messageResId"
 
     .prologue
-    .line 437
+    .line 451
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 438
+    .line 452
     iput p1, p0, Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;->mIconResId:I
 
-    .line 439
+    .line 453
     iput p2, p0, Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;->mMessageResId:I
 
-    .line 440
+    .line 454
     return-void
 .end method
 
@@ -53,7 +53,7 @@
     .parameter "inflater"
 
     .prologue
-    .line 450
+    .line 464
     const v3, 0x109005d
 
     const/4 v4, 0x0
@@ -62,7 +62,7 @@
 
     move-result-object v2
 
-    .line 452
+    .line 466
     .local v2, v:Landroid/view/View;
     const v3, 0x1020006
 
@@ -72,7 +72,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    .line 453
+    .line 467
     .local v0, icon:Landroid/widget/ImageView;
     const v3, 0x102000b
 
@@ -82,7 +82,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    .line 455
+    .line 469
     .local v1, messageView:Landroid/widget/TextView;
     const v3, 0x10202cd
 
@@ -94,7 +94,7 @@
 
     invoke-virtual {v3, v4}, Landroid/view/View;->setVisibility(I)V
 
-    .line 457
+    .line 471
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
@@ -107,12 +107,12 @@
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 458
+    .line 472
     iget v3, p0, Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;->mMessageResId:I
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(I)V
 
-    .line 460
+    .line 474
     return-object v2
 .end method
 
@@ -120,7 +120,7 @@
     .locals 1
 
     .prologue
-    .line 443
+    .line 457
     const/4 v0, 0x1
 
     return v0

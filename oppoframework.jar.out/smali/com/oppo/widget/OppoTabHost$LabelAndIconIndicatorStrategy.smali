@@ -145,7 +145,7 @@
     if-gt v6, v7, :cond_0
 
     .line 770
-    const v6, 0x108088f
+    const v6, 0x10808a3
 
     invoke-virtual {v3, v6}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -154,7 +154,7 @@
 
     move-result-object v6
 
-    const v7, 0x10600dd
+    const v7, 0x10600ed
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getColorStateList(I)Landroid/content/res/ColorStateList;
 

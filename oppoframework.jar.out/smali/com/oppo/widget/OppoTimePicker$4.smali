@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 204
+    .line 207
     iput-object p1, p0, Lcom/oppo/widget/OppoTimePicker$4;->this$0:Lcom/oppo/widget/OppoTimePicker;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +44,7 @@
     .prologue
     const/16 v1, 0xc
 
-    .line 207
+    .line 210
     iget-object v0, p0, Lcom/oppo/widget/OppoTimePicker$4;->this$0:Lcom/oppo/widget/OppoTimePicker;
 
     #getter for: Lcom/oppo/widget/OppoTimePicker;->mIsAm:Z
@@ -54,7 +54,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 210
+    .line 213
     iget-object v0, p0, Lcom/oppo/widget/OppoTimePicker$4;->this$0:Lcom/oppo/widget/OppoTimePicker;
 
     #getter for: Lcom/oppo/widget/OppoTimePicker;->mCurrentHour:I
@@ -64,12 +64,12 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 212
+    .line 215
     iget-object v0, p0, Lcom/oppo/widget/OppoTimePicker$4;->this$0:Lcom/oppo/widget/OppoTimePicker;
 
     invoke-static {v0, v1}, Lcom/oppo/widget/OppoTimePicker;->access$012(Lcom/oppo/widget/OppoTimePicker;I)I
 
-    .line 223
+    .line 226
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/oppo/widget/OppoTimePicker$4;->this$0:Lcom/oppo/widget/OppoTimePicker;
@@ -89,7 +89,7 @@
     #setter for: Lcom/oppo/widget/OppoTimePicker;->mIsAm:Z
     invoke-static {v1, v0}, Lcom/oppo/widget/OppoTimePicker;->access$302(Lcom/oppo/widget/OppoTimePicker;Z)Z
 
-    .line 224
+    .line 227
     iget-object v0, p0, Lcom/oppo/widget/OppoTimePicker$4;->this$0:Lcom/oppo/widget/OppoTimePicker;
 
     #getter for: Lcom/oppo/widget/OppoTimePicker;->mAmAndPmButton:Landroid/widget/ImageButton;
@@ -111,10 +111,10 @@
     :goto_2
     invoke-virtual {v1, v0}, Landroid/widget/ImageButton;->setImageResource(I)V
 
-    .line 229
+    .line 232
     return-void
 
-    .line 218
+    .line 221
     :cond_1
     iget-object v0, p0, Lcom/oppo/widget/OppoTimePicker$4;->this$0:Lcom/oppo/widget/OppoTimePicker;
 
@@ -125,22 +125,22 @@
 
     if-lt v0, v1, :cond_0
 
-    .line 220
+    .line 223
     iget-object v0, p0, Lcom/oppo/widget/OppoTimePicker$4;->this$0:Lcom/oppo/widget/OppoTimePicker;
 
     invoke-static {v0, v1}, Lcom/oppo/widget/OppoTimePicker;->access$020(Lcom/oppo/widget/OppoTimePicker;I)I
 
     goto :goto_0
 
-    .line 223
+    .line 226
     :cond_2
     const/4 v0, 0x0
 
     goto :goto_1
 
-    .line 224
+    .line 227
     :cond_3
-    const v0, 0x1080659
+    const v0, 0x108066c
 
     goto :goto_2
 .end method

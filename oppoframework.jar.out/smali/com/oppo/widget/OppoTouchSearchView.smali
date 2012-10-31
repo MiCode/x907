@@ -359,7 +359,7 @@
 
     .line 193
     :cond_3
-    const v4, 0x10600a7
+    const v4, 0x10600a8
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -414,7 +414,7 @@
     if-nez v4, :cond_4
 
     .line 207
-    const v4, 0x10808fe
+    const v4, 0x1080914
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -483,12 +483,12 @@
     .line 220
     iget-object v4, p0, Lcom/oppo/widget/OppoTouchSearchView;->mPopupWindow:Landroid/widget/PopupWindow;
 
-    const v5, 0x10302b1
+    const v5, 0x10302b3
 
     invoke-virtual {v4, v5}, Landroid/widget/PopupWindow;->setAnimationStyle(I)V
 
     .line 222
-    const v4, 0x1020447
+    const v4, 0x1020448
 
     invoke-virtual {v2, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -1318,7 +1318,7 @@
     .line 425
     .end local v1           #drawablePos:I
     :cond_1
-    const v7, 0x10808fb
+    const v7, 0x1080911
 
     invoke-virtual {v5, v7}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

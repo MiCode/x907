@@ -155,19 +155,19 @@
     .locals 1
 
     .prologue
-    .line 432
+    .line 433
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mPowerOnPasswordView:Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
     if-eqz v0, :cond_0
 
-    .line 433
+    .line 434
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mPowerOnPasswordView:Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
     invoke-virtual {v0}, Lcom/android/internal/policy/impl/PowerOnPassWordView;->getIsPassBy()Z
 
     move-result v0
 
-    .line 435
+    .line 436
     :goto_0
     return v0
 
@@ -243,7 +243,7 @@
     .locals 5
 
     .prologue
-    .line 416
+    .line 417
     monitor-enter p0
 
     :try_start_0
@@ -251,16 +251,16 @@
 
     if-eqz v1, :cond_0
 
-    .line 417
+    .line 418
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mKeyguardActions:Lcom/android/internal/policy/impl/KeyguardActions;
 
-    .line 418
+    .line 419
     .local v0, lastView:Lcom/android/internal/policy/impl/KeyguardActions;
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mKeyguardActions:Lcom/android/internal/policy/impl/KeyguardActions;
 
     invoke-virtual {v1}, Lcom/android/internal/policy/impl/KeyguardActions;->cleanUp()V
 
-    .line 419
+    .line 420
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mKeyguardActions:Lcom/android/internal/policy/impl/KeyguardActions;
 
     new-instance v2, Lcom/android/internal/policy/impl/KeyguardViewManager$4;
@@ -273,14 +273,14 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 429
+    .line 430
     .end local v0           #lastView:Lcom/android/internal/policy/impl/KeyguardActions;
     :cond_0
     monitor-exit p0
 
     return-void
 
-    .line 416
+    .line 417
     :catchall_0
     move-exception v1
 
@@ -293,7 +293,7 @@
     .locals 5
 
     .prologue
-    .line 367
+    .line 368
     monitor-enter p0
 
     :try_start_0
@@ -301,17 +301,17 @@
 
     if-eqz v1, :cond_3
 
-    .line 368
+    .line 369
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mAdjustStatusBarListener:Lcom/android/internal/policy/impl/KeyguardViewManager$OnAdjustStatusBarListener;
 
     if-eqz v1, :cond_0
 
-    .line 369
+    .line 370
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mAdjustStatusBarListener:Lcom/android/internal/policy/impl/KeyguardViewManager$OnAdjustStatusBarListener;
 
     invoke-interface {v1}, Lcom/android/internal/policy/impl/KeyguardViewManager$OnAdjustStatusBarListener;->adjustStatusBar()V
 
-    .line 371
+    .line 372
     :cond_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mUpdateMonitor:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
@@ -344,21 +344,21 @@
 
     if-nez v1, :cond_2
 
-    .line 373
+    .line 374
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mAdjustStatusBarListener:Lcom/android/internal/policy/impl/KeyguardViewManager$OnAdjustStatusBarListener;
 
     if-eqz v1, :cond_2
 
-    .line 374
+    .line 375
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mAdjustStatusBarListener:Lcom/android/internal/policy/impl/KeyguardViewManager$OnAdjustStatusBarListener;
 
     invoke-interface {v1}, Lcom/android/internal/policy/impl/KeyguardViewManager$OnAdjustStatusBarListener;->reDoKeyguard()V
 
-    .line 377
+    .line 378
     :cond_2
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mPowerOnPasswordView:Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
-    .line 378
+    .line 379
     .local v0, lastView:Lcom/android/internal/policy/impl/PowerOnPassWordView;
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mPowerOnPasswordView:Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
@@ -372,14 +372,14 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 388
+    .line 389
     .end local v0           #lastView:Lcom/android/internal/policy/impl/PowerOnPassWordView;
     :cond_3
     monitor-exit p0
 
     return-void
 
-    .line 367
+    .line 368
     :catchall_0
     move-exception v1
 
@@ -644,10 +644,10 @@
     .parameter "onAdjustStatusBarListener"
 
     .prologue
-    .line 445
+    .line 446
     iput-object p1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mAdjustStatusBarListener:Lcom/android/internal/policy/impl/KeyguardViewManager$OnAdjustStatusBarListener;
 
-    .line 446
+    .line 447
     return-void
 .end method
 
@@ -985,7 +985,7 @@
     .locals 7
 
     .prologue
-    .line 391
+    .line 392
     monitor-enter p0
 
     :try_start_0
@@ -995,19 +995,19 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 392
+    .line 393
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mKeyguardActions:Lcom/android/internal/policy/impl/KeyguardActions;
 
     if-nez v1, :cond_0
 
-    .line 393
+    .line 394
     const/4 v6, -0x1
 
-    .line 394
+    .line 395
     .local v6, stretch:I
     const v4, 0x1a0400
 
-    .line 398
+    .line 399
     .local v4, flags:I
     new-instance v0, Landroid/view/WindowManager$LayoutParams;
 
@@ -1021,18 +1021,18 @@
 
     invoke-direct/range {v0 .. v5}, Landroid/view/WindowManager$LayoutParams;-><init>(IIIII)V
 
-    .line 401
+    .line 402
     .local v0, lp:Landroid/view/WindowManager$LayoutParams;
     const/4 v1, 0x5
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->screenOrientation:I
 
-    .line 402
+    .line 403
     const-string v1, "KeyguardActions"
 
     invoke-virtual {v0, v1}, Landroid/view/WindowManager$LayoutParams;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 403
+    .line 404
     new-instance v1, Lcom/android/internal/policy/impl/KeyguardActions;
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mContext:Landroid/content/Context;
@@ -1041,28 +1041,28 @@
 
     iput-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mKeyguardActions:Lcom/android/internal/policy/impl/KeyguardActions;
 
-    .line 404
+    .line 405
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mKeyguardActions:Lcom/android/internal/policy/impl/KeyguardActions;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Lcom/android/internal/policy/impl/KeyguardActions;->setVisibility(I)V
 
-    .line 405
+    .line 406
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mViewManager:Landroid/view/ViewManager;
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mKeyguardActions:Lcom/android/internal/policy/impl/KeyguardActions;
 
     invoke-interface {v1, v2, v0}, Landroid/view/ViewManager;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 407
+    .line 408
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mKeyguardActions:Lcom/android/internal/policy/impl/KeyguardActions;
 
     invoke-virtual {v1}, Lcom/android/internal/policy/impl/KeyguardActions;->requestFocus()Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 411
+    .line 412
     .end local v0           #lp:Landroid/view/WindowManager$LayoutParams;
     .end local v4           #flags:I
     .end local v6           #stretch:I
@@ -1071,7 +1071,7 @@
 
     return-void
 
-    .line 391
+    .line 392
     :catchall_0
     move-exception v1
 
@@ -1091,9 +1091,9 @@
 
     .line 345
     .local v6, stretch:I
-    const v4, 0xa0400
+    const v4, 0x1a0400
 
-    .line 348
+    .line 349
     .local v4, flags:I
     :try_start_0
     new-instance v0, Landroid/view/WindowManager$LayoutParams;
@@ -1108,28 +1108,28 @@
 
     invoke-direct/range {v0 .. v5}, Landroid/view/WindowManager$LayoutParams;-><init>(IIIII)V
 
-    .line 351
+    .line 352
     .local v0, lp:Landroid/view/WindowManager$LayoutParams;
     const v1, 0x10301da
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->windowAnimations:I
 
-    .line 352
+    .line 353
     const/4 v1, 0x5
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->screenOrientation:I
 
-    .line 353
+    .line 354
     const-string v1, "PowerOnPassword"
 
     invoke-virtual {v0, v1}, Landroid/view/WindowManager$LayoutParams;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 354
+    .line 355
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mPowerOnPasswordView:Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
     if-nez v1, :cond_0
 
-    .line 355
+    .line 356
     new-instance v1, Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mContext:Landroid/content/Context;
@@ -1138,19 +1138,19 @@
 
     iput-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mPowerOnPasswordView:Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
-    .line 356
+    .line 357
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mPowerOnPasswordView:Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Lcom/android/internal/policy/impl/PowerOnPassWordView;->setVisibility(I)V
 
-    .line 357
+    .line 358
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mPowerOnPasswordView:Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
     invoke-virtual {v1}, Lcom/android/internal/policy/impl/PowerOnPassWordView;->setPanelEnabled()V
 
-    .line 359
+    .line 360
     :cond_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mPowerOnPasswordView:Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
@@ -1158,7 +1158,7 @@
 
     invoke-virtual {v1, v2}, Lcom/android/internal/policy/impl/PowerOnPassWordView;->setCallback(Lcom/android/internal/policy/impl/KeyguardViewCallback;)V
 
-    .line 360
+    .line 361
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mViewManager:Landroid/view/ViewManager;
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mPowerOnPasswordView:Lcom/android/internal/policy/impl/PowerOnPassWordView;
@@ -1167,7 +1167,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 362
+    .line 363
     monitor-exit p0
 
     return-void

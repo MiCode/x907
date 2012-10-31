@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 7136
+    .line 7199
     iput-object p1, p0, Landroid/widget/AbsListView$AdapterDataSetObserver;->this$0:Landroid/widget/AbsListView;
 
     invoke-direct {p0, p1}, Landroid/widget/AdapterView$AdapterDataSetObserver;-><init>(Landroid/widget/AdapterView;)V
@@ -38,10 +38,10 @@
     .locals 1
 
     .prologue
-    .line 7139
+    .line 7202
     invoke-super {p0}, Landroid/widget/AdapterView$AdapterDataSetObserver;->onChanged()V
 
-    .line 7140
+    .line 7203
     iget-object v0, p0, Landroid/widget/AbsListView$AdapterDataSetObserver;->this$0:Landroid/widget/AbsListView;
 
     #getter for: Landroid/widget/AbsListView;->mFastScroller:Landroid/widget/FastScroller;
@@ -51,7 +51,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 7141
+    .line 7204
     iget-object v0, p0, Landroid/widget/AbsListView$AdapterDataSetObserver;->this$0:Landroid/widget/AbsListView;
 
     #getter for: Landroid/widget/AbsListView;->mFastScroller:Landroid/widget/FastScroller;
@@ -61,7 +61,7 @@
 
     invoke-virtual {v0}, Landroid/widget/FastScroller;->onSectionsChanged()V
 
-    .line 7143
+    .line 7206
     :cond_0
     return-void
 .end method
@@ -70,10 +70,10 @@
     .locals 1
 
     .prologue
-    .line 7147
+    .line 7210
     invoke-super {p0}, Landroid/widget/AdapterView$AdapterDataSetObserver;->onInvalidated()V
 
-    .line 7148
+    .line 7211
     iget-object v0, p0, Landroid/widget/AbsListView$AdapterDataSetObserver;->this$0:Landroid/widget/AbsListView;
 
     #getter for: Landroid/widget/AbsListView;->mFastScroller:Landroid/widget/FastScroller;
@@ -83,7 +83,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 7149
+    .line 7212
     iget-object v0, p0, Landroid/widget/AbsListView$AdapterDataSetObserver;->this$0:Landroid/widget/AbsListView;
 
     #getter for: Landroid/widget/AbsListView;->mFastScroller:Landroid/widget/FastScroller;
@@ -93,7 +93,7 @@
 
     invoke-virtual {v0}, Landroid/widget/FastScroller;->onSectionsChanged()V
 
-    .line 7151
+    .line 7214
     :cond_0
     return-void
 .end method

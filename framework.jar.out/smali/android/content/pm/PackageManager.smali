@@ -210,8 +210,6 @@
 
 .field public static final INSTALL_INTERNAL:I = 0x10
 
-.field public static final INSTALL_OPK:I = 0x40
-
 .field public static final INSTALL_PARSE_FAILED_BAD_MANIFEST:I = -0x65
 
 .field public static final INSTALL_PARSE_FAILED_BAD_PACKAGE_NAME:I = -0x6a

@@ -18,7 +18,7 @@
     const/4 v8, 0x1
 
     .line 31
-    const v3, 0x1030320
+    const v3, 0x1030322
 
     invoke-direct {p0, p1, v3}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 

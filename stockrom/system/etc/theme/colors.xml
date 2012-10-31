@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app color -->
+    <!-- Music -->
+    <color name="online_music_album_text_color">#ffffffff</color>
+    <color name="online_music_folder_listitem_color">#ff40464b</color>
+    <color name="online_music_track_detail_info_bg">#ffe1e1e1</color>
+    <color name="online_music_music_picker_duration">#ff57b5d5</color>
+    <color name="online_music_music_notify_title">#ff40464b</color>   
+    <color name="online_music_music_notify_duration">#ff969696</color>    
+    <color name="online_music_large_listitem">#ff40464b</color>  
+    <color name="online_music_small_listitem">#ff969696</color>
+    <color name="online_music_searchlist_bg">#ffe1e1e1</color>
+    <color name="online_music_current_lyric_text_color">#ffffffff</color>
+	<color name="online_music_other_lyric_text_color">#ffc8c8c8</color>
+
+    <!-- OppoDialer -->
+    <color name="online_dialer_title_color">#ffffffff</color>
+    <color name="online_dialer_title_button_color">#ffffffff</color>
+    <color name="online_dialer_edit_input_color">#ff4b4b4b</color>
+    <color name="online_dialer_button_color">#ffffffff</color>
+    <color name="online_dialer_high_light_color">#ff57b5d5</color>
+    <color name="online_dialer_call_log_normal">#ff40464b</color>
+    <color name="online_dialer_small_text">#ff969696</color>
+
+    <!-- PowerManager -->
+    <color name="widget_background_color">#fff7fbff</color>
+    <color name="online_power_manager_text_color">#ff000000</color>
+
+    <!-- FileManager -->
+    <color name="online_filemanager_oppo_EditText_color">#ff40464b</color>
+    <color name="online_filemanager_white">#ff40464b</color>
+    <color name="online_filemanager_hint_foreground_light">#00000000</color>
+    <color name="online_filemanager_black">#ff40464b</color>
+    <color name="online_filemanager_oppo_edittext_before_input">#ff6f7275</color>
+    <color name="online_filemanager_oppo_edittext_after_input">#ff000000</color>
+    <color name="online_filemanager_search_path_content_color">#ff57b5d5</color>
+    <color name="online_filemanager_marked_status_color">#ff4a4a4a</color>
+    <color name="online_filemanager_multilistview_cache_color">#00ffffff</color>
+    <color name="online_filemanager_dialog_progress_color">#88000000</color>
+    <color name="online_filemanager_rename_file_color">#ff40464b</color>
+
+    <!-- Calendar -->
+    <color name="online_calendar_widget_mon_week_day">#FF40464B</color>
+    <color name="online_calendar_today_text_color">#FF40464B</color>
+    <color name="online_calendar_solar_title_color">#FF40464b</color>
+    <color name="online_calendar_lunar_title_color">#FF787878</color>
+    <color name="online_calendar_week_title_color">#FF787878</color>
+	<color name="online_calendar_event_info_headline_color">#FF40464B</color>
+    <color name="online_calendar_event_info_when_date">#FF787878</color>
+    <color name="online_calendar_desc_content_color">#FF787878</color>
+    <color name="online_calendar_event_list_time_color">#FF57B5D5</color>
+    <color name="online_calendar_event_list_title_color">#FF787878</color>
+    <color name="online_calendar_event_info_reminder_item">#FF787878</color>
+    <color name="online_calendar_event_info_time">#FFD96424</color>
+    <color name="online_calendar_event_info_repeats">#FF787878</color>
+    <color name="online_calendar_event_info_address">#FF57B5D5</color>
+    <color name="online_calendar_event_info_lable">#FF57B5D5</color>
+	<color name="online_calendar_agenda_list_day">#FF787878</color>
+    <color name="online_calendar_agenda_list_date">#FF787878</color>
+	<color name="online_calendar_agenda_list_item_when">#FF57B5D5</color>
+    <color name="online_calendar_agenda_list_item_title">#FF40464B</color>
+    <color name="online_calendar_agenda_list_item_where">#FF888888</color>
+    <color name="online_calendar_weeknum_focus_month">#FF40464B</color>
+    <color name="online_calendar_weeknum_other_month">#FFA2A2A2</color>
+    <color name="online_calendar_weeknum_sunday">#FFD96424</color>
+    <color name="online_calendar_weeknum_saturaday">#FF57B5D5</color>
+    <color name="online_calendar_month_view_lunar">#FF787878</color>
+	<color name="online_calendar_month_view_today">#FFC8C7C7</color>
+	<color name="online_calendar_month_view_grid_line">#FFE7E7E7</color>
+	<color name="online_calendar_month_view_bottom_bg">#FFE7E7E7</color>
+	<color name="online_calendar_no_event_hint">#FF40464B</color>
+	<color name="online_calendar_calendar_view_header_bg">#FFC8C7C7</color>
+	<color name="online_calendar_calendar_view_grid_line">#FFC8C7C7</color>
+	<color name="online_calendar_calendar_view_event_bg">#FF9ED7EF</color>
+	<color name="online_calendar_calendar_view_event_hour">#FF57B5D5</color>
+	<color name="online_calendar_calendar_event_text_color">#FF40464B</color>
+	<color name="online_calendar_calendar_view_new_event_bg">#FFE1E1E1</color>
+	<color name="online_calendar_calendar_view_new_event_cross_bg">#fffefefe</color>
+	<color name="online_calendar_edit_event_lable_color">#FF40464B</color>
+	<color name="online_calendar_search_fragment_list_bg">#FFEBEBEB</color>
+    <color name="online_calendar_convert_fragment_date">#FF57B5D5</color>
+    <color name="online_calendar_convert_fragment_convert_result">#FF57B5D5</color>
+    <color name="online_calendar_convert_fragment_convert_result_line">#FF57B5D5</color>
+    <color name="online_calendar_convert_fragment_convert_result_other">#FFC8C7C7</color>
+    <color name="online_calendar_agenda_list_item_divider">#FFC8C7C7</color>
+
+    <!-- Quick Search -->
+    <color name="online_quicksearchbox_color_w">#ff000000</color>
+    <color name="online_quicksearchbox_listview_txt1">#ff40464b</color>
+    <color name="online_quicksearchbox_oppoedittext">#ff40464b</color>
+
+    <!-- Email -->
+    <color name="online_email_message_list_item_unread">#ffe1e1e1</color>
+    <color name="online_email_setup_edit_text_color">#ff57b5d5</color>
+    <color name="online_email_title_account_name_color">#fffefefe</color>
+    <color name="online_email_setup_note_text_color">#ffcccccc</color>
+    <color name="online_email_setup_account_label_color">#ff40464b</color>
+    <color name="online_email_list_text_color">#ff000000</color>
+    <color name="online_email_black_white_color">#ff000000</color>
+
+    <!-- Video -->
+    <color name="online_video_seekbar_background_color">#00000000</color>
+    <color name="online_video_detailsview_background_color">#ffe1e1e1</color>
+    <color name="online_video_translucent_search_background">#99000000</color>
+    <color name="online_video_movieview_background_color">#FF000000</color>
+    <color name="online_video_listitem_moviename_color">#ff40464b</color>
+    <color name="online_video_listitem_movietime_color">#ff969696</color>
+    <color name="online_video_listview_bitmap_background_color">#ffdddddd</color>		
+    <color name="online_video_renamefile_title_color">#ff40464b</color>
+    <color name="online_video_threedview_moviename_color">#fffefefe</color>
+    <color name="online_video_threedview_movietime_color">#fffefefe</color>
+    <color name="online_video_shortcutbutton_text_color">#ff40464b</color>
+    <color name="online_video_searchnoresult_text_color">#fffefefe</color>
+    <color name="online_video_rename_textview_color">#ff40464b</color>		
+    <color name="online_video_detailsview_titletext_color">#ff40464b</color>
+    <color name="online_video_detailsview_smalltext_color">#ff40464b</color>
+
+    <!-- Secure -->
+    <color name="online_secure_input_password">#ff40464b</color>
+    <color name="online_secure_data_useage_text">#fffefefe</color>
+    <color name="online_secure_background_color">#ffebebeb</color>
+    <color name="online_power_manager_bg_color">#fffefefe</color>
+    <color name="online_secure_traffic_tip_enable">#ff000000</color>
+    <color name="online_secure_traffic_title_bar">#ff000000</color>
+    <color name="online_secure_traffic_daily_data">#ff797979</color>
+    <color name="online_secure_bar_renderer">#ff797979</color>
+    <color name="online_secure_button_style">#ff000000</color>
+    <color name="online_secure_large_text">#ff40464b</color>
+    <color name="online_secure_small_text">#ff969696</color>
+    
+    <!-- Phone -->
+    <color name="online_phone_large_text">#ff40464b</color>
+    <color name="online_phone_small_text">#ff969696</color>
+
+    <!-- Area -->
+    <color name="online_area_bgcolor">#ff000000</color>
+    <color name="online_area_pathbar_text_color">#fffefefe</color>
+    <color name="online_area_pathbar_text_shadow_color">#DD000000</color>
+    <color name="online_area_phone_numberarea_background">#ffe6e2e6</color>  
+    <color name="online_area_oppo_contact_data_color">#ff57b5d5</color>
+    <color name="online_contact_data_hint_color">#ff969696</color>
+    <color name="online_contact_title_color">#ff40464b</color>
+    <color name="online_contact_title_hint_color">#00000000</color>
+
+    <!-- Feedback -->
+    <color name="online_feedback_list_bg">#FFEBEBEB</color>
+    <color name="online_feedback_dilog_scrollbg">#FFEBEBEB</color>
+    <color name="online_feedback_setting_bg">#FFEBEBEB</color>
+  	<color name="online_feedback_rp_button_color">#FF4795ac</color>
+    <color name="online_feedback_lable_color">#FF585858</color>
+    <color name="online_feedback_rp_content_color">#FF4795ac</color>
+    <color name="online_feedback_history_content">#FFb7956b</color>
+    <color name="online_feedback_dialog_text">#FF40464b</color>
+    <color name="online_feedback_btn_more_color">#FFF0F0F0</color>
+    <color name="online_feedback_btn_more_press_color">#FFB6D3DC</color>
+    <color name="online_feedback_toast_color">#FF000000</color>
+	<color name="online_feedback_titleColor">#FFFFFFFF</color>
+	<color name="online_feedback_dialogColor">#ff40464b</color>
+	<color name="online_feedback_dialogshadowColor">#00ffffff</color>
+    
+    <!-- OppoWeather -->
+    <color name="internal_oppoweather_normal_text_color">#ff3f464c</color>
+    <color name="internal_oppoweather_search_text_color">#fffefefe</color>
+    <color name="internal_oppoweather_warn_text_color">#ff404549</color>
+
+    <!-- FileHanlder -->
+    <color name="online_filehandler_select_muisc_background_color">#ffe1e1e1</color>
+    <color name="online_filehandler_widget_background_color">#ff40464b</color>
+
+    <!-- Setings -->
+    <color name="online_settings_white">#ff40464b</color>
+    <color name="online_settings_divider_color">#2040464b</color>    
+    <color name="online_settings_shortcut_color">#0040464b</color>
+    <color name="online_settings_ownerinfo_color">#ffebebeb</color>
+    <color name="online_settings_oppo_EditText_color">#ff40464b</color>
+
+    <!-- Browser -->
+    <color name="online_browser_primary_color">#fffefefe</color>
+    <color name="online_browser_secondary_color">#ff000000</color>
+    <color name="online_browser_oppo_list_clipboard_bg_color">#ffebebeb</color>
+    <color name="online_browser_primary_text_enable_color">#ff40464b</color>
+    <color name="online_browser_primary_text_disable_color">#4D40464b</color>
+    <color name="online_browser_empty_tab_bg_color">#ffebebeb</color>
+    <color name="online_browser_add_shortcut_text_color">#ff40464b</color>
+
+    <!-- Clock -->
+    <color name="online_clock_global_current_color">#ffebebeb</color>
+    <color name="online_clock_global_addcity_city_color">#ff40464b</color>
+    <color name="online_clock_timer_textcolor">#ff000000</color>
+    <color name="online_clock_timer_shadow_color">#fffefefe</color>
+    <color name="online_clock_alert_title_color">#ff40464b</color>
+    <color name="online_clock_black_white_color">#ff000000</color>
+    
+    <!-- Calculator -->
+    <color name="online_calculator_text_color">#ff40464b</color>
+    
+    <!-- Compass -->
+    <color name="internal_compass_themecolor">#1b232e</color>
+	<color name="internal_compass_angle_text">#ffffff</color>
+
+    <!-- framework color -->
+    <color name="online_bg_color">#fffefefe</color>  
+    <color name="online_fg_color">#ff000000</color>
+
+    <!-- Mms -->
+    <color name="online_mms_subject_background">#ffdadada</color>
+    <color name="online_mms_blue">#ff57b5d5</color>
+    <color name="online_mms_background">#fff3f6f7</color>
+    <color name="online_mms_time_tag">#ff787878</color>
+    <color name="online_mms_time_tag1">#ff787878</color>  
+
+    <!-- Recorder -->
+    <color name="online_recorder_defaultfontcolor">#fffefefe</color>  	  
+    <color name="online_recorder_titlefontcolor">#fffefefe</color>  	  
+    <color name="online_recorder_wavepaintcolor">#FF57B5D5</color>     
+    <color name="online_recorder_timecolor">#CC57B5D5</color>     
+    <color name="online_recorder_editplancolor">#FF57B5D5</color>   
+    <color name="online_recorder_noplancolor">#FF555555</color>  
+    <color name="online_recorder_Deldisablecolor">#FF565656</color>  
+    <color name="online_recorder_Delenablecolor">#FF000000</color>
+    <color name="online_recorder_Renamecolor">#FF6F7880</color>   	  
+    <color name="online_recorder_RenameEditcolor">#FF000000</color> 
+	  <color name="online_recorder_notify_title">#FF40464B</color> 
+	  <color name="online_recorder_notify_duration">#FF969696</color>
+	  
+    <!-- Launcher -->
+    <color name="online_launcher_folder_group_title_color">#ff40464b</color>
+    
+    <!-- Live Wallpaper -->
+    <color name="online_livewallpaper_text_color1">#FF40464b</color>
+    <color name="online_livewallpaper_text_color2">#FF969696</color>
+
+    <!-- Status bar -->
+    <color name="online_status_bar_button_panel_text_color">#ff40464b</color>
+    <color name="online_status_bar_notification_text_color">#ff40464b</color>
+    <color name="online_status_bar_clear_text_color">#ff40464b</color>
+    <color name="status_bar_latest_event_title_color">#ff40464b</color>
+    <color name="status_bar_latest_event_content_color">#ff969696</color>
+    <color name="status_bar_latest_event_time_color">#ff969696</color>
+    
+    <!-- Operation Manual -->
+    <color name="internal_operationmanual_themecolor">#1b232e</color>
+	<color name="internal_operationmanual_angle_text">#ffffff</color>
+
+    <!-- framework -->
+    
+    <!-- ListView -->
+    <color name="oppo_listview_background_color">#ffebebeb</color>
+    <color name="large_text_color">#ff40464b</color>
+    <color name="little_text_color">#ff969696</color>
+
+    <color name="list_small_text_color_normal">#ff969696</color>
+    <color name="list_small_text_color_pressed">#ff969696</color>
+
+    <color name="list_large_text_color_normal">#ff40464b</color>
+    <color name="list_large_text_color_pressed">#ff40464b</color>
+
+    <!-- Dialog -->
+    <color name="oppo_alert_dialog_title_text_color">#ff40464b</color>
+    <color name="oppo_alert_dialog_content_text_color">#ff40464b</color>
+    <color name="oppo_alert_dialog_button_text_color">#ff40464b</color>
+    <color name="oppo_alert_dialog_title_text_shadow_color">#00ffffff</color> 
+    <color name="oppo_alert_dialog_button_text_shadow_color">#00ffffff</color>
+
+    <!-- IconMenu -->
+    <color name="oppo_menu_default_text_color">#ff40464b</color>
+    <color name="oppo_iconmenu">#ffe3e3e3</color>
+    
+    <!-- Title -->
+    <color name="oppo_title_text_color">#fffefefe</color>
+
+    <!-- OppoShortCutButton -->
+    <color name="oppo_shortcut_text_color">#ff40464b</color>
+
+    <!-- OppoTabWidget -->
+    <color name="oppo_tabwidget_label_color_normal">#ff787878</color>
+    <color name="oppo_tabwidget_label_color_focus">#ff40464b</color>
+
+    <!-- SearchButton -->
+    <color name="oppo_search_bar_button_text_color">#fffefefe</color>
+
+    <!-- multilist preference -->  
+    <color name="multilist_text_disabled_color">#ff40464b</color>
+    <color name="multilist_text_disabled_color_select">#ff40464b</color>
+    
+    <!-- Preference Category title color -->
+    <color name="multilist_title_color">#ff40464b</color>
+
+    <!-- TextView -->
+    <color name="oppo_default_textview_text_color">#ff40464b</color>
+    
+    <!-- Window backgroud -->
+    <color name="oppo_window_background_color">#ffebebeb</color>
+    
+    <!--ScrollView-->
+    <color name="scrollview_background_color">#ffebebeb</color>    
+    
+    <!-- Others -->
+    <color name="oppo_windowTitle_color">#00ffffff</color>
+    <color name="oppo_inputmethod_text_color">#ff40464b</color>
+    <color name="oppo_volume_panal_text_color">#ff40464b</color>
+		<color name="oppo_volume_panel_text_color">#ff40464b</color>
+    <color name="oppo_checkbox_text_color">#ff40464b</color>
+</resources>

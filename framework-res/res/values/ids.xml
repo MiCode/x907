@@ -554,6 +554,7 @@
     <item type="id" name="view2">false</item>
     <item type="id" name="emptyFileOfGrid">false</item>
     <item type="id" name="amPm">false</item>
+    <item type="id" name="timepicker_background">false</item>
     <item type="id" name="timePicker">false</item>
     <item type="id" name="divider">false</item>
     <item type="id" name="touchsearch_popup_content">false</item>

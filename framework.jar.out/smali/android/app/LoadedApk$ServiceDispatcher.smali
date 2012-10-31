@@ -257,7 +257,7 @@
     .line 1028
     monitor-exit p0
 
-    .line 1070
+    .line 1073
     :cond_0
     :goto_0
     return-void
@@ -285,7 +285,7 @@
 
     goto :goto_0
 
-    .line 1060
+    .line 1063
     .end local v2           #old:Landroid/app/LoadedApk$ServiceDispatcher$ConnectionInfo;
     :catchall_0
     move-exception v3
@@ -324,10 +324,43 @@
     invoke-direct {v3, p0, p1, p2}, Landroid/app/LoadedApk$ServiceDispatcher$DeathMonitor;-><init>(Landroid/app/LoadedApk$ServiceDispatcher;Landroid/content/ComponentName;Landroid/os/IBinder;)V
 
     iput-object v3, v1, Landroid/app/LoadedApk$ServiceDispatcher$ConnectionInfo;->deathMonitor:Landroid/os/IBinder$DeathRecipient;
+
+    .line 1043
+    const-string v3, "LoadedApk"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "new DeathMonitor "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    const-string v5, ", "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1043
+    .line 1046
     :try_start_2
     iget-object v3, v1, Landroid/app/LoadedApk$ServiceDispatcher$ConnectionInfo;->deathMonitor:Landroid/os/IBinder$DeathRecipient;
 
@@ -335,7 +368,7 @@
 
     invoke-interface {p2, v3, v4}, Landroid/os/IBinder;->linkToDeath(Landroid/os/IBinder$DeathRecipient;I)V
 
-    .line 1044
+    .line 1047
     iget-object v3, p0, Landroid/app/LoadedApk$ServiceDispatcher;->mActiveConnections:Ljava/util/HashMap;
 
     invoke-virtual {v3, p1, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -343,12 +376,12 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
     .catch Landroid/os/RemoteException; {:try_start_2 .. :try_end_2} :catch_0
 
-    .line 1057
+    .line 1060
     .end local v1           #info:Landroid/app/LoadedApk$ServiceDispatcher$ConnectionInfo;
     :goto_1
     if-eqz v2, :cond_3
 
-    .line 1058
+    .line 1061
     :try_start_3
     iget-object v3, v2, Landroid/app/LoadedApk$ServiceDispatcher$ConnectionInfo;->binder:Landroid/os/IBinder;
 
@@ -358,49 +391,49 @@
 
     invoke-interface {v3, v4, v5}, Landroid/os/IBinder;->unlinkToDeath(Landroid/os/IBinder$DeathRecipient;I)Z
 
-    .line 1060
+    .line 1063
     :cond_3
     monitor-exit p0
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 1063
+    .line 1066
     if-eqz v2, :cond_4
 
-    .line 1064
+    .line 1067
     iget-object v3, p0, Landroid/app/LoadedApk$ServiceDispatcher;->mConnection:Landroid/content/ServiceConnection;
 
     invoke-interface {v3, p1}, Landroid/content/ServiceConnection;->onServiceDisconnected(Landroid/content/ComponentName;)V
 
-    .line 1067
+    .line 1070
     :cond_4
     if-eqz p2, :cond_0
 
-    .line 1068
+    .line 1071
     iget-object v3, p0, Landroid/app/LoadedApk$ServiceDispatcher;->mConnection:Landroid/content/ServiceConnection;
 
     invoke-interface {v3, p1, p2}, Landroid/content/ServiceConnection;->onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
 
     goto :goto_0
 
-    .line 1045
+    .line 1048
     .restart local v1       #info:Landroid/app/LoadedApk$ServiceDispatcher$ConnectionInfo;
     :catch_0
     move-exception v0
 
-    .line 1048
+    .line 1051
     .local v0, e:Landroid/os/RemoteException;
     :try_start_4
     iget-object v3, p0, Landroid/app/LoadedApk$ServiceDispatcher;->mActiveConnections:Ljava/util/HashMap;
 
     invoke-virtual {v3, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1049
+    .line 1052
     monitor-exit p0
 
     goto :goto_0
 
-    .line 1054
+    .line 1057
     .end local v0           #e:Landroid/os/RemoteException;
     .end local v1           #info:Landroid/app/LoadedApk$ServiceDispatcher$ConnectionInfo;
     :cond_5
@@ -419,12 +452,12 @@
     .parameter "service"
 
     .prologue
-    .line 1073
+    .line 1076
     iget-object v0, p0, Landroid/app/LoadedApk$ServiceDispatcher;->mConnection:Landroid/content/ServiceConnection;
 
     invoke-interface {v0, p1}, Landroid/content/ServiceConnection;->onServiceDisconnected(Landroid/content/ComponentName;)V
 
-    .line 1074
+    .line 1077
     return-void
 .end method
 

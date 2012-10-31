@@ -1294,7 +1294,7 @@
     iput-object v0, p0, Lcom/android/internal/telephony/CallerInfo;->phoneNumber:Ljava/lang/String;
 
     .line 379
-    const v0, 0x1080657
+    const v0, 0x108066a
 
     iput v0, p0, Lcom/android/internal/telephony/CallerInfo;->photoResource:I
 

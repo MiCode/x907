@@ -25,13 +25,13 @@
     .parameter "loop"
 
     .prologue
-    .line 1918
+    .line 1942
     iput-object p1, p0, Lcom/android/server/NotificationManagerService$UsbSelectionHandler;->this$0:Lcom/android/server/NotificationManagerService;
 
-    .line 1919
+    .line 1943
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 1920
+    .line 1944
     return-void
 .end method
 
@@ -42,16 +42,16 @@
     .parameter "msg"
 
     .prologue
-    .line 1925
+    .line 1949
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 1933
+    .line 1957
     :goto_0
     return-void
 
-    .line 1927
+    .line 1951
     :pswitch_0
     iget-object v0, p0, Lcom/android/server/NotificationManagerService$UsbSelectionHandler;->this$0:Lcom/android/server/NotificationManagerService;
 
@@ -62,7 +62,7 @@
 
     goto :goto_0
 
-    .line 1925
+    .line 1949
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0

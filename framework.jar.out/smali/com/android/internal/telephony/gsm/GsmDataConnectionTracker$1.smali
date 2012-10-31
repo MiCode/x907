@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 1666
+    .line 1679
     iput-object p1, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker$1;->this$0:Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -47,13 +47,13 @@
 
     const/4 v8, 0x0
 
-    .line 1671
+    .line 1684
     const-wide/16 v2, -0x1
 
     .local v2, preTxPkts:J
     const-wide/16 v0, -0x1
 
-    .line 1672
+    .line 1685
     .local v0, preRxPkts:J
     iget-object v4, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker$1;->this$0:Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;
 
@@ -63,27 +63,27 @@
 
     if-eqz v4, :cond_5
 
-    .line 1674
+    .line 1687
     iget-object v4, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker$1;->this$0:Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;
 
     const/4 v5, -0x1
 
     invoke-virtual {v4, v5}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->acquireWakeLock(I)V
 
-    .line 1676
+    .line 1689
     sput v8, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->m_poll_idle_times:I
 
-    .line 1678
+    .line 1691
     iget-object v4, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker$1;->this$0:Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;
 
     iget-wide v2, v4, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->mTxPkts_dormant:J
 
-    .line 1679
+    .line 1692
     iget-object v4, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker$1;->this$0:Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;
 
     iget-wide v0, v4, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->mRxPkts_dormant:J
 
-    .line 1682
+    .line 1695
     iget-object v4, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker$1;->this$0:Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;
 
     invoke-static {}, Landroid/net/TrafficStats;->getMobileTxPackets()J
@@ -92,7 +92,7 @@
 
     iput-wide v5, v4, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->mTxPkts_dormant:J
 
-    .line 1683
+    .line 1696
     iget-object v4, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker$1;->this$0:Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;
 
     invoke-static {}, Landroid/net/TrafficStats;->getMobileRxPackets()J
@@ -101,7 +101,7 @@
 
     iput-wide v5, v4, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->mRxPkts_dormant:J
 
-    .line 1687
+    .line 1700
     const-string v4, "GSM"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -178,7 +178,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1689
+    .line 1702
     const-string v4, "GSM"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -208,7 +208,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1692
+    .line 1705
     iget-object v4, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker$1;->this$0:Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;
 
     #getter for: Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->enableDormantPoll:Z
@@ -226,7 +226,7 @@
 
     if-ltz v4, :cond_2
 
-    .line 1694
+    .line 1707
     :cond_0
     iget-object v4, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker$1;->this$0:Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;
 
@@ -244,14 +244,14 @@
 
     if-ltz v4, :cond_4
 
-    .line 1696
+    .line 1709
     sget v4, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->m_poll_times:I
 
     add-int/lit8 v4, v4, 0x1
 
     sput v4, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->m_poll_times:I
 
-    .line 1699
+    .line 1712
     iget-object v4, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker$1;->this$0:Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -306,38 +306,38 @@
 
     invoke-virtual {v4, v5}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->log(Ljava/lang/String;)V
 
-    .line 1703
+    .line 1716
     sget v4, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->m_poll_times:I
 
     const/4 v5, 0x2
 
     if-lt v4, v5, :cond_2
 
-    .line 1704
+    .line 1717
     invoke-static {}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->access$200()Z
 
     move-result v4
 
     if-nez v4, :cond_1
 
-    .line 1705
+    .line 1718
     iget-object v4, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker$1;->this$0:Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;
 
     invoke-virtual {v4}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->goDormant()V
 
-    .line 1706
+    .line 1719
     invoke-static {v9}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->access$202(Z)Z
 
-    .line 1708
+    .line 1721
     :cond_1
     iget-object v4, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker$1;->this$0:Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;
 
     invoke-virtual {v4}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->releaseWakeLock()V
 
-    .line 1709
+    .line 1722
     sput v8, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->m_poll_times:I
 
-    .line 1729
+    .line 1742
     :cond_2
     :goto_0
     iget-object v4, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker$1;->this$0:Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;
@@ -354,7 +354,7 @@
 
     iput v5, v4, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->mNetDormantPollPeriod:I
 
-    .line 1731
+    .line 1744
     iget-object v4, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker$1;->this$0:Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;
 
     #getter for: Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->enableDormantPoll:Z
@@ -368,7 +368,7 @@
 
     if-ge v4, v9, :cond_3
 
-    .line 1732
+    .line 1745
     iget-object v4, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker$1;->this$0:Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;
 
     iget-object v5, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker$1;->this$0:Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;
@@ -379,18 +379,18 @@
 
     invoke-virtual {v4, p0, v5, v6}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 1734
+    .line 1747
     :cond_3
     return-void
 
-    .line 1712
+    .line 1725
     :cond_4
     sput v8, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->m_poll_times:I
 
-    .line 1713
+    .line 1726
     invoke-static {v8}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->access$202(Z)Z
 
-    .line 1715
+    .line 1728
     const-string v4, "GSM"
 
     const-string v5, "data connection is active"
@@ -399,7 +399,7 @@
 
     goto :goto_0
 
-    .line 1723
+    .line 1736
     :cond_5
     sget v4, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->m_poll_idle_times:I
 
@@ -407,12 +407,12 @@
 
     sput v4, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->m_poll_idle_times:I
 
-    .line 1724
+    .line 1737
     sget v4, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->m_poll_idle_times:I
 
     if-lt v4, v9, :cond_2
 
-    .line 1725
+    .line 1738
     iget-object v4, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker$1;->this$0:Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;
 
     invoke-virtual {v4}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->releaseWakeLock()V

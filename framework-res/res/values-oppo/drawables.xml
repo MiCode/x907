@@ -3,4 +3,5 @@
     <drawable name="alert_dark_frame">@drawable/popup_full_dark</drawable>
     <drawable name="alert_light_frame">@drawable/popup_full_bright</drawable>
     <item type="drawable" name="collapsitem_bg">#ffe5e5e5</item>
+    <item type="drawable" name="oppo_list_item_background_transparent">#00ffffff</item>
 </resources>

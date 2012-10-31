@@ -96,7 +96,7 @@
     .line 169
     iget-object v5, p0, Landroid/preference/PreferenceScreen;->mListView:Landroid/widget/ListView;
 
-    const v6, 0x1080724
+    const v6, 0x1080737
 
     invoke-virtual {v5, v6}, Landroid/widget/ListView;->setBackgroundResource(I)V
 

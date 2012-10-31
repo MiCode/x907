@@ -33,7 +33,7 @@
     .parameter
 
     .prologue
-    .line 3651
+    .line 3686
     iput-object p1, p0, Landroid/widget/AbsListView$1;->this$0:Landroid/widget/AbsListView;
 
     iput-object p2, p0, Landroid/widget/AbsListView$1;->val$child:Landroid/view/View;
@@ -53,36 +53,43 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 3654
+    .line 3689
     iget-object v0, p0, Landroid/widget/AbsListView$1;->this$0:Landroid/widget/AbsListView;
 
     const/4 v1, -0x1
 
     iput v1, v0, Landroid/widget/AbsListView;->mTouchMode:I
 
-    .line 3655
+    .line 3690
     iget-object v0, p0, Landroid/widget/AbsListView$1;->val$child:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setPressed(Z)V
 
-    .line 3656
+    .line 3692
+    iget-object v0, p0, Landroid/widget/AbsListView$1;->this$0:Landroid/widget/AbsListView;
+
+    iget-object v1, p0, Landroid/widget/AbsListView$1;->val$child:Landroid/view/View;
+
+    invoke-virtual {v0, v1}, Landroid/widget/AbsListView;->recoveryBackround(Landroid/view/View;)V
+
+    .line 3695
     iget-object v0, p0, Landroid/widget/AbsListView$1;->this$0:Landroid/widget/AbsListView;
 
     invoke-virtual {v0, v2}, Landroid/widget/AbsListView;->setPressed(Z)V
 
-    .line 3657
+    .line 3696
     iget-object v0, p0, Landroid/widget/AbsListView$1;->this$0:Landroid/widget/AbsListView;
 
     iget-boolean v0, v0, Landroid/widget/AdapterView;->mDataChanged:Z
 
     if-nez v0, :cond_0
 
-    .line 3658
+    .line 3697
     iget-object v0, p0, Landroid/widget/AbsListView$1;->val$performClick:Landroid/widget/AbsListView$PerformClick;
 
     invoke-virtual {v0}, Landroid/widget/AbsListView$PerformClick;->run()V
 
-    .line 3660
+    .line 3699
     :cond_0
     return-void
 .end method

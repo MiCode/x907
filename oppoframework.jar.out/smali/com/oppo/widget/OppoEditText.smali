@@ -196,7 +196,7 @@
     invoke-virtual {p0, v3}, Lcom/oppo/widget/OppoEditText;->setDeletable(Z)V
 
     .line 144
-    const v5, 0x108060f
+    const v5, 0x1080622
 
     invoke-virtual {p0, v5}, Lcom/oppo/widget/OppoEditText;->setBackgroundResource(I)V
 

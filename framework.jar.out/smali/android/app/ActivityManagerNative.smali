@@ -31,7 +31,7 @@
 
     sput-boolean v0, Landroid/app/ActivityManagerNative;->sSystemReady:Z
 
-    .line 1649
+    .line 1659
     new-instance v0, Landroid/app/ActivityManagerNative$1;
 
     invoke-direct {v0}, Landroid/app/ActivityManagerNative$1;-><init>()V
@@ -222,7 +222,7 @@
     .locals 0
 
     .prologue
-    .line 1646
+    .line 1656
     return-object p0
 .end method
 
@@ -242,7 +242,7 @@
     .line 112
     packed-switch p1, :pswitch_data_0
 
-    .line 1642
+    .line 1652
     :pswitch_0
     invoke-super/range {p0 .. p4}, Landroid/os/Binder;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
@@ -8174,9 +8174,45 @@
 
     goto/16 :goto_0
 
-    .line 112
-    nop
+    .line 1642
+    :pswitch_8e
+    const-string v5, "android.app.IActivityManager"
 
+    move-object/from16 v0, p2
+
+    invoke-virtual {v0, v5}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    .line 1643
+    invoke-virtual/range {p0 .. p0}, Landroid/app/ActivityManagerNative;->isSystemReadyOfActivityManagerService()Z
+
+    move-result v156
+
+    .line 1644
+    .restart local v156       #res:Z
+    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
+
+    .line 1645
+    if-eqz v156, :cond_58
+
+    const/4 v5, 0x1
+
+    :goto_50
+    move-object/from16 v0, p3
+
+    invoke-virtual {v0, v5}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 1646
+    const/4 v5, 0x1
+
+    goto/16 :goto_0
+
+    .line 1645
+    :cond_58
+    const/4 v5, 0x0
+
+    goto :goto_50
+
+    .line 112
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_51
@@ -8324,7 +8360,7 @@
         :pswitch_8b
         :pswitch_8c
         :pswitch_8d
-        :pswitch_0
+        :pswitch_8e
         :pswitch_0
         :pswitch_0
         :pswitch_0

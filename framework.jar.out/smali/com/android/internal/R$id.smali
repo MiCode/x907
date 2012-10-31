@@ -879,7 +879,7 @@
 
 .field public static final display_time:I = 0x102029e
 
-.field public static final divider:I = 0x1020445
+.field public static final divider:I = 0x1020446
 
 .field public static final dpad:I = 0x1020233
 
@@ -935,9 +935,9 @@
 
 .field public static final expand_activities_button:I = 0x1020291
 
-.field public static final expand_button:I = 0x1020454
+.field public static final expand_button:I = 0x1020455
 
-.field public static final expand_button_divider:I = 0x1020453
+.field public static final expand_button_divider:I = 0x1020454
 
 .field public static final expanded_menu:I = 0x10202ee
 
@@ -1013,11 +1013,11 @@
 
 .field public static final fill_vertical:I = 0x1020079
 
-.field public static final find:I = 0x1020463
+.field public static final find:I = 0x1020464
 
-.field public static final find_next:I = 0x1020466
+.field public static final find_next:I = 0x1020467
 
-.field public static final find_prev:I = 0x1020465
+.field public static final find_prev:I = 0x1020466
 
 .field public static final finger:I = 0x102022e
 
@@ -1343,7 +1343,7 @@
 
 .field public static final ltr:I = 0x102016e
 
-.field public static final main:I = 0x102044e
+.field public static final main:I = 0x102044f
 
 .field public static final map:I = 0x1020082
 
@@ -1359,7 +1359,7 @@
 
 .field public static final match_parent:I = 0x102017b
 
-.field public static final matches:I = 0x1020458
+.field public static final matches:I = 0x1020459
 
 .field public static final matrix:I = 0x102019b
 
@@ -1393,7 +1393,7 @@
 
 .field public static final modeSmall:I = 0x10201b5
 
-.field public static final mode_normal:I = 0x1020460
+.field public static final mode_normal:I = 0x1020461
 
 .field public static final model_default:I = 0x1020201
 
@@ -1409,7 +1409,7 @@
 
 .field public static final month_name:I = 0x10202be
 
-.field public static final mount_button:I = 0x102044f
+.field public static final mount_button:I = 0x1020450
 
 .field public static final mouth_image:I = 0x10202e4
 
@@ -1777,7 +1777,7 @@
 
 .field public static final selectTextMode:I = 0x102002d
 
-.field public static final select_all:I = 0x1020461
+.field public static final select_all:I = 0x1020462
 
 .field public static final select_amorpm:I = 0x102029f
 
@@ -1813,7 +1813,7 @@
 
 .field public static final sha256_fingerprint_header:I = 0x1020432
 
-.field public static final share:I = 0x1020462
+.field public static final share:I = 0x1020463
 
 .field public static final shortcut:I = 0x102038a
 
@@ -1875,7 +1875,7 @@
 
 .field public static final skip_button:I = 0x10203b6
 
-.field public static final slider_group:I = 0x1020452
+.field public static final slider_group:I = 0x1020453
 
 .field public static final slidetounlock:I = 0x1020418
 
@@ -1899,7 +1899,7 @@
 
 .field public static final spannable:I = 0x10201a5
 
-.field public static final splashscreen:I = 0x1020457
+.field public static final splashscreen:I = 0x1020458
 
 .field public static final splitActionBarWhenNarrow:I = 0x1020240
 
@@ -1939,7 +1939,7 @@
 
 .field public static final stopSelectingText:I = 0x1020029
 
-.field public static final stream_icon:I = 0x1020455
+.field public static final stream_icon:I = 0x1020456
 
 .field public static final stylus:I = 0x102022d
 
@@ -2065,9 +2065,11 @@
 
 .field public static final timeDisplayForeground:I = 0x102034e
 
-.field public static final timePicker:I = 0x1020444
+.field public static final timePicker:I = 0x1020445
 
 .field public static final time_current:I = 0x1020391
+
+.field public static final timepicker_background:I = 0x1020444
 
 .field public static final timepicker_first_line:I = 0x10202a0
 
@@ -2099,7 +2101,7 @@
 
 .field public static final to_org_unit_header:I = 0x1020422
 
-.field public static final toast_layout_root:I = 0x1020449
+.field public static final toast_layout_root:I = 0x102044a
 
 .field public static final together:I = 0x10201d0
 
@@ -2121,11 +2123,11 @@
 
 .field public static final touchscreen:I = 0x102021e
 
-.field public static final touchsearch_popup_content:I = 0x1020446
+.field public static final touchsearch_popup_content:I = 0x1020447
 
-.field public static final touchsearch_popup_content_imageview:I = 0x1020448
+.field public static final touchsearch_popup_content_imageview:I = 0x1020449
 
-.field public static final touchsearch_popup_content_textview:I = 0x1020447
+.field public static final touchsearch_popup_content_textview:I = 0x1020448
 
 .field public static final trackball:I = 0x1020234
 
@@ -2181,19 +2183,19 @@
 
 .field public static final unlock_widget:I = 0x102037a
 
-.field public static final unmount_button:I = 0x1020450
+.field public static final unmount_button:I = 0x1020451
 
 .field public static final unspecified:I = 0x102020a
 
 .field public static final up:I = 0x1020251
 
-.field public static final usb_selection_checkbox:I = 0x102044d
+.field public static final usb_selection_checkbox:I = 0x102044e
 
-.field public static final usb_selection_detail:I = 0x102044c
+.field public static final usb_selection_detail:I = 0x102044d
 
-.field public static final usb_selection_list:I = 0x102044a
+.field public static final usb_selection_list:I = 0x102044b
 
-.field public static final usb_selection_text:I = 0x102044b
+.field public static final usb_selection_text:I = 0x102044c
 
 .field public static final useLogo:I = 0x10201eb
 
@@ -2221,7 +2223,7 @@
 
 .field public static final visible:I = 0x102015e
 
-.field public static final visible_panel:I = 0x1020451
+.field public static final visible_panel:I = 0x1020452
 
 .field public static final voice:I = 0x10201e7
 
@@ -2229,15 +2231,15 @@
 
 .field public static final web:I = 0x1020080
 
-.field public static final websearch:I = 0x1020464
+.field public static final websearch:I = 0x1020465
 
-.field public static final webview:I = 0x1020456
+.field public static final webview:I = 0x1020457
 
 .field public static final wheel:I = 0x1020235
 
 .field public static final widget_frame:I = 0x1020018
 
-.field public static final wifi_p2p_wps_pin:I = 0x1020459
+.field public static final wifi_p2p_wps_pin:I = 0x102045a
 
 .field public static final withText:I = 0x10201de
 
@@ -2257,17 +2259,17 @@
 
 .field public static final zero:I = 0x10203c6
 
-.field public static final zoomControls:I = 0x102045c
+.field public static final zoomControls:I = 0x102045d
 
-.field public static final zoomIn:I = 0x102045e
+.field public static final zoomIn:I = 0x102045f
 
-.field public static final zoomMagnify:I = 0x102045f
+.field public static final zoomMagnify:I = 0x1020460
 
-.field public static final zoomOut:I = 0x102045d
+.field public static final zoomOut:I = 0x102045e
 
-.field public static final zoom_fit_page:I = 0x102045a
+.field public static final zoom_fit_page:I = 0x102045b
 
-.field public static final zoom_page_overview:I = 0x102045b
+.field public static final zoom_page_overview:I = 0x102045c
 
 
 # direct methods
@@ -2275,7 +2277,7 @@
     .locals 0
 
     .prologue
-    .line 16549
+    .line 16614
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void

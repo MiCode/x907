@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 291
+    .line 290
     iput-object p1, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView$3;->this$0:Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 4
 
     .prologue
-    .line 294
+    .line 293
     iget-object v0, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView$3;->this$0:Lcom/android/internal/policy/impl/PowerOnPassWordView;
 
     #getter for: Lcom/android/internal/policy/impl/PowerOnPassWordView;->mHandler:Landroid/os/Handler;
@@ -55,6 +55,6 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 295
+    .line 294
     return-void
 .end method

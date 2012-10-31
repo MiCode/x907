@@ -1292,7 +1292,7 @@
 
     if-eqz p3, :cond_0
 
-    const v0, 0x10803b0
+    const v0, 0x10803c3
 
     :goto_0
     invoke-virtual {v2, v0}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
@@ -1318,7 +1318,7 @@
     .line 156
     .end local v5           #icon:Landroid/graphics/drawable/Drawable;
     :cond_0
-    const v0, 0x1080493
+    const v0, 0x10804a6
 
     goto :goto_0
 .end method
@@ -2188,7 +2188,7 @@
 
     move-result-object v0
 
-    const v1, 0x1080493
+    const v1, 0x10804a6
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -2203,7 +2203,7 @@
 
     move-result-object v0
 
-    const v1, 0x10803b0
+    const v1, 0x10803c3
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -2218,7 +2218,7 @@
 
     move-result-object v0
 
-    const v1, 0x1080321
+    const v1, 0x1080334
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -2233,7 +2233,7 @@
 
     move-result-object v0
 
-    const v1, 0x1080328
+    const v1, 0x108033b
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

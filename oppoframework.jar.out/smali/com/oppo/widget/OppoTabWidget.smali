@@ -2511,7 +2511,7 @@
 
     .line 318
     .local v0, res:Landroid/content/res/Resources;
-    const v1, 0x108060c
+    const v1, 0x108061f
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -2520,7 +2520,7 @@
     iput-object v1, p0, Lcom/oppo/widget/OppoTabWidget;->mTabWidgetBg:Landroid/graphics/drawable/Drawable;
 
     .line 320
-    const v1, 0x108060a
+    const v1, 0x108061d
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -2529,7 +2529,7 @@
     iput-object v1, p0, Lcom/oppo/widget/OppoTabWidget;->mTabHlBg:Landroid/graphics/drawable/Drawable;
 
     .line 323
-    const v1, 0x1080609
+    const v1, 0x108061c
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -2538,7 +2538,7 @@
     iput-object v1, p0, Lcom/oppo/widget/OppoTabWidget;->mTabFocusedBg:Landroid/graphics/drawable/Drawable;
 
     .line 325
-    const v1, 0x108060d
+    const v1, 0x1080620
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

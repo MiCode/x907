@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 1507
+    .line 1508
     iput-object p1, p0, Lcom/android/server/NotificationManagerService$5;->this$0:Lcom/android/server/NotificationManagerService;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -39,16 +39,16 @@
     .parameter "msg"
 
     .prologue
-    .line 1510
+    .line 1511
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 1515
+    .line 1518
     :goto_0
     return-void
 
-    .line 1512
+    .line 1513
     :pswitch_0
     iget-object v0, p0, Lcom/android/server/NotificationManagerService$5;->this$0:Lcom/android/server/NotificationManagerService;
 
@@ -59,9 +59,23 @@
 
     goto :goto_0
 
-    .line 1510
+    .line 1516
+    :pswitch_1
+    iget-object v0, p0, Lcom/android/server/NotificationManagerService$5;->this$0:Lcom/android/server/NotificationManagerService;
+
+    #getter for: Lcom/android/server/NotificationManagerService;->mNotificationCallbacks:Lcom/android/server/StatusBarManagerService$NotificationCallbacks;
+    invoke-static {v0}, Lcom/android/server/NotificationManagerService;->access$2800(Lcom/android/server/NotificationManagerService;)Lcom/android/server/StatusBarManagerService$NotificationCallbacks;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lcom/android/server/StatusBarManagerService$NotificationCallbacks;->onPanelRevealed()V
+
+    goto :goto_0
+
+    .line 1511
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
+        :pswitch_1
     .end packed-switch
 .end method

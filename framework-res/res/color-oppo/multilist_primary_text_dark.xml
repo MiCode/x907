@@ -5,7 +5,7 @@
     <item android:state_window_focused="false" android:color="@color/multilist_text_disabled_color" />
     <item android:state_enabled="false" android:state_selected="true" android:color="@color/text_disabled_color" />
     <item android:state_enabled="false" android:state_pressed="true" android:color="@color/text_disabled_color" />
-    <item android:state_selected="true" android:color="@color/multilist_text_disabled_color_select" />
-    <item android:state_pressed="true" android:color="@color/multilist_text_disabled_color_select" />
+    <item android:state_selected="true" android:color="@color/multilist_text_disabled_color" />
+    <item android:state_pressed="true" android:color="@color/multilist_text_disabled_color" />
     <item android:color="@color/multilist_text_disabled_color" />
 </selector>

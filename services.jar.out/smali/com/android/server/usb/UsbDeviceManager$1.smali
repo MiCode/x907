@@ -69,13 +69,23 @@
     invoke-static {v2, v3}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 124
+    iget-object v2, p0, Lcom/android/server/usb/UsbDeviceManager$1;->this$0:Lcom/android/server/usb/UsbDeviceManager;
+
+    #getter for: Lcom/android/server/usb/UsbDeviceManager;->mHandler:Lcom/android/server/usb/UsbDeviceManager$UsbHandler;
+    invoke-static {v2}, Lcom/android/server/usb/UsbDeviceManager;->access$100(Lcom/android/server/usb/UsbDeviceManager;)Lcom/android/server/usb/UsbDeviceManager$UsbHandler;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_0
+
+    .line 127
     const-string v2, "USB_STATE"
 
     invoke-virtual {p1, v2}, Landroid/os/UEventObserver$UEvent;->get(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 125
+    .line 128
     .local v1, state:Ljava/lang/String;
     const-string v2, "ACCESSORY"
 
@@ -83,11 +93,11 @@
 
     move-result-object v0
 
-    .line 126
+    .line 129
     .local v0, accessory:Ljava/lang/String;
     if-eqz v1, :cond_1
 
-    .line 127
+    .line 130
     iget-object v2, p0, Lcom/android/server/usb/UsbDeviceManager$1;->this$0:Lcom/android/server/usb/UsbDeviceManager;
 
     #getter for: Lcom/android/server/usb/UsbDeviceManager;->mHandler:Lcom/android/server/usb/UsbDeviceManager$UsbHandler;
@@ -97,12 +107,16 @@
 
     invoke-virtual {v2, v1}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->updateState(Ljava/lang/String;)V
 
-    .line 132
+    .line 138
+    .end local v0           #accessory:Ljava/lang/String;
+    .end local v1           #state:Ljava/lang/String;
     :cond_0
     :goto_0
     return-void
 
-    .line 128
+    .line 131
+    .restart local v0       #accessory:Ljava/lang/String;
+    .restart local v1       #state:Ljava/lang/String;
     :cond_1
     const-string v2, "START"
 
@@ -112,7 +126,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 129
+    .line 132
     invoke-static {}, Lcom/android/server/usb/UsbDeviceManager;->access$200()Ljava/lang/String;
 
     move-result-object v2
@@ -121,7 +135,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 130
+    .line 133
     iget-object v2, p0, Lcom/android/server/usb/UsbDeviceManager$1;->this$0:Lcom/android/server/usb/UsbDeviceManager;
 
     const-string v3, "accessory"

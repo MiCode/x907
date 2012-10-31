@@ -38,7 +38,7 @@
     .line 46
     new-instance v0, Landroid/view/ContextThemeWrapper;
 
-    const v1, 0x103031a
+    const v1, 0x103031c
 
     invoke-direct {v0, p1, v1}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
 

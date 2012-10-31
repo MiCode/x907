@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final ActiveWallpaperSettings:I = 0x1030312
+.field public static final ActiveWallpaperSettings:I = 0x1030314
 
 .field public static final AlertDialog:I = 0x10301d8
 
-.field public static final AlertDialog_DeviceDefault:I = 0x103030a
+.field public static final AlertDialog_DeviceDefault:I = 0x103030c
 
-.field public static final AlertDialog_DeviceDefault_Light:I = 0x103030b
+.field public static final AlertDialog_DeviceDefault_Light:I = 0x103030d
 
 .field public static final AlertDialog_Holo:I = 0x1030294
 
@@ -31,13 +31,13 @@
 
 .field public static final Animation_Activity:I = 0x1030001
 
-.field public static final Animation_ClipBoardSelectClipSource:I = 0x10302af
+.field public static final Animation_ClipBoardSelectClipSource:I = 0x10302b1
 
-.field public static final Animation_ClipListSelectClipSource:I = 0x10302ae
+.field public static final Animation_ClipListSelectClipSource:I = 0x10302b0
 
-.field public static final Animation_DeviceDefault_Activity:I = 0x103030c
+.field public static final Animation_DeviceDefault_Activity:I = 0x103030e
 
-.field public static final Animation_DeviceDefault_Dialog:I = 0x103030d
+.field public static final Animation_DeviceDefault_Dialog:I = 0x103030f
 
 .field public static final Animation_Dialog:I = 0x1030002
 
@@ -59,17 +59,17 @@
 
 .field public static final Animation_OptionsPanel:I = 0x10301db
 
-.field public static final Animation_PopupMenu_BottomLeft:I = 0x10302b7
+.field public static final Animation_PopupMenu_BottomLeft:I = 0x10302b9
 
-.field public static final Animation_PopupMenu_BottomMiddle:I = 0x10302b8
+.field public static final Animation_PopupMenu_BottomMiddle:I = 0x10302ba
 
-.field public static final Animation_PopupMenu_BottomRight:I = 0x10302b9
+.field public static final Animation_PopupMenu_BottomRight:I = 0x10302bb
 
-.field public static final Animation_PopupMenu_TopLeft:I = 0x10302b4
+.field public static final Animation_PopupMenu_TopLeft:I = 0x10302b6
 
-.field public static final Animation_PopupMenu_TopMiddle:I = 0x10302b5
+.field public static final Animation_PopupMenu_TopMiddle:I = 0x10302b7
 
-.field public static final Animation_PopupMenu_TopRight:I = 0x10302b6
+.field public static final Animation_PopupMenu_TopRight:I = 0x10302b8
 
 .field public static final Animation_PopupWindow:I = 0x10301e6
 
@@ -79,7 +79,7 @@
 
 .field public static final Animation_SearchBar:I = 0x10301e2
 
-.field public static final Animation_SelectShortCutSource:I = 0x10302ac
+.field public static final Animation_SelectShortCutSource:I = 0x10302ae
 
 .field public static final Animation_SubMenuPanel:I = 0x10301dc
 
@@ -115,29 +115,29 @@
 
 .field public static final DialogWindowTitle:I = 0x10301d7
 
-.field public static final DialogWindowTitle_DeviceDefault:I = 0x103030e
+.field public static final DialogWindowTitle_DeviceDefault:I = 0x1030310
 
-.field public static final DialogWindowTitle_DeviceDefault_Light:I = 0x103030f
+.field public static final DialogWindowTitle_DeviceDefault_Light:I = 0x1030311
 
 .field public static final DialogWindowTitle_Holo:I = 0x1030298
 
 .field public static final DialogWindowTitle_Holo_Light:I = 0x1030299
 
-.field public static final Dialog_Button_TextAppearance_style:I = 0x10302bd
+.field public static final Dialog_Button_TextAppearance_style:I = 0x10302bf
 
-.field public static final Dialog_Content_TextAppearance_style:I = 0x10302bc
+.field public static final Dialog_Content_TextAppearance_style:I = 0x10302be
 
-.field public static final Dialog_Title_TextAppearance_style:I = 0x10302bb
+.field public static final Dialog_Title_TextAppearance_style:I = 0x10302bd
 
-.field public static final DummyAnimation:I = 0x10302a6
+.field public static final DummyAnimation:I = 0x10302a8
 
-.field public static final Floatwindow:I = 0x1030325
+.field public static final Floatwindow:I = 0x1030327
 
-.field public static final Floatwindow_style:I = 0x10302c0
+.field public static final Floatwindow_style:I = 0x10302c2
 
-.field public static final FullyTranslucent:I = 0x10302a1
+.field public static final FullyTranslucent:I = 0x10302a3
 
-.field public static final FullyTranslucent_QuickContact:I = 0x10302a2
+.field public static final FullyTranslucent_QuickContact:I = 0x10302a4
 
 .field public static final Holo:I = 0x1030251
 
@@ -155,7 +155,7 @@
 
 .field public static final Holo_SegmentedButton:I = 0x10300e9
 
-.field public static final LockScreenNoFramedialog:I = 0x10302c1
+.field public static final LockScreenNoFramedialog:I = 0x10302c3
 
 .field public static final MediaButton:I = 0x1030037
 
@@ -171,21 +171,21 @@
 
 .field public static final MediaButton_Rew:I = 0x103003c
 
-.field public static final NoTitleBarStyle:I = 0x10302a0
+.field public static final NoTitleBarStyle:I = 0x10302a2
 
-.field public static final OppoEditText:I = 0x10302c2
+.field public static final OppoEditText:I = 0x10302c4
 
-.field public static final OppoQuickContact_Name_TextAppearance_style:I = 0x10302a9
+.field public static final OppoQuickContact_Name_TextAppearance_style:I = 0x10302ab
 
-.field public static final OppoQuickContact_Number_TextAppearance_style:I = 0x10302aa
+.field public static final OppoQuickContact_Number_TextAppearance_style:I = 0x10302ac
 
-.field public static final OppoSpringListView:I = 0x10302a7
+.field public static final OppoSpringListView:I = 0x10302a9
 
-.field public static final OppoTouchSearch_PopupWindow_Animation:I = 0x10302b1
+.field public static final OppoTouchSearch_PopupWindow_Animation:I = 0x10302b3
 
-.field public static final PasswordTextAppearance:I = 0x10302ad
+.field public static final PasswordTextAppearance:I = 0x10302af
 
-.field public static final PathBar_TextAppearance_style:I = 0x10302a8
+.field public static final PathBar_TextAppearance_style:I = 0x10302aa
 
 .field public static final Pointer:I = 0x103029b
 
@@ -203,25 +203,25 @@
 
 .field public static final Preference_CheckBoxPreference:I = 0x1030217
 
-.field public static final Preference_DeviceDefault:I = 0x1030300
+.field public static final Preference_DeviceDefault:I = 0x1030302
 
-.field public static final Preference_DeviceDefault_Category:I = 0x1030301
+.field public static final Preference_DeviceDefault_Category:I = 0x1030303
 
-.field public static final Preference_DeviceDefault_CheckBoxPreference:I = 0x1030302
+.field public static final Preference_DeviceDefault_CheckBoxPreference:I = 0x1030304
 
-.field public static final Preference_DeviceDefault_DialogPreference:I = 0x1030303
+.field public static final Preference_DeviceDefault_DialogPreference:I = 0x1030305
 
-.field public static final Preference_DeviceDefault_DialogPreference_EditTextPreference:I = 0x1030304
+.field public static final Preference_DeviceDefault_DialogPreference_EditTextPreference:I = 0x1030306
 
-.field public static final Preference_DeviceDefault_DialogPreference_YesNoPreference:I = 0x1030305
+.field public static final Preference_DeviceDefault_DialogPreference_YesNoPreference:I = 0x1030307
 
-.field public static final Preference_DeviceDefault_Information:I = 0x1030306
+.field public static final Preference_DeviceDefault_Information:I = 0x1030308
 
-.field public static final Preference_DeviceDefault_PreferenceScreen:I = 0x1030307
+.field public static final Preference_DeviceDefault_PreferenceScreen:I = 0x1030309
 
-.field public static final Preference_DeviceDefault_RingtonePreference:I = 0x1030308
+.field public static final Preference_DeviceDefault_RingtonePreference:I = 0x103030a
 
-.field public static final Preference_DeviceDefault_SwitchPreference:I = 0x1030309
+.field public static final Preference_DeviceDefault_SwitchPreference:I = 0x103030b
 
 .field public static final Preference_DialogPreference:I = 0x103021a
 
@@ -257,25 +257,25 @@
 
 .field public static final Preference_SwitchPreference:I = 0x1030218
 
-.field public static final PreviewWallpaperSettings:I = 0x1030313
+.field public static final PreviewWallpaperSettings:I = 0x1030315
 
-.field public static final QuickContact:I = 0x10302a3
+.field public static final QuickContact:I = 0x10302a5
 
-.field public static final QuickContactAboveAnimation:I = 0x10302a4
+.field public static final QuickContactAboveAnimation:I = 0x10302a6
 
-.field public static final QuickContactBelowAnimation:I = 0x10302a5
+.field public static final QuickContactBelowAnimation:I = 0x10302a7
 
 .field public static final SegmentedButton:I = 0x103022c
 
-.field public static final ShortCutButtonTextAppearance:I = 0x10302b3
+.field public static final ShortCutButtonTextAppearance:I = 0x10302b5
 
-.field public static final ShortCutListTextAppearance:I = 0x10302b2
+.field public static final ShortCutListTextAppearance:I = 0x10302b4
 
 .field public static final TextAppearance:I = 0x103003e
 
 .field public static final TextAppearance_AutoCorrectionSuggestion:I = 0x10301f2
 
-.field public static final TextAppearance_DefaultEditText:I = 0x10302be
+.field public static final TextAppearance_DefaultEditText:I = 0x10302c0
 
 .field public static final TextAppearance_DeviceDefault:I = 0x10301ad
 
@@ -287,31 +287,31 @@
 
 .field public static final TextAppearance_DeviceDefault_Large_Inverse:I = 0x10301b0
 
-.field public static final TextAppearance_DeviceDefault_Light:I = 0x10302f3
+.field public static final TextAppearance_DeviceDefault_Light:I = 0x10302f5
 
-.field public static final TextAppearance_DeviceDefault_Light_Inverse:I = 0x10302f4
+.field public static final TextAppearance_DeviceDefault_Light_Inverse:I = 0x10302f6
 
-.field public static final TextAppearance_DeviceDefault_Light_Large:I = 0x10302f5
+.field public static final TextAppearance_DeviceDefault_Light_Large:I = 0x10302f7
 
-.field public static final TextAppearance_DeviceDefault_Light_Large_Inverse:I = 0x10302f6
+.field public static final TextAppearance_DeviceDefault_Light_Large_Inverse:I = 0x10302f8
 
-.field public static final TextAppearance_DeviceDefault_Light_Medium:I = 0x10302f7
+.field public static final TextAppearance_DeviceDefault_Light_Medium:I = 0x10302f9
 
-.field public static final TextAppearance_DeviceDefault_Light_Medium_Inverse:I = 0x10302f8
+.field public static final TextAppearance_DeviceDefault_Light_Medium_Inverse:I = 0x10302fa
 
-.field public static final TextAppearance_DeviceDefault_Light_SearchResult_Subtitle:I = 0x10302f9
+.field public static final TextAppearance_DeviceDefault_Light_SearchResult_Subtitle:I = 0x10302fb
 
-.field public static final TextAppearance_DeviceDefault_Light_SearchResult_Title:I = 0x10302fa
+.field public static final TextAppearance_DeviceDefault_Light_SearchResult_Title:I = 0x10302fc
 
-.field public static final TextAppearance_DeviceDefault_Light_Small:I = 0x10302fb
+.field public static final TextAppearance_DeviceDefault_Light_Small:I = 0x10302fd
 
-.field public static final TextAppearance_DeviceDefault_Light_Small_Inverse:I = 0x10302fc
+.field public static final TextAppearance_DeviceDefault_Light_Small_Inverse:I = 0x10302fe
 
-.field public static final TextAppearance_DeviceDefault_Light_Widget_Button:I = 0x10302fd
+.field public static final TextAppearance_DeviceDefault_Light_Widget_Button:I = 0x10302ff
 
-.field public static final TextAppearance_DeviceDefault_Light_Widget_PopupMenu_Large:I = 0x10302fe
+.field public static final TextAppearance_DeviceDefault_Light_Widget_PopupMenu_Large:I = 0x1030300
 
-.field public static final TextAppearance_DeviceDefault_Light_Widget_PopupMenu_Small:I = 0x10302ff
+.field public static final TextAppearance_DeviceDefault_Light_Widget_PopupMenu_Small:I = 0x1030301
 
 .field public static final TextAppearance_DeviceDefault_Medium:I = 0x10301b1
 
@@ -374,6 +374,8 @@
 .field public static final TextAppearance_DialogWindowTitle:I = 0x1030041
 
 .field public static final TextAppearance_EasyCorrectSuggestion:I = 0x10301f0
+
+.field public static final TextAppearance_ExpandedView:I = 0x103029f
 
 .field public static final TextAppearance_Holo:I = 0x10300fb
 
@@ -547,11 +549,13 @@
 
 .field public static final TextAppearance_StatusBar_Title:I = 0x1030065
 
-.field public static final TextAppearance_SubSmall:I = 0x10302ba
+.field public static final TextAppearance_SubSmall:I = 0x10302bc
 
 .field public static final TextAppearance_Suggestion:I = 0x10301ef
 
 .field public static final TextAppearance_SuggestionHighlight:I = 0x1030118
+
+.field public static final TextAppearance_TextView:I = 0x103029e
 
 .field public static final TextAppearance_Theme:I = 0x1030040
 
@@ -579,7 +583,7 @@
 
 .field public static final TextAppearance_Widget_IconMenu_Item:I = 0x103004b
 
-.field public static final TextAppearance_Widget_OppoTabWidget:I = 0x10302bf
+.field public static final TextAppearance_Widget_OppoTabWidget:I = 0x10302c1
 
 .field public static final TextAppearance_Widget_PopupMenu:I = 0x1030235
 
@@ -613,7 +617,7 @@
 
 .field public static final Theme_DeviceDefault_DialogWhenLarge_NoActionBar:I = 0x1030137
 
-.field public static final Theme_DeviceDefault_Dialog_Alert:I = 0x1030326
+.field public static final Theme_DeviceDefault_Dialog_Alert:I = 0x1030328
 
 .field public static final Theme_DeviceDefault_Dialog_MinWidth:I = 0x103012f
 
@@ -621,7 +625,7 @@
 
 .field public static final Theme_DeviceDefault_Dialog_NoActionBar_MinWidth:I = 0x1030131
 
-.field public static final Theme_DeviceDefault_Dialog_NoFrame:I = 0x103032a
+.field public static final Theme_DeviceDefault_Dialog_NoFrame:I = 0x103032c
 
 .field public static final Theme_DeviceDefault_InputMethod:I = 0x103013e
 
@@ -635,7 +639,7 @@
 
 .field public static final Theme_DeviceDefault_Light_DialogWhenLarge_NoActionBar:I = 0x1030139
 
-.field public static final Theme_DeviceDefault_Light_Dialog_Alert:I = 0x1030327
+.field public static final Theme_DeviceDefault_Light_Dialog_Alert:I = 0x1030329
 
 .field public static final Theme_DeviceDefault_Light_Dialog_MinWidth:I = 0x1030133
 
@@ -649,7 +653,7 @@
 
 .field public static final Theme_DeviceDefault_Light_Panel:I = 0x103013b
 
-.field public static final Theme_DeviceDefault_Light_SearchBar:I = 0x1030329
+.field public static final Theme_DeviceDefault_Light_SearchBar:I = 0x103032b
 
 .field public static final Theme_DeviceDefault_NoActionBar:I = 0x1030129
 
@@ -657,7 +661,7 @@
 
 .field public static final Theme_DeviceDefault_Panel:I = 0x103013a
 
-.field public static final Theme_DeviceDefault_SearchBar:I = 0x1030328
+.field public static final Theme_DeviceDefault_SearchBar:I = 0x103032a
 
 .field public static final Theme_DeviceDefault_Wallpaper:I = 0x103013c
 
@@ -665,21 +669,21 @@
 
 .field public static final Theme_Dialog:I = 0x103000b
 
-.field public static final Theme_Dialog_Alert:I = 0x1030315
+.field public static final Theme_Dialog_Alert:I = 0x1030317
 
-.field public static final Theme_Dialog_AppError:I = 0x103031e
+.field public static final Theme_Dialog_AppError:I = 0x1030320
 
-.field public static final Theme_Dialog_NoFrame:I = 0x1030314
+.field public static final Theme_Dialog_NoFrame:I = 0x1030316
 
-.field public static final Theme_Dialog_RecentApplications:I = 0x103031f
+.field public static final Theme_Dialog_RecentApplications:I = 0x1030321
 
-.field public static final Theme_ExpandedMenu:I = 0x103031b
+.field public static final Theme_ExpandedMenu:I = 0x103031d
 
-.field public static final Theme_GlobalSearchBar:I = 0x1030319
+.field public static final Theme_GlobalSearchBar:I = 0x103031b
 
 .field public static final Theme_Holo:I = 0x103006b
 
-.field public static final Theme_Holo_CompactMenu:I = 0x103031c
+.field public static final Theme_Holo_CompactMenu:I = 0x103031e
 
 .field public static final Theme_Holo_Dialog:I = 0x103006f
 
@@ -687,7 +691,7 @@
 
 .field public static final Theme_Holo_DialogWhenLarge_NoActionBar:I = 0x1030078
 
-.field public static final Theme_Holo_Dialog_Alert:I = 0x1030323
+.field public static final Theme_Holo_Dialog_Alert:I = 0x1030325
 
 .field public static final Theme_Holo_Dialog_MinWidth:I = 0x1030070
 
@@ -695,13 +699,13 @@
 
 .field public static final Theme_Holo_Dialog_NoActionBar_MinWidth:I = 0x1030072
 
-.field public static final Theme_Holo_Dialog_NoFrame:I = 0x1030322
+.field public static final Theme_Holo_Dialog_NoFrame:I = 0x1030324
 
 .field public static final Theme_Holo_InputMethod:I = 0x103007f
 
 .field public static final Theme_Holo_Light:I = 0x103006e
 
-.field public static final Theme_Holo_Light_CompactMenu:I = 0x103031d
+.field public static final Theme_Holo_Light_CompactMenu:I = 0x103031f
 
 .field public static final Theme_Holo_Light_DarkActionBar:I = 0x1030119
 
@@ -711,7 +715,7 @@
 
 .field public static final Theme_Holo_Light_DialogWhenLarge_NoActionBar:I = 0x103007a
 
-.field public static final Theme_Holo_Light_Dialog_Alert:I = 0x1030324
+.field public static final Theme_Holo_Light_Dialog_Alert:I = 0x1030326
 
 .field public static final Theme_Holo_Light_Dialog_MinWidth:I = 0x1030074
 
@@ -725,7 +729,7 @@
 
 .field public static final Theme_Holo_Light_Panel:I = 0x103007c
 
-.field public static final Theme_Holo_Light_SearchBar:I = 0x1030318
+.field public static final Theme_Holo_Light_SearchBar:I = 0x103031a
 
 .field public static final Theme_Holo_NoActionBar:I = 0x103006c
 
@@ -733,13 +737,13 @@
 
 .field public static final Theme_Holo_Panel:I = 0x103007b
 
-.field public static final Theme_Holo_SearchBar:I = 0x1030317
+.field public static final Theme_Holo_SearchBar:I = 0x1030319
 
 .field public static final Theme_Holo_Wallpaper:I = 0x103007d
 
 .field public static final Theme_Holo_Wallpaper_NoTitleBar:I = 0x103007e
 
-.field public static final Theme_IconMenu:I = 0x103031a
+.field public static final Theme_IconMenu:I = 0x103031c
 
 .field public static final Theme_InputMethod:I = 0x1030054
 
@@ -761,17 +765,17 @@
 
 .field public static final Theme_NoTitleBar_OverlayActionModes:I = 0x103006a
 
-.field public static final Theme_Overlay_NoTitleBar_Fullscreen:I = 0x103029f
+.field public static final Theme_Overlay_NoTitleBar_Fullscreen:I = 0x10302a1
 
 .field public static final Theme_Panel:I = 0x1030059
 
-.field public static final Theme_Panel_Volume:I = 0x1030321
+.field public static final Theme_Panel_Volume:I = 0x1030323
 
-.field public static final Theme_SearchBar:I = 0x1030316
+.field public static final Theme_SearchBar:I = 0x1030318
 
-.field public static final Theme_SelectShortCutSource:I = 0x10302ab
+.field public static final Theme_SelectShortCutSource:I = 0x10302ad
 
-.field public static final Theme_Toast:I = 0x1030320
+.field public static final Theme_Toast:I = 0x1030322
 
 .field public static final Theme_Translucent:I = 0x103000f
 
@@ -789,7 +793,7 @@
 
 .field public static final Theme_WithActionBar:I = 0x1030069
 
-.field public static final TimePickerDisplayTime_TextAppearance_style:I = 0x10302b0
+.field public static final TimePickerDisplayTime_TextAppearance_style:I = 0x10302b2
 
 .field public static final Widget:I = 0x1030012
 
@@ -841,7 +845,7 @@
 
 .field public static final Widget_DeviceDefault:I = 0x1030140
 
-.field public static final Widget_DeviceDefault_AbsListView:I = 0x10302c3
+.field public static final Widget_DeviceDefault_AbsListView:I = 0x10302c5
 
 .field public static final Widget_DeviceDefault_ActionBar:I = 0x103016b
 
@@ -885,7 +889,7 @@
 
 .field public static final Widget_DeviceDefault_CompoundButton_Star:I = 0x103015d
 
-.field public static final Widget_DeviceDefault_CompoundButton_Switch:I = 0x10302c6
+.field public static final Widget_DeviceDefault_CompoundButton_Switch:I = 0x10302c8
 
 .field public static final Widget_DeviceDefault_DatePicker:I = 0x103016f
 
@@ -895,15 +899,15 @@
 
 .field public static final Widget_DeviceDefault_EditText:I = 0x103014a
 
-.field public static final Widget_DeviceDefault_EditText_NumberPickerInputText:I = 0x10302c7
+.field public static final Widget_DeviceDefault_EditText_NumberPickerInputText:I = 0x10302c9
 
 .field public static final Widget_DeviceDefault_ExpandableListView:I = 0x103014b
 
-.field public static final Widget_DeviceDefault_ExpandableListView_White:I = 0x10302c8
+.field public static final Widget_DeviceDefault_ExpandableListView_White:I = 0x10302ca
 
-.field public static final Widget_DeviceDefault_Gallery:I = 0x10302c9
+.field public static final Widget_DeviceDefault_Gallery:I = 0x10302cb
 
-.field public static final Widget_DeviceDefault_GestureOverlayView:I = 0x10302ca
+.field public static final Widget_DeviceDefault_GestureOverlayView:I = 0x10302cc
 
 .field public static final Widget_DeviceDefault_GridView:I = 0x103014c
 
@@ -911,17 +915,17 @@
 
 .field public static final Widget_DeviceDefault_ImageButton:I = 0x103014d
 
-.field public static final Widget_DeviceDefault_ImageButton_NumberPickerDownButton:I = 0x10302cb
+.field public static final Widget_DeviceDefault_ImageButton_NumberPickerDownButton:I = 0x10302cd
 
-.field public static final Widget_DeviceDefault_ImageButton_NumberPickerUpButton:I = 0x10302cc
+.field public static final Widget_DeviceDefault_ImageButton_NumberPickerUpButton:I = 0x10302ce
 
-.field public static final Widget_DeviceDefault_ImageWell:I = 0x10302cd
+.field public static final Widget_DeviceDefault_ImageWell:I = 0x10302cf
 
-.field public static final Widget_DeviceDefault_KeyboardView:I = 0x10302ce
+.field public static final Widget_DeviceDefault_KeyboardView:I = 0x10302d0
 
 .field public static final Widget_DeviceDefault_Light:I = 0x1030174
 
-.field public static final Widget_DeviceDefault_Light_AbsListView:I = 0x10302e1
+.field public static final Widget_DeviceDefault_Light_AbsListView:I = 0x10302e3
 
 .field public static final Widget_DeviceDefault_Light_ActionBar:I = 0x10301a3
 
@@ -955,7 +959,7 @@
 
 .field public static final Widget_DeviceDefault_Light_Button:I = 0x1030175
 
-.field public static final Widget_DeviceDefault_Light_Button_Borderless:I = 0x10302e4
+.field public static final Widget_DeviceDefault_Light_Button_Borderless:I = 0x10302e6
 
 .field public static final Widget_DeviceDefault_Light_Button_Borderless_Small:I = 0x1030179
 
@@ -973,7 +977,7 @@
 
 .field public static final Widget_DeviceDefault_Light_CompoundButton_Star:I = 0x1030194
 
-.field public static final Widget_DeviceDefault_Light_DatePicker:I = 0x10302e5
+.field public static final Widget_DeviceDefault_Light_DatePicker:I = 0x10302e7
 
 .field public static final Widget_DeviceDefault_Light_DropDownItem:I = 0x1030198
 
@@ -981,15 +985,15 @@
 
 .field public static final Widget_DeviceDefault_Light_EditText:I = 0x103017e
 
-.field public static final Widget_DeviceDefault_Light_EditText_NumberPickerInputText:I = 0x10302e6
+.field public static final Widget_DeviceDefault_Light_EditText_NumberPickerInputText:I = 0x10302e8
 
 .field public static final Widget_DeviceDefault_Light_ExpandableListView:I = 0x103017f
 
-.field public static final Widget_DeviceDefault_Light_ExpandableListView_White:I = 0x10302e7
+.field public static final Widget_DeviceDefault_Light_ExpandableListView_White:I = 0x10302e9
 
-.field public static final Widget_DeviceDefault_Light_Gallery:I = 0x10302e8
+.field public static final Widget_DeviceDefault_Light_Gallery:I = 0x10302ea
 
-.field public static final Widget_DeviceDefault_Light_GestureOverlayView:I = 0x10302e9
+.field public static final Widget_DeviceDefault_Light_GestureOverlayView:I = 0x10302eb
 
 .field public static final Widget_DeviceDefault_Light_GridView:I = 0x1030180
 
@@ -997,11 +1001,11 @@
 
 .field public static final Widget_DeviceDefault_Light_ImageButton:I = 0x1030181
 
-.field public static final Widget_DeviceDefault_Light_ImageButton_NumberPickerDownButton:I = 0x10302ea
+.field public static final Widget_DeviceDefault_Light_ImageButton_NumberPickerDownButton:I = 0x10302ec
 
-.field public static final Widget_DeviceDefault_Light_ImageButton_NumberPickerUpButton:I = 0x10302eb
+.field public static final Widget_DeviceDefault_Light_ImageButton_NumberPickerUpButton:I = 0x10302ed
 
-.field public static final Widget_DeviceDefault_Light_ImageWell:I = 0x10302ec
+.field public static final Widget_DeviceDefault_Light_ImageWell:I = 0x10302ee
 
 .field public static final Widget_DeviceDefault_Light_ListPopupWindow:I = 0x103019b
 
@@ -1009,15 +1013,15 @@
 
 .field public static final Widget_DeviceDefault_Light_ListView_DropDown:I = 0x103017d
 
-.field public static final Widget_DeviceDefault_Light_ListView_White:I = 0x10302ed
+.field public static final Widget_DeviceDefault_Light_ListView_White:I = 0x10302ef
 
-.field public static final Widget_DeviceDefault_Light_NumberPicker:I = 0x10302ee
+.field public static final Widget_DeviceDefault_Light_NumberPicker:I = 0x10302f0
 
 .field public static final Widget_DeviceDefault_Light_PopupMenu:I = 0x103019c
 
 .field public static final Widget_DeviceDefault_Light_PopupWindow:I = 0x1030183
 
-.field public static final Widget_DeviceDefault_Light_PopupWindow_ActionMode:I = 0x10302e3
+.field public static final Widget_DeviceDefault_Light_PopupWindow_ActionMode:I = 0x10302e5
 
 .field public static final Widget_DeviceDefault_Light_ProgressBar:I = 0x1030184
 
@@ -1047,23 +1051,23 @@
 
 .field public static final Widget_DeviceDefault_Light_Spinner:I = 0x1030193
 
-.field public static final Widget_DeviceDefault_Light_Spinner_DropDown:I = 0x10302ef
+.field public static final Widget_DeviceDefault_Light_Spinner_DropDown:I = 0x10302f1
 
-.field public static final Widget_DeviceDefault_Light_Spinner_DropDown_ActionBar:I = 0x10302e2
+.field public static final Widget_DeviceDefault_Light_Spinner_DropDown_ActionBar:I = 0x10302e4
 
 .field public static final Widget_DeviceDefault_Light_Tab:I = 0x103019d
 
 .field public static final Widget_DeviceDefault_Light_TabWidget:I = 0x1030195
 
-.field public static final Widget_DeviceDefault_Light_TextSuggestionsPopupWindow:I = 0x10302f2
+.field public static final Widget_DeviceDefault_Light_TextSuggestionsPopupWindow:I = 0x10302f4
 
 .field public static final Widget_DeviceDefault_Light_TextView:I = 0x103017a
 
-.field public static final Widget_DeviceDefault_Light_TextView_ListSeparator:I = 0x10302f0
+.field public static final Widget_DeviceDefault_Light_TextView_ListSeparator:I = 0x10302f2
 
 .field public static final Widget_DeviceDefault_Light_TextView_SpinnerItem:I = 0x103019a
 
-.field public static final Widget_DeviceDefault_Light_TimePicker:I = 0x10302f1
+.field public static final Widget_DeviceDefault_Light_TimePicker:I = 0x10302f3
 
 .field public static final Widget_DeviceDefault_Light_WebTextView:I = 0x1030196
 
@@ -1075,45 +1079,45 @@
 
 .field public static final Widget_DeviceDefault_ListView_DropDown:I = 0x1030149
 
-.field public static final Widget_DeviceDefault_ListView_White:I = 0x10302cf
+.field public static final Widget_DeviceDefault_ListView_White:I = 0x10302d1
 
-.field public static final Widget_DeviceDefault_NumberPicker:I = 0x10302d0
+.field public static final Widget_DeviceDefault_NumberPicker:I = 0x10302d2
 
 .field public static final Widget_DeviceDefault_PopupMenu:I = 0x1030165
 
 .field public static final Widget_DeviceDefault_PopupWindow:I = 0x103014f
 
-.field public static final Widget_DeviceDefault_PopupWindow_ActionMode:I = 0x10302c5
+.field public static final Widget_DeviceDefault_PopupWindow_ActionMode:I = 0x10302c7
 
-.field public static final Widget_DeviceDefault_PreferenceFrameLayout:I = 0x10302d1
+.field public static final Widget_DeviceDefault_PreferenceFrameLayout:I = 0x10302d3
 
 .field public static final Widget_DeviceDefault_ProgressBar:I = 0x1030150
 
 .field public static final Widget_DeviceDefault_ProgressBar_Horizontal:I = 0x1030151
 
-.field public static final Widget_DeviceDefault_ProgressBar_Inverse:I = 0x10302d2
+.field public static final Widget_DeviceDefault_ProgressBar_Inverse:I = 0x10302d4
 
 .field public static final Widget_DeviceDefault_ProgressBar_Large:I = 0x1030154
 
-.field public static final Widget_DeviceDefault_ProgressBar_Large_Inverse:I = 0x10302d3
+.field public static final Widget_DeviceDefault_ProgressBar_Large_Inverse:I = 0x10302d5
 
 .field public static final Widget_DeviceDefault_ProgressBar_Small:I = 0x1030152
 
-.field public static final Widget_DeviceDefault_ProgressBar_Small_Inverse:I = 0x10302d4
+.field public static final Widget_DeviceDefault_ProgressBar_Small_Inverse:I = 0x10302d6
 
 .field public static final Widget_DeviceDefault_ProgressBar_Small_Title:I = 0x1030153
 
-.field public static final Widget_DeviceDefault_QuickContactBadgeSmall_WindowLarge:I = 0x10302d8
+.field public static final Widget_DeviceDefault_QuickContactBadgeSmall_WindowLarge:I = 0x10302da
 
-.field public static final Widget_DeviceDefault_QuickContactBadgeSmall_WindowMedium:I = 0x10302d9
+.field public static final Widget_DeviceDefault_QuickContactBadgeSmall_WindowMedium:I = 0x10302db
 
-.field public static final Widget_DeviceDefault_QuickContactBadgeSmall_WindowSmall:I = 0x10302da
+.field public static final Widget_DeviceDefault_QuickContactBadgeSmall_WindowSmall:I = 0x10302dc
 
-.field public static final Widget_DeviceDefault_QuickContactBadge_WindowLarge:I = 0x10302d5
+.field public static final Widget_DeviceDefault_QuickContactBadge_WindowLarge:I = 0x10302d7
 
-.field public static final Widget_DeviceDefault_QuickContactBadge_WindowMedium:I = 0x10302d6
+.field public static final Widget_DeviceDefault_QuickContactBadge_WindowMedium:I = 0x10302d8
 
-.field public static final Widget_DeviceDefault_QuickContactBadge_WindowSmall:I = 0x10302d7
+.field public static final Widget_DeviceDefault_QuickContactBadge_WindowSmall:I = 0x10302d9
 
 .field public static final Widget_DeviceDefault_RatingBar:I = 0x1030156
 
@@ -1127,27 +1131,27 @@
 
 .field public static final Widget_DeviceDefault_Spinner:I = 0x103015c
 
-.field public static final Widget_DeviceDefault_Spinner_DropDown:I = 0x10302db
+.field public static final Widget_DeviceDefault_Spinner_DropDown:I = 0x10302dd
 
-.field public static final Widget_DeviceDefault_Spinner_DropDown_ActionBar:I = 0x10302c4
+.field public static final Widget_DeviceDefault_Spinner_DropDown_ActionBar:I = 0x10302c6
 
-.field public static final Widget_DeviceDefault_StackView:I = 0x10302dc
+.field public static final Widget_DeviceDefault_StackView:I = 0x10302de
 
 .field public static final Widget_DeviceDefault_Tab:I = 0x103016d
 
 .field public static final Widget_DeviceDefault_TabWidget:I = 0x103015e
 
-.field public static final Widget_DeviceDefault_TextSelectHandle:I = 0x10302dd
+.field public static final Widget_DeviceDefault_TextSelectHandle:I = 0x10302df
 
-.field public static final Widget_DeviceDefault_TextSuggestionsPopupWindow:I = 0x10302de
+.field public static final Widget_DeviceDefault_TextSuggestionsPopupWindow:I = 0x10302e0
 
 .field public static final Widget_DeviceDefault_TextView:I = 0x1030146
 
-.field public static final Widget_DeviceDefault_TextView_ListSeparator:I = 0x10302df
+.field public static final Widget_DeviceDefault_TextView_ListSeparator:I = 0x10302e1
 
 .field public static final Widget_DeviceDefault_TextView_SpinnerItem:I = 0x1030163
 
-.field public static final Widget_DeviceDefault_TimePicker:I = 0x10302e0
+.field public static final Widget_DeviceDefault_TimePicker:I = 0x10302e2
 
 .field public static final Widget_DeviceDefault_WebTextView:I = 0x103015f
 
@@ -1599,7 +1603,7 @@
 
 .field public static final Widget_Spinner_DropDown:I = 0x1030083
 
-.field public static final Widget_TabHost:I = 0x103029e
+.field public static final Widget_TabHost:I = 0x10302a0
 
 .field public static final Widget_TabWidget:I = 0x1030034
 
@@ -1627,11 +1631,11 @@
 
 .field public static final WindowTitleBackground:I = 0x10301d6
 
-.field public static final WindowTitleBackground_DeviceDefault:I = 0x1030311
+.field public static final WindowTitleBackground_DeviceDefault:I = 0x1030313
 
 .field public static final WindowTitleBackground_Holo:I = 0x1030296
 
-.field public static final WindowTitle_DeviceDefault:I = 0x1030310
+.field public static final WindowTitle_DeviceDefault:I = 0x1030312
 
 .field public static final WindowTitle_Holo:I = 0x1030297
 
@@ -1643,7 +1647,7 @@
     .locals 0
 
     .prologue
-    .line 23071
+    .line 23137
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void

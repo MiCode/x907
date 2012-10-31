@@ -1612,7 +1612,7 @@
 
     move-result-object v1
 
-    const v2, 0x1080724
+    const v2, 0x1080737
 
     invoke-virtual {v1, v2}, Landroid/widget/ListView;->setBackgroundResource(I)V
 

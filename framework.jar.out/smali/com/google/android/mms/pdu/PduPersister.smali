@@ -4805,7 +4805,6 @@
     .parameter "uri"
 
     .prologue
-    .line 2128
     return-object p0
 
     invoke-static {p0}, Lcom/google/android/mms/pdu/PduPersister;->isSmsMmsUri(Landroid/net/Uri;)Z
@@ -4814,30 +4813,25 @@
 
     if-eqz v1, :cond_0
 
-    .line 2129
     invoke-static {p0}, Lcom/google/android/mms/pdu/PduPersister;->setUriWithoutOppoTag(Landroid/net/Uri;)Landroid/net/Uri;
 
     move-result-object p0
 
-    .line 2131
     invoke-virtual {p0}, Landroid/net/Uri;->buildUpon()Landroid/net/Uri$Builder;
 
     move-result-object v0
 
-    .line 2132
     .local v0, builder:Landroid/net/Uri$Builder;
-    const-string/jumbo v1, "oppoprotected"
+    const-string v1, "oppoprotected"
 
     const-string v2, "1"
 
     invoke-virtual {v0, v1, v2}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-    .line 2134
     invoke-virtual {v0}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
 
     move-result-object p0
 
-    .line 2137
     .end local v0           #builder:Landroid/net/Uri$Builder;
     .end local p0
     :cond_0

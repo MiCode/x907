@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 2092
+    .line 2101
     iput-object p1, p0, Lcom/android/server/LocationManagerService$1;->this$0:Lcom/android/server/LocationManagerService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,12 +40,12 @@
     .parameter "intent"
 
     .prologue
-    .line 2095
+    .line 2104
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2098
+    .line 2107
     .local v0, action:Ljava/lang/String;
     iget-object v2, p0, Lcom/android/server/LocationManagerService$1;->this$0:Lcom/android/server/LocationManagerService;
 
@@ -62,11 +62,11 @@
 
     check-cast v1, Lcom/android/server/location/LocationProviderInterface;
 
-    .line 2099
+    .line 2108
     .local v1, p:Lcom/android/server/location/LocationProviderInterface;
     if-eqz v1, :cond_0
 
-    .line 2100
+    .line 2109
     invoke-interface {v1}, Lcom/android/server/location/LocationProviderInterface;->getCapability()I
 
     move-result v2
@@ -77,7 +77,7 @@
 
     if-ne v2, v3, :cond_0
 
-    .line 2106
+    .line 2115
     const-string v2, "android.intent.action.ACTION_POWER_CONNECTED"
 
     invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -86,17 +86,17 @@
 
     if-eqz v2, :cond_1
 
-    .line 2107
+    .line 2116
     const/4 v2, 0x1
 
     invoke-interface {v1, v2}, Lcom/android/server/location/LocationProviderInterface;->updateBatteryStatus(Z)Z
 
-    .line 2113
+    .line 2122
     :cond_0
     :goto_0
     return-void
 
-    .line 2108
+    .line 2117
     :cond_1
     const-string v2, "android.intent.action.ACTION_POWER_DISCONNECTED"
 
@@ -106,7 +106,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 2109
+    .line 2118
     const/4 v2, 0x0
 
     invoke-interface {v1, v2}, Lcom/android/server/location/LocationProviderInterface;->updateBatteryStatus(Z)Z

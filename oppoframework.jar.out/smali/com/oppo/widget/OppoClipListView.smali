@@ -380,7 +380,7 @@
     .line 298
     iget-object v1, p0, Lcom/oppo/widget/OppoClipListView;->mWindowParams:Landroid/view/WindowManager$LayoutParams;
 
-    const v2, 0x10302ae
+    const v2, 0x10302b0
 
     iput v2, v1, Landroid/view/WindowManager$LayoutParams;->windowAnimations:I
 
@@ -706,7 +706,7 @@
     invoke-virtual {v2}, Landroid/view/View;->destroyDrawingCache()V
 
     .line 206
-    const v9, 0x10802e0
+    const v9, 0x10802f3
 
     invoke-virtual {v2, v9}, Landroid/view/View;->setBackgroundResource(I)V
 

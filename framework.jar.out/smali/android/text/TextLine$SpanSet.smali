@@ -63,20 +63,20 @@
     .end annotation
 
     .prologue
-    .line 871
+    .line 877
     .local p0, this:Landroid/text/TextLine$SpanSet;,"Landroid/text/TextLine$SpanSet<TE;>;"
     .local p1, type:Ljava/lang/Class;,"Ljava/lang/Class<+TE;>;"
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 872
+    .line 878
     iput-object p1, p0, Landroid/text/TextLine$SpanSet;->classType:Ljava/lang/Class;
 
-    .line 873
+    .line 879
     const/4 v0, 0x0
 
     iput v0, p0, Landroid/text/TextLine$SpanSet;->numberOfSpans:I
 
-    .line 874
+    .line 880
     return-void
 .end method
 
@@ -88,7 +88,7 @@
     .parameter "limit"
 
     .prologue
-    .line 918
+    .line 924
     .local p0, this:Landroid/text/TextLine$SpanSet;,"Landroid/text/TextLine$SpanSet<TE;>;"
     const/4 v0, 0x0
 
@@ -98,18 +98,18 @@
 
     if-ge v0, v3, :cond_2
 
-    .line 919
+    .line 925
     iget-object v3, p0, Landroid/text/TextLine$SpanSet;->spanStarts:[I
 
     aget v2, v3, v0
 
-    .line 920
+    .line 926
     .local v2, spanStart:I
     iget-object v3, p0, Landroid/text/TextLine$SpanSet;->spanEnds:[I
 
     aget v1, v3, v0
 
-    .line 921
+    .line 927
     .local v1, spanEnd:I
     if-le v2, p1, :cond_0
 
@@ -117,7 +117,7 @@
 
     move p2, v2
 
-    .line 922
+    .line 928
     :cond_0
     if-le v1, p1, :cond_1
 
@@ -125,13 +125,13 @@
 
     move p2, v1
 
-    .line 918
+    .line 924
     :cond_1
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 924
+    .line 930
     .end local v1           #spanEnd:I
     .end local v2           #spanStart:I
     :cond_2
@@ -144,7 +144,7 @@
     .parameter "end"
 
     .prologue
-    .line 909
+    .line 915
     .local p0, this:Landroid/text/TextLine$SpanSet;,"Landroid/text/TextLine$SpanSet<TE;>;"
     const/4 v0, 0x0
 
@@ -154,7 +154,7 @@
 
     if-ge v0, v1, :cond_2
 
-    .line 911
+    .line 917
     iget-object v1, p0, Landroid/text/TextLine$SpanSet;->spanStarts:[I
 
     aget v1, v1, v0
@@ -167,17 +167,17 @@
 
     if-gt v1, p1, :cond_1
 
-    .line 909
+    .line 915
     :cond_0
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 912
+    .line 918
     :cond_1
     const/4 v1, 0x1
 
-    .line 914
+    .line 920
     :goto_1
     return v1
 
@@ -194,7 +194,7 @@
     .parameter "limit"
 
     .prologue
-    .line 878
+    .line 884
     .local p0, this:Landroid/text/TextLine$SpanSet;,"Landroid/text/TextLine$SpanSet<TE;>;"
     iget-object v7, p0, Landroid/text/TextLine$SpanSet;->classType:Ljava/lang/Class;
 
@@ -202,11 +202,11 @@
 
     move-result-object v0
 
-    .line 879
+    .line 885
     .local v0, allSpans:[Ljava/lang/Object;,"[TE;"
     array-length v2, v0
 
-    .line 881
+    .line 887
     .local v2, length:I
     if-lez v2, :cond_1
 
@@ -220,7 +220,7 @@
 
     if-ge v7, v2, :cond_1
 
-    .line 883
+    .line 889
     :cond_0
     iget-object v7, p0, Landroid/text/TextLine$SpanSet;->classType:Ljava/lang/Class;
 
@@ -234,66 +234,66 @@
 
     iput-object v7, p0, Landroid/text/TextLine$SpanSet;->spans:[Ljava/lang/Object;
 
-    .line 884
+    .line 890
     new-array v7, v2, [I
 
     iput-object v7, p0, Landroid/text/TextLine$SpanSet;->spanStarts:[I
 
-    .line 885
+    .line 891
     new-array v7, v2, [I
 
     iput-object v7, p0, Landroid/text/TextLine$SpanSet;->spanEnds:[I
 
-    .line 886
+    .line 892
     new-array v7, v2, [I
 
     iput-object v7, p0, Landroid/text/TextLine$SpanSet;->spanFlags:[I
 
-    .line 889
+    .line 895
     :cond_1
     const/4 v7, 0x0
 
     iput v7, p0, Landroid/text/TextLine$SpanSet;->numberOfSpans:I
 
-    .line 890
+    .line 896
     const/4 v1, 0x0
 
     .local v1, i:I
     :goto_0
     if-ge v1, v2, :cond_3
 
-    .line 891
+    .line 897
     aget-object v3, v0, v1
 
-    .line 893
+    .line 899
     .local v3, span:Ljava/lang/Object;,"TE;"
     invoke-interface {p1, v3}, Landroid/text/Spanned;->getSpanStart(Ljava/lang/Object;)I
 
     move-result v6
 
-    .line 894
+    .line 900
     .local v6, spanStart:I
     invoke-interface {p1, v3}, Landroid/text/Spanned;->getSpanEnd(Ljava/lang/Object;)I
 
     move-result v4
 
-    .line 895
+    .line 901
     .local v4, spanEnd:I
     if-ne v6, v4, :cond_2
 
-    .line 890
+    .line 896
     :goto_1
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 897
+    .line 903
     :cond_2
     invoke-interface {p1, v3}, Landroid/text/Spanned;->getSpanFlags(Ljava/lang/Object;)I
 
     move-result v5
 
-    .line 899
+    .line 905
     .local v5, spanFlag:I
     iget-object v7, p0, Landroid/text/TextLine$SpanSet;->spans:[Ljava/lang/Object;
 
@@ -301,28 +301,28 @@
 
     aput-object v3, v7, v8
 
-    .line 900
+    .line 906
     iget-object v7, p0, Landroid/text/TextLine$SpanSet;->spanStarts:[I
 
     iget v8, p0, Landroid/text/TextLine$SpanSet;->numberOfSpans:I
 
     aput v6, v7, v8
 
-    .line 901
+    .line 907
     iget-object v7, p0, Landroid/text/TextLine$SpanSet;->spanEnds:[I
 
     iget v8, p0, Landroid/text/TextLine$SpanSet;->numberOfSpans:I
 
     aput v4, v7, v8
 
-    .line 902
+    .line 908
     iget-object v7, p0, Landroid/text/TextLine$SpanSet;->spanFlags:[I
 
     iget v8, p0, Landroid/text/TextLine$SpanSet;->numberOfSpans:I
 
     aput v5, v7, v8
 
-    .line 904
+    .line 910
     iget v7, p0, Landroid/text/TextLine$SpanSet;->numberOfSpans:I
 
     add-int/lit8 v7, v7, 0x1
@@ -331,7 +331,7 @@
 
     goto :goto_1
 
-    .line 906
+    .line 912
     .end local v3           #span:Ljava/lang/Object;,"TE;"
     .end local v4           #spanEnd:I
     .end local v5           #spanFlag:I
@@ -344,7 +344,7 @@
     .locals 3
 
     .prologue
-    .line 929
+    .line 935
     .local p0, this:Landroid/text/TextLine$SpanSet;,"Landroid/text/TextLine$SpanSet<TE;>;"
     const/4 v0, 0x0
 
@@ -354,19 +354,19 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 930
+    .line 936
     iget-object v1, p0, Landroid/text/TextLine$SpanSet;->spans:[Ljava/lang/Object;
 
     const/4 v2, 0x0
 
     aput-object v2, v1, v0
 
-    .line 929
+    .line 935
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 932
+    .line 938
     :cond_0
     return-void
 .end method

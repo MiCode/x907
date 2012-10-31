@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 205
+    .line 210
     iput-object p1, p0, Lcom/android/internal/policy/impl/KeyguardActions$5;->this$0:Lcom/android/internal/policy/impl/KeyguardActions;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,12 +40,12 @@
     .parameter "intent"
 
     .prologue
-    .line 207
+    .line 212
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 208
+    .line 213
     .local v0, action:Ljava/lang/String;
     const-string v1, "android.intent.action.CLOSE_SYSTEM_DIALOGS"
 
@@ -55,7 +55,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 209
+    .line 214
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardActions$5;->this$0:Lcom/android/internal/policy/impl/KeyguardActions;
 
     #getter for: Lcom/android/internal/policy/impl/KeyguardActions;->mKeyguardViewManager:Lcom/android/internal/policy/impl/KeyguardViewManager;
@@ -65,12 +65,12 @@
 
     invoke-virtual {v1}, Lcom/android/internal/policy/impl/KeyguardViewManager;->hideKeyguardActions()V
 
-    .line 216
+    .line 221
     :cond_0
     :goto_0
     return-void
 
-    .line 210
+    .line 215
     :cond_1
     const-string v1, "android.intent.action.SCREEN_OFF"
 
@@ -80,7 +80,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 212
+    .line 217
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardActions$5;->this$0:Lcom/android/internal/policy/impl/KeyguardActions;
 
     #getter for: Lcom/android/internal/policy/impl/KeyguardActions;->mKeyguardViewManager:Lcom/android/internal/policy/impl/KeyguardViewManager;
@@ -92,7 +92,7 @@
 
     goto :goto_0
 
-    .line 213
+    .line 218
     :cond_2
     const-string v1, "android.intent.action.LOCALE_CHANGED"
 
@@ -102,7 +102,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 214
+    .line 219
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardActions$5;->this$0:Lcom/android/internal/policy/impl/KeyguardActions;
 
     #calls: Lcom/android/internal/policy/impl/KeyguardActions;->updateResource()V

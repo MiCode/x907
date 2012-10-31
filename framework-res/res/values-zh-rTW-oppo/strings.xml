@@ -44,9 +44,9 @@
     <string name="usb_charge_detail">通過USB為行動電話充電</string>
     <string name="usb_storage">存儲裝置</string>
     <string name="usb_storage_detail">將行動電話作為存儲裝置使用</string>
-    <string name="usb_adb">串行接口/PC套件</string>
+    <string name="usb_adb">串行接口/手機助手</string>
     <string name="usb_selection">選擇以更改USB設定</string>
-    <string name="usb_adb_detail">與PC套件連接進行同步</string>
+    <string name="usb_adb_detail">與手機助手連接進行同步</string>
     <string name="usb_internet">USB綁定</string>
     <string name="usb_internet_detail">與PC共用行動電話的行動網路</string>
     <string name="usb_selection_processing">正在處理，請稍候...</string>

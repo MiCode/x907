@@ -45,7 +45,7 @@
 
     .prologue
     .line 75
-    const v0, 0x103031f
+    const v0, 0x1030321
 
     invoke-direct {p0, p1, v0}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 

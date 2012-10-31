@@ -175,10 +175,10 @@
     :sswitch_data_0
     .sparse-switch
         0x1020021 -> :sswitch_0
-        0x1020461 -> :sswitch_2
-        0x1020462 -> :sswitch_1
-        0x1020463 -> :sswitch_3
-        0x1020464 -> :sswitch_4
+        0x1020462 -> :sswitch_2
+        0x1020463 -> :sswitch_1
+        0x1020464 -> :sswitch_3
+        0x1020465 -> :sswitch_4
     .end sparse-switch
 .end method
 
@@ -237,7 +237,7 @@
     if-nez v3, :cond_0
 
     .line 61
-    const v3, 0x1020463
+    const v3, 0x1020464
 
     invoke-interface {p2, v3}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 

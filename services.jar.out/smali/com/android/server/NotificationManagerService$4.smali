@@ -873,22 +873,7 @@
 
     if-eqz v18, :cond_15
 
-    .line 572
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/server/NotificationManagerService$4;->this$0:Lcom/android/server/NotificationManagerService;
-
-    move-object/from16 v18, v0
-
-    #getter for: Lcom/android/server/NotificationManagerService;->mNotificationDialogItems:Ljava/util/ArrayList;
-    invoke-static/range {v18 .. v18}, Lcom/android/server/NotificationManagerService;->access$2800(Lcom/android/server/NotificationManagerService;)Ljava/util/ArrayList;
-
-    move-result-object v19
-
-    monitor-enter v19
-
     .line 574
-    :try_start_0
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/NotificationManagerService$4;->this$0:Lcom/android/server/NotificationManagerService;
@@ -896,25 +881,13 @@
     move-object/from16 v18, v0
 
     #getter for: Lcom/android/server/NotificationManagerService;->mNotificationCallbacks:Lcom/android/server/StatusBarManagerService$NotificationCallbacks;
-    invoke-static/range {v18 .. v18}, Lcom/android/server/NotificationManagerService;->access$2900(Lcom/android/server/NotificationManagerService;)Lcom/android/server/StatusBarManagerService$NotificationCallbacks;
+    invoke-static/range {v18 .. v18}, Lcom/android/server/NotificationManagerService;->access$2800(Lcom/android/server/NotificationManagerService;)Lcom/android/server/StatusBarManagerService$NotificationCallbacks;
 
     move-result-object v18
 
     invoke-interface/range {v18 .. v18}, Lcom/android/server/StatusBarManagerService$NotificationCallbacks;->onPanelRevealed()V
 
-    .line 575
-    monitor-exit v19
-
     goto/16 :goto_6
-
-    :catchall_0
-    move-exception v18
-
-    monitor-exit v19
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v18
 
     .line 579
     :cond_15
@@ -936,14 +909,14 @@
     move-object/from16 v18, v0
 
     #getter for: Lcom/android/server/NotificationManagerService;->mNotificationDialogItems:Ljava/util/ArrayList;
-    invoke-static/range {v18 .. v18}, Lcom/android/server/NotificationManagerService;->access$2800(Lcom/android/server/NotificationManagerService;)Ljava/util/ArrayList;
+    invoke-static/range {v18 .. v18}, Lcom/android/server/NotificationManagerService;->access$2900(Lcom/android/server/NotificationManagerService;)Ljava/util/ArrayList;
 
     move-result-object v19
 
     monitor-enter v19
 
     .line 581
-    :try_start_1
+    :try_start_0
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/NotificationManagerService$4;->this$0:Lcom/android/server/NotificationManagerService;
@@ -964,12 +937,12 @@
 
     goto/16 :goto_6
 
-    :catchall_1
+    :catchall_0
     move-exception v18
 
     monitor-exit v19
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw v18
 .end method

@@ -187,7 +187,7 @@
 
     .line 75
     .local v0, resources:Landroid/content/res/Resources;
-    const v1, 0x108071b
+    const v1, 0x108072e
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -196,7 +196,7 @@
     iput-object v1, p0, Lcom/oppo/widget/OppoSceneScrollBar;->mScrollBarNormal:Landroid/graphics/drawable/Drawable;
 
     .line 76
-    const v1, 0x108071c
+    const v1, 0x108072f
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

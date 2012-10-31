@@ -33,21 +33,21 @@
     .parameter "subtypeId"
 
     .prologue
-    .line 2411
+    .line 2410
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2412
+    .line 2411
     iput-object p1, p0, Lcom/android/server/InputMethodManagerService$ImeSubtypeListItem;->mImeName:Ljava/lang/CharSequence;
 
-    .line 2413
+    .line 2412
     iput-object p2, p0, Lcom/android/server/InputMethodManagerService$ImeSubtypeListItem;->mSubtypeName:Ljava/lang/CharSequence;
 
-    .line 2414
+    .line 2413
     iput-object p3, p0, Lcom/android/server/InputMethodManagerService$ImeSubtypeListItem;->mImi:Landroid/view/inputmethod/InputMethodInfo;
 
-    .line 2415
+    .line 2414
     iput p4, p0, Lcom/android/server/InputMethodManagerService$ImeSubtypeListItem;->mSubtypeId:I
 
-    .line 2416
+    .line 2415
     return-void
 .end method

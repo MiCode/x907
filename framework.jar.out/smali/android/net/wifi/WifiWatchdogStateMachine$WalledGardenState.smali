@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 1057
+    .line 1062
     iput-object p1, p0, Landroid/net/wifi/WifiWatchdogStateMachine$WalledGardenState;->this$0:Landroid/net/wifi/WifiWatchdogStateMachine;
 
     invoke-direct {p0}, Lcom/android/internal/util/State;-><init>()V
@@ -38,7 +38,7 @@
     .locals 4
 
     .prologue
-    .line 1060
+    .line 1065
     iget-object v0, p0, Landroid/net/wifi/WifiWatchdogStateMachine$WalledGardenState;->this$0:Landroid/net/wifi/WifiWatchdogStateMachine;
 
     const v1, 0x21064
@@ -58,7 +58,7 @@
 
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
-    .line 1061
+    .line 1066
     return-void
 .end method
 
@@ -69,22 +69,22 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 1065
+    .line 1070
     iget v1, p1, Landroid/os/Message;->what:I
 
     const v2, 0x21064
 
     if-eq v1, v2, :cond_1
 
-    .line 1066
+    .line 1071
     const/4 v0, 0x0
 
-    .line 1081
+    .line 1086
     :cond_0
     :goto_0
     return v0
 
-    .line 1069
+    .line 1074
     :cond_1
     iget v1, p1, Landroid/os/Message;->arg1:I
 
@@ -97,13 +97,13 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 1075
+    .line 1080
     iget-object v1, p0, Landroid/net/wifi/WifiWatchdogStateMachine$WalledGardenState;->this$0:Landroid/net/wifi/WifiWatchdogStateMachine;
 
     #calls: Landroid/net/wifi/WifiWatchdogStateMachine;->setWalledGardenNotificationVisible(Z)V
     invoke-static {v1, v0}, Landroid/net/wifi/WifiWatchdogStateMachine;->access$1200(Landroid/net/wifi/WifiWatchdogStateMachine;Z)V
 
-    .line 1076
+    .line 1081
     iget-object v1, p0, Landroid/net/wifi/WifiWatchdogStateMachine$WalledGardenState;->this$0:Landroid/net/wifi/WifiWatchdogStateMachine;
 
     #getter for: Landroid/net/wifi/WifiWatchdogStateMachine;->mPoorNetworkDetectionEnabled:Z
@@ -113,7 +113,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 1077
+    .line 1082
     iget-object v1, p0, Landroid/net/wifi/WifiWatchdogStateMachine$WalledGardenState;->this$0:Landroid/net/wifi/WifiWatchdogStateMachine;
 
     iget-object v2, p0, Landroid/net/wifi/WifiWatchdogStateMachine$WalledGardenState;->this$0:Landroid/net/wifi/WifiWatchdogStateMachine;
@@ -128,7 +128,7 @@
 
     goto :goto_0
 
-    .line 1079
+    .line 1084
     :cond_2
     iget-object v1, p0, Landroid/net/wifi/WifiWatchdogStateMachine$WalledGardenState;->this$0:Landroid/net/wifi/WifiWatchdogStateMachine;
 

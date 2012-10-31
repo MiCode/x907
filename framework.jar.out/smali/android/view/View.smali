@@ -1872,7 +1872,7 @@
     iput-object v0, p0, Landroid/view/View;->mTempCoords:[I
 
     .line 15643
-    const v0, 0x1080583
+    const v0, 0x1080596
 
     iput v0, p0, Landroid/view/View;->mMagnifierRes:I
 
@@ -2070,7 +2070,7 @@
     iput-object v0, p0, Landroid/view/View;->mTempCoords:[I
 
     .line 15643
-    const v0, 0x1080583
+    const v0, 0x1080596
 
     iput v0, p0, Landroid/view/View;->mMagnifierRes:I
 
@@ -3569,7 +3569,7 @@
 
     .line 3113
     :pswitch_3c
-    const v49, 0x1080583
+    const v49, 0x1080596
 
     move/from16 v0, v49
 

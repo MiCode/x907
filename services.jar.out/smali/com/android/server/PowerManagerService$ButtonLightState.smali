@@ -36,30 +36,30 @@
     .parameter "mask"
 
     .prologue
-    .line 3375
+    .line 3647
     iput-object p1, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->this$0:Lcom/android/server/PowerManagerService;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3370
+    .line 3642
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Enabled:Z
 
-    .line 3372
+    .line 3644
     const/4 v0, 0x3
 
     iput v0, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Mode:I
 
-    .line 3373
+    .line 3645
     const-wide/16 v0, 0x1770
 
     iput-wide v0, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Timeout:J
 
-    .line 3376
+    .line 3648
     iput p2, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Mask:I
 
-    .line 3377
+    .line 3649
     return-void
 .end method
 
@@ -69,7 +69,7 @@
     .locals 1
 
     .prologue
-    .line 3398
+    .line 3670
     iget-boolean v0, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Enabled:Z
 
     return v0
@@ -82,7 +82,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 3479
+    .line 3751
     if-eq p1, v0, :cond_0
 
     const/4 v1, 0x2
@@ -111,12 +111,12 @@
     .locals 1
 
     .prologue
-    .line 3487
+    .line 3759
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/android/server/PowerManagerService$ButtonLightState;->setTargetLocked(I)V
 
-    .line 3488
+    .line 3760
     return-void
 .end method
 
@@ -125,20 +125,20 @@
     .parameter "enabled"
 
     .prologue
-    .line 3380
+    .line 3652
     iget-boolean v0, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Enabled:Z
 
     if-ne v0, p1, :cond_0
 
-    .line 3395
+    .line 3667
     :goto_0
     return-void
 
-    .line 3384
+    .line 3656
     :cond_0
     iput-boolean p1, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Enabled:Z
 
-    .line 3385
+    .line 3657
     iget-object v0, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->this$0:Lcom/android/server/PowerManagerService;
 
     #getter for: Lcom/android/server/PowerManagerService;->mLocks:Lcom/android/server/PowerManagerService$LockList;
@@ -148,31 +148,31 @@
 
     monitor-enter v1
 
-    .line 3386
+    .line 3658
     :try_start_0
     iget-boolean v0, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Enabled:Z
 
     if-eqz v0, :cond_2
 
-    .line 3387
+    .line 3659
     iget-object v0, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->this$0:Lcom/android/server/PowerManagerService;
 
     #getter for: Lcom/android/server/PowerManagerService;->mButtonBrightnessOverride:I
-    invoke-static {v0}, Lcom/android/server/PowerManagerService;->access$6700(Lcom/android/server/PowerManagerService;)I
+    invoke-static {v0}, Lcom/android/server/PowerManagerService;->access$6800(Lcom/android/server/PowerManagerService;)I
 
     move-result v0
 
     if-gez v0, :cond_1
 
-    .line 3388
+    .line 3660
     iget-object v0, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->this$0:Lcom/android/server/PowerManagerService;
 
     const/16 v2, 0x64
 
     #setter for: Lcom/android/server/PowerManagerService;->mButtonBrightnessOverride:I
-    invoke-static {v0, v2}, Lcom/android/server/PowerManagerService;->access$6702(Lcom/android/server/PowerManagerService;I)I
+    invoke-static {v0, v2}, Lcom/android/server/PowerManagerService;->access$6802(Lcom/android/server/PowerManagerService;I)I
 
-    .line 3394
+    .line 3666
     :cond_1
     :goto_1
     monitor-exit v1
@@ -188,7 +188,7 @@
 
     throw v0
 
-    .line 3392
+    .line 3664
     :cond_2
     :try_start_1
     iget-object v0, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->this$0:Lcom/android/server/PowerManagerService;
@@ -196,7 +196,7 @@
     const/4 v2, -0x1
 
     #setter for: Lcom/android/server/PowerManagerService;->mButtonBrightnessOverride:I
-    invoke-static {v0, v2}, Lcom/android/server/PowerManagerService;->access$6702(Lcom/android/server/PowerManagerService;I)I
+    invoke-static {v0, v2}, Lcom/android/server/PowerManagerService;->access$6802(Lcom/android/server/PowerManagerService;I)I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -215,19 +215,19 @@
 
     const/4 v6, 0x3
 
-    .line 3439
+    .line 3711
     invoke-virtual {p0, p1}, Lcom/android/server/PowerManagerService$ButtonLightState;->isModeValid(I)Z
 
     move-result v4
 
     if-nez v4, :cond_1
 
-    .line 3476
+    .line 3748
     :cond_0
     :goto_0
     return-void
 
-    .line 3443
+    .line 3715
     :cond_1
     iget v4, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Mode:I
 
@@ -235,7 +235,7 @@
 
     move v0, v3
 
-    .line 3444
+    .line 3716
     .local v0, modeChanged:Z
     :goto_1
     if-nez v0, :cond_2
@@ -244,7 +244,7 @@
 
     if-ne v4, v6, :cond_0
 
-    .line 3447
+    .line 3719
     :cond_2
     if-nez v0, :cond_3
 
@@ -258,19 +258,19 @@
 
     if-eqz v4, :cond_0
 
-    .line 3451
+    .line 3723
     :cond_3
     iput p1, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Mode:I
 
-    .line 3452
+    .line 3724
     iget v4, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Mode:I
 
     if-ne v4, v6, :cond_4
 
-    .line 3453
+    .line 3725
     iput-wide p2, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Timeout:J
 
-    .line 3456
+    .line 3728
     :cond_4
     iget-object v4, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->this$0:Lcom/android/server/PowerManagerService;
 
@@ -280,58 +280,58 @@
 
     if-eqz v4, :cond_0
 
-    .line 3457
+    .line 3729
     iget v4, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Mode:I
 
     if-ne v4, v7, :cond_6
 
-    .line 3458
+    .line 3730
     iget-object v4, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->this$0:Lcom/android/server/PowerManagerService;
 
     #getter for: Lcom/android/server/PowerManagerService;->mUseSoftwareAutoBrightness:Z
-    invoke-static {v4}, Lcom/android/server/PowerManagerService;->access$6800(Lcom/android/server/PowerManagerService;)Z
+    invoke-static {v4}, Lcom/android/server/PowerManagerService;->access$6900(Lcom/android/server/PowerManagerService;)Z
 
     move-result v4
 
     if-eqz v4, :cond_0
 
-    .line 3459
+    .line 3731
     iget-object v4, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->this$0:Lcom/android/server/PowerManagerService;
 
     #getter for: Lcom/android/server/PowerManagerService;->mLightSensorValue:F
-    invoke-static {v4}, Lcom/android/server/PowerManagerService;->access$6300(Lcom/android/server/PowerManagerService;)F
+    invoke-static {v4}, Lcom/android/server/PowerManagerService;->access$6400(Lcom/android/server/PowerManagerService;)F
 
     move-result v4
 
     float-to-int v2, v4
 
-    .line 3460
+    .line 3732
     .local v2, value:I
     iget-object v4, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->this$0:Lcom/android/server/PowerManagerService;
 
     #calls: Lcom/android/server/PowerManagerService;->enableLightSensorLocked(Z)V
-    invoke-static {v4, v3}, Lcom/android/server/PowerManagerService;->access$6900(Lcom/android/server/PowerManagerService;Z)V
+    invoke-static {v4, v3}, Lcom/android/server/PowerManagerService;->access$7000(Lcom/android/server/PowerManagerService;Z)V
 
-    .line 3462
+    .line 3734
     if-ltz v2, :cond_0
 
-    .line 3463
+    .line 3735
     iget-object v3, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->this$0:Lcom/android/server/PowerManagerService;
 
     const/high16 v4, -0x4080
 
     #setter for: Lcom/android/server/PowerManagerService;->mLightSensorValue:F
-    invoke-static {v3, v4}, Lcom/android/server/PowerManagerService;->access$6302(Lcom/android/server/PowerManagerService;F)F
+    invoke-static {v3, v4}, Lcom/android/server/PowerManagerService;->access$6402(Lcom/android/server/PowerManagerService;F)F
 
-    .line 3464
+    .line 3736
     iget-object v3, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->this$0:Lcom/android/server/PowerManagerService;
 
     #calls: Lcom/android/server/PowerManagerService;->lightSensorChangedLocked(I)V
-    invoke-static {v3, v2}, Lcom/android/server/PowerManagerService;->access$5600(Lcom/android/server/PowerManagerService;I)V
+    invoke-static {v3, v2}, Lcom/android/server/PowerManagerService;->access$5700(Lcom/android/server/PowerManagerService;I)V
 
     goto :goto_0
 
-    .line 3443
+    .line 3715
     .end local v0           #modeChanged:Z
     .end local v2           #value:I
     :cond_5
@@ -339,7 +339,7 @@
 
     goto :goto_1
 
-    .line 3469
+    .line 3741
     .restart local v0       #modeChanged:Z
     :cond_6
     iget-object v4, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->this$0:Lcom/android/server/PowerManagerService;
@@ -349,7 +349,7 @@
 
     move-result v1
 
-    .line 3470
+    .line 3742
     .local v1, newState:I
     iget v4, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Mode:I
 
@@ -359,16 +359,16 @@
 
     if-ne v3, v6, :cond_8
 
-    .line 3472
+    .line 3744
     :cond_7
     or-int/lit8 v1, v1, 0x4
 
-    .line 3473
+    .line 3745
     :cond_8
     iget-object v3, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->this$0:Lcom/android/server/PowerManagerService;
 
     #calls: Lcom/android/server/PowerManagerService;->updateLightsLocked(II)V
-    invoke-static {v3, v1, v7}, Lcom/android/server/PowerManagerService;->access$3300(Lcom/android/server/PowerManagerService;II)V
+    invoke-static {v3, v1, v7}, Lcom/android/server/PowerManagerService;->access$3400(Lcom/android/server/PowerManagerService;II)V
 
     goto :goto_0
 .end method
@@ -378,13 +378,13 @@
     .parameter "value"
 
     .prologue
-    .line 3420
+    .line 3692
     if-gez p1, :cond_0
 
-    .line 3421
+    .line 3693
     const/4 p1, 0x0
 
-    .line 3424
+    .line 3696
     :cond_0
     iget v0, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Mode:I
 
@@ -392,19 +392,19 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 3425
+    .line 3697
     const/4 p1, 0x0
 
-    .line 3428
+    .line 3700
     :cond_1
     iget-object v0, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->this$0:Lcom/android/server/PowerManagerService;
 
     iget v1, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Mask:I
 
     #calls: Lcom/android/server/PowerManagerService;->setLightBrightness(II)V
-    invoke-static {v0, v1, p1}, Lcom/android/server/PowerManagerService;->access$4500(Lcom/android/server/PowerManagerService;II)V
+    invoke-static {v0, v1, p1}, Lcom/android/server/PowerManagerService;->access$4600(Lcom/android/server/PowerManagerService;II)V
 
-    .line 3430
+    .line 3702
     iget-object v0, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->this$0:Lcom/android/server/PowerManagerService;
 
     #getter for: Lcom/android/server/PowerManagerService;->mScreenOffHandler:Landroid/os/Handler;
@@ -414,17 +414,17 @@
 
     invoke-virtual {v0, p0}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 3431
+    .line 3703
     iget v0, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Mode:I
 
     const/4 v1, 0x3
 
     if-ne v0, v1, :cond_2
 
-    .line 3432
+    .line 3704
     if-eqz p1, :cond_2
 
-    .line 3433
+    .line 3705
     iget-object v0, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->this$0:Lcom/android/server/PowerManagerService;
 
     #getter for: Lcom/android/server/PowerManagerService;->mScreenOffHandler:Landroid/os/Handler;
@@ -445,11 +445,11 @@
     :goto_0
     invoke-virtual {v2, p0, v0, v1}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 3435
+    .line 3707
     :cond_2
     return-void
 
-    .line 3433
+    .line 3705
     :cond_3
     const-wide/16 v0, 0x1770
 
@@ -462,7 +462,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 3402
+    .line 3674
     iget v1, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Mode:I
 
     if-eq v1, v0, :cond_0
@@ -493,7 +493,7 @@
     .locals 2
 
     .prologue
-    .line 3416
+    .line 3688
     iget v0, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Mode:I
 
     const/4 v1, 0x3
@@ -517,7 +517,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 3408
+    .line 3680
     iget v1, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Mode:I
 
     if-ne v1, v0, :cond_0
@@ -535,7 +535,7 @@
     .locals 2
 
     .prologue
-    .line 3412
+    .line 3684
     iget v0, p0, Lcom/android/server/PowerManagerService$ButtonLightState;->Mode:I
 
     const/4 v1, 0x4

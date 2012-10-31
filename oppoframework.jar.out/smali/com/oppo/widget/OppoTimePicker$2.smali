@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 160
+    .line 163
     iput-object p1, p0, Lcom/oppo/widget/OppoTimePicker$2;->this$0:Lcom/oppo/widget/OppoTimePicker;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -45,13 +45,13 @@
     .prologue
     const/16 v3, 0xc
 
-    .line 163
+    .line 166
     iget-object v0, p0, Lcom/oppo/widget/OppoTimePicker$2;->this$0:Lcom/oppo/widget/OppoTimePicker;
 
     #setter for: Lcom/oppo/widget/OppoTimePicker;->mCurrentHour:I
     invoke-static {v0, p2}, Lcom/oppo/widget/OppoTimePicker;->access$002(Lcom/oppo/widget/OppoTimePicker;I)I
 
-    .line 165
+    .line 168
     iget-object v0, p0, Lcom/oppo/widget/OppoTimePicker$2;->this$0:Lcom/oppo/widget/OppoTimePicker;
 
     #getter for: Lcom/oppo/widget/OppoTimePicker;->TAG:Ljava/lang/String;
@@ -86,7 +86,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 167
+    .line 170
     iget-object v0, p0, Lcom/oppo/widget/OppoTimePicker$2;->this$0:Lcom/oppo/widget/OppoTimePicker;
 
     #getter for: Lcom/oppo/widget/OppoTimePicker;->mIs24Hour:Z
@@ -96,7 +96,7 @@
 
     if-nez v0, :cond_1
 
-    .line 171
+    .line 174
     iget-object v0, p0, Lcom/oppo/widget/OppoTimePicker$2;->this$0:Lcom/oppo/widget/OppoTimePicker;
 
     #getter for: Lcom/oppo/widget/OppoTimePicker;->mCurrentHour:I
@@ -106,7 +106,7 @@
 
     if-ne v0, v3, :cond_0
 
-    .line 173
+    .line 176
     iget-object v0, p0, Lcom/oppo/widget/OppoTimePicker$2;->this$0:Lcom/oppo/widget/OppoTimePicker;
 
     const/4 v1, 0x0
@@ -114,7 +114,7 @@
     #setter for: Lcom/oppo/widget/OppoTimePicker;->mCurrentHour:I
     invoke-static {v0, v1}, Lcom/oppo/widget/OppoTimePicker;->access$002(Lcom/oppo/widget/OppoTimePicker;I)I
 
-    .line 175
+    .line 178
     :cond_0
     iget-object v0, p0, Lcom/oppo/widget/OppoTimePicker$2;->this$0:Lcom/oppo/widget/OppoTimePicker;
 
@@ -125,12 +125,12 @@
 
     if-nez v0, :cond_1
 
-    .line 179
+    .line 182
     iget-object v0, p0, Lcom/oppo/widget/OppoTimePicker$2;->this$0:Lcom/oppo/widget/OppoTimePicker;
 
     invoke-static {v0, v3}, Lcom/oppo/widget/OppoTimePicker;->access$012(Lcom/oppo/widget/OppoTimePicker;I)I
 
-    .line 182
+    .line 185
     :cond_1
     iget-object v0, p0, Lcom/oppo/widget/OppoTimePicker$2;->this$0:Lcom/oppo/widget/OppoTimePicker;
 
@@ -166,18 +166,18 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 183
+    .line 186
     iget-object v0, p0, Lcom/oppo/widget/OppoTimePicker$2;->this$0:Lcom/oppo/widget/OppoTimePicker;
 
     #calls: Lcom/oppo/widget/OppoTimePicker;->onTimeChanged()V
     invoke-static {v0}, Lcom/oppo/widget/OppoTimePicker;->access$400(Lcom/oppo/widget/OppoTimePicker;)V
 
-    .line 184
+    .line 187
     iget-object v0, p0, Lcom/oppo/widget/OppoTimePicker$2;->this$0:Lcom/oppo/widget/OppoTimePicker;
 
     #calls: Lcom/oppo/widget/OppoTimePicker;->updateDispayTime()V
     invoke-static {v0}, Lcom/oppo/widget/OppoTimePicker;->access$500(Lcom/oppo/widget/OppoTimePicker;)V
 
-    .line 185
+    .line 188
     return-void
 .end method

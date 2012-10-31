@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 1455
+    .line 1619
     iput-object p1, p0, Lcom/android/server/PowerManagerService$4;->this$0:Lcom/android/server/PowerManagerService;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 5
 
     .prologue
-    .line 1457
+    .line 1621
     iget-object v0, p0, Lcom/android/server/PowerManagerService$4;->this$0:Lcom/android/server/PowerManagerService;
 
     #getter for: Lcom/android/server/PowerManagerService;->mLocks:Lcom/android/server/PowerManagerService$LockList;
@@ -51,26 +51,26 @@
 
     monitor-enter v1
 
-    .line 1458
+    .line 1622
     :try_start_0
     iget-object v0, p0, Lcom/android/server/PowerManagerService$4;->this$0:Lcom/android/server/PowerManagerService;
 
     #getter for: Lcom/android/server/PowerManagerService;->mPreparingForScreenOn:Z
-    invoke-static {v0}, Lcom/android/server/PowerManagerService;->access$3200(Lcom/android/server/PowerManagerService;)Z
+    invoke-static {v0}, Lcom/android/server/PowerManagerService;->access$3300(Lcom/android/server/PowerManagerService;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 1459
+    .line 1623
     iget-object v0, p0, Lcom/android/server/PowerManagerService$4;->this$0:Lcom/android/server/PowerManagerService;
 
     const/4 v2, 0x0
 
     #setter for: Lcom/android/server/PowerManagerService;->mPreparingForScreenOn:Z
-    invoke-static {v0, v2}, Lcom/android/server/PowerManagerService;->access$3202(Lcom/android/server/PowerManagerService;Z)Z
+    invoke-static {v0, v2}, Lcom/android/server/PowerManagerService;->access$3302(Lcom/android/server/PowerManagerService;Z)Z
 
-    .line 1460
+    .line 1624
     iget-object v0, p0, Lcom/android/server/PowerManagerService$4;->this$0:Lcom/android/server/PowerManagerService;
 
     iget-object v2, p0, Lcom/android/server/PowerManagerService$4;->this$0:Lcom/android/server/PowerManagerService;
@@ -83,9 +83,9 @@
     const/4 v3, 0x1
 
     #calls: Lcom/android/server/PowerManagerService;->updateLightsLocked(II)V
-    invoke-static {v0, v2, v3}, Lcom/android/server/PowerManagerService;->access$3300(Lcom/android/server/PowerManagerService;II)V
+    invoke-static {v0, v2, v3}, Lcom/android/server/PowerManagerService;->access$3400(Lcom/android/server/PowerManagerService;II)V
 
-    .line 1461
+    .line 1625
     const/16 v0, 0xaa7
 
     const/4 v2, 0x2
@@ -107,7 +107,7 @@
     iget-object v4, p0, Lcom/android/server/PowerManagerService$4;->this$0:Lcom/android/server/PowerManagerService;
 
     #getter for: Lcom/android/server/PowerManagerService;->mBroadcastWakeLock:Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;
-    invoke-static {v4}, Lcom/android/server/PowerManagerService;->access$3400(Lcom/android/server/PowerManagerService;)Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;
+    invoke-static {v4}, Lcom/android/server/PowerManagerService;->access$3500(Lcom/android/server/PowerManagerService;)Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;
 
     move-result-object v4
 
@@ -121,24 +121,24 @@
 
     invoke-static {v0, v2}, Landroid/util/EventLog;->writeEvent(I[Ljava/lang/Object;)I
 
-    .line 1463
+    .line 1627
     iget-object v0, p0, Lcom/android/server/PowerManagerService$4;->this$0:Lcom/android/server/PowerManagerService;
 
     #getter for: Lcom/android/server/PowerManagerService;->mBroadcastWakeLock:Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;
-    invoke-static {v0}, Lcom/android/server/PowerManagerService;->access$3400(Lcom/android/server/PowerManagerService;)Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;
+    invoke-static {v0}, Lcom/android/server/PowerManagerService;->access$3500(Lcom/android/server/PowerManagerService;)Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/android/server/PowerManagerService$UnsynchronizedWakeLock;->release()V
 
-    .line 1465
+    .line 1629
     :cond_0
     monitor-exit v1
 
-    .line 1466
+    .line 1630
     return-void
 
-    .line 1465
+    .line 1629
     :catchall_0
     move-exception v0
 

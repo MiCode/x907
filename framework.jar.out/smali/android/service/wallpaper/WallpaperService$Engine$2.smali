@@ -151,16 +151,10 @@
 .end method
 
 .method public setKeepScreenOn(Z)V
-    .locals 2
+    .locals 0
     .parameter "screenOn"
 
     .prologue
-    .line 226
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    const-string v1, "Wallpapers do not support keep screen on"
-
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    .line 228
+    return-void
 .end method

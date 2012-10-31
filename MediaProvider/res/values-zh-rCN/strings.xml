@@ -9,4 +9,7 @@
     <string name="my_ringtone">我的铃声</string>
     <string name="my_picture">我的图片</string>
     <string name="my_photo">我的照片</string>
+    <string name="my_down">我的下载</string>
+    <string name="my_file">我的文档</string>
+    <string name="my_copy">我的备份</string>
 </resources>

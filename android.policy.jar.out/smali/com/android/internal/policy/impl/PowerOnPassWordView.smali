@@ -83,7 +83,7 @@
     .line 48
     iput-boolean v3, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mIsPass:Z
 
-    .line 227
+    .line 226
     new-instance v2, Lcom/android/internal/policy/impl/PowerOnPassWordView$2;
 
     invoke-direct {v2, p0}, Lcom/android/internal/policy/impl/PowerOnPassWordView$2;-><init>(Lcom/android/internal/policy/impl/PowerOnPassWordView;)V
@@ -97,27 +97,22 @@
     iput-object p2, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mKeyguardViewManager:Lcom/android/internal/policy/impl/KeyguardViewManager;
 
     .line 65
-    const/high16 v2, -0x100
-
-    invoke-virtual {p0, v2}, Lcom/android/internal/policy/impl/PowerOnPassWordView;->setBackgroundColor(I)V
-
-    .line 66
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 67
+    .line 66
     .local v0, filter:Landroid/content/IntentFilter;
     const-string v2, "android.intent.action.BOOT_COMPLETED"
 
     invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 68
+    .line 67
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v1
 
-    .line 69
+    .line 68
     .local v1, layoutInflater:Landroid/view/LayoutInflater;
     const v2, 0x10900ac
 
@@ -125,7 +120,7 @@
 
     invoke-virtual {v1, v2, p0, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
-    .line 70
+    .line 69
     iget-object v2, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mContext:Landroid/content/Context;
 
     const-string v3, "statusbar"
@@ -138,17 +133,17 @@
 
     iput-object v2, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mStatusBar:Landroid/app/StatusBarManager;
 
-    .line 71
+    .line 70
     iget-object v2, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mStatusBar:Landroid/app/StatusBarManager;
 
     const/high16 v3, 0x1
 
     invoke-virtual {v2, v3}, Landroid/app/StatusBarManager;->disable(I)V
 
-    .line 72
+    .line 71
     invoke-direct {p0}, Lcom/android/internal/policy/impl/PowerOnPassWordView;->initLayout()V
 
-    .line 74
+    .line 73
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -161,17 +156,17 @@
 
     iput-object v2, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mPassword:Ljava/lang/String;
 
-    .line 75
+    .line 74
     iget-object v2, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mPassword:Ljava/lang/String;
 
     if-nez v2, :cond_0
 
-    .line 76
+    .line 75
     const-string v2, "67766776"
 
     iput-object v2, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mPassword:Ljava/lang/String;
 
-    .line 78
+    .line 77
     :cond_0
     new-instance v2, Lcom/android/internal/policy/impl/PowerOnPassWordView$1;
 
@@ -179,14 +174,14 @@
 
     iput-object v2, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 98
+    .line 97
     iget-object v2, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mContext:Landroid/content/Context;
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v2, v3, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 99
+    .line 98
     return-void
 .end method
 
@@ -285,7 +280,7 @@
     .locals 3
 
     .prologue
-    .line 340
+    .line 339
     new-instance v0, Ljava/io/File;
 
     const-string v1, "/data"
@@ -294,7 +289,7 @@
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 341
+    .line 340
     .local v0, file:Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -311,7 +306,7 @@
 
     const/16 v5, 0xa
 
-    .line 104
+    .line 103
     const v3, 0x10203d6
 
     invoke-virtual {p0, v3}, Lcom/android/internal/policy/impl/PowerOnPassWordView;->findViewById(I)Landroid/view/View;
@@ -322,7 +317,7 @@
 
     iput-object v3, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mTitle:Landroid/widget/TextView;
 
-    .line 105
+    .line 104
     const v3, 0x10203d7
 
     invoke-virtual {p0, v3}, Lcom/android/internal/policy/impl/PowerOnPassWordView;->findViewById(I)Landroid/view/View;
@@ -333,7 +328,7 @@
 
     iput-object v3, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mPasswordEntry:Landroid/widget/EditText;
 
-    .line 107
+    .line 106
     const/4 v3, 0x1
 
     new-array v1, v3, [Landroid/text/InputFilter;
@@ -346,28 +341,28 @@
 
     aput-object v3, v1, v6
 
-    .line 109
+    .line 108
     .local v1, filters:[Landroid/text/InputFilter;
     iget-object v3, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mPasswordEntry:Landroid/widget/EditText;
 
     invoke-virtual {v3, v6}, Landroid/widget/EditText;->setEnabled(Z)V
 
-    .line 110
+    .line 109
     iget-object v3, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mPasswordEntry:Landroid/widget/EditText;
 
     invoke-virtual {v3, p0}, Landroid/widget/EditText;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
 
-    .line 111
+    .line 110
     iget-object v3, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mPasswordEntry:Landroid/widget/EditText;
 
     invoke-virtual {v3}, Landroid/widget/EditText;->requestFocus()Z
 
-    .line 112
+    .line 111
     iget-object v3, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mPasswordEntry:Landroid/widget/EditText;
 
     invoke-virtual {v3, v1}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
-    .line 116
+    .line 115
     iget-object v3, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mPasswordEntry:Landroid/widget/EditText;
 
     invoke-static {}, Landroid/text/method/DigitsKeyListener;->getInstance()Landroid/text/method/DigitsKeyListener;
@@ -376,14 +371,14 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/EditText;->setKeyListener(Landroid/text/method/KeyListener;)V
 
-    .line 117
+    .line 116
     iget-object v3, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mTitle:Landroid/widget/TextView;
 
     const v4, 0x1040506
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
-    .line 119
+    .line 118
     const v3, 0x10203d8
 
     invoke-virtual {p0, v3}, Lcom/android/internal/policy/impl/PowerOnPassWordView;->findViewById(I)Landroid/view/View;
@@ -394,7 +389,7 @@
 
     iput-object v3, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mOkButton:Landroid/widget/ImageButton;
 
-    .line 120
+    .line 119
     const v3, 0x1020370
 
     invoke-virtual {p0, v3}, Lcom/android/internal/policy/impl/PowerOnPassWordView;->findViewById(I)Landroid/view/View;
@@ -405,27 +400,27 @@
 
     iput-object v3, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mDelete:Landroid/widget/ImageButton;
 
-    .line 121
+    .line 120
     iget-object v3, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mOkButton:Landroid/widget/ImageButton;
 
     invoke-virtual {v3, p0}, Landroid/widget/ImageButton;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 122
+    .line 121
     iget-object v3, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mDelete:Landroid/widget/ImageButton;
 
     invoke-virtual {v3, p0}, Landroid/widget/ImageButton;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 124
+    .line 123
     new-array v3, v5, [Landroid/widget/ImageButton;
 
     iput-object v3, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mBtn:[Landroid/widget/ImageButton;
 
-    .line 125
+    .line 124
     new-array v0, v5, [I
 
     fill-array-data v0, :array_0
 
-    .line 133
+    .line 132
     .local v0, btn_id:[I
     const/4 v2, 0x0
 
@@ -433,7 +428,7 @@
     :goto_0
     if-ge v2, v5, :cond_0
 
-    .line 134
+    .line 133
     iget-object v4, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mBtn:[Landroid/widget/ImageButton;
 
     aget v3, v0, v2
@@ -446,23 +441,23 @@
 
     aput-object v3, v4, v2
 
-    .line 135
+    .line 134
     iget-object v3, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mBtn:[Landroid/widget/ImageButton;
 
     aget-object v3, v3, v2
 
     invoke-virtual {v3, p0}, Landroid/widget/ImageButton;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 133
+    .line 132
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 137
+    .line 136
     :cond_0
     return-void
 
-    .line 125
+    .line 124
     nop
 
     :array_0
@@ -485,29 +480,29 @@
     .parameter "keyCode"
 
     .prologue
-    .line 195
+    .line 194
     iget-object v1, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mPasswordEntry:Landroid/widget/EditText;
 
     if-nez v1, :cond_0
 
-    .line 201
+    .line 200
     :goto_0
     return-void
 
-    .line 198
+    .line 197
     :cond_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mCallback:Lcom/android/internal/policy/impl/KeyguardViewCallback;
 
     invoke-interface {v1}, Lcom/android/internal/policy/impl/KeyguardViewCallback;->pokeWakelock()V
 
-    .line 199
+    .line 198
     new-instance v0, Landroid/view/KeyEvent;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, v1, p1}, Landroid/view/KeyEvent;-><init>(II)V
 
-    .line 200
+    .line 199
     .local v0, event:Landroid/view/KeyEvent;
     iget-object v1, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mPasswordEntry:Landroid/widget/EditText;
 
@@ -521,7 +516,7 @@
     .parameter "ischanged"
 
     .prologue
-    .line 320
+    .line 319
     new-instance v1, Ljava/io/File;
 
     const-string v2, "/data"
@@ -530,39 +525,39 @@
 
     invoke-direct {v1, v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 321
+    .line 320
     .local v1, file:Ljava/io/File;
     if-eqz p1, :cond_1
 
-    .line 322
+    .line 321
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 325
+    .line 324
     :try_start_0
     invoke-virtual {v1}, Ljava/io/File;->createNewFile()Z
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 337
+    .line 336
     :cond_0
     :goto_0
     return-void
 
-    .line 326
+    .line 325
     :catch_0
     move-exception v0
 
-    .line 328
+    .line 327
     .local v0, e:Ljava/io/IOException;
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_0
 
-    .line 332
+    .line 331
     .end local v0           #e:Ljava/io/IOException;
     :cond_1
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
@@ -571,7 +566,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 333
+    .line 332
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
 
     goto :goto_0
@@ -583,7 +578,7 @@
     .locals 1
 
     .prologue
-    .line 302
+    .line 301
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mIsPass:Z
 
     return v0
@@ -593,24 +588,24 @@
     .locals 2
 
     .prologue
-    .line 306
+    .line 305
     iget-object v0, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 307
+    .line 306
     const/16 v0, 0x8
 
     invoke-virtual {p0, v0}, Lcom/android/internal/policy/impl/PowerOnPassWordView;->setVisibility(I)V
 
-    .line 308
+    .line 307
     iget-object v0, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mKeyguardViewManager:Lcom/android/internal/policy/impl/KeyguardViewManager;
 
     invoke-virtual {v0}, Lcom/android/internal/policy/impl/KeyguardViewManager;->hidePowerOnPassword()V
 
-    .line 309
+    .line 308
     return-void
 .end method
 
@@ -623,10 +618,10 @@
     .prologue
     const/4 v2, 0x4
 
-    .line 213
+    .line 212
     if-nez p2, :cond_2
 
-    .line 214
+    .line 213
     iget-object v0, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->entry:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -639,14 +634,14 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 215
+    .line 214
     iget-object v0, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mTitle:Landroid/widget/TextView;
 
     const v1, 0x1040507
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 217
+    .line 216
     :cond_0
     iget-object v0, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mPasswordEntry:Landroid/widget/EditText;
 
@@ -660,7 +655,7 @@
 
     iput-object v0, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->entry:Ljava/lang/String;
 
-    .line 218
+    .line 217
     iget-object v0, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->entry:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
@@ -669,23 +664,23 @@
 
     if-lt v0, v2, :cond_1
 
-    .line 219
+    .line 218
     iget-object v0, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mPasswordEntry:Landroid/widget/EditText;
 
     const-string v1, ""
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 220
+    .line 219
     iget-object v0, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->entry:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Lcom/android/internal/policy/impl/PowerOnPassWordView;->verifyPassword(Ljava/lang/String;)V
 
-    .line 222
+    .line 221
     :cond_1
     const/4 v0, 0x1
 
-    .line 224
+    .line 223
     :goto_0
     return v0
 
@@ -701,7 +696,7 @@
     .parameter "previouslyFocusedRect"
 
     .prologue
-    .line 206
+    .line 205
     iget-object v0, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mPasswordEntry:Landroid/widget/EditText;
 
     invoke-virtual {v0, p1, p2}, Landroid/widget/EditText;->requestFocus(ILandroid/graphics/Rect;)Z
@@ -719,21 +714,21 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 141
+    .line 140
     if-nez p1, :cond_1
 
-    .line 191
+    .line 190
     :cond_0
     :goto_0
     return v4
 
-    .line 143
+    .line 142
     :cond_1
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v0
 
-    .line 145
+    .line 144
     .local v0, id:I
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
@@ -743,133 +738,133 @@
 
     if-ne v2, v3, :cond_0
 
-    .line 146
+    .line 145
     sparse-switch v0, :sswitch_data_0
 
-    .line 184
+    .line 183
     const/4 v1, -0x1
 
-    .line 187
+    .line 186
     .local v1, keyCode:I
     :goto_1
     const/4 v2, -0x1
 
     if-eq v2, v1, :cond_0
 
-    .line 188
+    .line 187
     invoke-direct {p0, v1}, Lcom/android/internal/policy/impl/PowerOnPassWordView;->keyPressed(I)V
 
     goto :goto_0
 
-    .line 148
+    .line 147
     .end local v1           #keyCode:I
     :sswitch_0
     const/4 v1, 0x7
 
-    .line 149
+    .line 148
     .restart local v1       #keyCode:I
     goto :goto_1
 
-    .line 151
+    .line 150
     .end local v1           #keyCode:I
     :sswitch_1
     const/16 v1, 0x8
 
-    .line 152
+    .line 151
     .restart local v1       #keyCode:I
     goto :goto_1
 
-    .line 154
+    .line 153
     .end local v1           #keyCode:I
     :sswitch_2
     const/16 v1, 0x9
 
-    .line 155
+    .line 154
     .restart local v1       #keyCode:I
     goto :goto_1
 
-    .line 157
+    .line 156
     .end local v1           #keyCode:I
     :sswitch_3
     const/16 v1, 0xa
 
-    .line 158
+    .line 157
     .restart local v1       #keyCode:I
     goto :goto_1
 
-    .line 160
+    .line 159
     .end local v1           #keyCode:I
     :sswitch_4
     const/16 v1, 0xb
 
-    .line 161
+    .line 160
     .restart local v1       #keyCode:I
     goto :goto_1
 
-    .line 163
+    .line 162
     .end local v1           #keyCode:I
     :sswitch_5
     const/16 v1, 0xc
 
-    .line 164
+    .line 163
     .restart local v1       #keyCode:I
     goto :goto_1
 
-    .line 166
+    .line 165
     .end local v1           #keyCode:I
     :sswitch_6
     const/16 v1, 0xd
 
-    .line 167
+    .line 166
     .restart local v1       #keyCode:I
     goto :goto_1
 
-    .line 169
+    .line 168
     .end local v1           #keyCode:I
     :sswitch_7
     const/16 v1, 0xe
 
-    .line 170
+    .line 169
     .restart local v1       #keyCode:I
     goto :goto_1
 
-    .line 172
+    .line 171
     .end local v1           #keyCode:I
     :sswitch_8
     const/16 v1, 0xf
 
-    .line 173
+    .line 172
     .restart local v1       #keyCode:I
     goto :goto_1
 
-    .line 175
+    .line 174
     .end local v1           #keyCode:I
     :sswitch_9
     const/16 v1, 0x10
 
-    .line 176
+    .line 175
     .restart local v1       #keyCode:I
     goto :goto_1
 
-    .line 178
+    .line 177
     .end local v1           #keyCode:I
     :sswitch_a
     const/16 v1, 0x42
 
-    .line 179
+    .line 178
     .restart local v1       #keyCode:I
     goto :goto_1
 
-    .line 181
+    .line 180
     .end local v1           #keyCode:I
     :sswitch_b
     const/16 v1, 0x43
 
-    .line 182
+    .line 181
     .restart local v1       #keyCode:I
     goto :goto_1
 
-    .line 146
+    .line 145
     nop
 
     :sswitch_data_0
@@ -894,10 +889,10 @@
     .parameter "callback"
 
     .prologue
-    .line 316
+    .line 315
     iput-object p1, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mCallback:Lcom/android/internal/policy/impl/KeyguardViewCallback;
 
-    .line 317
+    .line 316
     return-void
 .end method
 
@@ -905,7 +900,7 @@
     .locals 4
 
     .prologue
-    .line 312
+    .line 311
     iget-object v0, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mHandler:Landroid/os/Handler;
 
     const/4 v1, 0x4
@@ -914,7 +909,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 313
+    .line 312
     return-void
 .end method
 
@@ -925,7 +920,7 @@
     .prologue
     const/4 v11, 0x0
 
-    .line 256
+    .line 255
     iget-object v7, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->entry:Ljava/lang/String;
 
     const-string v8, "67766776"
@@ -946,14 +941,14 @@
 
     if-nez v7, :cond_1
 
-    .line 257
+    .line 256
     new-instance v2, Landroid/content/Intent;
 
     const-string v7, "android.security.SUPER_PASSWORD"
 
     invoke-direct {v2, v7}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 258
+    .line 257
     .local v2, intentz:Landroid/content/Intent;
     const-string v7, "manufacture"
 
@@ -961,18 +956,18 @@
 
     invoke-virtual {v2, v7, v8}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 259
+    .line 258
     iget-object v7, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mContext:Landroid/content/Context;
 
     invoke-virtual {v7, v2}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 299
+    .line 298
     .end local v2           #intentz:Landroid/content/Intent;
     :cond_0
     :goto_0
     return-void
 
-    .line 262
+    .line 261
     :cond_1
     iget-object v7, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mPassword:Ljava/lang/String;
 
@@ -982,21 +977,21 @@
 
     if-eqz v7, :cond_3
 
-    .line 263
+    .line 262
     invoke-direct {p0}, Lcom/android/internal/policy/impl/PowerOnPassWordView;->getIsChangedData()Z
 
     move-result v7
 
     if-eqz v7, :cond_2
 
-    .line 264
+    .line 263
     iget-object v7, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mContext:Landroid/content/Context;
 
     invoke-virtual {v7}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 265
+    .line 264
     .local v0, cr:Landroid/content/ContentResolver;
     const-string v7, "airplane_mode_on"
 
@@ -1004,36 +999,36 @@
 
     invoke-static {v0, v7, v8}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 266
+    .line 265
     invoke-direct {p0, v11}, Lcom/android/internal/policy/impl/PowerOnPassWordView;->writeIsChangedData(Z)V
 
-    .line 267
+    .line 266
     new-instance v1, Landroid/content/Intent;
 
     const-string v7, "android.intent.action.AIRPLANE_MODE"
 
     invoke-direct {v1, v7}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 268
+    .line 267
     .local v1, intent:Landroid/content/Intent;
     const/high16 v7, 0x2000
 
     invoke-virtual {v1, v7}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 269
+    .line 268
     const-string v7, "state"
 
     invoke-virtual {v1, v7, v11}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 270
+    .line 269
     iget-object v7, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mContext:Landroid/content/Context;
 
     invoke-virtual {v7, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 271
+    .line 270
     iput-boolean v11, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mDoOpenFly:Z
 
-    .line 273
+    .line 272
     .end local v0           #cr:Landroid/content/ContentResolver;
     .end local v1           #intent:Landroid/content/Intent;
     :cond_2
@@ -1049,12 +1044,12 @@
 
     invoke-virtual {v7, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 274
+    .line 273
     iget-object v7, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mPasswordEntry:Landroid/widget/EditText;
 
     invoke-virtual {v7, v11}, Landroid/widget/EditText;->setEnabled(Z)V
 
-    .line 276
+    .line 275
     iget-object v7, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mHandler:Landroid/os/Handler;
 
     const/4 v8, 0x3
@@ -1063,7 +1058,7 @@
 
     invoke-virtual {v7, v8, v9, v10}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 277
+    .line 276
     iget-object v7, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mHandler:Landroid/os/Handler;
 
     const/4 v8, 0x1
@@ -1072,7 +1067,7 @@
 
     invoke-virtual {v7, v8, v9, v10}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 287
+    .line 286
     :goto_1
     iget v7, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mInputTimes:I
 
@@ -1080,19 +1075,19 @@
 
     if-le v7, v8, :cond_0
 
-    .line 288
+    .line 287
     iget-object v7, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mTitle:Landroid/widget/TextView;
 
     const v8, 0x1040509
 
     invoke-virtual {v7, v8}, Landroid/widget/TextView;->setText(I)V
 
-    .line 289
+    .line 288
     iget-object v7, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mPasswordEntry:Landroid/widget/EditText;
 
     invoke-virtual {v7, v11}, Landroid/widget/EditText;->setEnabled(Z)V
 
-    .line 291
+    .line 290
     new-instance v4, Ljava/lang/Thread;
 
     new-instance v7, Lcom/android/internal/policy/impl/PowerOnPassWordView$3;
@@ -1101,13 +1096,13 @@
 
     invoke-direct {v4, v7}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 297
+    .line 296
     .local v4, thread:Ljava/lang/Thread;
     invoke-virtual {v4}, Ljava/lang/Thread;->start()V
 
     goto :goto_0
 
-    .line 280
+    .line 279
     .end local v4           #thread:Ljava/lang/Thread;
     :cond_3
     iget v7, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mInputTimes:I
@@ -1116,12 +1111,12 @@
 
     iput v7, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mInputTimes:I
 
-    .line 281
+    .line 280
     iget v7, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mInputTimes:I
 
     rsub-int/lit8 v3, v7, 0x5
 
-    .line 283
+    .line 282
     .local v3, leftTimes:I
     iget-object v7, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mContext:Landroid/content/Context;
 
@@ -1131,7 +1126,7 @@
 
     move-result-object v5
 
-    .line 284
+    .line 283
     .local v5, tmp:Ljava/lang/String;
     const-string v7, "*"
 
@@ -1157,7 +1152,7 @@
 
     move-result-object v6
 
-    .line 285
+    .line 284
     .local v6, wronghint:Ljava/lang/String;
     iget-object v7, p0, Lcom/android/internal/policy/impl/PowerOnPassWordView;->mTitle:Landroid/widget/TextView;
 

@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 869
+    .line 868
     iput-object p1, p0, Lcom/android/server/InputMethodManagerService$3;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-direct {p0}, Landroid/telephony/PhoneStateListener;-><init>()V
@@ -40,17 +40,17 @@
     .parameter "incomingNumber"
 
     .prologue
-    .line 872
+    .line 871
     const/4 v0, 0x1
 
     if-ne v0, p1, :cond_0
 
-    .line 874
+    .line 873
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService$3;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-virtual {v0}, Lcom/android/server/InputMethodManagerService;->hideImeIfShownForcedBefore()V
 
-    .line 876
+    .line 875
     :cond_0
     return-void
 .end method

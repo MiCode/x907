@@ -2819,7 +2819,7 @@
     .line 378
     const-string v0, "CDMA"
 
-    const-string v1, "isReplace: is not supported in CDMA mode."
+    const-string/jumbo v1, "isReplace: is not supported in CDMA mode."
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -2836,7 +2836,7 @@
     .line 432
     const-string v0, "CDMA"
 
-    const-string v1, "isReplyPathPresent: is not supported in CDMA mode."
+    const-string/jumbo v1, "isReplyPathPresent: is not supported in CDMA mode."
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 

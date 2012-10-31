@@ -30,7 +30,7 @@
     .parameter
 
     .prologue
-    .line 419
+    .line 420
     iput-object p1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager$4;->this$0:Lcom/android/internal/policy/impl/KeyguardViewManager;
 
     iput-object p2, p0, Lcom/android/internal/policy/impl/KeyguardViewManager$4;->val$lastView:Lcom/android/internal/policy/impl/KeyguardActions;
@@ -46,12 +46,12 @@
     .locals 3
 
     .prologue
-    .line 421
+    .line 422
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager$4;->this$0:Lcom/android/internal/policy/impl/KeyguardViewManager;
 
     monitor-enter v1
 
-    .line 422
+    .line 423
     :try_start_0
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardViewManager$4;->this$0:Lcom/android/internal/policy/impl/KeyguardViewManager;
 
@@ -64,7 +64,7 @@
 
     invoke-interface {v0, v2}, Landroid/view/ViewManager;->removeView(Landroid/view/View;)V
 
-    .line 423
+    .line 424
     iget-object v0, p0, Lcom/android/internal/policy/impl/KeyguardViewManager$4;->this$0:Lcom/android/internal/policy/impl/KeyguardViewManager;
 
     const/4 v2, 0x0
@@ -72,13 +72,13 @@
     #setter for: Lcom/android/internal/policy/impl/KeyguardViewManager;->mKeyguardActions:Lcom/android/internal/policy/impl/KeyguardActions;
     invoke-static {v0, v2}, Lcom/android/internal/policy/impl/KeyguardViewManager;->access$402(Lcom/android/internal/policy/impl/KeyguardViewManager;Lcom/android/internal/policy/impl/KeyguardActions;)Lcom/android/internal/policy/impl/KeyguardActions;
 
-    .line 424
+    .line 425
     monitor-exit v1
 
-    .line 425
+    .line 426
     return-void
 
-    .line 424
+    .line 425
     :catchall_0
     move-exception v0
 

@@ -88,7 +88,7 @@
 
     .prologue
     .line 125
-    const v0, 0x10103fb
+    const v0, 0x10103fc
 
     invoke-direct {p0, p1, p2, v0}, Landroid/widget/TimePicker;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -195,7 +195,7 @@
     invoke-virtual {v4, v11}, Landroid/widget/EditText;->setImeOptions(I)V
 
     .line 164
-    const v4, 0x1020445
+    const v4, 0x1020446
 
     invoke-virtual {p0, v4}, Landroid/widget/TimePicker;->findViewById(I)Landroid/view/View;
 

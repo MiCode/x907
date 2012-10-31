@@ -24,7 +24,7 @@
     .locals 0
 
     .prologue
-    .line 817
+    .line 877
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,63 +37,90 @@
     .locals 3
 
     .prologue
-    .line 872
+    .line 935
     const-string v1, "SystemServer"
 
     const-string v2, "Entered the Android system server!"
 
     invoke-static {v1, v2}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 873
+    .line 936
     new-instance v0, Lcom/android/server/ServerThread;
 
     invoke-direct {v0}, Lcom/android/server/ServerThread;-><init>()V
 
-    .line 874
+    .line 937
     .local v0, thr:Ljava/lang/Thread;
     const-string v1, "android.server.ServerThread"
 
     invoke-virtual {v0, v1}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
-    .line 875
+    .line 938
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
-    .line 878
+    .line 941
     invoke-static {}, Lcom/android/server/SystemServer;->readCameraParam()V
 
-    .line 880
+    .line 943
     return-void
 .end method
 
 .method public static main([Ljava/lang/String;)V
-    .locals 6
+    .locals 7
     .parameter "args"
 
     .prologue
-    const-wide/32 v4, 0x5265c00
+    const-wide/32 v5, 0x5265c00
 
     const-wide/32 v2, 0x36ee80
 
-    .line 839
+    .line 900
+    const-string v0, "sys.system_pid"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, ""
+
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-static {}, Landroid/os/Process;->myPid()I
+
+    move-result v4
+
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 902
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    cmp-long v0, v0, v4
+    cmp-long v0, v0, v5
 
     if-gez v0, :cond_0
 
-    .line 845
+    .line 908
     const-string v0, "SystemServer"
 
     const-string v1, "System clock is before 1970; setting to 1970."
 
     invoke-static {v0, v1}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 846
-    invoke-static {v4, v5}, Landroid/os/SystemClock;->setCurrentTimeMillis(J)Z
+    .line 909
+    invoke-static {v5, v6}, Landroid/os/SystemClock;->setCurrentTimeMillis(J)Z
 
-    .line 849
+    .line 912
     :cond_0
     invoke-static {}, Lcom/android/internal/os/SamplingProfilerIntegration;->isEnabled()Z
 
@@ -101,17 +128,17 @@
 
     if-eqz v0, :cond_1
 
-    .line 850
+    .line 913
     invoke-static {}, Lcom/android/internal/os/SamplingProfilerIntegration;->start()V
 
-    .line 851
+    .line 914
     new-instance v0, Ljava/util/Timer;
 
     invoke-direct {v0}, Ljava/util/Timer;-><init>()V
 
     sput-object v0, Lcom/android/server/SystemServer;->timer:Ljava/util/Timer;
 
-    .line 852
+    .line 915
     sget-object v0, Lcom/android/server/SystemServer;->timer:Ljava/util/Timer;
 
     new-instance v1, Lcom/android/server/SystemServer$1;
@@ -122,7 +149,7 @@
 
     invoke-virtual/range {v0 .. v5}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;JJ)V
 
-    .line 861
+    .line 924
     :cond_1
     invoke-static {}, Ldalvik/system/VMRuntime;->getRuntime()Ldalvik/system/VMRuntime;
 
@@ -130,7 +157,7 @@
 
     invoke-virtual {v0}, Ldalvik/system/VMRuntime;->clearGrowthLimit()V
 
-    .line 865
+    .line 928
     invoke-static {}, Ldalvik/system/VMRuntime;->getRuntime()Ldalvik/system/VMRuntime;
 
     move-result-object v0
@@ -139,15 +166,15 @@
 
     invoke-virtual {v0, v1}, Ldalvik/system/VMRuntime;->setTargetHeapUtilization(F)F
 
-    .line 867
+    .line 930
     const-string v0, "android_servers"
 
     invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
 
-    .line 868
+    .line 931
     invoke-static {p0}, Lcom/android/server/SystemServer;->init1([Ljava/lang/String;)V
 
-    .line 869
+    .line 932
     return-void
 .end method
 
@@ -157,22 +184,22 @@
     .prologue
     const-wide/16 v7, 0x0
 
-    .line 884
+    .line 947
     new-instance v2, Ljava/io/File;
 
     const-string v5, "/persist/camera/adjusting_param"
 
     invoke-direct {v2, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 885
+    .line 948
     .local v2, paramFile:Ljava/io/File;
     const/4 v1, 0x0
 
-    .line 886
+    .line 949
     .local v1, param:I
     const/4 v3, 0x0
 
-    .line 888
+    .line 951
     .local v3, paramRandomAccessFile:Ljava/io/RandomAccessFile;
     :try_start_0
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
@@ -181,7 +208,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 889
+    .line 952
     new-instance v4, Ljava/io/RandomAccessFile;
 
     const-string v5, "r"
@@ -191,7 +218,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 890
+    .line 953
     .end local v3           #paramRandomAccessFile:Ljava/io/RandomAccessFile;
     .local v4, paramRandomAccessFile:Ljava/io/RandomAccessFile;
     :try_start_1
@@ -203,12 +230,12 @@
 
     if-lez v5, :cond_3
 
-    .line 891
+    .line 954
     const-wide/16 v5, 0x0
 
     invoke-virtual {v4, v5, v6}, Ljava/io/RandomAccessFile;->seek(J)V
 
-    .line 892
+    .line 955
     invoke-virtual {v4}, Ljava/io/RandomAccessFile;->readInt()I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
@@ -218,20 +245,20 @@
 
     move-object v3, v4
 
-    .line 900
+    .line 963
     .end local v4           #paramRandomAccessFile:Ljava/io/RandomAccessFile;
     .restart local v3       #paramRandomAccessFile:Ljava/io/RandomAccessFile;
     :cond_0
     :goto_0
     if-eqz v3, :cond_1
 
-    .line 901
+    .line 964
     :try_start_2
     invoke-virtual {v3}, Ljava/io/RandomAccessFile;->close()V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_3
 
-    .line 907
+    .line 970
     :cond_1
     :goto_1
     const-string v5, "persist.sys.camera.rgbParams"
@@ -242,20 +269,20 @@
 
     invoke-static {v5, v6}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 909
+    .line 972
     return-void
 
-    .line 895
+    .line 958
     :catch_0
     move-exception v0
 
-    .line 896
+    .line 959
     .local v0, e:Ljava/lang/Exception;
     :goto_2
     :try_start_3
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 897
+    .line 960
     const-string v5, "SystemServer"
 
     const-string v6, "Read camera param failed!"
@@ -264,10 +291,10 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 900
+    .line 963
     if-eqz v3, :cond_1
 
-    .line 901
+    .line 964
     :try_start_4
     invoke-virtual {v3}, Ljava/io/RandomAccessFile;->close()V
     :try_end_4
@@ -275,54 +302,54 @@
 
     goto :goto_1
 
-    .line 903
+    .line 966
     :catch_1
     move-exception v0
 
-    .line 904
+    .line 967
     :goto_3
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_1
 
-    .line 899
+    .line 962
     .end local v0           #e:Ljava/lang/Exception;
     :catchall_0
     move-exception v5
 
-    .line 900
+    .line 963
     :goto_4
     if-eqz v3, :cond_2
 
-    .line 901
+    .line 964
     :try_start_5
     invoke-virtual {v3}, Ljava/io/RandomAccessFile;->close()V
     :try_end_5
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_2
 
-    .line 899
+    .line 962
     :cond_2
     :goto_5
     throw v5
 
-    .line 903
+    .line 966
     :catch_2
     move-exception v0
 
-    .line 904
+    .line 967
     .restart local v0       #e:Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_5
 
-    .line 903
+    .line 966
     .end local v0           #e:Ljava/lang/Exception;
     :catch_3
     move-exception v0
 
     goto :goto_3
 
-    .line 899
+    .line 962
     .end local v3           #paramRandomAccessFile:Ljava/io/RandomAccessFile;
     .restart local v4       #paramRandomAccessFile:Ljava/io/RandomAccessFile;
     :catchall_1
@@ -334,7 +361,7 @@
     .restart local v3       #paramRandomAccessFile:Ljava/io/RandomAccessFile;
     goto :goto_4
 
-    .line 895
+    .line 958
     .end local v3           #paramRandomAccessFile:Ljava/io/RandomAccessFile;
     .restart local v4       #paramRandomAccessFile:Ljava/io/RandomAccessFile;
     :catch_4

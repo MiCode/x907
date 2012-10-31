@@ -137,7 +137,7 @@
     invoke-virtual {p0, v2, p0}, Lcom/oppo/widget/OppoTimePickerDialog;->setButton2(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
     .line 183
-    const v2, 0x10803c6
+    const v2, 0x10803d9
 
     invoke-virtual {p0, v2}, Lcom/oppo/widget/OppoTimePickerDialog;->setIcon(I)V
 
@@ -300,7 +300,7 @@
     invoke-virtual {p0, v2, p0}, Lcom/oppo/widget/OppoTimePickerDialog;->setButton2(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
     .line 135
-    const v2, 0x10803c6
+    const v2, 0x10803d9
 
     invoke-virtual {p0, v2}, Lcom/oppo/widget/OppoTimePickerDialog;->setIcon(I)V
 
@@ -393,7 +393,7 @@
 
     .prologue
     .line 86
-    const v2, 0x1030315
+    const v2, 0x1030317
 
     move-object v0, p0
 
@@ -424,7 +424,7 @@
 
     .prologue
     .line 101
-    const v2, 0x1030315
+    const v2, 0x1030317
 
     move-object v0, p0
 

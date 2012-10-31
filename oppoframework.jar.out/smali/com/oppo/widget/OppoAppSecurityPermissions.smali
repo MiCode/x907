@@ -1818,7 +1818,7 @@
     .line 508
     sget-object v6, Lcom/oppo/widget/OppoAppSecurityPermissions;->mRes:Landroid/content/res/Resources;
 
-    const v7, 0x10600af
+    const v7, 0x10600bf
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
@@ -1829,7 +1829,7 @@
     .line 509
     sget-object v6, Lcom/oppo/widget/OppoAppSecurityPermissions;->mRes:Landroid/content/res/Resources;
 
-    const v7, 0x10600af
+    const v7, 0x10600bf
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
@@ -1874,7 +1874,7 @@
 
     .line 501
     .restart local v4       #resources:Landroid/content/res/Resources;
-    const v6, 0x106000b
+    const v6, 0x10600c8
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -1883,7 +1883,7 @@
     invoke-virtual {v2, v6}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 502
-    const v6, 0x106000b
+    const v6, 0x10600c8
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -3403,7 +3403,7 @@
 
     if-eqz p4, :cond_0
 
-    const v0, 0x10803b0
+    const v0, 0x10803c3
 
     :goto_0
     invoke-virtual {v1, v0}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
@@ -3431,7 +3431,7 @@
     .line 227
     .end local v6           #icon:Landroid/graphics/drawable/Drawable;
     :cond_0
-    const v0, 0x1080493
+    const v0, 0x10804a6
 
     goto :goto_0
 .end method
@@ -3573,7 +3573,7 @@
 
     sget-object v1, Lcom/oppo/widget/OppoAppSecurityPermissions;->mRes:Landroid/content/res/Resources;
 
-    const v2, 0x10600af
+    const v2, 0x10600bf
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
@@ -3599,7 +3599,7 @@
 
     move-result-object v0
 
-    const v1, 0x1080493
+    const v1, 0x10804a6
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -3614,7 +3614,7 @@
 
     move-result-object v0
 
-    const v1, 0x10803b0
+    const v1, 0x10803c3
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -3629,7 +3629,7 @@
 
     move-result-object v0
 
-    const v1, 0x1080326
+    const v1, 0x1080339
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -3644,7 +3644,7 @@
 
     move-result-object v0
 
-    const v1, 0x1080327
+    const v1, 0x108033a
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

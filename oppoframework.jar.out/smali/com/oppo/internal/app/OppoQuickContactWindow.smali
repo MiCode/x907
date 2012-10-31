@@ -186,7 +186,7 @@
     .line 448
     new-instance v1, Landroid/view/ContextThemeWrapper;
 
-    const v2, 0x10302a3
+    const v2, 0x10302a5
 
     invoke-direct {v1, p1, v2}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
 
@@ -1125,7 +1125,7 @@
     invoke-virtual {v1, v2}, Lcom/oppo/internal/widget/OppoCheckableImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 978
-    const v2, 0x108069b
+    const v2, 0x10806ae
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1522,7 +1522,7 @@
     iput v2, v1, Landroid/view/WindowManager$LayoutParams;->y:I
 
     .line 734
-    const v2, 0x10302a4
+    const v2, 0x10302a6
 
     iput v2, v1, Landroid/view/WindowManager$LayoutParams;->windowAnimations:I
 
@@ -1592,7 +1592,7 @@
     iput v2, v1, Landroid/view/WindowManager$LayoutParams;->y:I
 
     .line 743
-    const v2, 0x10302a5
+    const v2, 0x10302a7
 
     iput v2, v1, Landroid/view/WindowManager$LayoutParams;->windowAnimations:I
 

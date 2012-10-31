@@ -5447,7 +5447,7 @@
     if-eq v0, v1, :cond_0
 
     .line 1741
-    const v0, 0x1080724
+    const v0, 0x1080737
 
     iput v0, p0, Landroid/widget/HorizontalScrollView;->mBackgroundID:I
 

@@ -53,9 +53,9 @@
     <string name="usb_charge_detail">通过USB为手机充电</string>
     <string name="usb_storage">存储装置</string>
     <string name="usb_storage_detail">将手机作为存储装置使用</string>
-    <string name="usb_adb">串行接口/PC套件</string>
+    <string name="usb_adb">串行接口/手机助手</string>
     <string name="usb_selection">选择以更改USB设置</string>
-    <string name="usb_adb_detail">与PC套件连接进行同步</string>
+    <string name="usb_adb_detail">与手机助手连接进行同步</string>
     <string name="usb_internet">USB绑定</string>
     <string name="usb_internet_detail">与PC共享手机的移动网络</string>
     <string name="usb_selection_processing">正在处理，请稍候...</string>
