@@ -3527,7 +3527,7 @@
 
     move-result v26
 
-    if-eqz v26, :cond_18
+    if-eqz v26, :cond_1b
 
     move-object/from16 v0, p0
 
