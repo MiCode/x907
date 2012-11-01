@@ -250,9 +250,9 @@
     iput-object p1, p0, Lcom/android/internal/policy/impl/KeyguardViewMediator;->mContext:Landroid/content/Context;
 
     .line 304
-    new-instance v0, Lcom/android/internal/policy/impl/UnsettleEventObserver;
+    #new-instance v0, Lcom/android/internal/policy/impl/UnsettleEventObserver;
 
-    invoke-direct {v0, p1}, Lcom/android/internal/policy/impl/UnsettleEventObserver;-><init>(Landroid/content/Context;)V
+    #invoke-direct {v0, p1}, Lcom/android/internal/policy/impl/UnsettleEventObserver;-><init>(Landroid/content/Context;)V
 
     .line 306
     iput-object p3, p0, Lcom/android/internal/policy/impl/KeyguardViewMediator;->mRealPowerManager:Landroid/os/LocalPowerManager;
