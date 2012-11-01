@@ -261,7 +261,7 @@
     .line 144
     new-instance v0, Landroid/content/Intent;
 
-    const-string/jumbo v2, "oppo.intent.action.ACTION_MUSIC_SELECT"
+    const-string/jumbo v2, "android.intent.action.RINGTONE_PICKER"
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
