@@ -9941,7 +9941,7 @@
 
     if-nez v0, :cond_1
 
-    iget-boolean v4, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->mInternalDataEnabled:Z
+    iget-boolean v0, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->mInternalDataEnabled:Z
 
     if-eqz v0, :cond_0
 
