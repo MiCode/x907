@@ -1,12 +1,12 @@
 #
-# Makefile for finder
+# Makefile for x907
 #
 
 # The original zip file, MUST be specified by each product
-local-zip-file     := stockrom.zip
+local-zip-file := stockrom.zip
 
 # The output zip file of MIUI rom, the default is porting_miui.zip if not specified
-local-out-zip-file := MIUI_finder.zip
+local-out-zip-file := MIUI_x907.zip
 
 #
 local-miui-modified-apps := Phone MiuiGallery Settings
@@ -19,8 +19,8 @@ local-miui-removed-apps := SettingsProvider MediaProvider Stk
 
 # All apps need to be removed from original ZIP file
 local-phone-apps := SettingsProvider ApplicationsProvider MediaProvider DefaultContainerService CertInstaller DrmProvider \
-                    SharedStorageBackup OppoCamera UserDictionaryProvider Stk Wiper Provision LiveWallpapersPicker \
-                    BackupRestoreConfirmation LiveWallpapers WAPPushManager VpnDialogs OppoTouchAndroid
+		SharedStorageBackup OppoCamera UserDictionaryProvider Stk Wiper Provision LiveWallpapersPicker \
+		BackupRestoreConfirmation LiveWallpapers WAPPushManager VpnDialogs OppoTouchAndroid
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
@@ -46,6 +46,6 @@ local-zip-misc:
 	cp other/build.prop out/ZIP/system/build.prop
 
 	@echo remove useless files
-	rm out/ZIP/system/media/poweroff.mp3
-	rm out/ZIP/system/media/poweron.mp3
-	rm out/ZIP/system/media/rbootanimation.zip
+	rm -rf out/ZIP/system/media/poweroff.mp3
+	rm -rf out/ZIP/system/media/poweron.mp3
+	rm -rf out/ZIP/system/media/rbootanimation.zip
