@@ -165,6 +165,8 @@
 
     if-nez v3, :cond_4
 
+    goto :goto_modify_0
+
     .line 924
     const-string v3, "persist.sys.assert.enable"
 
@@ -249,43 +251,15 @@
 
     .line 932
     :cond_3
+    :goto_modify_0
     :try_start_2
-    new-instance v20, Lcom/android/server/am/AppErrorDialog;
-
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/am/ActivityManagerService$2;->this$0:Lcom/android/server/am/ActivityManagerService;
 
-    iget-object v5, v3, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
-
-    const-string v3, "crash"
-
     move-object/from16 v0, v21
 
-    invoke-virtual {v0, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/app/ApplicationErrorReport$CrashInfo;
-
-    move-object/from16 v0, v20
-
-    move-object/from16 v1, v43
-
-    move-object/from16 v2, v39
-
-    invoke-direct {v0, v5, v1, v2, v3}, Lcom/android/server/am/AppErrorDialog;-><init>(Landroid/content/Context;Lcom/android/server/am/AppErrorResult;Lcom/android/server/am/ProcessRecord;Landroid/app/ApplicationErrorReport$CrashInfo;)V
-
-    .line 933
-    .local v20, d:Landroid/app/Dialog;
-    invoke-virtual/range {v20 .. v20}, Landroid/app/AlertDialog;->show()V
-
-    .line 934
-    move-object/from16 v0, v20
-
-    move-object/from16 v1, v39
-
-    iput-object v0, v1, Lcom/android/server/am/ProcessRecord;->crashDialog:Landroid/app/Dialog;
+    invoke-virtual {v3, v0}, Lcom/android/server/am/ActivityManagerService;->showAppCrashDialog(Ljava/util/HashMap;)V
 
     goto :goto_1
 

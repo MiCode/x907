@@ -73257,3 +73257,82 @@
 
     goto :goto_1
 .end method
+
+.method public showAppCrashDialog(Ljava/util/HashMap;)V
+    .locals 6
+    .parameter "data"
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
+
+    .prologue
+    const/4 v5, 0x0
+
+    const-string v4, "app"
+
+    invoke-virtual {p1, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/android/server/am/ProcessRecord;
+
+    .local v2, proc:Lcom/android/server/am/ProcessRecord;
+    const-string v4, "result"
+
+    invoke-virtual {p1, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/android/server/am/AppErrorResult;
+
+    .local v3, res:Lcom/android/server/am/AppErrorResult;
+    const-string v4, "crash"
+
+    invoke-virtual {p1, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/app/ApplicationErrorReport$CrashInfo;
+
+    .local v0, crashInfo:Landroid/app/ApplicationErrorReport$CrashInfo;
+    iget-object v4, p0, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
+
+    invoke-static {v4}, Lmiui/provider/ExtraSettings$Secure;->isForceCloseDialogEnabled(Landroid/content/Context;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    new-instance v1, Lcom/android/server/am/AppErrorDialog;
+
+    iget-object v4, p0, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
+
+    invoke-direct {v1, v4, v3, v2, v0}, Lcom/android/server/am/AppErrorDialog;-><init>(Landroid/content/Context;Lcom/android/server/am/AppErrorResult;Lcom/android/server/am/ProcessRecord;Landroid/app/ApplicationErrorReport$CrashInfo;)V
+
+    .local v1, d:Landroid/app/Dialog;
+    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
+
+    iput-object v1, v2, Lcom/android/server/am/ProcessRecord;->crashDialog:Landroid/app/Dialog;
+
+    .end local v1           #d:Landroid/app/Dialog;
+    :goto_0
+    return-void
+
+    :cond_0
+    if-eqz v2, :cond_1
+
+    if-eqz v0, :cond_1
+
+    iget-object v4, p0, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
+
+    invoke-static {v4, v2, v0, v5}, Lcom/android/server/am/MiuiErrorReport;->sendFcErrorReport(Landroid/content/Context;Lcom/android/server/am/ProcessRecord;Landroid/app/ApplicationErrorReport$CrashInfo;Z)V
+
+    :cond_1
+    iget-object v4, p0, Lcom/android/server/am/ActivityManagerService;->mMainStack:Lcom/android/server/am/ActivityStack;
+
+    invoke-virtual {v4}, Lcom/android/server/am/ActivityStack;->moveHomeToFrontLocked()V
+
+    invoke-virtual {v3, v5}, Lcom/android/server/am/AppErrorResult;->set(I)V
+
+    goto :goto_0
+.end method
