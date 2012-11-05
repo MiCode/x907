@@ -42,6 +42,9 @@ local-zip-misc:
 	@echo replace bootanimation
 	cp other/bootanimation out/ZIP/system/bin/bootanimation
 
+	@echo customize build.prop
+	cp other/build.prop out/ZIP/system/build.prop
+
 	@echo remove useless files
 	rm out/ZIP/system/media/poweroff.mp3
 	rm out/ZIP/system/media/poweron.mp3
