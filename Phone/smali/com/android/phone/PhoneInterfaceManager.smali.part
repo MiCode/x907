@@ -35,3 +35,59 @@
     return v0
 .end method
 
+.method public isDialing()Z
+    .locals 4
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 1179
+    iget-object v2, p0, Lcom/android/phone/PhoneInterfaceManager;->mPhone:Lcom/android/internal/telephony/Phone;
+
+    if-nez v2, :cond_0
+
+    .line 1180
+    const-string v2, "PhoneInterfaceManager"
+
+    const-string v3, "isDailing..ERROR: mPhone is null."
+
+    invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1190
+    :goto_0
+    return v1
+
+    .line 1184
+    :cond_0
+    iget-object v2, p0, Lcom/android/phone/PhoneInterfaceManager;->mPhone:Lcom/android/internal/telephony/Phone;
+
+    invoke-interface {v2}, Lcom/android/internal/telephony/Phone;->getForegroundCall()Lcom/android/internal/telephony/Call;
+
+    move-result-object v0
+
+    .line 1185
+    .local v0, foregroundCall:Lcom/android/internal/telephony/Call;
+    if-nez v0, :cond_1
+
+    .line 1186
+    const-string v2, "PhoneInterfaceManager"
+
+    const-string v3, "isDailing..ERROR: foregroundCall is null."
+
+    invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    .line 1190
+    :cond_1
+    invoke-virtual {v0}, Lcom/android/internal/telephony/Call;->getState()Lcom/android/internal/telephony/Call$State;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/android/internal/telephony/Call$State;->isDialing()Z
+
+    move-result v1
+
+    goto :goto_0
+.end method
+
