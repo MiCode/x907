@@ -666,7 +666,7 @@
     
     invoke-direct {v0, v1, v2}, Landroid/media/MediaScanner$MyMediaScannerClient;->setSettingIfNotSet(Ljava/lang/String;Ljava/lang/String;)V
     
-    const-string v20, "sms_received_sound"
+    const-string v19, "sms_received_sound"
 
     move-object/from16 v0, p1
 
