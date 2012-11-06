@@ -361,7 +361,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:theme="@style/Theme.Dialog.Alert" android:name="com.oppo.internal.usb.UsbSelectionActivity" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation">
+        <activity android:theme="@style/Theme.Holo.Light.Dialog.Alert" android:name="com.oppo.internal.usb.UsbSelectionActivity" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation">
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_USB_SELECTION" />
                 <category android:name="android.intent.category.DEFAULT" />

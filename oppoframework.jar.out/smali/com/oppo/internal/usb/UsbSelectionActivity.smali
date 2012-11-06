@@ -658,9 +658,9 @@
     iput-boolean v7, v2, Lcom/android/internal/app/AlertController$AlertParams;->mIsSingleChoice:Z
 
     .line 148
-    const v3, 0x108009b
+    #const v3, 0x108009b
 
-    iput v3, v2, Lcom/android/internal/app/AlertController$AlertParams;->mIconId:I
+    #iput v3, v2, Lcom/android/internal/app/AlertController$AlertParams;->mIconId:I
 
     .line 149
     iget-object v3, p0, Lcom/oppo/internal/usb/UsbSelectionActivity;->mResources:Landroid/content/res/Resources;
