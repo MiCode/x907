@@ -1,0 +1,6 @@
+version: 1.4.4.f5dfd72
+apkFileName: Stk.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
