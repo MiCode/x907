@@ -12,15 +12,15 @@ local-out-zip-file := MIUI_x907.zip
 local-miui-modified-apps := Phone MiuiGallery Settings
 
 # All apps from original ZIP, but has smali files chanded
-local-modified-apps := SettingsProvider MediaProvider Stk
+local-modified-apps := SettingsProvider MediaProvider Stk OppoBluetooth
 
 # All apks from MIUI
-local-miui-removed-apps := SettingsProvider MediaProvider Stk
+local-miui-removed-apps := SettingsProvider MediaProvider Stk Bluetooth
 
 # All apps need to be removed from original ZIP file
 local-phone-apps := SettingsProvider ApplicationsProvider MediaProvider DefaultContainerService CertInstaller DrmProvider \
 		SharedStorageBackup OppoCamera UserDictionaryProvider Stk Wiper Provision LiveWallpapersPicker \
-		BackupRestoreConfirmation LiveWallpapers WAPPushManager VpnDialogs OppoTouchAndroid
+		BackupRestoreConfirmation LiveWallpapers WAPPushManager VpnDialogs OppoTouchAndroid OppoBluetooth
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
