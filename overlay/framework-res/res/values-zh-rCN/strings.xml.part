@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enquire_nexttime_checkbox">下次不再询问</string>
+</resources>
