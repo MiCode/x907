@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="imageWidth" format="dimension" />
+    <attr name="imageHeight" format="dimension" />
+    <attr name="imageGap" format="dimension" />
+    <attr name="camera_mode" format="string" />
+</resources>

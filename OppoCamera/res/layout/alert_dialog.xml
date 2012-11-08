@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/parentPanel" android:layout_width="@dimen/alert_dialog_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/topPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="49.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_template" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="9.0dip">
+            <TextView android:textColor="@color/textview_color_w" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/alertTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" style="@style/Dialog_Title_TextAppearance_style" />
+        </LinearLayout>
+        <ImageView android:gravity="fill_horizontal" android:id="@id/titleDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@drawable/popup_divider_horizontal" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/contentPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textColor="@color/textview_color_w" android:id="@id/message" android:paddingLeft="31.0px" android:paddingTop="5.0dip" android:paddingRight="33.0px" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Dialog_Content_TextAppearance_style" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/buttonPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="42.0dip">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="8.0px" android:paddingTop="6.0px" android:paddingRight="8.0px" android:paddingBottom="8.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:gravity="center" android:id="@id/button1" android:background="@drawable/alert_dialog_button_background" android:layout_width="0.0dip" android:layout_height="63.0px" android:layout_marginLeft="5.0px" android:layout_marginRight="5.0px" android:maxLines="2" android:layout_weight="1.0" style="@style/Dialog_Button_TextAppearance_style" />
+            <Button android:gravity="center" android:id="@id/button2" android:background="@drawable/alert_dialog_button_background" android:layout_width="0.0dip" android:layout_height="63.0px" android:layout_marginLeft="5.0px" android:layout_marginRight="5.0px" android:maxLines="2" android:layout_weight="1.0" style="@style/Dialog_Button_TextAppearance_style" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

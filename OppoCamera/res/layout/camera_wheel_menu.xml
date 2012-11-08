@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/camera_settings" android:focusable="false" android:clickable="false" android:layout_width="690.0px" android:layout_height="fill_parent" android:soundEffectsEnabled="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/camera_setting_bg" android:background="@drawable/camera_setting_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/camera_menu_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/wheel_bg" android:background="@drawable/camera_menu_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/menu_light" android:background="@drawable/camera_menu_light" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.oppo.camera.setting.IconsPanelView android:id="@id/icons_panel" android:focusable="false" android:clickable="false" android:layout_width="100.0dip" android:layout_height="240.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/expand_btn" android:background="@drawable/camera_expand_btn" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:soundEffectsEnabled="false" />
+        <ImageView android:id="@id/expand_arrow" android:background="@drawable/camera_expand_point" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:soundEffectsEnabled="false" />
+    </RelativeLayout>
+</RelativeLayout>

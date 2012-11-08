@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/video" android:background="@drawable/image_listview_border" android:padding="6.0dip" android:layout_width="140.0dip" android:layout_height="108.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="22.0dip" android:layout_marginRight="8.0dip" android:scaleType="fitXY" />
+    <TextView android:textSize="10.0dip" android:textColor="@color/textview_color_w" android:id="@id/all_video_time" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="95.0dip" android:layout_marginTop="35.0dip" />
+</RelativeLayout>

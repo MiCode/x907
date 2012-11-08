@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="9" android:versionName="1.1.9" android:manufacture="oppo" package="com.oppo.camera"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:theme="@android:style/Theme" android:label="@string/app_name" android:icon="@drawable/ic_launcher_camera" android:name="CommConfig" android:debuggable="false" android:fakethirdpart="false">
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:label="@string/lomo_camera" android:icon="@drawable/ic_launcher_lomo_camera" android:name=".lomo.LomoCamera" android:taskAffinity="android.task.lomo" android:clearTaskOnLaunch="true" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize" android:orientationAnimation="none">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name=".lomo.RewindDemoVideo" android:clearTaskOnLaunch="true" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize" android:orientationAnimation="none">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.oppo.camera.rewind.RewindActivity" android:taskAffinity="android.task.lomo" android:clearTaskOnLaunch="true" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize" android:orientationAnimation="none">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ThemeCamera" android:label="@string/app_name" android:icon="@drawable/ic_launcher_camera" android:name=".OppoCamera" android:clearTaskOnLaunch="true" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize" android:orientationAnimation="none">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:label="@string/app_name" android:name=".OppoVideo" android:clearTaskOnLaunch="true" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize" android:orientationAnimation="none">
+            <intent-filter>
+                <action android:name="android.media.action.VIDEO_CAMERA" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.VIDEO_CAPTURE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".utils.RestoreDefaultSettingReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.RESTORE_DEFAULT_SETTINGS" />
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+</manifest>

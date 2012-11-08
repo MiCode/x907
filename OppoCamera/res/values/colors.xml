@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="shadowColor">#c0000000</color>
+    <color name="recording_time_elapsed_text">#ffffffff</color>
+    <color name="recording_time_remaining_text">#ffff0033</color>
+    <color name="camera_setting_text_color">#ffa9a9a9</color>
+    <color name="oppo_alert_dialog_button_text_color">#ff000000</color>
+    <color name="oppo_alert_dialog_content_text_color">#ffffffff</color>
+    <color name="oppo_alert_dialog_title_text_color">#ffc8c8c8</color>
+    <color name="oppo_alert_dialog_title_text_shadow_color">#dd000000</color>
+    <color name="oppo_alert_dialog_button_text_shadow_color">#ffffffff</color>
+    <color name="alert_dialog_content_bg_color">#00ffffff</color>
+    <color name="alert_dialog_content_list_bg_color">#ffffffff</color>
+    <color name="textview_color_w">#ffffffff</color>
+</resources>

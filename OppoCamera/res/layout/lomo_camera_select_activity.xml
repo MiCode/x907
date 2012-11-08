@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/menu_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lomo_menu_bg" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/current_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0px" android:layout_marginTop="120.0px" android:src="@drawable/lomo_current_item" />
+        <ImageView android:id="@id/camera_face_btn" android:paddingLeft="15.0px" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/btn_ic_camera_face_switch" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:soundEffectsEnabled="false" />
+        <ImageView android:id="@id/photo_album_image" android:paddingLeft="15.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/lomo_photo_album" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:soundEffectsEnabled="false" />
+        <TextView android:textSize="13.0pt" android:textStyle="italic" android:textColor="@color/textview_color_w" android:gravity="center" android:id="@id/photo_album_text" android:layout_width="109.0px" android:layout_height="55.0px" android:layout_marginRight="5.0dip" android:layout_marginBottom="4.0dip" android:text="@string/photo_album_name" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:soundEffectsEnabled="false" />
+    </RelativeLayout>
+    <com.oppo.camera.lomo.LomoCameraLayout android:id="@id/special_camera_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

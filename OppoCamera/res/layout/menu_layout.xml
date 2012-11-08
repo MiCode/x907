@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.oppo.camera.lomo.PanelView android:id="@id/panel_view" android:layout_width="238.0px" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+    <RelativeLayout android:id="@id/sub_menu" android:layout_width="530.0px" android:layout_height="wrap_content" android:layout_marginLeft="215.0px" />
+</RelativeLayout>

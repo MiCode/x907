@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="camera_settings">
+        <item>摄像头</item>
+        <item>快门声音</item>
+        <item>保存位置</item>
+        <item>低光</item>
+        <item>自然光</item>
+        <item>逆光</item>
+        <item>闪光灯</item>
+    </string-array>
+    <string-array name="video_settings">
+        <item>摄像头</item>
+        <item>文件格式</item>
+        <item>保存位置</item>
+        <item>补光灯</item>
+        <item>录音</item>
+    </string-array>
+    <integer-array name="turnLight">
+        <item>-1728053248</item>
+        <item>-2013265920</item>
+        <item>1996488704</item>
+        <item>1711276032</item>
+        <item>1426063360</item>
+        <item>1140850688</item>
+        <item>855638016</item>
+        <item>570425344</item>
+        <item>285212672</item>
+        <item>0</item>
+    </integer-array>
+    <integer-array name="turnDark">
+        <item>285212672</item>
+        <item>570425344</item>
+        <item>855638016</item>
+        <item>1140850688</item>
+        <item>1426063360</item>
+        <item>1711276032</item>
+        <item>1996488704</item>
+        <item>-2013265920</item>
+        <item>-1728053248</item>
+        <item>-1442840576</item>
+    </integer-array>
+    <string-array name="items_name">
+        <item>趣 味</item>
+        <item>笑脸群拍</item>
+        <item>哈 哈 镜</item>
+        <item>日 系</item>
+        <item>增强相机</item>
+        <item>情 景</item>
+    </string-array>
+    <string-array name="item_interest">
+        <item>鱼 眼</item>
+        <item>镜 像</item>
+        <item>铅 笔</item>
+        <item>彩 铅</item>
+    </string-array>
+    <string-array name="item_rewind">
+        <item>开 始</item>
+        <item>教 程</item>
+    </string-array>
+    <string-array name="item_haha_mirror">
+        <item>漏 斗</item>
+        <item>水 波</item>
+        <item>球 面</item>
+        <item>海 纹</item>
+    </string-array>
+    <string-array name="item_diary">
+        <item>虚 焦</item>
+        <item>柔 焦</item>
+        <item>隧 道</item>
+        <item>泛 黄</item>
+    </string-array>
+    <string-array name="item_strengthen">
+        <item>连 拍</item>
+        <item>全 景</item>
+    </string-array>
+</resources>

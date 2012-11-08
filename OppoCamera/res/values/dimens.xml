@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="hint_y_offset">64.0dip</dimen>
+    <dimen name="alert_dialog_width">289.0dip</dimen>
+    <dimen name="dialog_title_text_size">20.0sp</dimen>
+    <dimen name="dialog_content_text_size">18.0sp</dimen>
+    <dimen name="dialog_button_text_size">18.0sp</dimen>
+    <dimen name="dialog_title_height">0.0dip</dimen>
+    <dimen name="dialog_max_height">580.0px</dimen>
+</resources>

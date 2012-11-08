@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/camera" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:oppo="http://schemas.android.com/apk/res/com.oppo.camera">
+    <LinearLayout android:orientation="horizontal" android:id="@id/frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+        <RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <SurfaceView android:id="@id/camera_preview" android:background="#00000000" android:layout_width="800.0px" android:layout_height="480.0px" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <com.oppo.camera.views.FocusView android:layout_gravity="center" android:id="@id/focus_rectangle" android:focusable="false" android:visibility="invisible" android:clickable="false" android:layout_width="0.0px" android:layout_height="0.0px" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/zoom_layout" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/zoom_img" android:padding="10.0px" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zoom_img" android:scaleType="fitXY" android:layout_centerInParent="true" />
+        <com.oppo.camera.views.RotateZoomView android:textSize="20.0px" android:textStyle="bold" android:textColor="@color/textview_color_w" android:gravity="center" android:id="@id/zoom_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/camera_review_frame" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:soundEffectsEnabled="false" />
+    <com.oppo.camera.views.RotateHintView android:textSize="15.0dip" android:textStyle="normal" android:textColor="@color/textview_color_w" android:id="@id/hint" android:visibility="gone" android:layout_width="800.0px" android:layout_height="480.0px" />
+    <RelativeLayout android:id="@id/control_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.oppo.camera.views.ShutterWaitProgressView android:id="@id/shutter_progress" android:background="@drawable/controll_bg" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="110.0px" android:layout_height="480.0px" android:layout_alignParentRight="true" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="left" android:orientation="vertical" android:id="@id/camera_setting_layout" android:background="@drawable/controll_bg" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.oppo.camera.setting.NewCameraSettingMenu android:gravity="center_horizontal" android:layout_gravity="left" android:orientation="vertical" android:id="@id/camera_setting_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

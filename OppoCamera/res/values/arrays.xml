@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ic_camera_id">
+        <item>@drawable/btn_ic_camera_id_switch</item>
+        <item>@drawable/btn_ic_camera_id_switch</item>
+    </array>
+    <array name="ic_flash_mode">
+        <item>@drawable/ic_camera_flash_off</item>
+        <item>@drawable/ic_camera_flash_auto</item>
+        <item>@drawable/ic_camera_flash_on</item>
+    </array>
+    <array name="ic_face_beautify">
+        <item>@drawable/ic_camera_face_beautify_off</item>
+        <item>@drawable/ic_camera_face_beautify_on</item>
+    </array>
+    <array name="ic_hdr_mode">
+        <item>@drawable/ic_camera_hdr_off</item>
+        <item>@drawable/ic_camera_hdr_on</item>
+    </array>
+    <array name="ic_timer">
+        <item>@drawable/ic_timer_off</item>
+        <item>@drawable/ic_timer_on_5</item>
+    </array>
+    <array name="ic_sound_mode">
+        <item>@drawable/ic_camera_sound_on</item>
+        <item>@drawable/ic_camera_sound_off</item>
+    </array>
+    <string-array name="value_camera_id">
+        <item>camera_face_back</item>
+        <item>camera_face_front</item>
+    </string-array>
+    <string-array name="value_flash_mode">
+        <item>camera_flash_off</item>
+        <item>camera_flash_auto</item>
+        <item>camera_flash_on</item>
+    </string-array>
+    <string-array name="value_timer">
+        <item>camera_timer_off</item>
+        <item>camera_timer_on_5</item>
+    </string-array>
+    <string-array name="value_face_beautify">
+        <item>camera_face_beautify_off</item>
+        <item>camera_face_beautify_on</item>
+    </string-array>
+    <string-array name="value_hdr_mode">
+        <item>camera_hdr_off</item>
+        <item>camera_hdr_on</item>
+    </string-array>
+    <string-array name="value_sound_mode">
+        <item>camera_sound_on</item>
+        <item>camera_sound_off</item>
+    </string-array>
+    <string-array name="camera_keys">
+        <item>key_camera_id</item>
+        <item>key_camera_flash</item>
+        <item>key_camera_timer</item>
+        <item>key_face_beautify</item>
+        <item>key_camera_hdr</item>
+        <item>key_camera_sound</item>
+    </string-array>
+    <string-array name="video_keys">
+        <item>key_video_id</item>
+        <item>key_video_flash</item>
+        <item>key_video_size</item>
+        <item>key_video_record</item>
+    </string-array>
+    <array name="ic_video_camera_id">
+        <item>@drawable/ic_video_id_switch</item>
+        <item>@drawable/ic_video_id_switch</item>
+    </array>
+    <array name="ic_video_falsh_mode">
+        <item>@drawable/ic_video_flash_off</item>
+        <item>@drawable/ic_video_flash_on</item>
+    </array>
+    <array name="ic_video_size_mode">
+        <item>@drawable/ic_video_size_720p</item>
+        <item>@drawable/ic_video_size_1080p</item>
+    </array>
+    <array name="ic_video_format_mode">
+        <item>@drawable/ic_video_format_3gp</item>
+        <item>@drawable/ic_video_format_mp4</item>
+    </array>
+    <array name="ic_video_record_mode">
+        <item>@drawable/ic_video_record_on</item>
+        <item>@drawable/ic_video_record_off</item>
+    </array>
+    <string-array name="value_video_camera_id">
+        <item>video_face_front</item>
+        <item>video_face_back</item>
+    </string-array>
+    <string-array name="value_video_falsh_mode">
+        <item>video_flash_off</item>
+        <item>video_flash_on</item>
+    </string-array>
+    <string-array name="value_video_size_mode">
+        <item>video_size_720p</item>
+        <item>video_size_1080p</item>
+    </string-array>
+    <string-array name="value_video_format_mode">
+        <item>video_format_3gp</item>
+        <item>video_format_mp4</item>
+    </string-array>
+    <string-array name="value_video_record_mode">
+        <item>video_record_on</item>
+        <item>video_record_off</item>
+    </string-array>
+    <string-array name="camera_settings">
+        <item>Camera</item>
+        <item>Shutter sound</item>
+        <item>Store location</item>
+        <item>Low light</item>
+        <item>Natural flash</item>
+        <item>HDR</item>
+        <item>Flash mode</item>
+    </string-array>
+    <string-array name="video_settings">
+        <item>Camera</item>
+        <item>File formats</item>
+        <item>Store location</item>
+        <item>Exposure</item>
+        <item>Recorder</item>
+    </string-array>
+    <integer-array name="turnLight">
+        <item>-1728053248</item>
+        <item>-2013265920</item>
+        <item>1996488704</item>
+        <item>1711276032</item>
+        <item>1426063360</item>
+        <item>1140850688</item>
+        <item>855638016</item>
+        <item>570425344</item>
+        <item>285212672</item>
+        <item>0</item>
+    </integer-array>
+    <integer-array name="turnDark">
+        <item>285212672</item>
+        <item>570425344</item>
+        <item>855638016</item>
+        <item>1140850688</item>
+        <item>1426063360</item>
+        <item>1711276032</item>
+        <item>1996488704</item>
+        <item>-2013265920</item>
+        <item>-1728053248</item>
+        <item>-1442840576</item>
+    </integer-array>
+    <string-array name="items_name">
+        <item>Funny</item>
+        <item>Rewind</item>
+        <item>Deformed</item>
+        <item>Light Color</item>
+        <item>Enhanced</item>
+    </string-array>
+    <string-array name="item_interest">
+        <item>Fisheye</item>
+        <item>Mirror</item>
+        <item>Pencil</item>
+        <item>Color</item>
+    </string-array>
+    <string-array name="item_rewind">
+        <item>Start</item>
+        <item>Demo</item>
+    </string-array>
+    <string-array name="item_haha_mirror">
+        <item>Funnel</item>
+        <item>Wave</item>
+        <item>Sphere</item>
+        <item>Sea</item>
+    </string-array>
+    <string-array name="item_diary">
+        <item>Virtual-F</item>
+        <item>Soft-F</item>
+        <item>Lomo</item>
+        <item>Retro</item>
+    </string-array>
+    <string-array name="item_strengthen">
+        <item>Burst</item>
+        <item>Panorama</item>
+    </string-array>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/burst_review_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.oppo.ImageScaleView.ImageScaleView android:id="@id/image_switcher" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/burst_thumbnail_layout" android:visibility="gone" android:layout_width="590.0px" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.oppo.camera.views.RotateImageView android:id="@id/burst_image1" android:background="@drawable/btn_thumble_picture" android:padding="1.0px" android:layout_width="100.0px" android:layout_height="75.0px" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.oppo.camera.views.RotateImageView android:id="@id/burst_image2" android:background="@drawable/btn_thumble_picture" android:padding="1.0px" android:layout_width="100.0px" android:layout_height="75.0px" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.oppo.camera.views.RotateImageView android:id="@id/burst_image3" android:background="@drawable/btn_thumble_picture" android:padding="1.0px" android:layout_width="100.0px" android:layout_height="75.0px" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.oppo.camera.views.RotateImageView android:id="@id/burst_image4" android:background="@drawable/btn_thumble_picture" android:padding="1.0px" android:layout_width="100.0px" android:layout_height="75.0px" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.oppo.camera.views.RotateImageView android:id="@id/burst_image5" android:background="@drawable/btn_thumble_picture" android:padding="1.0px" android:layout_width="100.0px" android:layout_height="75.0px" android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

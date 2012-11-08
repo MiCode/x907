@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/camera_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <SurfaceView android:id="@id/effect_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <com.oppo.camera.views.RotateHintView android:textSize="15.0dip" android:textStyle="normal" android:textColor="@color/textview_color_w" android:id="@id/hint" android:visibility="gone" android:layout_width="800.0px" android:layout_height="480.0px" />
+    <com.oppo.camera.views.FocusSurfaceView android:layout_gravity="center" android:id="@id/focus_rectangle" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/zoom_layout" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/zoom_img" android:padding="10.0px" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zoom_img" android:scaleType="fitXY" android:layout_centerInParent="true" />
+        <com.oppo.camera.views.RotateZoomView android:textSize="20.0px" android:textStyle="bold" android:textColor="@color/textview_color_w" android:gravity="center" android:id="@id/zoom_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.oppo.camera.views.RotateImageView android:id="@id/lomo_camera_face_btn" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="116.0px" android:layout_height="83.0px" android:src="@drawable/btn_ic_camera_face_switch" android:soundEffectsEnabled="false" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/control_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/lomo_tips_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+        <ImageView android:id="@id/lomo_tips_background" android:background="@drawable/lomo_camera_tips" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="12.0pt" android:textColor="@color/textview_color_w" android:gravity="center" android:id="@id/lomo_tips_text" android:focusable="false" android:clickable="false" android:layout_width="500.0px" android:layout_height="wrap_content" android:layout_marginLeft="120.0px" android:text="@string/lomo_tips_texts" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@id/panorama_tips_layout" android:background="@drawable/panorama_tips_background" android:visibility="invisible" android:layout_width="256.0px" android:layout_height="200.0px">
+        <ImageView android:id="@id/panorama_tips_image" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="69.0px" android:layout_marginTop="10.0px" android:src="@drawable/panorama_tips_arrow" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="11.0pt" android:textColor="@color/textview_color_w" android:id="@id/panorama_tips_text" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_marginBottom="15.0px" android:text="@string/panorama_tips_text" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.oppo.camera.panorama.PanoramaProgressBar android:layout_gravity="bottom" android:id="@id/panorama_progress_bar" android:visibility="invisible" android:layout_width="352.0px" android:layout_height="28.0px" android:layout_marginLeft="169.0px" android:layout_marginBottom="18.0px" />
+    <com.oppo.camera.lomo.LomoCameraMenuLayout android:id="@id/special_camera_meun_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/burst_review_root" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>
