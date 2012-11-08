@@ -9,7 +9,7 @@ local-zip-file := stockrom.zip
 local-out-zip-file := MIUI_x907.zip
 
 #
-local-miui-modified-apps := Phone MiuiGallery Settings
+local-miui-modified-apps := Phone MiuiGallery Settings MiuiHome
 
 # All apps from original ZIP, but has smali files chanded
 local-modified-apps := SettingsProvider MediaProvider Stk OppoBluetooth OppoCamera
