@@ -1683,6 +1683,8 @@
     const-string v2, ""
 
     invoke-direct {p0, v1, v0, v2}, Lcom/android/providers/settings/DatabaseHelper;->loadSetting(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/String;Ljava/lang/Object;)V
+
+    invoke-direct {p0, v1}, Lcom/android/providers/settings/DatabaseHelper;->loadForceCloseDialogEnableSetting(Landroid/database/sqlite/SQLiteStatement;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -6389,5 +6391,23 @@
     invoke-direct {p0}, Lcom/android/providers/settings/DatabaseHelper;->deleteFlagFile()V
 
     .line 271
+    return-void
+.end method
+
+.method private loadForceCloseDialogEnableSetting(Landroid/database/sqlite/SQLiteStatement;)V
+    .locals 2
+    .parameter "stmt"
+
+    .prologue
+    const-string v0, "force_close_dialog_enabled"
+
+    const/4 v1, 0x1
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-direct {p0, p1, v0, v1}, Lcom/android/providers/settings/DatabaseHelper;->loadSetting(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/String;Ljava/lang/Object;)V
+
     return-void
 .end method
