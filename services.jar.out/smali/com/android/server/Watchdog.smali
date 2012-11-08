@@ -601,14 +601,14 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 608
+    .line 645
     const-string v2, "dalvik.vm.stack-trace-file"
 
     invoke-static {v2, v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 609
+    .line 646
     .local v0, tracesPath:Ljava/lang/String;
     if-eqz v0, :cond_0
 
@@ -618,21 +618,195 @@
 
     if-nez v2, :cond_1
 
-    .line 614
+    .line 651
     :cond_0
     :goto_0
     return-object v1
 
-    .line 613
+    .line 650
     :cond_1
     invoke-direct {p0, v0}, Lcom/android/server/Watchdog;->native_dumpKernelStacks(Ljava/lang/String;)V
 
-    .line 614
+    .line 651
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     goto :goto_0
+.end method
+
+.method private generateDumpInfo(ZJJ)Ljava/lang/String;
+    .locals 4
+    .parameter "waitedHalf"
+    .parameter "timeoutRecord1"
+    .parameter "timeoutRecord2"
+
+    .prologue
+    .line 631
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 632
+    .local v1, sb:Ljava/lang/StringBuilder;
+    const-string v2, "This is from Watchdog"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 633
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "\nThe count of mMonitors is: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/android/server/Watchdog;->mMonitors:Ljava/util/ArrayList;
+
+    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
+
+    move-result v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 634
+    const/4 v0, 0x0
+
+    .local v0, i:I
+    :goto_0
+    iget-object v2, p0, Lcom/android/server/Watchdog;->mMonitors:Ljava/util/ArrayList;
+
+    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
+
+    move-result v2
+
+    if-ge v0, v2, :cond_0
+
+    .line 635
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "\nMonitor "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, ": "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/android/server/Watchdog;->mMonitors:Ljava/util/ArrayList;
+
+    invoke-virtual {v3, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 634
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    .line 637
+    :cond_0
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "\n\nmCurrentMonitor = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/android/server/Watchdog;->mCurrentMonitor:Lcom/android/server/Watchdog$Monitor;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "\nmCompleted = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    iget-boolean v3, p0, Lcom/android/server/Watchdog;->mCompleted:Z
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "\nwaitedHalf = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "\ntimeoutRecord1 = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "\ntimeoutRecord2 = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p4, p5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 640
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    return-object v2
 .end method
 
 .method public static getInstance()Lcom/android/server/Watchdog;
@@ -1696,481 +1870,566 @@
 .end method
 
 .method public run()V
-    .locals 15
+    .locals 24
 
     .prologue
     .line 492
-    const/4 v10, 0x0
-
-    .line 494
-    .local v10, waitedHalf:Z
-    :goto_0
-    const/4 v11, 0x0
-
-    iput-boolean v11, p0, Lcom/android/server/Watchdog;->mCompleted:Z
-
-    .line 495
-    iget-object v11, p0, Lcom/android/server/Watchdog;->mHandler:Landroid/os/Handler;
-
-    const/16 v12, 0xa9e
-
-    invoke-virtual {v11, v12}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+    const/4 v4, 0x0
 
     .line 496
+    .local v4, waitedHalf:Z
+    :goto_0
+    const-wide/16 v5, 0x0
+
+    .local v5, timeoutRecord1:J
+    const-wide/16 v7, 0x0
+
+    .line 498
+    .local v7, timeoutRecord2:J
+    const/4 v3, 0x0
+
+    move-object/from16 v0, p0
+
+    iput-boolean v3, v0, Lcom/android/server/Watchdog;->mCompleted:Z
+
+    .line 499
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/android/server/Watchdog;->mHandler:Landroid/os/Handler;
+
+    const/16 v20, 0xa9e
+
+    move/from16 v0, v20
+
+    invoke-virtual {v3, v0}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+
+    .line 500
     monitor-enter p0
 
-    .line 497
-    const-wide/16 v8, 0x7530
+    .line 501
+    const-wide/16 v18, 0x7530
 
-    .line 503
-    .local v8, timeout:J
+    .line 507
+    .local v18, timeout:J
     :try_start_0
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
-    move-result-wide v6
+    move-result-wide v16
 
-    .line 504
-    .local v6, start:J
+    .line 508
+    .local v16, start:J
     :goto_1
-    const-wide/16 v11, 0x0
+    const-wide/16 v20, 0x0
 
-    cmp-long v11, v8, v11
+    cmp-long v3, v18, v20
 
-    if-lez v11, :cond_0
+    if-lez v3, :cond_0
 
-    iget-boolean v11, p0, Lcom/android/server/Watchdog;->mForceKillSystem:Z
+    move-object/from16 v0, p0
+
+    iget-boolean v3, v0, Lcom/android/server/Watchdog;->mForceKillSystem:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    if-nez v11, :cond_0
+    if-nez v3, :cond_0
 
-    .line 506
+    .line 510
     :try_start_1
-    invoke-virtual {p0, v8, v9}, Ljava/lang/Object;->wait(J)V
+    move-object/from16 v0, p0
+
+    move-wide/from16 v1, v18
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/Object;->wait(J)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 510
+    .line 514
     :goto_2
-    const-wide/16 v11, 0x7530
+    const-wide/16 v20, 0x7530
 
     :try_start_2
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
-    move-result-wide v13
+    move-result-wide v22
 
-    sub-long/2addr v13, v6
+    sub-long v22, v22, v16
 
-    sub-long v8, v11, v13
+    sub-long v18, v20, v22
 
     goto :goto_1
 
-    .line 507
+    .line 511
     :catch_0
-    move-exception v1
+    move-exception v11
 
-    .line 508
-    .local v1, e:Ljava/lang/InterruptedException;
-    const-string v11, "Watchdog"
+    .line 512
+    .local v11, e:Ljava/lang/InterruptedException;
+    const-string v3, "Watchdog"
 
-    invoke-static {v11, v1}, Landroid/util/Log;->wtf(Ljava/lang/String;Ljava/lang/Throwable;)I
+    invoke-static {v3, v11}, Landroid/util/Log;->wtf(Ljava/lang/String;Ljava/lang/Throwable;)I
 
     goto :goto_2
 
-    .line 528
-    .end local v1           #e:Ljava/lang/InterruptedException;
-    .end local v6           #start:J
+    .line 540
+    .end local v11           #e:Ljava/lang/InterruptedException;
+    .end local v16           #start:J
     :catchall_0
-    move-exception v11
+    move-exception v3
 
     monitor-exit p0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    throw v11
+    throw v3
 
-    .line 513
-    .restart local v6       #start:J
+    .line 517
+    .restart local v16       #start:J
     :cond_0
     :try_start_3
-    iget-boolean v11, p0, Lcom/android/server/Watchdog;->mCompleted:Z
+    move-object/from16 v0, p0
 
-    if-eqz v11, :cond_1
+    iget-boolean v3, v0, Lcom/android/server/Watchdog;->mCompleted:Z
 
-    iget-boolean v11, p0, Lcom/android/server/Watchdog;->mForceKillSystem:Z
+    if-eqz v3, :cond_1
 
-    if-nez v11, :cond_1
+    move-object/from16 v0, p0
 
-    .line 515
-    const/4 v10, 0x0
+    iget-boolean v3, v0, Lcom/android/server/Watchdog;->mForceKillSystem:Z
 
-    .line 516
-    monitor-exit p0
-
-    goto :goto_0
+    if-nez v3, :cond_1
 
     .line 519
-    :cond_1
-    if-nez v10, :cond_2
+    const/4 v4, 0x0
 
-    .line 522
-    new-instance v3, Ljava/util/ArrayList;
-
-    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
-
-    .line 523
-    .local v3, pids:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/Integer;>;"
-    invoke-static {}, Landroid/os/Process;->myPid()I
-
-    move-result v11
-
-    invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v11
-
-    invoke-virtual {v3, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 524
-    const/4 v11, 0x1
-
-    const/4 v12, 0x0
-
-    const/4 v13, 0x0
-
-    invoke-static {v11, v3, v12, v13}, Lcom/android/server/am/ActivityManagerService;->dumpStackTraces(ZLjava/util/ArrayList;Lcom/android/internal/os/ProcessStats;Landroid/util/SparseArray;)Ljava/io/File;
-
-    .line 525
-    const/4 v10, 0x1
-
-    .line 526
+    .line 520
     monitor-exit p0
 
     goto :goto_0
 
+    .line 523
+    :cond_1
+    if-nez v4, :cond_2
+
+    .line 526
+    new-instance v13, Ljava/util/ArrayList;
+
+    invoke-direct {v13}, Ljava/util/ArrayList;-><init>()V
+
+    .line 527
+    .local v13, pids:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/Integer;>;"
+    invoke-static {}, Landroid/os/Process;->myPid()I
+
+    move-result v3
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-virtual {v13, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     .line 528
-    .end local v3           #pids:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/Integer;>;"
+    const/4 v3, 0x1
+
+    const/16 v20, 0x0
+
+    const/16 v21, 0x0
+
+    move-object/from16 v0, v20
+
+    move-object/from16 v1, v21
+
+    invoke-static {v3, v13, v0, v1}, Lcom/android/server/am/ActivityManagerService;->dumpStackTraces(ZLjava/util/ArrayList;Lcom/android/internal/os/ProcessStats;Landroid/util/SparseArray;)Ljava/io/File;
+
+    .line 529
+    const/4 v4, 0x1
+
+    .line 532
+    move-wide/from16 v5, v18
+
+    .line 534
+    monitor-exit p0
+
+    goto :goto_0
+
+    .line 538
+    .end local v13           #pids:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/Integer;>;"
     :cond_2
+    move-wide/from16 v7, v18
+
+    .line 540
     monitor-exit p0
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 534
-    iget-object v11, p0, Lcom/android/server/Watchdog;->mCurrentMonitor:Lcom/android/server/Watchdog$Monitor;
+    .line 546
+    move-object/from16 v0, p0
 
-    if-eqz v11, :cond_4
+    iget-object v3, v0, Lcom/android/server/Watchdog;->mCurrentMonitor:Lcom/android/server/Watchdog$Monitor;
 
-    iget-object v11, p0, Lcom/android/server/Watchdog;->mCurrentMonitor:Lcom/android/server/Watchdog$Monitor;
+    if-eqz v3, :cond_4
 
-    invoke-virtual {v11}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-object/from16 v0, p0
 
-    move-result-object v11
+    iget-object v3, v0, Lcom/android/server/Watchdog;->mCurrentMonitor:Lcom/android/server/Watchdog$Monitor;
 
-    invoke-virtual {v11}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    move-result-object v2
+    move-result-object v3
 
-    .line 536
-    .local v2, name:Ljava/lang/String;
-    :goto_3
-    const/16 v11, 0xaf2
+    invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
-    invoke-static {v11, v2}, Landroid/util/EventLog;->writeEvent(ILjava/lang/String;)I
-
-    .line 538
-    new-instance v3, Ljava/util/ArrayList;
-
-    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
-
-    .line 539
-    .restart local v3       #pids:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/Integer;>;"
-    invoke-static {}, Landroid/os/Process;->myPid()I
-
-    move-result v11
-
-    invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v11
-
-    invoke-virtual {v3, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 540
-    iget v11, p0, Lcom/android/server/Watchdog;->mPhonePid:I
-
-    if-lez v11, :cond_3
-
-    iget v11, p0, Lcom/android/server/Watchdog;->mPhonePid:I
-
-    invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v11
-
-    invoke-virtual {v3, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 543
-    :cond_3
-    if-nez v10, :cond_5
-
-    const/4 v11, 0x1
-
-    :goto_4
-    const/4 v12, 0x0
-
-    const/4 v13, 0x0
-
-    invoke-static {v11, v3, v12, v13}, Lcom/android/server/am/ActivityManagerService;->dumpStackTraces(ZLjava/util/ArrayList;Lcom/android/internal/os/ProcessStats;Landroid/util/SparseArray;)Ljava/io/File;
-
-    move-result-object v5
+    move-result-object v12
 
     .line 548
-    .local v5, stack:Ljava/io/File;
-    const-wide/16 v11, 0x7d0
+    .local v12, name:Ljava/lang/String;
+    :goto_3
+    const/16 v3, 0xaf2
 
-    invoke-static {v11, v12}, Landroid/os/SystemClock;->sleep(J)V
+    invoke-static {v3, v12}, Landroid/util/EventLog;->writeEvent(ILjava/lang/String;)I
+
+    .line 550
+    new-instance v13, Ljava/util/ArrayList;
+
+    invoke-direct {v13}, Ljava/util/ArrayList;-><init>()V
+
+    .line 551
+    .restart local v13       #pids:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/Integer;>;"
+    invoke-static {}, Landroid/os/Process;->myPid()I
+
+    move-result v3
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-virtual {v13, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 552
-    invoke-direct {p0}, Lcom/android/server/Watchdog;->dumpKernelStackTraces()Ljava/io/File;
+    move-object/from16 v0, p0
 
-    .line 558
-    new-instance v0, Lcom/android/server/Watchdog$1;
+    iget v3, v0, Lcom/android/server/Watchdog;->mPhonePid:I
 
-    const-string v11, "watchdogWriteToDropbox"
+    if-lez v3, :cond_3
 
-    invoke-direct {v0, p0, v11, v2, v5}, Lcom/android/server/Watchdog$1;-><init>(Lcom/android/server/Watchdog;Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)V
+    move-object/from16 v0, p0
 
-    .line 565
-    .local v0, dropboxThread:Ljava/lang/Thread;
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    iget v3, v0, Lcom/android/server/Watchdog;->mPhonePid:I
 
-    .line 567
-    const-wide/16 v11, 0x7d0
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-virtual {v13, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :cond_3
+    move-object/from16 v3, p0
+
+    .line 562
+    invoke-direct/range {v3 .. v8}, Lcom/android/server/Watchdog;->generateDumpInfo(ZJJ)Ljava/lang/String;
+
+    move-result-object v9
+
+    .line 563
+    .local v9, additionalInfo:Ljava/lang/String;
+    if-nez v4, :cond_5
+
+    const/4 v3, 0x1
+
+    :goto_4
+    const/16 v20, 0x0
+
+    const/16 v21, 0x0
+
+    move-object/from16 v0, v20
+
+    move-object/from16 v1, v21
+
+    invoke-static {v3, v13, v0, v1, v9}, Lcom/android/server/am/ActivityManagerService;->dumpStackTraces(ZLjava/util/ArrayList;Lcom/android/internal/os/ProcessStats;Landroid/util/SparseArray;Ljava/lang/String;)Ljava/io/File;
+
+    move-result-object v15
+
+    .line 569
+    .local v15, stack:Ljava/io/File;
+    const-wide/16 v20, 0x7d0
+
+    invoke-static/range {v20 .. v21}, Landroid/os/SystemClock;->sleep(J)V
+
+    .line 573
+    invoke-direct/range {p0 .. p0}, Lcom/android/server/Watchdog;->dumpKernelStackTraces()Ljava/io/File;
+
+    .line 579
+    new-instance v10, Lcom/android/server/Watchdog$1;
+
+    const-string v3, "watchdogWriteToDropbox"
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v10, v0, v3, v12, v15}, Lcom/android/server/Watchdog$1;-><init>(Lcom/android/server/Watchdog;Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)V
+
+    .line 586
+    .local v10, dropboxThread:Ljava/lang/Thread;
+    invoke-virtual {v10}, Ljava/lang/Thread;->start()V
+
+    .line 588
+    const-wide/16 v20, 0x7d0
 
     :try_start_4
-    invoke-virtual {v0, v11, v12}, Ljava/lang/Thread;->join(J)V
+    move-wide/from16 v0, v20
+
+    invoke-virtual {v10, v0, v1}, Ljava/lang/Thread;->join(J)V
     :try_end_4
     .catch Ljava/lang/InterruptedException; {:try_start_4 .. :try_end_4} :catch_1
 
-    .line 571
+    .line 592
     :goto_5
     invoke-static {}, Landroid/os/Debug;->isDebuggerConnected()Z
 
-    move-result v11
+    move-result v3
 
-    if-nez v11, :cond_8
+    if-nez v3, :cond_8
 
-    .line 572
-    const-string v11, "sys.watchdog.disabled"
+    .line 593
+    const-string v3, "sys.watchdog.disabled"
 
-    const/4 v12, 0x0
+    const/16 v20, 0x0
 
-    invoke-static {v11, v12}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+    move/from16 v0, v20
 
-    move-result v11
+    invoke-static {v3, v0}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
 
-    if-nez v11, :cond_7
+    move-result v3
 
-    .line 573
-    invoke-static {}, Landroid/os/Process;->myPid()I
-
-    move-result v11
-
-    const/4 v12, 0x6
-
-    invoke-static {v11, v12}, Landroid/os/Process;->sendSignal(II)V
-
-    .line 574
-    const-wide/16 v11, 0x7d0
-
-    invoke-static {v11, v12}, Landroid/os/SystemClock;->sleep(J)V
-
-    .line 575
-    invoke-static {}, Landroid/os/Process;->myPid()I
-
-    move-result v11
-
-    const/4 v12, 0x6
-
-    invoke-static {v11, v12}, Landroid/os/Process;->sendSignal(II)V
-
-    .line 576
-    const-wide/16 v11, 0x7d0
-
-    invoke-static {v11, v12}, Landroid/os/SystemClock;->sleep(J)V
-
-    .line 578
-    const-string v11, "sys.watchdog.extraprocnames"
-
-    invoke-static {v11}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    .line 579
-    .local v4, procs:Ljava/lang/String;
-    if-eqz v4, :cond_6
-
-    invoke-virtual {v4}, Ljava/lang/String;->length()I
-
-    move-result v11
-
-    if-lez v11, :cond_6
-
-    .line 581
-    const-string v11, "Watchdog"
-
-    new-instance v12, Ljava/lang/StringBuilder;
-
-    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v13, "Processes to create tombstones: ["
-
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    invoke-virtual {v12, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    const-string v13, "]"
-
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v12
-
-    invoke-static {v11, v12}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 582
-    invoke-direct {p0, v4}, Lcom/android/server/Watchdog;->createTombstone(Ljava/lang/String;)V
-
-    .line 589
-    :goto_6
-    const-string v11, "Watchdog"
-
-    new-instance v12, Ljava/lang/StringBuilder;
-
-    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v13, "*** WATCHDOG KILLING SYSTEM PROCESS: "
-
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    invoke-virtual {v12, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v12
-
-    invoke-static {v11, v12}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 590
-    invoke-static {}, Landroid/os/Process;->myPid()I
-
-    move-result v11
-
-    invoke-static {v11}, Landroid/os/Process;->killProcess(I)V
-
-    .line 591
-    const/16 v11, 0xa
-
-    invoke-static {v11}, Ljava/lang/System;->exit(I)V
-
-    .line 603
-    .end local v4           #procs:Ljava/lang/String;
-    :goto_7
-    const/4 v10, 0x0
-
-    .line 604
-    goto/16 :goto_0
-
-    .line 534
-    .end local v0           #dropboxThread:Ljava/lang/Thread;
-    .end local v2           #name:Ljava/lang/String;
-    .end local v3           #pids:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/Integer;>;"
-    .end local v5           #stack:Ljava/io/File;
-    :cond_4
-    const-string v2, "null"
-
-    goto/16 :goto_3
-
-    .line 543
-    .restart local v2       #name:Ljava/lang/String;
-    .restart local v3       #pids:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/Integer;>;"
-    :cond_5
-    const/4 v11, 0x0
-
-    goto/16 :goto_4
-
-    .line 586
-    .restart local v0       #dropboxThread:Ljava/lang/Thread;
-    .restart local v4       #procs:Ljava/lang/String;
-    .restart local v5       #stack:Ljava/io/File;
-    :cond_6
-    const-string v11, "Watchdog"
-
-    const-string v12, "No process is given for creating tombstones on framework reboot."
-
-    invoke-static {v11, v12}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_6
+    if-nez v3, :cond_7
 
     .line 594
-    .end local v4           #procs:Ljava/lang/String;
-    :cond_7
-    const-string v11, "Watchdog"
+    invoke-static {}, Landroid/os/Process;->myPid()I
 
-    new-instance v12, Ljava/lang/StringBuilder;
+    move-result v3
 
-    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
+    const/16 v20, 0x6
 
-    const-string v13, "*** WATCHDOG NOT KILLING SYSTEM PROCESS: "
+    move/from16 v0, v20
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3, v0}, Landroid/os/Process;->sendSignal(II)V
 
-    move-result-object v12
+    .line 595
+    const-wide/16 v20, 0x7d0
 
-    invoke-virtual {v12, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v12
-
-    invoke-static {v11, v12}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static/range {v20 .. v21}, Landroid/os/SystemClock;->sleep(J)V
 
     .line 596
     invoke-static {}, Landroid/os/Process;->myPid()I
 
-    move-result v11
+    move-result v3
 
-    const/16 v12, 0x13
+    const/16 v20, 0x6
 
-    invoke-static {v11, v12}, Landroid/os/Process;->sendSignal(II)V
+    move/from16 v0, v20
 
-    .line 605
-    return-void
+    invoke-static {v3, v0}, Landroid/os/Process;->sendSignal(II)V
+
+    .line 597
+    const-wide/16 v20, 0x7d0
+
+    invoke-static/range {v20 .. v21}, Landroid/os/SystemClock;->sleep(J)V
+
+    .line 599
+    const-string v3, "sys.watchdog.extraprocnames"
+
+    invoke-static {v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v14
 
     .line 600
+    .local v14, procs:Ljava/lang/String;
+    if-eqz v14, :cond_6
+
+    invoke-virtual {v14}, Ljava/lang/String;->length()I
+
+    move-result v3
+
+    if-lez v3, :cond_6
+
+    .line 602
+    const-string v3, "Watchdog"
+
+    new-instance v20, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v20 .. v20}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v21, "Processes to create tombstones: ["
+
+    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v20
+
+    move-object/from16 v0, v20
+
+    invoke-virtual {v0, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v20
+
+    const-string v21, "]"
+
+    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v20
+
+    invoke-virtual/range {v20 .. v20}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v20
+
+    move-object/from16 v0, v20
+
+    invoke-static {v3, v0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 603
+    move-object/from16 v0, p0
+
+    invoke-direct {v0, v14}, Lcom/android/server/Watchdog;->createTombstone(Ljava/lang/String;)V
+
+    .line 610
+    :goto_6
+    const-string v3, "Watchdog"
+
+    new-instance v20, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v20 .. v20}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v21, "*** WATCHDOG KILLING SYSTEM PROCESS: "
+
+    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v20
+
+    move-object/from16 v0, v20
+
+    invoke-virtual {v0, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v20
+
+    invoke-virtual/range {v20 .. v20}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v20
+
+    move-object/from16 v0, v20
+
+    invoke-static {v3, v0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 611
+    invoke-static {}, Landroid/os/Process;->myPid()I
+
+    move-result v3
+
+    invoke-static {v3}, Landroid/os/Process;->killProcess(I)V
+
+    .line 612
+    const/16 v3, 0xa
+
+    invoke-static {v3}, Ljava/lang/System;->exit(I)V
+
+    .line 624
+    .end local v14           #procs:Ljava/lang/String;
+    :goto_7
+    const/4 v4, 0x0
+
+    .line 625
+    goto/16 :goto_0
+
+    .line 546
+    .end local v9           #additionalInfo:Ljava/lang/String;
+    .end local v10           #dropboxThread:Ljava/lang/Thread;
+    .end local v12           #name:Ljava/lang/String;
+    .end local v13           #pids:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/Integer;>;"
+    .end local v15           #stack:Ljava/io/File;
+    :cond_4
+    const-string v12, "null"
+
+    goto/16 :goto_3
+
+    .line 563
+    .restart local v9       #additionalInfo:Ljava/lang/String;
+    .restart local v12       #name:Ljava/lang/String;
+    .restart local v13       #pids:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/Integer;>;"
+    :cond_5
+    const/4 v3, 0x0
+
+    goto/16 :goto_4
+
+    .line 607
+    .restart local v10       #dropboxThread:Ljava/lang/Thread;
+    .restart local v14       #procs:Ljava/lang/String;
+    .restart local v15       #stack:Ljava/io/File;
+    :cond_6
+    const-string v3, "Watchdog"
+
+    const-string v20, "No process is given for creating tombstones on framework reboot."
+
+    move-object/from16 v0, v20
+
+    invoke-static {v3, v0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_6
+
+    .line 615
+    .end local v14           #procs:Ljava/lang/String;
+    :cond_7
+    const-string v3, "Watchdog"
+
+    new-instance v20, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v20 .. v20}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v21, "*** WATCHDOG NOT KILLING SYSTEM PROCESS: "
+
+    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v20
+
+    move-object/from16 v0, v20
+
+    invoke-virtual {v0, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v20
+
+    invoke-virtual/range {v20 .. v20}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v20
+
+    move-object/from16 v0, v20
+
+    invoke-static {v3, v0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 617
+    invoke-static {}, Landroid/os/Process;->myPid()I
+
+    move-result v3
+
+    const/16 v20, 0x13
+
+    move/from16 v0, v20
+
+    invoke-static {v3, v0}, Landroid/os/Process;->sendSignal(II)V
+
+    .line 626
+    return-void
+
+    .line 621
     :cond_8
-    const-string v11, "Watchdog"
+    const-string v3, "Watchdog"
 
-    const-string v12, "Debugger connected: Watchdog is *not* killing the system process"
+    const-string v20, "Debugger connected: Watchdog is *not* killing the system process"
 
-    invoke-static {v11, v12}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
+    move-object/from16 v0, v20
+
+    invoke-static {v3, v0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_7
 
-    .line 568
+    .line 589
     :catch_1
-    move-exception v11
+    move-exception v3
 
     goto/16 :goto_5
 .end method

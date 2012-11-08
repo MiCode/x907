@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 1384
+    .line 1393
     iput-object p1, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 
     const/4 v6, 0x1
 
-    .line 1387
+    .line 1396
     iget-object v2, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
     #getter for: Lcom/oppo/widget/OppoDatePicker;->mYearView:Lcom/oppo/widget/OppoYearView;
@@ -56,7 +56,7 @@
 
     invoke-virtual {v2, v6}, Lcom/oppo/widget/OppoYearView;->setStopRun(Z)V
 
-    .line 1388
+    .line 1397
     iget-object v2, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
     #getter for: Lcom/oppo/widget/OppoDatePicker;->mMonthView:Lcom/oppo/widget/OppoMonthView;
@@ -66,7 +66,7 @@
 
     invoke-virtual {v2, v6}, Lcom/oppo/widget/OppoMonthView;->setStopRun(Z)V
 
-    .line 1389
+    .line 1398
     iget-object v2, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
     #getter for: Lcom/oppo/widget/OppoDatePicker;->mDateView:Lcom/oppo/widget/OppoDateView;
@@ -76,12 +76,12 @@
 
     invoke-virtual {v2, v6}, Lcom/oppo/widget/OppoDateView;->setStopRun(Z)V
 
-    .line 1390
+    .line 1399
     iget-object v2, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
     invoke-virtual {v2}, Lcom/oppo/widget/OppoDatePicker;->playSoundEffect()V
 
-    .line 1391
+    .line 1400
     iget-object v2, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
     #getter for: Lcom/oppo/widget/OppoDatePicker;->mButtonLeft:Landroid/widget/Button;
@@ -91,7 +91,7 @@
 
     invoke-virtual {v2, v7}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 1392
+    .line 1401
     iget-object v2, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
     #getter for: Lcom/oppo/widget/OppoDatePicker;->mButtonRight:Landroid/widget/Button;
@@ -101,7 +101,59 @@
 
     invoke-virtual {v2, v6}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 1393
+    .line 1402
+    iget-object v2, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
+
+    #getter for: Lcom/oppo/widget/OppoDatePicker;->mButtonRight:Landroid/widget/Button;
+    invoke-static {v2}, Lcom/oppo/widget/OppoDatePicker;->access$1800(Lcom/oppo/widget/OppoDatePicker;)Landroid/widget/Button;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
+
+    invoke-virtual {v3}, Lcom/oppo/widget/OppoDatePicker;->getContext()Landroid/content/Context;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v4, 0x10600b6
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v3
+
+    invoke-virtual {v2, v3}, Landroid/widget/Button;->setTextColor(I)V
+
+    .line 1403
+    iget-object v2, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
+
+    #getter for: Lcom/oppo/widget/OppoDatePicker;->mButtonLeft:Landroid/widget/Button;
+    invoke-static {v2}, Lcom/oppo/widget/OppoDatePicker;->access$1700(Lcom/oppo/widget/OppoDatePicker;)Landroid/widget/Button;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
+
+    invoke-virtual {v3}, Lcom/oppo/widget/OppoDatePicker;->getContext()Landroid/content/Context;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v4, 0x10600b7
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v3
+
+    invoke-virtual {v2, v3}, Landroid/widget/Button;->setTextColor(I)V
+
+    .line 1405
     sget-object v2, Lcom/oppo/widget/OppoDatePicker;->mIsChineseDate:Ljava/lang/Boolean;
 
     invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
@@ -110,7 +162,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 1395
+    .line 1407
     iget-object v2, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
     #getter for: Lcom/oppo/widget/OppoDatePicker;->mButtonLeft:Landroid/widget/Button;
@@ -122,12 +174,12 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setText(I)V
 
-    .line 1406
+    .line 1418
     const/4 v2, 0x3
 
     new-array v1, v2, [I
 
-    .line 1408
+    .line 1420
     .local v1, timeArray:[I
     iget-object v2, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
@@ -142,7 +194,7 @@
 
     move-result v0
 
-    .line 1410
+    .line 1422
     .local v0, iLeapMonth:I
     iget-object v2, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
@@ -161,31 +213,31 @@
 
     move-result-object v1
 
-    .line 1413
+    .line 1425
     aget v2, v1, v7
 
     sput v2, Lcom/oppo/widget/OppoDatePicker;->mCurrentYear:I
 
-    .line 1414
+    .line 1426
     aget v2, v1, v6
 
     sput v2, Lcom/oppo/widget/OppoDatePicker;->mCurrentMonth:I
 
-    .line 1415
+    .line 1427
     const/4 v2, 0x2
 
     aget v2, v1, v2
 
     sput v2, Lcom/oppo/widget/OppoDatePicker;->mCurrentDay:I
 
-    .line 1424
+    .line 1436
     invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v2
 
     sput-object v2, Lcom/oppo/widget/OppoDatePicker;->mIsChineseDate:Ljava/lang/Boolean;
 
-    .line 1426
+    .line 1438
     iget-object v2, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
     #getter for: Lcom/oppo/widget/OppoDatePicker;->mYearView:Lcom/oppo/widget/OppoYearView;
@@ -206,7 +258,7 @@
 
     invoke-virtual {v2, v3}, Lcom/oppo/widget/OppoYearView;->setCurrentPos(I)V
 
-    .line 1427
+    .line 1439
     iget-object v2, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
     #getter for: Lcom/oppo/widget/OppoDatePicker;->mMonthView:Lcom/oppo/widget/OppoMonthView;
@@ -220,7 +272,7 @@
 
     invoke-virtual {v2, v3}, Lcom/oppo/widget/OppoMonthView;->setCurrentPos(I)V
 
-    .line 1428
+    .line 1440
     iget-object v2, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
     #getter for: Lcom/oppo/widget/OppoDatePicker;->mDateView:Lcom/oppo/widget/OppoDateView;
@@ -234,7 +286,7 @@
 
     invoke-virtual {v2, v3}, Lcom/oppo/widget/OppoDateView;->setCurrentPos(I)V
 
-    .line 1430
+    .line 1442
     iget-object v2, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
     #getter for: Lcom/oppo/widget/OppoDatePicker;->mYearView:Lcom/oppo/widget/OppoYearView;
@@ -244,18 +296,18 @@
 
     invoke-virtual {v2}, Lcom/oppo/widget/OppoYearView;->reDrawChAndNewYear()V
 
-    .line 1431
+    .line 1443
     iget-object v2, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
     invoke-virtual {v2}, Lcom/oppo/widget/OppoDatePicker;->upDateDisplayData()V
 
-    .line 1439
+    .line 1451
     .end local v0           #iLeapMonth:I
     .end local v1           #timeArray:[I
     :goto_0
     return-void
 
-    .line 1435
+    .line 1447
     :cond_0
     iget-object v2, p0, Lcom/oppo/widget/OppoDatePicker$10;->this$0:Lcom/oppo/widget/OppoDatePicker;
 

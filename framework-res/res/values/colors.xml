@@ -87,6 +87,7 @@
     <color name="legacy_pressed_highlight">#fffeaa0c</color>
     <color name="legacy_selected_highlight">#fff17a0a</color>
     <color name="legacy_long_pressed_highlight">#ffffffff</color>
+    <color name="oppo_simple_list_item_1">#ffffffff</color>
     <color name="oppo_alert_dialog_button_text_color">#ff000000</color>
     <color name="oppo_alert_dialog_title_text_shadow_color">#dd000000</color>
     <color name="oppo_alert_dialog_button_text_shadow_color">#ffffffff</color>

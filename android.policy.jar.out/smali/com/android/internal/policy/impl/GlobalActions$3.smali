@@ -40,14 +40,19 @@
     .locals 2
 
     .prologue
-    .line 225
+    .line 221
+    const-string v0, "gloable action"
+
+    invoke-static {v0}, Lcom/android/internal/app/ShutdownThread;->appendLogToFile(Ljava/lang/String;)V
+
+    .line 230
     const-string v0, "GlobalActions"
 
     const-string v1, "fpd restartSystem"
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 226
+    .line 231
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$3;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
     #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
@@ -57,7 +62,7 @@
 
     invoke-static {v0}, Lcom/android/internal/policy/impl/OppoFPDUtils;->restartSystem(Landroid/content/Context;)V
 
-    .line 228
+    .line 233
     return-void
 .end method
 
@@ -65,7 +70,7 @@
     .locals 1
 
     .prologue
-    .line 235
+    .line 240
     const/4 v0, 0x1
 
     return v0
@@ -75,7 +80,7 @@
     .locals 1
 
     .prologue
-    .line 231
+    .line 236
     const/4 v0, 0x1
 
     return v0

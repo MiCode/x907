@@ -238,7 +238,7 @@
     .line 456
     iget-object v1, p0, Lcom/oppo/internal/app/OppoQuickContactWindow;->mWindow:Landroid/view/Window;
 
-    const v2, 0x10900c1
+    const v2, 0x10900c2
 
     invoke-virtual {v1, v2}, Landroid/view/Window;->setContentView(I)V
 
@@ -1104,7 +1104,7 @@
     .local v0, r:Landroid/content/res/Resources;
     iget-object v2, p0, Lcom/oppo/internal/app/OppoQuickContactWindow;->mInflater:Landroid/view/LayoutInflater;
 
-    const v3, 0x10900c5
+    const v3, 0x10900c6
 
     iget-object v4, p0, Lcom/oppo/internal/app/OppoQuickContactWindow;->mTrack:Landroid/view/ViewGroup;
 
@@ -1186,7 +1186,7 @@
     .line 987
     iget-object v1, p0, Lcom/oppo/internal/app/OppoQuickContactWindow;->mInflater:Landroid/view/LayoutInflater;
 
-    const v2, 0x10900c5
+    const v2, 0x10900c6
 
     iget-object v3, p0, Lcom/oppo/internal/app/OppoQuickContactWindow;->mTrack:Landroid/view/ViewGroup;
 

@@ -24,15 +24,15 @@
     .parameter
 
     .prologue
-    .line 811
+    .line 815
     iput-object p1, p0, Lcom/android/server/AlarmManagerService$AlarmThread;->this$0:Lcom/android/server/AlarmManagerService;
 
-    .line 812
+    .line 816
     const-string v0, "AlarmManager"
 
     invoke-direct {p0, v0}, Ljava/lang/Thread;-><init>(Ljava/lang/String;)V
 
-    .line 813
+    .line 817
     return-void
 .end method
 
@@ -42,7 +42,7 @@
     .locals 24
 
     .prologue
-    .line 819
+    .line 823
     :goto_0
     move-object/from16 v0, p0
 
@@ -62,13 +62,13 @@
 
     move-result v20
 
-    .line 821
+    .line 825
     .local v20, result:I
     new-instance v22, Ljava/util/ArrayList;
 
     invoke-direct/range {v22 .. v22}, Ljava/util/ArrayList;-><init>()V
 
-    .line 823
+    .line 827
     .local v22, triggerList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/server/AlarmManagerService$Alarm;>;"
     const/high16 v3, 0x1
 
@@ -76,7 +76,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 824
+    .line 828
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService$AlarmThread;->this$0:Lcom/android/server/AlarmManagerService;
@@ -92,7 +92,7 @@
 
     invoke-virtual {v3, v4}, Lcom/android/server/AlarmManagerService;->remove(Landroid/app/PendingIntent;)V
 
-    .line 825
+    .line 829
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService$AlarmThread;->this$0:Lcom/android/server/AlarmManagerService;
@@ -104,20 +104,20 @@
 
     invoke-virtual {v3}, Lcom/android/server/AlarmManagerService$ClockReceiver;->scheduleTimeTickEvent()V
 
-    .line 826
+    .line 830
     new-instance v14, Landroid/content/Intent;
 
     const-string v3, "android.intent.action.TIME_SET"
 
     invoke-direct {v14, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 827
+    .line 831
     .local v14, intent:Landroid/content/Intent;
     const/high16 v3, 0x3000
 
     invoke-virtual {v14, v3}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 829
+    .line 833
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService$AlarmThread;->this$0:Lcom/android/server/AlarmManagerService;
@@ -129,7 +129,7 @@
 
     invoke-virtual {v3, v14}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 832
+    .line 836
     .end local v14           #intent:Landroid/content/Intent;
     :cond_0
     move-object/from16 v0, p0
@@ -143,25 +143,25 @@
 
     monitor-enter v23
 
-    .line 833
+    .line 837
     :try_start_0
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v18
 
-    .line 834
+    .line 838
     .local v18, nowRTC:J
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v16
 
-    .line 839
+    .line 843
     .local v16, nowELAPSED:J
     and-int/lit8 v3, v20, 0x1
 
     if-eqz v3, :cond_1
 
-    .line 840
+    .line 844
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService$AlarmThread;->this$0:Lcom/android/server/AlarmManagerService;
@@ -182,13 +182,13 @@
     #calls: Lcom/android/server/AlarmManagerService;->triggerAlarmsLocked(Ljava/util/ArrayList;Ljava/util/ArrayList;J)J
     invoke-static {v3, v4, v0, v1, v2}, Lcom/android/server/AlarmManagerService;->access$700(Lcom/android/server/AlarmManagerService;Ljava/util/ArrayList;Ljava/util/ArrayList;J)J
 
-    .line 842
+    .line 846
     :cond_1
     and-int/lit8 v3, v20, 0x2
 
     if-eqz v3, :cond_2
 
-    .line 843
+    .line 847
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService$AlarmThread;->this$0:Lcom/android/server/AlarmManagerService;
@@ -209,13 +209,13 @@
     #calls: Lcom/android/server/AlarmManagerService;->triggerAlarmsLocked(Ljava/util/ArrayList;Ljava/util/ArrayList;J)J
     invoke-static {v3, v4, v0, v1, v2}, Lcom/android/server/AlarmManagerService;->access$700(Lcom/android/server/AlarmManagerService;Ljava/util/ArrayList;Ljava/util/ArrayList;J)J
 
-    .line 845
+    .line 849
     :cond_2
     and-int/lit8 v3, v20, 0x4
 
     if-eqz v3, :cond_3
 
-    .line 846
+    .line 850
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService$AlarmThread;->this$0:Lcom/android/server/AlarmManagerService;
@@ -236,13 +236,13 @@
     #calls: Lcom/android/server/AlarmManagerService;->triggerAlarmsLocked(Ljava/util/ArrayList;Ljava/util/ArrayList;J)J
     invoke-static {v3, v4, v0, v1, v2}, Lcom/android/server/AlarmManagerService;->access$700(Lcom/android/server/AlarmManagerService;Ljava/util/ArrayList;Ljava/util/ArrayList;J)J
 
-    .line 848
+    .line 852
     :cond_3
     and-int/lit8 v3, v20, 0x8
 
     if-eqz v3, :cond_4
 
-    .line 849
+    .line 853
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService$AlarmThread;->this$0:Lcom/android/server/AlarmManagerService;
@@ -263,13 +263,13 @@
     #calls: Lcom/android/server/AlarmManagerService;->triggerAlarmsLocked(Ljava/util/ArrayList;Ljava/util/ArrayList;J)J
     invoke-static {v3, v4, v0, v1, v2}, Lcom/android/server/AlarmManagerService;->access$700(Lcom/android/server/AlarmManagerService;Ljava/util/ArrayList;Ljava/util/ArrayList;J)J
 
-    .line 852
+    .line 856
     :cond_4
     and-int/lit8 v3, v20, 0x10
 
     if-eqz v3, :cond_6
 
-    .line 853
+    .line 857
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService$AlarmThread;->this$0:Lcom/android/server/AlarmManagerService;
@@ -292,7 +292,7 @@
 
     move-result-wide v12
 
-    .line 854
+    .line 858
     .local v12, firedtime:J
     move-object/from16 v0, p0
 
@@ -326,14 +326,14 @@
 
     if-lez v3, :cond_5
 
-    .line 855
+    .line 859
     const-string v3, "AlarmManager"
 
     const-string v4, "A rtc powerup alarm triggered when shutdown"
 
     invoke-static {v3, v4}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 856
+    .line 860
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService$AlarmThread;->this$0:Lcom/android/server/AlarmManagerService;
@@ -341,7 +341,7 @@
     #setter for: Lcom/android/server/AlarmManagerService;->mShutdownAlarmTriggered:J
     invoke-static {v3, v12, v13}, Lcom/android/server/AlarmManagerService;->access$1302(Lcom/android/server/AlarmManagerService;J)J
 
-    .line 859
+    .line 863
     :cond_5
     move-object/from16 v0, p0
 
@@ -369,7 +369,7 @@
 
     if-nez v3, :cond_6
 
-    .line 860
+    .line 864
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService$AlarmThread;->this$0:Lcom/android/server/AlarmManagerService;
@@ -377,7 +377,7 @@
     #calls: Lcom/android/server/AlarmManagerService;->clearRtcPowerup()V
     invoke-static {v3}, Lcom/android/server/AlarmManagerService;->access$1400(Lcom/android/server/AlarmManagerService;)V
 
-    .line 865
+    .line 869
     .end local v12           #firedtime:J
     :cond_6
     move-object/from16 v0, p0
@@ -391,19 +391,19 @@
 
     if-eqz v3, :cond_7
 
-    .line 866
+    .line 870
     const-string v3, "AlarmManager"
 
     const-string v4, "alarm triggered when shutdown, break"
 
     invoke-static {v3, v4}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 867
+    .line 871
     monitor-exit v23
 
     goto/16 :goto_0
 
-    .line 918
+    .line 922
     .end local v16           #nowELAPSED:J
     .end local v18           #nowRTC:J
     :catchall_0
@@ -415,7 +415,7 @@
 
     throw v3
 
-    .line 871
+    .line 875
     .restart local v16       #nowELAPSED:J
     .restart local v18       #nowRTC:J
     :cond_7
@@ -424,7 +424,7 @@
 
     move-result-object v15
 
-    .line 872
+    .line 876
     .local v15, it:Ljava/util/Iterator;,"Ljava/util/Iterator<Lcom/android/server/AlarmManagerService$Alarm;>;"
     :cond_8
     :goto_1
@@ -434,7 +434,7 @@
 
     if-eqz v3, :cond_c
 
-    .line 873
+    .line 877
     invoke-interface {v15}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v9
@@ -443,7 +443,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 876
+    .line 880
     .local v9, alarm:Lcom/android/server/AlarmManagerService$Alarm;
     :try_start_2
     iget-object v3, v9, Lcom/android/server/AlarmManagerService$Alarm;->operation:Landroid/app/PendingIntent;
@@ -491,7 +491,7 @@
 
     invoke-virtual/range {v3 .. v8}, Landroid/app/PendingIntent;->send(Landroid/content/Context;ILandroid/content/Intent;Landroid/app/PendingIntent$OnFinished;Landroid/os/Handler;)V
 
-    .line 883
+    .line 887
     new-instance v21, Landroid/content/Intent;
 
     const-string v3, "fpd.alram_arrived"
@@ -500,7 +500,7 @@
 
     invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 884
+    .line 888
     .local v21, t:Landroid/content/Intent;
     const-string v3, "fpd_alram_target_extra"
 
@@ -514,7 +514,7 @@
 
     invoke-virtual {v0, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 886
+    .line 890
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService$AlarmThread;->this$0:Lcom/android/server/AlarmManagerService;
@@ -528,7 +528,7 @@
 
     invoke-virtual {v3, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 890
+    .line 894
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService$AlarmThread;->this$0:Lcom/android/server/AlarmManagerService;
@@ -540,7 +540,7 @@
 
     if-nez v3, :cond_9
 
-    .line 891
+    .line 895
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService$AlarmThread;->this$0:Lcom/android/server/AlarmManagerService;
@@ -552,7 +552,7 @@
 
     invoke-virtual {v3}, Landroid/os/PowerManager$WakeLock;->acquire()V
 
-    .line 893
+    .line 897
     :cond_9
     move-object/from16 v0, p0
 
@@ -560,7 +560,7 @@
 
     invoke-static {v3}, Lcom/android/server/AlarmManagerService;->access$1808(Lcom/android/server/AlarmManagerService;)I
 
-    .line 895
+    .line 899
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService$AlarmThread;->this$0:Lcom/android/server/AlarmManagerService;
@@ -572,18 +572,18 @@
 
     move-result-object v10
 
-    .line 896
+    .line 900
     .local v10, bs:Lcom/android/server/AlarmManagerService$BroadcastStats;
     iget v3, v10, Lcom/android/server/AlarmManagerService$BroadcastStats;->nesting:I
 
     if-nez v3, :cond_b
 
-    .line 897
+    .line 901
     move-wide/from16 v0, v16
 
     iput-wide v0, v10, Lcom/android/server/AlarmManagerService$BroadcastStats;->startTime:J
 
-    .line 901
+    .line 905
     :goto_2
     iget v3, v9, Lcom/android/server/AlarmManagerService$Alarm;->type:I
 
@@ -601,7 +601,7 @@
 
     if-nez v3, :cond_8
 
-    .line 904
+    .line 908
     :cond_a
     iget v3, v10, Lcom/android/server/AlarmManagerService$BroadcastStats;->numWakeup:I
 
@@ -609,7 +609,7 @@
 
     iput v3, v10, Lcom/android/server/AlarmManagerService$BroadcastStats;->numWakeup:I
 
-    .line 905
+    .line 909
     iget-object v3, v9, Lcom/android/server/AlarmManagerService$Alarm;->operation:Landroid/app/PendingIntent;
 
     invoke-static {v3}, Landroid/app/ActivityManagerNative;->noteWakeupAlarm(Landroid/app/PendingIntent;)V
@@ -620,13 +620,13 @@
 
     goto/16 :goto_1
 
-    .line 908
+    .line 912
     .end local v10           #bs:Lcom/android/server/AlarmManagerService$BroadcastStats;
     .end local v21           #t:Landroid/content/Intent;
     :catch_0
     move-exception v11
 
-    .line 909
+    .line 913
     .local v11, e:Landroid/app/PendingIntent$CanceledException;
     :try_start_3
     iget-wide v3, v9, Lcom/android/server/AlarmManagerService$Alarm;->repeatInterval:J
@@ -637,7 +637,7 @@
 
     if-lez v3, :cond_8
 
-    .line 912
+    .line 916
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService$AlarmThread;->this$0:Lcom/android/server/AlarmManagerService;
@@ -650,7 +650,7 @@
 
     goto/16 :goto_1
 
-    .line 899
+    .line 903
     .end local v11           #e:Landroid/app/PendingIntent$CanceledException;
     .restart local v10       #bs:Lcom/android/server/AlarmManagerService$BroadcastStats;
     .restart local v21       #t:Landroid/content/Intent;
@@ -668,13 +668,13 @@
 
     goto :goto_2
 
-    .line 914
+    .line 918
     .end local v10           #bs:Lcom/android/server/AlarmManagerService$BroadcastStats;
     .end local v21           #t:Landroid/content/Intent;
     :catch_1
     move-exception v11
 
-    .line 915
+    .line 919
     .local v11, e:Ljava/lang/RuntimeException;
     :try_start_5
     const-string v3, "AlarmManager"
@@ -685,7 +685,7 @@
 
     goto/16 :goto_1
 
-    .line 918
+    .line 922
     .end local v9           #alarm:Lcom/android/server/AlarmManagerService$Alarm;
     .end local v11           #e:Ljava/lang/RuntimeException;
     :cond_c

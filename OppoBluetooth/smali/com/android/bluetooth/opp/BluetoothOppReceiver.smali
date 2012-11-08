@@ -1504,37 +1504,30 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 375
     new-instance v3, Landroid/content/Intent;
 
     const-class v4, Lcom/android/bluetooth/opp/BluetoothOppIncomingFileStatisticInSessionActivity;
 
     invoke-direct {v3, p1, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 376
     invoke-virtual {v3, v7}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 377
     const-string v4, "keys_in_statistic"
 
     invoke-virtual {v3, v4, v1}, Landroid/content/Intent;->putIntegerArrayListExtra(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
 
-    .line 378
     const-string v1, "sums_in_statistic"
 
     invoke-virtual {v3, v1, v2}, Landroid/content/Intent;->putIntegerArrayListExtra(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
 
-    .line 379
     const-string v1, "last_received_file_in_statistic"
 
     invoke-virtual {v3, v1, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 380
     #invoke-virtual {p1, v3}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
     goto/16 :goto_0
 
-    .line 383
     :cond_21
     const-string v1, "android.btopp.intent.action.ALL_TRANSFERS_IN_OUTBOUND_SESSION_COMPLETE"
 

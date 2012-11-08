@@ -359,7 +359,7 @@
 
     .line 193
     :cond_3
-    const v4, 0x10600a8
+    const v4, 0x10600a9
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -440,7 +440,7 @@
 
     .line 214
     .local v1, inflate:Landroid/view/LayoutInflater;
-    const v4, 0x1090107
+    const v4, 0x1090108
 
     invoke-virtual {v1, v4, v8}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 

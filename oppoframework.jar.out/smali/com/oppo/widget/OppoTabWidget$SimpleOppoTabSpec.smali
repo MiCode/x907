@@ -23,39 +23,61 @@
 
 .field private mTabLabel:Ljava/lang/CharSequence;
 
+.field private mTag:Ljava/lang/String;
+
 
 # direct methods
 .method public constructor <init>()V
-    .locals 2
+    .locals 1
 
     .prologue
+    .line 1439
     const/4 v0, 0x0
 
+    invoke-direct {p0, v0}, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;-><init>(Ljava/lang/String;)V
+
+    .line 1440
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 2
+    .parameter "tag"
+
+    .prologue
     const/4 v1, 0x0
 
-    .line 1396
+    const/4 v0, 0x0
+
+    .line 1442
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1389
+    .line 1429
     iput-object v0, p0, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->mTabLabel:Ljava/lang/CharSequence;
 
-    .line 1390
+    .line 1430
     iput-object v0, p0, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->mNorTabIcon:Landroid/graphics/drawable/Drawable;
 
-    .line 1391
+    .line 1431
     iput-object v0, p0, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->mHlTabIcon:Landroid/graphics/drawable/Drawable;
 
-    .line 1393
+    .line 1433
     iput-object v0, p0, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->mTabArea:Landroid/graphics/RectF;
 
-    .line 1397
+    .line 1436
+    iput-object v0, p0, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->mTag:Ljava/lang/String;
+
+    .line 1443
+    iput-object p1, p0, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->mTag:Ljava/lang/String;
+
+    .line 1444
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0, v1, v1, v1, v1}, Landroid/graphics/RectF;-><init>(FFFF)V
 
     iput-object v0, p0, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->mTabArea:Landroid/graphics/RectF;
 
-    .line 1398
+    .line 1445
     return-void
 .end method
 
@@ -65,7 +87,7 @@
     .locals 1
 
     .prologue
-    .line 1435
+    .line 1487
     iget-object v0, p0, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->mHlTabIcon:Landroid/graphics/drawable/Drawable;
 
     return-object v0
@@ -75,7 +97,7 @@
     .locals 1
 
     .prologue
-    .line 1430
+    .line 1482
     iget-object v0, p0, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->mNorTabIcon:Landroid/graphics/drawable/Drawable;
 
     return-object v0
@@ -85,7 +107,7 @@
     .locals 1
 
     .prologue
-    .line 1440
+    .line 1492
     iget-object v0, p0, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->mTabArea:Landroid/graphics/RectF;
 
     return-object v0
@@ -95,8 +117,18 @@
     .locals 1
 
     .prologue
-    .line 1425
+    .line 1477
     iget-object v0, p0, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->mTabLabel:Ljava/lang/CharSequence;
+
+    return-object v0
+.end method
+
+.method public getTag()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 1448
+    iget-object v0, p0, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->mTag:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -106,10 +138,10 @@
     .parameter "area"
 
     .prologue
-    .line 1415
+    .line 1467
     if-nez p1, :cond_0
 
-    .line 1417
+    .line 1469
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "param passed to setTabArea is illegal!"
@@ -118,13 +150,13 @@
 
     throw v0
 
-    .line 1419
+    .line 1471
     :cond_0
     iget-object v0, p0, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->mTabArea:Landroid/graphics/RectF;
 
     invoke-virtual {v0, p1}, Landroid/graphics/RectF;->set(Landroid/graphics/RectF;)V
 
-    .line 1420
+    .line 1472
     return-object p0
 .end method
 
@@ -134,13 +166,13 @@
     .parameter "hlTabIcon"
 
     .prologue
-    .line 1408
+    .line 1460
     iput-object p1, p0, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->mNorTabIcon:Landroid/graphics/drawable/Drawable;
 
-    .line 1409
+    .line 1461
     iput-object p2, p0, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->mHlTabIcon:Landroid/graphics/drawable/Drawable;
 
-    .line 1410
+    .line 1462
     return-object p0
 .end method
 
@@ -149,9 +181,9 @@
     .parameter "label"
 
     .prologue
-    .line 1402
+    .line 1454
     iput-object p1, p0, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->mTabLabel:Ljava/lang/CharSequence;
 
-    .line 1403
+    .line 1455
     return-object p0
 .end method

@@ -270,18 +270,10 @@
     invoke-direct {p0, v2, v1}, Lcom/android/stk/StkDialogActivity;->sendResponse(IZ)V
 
     .line 146
-    :goto_1
+    :cond_0
     invoke-virtual {p0}, Lcom/android/stk/StkDialogActivity;->finish()V
 
     goto :goto_0
-
-    .line 143
-    :cond_0
-    const-string v1, "*** oppo *** ignore response"
-
-    invoke-static {p0, v1}, Lcom/android/internal/telephony/cat/CatLog;->d(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto :goto_1
 
     .line 149
     :pswitch_1
@@ -297,18 +289,10 @@
     invoke-direct {p0, v2, v1}, Lcom/android/stk/StkDialogActivity;->sendResponse(IZ)V
 
     .line 157
-    :goto_2
+    :cond_1
     invoke-virtual {p0}, Lcom/android/stk/StkDialogActivity;->finish()V
 
     goto :goto_0
-
-    .line 154
-    :cond_1
-    const-string v1, "*** oppo *** ignore response"
-
-    invoke-static {p0, v1}, Lcom/android/internal/telephony/cat/CatLog;->d(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto :goto_2
 
     .line 136
     nop
@@ -321,7 +305,7 @@
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V
-    .locals 3
+    .locals 2
     .parameter "icicle"
 
     .prologue
@@ -414,13 +398,6 @@
     const/4 v1, 0x1
 
     invoke-virtual {p0, v1}, Lcom/android/stk/StkDialogActivity;->setCanceledOnTouchOutside(Z)Z
-
-    .line 111
-    iget-object v1, p0, Lcom/android/stk/StkDialogActivity;->mTextMsg:Lcom/android/internal/telephony/cat/TextMessage;
-
-    const/4 v2, 0x0
-
-    iput-boolean v2, v1, Lcom/android/internal/telephony/cat/TextMessage;->responseNeeded:Z
 
     .line 113
     invoke-virtual {p0}, Lcom/android/stk/StkDialogActivity;->setupAlert()V

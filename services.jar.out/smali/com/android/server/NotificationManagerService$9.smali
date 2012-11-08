@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 2299
+    .line 2323
     iput-object p1, p0, Lcom/android/server/NotificationManagerService$9;->this$0:Lcom/android/server/NotificationManagerService;
 
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
@@ -40,7 +40,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 2301
+    .line 2325
     iget-object v0, p0, Lcom/android/server/NotificationManagerService$9;->this$0:Lcom/android/server/NotificationManagerService;
 
     #getter for: Lcom/android/server/NotificationManagerService;->mUsbSelectionThread:Landroid/os/HandlerThread;
@@ -50,19 +50,19 @@
 
     if-eqz v0, :cond_0
 
-    .line 2303
+    .line 2327
     iget-object v0, p0, Lcom/android/server/NotificationManagerService$9;->this$0:Lcom/android/server/NotificationManagerService;
 
     #setter for: Lcom/android/server/NotificationManagerService;->mProcessing:Z
     invoke-static {v0, v1}, Lcom/android/server/NotificationManagerService;->access$3802(Lcom/android/server/NotificationManagerService;Z)Z
 
-    .line 2304
+    .line 2328
     iget-object v0, p0, Lcom/android/server/NotificationManagerService$9;->this$0:Lcom/android/server/NotificationManagerService;
 
     #setter for: Lcom/android/server/NotificationManagerService;->mUmsProcessing:Z
     invoke-static {v0, v1}, Lcom/android/server/NotificationManagerService;->access$3902(Lcom/android/server/NotificationManagerService;Z)Z
 
-    .line 2305
+    .line 2329
     iget-object v0, p0, Lcom/android/server/NotificationManagerService$9;->this$0:Lcom/android/server/NotificationManagerService;
 
     #getter for: Lcom/android/server/NotificationManagerService;->mUsbSelectionThread:Landroid/os/HandlerThread;
@@ -72,7 +72,7 @@
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->interrupt()V
 
-    .line 2307
+    .line 2331
     :cond_0
     return-void
 .end method

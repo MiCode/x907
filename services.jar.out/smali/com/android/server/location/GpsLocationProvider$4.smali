@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 1951
+    .line 1958
     iput-object p1, p0, Lcom/android/server/location/GpsLocationProvider$4;->this$0:Lcom/android/server/location/GpsLocationProvider;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .parameter "location"
 
     .prologue
-    .line 1953
+    .line 1960
     const-string v1, "GpsLocationProvider"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -97,7 +97,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1955
+    .line 1962
     iget-object v1, p0, Lcom/android/server/location/GpsLocationProvider$4;->this$0:Lcom/android/server/location/GpsLocationProvider;
 
     #getter for: Lcom/android/server/location/GpsLocationProvider;->mHandler:Landroid/os/Handler;
@@ -107,7 +107,7 @@
 
     monitor-enter v2
 
-    .line 1956
+    .line 1963
     :try_start_0
     iget-object v1, p0, Lcom/android/server/location/GpsLocationProvider$4;->this$0:Lcom/android/server/location/GpsLocationProvider;
 
@@ -120,7 +120,7 @@
 
     invoke-virtual {v1, v3}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 1957
+    .line 1964
     iget-object v1, p0, Lcom/android/server/location/GpsLocationProvider$4;->this$0:Lcom/android/server/location/GpsLocationProvider;
 
     #getter for: Lcom/android/server/location/GpsLocationProvider;->mHandler:Landroid/os/Handler;
@@ -134,16 +134,16 @@
 
     move-result-object v0
 
-    .line 1958
+    .line 1965
     .local v0, m:Landroid/os/Message;
     const/4 v1, 0x0
 
     iput v1, v0, Landroid/os/Message;->arg1:I
 
-    .line 1959
+    .line 1966
     iput-object p1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 1960
+    .line 1967
     iget-object v1, p0, Lcom/android/server/location/GpsLocationProvider$4;->this$0:Lcom/android/server/location/GpsLocationProvider;
 
     #getter for: Lcom/android/server/location/GpsLocationProvider;->mHandler:Landroid/os/Handler;
@@ -153,13 +153,13 @@
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 1961
+    .line 1968
     monitor-exit v2
 
-    .line 1962
+    .line 1969
     return-void
 
-    .line 1961
+    .line 1968
     .end local v0           #m:Landroid/os/Message;
     :catchall_0
     move-exception v1
@@ -176,7 +176,7 @@
     .parameter "arg0"
 
     .prologue
-    .line 1970
+    .line 1977
     const-string v0, "GpsLocationProvider"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -199,7 +199,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1971
+    .line 1978
     return-void
 .end method
 
@@ -208,7 +208,7 @@
     .parameter "arg0"
 
     .prologue
-    .line 1967
+    .line 1974
     const-string v0, "GpsLocationProvider"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -231,7 +231,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1968
+    .line 1975
     return-void
 .end method
 
@@ -242,7 +242,7 @@
     .parameter "arg2"
 
     .prologue
-    .line 1964
+    .line 1971
     const-string v0, "GpsLocationProvider"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -265,6 +265,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1965
+    .line 1972
     return-void
 .end method

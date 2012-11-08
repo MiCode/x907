@@ -25,13 +25,13 @@
     .parameter "handler"
 
     .prologue
-    .line 198
+    .line 225
     iput-object p1, p0, Lcom/android/internal/policy/impl/UnsettleEventObserver$PhoneContent;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
 
-    .line 199
+    .line 226
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
-    .line 200
+    .line 227
     return-void
 .end method
 
@@ -42,7 +42,7 @@
     .parameter "selfChange"
 
     .prologue
-    .line 204
+    .line 231
     iget-object v0, p0, Lcom/android/internal/policy/impl/UnsettleEventObserver$PhoneContent;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
 
     const-string v1, "com.oppo.phone"
@@ -50,7 +50,7 @@
     #setter for: Lcom/android/internal/policy/impl/UnsettleEventObserver;->mCallorPhoneFlag:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/android/internal/policy/impl/UnsettleEventObserver;->access$002(Lcom/android/internal/policy/impl/UnsettleEventObserver;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 206
+    .line 233
     iget-object v0, p0, Lcom/android/internal/policy/impl/UnsettleEventObserver$PhoneContent;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
 
     const/4 v1, 0x1
@@ -58,7 +58,7 @@
     #setter for: Lcom/android/internal/policy/impl/UnsettleEventObserver;->mNotifyAble:Z
     invoke-static {v0, v1}, Lcom/android/internal/policy/impl/UnsettleEventObserver;->access$102(Lcom/android/internal/policy/impl/UnsettleEventObserver;Z)Z
 
-    .line 208
+    .line 235
     new-instance v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/UnsettleEventObserver$PhoneContent;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -67,6 +67,6 @@
 
     invoke-virtual {v0}, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->start()V
 
-    .line 209
+    .line 236
     return-void
 .end method

@@ -27,6 +27,8 @@
 
 .field private mWakeLock:Landroid/os/PowerManager$WakeLock;
 
+.field private scanType:I
+
 
 # direct methods
 .method public constructor <init>()V
@@ -49,6 +51,11 @@
     invoke-direct {v0, p0}, Lcom/android/providers/media/MediaScannerService$2;-><init>(Lcom/android/providers/media/MediaScannerService;)V
 
     iput-object v0, p0, Lcom/android/providers/media/MediaScannerService;->mBinder:Landroid/media/IMediaScannerService$Stub;
+
+    .line 304
+    const/4 v0, 0x0
+
+    iput v0, p0, Lcom/android/providers/media/MediaScannerService;->scanType:I
 
     .line 56
     return-void
@@ -95,7 +102,19 @@
     return-void
 .end method
 
-.method static synthetic access$400(Lcom/android/providers/media/MediaScannerService;[Ljava/lang/String;Ljava/lang/String;)V
+.method static synthetic access$402(Lcom/android/providers/media/MediaScannerService;I)I
+    .locals 0
+    .parameter "x0"
+    .parameter "x1"
+
+    .prologue
+    .line 56
+    iput p1, p0, Lcom/android/providers/media/MediaScannerService;->scanType:I
+
+    return p1
+.end method
+
+.method static synthetic access$500(Lcom/android/providers/media/MediaScannerService;[Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
@@ -525,8 +544,13 @@
 
     move-result-object v2
 
-    .line 121
+    .line 120
     .local v2, scanner:Landroid/media/MediaScanner;
+    iget v5, p0, Lcom/android/providers/media/MediaScannerService;->scanType:I
+
+    invoke-virtual {v2, v5}, Landroid/media/MediaScanner;->setScanType(I)V
+
+    .line 121
     invoke-virtual {v2, p1, p2}, Landroid/media/MediaScanner;->scanDirectories([Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0

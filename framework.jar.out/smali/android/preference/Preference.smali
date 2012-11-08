@@ -181,7 +181,7 @@
     iput-boolean v5, p0, Landroid/preference/Preference;->mShouldDisableView:Z
 
     .line 123
-    const v3, 0x10900ad
+    const v3, 0x10900ae
 
     iput v3, p0, Landroid/preference/Preference;->mLayoutResId:I
 
@@ -1870,7 +1870,7 @@
 
     move-result-object v5
 
-    const v6, 0x10600bf
+    const v6, 0x10600d8
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
@@ -2019,7 +2019,7 @@
 
     move-result-object v5
 
-    const v6, 0x1060097
+    const v6, 0x1060098
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
 

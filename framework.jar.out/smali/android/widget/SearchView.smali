@@ -256,7 +256,7 @@
 
     .line 264
     .local v3, inflater:Landroid/view/LayoutInflater;
-    const v7, 0x10900da
+    const v7, 0x10900db
 
     const/4 v8, 0x1
 

@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 2334
+    .line 2358
     iput-object p1, p0, Lcom/android/server/NotificationManagerService$10;->this$0:Lcom/android/server/NotificationManagerService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -42,12 +42,12 @@
     .prologue
     const/4 v6, 0x1
 
-    .line 2337
+    .line 2361
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2339
+    .line 2363
     .local v0, action:Ljava/lang/String;
     const-string v3, "android.intent.action.ACTION_USB_SELECED"
 
@@ -57,7 +57,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 2340
+    .line 2364
     const-string v3, "UsbSelectedType"
 
     const/4 v4, 0x0
@@ -66,17 +66,17 @@
 
     move-result v2
 
-    .line 2342
+    .line 2366
     .local v2, type:I
     iget-object v3, p0, Lcom/android/server/NotificationManagerService$10;->this$0:Lcom/android/server/NotificationManagerService;
 
     #setter for: Lcom/android/server/NotificationManagerService;->mUsbSelected:I
     invoke-static {v3, v2}, Lcom/android/server/NotificationManagerService;->access$4002(Lcom/android/server/NotificationManagerService;I)I
 
-    .line 2345
+    .line 2369
     if-ne v6, v2, :cond_0
 
-    .line 2346
+    .line 2370
     iget-object v3, p0, Lcom/android/server/NotificationManagerService$10;->this$0:Lcom/android/server/NotificationManagerService;
 
     iget-object v3, v3, Lcom/android/server/NotificationManagerService;->mContext:Landroid/content/Context;
@@ -89,7 +89,7 @@
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 2348
+    .line 2372
     iget-object v3, p0, Lcom/android/server/NotificationManagerService$10;->this$0:Lcom/android/server/NotificationManagerService;
 
     iget-object v3, v3, Lcom/android/server/NotificationManagerService;->mContext:Landroid/content/Context;
@@ -102,13 +102,13 @@
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 2350
+    .line 2374
     iget-object v3, p0, Lcom/android/server/NotificationManagerService$10;->this$0:Lcom/android/server/NotificationManagerService;
 
     #setter for: Lcom/android/server/NotificationManagerService;->mUmsProcessing:Z
     invoke-static {v3, v6}, Lcom/android/server/NotificationManagerService;->access$3902(Lcom/android/server/NotificationManagerService;Z)Z
 
-    .line 2352
+    .line 2376
     :cond_0
     const-string v3, "NotificationService"
 
@@ -132,19 +132,19 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2353
+    .line 2377
     iget-object v3, p0, Lcom/android/server/NotificationManagerService$10;->this$0:Lcom/android/server/NotificationManagerService;
 
     #calls: Lcom/android/server/NotificationManagerService;->handleUsbSelectedStart(I)V
     invoke-static {v3, v2}, Lcom/android/server/NotificationManagerService;->access$4100(Lcom/android/server/NotificationManagerService;I)V
 
-    .line 2375
+    .line 2399
     .end local v2           #type:I
     :cond_1
     :goto_0
     return-void
 
-    .line 2354
+    .line 2378
     :cond_2
     const-string v3, "android.intent.action.MEDIA_SHARED"
 
@@ -170,7 +170,7 @@
 
     if-eqz v3, :cond_4
 
-    .line 2358
+    .line 2382
     :cond_3
     :try_start_0
     iget-object v3, p0, Lcom/android/server/NotificationManagerService$10;->this$0:Lcom/android/server/NotificationManagerService;
@@ -182,7 +182,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 2359
+    .line 2383
     iget-object v3, p0, Lcom/android/server/NotificationManagerService$10;->this$0:Lcom/android/server/NotificationManagerService;
 
     #getter for: Lcom/android/server/NotificationManagerService;->mStateQueue:Ljava/util/concurrent/BlockingQueue;
@@ -192,7 +192,7 @@
 
     invoke-interface {v3, p2}, Ljava/util/concurrent/BlockingQueue;->remove(Ljava/lang/Object;)Z
 
-    .line 2360
+    .line 2384
     iget-object v3, p0, Lcom/android/server/NotificationManagerService$10;->this$0:Lcom/android/server/NotificationManagerService;
 
     #getter for: Lcom/android/server/NotificationManagerService;->mStateQueue:Ljava/util/concurrent/BlockingQueue;
@@ -206,11 +206,11 @@
 
     goto :goto_0
 
-    .line 2362
+    .line 2386
     :catch_0
     move-exception v1
 
-    .line 2363
+    .line 2387
     .local v1, ex:Ljava/lang/InterruptedException;
     const-string v3, "NotificationService"
 
@@ -220,7 +220,7 @@
 
     goto :goto_0
 
-    .line 2365
+    .line 2389
     .end local v1           #ex:Ljava/lang/InterruptedException;
     :cond_4
     const-string v3, "android.intent.action.LOCALE_CHANGED"
@@ -231,7 +231,7 @@
 
     if-eqz v3, :cond_5
 
-    .line 2367
+    .line 2391
     iget-object v3, p0, Lcom/android/server/NotificationManagerService$10;->this$0:Lcom/android/server/NotificationManagerService;
 
     #calls: Lcom/android/server/NotificationManagerService;->updateUsbNotification()V
@@ -239,7 +239,7 @@
 
     goto :goto_0
 
-    .line 2369
+    .line 2393
     :cond_5
     const-string v3, "android.intent.action.ACTION_USB_SELECTE_DIALOG_HIDE"
 
@@ -249,7 +249,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 2372
+    .line 2396
     const-string v3, "shouldbeHide"
 
     invoke-virtual {p2, v3, v6}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z

@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 2095
+    .line 2102
     iput-object p1, p0, Lcom/android/server/location/GpsLocationProvider$ProviderHandler$2;->this$1:Lcom/android/server/location/GpsLocationProvider$ProviderHandler;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 1
 
     .prologue
-    .line 2097
+    .line 2104
     iget-object v0, p0, Lcom/android/server/location/GpsLocationProvider$ProviderHandler$2;->this$1:Lcom/android/server/location/GpsLocationProvider$ProviderHandler;
 
     iget-object v0, v0, Lcom/android/server/location/GpsLocationProvider$ProviderHandler;->this$0:Lcom/android/server/location/GpsLocationProvider;
@@ -49,6 +49,6 @@
     #calls: Lcom/android/server/location/GpsLocationProvider;->handleDownloadXtraData()V
     invoke-static {v0}, Lcom/android/server/location/GpsLocationProvider;->access$2300(Lcom/android/server/location/GpsLocationProvider;)V
 
-    .line 2098
+    .line 2105
     return-void
 .end method

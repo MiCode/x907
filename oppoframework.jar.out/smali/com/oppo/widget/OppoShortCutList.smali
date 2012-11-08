@@ -504,7 +504,7 @@
     const/4 v5, -0x1
 
     .line 86
-    const v2, 0x10900e3
+    const v2, 0x10900e4
 
     invoke-virtual {p0, v2}, Lcom/oppo/widget/OppoShortCutList;->setContentView(I)V
 

@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 304
+    .line 370
     iput-object p1, p0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
@@ -38,18 +38,18 @@
     .locals 31
 
     .prologue
-    .line 308
+    .line 374
     const-string v28, ""
 
-    .line 309
+    .line 375
     .local v28, smsRcord:Ljava/lang/String;
     const-string v26, ""
 
-    .line 311
+    .line 377
     .local v26, phoneRcord:Ljava/lang/String;
     const-string v5, "select address from view_mmssms"
 
-    .line 313
+    .line 379
     .local v5, INBOX_SELECTION:Ljava/lang/String;
     move-object/from16 v0, p0
 
@@ -77,11 +77,11 @@
 
     move-result-object v12
 
-    .line 317
+    .line 383
     .local v12, c:Landroid/database/Cursor;
     const-string v9, "type = 3 AND new = 1"
 
-    .line 319
+    .line 385
     .local v9, where:Ljava/lang/String;
     move-object/from16 v0, p0
 
@@ -117,15 +117,15 @@
 
     move-result-object v25
 
-    .line 322
+    .line 388
     .local v25, phoneCursor:Landroid/database/Cursor;
     const/16 v27, 0x0
 
-    .line 324
+    .line 390
     .local v27, returnRcord:Ljava/lang/String;
     if-eqz v12, :cond_3
 
-    .line 326
+    .line 392
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -135,7 +135,7 @@
     #setter for: Lcom/android/internal/policy/impl/UnsettleEventObserver;->mRMsName:Ljava/lang/String;
     invoke-static {v2, v3}, Lcom/android/internal/policy/impl/UnsettleEventObserver;->access$402(Lcom/android/internal/policy/impl/UnsettleEventObserver;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 327
+    .line 393
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -145,7 +145,7 @@
     #setter for: Lcom/android/internal/policy/impl/UnsettleEventObserver;->mRMsCount:I
     invoke-static {v2, v3}, Lcom/android/internal/policy/impl/UnsettleEventObserver;->access$502(Lcom/android/internal/policy/impl/UnsettleEventObserver;I)I
 
-    .line 328
+    .line 394
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -157,25 +157,25 @@
     #setter for: Lcom/android/internal/policy/impl/UnsettleEventObserver;->mSmsConut:I
     invoke-static {v2, v3}, Lcom/android/internal/policy/impl/UnsettleEventObserver;->access$602(Lcom/android/internal/policy/impl/UnsettleEventObserver;I)I
 
-    .line 329
+    .line 395
     invoke-interface {v12}, Landroid/database/Cursor;->getCount()I
 
     move-result v2
 
     if-eqz v2, :cond_3
 
-    .line 331
+    .line 397
     const/16 v17, 0x0
 
-    .line 332
+    .line 398
     .local v17, isMsDisplayName:Z
     const/16 v22, 0x0
 
-    .line 333
+    .line 399
     .local v22, oldName:Ljava/lang/String;
     const/16 v21, 0x0
 
-    .line 334
+    .line 400
     .local v21, newName:Ljava/lang/String;
     const/4 v2, 0x0
 
@@ -185,14 +185,14 @@
 
     if-eqz v2, :cond_0
 
-    .line 336
+    .line 402
     const/4 v2, 0x0
 
     invoke-interface {v12, v2}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v22
 
-    .line 339
+    .line 405
     :cond_0
     const/16 v16, 0x0
 
@@ -206,7 +206,7 @@
 
     if-ge v0, v2, :cond_2
 
-    .line 341
+    .line 407
     move/from16 v0, v16
 
     invoke-interface {v12, v0}, Landroid/database/Cursor;->moveToPosition(I)Z
@@ -215,14 +215,14 @@
 
     if-eqz v2, :cond_e
 
-    .line 343
+    .line 409
     const/4 v2, 0x0
 
     invoke-interface {v12, v2}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v21
 
-    .line 345
+    .line 411
     if-eqz v22, :cond_1
 
     if-eqz v22, :cond_d
@@ -233,7 +233,7 @@
 
     if-nez v2, :cond_d
 
-    .line 347
+    .line 413
     :cond_1
     const-string v2, "StatusBar"
 
@@ -241,19 +241,19 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 348
+    .line 414
     const/16 v17, 0x0
 
-    .line 358
+    .line 424
     :cond_2
     if-eqz v17, :cond_13
 
-    .line 360
+    .line 426
     const/4 v2, 0x0
 
     invoke-interface {v12, v2}, Landroid/database/Cursor;->moveToPosition(I)Z
 
-    .line 361
+    .line 427
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -274,11 +274,11 @@
 
     move-object/from16 v20, v0
 
-    .line 362
+    .line 428
     .local v20, name:Ljava/lang/String;
     if-nez v20, :cond_12
 
-    .line 364
+    .line 430
     const/4 v2, 0x0
 
     invoke-interface {v12, v2}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
@@ -293,7 +293,7 @@
 
     if-eqz v2, :cond_f
 
-    .line 367
+    .line 433
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -306,7 +306,7 @@
 
     move-result-object v20
 
-    .line 384
+    .line 450
     :goto_1
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -348,11 +348,11 @@
 
     move-result-object v28
 
-    .line 391
+    .line 457
     :goto_2
     const/16 v17, 0x0
 
-    .line 392
+    .line 458
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -362,7 +362,7 @@
     #setter for: Lcom/android/internal/policy/impl/UnsettleEventObserver;->mRMsName:Ljava/lang/String;
     invoke-static {v2, v0}, Lcom/android/internal/policy/impl/UnsettleEventObserver;->access$402(Lcom/android/internal/policy/impl/UnsettleEventObserver;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 400
+    .line 466
     .end local v20           #name:Ljava/lang/String;
     :goto_3
     move-object/from16 v0, p0
@@ -376,7 +376,7 @@
     #setter for: Lcom/android/internal/policy/impl/UnsettleEventObserver;->mRMsCount:I
     invoke-static {v2, v3}, Lcom/android/internal/policy/impl/UnsettleEventObserver;->access$502(Lcom/android/internal/policy/impl/UnsettleEventObserver;I)I
 
-    .line 404
+    .line 470
     .end local v16           #i:I
     .end local v17           #isMsDisplayName:Z
     .end local v21           #newName:Ljava/lang/String;
@@ -384,7 +384,7 @@
     :cond_3
     if-eqz v25, :cond_6
 
-    .line 406
+    .line 472
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -394,7 +394,7 @@
     #setter for: Lcom/android/internal/policy/impl/UnsettleEventObserver;->mRPhName:Ljava/lang/String;
     invoke-static {v2, v3}, Lcom/android/internal/policy/impl/UnsettleEventObserver;->access$702(Lcom/android/internal/policy/impl/UnsettleEventObserver;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 407
+    .line 473
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -404,7 +404,7 @@
     #setter for: Lcom/android/internal/policy/impl/UnsettleEventObserver;->mRPhCount:I
     invoke-static {v2, v3}, Lcom/android/internal/policy/impl/UnsettleEventObserver;->access$802(Lcom/android/internal/policy/impl/UnsettleEventObserver;I)I
 
-    .line 408
+    .line 474
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -416,25 +416,25 @@
     #setter for: Lcom/android/internal/policy/impl/UnsettleEventObserver;->mPhoneConut:I
     invoke-static {v2, v3}, Lcom/android/internal/policy/impl/UnsettleEventObserver;->access$902(Lcom/android/internal/policy/impl/UnsettleEventObserver;I)I
 
-    .line 410
+    .line 476
     invoke-interface/range {v25 .. v25}, Landroid/database/Cursor;->getCount()I
 
     move-result v2
 
     if-eqz v2, :cond_6
 
-    .line 412
+    .line 478
     const/16 v18, 0x0
 
-    .line 413
+    .line 479
     .local v18, isPhDisplayName:Z
     const/16 v22, 0x0
 
-    .line 414
+    .line 480
     .restart local v22       #oldName:Ljava/lang/String;
     const/16 v21, 0x0
 
-    .line 415
+    .line 481
     .restart local v21       #newName:Ljava/lang/String;
     const/4 v2, 0x0
 
@@ -446,7 +446,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 417
+    .line 483
     const/4 v2, 0x0
 
     move-object/from16 v0, v25
@@ -455,7 +455,7 @@
 
     move-result-object v22
 
-    .line 420
+    .line 486
     :cond_4
     const/16 v16, 0x0
 
@@ -469,7 +469,7 @@
 
     if-ge v0, v2, :cond_5
 
-    .line 422
+    .line 488
     move-object/from16 v0, v25
 
     move/from16 v1, v16
@@ -480,7 +480,7 @@
 
     if-eqz v2, :cond_15
 
-    .line 424
+    .line 490
     const/4 v2, 0x0
 
     move-object/from16 v0, v25
@@ -489,28 +489,28 @@
 
     move-result-object v21
 
-    .line 425
+    .line 491
     invoke-virtual/range {v21 .. v22}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v2
 
     if-nez v2, :cond_14
 
-    .line 427
+    .line 493
     const/16 v18, 0x0
 
-    .line 435
+    .line 501
     :cond_5
     if-eqz v18, :cond_1a
 
-    .line 437
+    .line 503
     const/4 v2, 0x0
 
     move-object/from16 v0, v25
 
     invoke-interface {v0, v2}, Landroid/database/Cursor;->moveToPosition(I)Z
 
-    .line 438
+    .line 504
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -533,11 +533,11 @@
 
     move-object/from16 v20, v0
 
-    .line 439
+    .line 505
     .restart local v20       #name:Ljava/lang/String;
     if-nez v20, :cond_19
 
-    .line 441
+    .line 507
     const/4 v2, 0x0
 
     move-object/from16 v0, v25
@@ -554,7 +554,7 @@
 
     if-eqz v2, :cond_16
 
-    .line 444
+    .line 510
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -567,7 +567,7 @@
 
     move-result-object v20
 
-    .line 465
+    .line 531
     :goto_5
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -609,11 +609,11 @@
 
     move-result-object v26
 
-    .line 472
+    .line 538
     :goto_6
     const/16 v18, 0x0
 
-    .line 473
+    .line 539
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -623,7 +623,7 @@
     #setter for: Lcom/android/internal/policy/impl/UnsettleEventObserver;->mRPhName:Ljava/lang/String;
     invoke-static {v2, v0}, Lcom/android/internal/policy/impl/UnsettleEventObserver;->access$702(Lcom/android/internal/policy/impl/UnsettleEventObserver;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 481
+    .line 547
     .end local v20           #name:Ljava/lang/String;
     :goto_7
     move-object/from16 v0, p0
@@ -637,7 +637,7 @@
     #setter for: Lcom/android/internal/policy/impl/UnsettleEventObserver;->mRPhCount:I
     invoke-static {v2, v3}, Lcom/android/internal/policy/impl/UnsettleEventObserver;->access$802(Lcom/android/internal/policy/impl/UnsettleEventObserver;I)I
 
-    .line 498
+    .line 564
     .end local v16           #i:I
     .end local v18           #isPhDisplayName:Z
     .end local v21           #newName:Ljava/lang/String;
@@ -669,7 +669,7 @@
 
     move-result-object v27
 
-    .line 499
+    .line 565
     new-instance v13, Ljava/io/File;
 
     const-string v2, "/data"
@@ -678,7 +678,7 @@
 
     invoke-direct {v13, v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 501
+    .line 567
     .local v13, contentFile:Ljava/io/File;
     invoke-virtual {v13}, Ljava/io/File;->exists()Z
 
@@ -686,10 +686,10 @@
 
     if-eqz v2, :cond_9
 
-    .line 503
+    .line 569
     const/16 v29, 0x0
 
-    .line 507
+    .line 573
     .local v29, wordsOutPutStream:Ljava/io/FileOutputStream;
     :try_start_0
     new-instance v30, Ljava/io/FileOutputStream;
@@ -704,17 +704,17 @@
     .local v30, wordsOutPutStream:Ljava/io/FileOutputStream;
     move-object/from16 v29, v30
 
-    .line 514
+    .line 580
     .end local v30           #wordsOutPutStream:Ljava/io/FileOutputStream;
     .restart local v29       #wordsOutPutStream:Ljava/io/FileOutputStream;
     :goto_8
     const/16 v23, 0x0
 
-    .line 519
+    .line 585
     .local v23, outPutWriter:Ljava/io/OutputStreamWriter;
     if-eqz v29, :cond_7
 
-    .line 521
+    .line 587
     :try_start_1
     new-instance v24, Ljava/io/OutputStreamWriter;
 
@@ -732,17 +732,17 @@
     .local v24, outPutWriter:Ljava/io/OutputStreamWriter;
     move-object/from16 v23, v24
 
-    .line 529
+    .line 595
     .end local v24           #outPutWriter:Ljava/io/OutputStreamWriter;
     .restart local v23       #outPutWriter:Ljava/io/OutputStreamWriter;
     :cond_7
     :goto_9
     if-eqz v27, :cond_8
 
-    .line 533
+    .line 599
     if-eqz v23, :cond_8
 
-    .line 535
+    .line 601
     :try_start_2
     move-object/from16 v0, v23
 
@@ -750,26 +750,26 @@
 
     invoke-virtual {v0, v1}, Ljava/io/OutputStreamWriter;->write(Ljava/lang/String;)V
 
-    .line 536
+    .line 602
     invoke-virtual/range {v23 .. v23}, Ljava/io/OutputStreamWriter;->flush()V
 
-    .line 537
+    .line 603
     invoke-virtual/range {v23 .. v23}, Ljava/io/OutputStreamWriter;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 546
+    .line 612
     :cond_8
     :goto_a
     if-eqz v29, :cond_9
 
-    .line 550
+    .line 616
     :try_start_3
     invoke-virtual/range {v29 .. v29}, Ljava/io/FileOutputStream;->close()V
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 559
+    .line 625
     .end local v23           #outPutWriter:Ljava/io/OutputStreamWriter;
     .end local v29           #wordsOutPutStream:Ljava/io/FileOutputStream;
     :cond_9
@@ -791,10 +791,10 @@
 
     if-eqz v2, :cond_1b
 
-    .line 562
+    .line 628
     if-eqz v12, :cond_a
 
-    .line 563
+    .line 629
     new-instance v19, Landroid/content/Intent;
 
     const-string v2, "com.oppo.lockscreeneventNO"
@@ -803,7 +803,7 @@
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 564
+    .line 630
     .local v19, mmsIntent:Landroid/content/Intent;
     const-string v2, "msmnotifytime"
 
@@ -815,7 +815,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 565
+    .line 631
     const-string v2, "pakeageName"
 
     const-string v3, "com.android.mms"
@@ -824,7 +824,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 566
+    .line 632
     const-string v2, "number"
 
     invoke-interface {v12}, Landroid/database/Cursor;->getCount()I
@@ -835,7 +835,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 568
+    .line 634
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -846,27 +846,27 @@
 
     invoke-virtual {v2, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 585
+    .line 651
     .end local v19           #mmsIntent:Landroid/content/Intent;
     :cond_a
     :goto_c
     if-eqz v25, :cond_b
 
-    .line 587
+    .line 653
     invoke-interface/range {v25 .. v25}, Landroid/database/Cursor;->close()V
 
-    .line 590
+    .line 656
     :cond_b
     if-eqz v12, :cond_c
 
-    .line 592
+    .line 658
     invoke-interface {v12}, Landroid/database/Cursor;->close()V
 
-    .line 594
+    .line 660
     :cond_c
     return-void
 
-    .line 352
+    .line 418
     .end local v13           #contentFile:Ljava/io/File;
     .restart local v16       #i:I
     .restart local v17       #isMsDisplayName:Z
@@ -879,16 +879,16 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 353
+    .line 419
     const/16 v17, 0x1
 
-    .line 339
+    .line 405
     :cond_e
     add-int/lit8 v16, v16, 0x1
 
     goto/16 :goto_0
 
-    .line 369
+    .line 435
     .restart local v20       #name:Ljava/lang/String;
     :cond_f
     const/4 v2, 0x0
@@ -905,7 +905,7 @@
 
     if-eqz v2, :cond_10
 
-    .line 372
+    .line 438
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -920,7 +920,7 @@
 
     goto/16 :goto_1
 
-    .line 374
+    .line 440
     :cond_10
     const/4 v2, 0x0
 
@@ -936,7 +936,7 @@
 
     if-eqz v2, :cond_11
 
-    .line 377
+    .line 443
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -951,7 +951,7 @@
 
     goto/16 :goto_1
 
-    .line 381
+    .line 447
     :cond_11
     const/4 v2, 0x0
 
@@ -961,7 +961,7 @@
 
     goto/16 :goto_1
 
-    .line 389
+    .line 455
     :cond_12
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1005,7 +1005,7 @@
 
     goto/16 :goto_2
 
-    .line 397
+    .line 463
     .end local v20           #name:Ljava/lang/String;
     :cond_13
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1042,24 +1042,24 @@
 
     move-result-object v28
 
-    .line 398
+    .line 464
     const/16 v17, 0x0
 
     goto/16 :goto_3
 
-    .line 430
+    .line 496
     .end local v17           #isMsDisplayName:Z
     .restart local v18       #isPhDisplayName:Z
     :cond_14
     const/16 v18, 0x1
 
-    .line 420
+    .line 486
     :cond_15
     add-int/lit8 v16, v16, 0x1
 
     goto/16 :goto_4
 
-    .line 447
+    .line 513
     .restart local v20       #name:Ljava/lang/String;
     :cond_16
     const/4 v2, 0x0
@@ -1078,7 +1078,7 @@
 
     if-eqz v2, :cond_17
 
-    .line 450
+    .line 516
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -1093,7 +1093,7 @@
 
     goto/16 :goto_5
 
-    .line 453
+    .line 519
     :cond_17
     const/4 v2, 0x0
 
@@ -1111,7 +1111,7 @@
 
     if-eqz v2, :cond_18
 
-    .line 456
+    .line 522
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -1126,7 +1126,7 @@
 
     goto/16 :goto_5
 
-    .line 461
+    .line 527
     :cond_18
     const/4 v2, 0x0
 
@@ -1138,7 +1138,7 @@
 
     goto/16 :goto_5
 
-    .line 470
+    .line 536
     :cond_19
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1182,7 +1182,7 @@
 
     goto/16 :goto_6
 
-    .line 478
+    .line 544
     .end local v20           #name:Ljava/lang/String;
     :cond_1a
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1219,12 +1219,12 @@
 
     move-result-object v26
 
-    .line 479
+    .line 545
     const/16 v18, 0x0
 
     goto/16 :goto_7
 
-    .line 509
+    .line 575
     .end local v16           #i:I
     .end local v18           #isPhDisplayName:Z
     .end local v21           #newName:Ljava/lang/String;
@@ -1234,7 +1234,7 @@
     :catch_0
     move-exception v15
 
-    .line 511
+    .line 577
     .local v15, exc:Ljava/io/FileNotFoundException;
     const-string v2, "StatusBar"
 
@@ -1244,41 +1244,41 @@
 
     goto/16 :goto_8
 
-    .line 524
+    .line 590
     .end local v15           #exc:Ljava/io/FileNotFoundException;
     .restart local v23       #outPutWriter:Ljava/io/OutputStreamWriter;
     :catch_1
     move-exception v14
 
-    .line 526
+    .line 592
     .local v14, e:Ljava/io/UnsupportedEncodingException;
     invoke-virtual {v14}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
     goto/16 :goto_9
 
-    .line 540
+    .line 606
     .end local v14           #e:Ljava/io/UnsupportedEncodingException;
     :catch_2
     move-exception v14
 
-    .line 542
+    .line 608
     .local v14, e:Ljava/io/IOException;
     invoke-virtual {v14}, Ljava/io/IOException;->printStackTrace()V
 
     goto/16 :goto_a
 
-    .line 552
+    .line 618
     .end local v14           #e:Ljava/io/IOException;
     :catch_3
     move-exception v14
 
-    .line 554
+    .line 620
     .restart local v14       #e:Ljava/io/IOException;
     invoke-virtual {v14}, Ljava/io/IOException;->printStackTrace()V
 
     goto/16 :goto_b
 
-    .line 572
+    .line 638
     .end local v14           #e:Ljava/io/IOException;
     .end local v23           #outPutWriter:Ljava/io/OutputStreamWriter;
     .end local v29           #wordsOutPutStream:Ljava/io/FileOutputStream;
@@ -1300,10 +1300,10 @@
 
     if-eqz v2, :cond_a
 
-    .line 575
+    .line 641
     if-eqz v25, :cond_a
 
-    .line 576
+    .line 642
     new-instance v19, Landroid/content/Intent;
 
     const-string v2, "com.oppo.lockscreeneventNO"
@@ -1312,7 +1312,7 @@
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 577
+    .line 643
     .restart local v19       #mmsIntent:Landroid/content/Intent;
     const-string v2, "pakeageName"
 
@@ -1322,7 +1322,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 578
+    .line 644
     const-string v2, "callnotifytime"
 
     invoke-interface/range {v25 .. v25}, Landroid/database/Cursor;->getCount()I
@@ -1333,7 +1333,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 579
+    .line 645
     const-string v2, "number"
 
     invoke-interface/range {v25 .. v25}, Landroid/database/Cursor;->getCount()I
@@ -1344,7 +1344,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 580
+    .line 646
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;

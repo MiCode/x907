@@ -31,15 +31,15 @@
     .locals 1
 
     .prologue
-    .line 399
+    .line 424
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 431
+    .line 456
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;->mState:I
 
-    .line 483
+    .line 508
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct/range {v0 .. v0}, Ljava/lang/Object;-><init>()V
@@ -49,81 +49,81 @@
     return-void
 .end method
 
-.method static synthetic access$402(Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;Landroid/os/Looper;)Landroid/os/Looper;
+.method static synthetic access$502(Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;Landroid/os/Looper;)Landroid/os/Looper;
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
-    .line 399
+    .line 424
     iput-object p1, p0, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;->mLooper:Landroid/os/Looper;
 
     return-object p1
 .end method
 
-.method static synthetic access$500(Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;)Landroid/telephony/PhoneStateListener;
+.method static synthetic access$600(Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;)Landroid/telephony/PhoneStateListener;
     .locals 1
     .parameter "x0"
 
     .prologue
-    .line 399
+    .line 424
     iget-object v0, p0, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;->mListener:Landroid/telephony/PhoneStateListener;
 
     return-object v0
 .end method
 
-.method static synthetic access$502(Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;Landroid/telephony/PhoneStateListener;)Landroid/telephony/PhoneStateListener;
+.method static synthetic access$602(Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;Landroid/telephony/PhoneStateListener;)Landroid/telephony/PhoneStateListener;
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
-    .line 399
+    .line 424
     iput-object p1, p0, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;->mListener:Landroid/telephony/PhoneStateListener;
 
     return-object p1
 .end method
 
-.method static synthetic access$600(Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;)Ljava/lang/Object;
+.method static synthetic access$700(Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;)Ljava/lang/Object;
     .locals 1
     .parameter "x0"
 
     .prologue
-    .line 399
+    .line 424
     iget-object v0, p0, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;->mLock:Ljava/lang/Object;
 
     return-object v0
 .end method
 
-.method static synthetic access$700(Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;)I
+.method static synthetic access$800(Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;)I
     .locals 1
     .parameter "x0"
 
     .prologue
-    .line 399
+    .line 424
     iget v0, p0, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;->mState:I
 
     return v0
 .end method
 
-.method static synthetic access$702(Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;I)I
+.method static synthetic access$802(Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;I)I
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
-    .line 399
+    .line 424
     iput p1, p0, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;->mState:I
 
     return p1
 .end method
 
-.method static synthetic access$800(Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;)Landroid/telephony/TelephonyManager;
+.method static synthetic access$900(Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;)Landroid/telephony/TelephonyManager;
     .locals 1
     .parameter "x0"
 
     .prologue
-    .line 399
+    .line 424
     iget-object v0, p0, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
     return-object v0
@@ -133,17 +133,17 @@
     .locals 1
 
     .prologue
-    .line 403
+    .line 428
     iget-object v0, p0, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;->mLooper:Landroid/os/Looper;
 
     invoke-virtual {v0}, Landroid/os/Looper;->quit()V
 
-    .line 404
+    .line 429
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;->mLooper:Landroid/os/Looper;
 
-    .line 405
+    .line 430
     return-void
 .end method
 
@@ -152,7 +152,7 @@
     .parameter "targetState"
 
     .prologue
-    .line 435
+    .line 460
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper$1;
@@ -161,53 +161,53 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 461
+    .line 486
     .local v0, t:Ljava/lang/Thread;
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
-    .line 462
+    .line 487
     iget-object v2, p0, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;->mLock:Ljava/lang/Object;
 
     monitor-enter v2
 
-    .line 467
+    .line 492
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;->mLock:Ljava/lang/Object;
 
-    const-wide/16 v3, 0xfa0
+    const-wide/16 v3, 0x1f40
 
     invoke-virtual {v1, v3, v4}, Ljava/lang/Object;->wait(J)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 472
+    .line 497
     :goto_0
     :try_start_1
     monitor-exit v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 473
+    .line 498
     iget v1, p0, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;->mState:I
 
     if-eq v1, p1, :cond_0
 
-    .line 475
+    .line 500
     const-string v1, "OppoFPDUtils"
 
     const-string v2, "wait target state timeout"
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 477
+    .line 502
     :cond_0
     invoke-direct {p0}, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;->quitLooper()V
 
-    .line 479
+    .line 504
     return-void
 
-    .line 472
+    .line 497
     :catchall_0
     move-exception v1
 
@@ -218,7 +218,7 @@
 
     throw v1
 
-    .line 469
+    .line 494
     :catch_0
     move-exception v1
 
@@ -236,7 +236,7 @@
 
     const/4 v6, 0x0
 
-    .line 410
+    .line 435
     const-string v5, "phone"
 
     invoke-virtual {p1, v5}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -247,18 +247,18 @@
 
     iput-object v5, p0, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
-    .line 411
+    .line 436
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v3
 
-    .line 413
+    .line 438
     .local v3, start:J
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 414
+    .line 439
     .local v0, contentResolver:Landroid/content/ContentResolver;
     const-string v5, "airplane_mode_on"
 
@@ -268,7 +268,7 @@
 
     if-ne v5, v2, :cond_1
 
-    .line 417
+    .line 442
     .local v2, on:Z
     :goto_0
     new-instance v1, Landroid/content/Intent;
@@ -277,29 +277,29 @@
 
     invoke-direct {v1, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 418
+    .line 443
     .local v1, intent:Landroid/content/Intent;
     const-string v5, "state"
 
     invoke-virtual {v1, v5, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 419
+    .line 444
     const/high16 v5, 0x2000
 
     invoke-virtual {v1, v5}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 420
+    .line 445
     invoke-virtual {p1, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 421
+    .line 446
     if-eqz v2, :cond_0
 
-    .line 423
+    .line 448
     const/4 v5, 0x3
 
     invoke-direct {p0, v5}, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;->waitStateTo(I)V
 
-    .line 426
+    .line 451
     :cond_0
     const-string v5, "OppoFPDUtils"
 
@@ -335,7 +335,7 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 429
+    .line 454
     return-void
 
     .end local v1           #intent:Landroid/content/Intent;
@@ -343,6 +343,6 @@
     :cond_1
     move v2, v6
 
-    .line 414
+    .line 439
     goto :goto_0
 .end method

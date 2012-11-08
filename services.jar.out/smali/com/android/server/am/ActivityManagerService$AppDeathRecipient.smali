@@ -63,7 +63,7 @@
     .line 857
     iget v0, p0, Lcom/android/server/am/ActivityManagerService$AppDeathRecipient;->mPid:I
 
-    const-string v1, "sys.touch_app_pid"
+    const-string v1, "persist.sys.touch_app_pid"
 
     const-string v2, "0"
 

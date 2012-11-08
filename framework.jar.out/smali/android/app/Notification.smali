@@ -709,7 +709,7 @@
 
     move-result-object v4
 
-    const v5, 0x10900ee
+    const v5, 0x10900ef
 
     invoke-direct {v2, v4, v5}, Landroid/widget/RemoteViews;-><init>(Ljava/lang/String;I)V
 

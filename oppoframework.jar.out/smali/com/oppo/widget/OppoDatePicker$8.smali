@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 1258
+    .line 1267
     iput-object p1, p0, Lcom/oppo/widget/OppoDatePicker$8;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -45,10 +45,10 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 1261
+    .line 1270
     sput p2, Lcom/oppo/widget/OppoDatePicker;->mCurrentYear:I
 
-    .line 1262
+    .line 1271
     iget-object v1, p0, Lcom/oppo/widget/OppoDatePicker$8;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
     #getter for: Lcom/oppo/widget/OppoDatePicker;->mChineseDateAndSolarDate:Lcom/oppo/util/ChineseDateAndSolarDate;
@@ -62,17 +62,17 @@
 
     move-result v0
 
-    .line 1263
+    .line 1272
     .local v0, leap:I
     if-nez v0, :cond_0
 
-    .line 1264
+    .line 1273
     iget-object v1, p0, Lcom/oppo/widget/OppoDatePicker$8;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
     #setter for: Lcom/oppo/widget/OppoDatePicker;->mIsLeapYear:Z
     invoke-static {v1, v3}, Lcom/oppo/widget/OppoDatePicker;->access$502(Lcom/oppo/widget/OppoDatePicker;Z)Z
 
-    .line 1270
+    .line 1279
     :goto_0
     sget-object v1, Lcom/oppo/widget/OppoDatePicker;->mIsChineseDate:Ljava/lang/Boolean;
 
@@ -82,54 +82,7 @@
 
     if-nez v1, :cond_1
 
-    .line 1272
-    iget-object v1, p0, Lcom/oppo/widget/OppoDatePicker$8;->this$0:Lcom/oppo/widget/OppoDatePicker;
-
-    #getter for: Lcom/oppo/widget/OppoDatePicker;->mMonthView:Lcom/oppo/widget/OppoMonthView;
-    invoke-static {v1}, Lcom/oppo/widget/OppoDatePicker;->access$1200(Lcom/oppo/widget/OppoDatePicker;)Lcom/oppo/widget/OppoMonthView;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v3}, Lcom/oppo/widget/OppoMonthView;->setStopRun(Z)V
-
-    .line 1273
-    iget-object v1, p0, Lcom/oppo/widget/OppoDatePicker$8;->this$0:Lcom/oppo/widget/OppoDatePicker;
-
-    #getter for: Lcom/oppo/widget/OppoDatePicker;->mMonthView:Lcom/oppo/widget/OppoMonthView;
-    invoke-static {v1}, Lcom/oppo/widget/OppoDatePicker;->access$1200(Lcom/oppo/widget/OppoDatePicker;)Lcom/oppo/widget/OppoMonthView;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Lcom/oppo/widget/OppoMonthView;->reDraw(I)V
-
-    .line 1284
-    :goto_1
-    iget-object v1, p0, Lcom/oppo/widget/OppoDatePicker$8;->this$0:Lcom/oppo/widget/OppoDatePicker;
-
-    invoke-virtual {v1}, Lcom/oppo/widget/OppoDatePicker;->upDateDisplayData()V
-
-    .line 1285
-    return-void
-
-    .line 1266
-    :cond_0
-    iget-object v1, p0, Lcom/oppo/widget/OppoDatePicker$8;->this$0:Lcom/oppo/widget/OppoDatePicker;
-
-    const/4 v2, 0x1
-
-    #setter for: Lcom/oppo/widget/OppoDatePicker;->mIsLeapYear:Z
-    invoke-static {v1, v2}, Lcom/oppo/widget/OppoDatePicker;->access$502(Lcom/oppo/widget/OppoDatePicker;Z)Z
-
-    .line 1267
-    iget-object v1, p0, Lcom/oppo/widget/OppoDatePicker$8;->this$0:Lcom/oppo/widget/OppoDatePicker;
-
-    #setter for: Lcom/oppo/widget/OppoDatePicker;->mLeapMonth:I
-    invoke-static {v1, v0}, Lcom/oppo/widget/OppoDatePicker;->access$702(Lcom/oppo/widget/OppoDatePicker;I)I
-
-    goto :goto_0
-
     .line 1281
-    :cond_1
     iget-object v1, p0, Lcom/oppo/widget/OppoDatePicker$8;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
     #getter for: Lcom/oppo/widget/OppoDatePicker;->mMonthView:Lcom/oppo/widget/OppoMonthView;
@@ -140,6 +93,53 @@
     invoke-virtual {v1, v3}, Lcom/oppo/widget/OppoMonthView;->setStopRun(Z)V
 
     .line 1282
+    iget-object v1, p0, Lcom/oppo/widget/OppoDatePicker$8;->this$0:Lcom/oppo/widget/OppoDatePicker;
+
+    #getter for: Lcom/oppo/widget/OppoDatePicker;->mMonthView:Lcom/oppo/widget/OppoMonthView;
+    invoke-static {v1}, Lcom/oppo/widget/OppoDatePicker;->access$1200(Lcom/oppo/widget/OppoDatePicker;)Lcom/oppo/widget/OppoMonthView;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Lcom/oppo/widget/OppoMonthView;->reDraw(I)V
+
+    .line 1293
+    :goto_1
+    iget-object v1, p0, Lcom/oppo/widget/OppoDatePicker$8;->this$0:Lcom/oppo/widget/OppoDatePicker;
+
+    invoke-virtual {v1}, Lcom/oppo/widget/OppoDatePicker;->upDateDisplayData()V
+
+    .line 1294
+    return-void
+
+    .line 1275
+    :cond_0
+    iget-object v1, p0, Lcom/oppo/widget/OppoDatePicker$8;->this$0:Lcom/oppo/widget/OppoDatePicker;
+
+    const/4 v2, 0x1
+
+    #setter for: Lcom/oppo/widget/OppoDatePicker;->mIsLeapYear:Z
+    invoke-static {v1, v2}, Lcom/oppo/widget/OppoDatePicker;->access$502(Lcom/oppo/widget/OppoDatePicker;Z)Z
+
+    .line 1276
+    iget-object v1, p0, Lcom/oppo/widget/OppoDatePicker$8;->this$0:Lcom/oppo/widget/OppoDatePicker;
+
+    #setter for: Lcom/oppo/widget/OppoDatePicker;->mLeapMonth:I
+    invoke-static {v1, v0}, Lcom/oppo/widget/OppoDatePicker;->access$702(Lcom/oppo/widget/OppoDatePicker;I)I
+
+    goto :goto_0
+
+    .line 1290
+    :cond_1
+    iget-object v1, p0, Lcom/oppo/widget/OppoDatePicker$8;->this$0:Lcom/oppo/widget/OppoDatePicker;
+
+    #getter for: Lcom/oppo/widget/OppoDatePicker;->mMonthView:Lcom/oppo/widget/OppoMonthView;
+    invoke-static {v1}, Lcom/oppo/widget/OppoDatePicker;->access$1200(Lcom/oppo/widget/OppoDatePicker;)Lcom/oppo/widget/OppoMonthView;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v3}, Lcom/oppo/widget/OppoMonthView;->setStopRun(Z)V
+
+    .line 1291
     iget-object v1, p0, Lcom/oppo/widget/OppoDatePicker$8;->this$0:Lcom/oppo/widget/OppoDatePicker;
 
     #getter for: Lcom/oppo/widget/OppoDatePicker;->mMonthView:Lcom/oppo/widget/OppoMonthView;

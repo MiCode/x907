@@ -233,7 +233,7 @@
     .local v5, options:[Ljava/lang/CharSequence;
     new-instance v0, Landroid/widget/ArrayAdapter;
 
-    const v8, 0x1090003
+    const v8, 0x10900a4
 
     const v9, 0x1020014
 

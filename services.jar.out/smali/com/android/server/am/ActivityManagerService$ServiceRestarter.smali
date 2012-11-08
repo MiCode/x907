@@ -29,7 +29,7 @@
     .parameter
 
     .prologue
-    .line 10719
+    .line 10762
     iput-object p1, p0, Lcom/android/server/am/ActivityManagerService$ServiceRestarter;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .parameter "x1"
 
     .prologue
-    .line 10719
+    .line 10762
     invoke-direct {p0, p1}, Lcom/android/server/am/ActivityManagerService$ServiceRestarter;-><init>(Lcom/android/server/am/ActivityManagerService;)V
 
     return-void
@@ -55,12 +55,12 @@
     .locals 3
 
     .prologue
-    .line 10727
+    .line 10770
     iget-object v1, p0, Lcom/android/server/am/ActivityManagerService$ServiceRestarter;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     monitor-enter v1
 
-    .line 10728
+    .line 10771
     :try_start_0
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$ServiceRestarter;->this$0:Lcom/android/server/am/ActivityManagerService;
 
@@ -68,13 +68,13 @@
 
     invoke-virtual {v0, v2}, Lcom/android/server/am/ActivityManagerService;->performServiceRestartLocked(Lcom/android/server/am/ServiceRecord;)V
 
-    .line 10729
+    .line 10772
     monitor-exit v1
 
-    .line 10730
+    .line 10773
     return-void
 
-    .line 10729
+    .line 10772
     :catchall_0
     move-exception v0
 
@@ -90,9 +90,9 @@
     .parameter "service"
 
     .prologue
-    .line 10723
+    .line 10766
     iput-object p1, p0, Lcom/android/server/am/ActivityManagerService$ServiceRestarter;->mService:Lcom/android/server/am/ServiceRecord;
 
-    .line 10724
+    .line 10767
     return-void
 .end method

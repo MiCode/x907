@@ -8,11 +8,13 @@
     value = {
         Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsReadTread;,
         Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailThread;,
+        Lcom/android/internal/policy/impl/UnsettleEventObserver$OppoParadiseThread;,
         Lcom/android/internal/policy/impl/UnsettleEventObserver$SoftwareMarketThread;,
         Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsContent;,
         Lcom/android/internal/policy/impl/UnsettleEventObserver$PhoneContent;,
         Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailContent;,
-        Lcom/android/internal/policy/impl/UnsettleEventObserver$SoftwareMarketContent;
+        Lcom/android/internal/policy/impl/UnsettleEventObserver$SoftwareMarketContent;,
+        Lcom/android/internal/policy/impl/UnsettleEventObserver$OppoParadiseContent;
     }
 .end annotation
 
@@ -352,7 +354,10 @@
     .line 100
     invoke-virtual {p0, p1}, Lcom/android/internal/policy/impl/UnsettleEventObserver;->regidterSoftwareMarketListenter(Landroid/content/Context;)V
 
-    .line 102
+    .line 104
+    invoke-virtual {p0, p1}, Lcom/android/internal/policy/impl/UnsettleEventObserver;->registerOppoParadiseListener(Landroid/content/Context;)V
+
+    .line 106
     return-void
 .end method
 
@@ -361,7 +366,7 @@
     .parameter "content"
 
     .prologue
-    .line 599
+    .line 665
     new-instance v0, Ljava/io/File;
 
     const-string v7, "/data"
@@ -370,7 +375,7 @@
 
     invoke-direct {v0, v7, v8}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 601
+    .line 667
     .local v0, contentFile:Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -378,10 +383,10 @@
 
     if-eqz v7, :cond_1
 
-    .line 603
+    .line 669
     const/4 v5, 0x0
 
-    .line 607
+    .line 673
     .local v5, wordsOutPutStream:Ljava/io/FileOutputStream;
     :try_start_0
     new-instance v6, Ljava/io/FileOutputStream;
@@ -394,13 +399,13 @@
     .local v6, wordsOutPutStream:Ljava/io/FileOutputStream;
     move-object v5, v6
 
-    .line 614
+    .line 680
     .end local v6           #wordsOutPutStream:Ljava/io/FileOutputStream;
     .restart local v5       #wordsOutPutStream:Ljava/io/FileOutputStream;
     :goto_0
     const/4 v3, 0x0
 
-    .line 618
+    .line 684
     .local v3, outPutWriter:Ljava/io/OutputStreamWriter;
     :try_start_1
     new-instance v4, Ljava/io/OutputStreamWriter;
@@ -415,51 +420,51 @@
     .local v4, outPutWriter:Ljava/io/OutputStreamWriter;
     move-object v3, v4
 
-    .line 626
+    .line 692
     .end local v4           #outPutWriter:Ljava/io/OutputStreamWriter;
     .restart local v3       #outPutWriter:Ljava/io/OutputStreamWriter;
     :goto_1
     if-eqz p1, :cond_0
 
-    .line 630
+    .line 696
     if-eqz v3, :cond_0
 
-    .line 632
+    .line 698
     :try_start_2
     invoke-virtual {v3, p1}, Ljava/io/OutputStreamWriter;->write(Ljava/lang/String;)V
 
-    .line 633
+    .line 699
     invoke-virtual {v3}, Ljava/io/OutputStreamWriter;->flush()V
 
-    .line 634
+    .line 700
     invoke-virtual {v3}, Ljava/io/OutputStreamWriter;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 643
+    .line 709
     :cond_0
     :goto_2
     if-eqz v5, :cond_1
 
-    .line 647
+    .line 713
     :try_start_3
     invoke-virtual {v5}, Ljava/io/FileOutputStream;->close()V
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 655
+    .line 721
     .end local v3           #outPutWriter:Ljava/io/OutputStreamWriter;
     .end local v5           #wordsOutPutStream:Ljava/io/FileOutputStream;
     :cond_1
     :goto_3
     return-void
 
-    .line 609
+    .line 675
     .restart local v5       #wordsOutPutStream:Ljava/io/FileOutputStream;
     :catch_0
     move-exception v2
 
-    .line 611
+    .line 677
     .local v2, exc:Ljava/io/FileNotFoundException;
     const-string v7, "StatusBar"
 
@@ -469,35 +474,35 @@
 
     goto :goto_0
 
-    .line 620
+    .line 686
     .end local v2           #exc:Ljava/io/FileNotFoundException;
     .restart local v3       #outPutWriter:Ljava/io/OutputStreamWriter;
     :catch_1
     move-exception v1
 
-    .line 622
+    .line 688
     .local v1, e:Ljava/io/UnsupportedEncodingException;
     invoke-virtual {v1}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
     goto :goto_1
 
-    .line 637
+    .line 703
     .end local v1           #e:Ljava/io/UnsupportedEncodingException;
     :catch_2
     move-exception v1
 
-    .line 639
+    .line 705
     .local v1, e:Ljava/io/IOException;
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_2
 
-    .line 649
+    .line 715
     .end local v1           #e:Ljava/io/IOException;
     :catch_3
     move-exception v1
 
-    .line 651
+    .line 717
     .restart local v1       #e:Ljava/io/IOException;
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
@@ -509,7 +514,7 @@
     .parameter "content"
 
     .prologue
-    .line 659
+    .line 725
     new-instance v0, Ljava/io/File;
 
     const-string v7, "/data"
@@ -518,7 +523,7 @@
 
     invoke-direct {v0, v7, v8}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 660
+    .line 726
     .local v0, contentFile:Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -526,10 +531,10 @@
 
     if-eqz v7, :cond_2
 
-    .line 662
+    .line 728
     const/4 v5, 0x0
 
-    .line 666
+    .line 732
     .local v5, wordsOutPutStream:Ljava/io/FileOutputStream;
     :try_start_0
     new-instance v6, Ljava/io/FileOutputStream;
@@ -542,17 +547,17 @@
     .local v6, wordsOutPutStream:Ljava/io/FileOutputStream;
     move-object v5, v6
 
-    .line 673
+    .line 739
     .end local v6           #wordsOutPutStream:Ljava/io/FileOutputStream;
     .restart local v5       #wordsOutPutStream:Ljava/io/FileOutputStream;
     :goto_0
     const/4 v3, 0x0
 
-    .line 678
+    .line 744
     .local v3, outPutWriter:Ljava/io/OutputStreamWriter;
     if-eqz v5, :cond_0
 
-    .line 680
+    .line 746
     :try_start_1
     new-instance v4, Ljava/io/OutputStreamWriter;
 
@@ -566,52 +571,52 @@
     .local v4, outPutWriter:Ljava/io/OutputStreamWriter;
     move-object v3, v4
 
-    .line 688
+    .line 754
     .end local v4           #outPutWriter:Ljava/io/OutputStreamWriter;
     .restart local v3       #outPutWriter:Ljava/io/OutputStreamWriter;
     :cond_0
     :goto_1
     if-eqz p1, :cond_1
 
-    .line 692
+    .line 758
     if-eqz v3, :cond_1
 
-    .line 694
+    .line 760
     :try_start_2
     invoke-virtual {v3, p1}, Ljava/io/OutputStreamWriter;->write(Ljava/lang/String;)V
 
-    .line 695
+    .line 761
     invoke-virtual {v3}, Ljava/io/OutputStreamWriter;->flush()V
 
-    .line 696
+    .line 762
     invoke-virtual {v3}, Ljava/io/OutputStreamWriter;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 705
+    .line 771
     :cond_1
     :goto_2
     if-eqz v5, :cond_2
 
-    .line 709
+    .line 775
     :try_start_3
     invoke-virtual {v5}, Ljava/io/FileOutputStream;->close()V
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 717
+    .line 783
     .end local v3           #outPutWriter:Ljava/io/OutputStreamWriter;
     .end local v5           #wordsOutPutStream:Ljava/io/FileOutputStream;
     :cond_2
     :goto_3
     return-void
 
-    .line 668
+    .line 734
     .restart local v5       #wordsOutPutStream:Ljava/io/FileOutputStream;
     :catch_0
     move-exception v2
 
-    .line 670
+    .line 736
     .local v2, exc:Ljava/io/FileNotFoundException;
     const-string v7, "StatusBar"
 
@@ -621,35 +626,35 @@
 
     goto :goto_0
 
-    .line 683
+    .line 749
     .end local v2           #exc:Ljava/io/FileNotFoundException;
     .restart local v3       #outPutWriter:Ljava/io/OutputStreamWriter;
     :catch_1
     move-exception v1
 
-    .line 685
+    .line 751
     .local v1, e:Ljava/io/UnsupportedEncodingException;
     invoke-virtual {v1}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
     goto :goto_1
 
-    .line 699
+    .line 765
     .end local v1           #e:Ljava/io/UnsupportedEncodingException;
     :catch_2
     move-exception v1
 
-    .line 701
+    .line 767
     .local v1, e:Ljava/io/IOException;
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_2
 
-    .line 711
+    .line 777
     .end local v1           #e:Ljava/io/IOException;
     :catch_3
     move-exception v1
 
-    .line 713
+    .line 779
     .restart local v1       #e:Ljava/io/IOException;
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
@@ -658,12 +663,93 @@
 
 
 # virtual methods
+.method public getOppoParadiseCount()I
+    .locals 8
+
+    .prologue
+    const/4 v2, 0x0
+
+    .line 303
+    const/4 v7, 0x0
+
+    .line 304
+    .local v7, count:I
+    iget-object v0, p0, Lcom/android/internal/policy/impl/UnsettleEventObserver;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string v1, "content://com.oppo.tribune.provider.data/usertable"
+
+    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    const-string v3, "currentuser = 1"
+
+    move-object v4, v2
+
+    move-object v5, v2
+
+    invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+
+    move-result-object v6
+
+    .line 308
+    .local v6, c:Landroid/database/Cursor;
+    if-eqz v6, :cond_1
+
+    .line 312
+    :try_start_0
+    invoke-interface {v6}, Landroid/database/Cursor;->getCount()I
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v6}, Landroid/database/Cursor;->moveToFirst()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 314
+    const-string v0, "newremindcount"
+
+    invoke-interface {v6, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v0
+
+    invoke-interface {v6, v0}, Landroid/database/Cursor;->getInt(I)I
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    move-result v7
+
+    .line 319
+    :cond_0
+    invoke-interface {v6}, Landroid/database/Cursor;->close()V
+
+    .line 322
+    :cond_1
+    return v7
+
+    .line 319
+    :catchall_0
+    move-exception v0
+
+    invoke-interface {v6}, Landroid/database/Cursor;->close()V
+
+    throw v0
+.end method
+
 .method public regidterEmailListenter(Landroid/content/Context;)V
     .locals 4
     .parameter "context"
 
     .prologue
-    .line 121
+    .line 125
     new-instance v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailContent;
 
     new-instance v1, Landroid/os/Handler;
@@ -672,7 +758,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailContent;-><init>(Lcom/android/internal/policy/impl/UnsettleEventObserver;Landroid/os/Handler;)V
 
-    .line 122
+    .line 126
     .local v0, content:Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailContent;
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -688,7 +774,7 @@
 
     invoke-virtual {v1, v2, v3, v0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    .line 125
+    .line 129
     return-void
 .end method
 
@@ -697,7 +783,7 @@
     .parameter "context"
 
     .prologue
-    .line 129
+    .line 133
     new-instance v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailContent;
 
     new-instance v1, Landroid/os/Handler;
@@ -706,7 +792,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailContent;-><init>(Lcom/android/internal/policy/impl/UnsettleEventObserver;Landroid/os/Handler;)V
 
-    .line 130
+    .line 134
     .local v0, content:Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailContent;
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -722,7 +808,7 @@
 
     invoke-virtual {v1, v2, v3, v0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    .line 133
+    .line 137
     return-void
 .end method
 
@@ -731,7 +817,7 @@
     .parameter "context"
 
     .prologue
-    .line 145
+    .line 149
     new-instance v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailContent;
 
     new-instance v1, Landroid/os/Handler;
@@ -740,7 +826,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailContent;-><init>(Lcom/android/internal/policy/impl/UnsettleEventObserver;Landroid/os/Handler;)V
 
-    .line 146
+    .line 150
     .local v0, content:Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailContent;
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -756,7 +842,7 @@
 
     invoke-virtual {v1, v2, v3, v0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    .line 149
+    .line 153
     return-void
 .end method
 
@@ -765,7 +851,7 @@
     .parameter "context"
 
     .prologue
-    .line 153
+    .line 157
     new-instance v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailContent;
 
     new-instance v1, Landroid/os/Handler;
@@ -774,7 +860,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailContent;-><init>(Lcom/android/internal/policy/impl/UnsettleEventObserver;Landroid/os/Handler;)V
 
-    .line 154
+    .line 158
     .local v0, content:Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailContent;
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -790,7 +876,7 @@
 
     invoke-virtual {v1, v2, v3, v0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    .line 157
+    .line 161
     return-void
 .end method
 
@@ -799,7 +885,7 @@
     .parameter "context"
 
     .prologue
-    .line 137
+    .line 141
     new-instance v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailContent;
 
     new-instance v1, Landroid/os/Handler;
@@ -808,7 +894,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailContent;-><init>(Lcom/android/internal/policy/impl/UnsettleEventObserver;Landroid/os/Handler;)V
 
-    .line 138
+    .line 142
     .local v0, content:Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailContent;
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -824,7 +910,7 @@
 
     invoke-virtual {v1, v2, v3, v0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    .line 141
+    .line 145
     return-void
 .end method
 
@@ -833,7 +919,7 @@
     .parameter "context"
 
     .prologue
-    .line 114
+    .line 118
     new-instance v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$PhoneContent;
 
     new-instance v1, Landroid/os/Handler;
@@ -842,7 +928,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/android/internal/policy/impl/UnsettleEventObserver$PhoneContent;-><init>(Lcom/android/internal/policy/impl/UnsettleEventObserver;Landroid/os/Handler;)V
 
-    .line 115
+    .line 119
     .local v0, content:Lcom/android/internal/policy/impl/UnsettleEventObserver$PhoneContent;
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -854,7 +940,7 @@
 
     invoke-virtual {v1, v2, v3, v0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    .line 117
+    .line 121
     return-void
 .end method
 
@@ -863,7 +949,7 @@
     .parameter "context"
 
     .prologue
-    .line 162
+    .line 166
     new-instance v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SoftwareMarketContent;
 
     new-instance v1, Landroid/os/Handler;
@@ -872,7 +958,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/android/internal/policy/impl/UnsettleEventObserver$SoftwareMarketContent;-><init>(Lcom/android/internal/policy/impl/UnsettleEventObserver;Landroid/os/Handler;)V
 
-    .line 163
+    .line 167
     .local v0, content:Lcom/android/internal/policy/impl/UnsettleEventObserver$SoftwareMarketContent;
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -888,7 +974,41 @@
 
     invoke-virtual {v1, v2, v3, v0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    .line 168
+    .line 172
+    return-void
+.end method
+
+.method public registerOppoParadiseListener(Landroid/content/Context;)V
+    .locals 4
+    .parameter "context"
+
+    .prologue
+    .line 177
+    new-instance v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$OppoParadiseContent;
+
+    new-instance v1, Landroid/os/Handler;
+
+    invoke-direct {v1}, Landroid/os/Handler;-><init>()V
+
+    invoke-direct {v0, p0, v1}, Lcom/android/internal/policy/impl/UnsettleEventObserver$OppoParadiseContent;-><init>(Lcom/android/internal/policy/impl/UnsettleEventObserver;Landroid/os/Handler;)V
+
+    .line 178
+    .local v0, content:Lcom/android/internal/policy/impl/UnsettleEventObserver$OppoParadiseContent;
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "content://com.oppo.tribune.provider.data/usertable"
+
+    invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v2
+
+    const/4 v3, 0x1
+
+    invoke-virtual {v1, v2, v3, v0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
+
+    .line 181
     return-void
 .end method
 
@@ -897,7 +1017,7 @@
     .parameter "context"
 
     .prologue
-    .line 107
+    .line 111
     new-instance v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsContent;
 
     new-instance v1, Landroid/os/Handler;
@@ -906,7 +1026,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsContent;-><init>(Lcom/android/internal/policy/impl/UnsettleEventObserver;Landroid/os/Handler;)V
 
-    .line 108
+    .line 112
     .local v0, content:Lcom/android/internal/policy/impl/UnsettleEventObserver$SmsContent;
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -922,6 +1042,6 @@
 
     invoke-virtual {v1, v2, v3, v0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    .line 110
+    .line 114
     return-void
 .end method

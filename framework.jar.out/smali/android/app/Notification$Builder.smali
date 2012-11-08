@@ -200,7 +200,7 @@
     .end local v2           #drawable:Landroid/graphics/drawable/Drawable;
     :cond_1
     :goto_2
-    const v3, 0x10900ee
+    const v3, 0x10900ef
 
     invoke-direct {p0, v3}, Landroid/app/Notification$Builder;->makeRemoteViews(I)Landroid/widget/RemoteViews;
 
@@ -497,7 +497,7 @@
 
     if-nez v0, :cond_1
 
-    const v0, 0x10900ef
+    const v0, 0x10900f0
 
     :goto_1
     invoke-direct {p0, v0}, Landroid/app/Notification$Builder;->makeRemoteViews(I)Landroid/widget/RemoteViews;
@@ -507,7 +507,7 @@
     goto :goto_0
 
     :cond_1
-    const v0, 0x10900f0
+    const v0, 0x10900f1
 
     goto :goto_1
 

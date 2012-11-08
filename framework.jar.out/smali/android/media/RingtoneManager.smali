@@ -144,7 +144,7 @@
 
     aput-object v1, v0, v6
 
-    const-string v1, "date_modified"
+    const-string/jumbo v1, "year"
 
     aput-object v1, v0, v7
 
@@ -240,7 +240,7 @@
 
     aput-object v1, v0, v6
 
-    const-string v1, "date_modified"
+    const-string/jumbo v1, "year"
 
     aput-object v1, v0, v7
 

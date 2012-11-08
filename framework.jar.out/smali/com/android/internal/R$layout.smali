@@ -303,153 +303,155 @@
 
 .field public static final oppo_select_vcf:I = 0x10900a3
 
-.field public static final oppo_transparent_active:I = 0x10900a4
+.field public static final oppo_simple_list_item_1:I = 0x10900a4
 
-.field public static final oppo_twelve_key_entry:I = 0x10900a5
+.field public static final oppo_transparent_active:I = 0x10900a5
 
-.field public static final passwordcontroller:I = 0x10900a6
+.field public static final oppo_twelve_key_entry:I = 0x10900a6
 
-.field public static final path_bar:I = 0x10900a7
+.field public static final passwordcontroller:I = 0x10900a7
 
-.field public static final permissions_account_and_authtokentype:I = 0x10900a8
+.field public static final path_bar:I = 0x10900a8
 
-.field public static final permissions_package_list_item:I = 0x10900a9
+.field public static final permissions_account_and_authtokentype:I = 0x10900a9
 
-.field public static final popup_menu_item_layout:I = 0x10900aa
+.field public static final permissions_package_list_item:I = 0x10900aa
 
-.field public static final power_dialog:I = 0x10900ab
+.field public static final popup_menu_item_layout:I = 0x10900ab
 
-.field public static final poweron_password_portrait:I = 0x10900ac
+.field public static final power_dialog:I = 0x10900ac
 
-.field public static final preference:I = 0x10900ad
+.field public static final poweron_password_portrait:I = 0x10900ad
+
+.field public static final preference:I = 0x10900ae
 
 .field public static final preference_category:I = 0x1090002
 
-.field public static final preference_category_holo:I = 0x10900ae
+.field public static final preference_category_holo:I = 0x10900af
 
-.field public static final preference_child:I = 0x10900af
+.field public static final preference_child:I = 0x10900b0
 
-.field public static final preference_child_holo:I = 0x10900b0
+.field public static final preference_child_holo:I = 0x10900b1
 
-.field public static final preference_dialog:I = 0x10900b1
+.field public static final preference_dialog:I = 0x10900b2
 
-.field public static final preference_dialog_edittext:I = 0x10900b2
+.field public static final preference_dialog_edittext:I = 0x10900b3
 
-.field public static final preference_header_item:I = 0x10900b3
+.field public static final preference_header_item:I = 0x10900b4
 
-.field public static final preference_holo:I = 0x10900b4
+.field public static final preference_holo:I = 0x10900b5
 
-.field public static final preference_information:I = 0x10900b5
+.field public static final preference_information:I = 0x10900b6
 
-.field public static final preference_information_holo:I = 0x10900b6
+.field public static final preference_information_holo:I = 0x10900b7
 
-.field public static final preference_list_content:I = 0x10900b7
+.field public static final preference_list_content:I = 0x10900b8
 
-.field public static final preference_list_content_single:I = 0x10900b8
+.field public static final preference_list_content_single:I = 0x10900b9
 
-.field public static final preference_list_fragment:I = 0x10900b9
+.field public static final preference_list_fragment:I = 0x10900ba
 
-.field public static final preference_widget_checkbox:I = 0x10900ba
+.field public static final preference_widget_checkbox:I = 0x10900bb
 
-.field public static final preference_widget_seekbar:I = 0x10900bb
+.field public static final preference_widget_seekbar:I = 0x10900bc
 
-.field public static final preference_widget_switch:I = 0x10900bc
+.field public static final preference_widget_switch:I = 0x10900bd
 
-.field public static final preferences:I = 0x10900bd
+.field public static final preferences:I = 0x10900be
 
-.field public static final progress_dialog:I = 0x10900be
+.field public static final progress_dialog:I = 0x10900bf
 
-.field public static final progress_dialog_holo:I = 0x10900bf
+.field public static final progress_dialog_holo:I = 0x10900c0
 
-.field public static final progress_dialog_notitle:I = 0x10900c0
+.field public static final progress_dialog_notitle:I = 0x10900c1
 
-.field public static final quickcontact:I = 0x10900c1
+.field public static final quickcontact:I = 0x10900c2
 
-.field public static final quickcontact_header_large:I = 0x10900c2
+.field public static final quickcontact_header_large:I = 0x10900c3
 
-.field public static final quickcontact_header_med:I = 0x10900c3
+.field public static final quickcontact_header_med:I = 0x10900c4
 
-.field public static final quickcontact_header_small:I = 0x10900c4
+.field public static final quickcontact_header_small:I = 0x10900c5
 
-.field public static final quickcontact_item:I = 0x10900c5
+.field public static final quickcontact_item:I = 0x10900c6
 
-.field public static final quickcontact_resolve_item:I = 0x10900c6
+.field public static final quickcontact_resolve_item:I = 0x10900c7
 
-.field public static final recent_apps_dialog:I = 0x10900c7
+.field public static final recent_apps_dialog:I = 0x10900c8
 
-.field public static final recent_apps_icon:I = 0x10900c8
+.field public static final recent_apps_icon:I = 0x10900c9
 
-.field public static final remote_views_adapter_default_loading_view:I = 0x10900c9
+.field public static final remote_views_adapter_default_loading_view:I = 0x10900ca
 
-.field public static final rename_dialog_layout:I = 0x10900ca
+.field public static final rename_dialog_layout:I = 0x10900cb
 
-.field public static final reset_password:I = 0x10900cb
+.field public static final reset_password:I = 0x10900cc
 
-.field public static final resolve_list_item:I = 0x10900cc
+.field public static final resolve_list_item:I = 0x10900cd
 
-.field public static final safe_mode:I = 0x10900cd
+.field public static final safe_mode:I = 0x10900ce
 
-.field public static final screen:I = 0x10900ce
+.field public static final screen:I = 0x10900cf
 
-.field public static final screen_action_bar:I = 0x10900cf
+.field public static final screen_action_bar:I = 0x10900d0
 
-.field public static final screen_action_bar_overlay:I = 0x10900d0
+.field public static final screen_action_bar_overlay:I = 0x10900d1
 
-.field public static final screen_custom_title:I = 0x10900d1
+.field public static final screen_custom_title:I = 0x10900d2
 
-.field public static final screen_progress:I = 0x10900d2
+.field public static final screen_progress:I = 0x10900d3
 
-.field public static final screen_simple:I = 0x10900d3
+.field public static final screen_simple:I = 0x10900d4
 
-.field public static final screen_simple_overlay_action_mode:I = 0x10900d4
+.field public static final screen_simple_overlay_action_mode:I = 0x10900d5
 
-.field public static final screen_title:I = 0x10900d5
+.field public static final screen_title:I = 0x10900d6
 
-.field public static final screen_title_icons:I = 0x10900d6
+.field public static final screen_title_icons:I = 0x10900d7
 
-.field public static final search_bar:I = 0x10900d7
+.field public static final search_bar:I = 0x10900d8
 
-.field public static final search_dropdown_item_1line:I = 0x10900d8
+.field public static final search_dropdown_item_1line:I = 0x10900d9
 
-.field public static final search_dropdown_item_icons_2line:I = 0x10900d9
+.field public static final search_dropdown_item_icons_2line:I = 0x10900da
 
-.field public static final search_view:I = 0x10900da
+.field public static final search_view:I = 0x10900db
 
-.field public static final seekbar_dialog:I = 0x10900db
+.field public static final seekbar_dialog:I = 0x10900dc
 
-.field public static final select_dialog:I = 0x10900dc
+.field public static final select_dialog:I = 0x10900dd
 
-.field public static final select_dialog_holo:I = 0x10900dd
+.field public static final select_dialog_holo:I = 0x10900de
 
 .field public static final select_dialog_item:I = 0x1090011
 
-.field public static final select_dialog_item_holo:I = 0x10900de
+.field public static final select_dialog_item_holo:I = 0x10900df
 
 .field public static final select_dialog_multichoice:I = 0x1090013
 
-.field public static final select_dialog_multichoice_holo:I = 0x10900df
+.field public static final select_dialog_multichoice_holo:I = 0x10900e0
 
 .field public static final select_dialog_singlechoice:I = 0x1090012
 
-.field public static final select_dialog_singlechoice_holo:I = 0x10900e0
+.field public static final select_dialog_singlechoice_holo:I = 0x10900e1
 
-.field public static final shortcutcontainer:I = 0x10900e1
+.field public static final shortcutcontainer:I = 0x10900e2
 
-.field public static final shortcutlist_item_icon_text:I = 0x10900e2
+.field public static final shortcutlist_item_icon_text:I = 0x10900e3
 
-.field public static final shortcutlist_selection_dialog:I = 0x10900e3
+.field public static final shortcutlist_selection_dialog:I = 0x10900e4
 
-.field public static final shortcutview:I = 0x10900e4
+.field public static final shortcutview:I = 0x10900e5
 
-.field public static final shortcutviewitem:I = 0x10900e5
+.field public static final shortcutviewitem:I = 0x10900e6
 
-.field public static final shourt_cout_button:I = 0x10900e6
+.field public static final shourt_cout_button:I = 0x10900e7
 
-.field public static final simple_dropdown_hint:I = 0x10900e7
+.field public static final simple_dropdown_hint:I = 0x10900e8
 
 .field public static final simple_dropdown_item_1line:I = 0x109000a
 
-.field public static final simple_dropdown_item_2line:I = 0x10900e8
+.field public static final simple_dropdown_item_2line:I = 0x10900e9
 
 .field public static final simple_expandable_list_item_1:I = 0x1090006
 
@@ -461,7 +463,7 @@
 
 .field public static final simple_list_item_2:I = 0x1090004
 
-.field public static final simple_list_item_2_single_choice:I = 0x10900e9
+.field public static final simple_list_item_2_single_choice:I = 0x10900ea
 
 .field public static final simple_list_item_activated_1:I = 0x1090016
 
@@ -479,105 +481,105 @@
 
 .field public static final simple_spinner_item:I = 0x1090008
 
-.field public static final slidepiecelayout:I = 0x10900ea
+.field public static final slidepiecelayout:I = 0x10900eb
 
-.field public static final ssl_certificate:I = 0x10900eb
+.field public static final ssl_certificate:I = 0x10900ec
 
-.field public static final starup_charge:I = 0x10900ec
+.field public static final starup_charge:I = 0x10900ed
 
-.field public static final status_bar_latest_event_content:I = 0x10900ed
+.field public static final status_bar_latest_event_content:I = 0x10900ee
 
-.field public static final status_bar_latest_event_content_large_icon:I = 0x10900ee
+.field public static final status_bar_latest_event_content_large_icon:I = 0x10900ef
 
-.field public static final status_bar_latest_event_ticker:I = 0x10900ef
+.field public static final status_bar_latest_event_ticker:I = 0x10900f0
 
-.field public static final status_bar_latest_event_ticker_large_icon:I = 0x10900f0
+.field public static final status_bar_latest_event_ticker_large_icon:I = 0x10900f1
 
-.field public static final tab_align_bottom_content:I = 0x10900f1
+.field public static final tab_align_bottom_content:I = 0x10900f2
 
-.field public static final tab_content:I = 0x10900f2
+.field public static final tab_content:I = 0x10900f3
 
-.field public static final tab_indicator:I = 0x10900f3
+.field public static final tab_indicator:I = 0x10900f4
 
-.field public static final tab_indicator_align_bottom:I = 0x10900f4
+.field public static final tab_indicator_align_bottom:I = 0x10900f5
 
-.field public static final tab_indicator_holo:I = 0x10900f5
+.field public static final tab_indicator_holo:I = 0x10900f6
 
-.field public static final tabs:I = 0x10900f6
+.field public static final tabs:I = 0x10900f7
 
 .field public static final test_list_item:I = 0x109000c
 
-.field public static final text:I = 0x10900f7
+.field public static final text:I = 0x10900f8
 
-.field public static final text_drag_thumbnail:I = 0x10900f8
+.field public static final text_drag_thumbnail:I = 0x10900f9
 
-.field public static final text_edit_action_popup_text:I = 0x10900f9
+.field public static final text_edit_action_popup_text:I = 0x10900fa
 
-.field public static final text_edit_no_paste_window:I = 0x10900fa
+.field public static final text_edit_no_paste_window:I = 0x10900fb
 
-.field public static final text_edit_paste_window:I = 0x10900fb
+.field public static final text_edit_paste_window:I = 0x10900fc
 
-.field public static final text_edit_side_no_paste_window:I = 0x10900fc
+.field public static final text_edit_side_no_paste_window:I = 0x10900fd
 
-.field public static final text_edit_side_paste_window:I = 0x10900fd
+.field public static final text_edit_side_paste_window:I = 0x10900fe
 
-.field public static final text_edit_suggestion_item:I = 0x10900fe
+.field public static final text_edit_suggestion_item:I = 0x10900ff
 
-.field public static final text_edit_suggestions_window:I = 0x10900ff
+.field public static final text_edit_suggestions_window:I = 0x1090100
 
-.field public static final textview_hint:I = 0x1090100
+.field public static final textview_hint:I = 0x1090101
 
-.field public static final thumb_item_icon_text:I = 0x1090101
+.field public static final thumb_item_icon_text:I = 0x1090102
 
-.field public static final thumb_mode:I = 0x1090102
+.field public static final thumb_mode:I = 0x1090103
 
-.field public static final time_picker:I = 0x1090103
+.field public static final time_picker:I = 0x1090104
 
-.field public static final time_picker_dialog:I = 0x1090104
+.field public static final time_picker_dialog:I = 0x1090105
 
-.field public static final time_picker_holo:I = 0x1090105
+.field public static final time_picker_holo:I = 0x1090106
 
-.field public static final time_picker_land:I = 0x1090106
+.field public static final time_picker_land:I = 0x1090107
 
-.field public static final touchsearch_poppup_preview:I = 0x1090107
+.field public static final touchsearch_poppup_preview:I = 0x1090108
 
-.field public static final transient_notification:I = 0x1090108
+.field public static final transient_notification:I = 0x1090109
 
-.field public static final twelve_key_entry:I = 0x1090109
+.field public static final twelve_key_entry:I = 0x109010a
 
 .field public static final two_line_list_item:I = 0x109000d
 
-.field public static final typing_filter:I = 0x109010a
+.field public static final typing_filter:I = 0x109010b
 
-.field public static final usb_selection_layout:I = 0x109010b
+.field public static final usb_selection_layout:I = 0x109010c
 
-.field public static final usb_selection_list_item:I = 0x109010c
+.field public static final usb_selection_list_item:I = 0x109010d
 
-.field public static final usb_storage_activity:I = 0x109010d
+.field public static final usb_storage_activity:I = 0x109010e
 
-.field public static final virtualkey:I = 0x109010e
+.field public static final virtualkey:I = 0x109010f
 
-.field public static final volume_adjust:I = 0x109010f
+.field public static final volume_adjust:I = 0x1090110
 
-.field public static final volume_adjust_item:I = 0x1090110
+.field public static final volume_adjust_item:I = 0x1090111
 
-.field public static final web_runtime:I = 0x1090111
+.field public static final web_runtime:I = 0x1090112
 
-.field public static final web_text_view_dropdown:I = 0x1090112
+.field public static final web_text_view_dropdown:I = 0x1090113
 
-.field public static final webview_find:I = 0x1090113
+.field public static final webview_find:I = 0x1090114
 
-.field public static final webview_select_singlechoice:I = 0x1090114
+.field public static final webview_select_singlechoice:I = 0x1090115
 
-.field public static final wifi_p2p_go_negotiation_request_alert:I = 0x1090115
+.field public static final wifi_p2p_go_negotiation_request_alert:I = 0x1090116
 
-.field public static final zoom_browser_accessory_buttons:I = 0x1090116
+.field public static final zoom_browser_accessory_buttons:I = 0x1090117
 
-.field public static final zoom_container:I = 0x1090117
+.field public static final zoom_container:I = 0x1090118
 
-.field public static final zoom_controls:I = 0x1090118
+.field public static final zoom_controls:I = 0x1090119
 
-.field public static final zoom_magnify:I = 0x1090119
+.field public static final zoom_magnify:I = 0x109011a
 
 
 # direct methods
@@ -585,7 +587,7 @@
     .locals 0
 
     .prologue
-    .line 18109
+    .line 18113
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void

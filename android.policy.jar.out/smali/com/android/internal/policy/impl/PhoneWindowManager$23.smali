@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 4254
+    .line 4255
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$23;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,12 +40,12 @@
     .parameter "intent"
 
     .prologue
-    .line 4257
+    .line 4258
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 4258
+    .line 4259
     .local v0, action:Ljava/lang/String;
     sget-object v4, Lcom/android/internal/policy/impl/OppoFPDUtils;->ACTION_EXIT_FPD_MODE:Ljava/lang/String;
 
@@ -55,14 +55,14 @@
 
     if-eqz v4, :cond_1
 
-    .line 4260
+    .line 4261
     const-string v4, "WindowManager"
 
     const-string v5, "receive ACTION_EXIT_FPD_MODE"
 
     invoke-static {v4, v5}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4261
+    .line 4262
     iget-object v4, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$23;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     iget-object v4, v4, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
@@ -75,18 +75,18 @@
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 4262
+    .line 4263
     iget-object v4, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$23;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     #calls: Lcom/android/internal/policy/impl/PhoneWindowManager;->unregisterFPDReceiver()V
     invoke-static {v4}, Lcom/android/internal/policy/impl/PhoneWindowManager;->access$600(Lcom/android/internal/policy/impl/PhoneWindowManager;)V
 
-    .line 4286
+    .line 4288
     :cond_0
     :goto_0
     return-void
 
-    .line 4264
+    .line 4265
     :cond_1
     const-string v4, "android.action.fpd_enable_keyguard"
 
@@ -96,37 +96,37 @@
 
     if-eqz v4, :cond_3
 
-    .line 4266
+    .line 4267
     iget-object v4, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$23;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     iget-object v4, v4, Lcom/android/internal/policy/impl/PhoneWindowManager;->mKeyguardMediator:Lcom/android/internal/policy/impl/KeyguardViewMediator;
 
     if-eqz v4, :cond_2
 
-    .line 4268
+    .line 4269
     const-string v4, "WindowManager"
 
     const-string v5, "fpd enable keyguard"
 
     invoke-static {v4, v5}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4269
+    .line 4270
     iget-object v4, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$23;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     iget-object v4, v4, Lcom/android/internal/policy/impl/PhoneWindowManager;->mKeyguardMediator:Lcom/android/internal/policy/impl/KeyguardViewMediator;
 
     invoke-virtual {v4}, Lcom/android/internal/policy/impl/KeyguardViewMediator;->onSystemReady()V
 
-    .line 4271
+    .line 4272
     :cond_2
     invoke-static {p1}, Lcom/android/internal/policy/impl/OppoFPDUtils;->restoreAPMSettingsIfNecessary(Landroid/content/Context;)V
 
-    .line 4272
+    .line 4273
     invoke-static {p1}, Lcom/android/internal/policy/impl/OppoFPDUtils;->applyNewAPMSettings(Landroid/content/Context;)V
 
     goto :goto_0
 
-    .line 4273
+    .line 4274
     :cond_3
     const-string v4, "fpd.alram_arrived"
 
@@ -136,14 +136,14 @@
 
     if-eqz v4, :cond_0
 
-    .line 4275
+    .line 4276
     const-string v4, "fpd_alram_target_extra"
 
     invoke-virtual {p2, v4}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 4276
+    .line 4277
     .local v1, extra:Ljava/lang/String;
     const-string v4, "com.oppo.test"
 
@@ -153,14 +153,14 @@
 
     if-eqz v4, :cond_0
 
-    .line 4278
+    .line 4279
     const-string v4, "WindowManager"
 
     const-string v5, "receive AUTO_SHUTDOWN_ACTION at FPD mode"
 
     invoke-static {v4, v5}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4279
+    .line 4280
     iget-object v4, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$23;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     iget-object v4, v4, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
@@ -173,7 +173,7 @@
 
     check-cast v2, Landroid/os/PowerManager;
 
-    .line 4280
+    .line 4281
     .local v2, pm:Landroid/os/PowerManager;
     const/4 v4, 0x1
 
@@ -183,12 +183,12 @@
 
     move-result-object v3
 
-    .line 4281
+    .line 4282
     .local v3, shutDownLock:Landroid/os/PowerManager$WakeLock;
     invoke-virtual {v3}, Landroid/os/PowerManager$WakeLock;->acquire()V
 
-    .line 4282
-    invoke-static {}, Landroid/os/Power;->shutdown()V
+    .line 4283
+    invoke-static {}, Lcom/android/internal/policy/impl/OppoFPDUtils;->shutDownAtFPDMode()V
 
     goto :goto_0
 .end method

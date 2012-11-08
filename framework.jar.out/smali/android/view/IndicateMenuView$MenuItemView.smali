@@ -50,7 +50,7 @@
 
     move-result-object v0
 
-    const v1, 0x10600bb
+    const v1, 0x10600bc
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColorStateList(I)Landroid/content/res/ColorStateList;
 

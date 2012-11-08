@@ -141,7 +141,7 @@
     .line 97
     iget-object v1, p0, Lcom/oppo/internal/usb/UsbSelectionAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v2, 0x109010c
+    const v2, 0x109010d
 
     const/4 v3, 0x0
 

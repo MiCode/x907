@@ -21,20 +21,20 @@
     .parameter "encrypt_action"
 
     .prologue
-    .line 254
+    .line 265
     if-nez p2, :cond_0
 
-    .line 266
+    .line 277
     :goto_0
     return-void
 
-    .line 259
+    .line 270
     :cond_0
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 260
+    .line 271
     .local v0, cr:Landroid/content/ContentResolver;
     const-string v3, "oppo.intent.action.encrypt"
 
@@ -42,11 +42,11 @@
 
     move-result v1
 
-    .line 261
+    .line 272
     .local v1, encrypt:Z
     invoke-direct {p0, v0, v1, p2}, Lcom/android/providers/media/MediaScannerReceiver;->updateDatabase(Landroid/content/ContentResolver;ZLjava/lang/String;)V
 
-    .line 262
+    .line 273
     const-string v3, "MediaScannerReceiver"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -79,12 +79,12 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 263
+    .line 274
     new-instance v2, Landroid/content/Intent;
 
     invoke-direct {v2, p3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 264
+    .line 275
     .local v2, it:Landroid/content/Intent;
     const-string v3, "status"
 
@@ -92,7 +92,7 @@
 
     invoke-virtual {v2, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 265
+    .line 276
     invoke-virtual {p1, v2}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
     goto :goto_0
@@ -104,12 +104,12 @@
     .parameter "status"
 
     .prologue
-    .line 295
+    .line 306
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 296
+    .line 307
     .local v0, cr:Landroid/content/ContentResolver;
     const-string v1, "MediaScannerReceiver"
 
@@ -133,10 +133,10 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 297
+    .line 308
     const/4 v6, 0x0
 
-    .line 300
+    .line 311
     .local v6, cursor:Landroid/database/Cursor;
     :try_start_0
     sget-object v1, Landroid/provider/Settings$Privacy;->FILE_ENCRYPT_CONTENT_URI:Landroid/net/Uri;
@@ -161,10 +161,10 @@
 
     move-result-object v6
 
-    .line 302
+    .line 313
     if-eqz v6, :cond_0
 
-    .line 304
+    .line 315
     const-string v1, "MediaScannerReceiver"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -191,7 +191,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 307
+    .line 318
     :cond_0
     if-eqz v6, :cond_3
 
@@ -201,13 +201,13 @@
 
     if-lez v1, :cond_3
 
-    .line 309
+    .line 320
     invoke-interface {v6}, Landroid/database/Cursor;->moveToFirst()Z
 
-    .line 310
+    .line 321
     const/4 v7, 0x0
 
-    .line 313
+    .line 324
     .local v7, path:Ljava/lang/String;
     :cond_1
     const/4 v1, 0x0
@@ -216,10 +216,10 @@
 
     move-result-object v7
 
-    .line 314
+    .line 325
     if-eqz v7, :cond_2
 
-    .line 316
+    .line 327
     const-string v1, "MediaScannerReceiver"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -242,10 +242,10 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 317
+    .line 328
     invoke-direct {p0, v0, p2, v7}, Lcom/android/providers/media/MediaScannerReceiver;->updateDatabase(Landroid/content/ContentResolver;ZLjava/lang/String;)V
 
-    .line 319
+    .line 330
     :cond_2
     invoke-interface {v6}, Landroid/database/Cursor;->moveToNext()Z
     :try_end_0
@@ -255,25 +255,25 @@
 
     if-nez v1, :cond_1
 
-    .line 325
+    .line 336
     .end local v7           #path:Ljava/lang/String;
     :cond_3
     if-eqz v6, :cond_4
 
-    .line 327
+    .line 338
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
-    .line 331
+    .line 342
     :cond_4
     return-void
 
-    .line 325
+    .line 336
     :catchall_0
     move-exception v1
 
     if-eqz v6, :cond_5
 
-    .line 327
+    .line 338
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
     :cond_5
@@ -286,17 +286,17 @@
     .parameter
 
     .prologue
-    .line 225
+    .line 227
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 226
+    .line 228
     const-string v1, "volume"
 
     invoke-virtual {v0, v1, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 227
+    .line 229
     const-string v1, "MediaScannerReceiver"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -319,7 +319,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 228
+    .line 230
     new-instance v1, Landroid/content/Intent;
 
     const-class v2, Lcom/android/providers/media/MediaScannerService;
@@ -332,7 +332,79 @@
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
-    .line 230
+    .line 232
+    return-void
+.end method
+
+.method private scan(Landroid/content/Context;Ljava/lang/String;I)V
+    .locals 4
+    .parameter
+    .parameter
+    .parameter
+
+    .prologue
+    .line 247
+    new-instance v0, Landroid/os/Bundle;
+
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+
+    .line 248
+    const-string v1, "volume"
+
+    invoke-virtual {v0, v1, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 249
+    const-string v1, "scan_type"
+
+    invoke-virtual {v0, v1, p3}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+
+    .line 250
+    const-string v1, "MediaScannerReceiver"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "scan, volume:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, ", scan_type:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 251
+    new-instance v1, Landroid/content/Intent;
+
+    const-class v2, Lcom/android/providers/media/MediaScannerService;
+
+    invoke-direct {v1, p1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {v1, v0}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    .line 252
     return-void
 .end method
 
@@ -343,22 +415,22 @@
     .parameter
 
     .prologue
-    .line 235
+    .line 237
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 236
+    .line 238
     const-string v1, "volume"
 
     invoke-virtual {v0, v1, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 237
+    .line 239
     const-string v1, "is_external_sd"
 
     invoke-virtual {v0, v1, p3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    .line 238
+    .line 240
     const-string v1, "MediaScannerReceiver"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -391,7 +463,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 239
+    .line 241
     new-instance v1, Landroid/content/Intent;
 
     const-class v2, Lcom/android/providers/media/MediaScannerService;
@@ -404,7 +476,7 @@
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
-    .line 240
+    .line 242
     return-void
 .end method
 
@@ -414,17 +486,17 @@
     .parameter
 
     .prologue
-    .line 337
+    .line 348
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 338
+    .line 349
     const-string v1, "directory"
 
     invoke-virtual {v0, v1, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 339
+    .line 350
     const-string v1, "MediaScannerReceiver"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -447,7 +519,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 340
+    .line 351
     new-instance v1, Landroid/content/Intent;
 
     const-class v2, Lcom/android/providers/media/MediaScannerService;
@@ -460,7 +532,7 @@
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
-    .line 341
+    .line 352
     return-void
 .end method
 
@@ -470,17 +542,17 @@
     .parameter
 
     .prologue
-    .line 244
+    .line 255
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 245
+    .line 256
     const-string v1, "filepath"
 
     invoke-virtual {v0, v1, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 246
+    .line 257
     const-string v1, "MediaScannerReceiver"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -503,7 +575,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 247
+    .line 258
     new-instance v1, Landroid/content/Intent;
 
     const-class v2, Lcom/android/providers/media/MediaScannerService;
@@ -516,7 +588,7 @@
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
-    .line 249
+    .line 260
     return-void
 .end method
 
@@ -529,12 +601,12 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 270
+    .line 281
     new-instance v1, Landroid/content/ContentValues;
 
     invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
 
-    .line 271
+    .line 282
     .local v1, values:Landroid/content/ContentValues;
     const-string v3, "MediaScannerReceiver"
 
@@ -568,10 +640,10 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 272
+    .line 283
     if-eqz p2, :cond_0
 
-    .line 274
+    .line 285
     const-string v3, "is_encrypted"
 
     const/4 v4, 0x1
@@ -582,7 +654,7 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Boolean;)V
 
-    .line 280
+    .line 291
     :goto_0
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -614,7 +686,7 @@
 
     move-result-object v2
 
-    .line 281
+    .line 292
     .local v2, where:Ljava/lang/String;
     const-string v3, "all"
 
@@ -626,7 +698,7 @@
 
     move-result v0
 
-    .line 282
+    .line 293
     .local v0, cnt:I
     const-string v3, "MediaScannerReceiver"
 
@@ -650,7 +722,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 283
+    .line 294
     const-string v3, "all"
 
     invoke-static {v3}, Landroid/provider/MediaStore$Images$Media;->getContentUri(Ljava/lang/String;)Landroid/net/Uri;
@@ -661,7 +733,7 @@
 
     move-result v0
 
-    .line 284
+    .line 295
     const-string v3, "MediaScannerReceiver"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -684,7 +756,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 285
+    .line 296
     const-string v3, "all"
 
     invoke-static {v3}, Landroid/provider/MediaStore$Video$Media;->getContentUri(Ljava/lang/String;)Landroid/net/Uri;
@@ -695,7 +767,7 @@
 
     move-result v0
 
-    .line 286
+    .line 297
     const-string v3, "MediaScannerReceiver"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -718,7 +790,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 287
+    .line 298
     const-string v3, "content://media/all/other_files"
 
     invoke-static {v3}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -729,7 +801,7 @@
 
     move-result v0
 
-    .line 288
+    .line 299
     const-string v3, "MediaScannerReceiver"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -752,10 +824,10 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 291
+    .line 302
     return-void
 
-    .line 278
+    .line 289
     .end local v0           #cnt:I
     .end local v2           #where:Ljava/lang/String;
     :cond_0
@@ -891,7 +963,7 @@
 
     if-nez v4, :cond_2
 
-    .line 222
+    .line 224
     :cond_1
     :goto_0
     return-void
@@ -1276,69 +1348,47 @@
 
     move-result v6
 
-    if-eqz v6, :cond_b
+    if-eqz v6, :cond_9
 
     .line 148
-    invoke-static {}, Loppo/os/Environment;->getInternalSdState()Ljava/lang/String;
+    const-string v0, "scan_type"
 
-    move-result-object v0
-
-    .line 149
-    const-string v3, "mounted"
-
-    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_8
-
-    const-string v3, "mounted_ro"
-
-    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p2, v0, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v0
 
-    if-eqz v0, :cond_9
+    .line 150
+    invoke-static {}, Loppo/os/Environment;->getInternalSdState()Ljava/lang/String;
 
-    .line 152
-    :cond_8
-    const-string v0, "external"
+    move-result-object v1
 
-    invoke-direct {p0, p1, v0, v2}, Lcom/android/providers/media/MediaScannerReceiver;->scan(Landroid/content/Context;Ljava/lang/String;Z)V
-
-    .line 156
-    :cond_9
-    invoke-static {}, Loppo/os/Environment;->getExternalSdState()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 157
+    .line 151
     const-string v2, "mounted"
 
-    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-nez v2, :cond_a
+    if-nez v2, :cond_8
 
     const-string v2, "mounted_ro"
 
-    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_1
+    if-eqz v1, :cond_1
 
-    .line 160
-    :cond_a
-    const-string v0, "external"
+    .line 154
+    :cond_8
+    const-string v1, "external"
 
-    invoke-direct {p0, p1, v0, v1}, Lcom/android/providers/media/MediaScannerReceiver;->scan(Landroid/content/Context;Ljava/lang/String;Z)V
+    invoke-direct {p0, p1, v1, v0}, Lcom/android/providers/media/MediaScannerReceiver;->scan(Landroid/content/Context;Ljava/lang/String;I)V
 
     goto/16 :goto_0
 
-    .line 168
-    :cond_b
+    .line 170
+    :cond_9
     if-eqz v3, :cond_1
 
     invoke-virtual {v3}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
@@ -1347,7 +1397,7 @@
 
     if-eqz v6, :cond_1
 
-    .line 174
+    .line 176
     invoke-virtual {v3}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
     move-result-object v6
@@ -1360,60 +1410,60 @@
 
     if-eqz v6, :cond_1
 
-    .line 179
+    .line 181
     invoke-virtual {v3}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 183
+    .line 185
     const-string v6, "android.intent.action.MEDIA_MOUNTED"
 
     invoke-virtual {v0, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v6
 
-    if-eqz v6, :cond_d
+    if-eqz v6, :cond_b
 
-    .line 185
+    .line 187
     invoke-virtual {v3, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 187
+    .line 189
     invoke-virtual {v3, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_c
+    if-eqz v0, :cond_a
 
-    .line 189
+    .line 191
     const-string v0, "external"
 
     invoke-direct {p0, p1, v0, v1}, Lcom/android/providers/media/MediaScannerReceiver;->scan(Landroid/content/Context;Ljava/lang/String;Z)V
 
     goto/16 :goto_0
 
-    .line 193
-    :cond_c
+    .line 195
+    :cond_a
     const-string v0, "external"
 
     invoke-direct {p0, p1, v0, v2}, Lcom/android/providers/media/MediaScannerReceiver;->scan(Landroid/content/Context;Ljava/lang/String;Z)V
 
     goto/16 :goto_0
 
-    .line 198
-    :cond_d
+    .line 200
+    :cond_b
     const-string v1, "android.intent.action.MEDIA_SCANNER_SCAN_FILE"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_e
+    if-eqz v1, :cond_c
 
-    if-eqz v3, :cond_e
+    if-eqz v3, :cond_c
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1437,22 +1487,22 @@
 
     move-result v1
 
-    if-eqz v1, :cond_e
+    if-eqz v1, :cond_c
 
-    .line 201
+    .line 203
     invoke-direct {p0, p1, v3}, Lcom/android/providers/media/MediaScannerReceiver;->scanFile(Landroid/content/Context;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
-    .line 205
-    :cond_e
+    .line 207
+    :cond_c
     const-string v1, "oppo.intent.action.encrypt"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-nez v1, :cond_f
+    if-nez v1, :cond_d
 
     const-string v1, "oppo.intent.action.decrypt"
 
@@ -1460,17 +1510,17 @@
 
     move-result v1
 
-    if-eqz v1, :cond_10
+    if-eqz v1, :cond_e
 
-    .line 208
-    :cond_f
+    .line 210
+    :cond_d
     const-string v1, "status"
 
     invoke-virtual {p2, v1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 209
+    .line 211
     if-eqz v1, :cond_1
 
     const-string v2, "begin"
@@ -1481,13 +1531,13 @@
 
     if-eqz v1, :cond_1
 
-    .line 213
+    .line 215
     invoke-direct {p0, p1, v3, v0}, Lcom/android/providers/media/MediaScannerReceiver;->handleEncryption(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
-    .line 215
-    :cond_10
+    .line 217
+    :cond_e
     const-string v1, "oppo.intent.action.MEDIA_SCAN_DIRECTORY"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -1496,7 +1546,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 217
+    .line 219
     invoke-direct {p0, p1, v3}, Lcom/android/providers/media/MediaScannerReceiver;->scanDirectory(Landroid/content/Context;Ljava/lang/String;)V
 
     goto/16 :goto_0

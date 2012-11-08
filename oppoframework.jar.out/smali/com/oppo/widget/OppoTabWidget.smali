@@ -2909,6 +2909,38 @@
     return-void
 .end method
 
+.method private updateTabIcon(Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;Landroid/graphics/drawable/Drawable;)V
+    .locals 0
+    .parameter "spec"
+    .parameter "icon"
+
+    .prologue
+    .line 1391
+    invoke-virtual {p1, p2, p2}, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->setTabIcon(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;
+
+    .line 1392
+    invoke-virtual {p0}, Lcom/oppo/widget/OppoTabWidget;->postInvalidate()V
+
+    .line 1393
+    return-void
+.end method
+
+.method private updateTabLabel(Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;Ljava/lang/CharSequence;)V
+    .locals 0
+    .parameter "spec"
+    .parameter "label"
+
+    .prologue
+    .line 1372
+    invoke-virtual {p1, p2}, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->setTabLabel(Ljava/lang/CharSequence;)Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;
+
+    .line 1373
+    invoke-virtual {p0}, Lcom/oppo/widget/OppoTabWidget;->postInvalidate()V
+
+    .line 1374
+    return-void
+.end method
+
 
 # virtual methods
 .method public addOppoTabSpec(Lcom/oppo/widget/OppoTabHost$OppoTabSpec;)V
@@ -4081,5 +4113,147 @@
     iput-object p1, p0, Lcom/oppo/widget/OppoTabWidget;->mTabSelectionListener:Lcom/oppo/widget/OppoTabWidget$OnOppoTabSelectionChanged;
 
     .line 1351
+    return-void
+.end method
+
+.method public updateTabIcon(ILandroid/graphics/drawable/Drawable;)V
+    .locals 2
+    .parameter "index"
+    .parameter "icon"
+
+    .prologue
+    .line 1396
+    iget-object v1, p0, Lcom/oppo/widget/OppoTabWidget;->mOppoTabSpecsList:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;
+
+    .line 1397
+    .local v0, spec:Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;
+    invoke-direct {p0, v0, p2}, Lcom/oppo/widget/OppoTabWidget;->updateTabIcon(Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;Landroid/graphics/drawable/Drawable;)V
+
+    .line 1398
+    return-void
+.end method
+
+.method public updateTabIcon(Ljava/lang/String;Landroid/graphics/drawable/Drawable;)V
+    .locals 3
+    .parameter "tag"
+    .parameter "icon"
+
+    .prologue
+    .line 1401
+    iget-object v2, p0, Lcom/oppo/widget/OppoTabWidget;->mOppoTabSpecsList:Ljava/util/ArrayList;
+
+    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    .local v0, i$:Ljava/util/Iterator;
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;
+
+    .line 1402
+    .local v1, spec:Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;
+    invoke-virtual {v1}, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->getTag()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    .line 1403
+    invoke-direct {p0, v1, p2}, Lcom/oppo/widget/OppoTabWidget;->updateTabIcon(Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;Landroid/graphics/drawable/Drawable;)V
+
+    .line 1407
+    .end local v1           #spec:Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;
+    :cond_1
+    return-void
+.end method
+
+.method public updateTabLabel(ILjava/lang/CharSequence;)V
+    .locals 2
+    .parameter "index"
+    .parameter "label"
+
+    .prologue
+    .line 1377
+    iget-object v1, p0, Lcom/oppo/widget/OppoTabWidget;->mOppoTabSpecsList:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;
+
+    .line 1378
+    .local v0, spec:Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;
+    invoke-direct {p0, v0, p2}, Lcom/oppo/widget/OppoTabWidget;->updateTabLabel(Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;Ljava/lang/CharSequence;)V
+
+    .line 1379
+    return-void
+.end method
+
+.method public updateTabLabel(Ljava/lang/String;Ljava/lang/CharSequence;)V
+    .locals 3
+    .parameter "tag"
+    .parameter "label"
+
+    .prologue
+    .line 1382
+    iget-object v2, p0, Lcom/oppo/widget/OppoTabWidget;->mOppoTabSpecsList:Ljava/util/ArrayList;
+
+    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    .local v0, i$:Ljava/util/Iterator;
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;
+
+    .line 1383
+    .local v1, spec:Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;
+    invoke-virtual {v1}, Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;->getTag()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    .line 1384
+    invoke-direct {p0, v1, p2}, Lcom/oppo/widget/OppoTabWidget;->updateTabLabel(Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;Ljava/lang/CharSequence;)V
+
+    .line 1388
+    .end local v1           #spec:Lcom/oppo/widget/OppoTabWidget$SimpleOppoTabSpec;
+    :cond_1
     return-void
 .end method

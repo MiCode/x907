@@ -150,7 +150,7 @@
     .line 459
     iget-object v5, p0, Lcom/oppo/widget/OppoShortCutList$ShortCutListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v6, 0x10900e2
+    const v6, 0x10900e3
 
     const/4 v7, 0x0
 

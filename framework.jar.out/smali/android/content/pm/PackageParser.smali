@@ -13596,7 +13596,6 @@
 
     if-nez v28, :cond_3
 
-    .line 618
     :cond_5
     if-nez v22, :cond_7
 

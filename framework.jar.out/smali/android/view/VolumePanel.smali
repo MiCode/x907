@@ -213,7 +213,7 @@
 
     .line 208
     .local v1, inflater:Landroid/view/LayoutInflater;
-    const v5, 0x109010f
+    const v5, 0x1090110
 
     invoke-virtual {v1, v5, v9}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -782,7 +782,7 @@
     iput v6, v4, Landroid/view/VolumePanel$StreamControl;->streamType:I
 
     .line 342
-    const v7, 0x1090110
+    const v7, 0x1090111
 
     invoke-virtual {v1, v7, v9}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 

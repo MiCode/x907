@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final OppoQuickContact_text_color:I = 0x106009d
+.field public static final OppoQuickContact_text_color:I = 0x106009e
 
-.field public static final OppoQuickContact_text_shadow_color:I = 0x106009e
+.field public static final OppoQuickContact_text_shadow_color:I = 0x106009f
 
-.field public static final alert_dialog_content_bg_color:I = 0x1060077
+.field public static final alert_dialog_content_bg_color:I = 0x1060078
 
-.field public static final alert_dialog_content_list_bg_color:I = 0x1060078
+.field public static final alert_dialog_content_list_bg_color:I = 0x1060079
 
 .field public static final background_dark:I = 0x106000e
 
@@ -31,7 +31,7 @@
 
 .field public static final background_light:I = 0x106000f
 
-.field public static final bg_shortcubar_general:I = 0x1060086
+.field public static final bg_shortcubar_general:I = 0x1060087
 
 .field public static final black:I = 0x106000c
 
@@ -63,21 +63,21 @@
 
 .field public static final btn_text_pressed_color:I = 0x10600d4
 
-.field public static final candidate_color:I = 0x1060063
+.field public static final candidate_color:I = 0x1060064
 
-.field public static final center_color:I = 0x106008e
+.field public static final center_color:I = 0x106008f
 
-.field public static final clip_button_text_primary:I = 0x10600b8
+.field public static final clip_button_text_primary:I = 0x10600b9
 
-.field public static final config_defaultNotificationColor:I = 0x10600b7
+.field public static final config_defaultNotificationColor:I = 0x10600b8
 
-.field public static final custom_secondary_text_dark:I = 0x106008f
+.field public static final custom_secondary_text_dark:I = 0x1060090
 
 .field public static final darker_gray:I = 0x1060000
 
-.field public static final default_text_color:I = 0x10600b9
+.field public static final default_text_color:I = 0x10600ba
 
-.field public static final default_textview_text_color_select:I = 0x10600aa
+.field public static final default_textview_text_color_select:I = 0x10600ab
 
 .field public static final dim_foreground_dark:I = 0x1060023
 
@@ -111,11 +111,11 @@
 
 .field public static final dim_foreground_light_inverse_disabled:I = 0x106002b
 
-.field public static final edit_text_color:I = 0x1060074
+.field public static final edit_text_color:I = 0x1060075
 
 .field public static final facelock_color_background:I = 0x1060045
 
-.field public static final filehandler_select_muisc_background_color:I = 0x1060092
+.field public static final filehandler_select_muisc_background_color:I = 0x1060093
 
 .field public static final group_button_dialog_focused_holo_dark:I = 0x106005d
 
@@ -161,13 +161,13 @@
 
 .field public static final holo_red_light:I = 0x1060016
 
-.field public static final icon_menu_item_text:I = 0x10600ba
+.field public static final icon_menu_item_text:I = 0x10600bb
 
-.field public static final indicate_menu_text:I = 0x10600bb
+.field public static final indicate_menu_text:I = 0x10600bc
 
-.field public static final indicate_menu_text_disable:I = 0x106006d
+.field public static final indicate_menu_text_disable:I = 0x106006e
 
-.field public static final indicate_menu_text_normal:I = 0x106006c
+.field public static final indicate_menu_text_normal:I = 0x106006d
 
 .field public static final keyguard_text_color_decline:I = 0x1060040
 
@@ -179,11 +179,11 @@
 
 .field public static final keyguard_text_color_unlock:I = 0x106003d
 
-.field public static final large_edit_text_color:I = 0x1060093
+.field public static final large_edit_text_color:I = 0x1060094
 
 .field public static final large_text_color:I = 0x10600c8
 
-.field public static final large_text_color_select:I = 0x1060065
+.field public static final large_text_color_select:I = 0x1060066
 
 .field public static final large_text_selected_color:I = 0x10600cb
 
@@ -191,11 +191,11 @@
 
 .field public static final launcher_folder_group_title_color:I = 0x10600c1
 
-.field public static final launcher_mainmenu_default_bg_color:I = 0x1060094
+.field public static final launcher_mainmenu_default_bg_color:I = 0x1060095
 
 .field public static final launcher_mainmenu_default_text_color:I = 0x10600c3
 
-.field public static final left_color:I = 0x106008c
+.field public static final left_color:I = 0x106008d
 
 .field public static final legacy_long_pressed_highlight:I = 0x1060062
 
@@ -213,27 +213,27 @@
 
 .field public static final link_text_light:I = 0x1060030
 
-.field public static final list_large_text_color:I = 0x10600bc
+.field public static final list_large_text_color:I = 0x10600bd
 
-.field public static final list_large_text_color_normal:I = 0x10600ad
+.field public static final list_large_text_color_normal:I = 0x10600ae
 
-.field public static final list_large_text_color_pressed:I = 0x10600ae
+.field public static final list_large_text_color_pressed:I = 0x10600af
 
-.field public static final list_separator_text_color:I = 0x1060070
+.field public static final list_separator_text_color:I = 0x1060071
 
-.field public static final list_small_text_color:I = 0x10600bd
+.field public static final list_small_text_color:I = 0x10600be
 
-.field public static final list_small_text_color_normal:I = 0x10600ab
+.field public static final list_small_text_color_normal:I = 0x10600ac
 
-.field public static final list_small_text_color_pressed:I = 0x10600ac
+.field public static final list_small_text_color_pressed:I = 0x10600ad
 
-.field public static final listview_cacheColorHint:I = 0x1060064
+.field public static final listview_cacheColorHint:I = 0x1060065
 
 .field public static final listview_item_color:I = 0x10600c5
 
-.field public static final little_text_color:I = 0x1060069
+.field public static final little_text_color:I = 0x106006a
 
-.field public static final lock_screen_event:I = 0x106006b
+.field public static final lock_screen_event:I = 0x106006c
 
 .field public static final lockscreen_clock_am_pm:I = 0x1060043
 
@@ -243,7 +243,7 @@
 
 .field public static final lockscreen_owner_info:I = 0x1060044
 
-.field public static final menu_background_color:I = 0x106006f
+.field public static final menu_background_color:I = 0x1060070
 
 .field public static final menu_disable_text_color:I = 0x10600cd
 
@@ -253,143 +253,145 @@
 
 .field public static final mms_text_time_color:I = 0x10600d7
 
-.field public static final multilist_primary_pretending_text_dark:I = 0x10600be
+.field public static final multilist_primary_pretending_text_dark:I = 0x10600bf
 
-.field public static final multilist_primary_text_dark:I = 0x10600bf
+.field public static final multilist_primary_text_dark:I = 0x10600d8
 
-.field public static final multilist_primary_text_light:I = 0x10600d8
+.field public static final multilist_primary_text_light:I = 0x10600d9
 
-.field public static final multilist_text_disabled_color:I = 0x1060095
+.field public static final multilist_text_disabled_color:I = 0x1060096
 
-.field public static final multilist_text_disabled_color_select:I = 0x1060096
+.field public static final multilist_text_disabled_color_select:I = 0x1060097
 
-.field public static final multilist_title_color:I = 0x1060097
+.field public static final multilist_title_color:I = 0x1060098
 
-.field public static final oppo_alert_dialog_button_text_color:I = 0x1060066
+.field public static final oppo_alert_dialog_button_text_color:I = 0x1060067
 
-.field public static final oppo_alert_dialog_button_text_shadow_color:I = 0x1060068
+.field public static final oppo_alert_dialog_button_text_shadow_color:I = 0x1060069
 
 .field public static final oppo_alert_dialog_content_text_color:I = 0x10600ca
 
 .field public static final oppo_alert_dialog_title_text_color:I = 0x10600c9
 
-.field public static final oppo_alert_dialog_title_text_shadow_color:I = 0x1060067
+.field public static final oppo_alert_dialog_title_text_shadow_color:I = 0x1060068
 
-.field public static final oppo_checkbox_text_color:I = 0x10600b3
+.field public static final oppo_checkbox_text_color:I = 0x10600b4
 
-.field public static final oppo_datepicker_button_text_color:I = 0x10600b5
+.field public static final oppo_datepicker_button_text_color:I = 0x10600b6
 
-.field public static final oppo_datepicker_button_text_color_selected:I = 0x10600b6
+.field public static final oppo_datepicker_button_text_color_selected:I = 0x10600b7
 
-.field public static final oppo_default_textview_text_color:I = 0x10600a9
+.field public static final oppo_default_textview_text_color:I = 0x10600aa
 
-.field public static final oppo_extract_edit_container_bg_color:I = 0x1060073
+.field public static final oppo_extract_edit_container_bg_color:I = 0x1060074
 
-.field public static final oppo_iconmenu:I = 0x10600af
+.field public static final oppo_iconmenu:I = 0x10600b0
 
-.field public static final oppo_inputmethod_text_color:I = 0x10600b1
+.field public static final oppo_inputmethod_text_color:I = 0x10600b2
 
 .field public static final oppo_listview_background_color:I = 0x10600c6
 
-.field public static final oppo_lockscreen_shadow_color:I = 0x1060091
+.field public static final oppo_lockscreen_shadow_color:I = 0x1060092
 
 .field public static final oppo_menu_default_text_color:I = 0x10600ce
 
-.field public static final oppo_multilist_text_disabled_color_select:I = 0x1060098
+.field public static final oppo_multilist_text_disabled_color_select:I = 0x1060099
 
-.field public static final oppo_search_bar_button_text_color:I = 0x1060076
+.field public static final oppo_search_bar_button_text_color:I = 0x1060077
 
-.field public static final oppo_shortcut_text_color:I = 0x10600a4
+.field public static final oppo_shortcut_text_color:I = 0x10600a5
 
-.field public static final oppo_shortcutbar_default_bg_color:I = 0x10600a2
+.field public static final oppo_shortcutbar_default_bg_color:I = 0x10600a3
 
-.field public static final oppo_shortcutbar_default_bg_padding_color:I = 0x10600a3
+.field public static final oppo_shortcutbar_default_bg_padding_color:I = 0x10600a4
 
-.field public static final oppo_shortcutbar_default_text_color:I = 0x106009f
+.field public static final oppo_shortcutbar_default_text_color:I = 0x10600a0
 
-.field public static final oppo_shortcutbar_default_text_disable_color:I = 0x10600a1
+.field public static final oppo_shortcutbar_default_text_disable_color:I = 0x10600a2
 
-.field public static final oppo_shortcutbar_default_text_hl_color:I = 0x10600a0
+.field public static final oppo_shortcutbar_default_text_hl_color:I = 0x10600a1
 
-.field public static final oppo_tabwidget_label_color_focus:I = 0x1060081
+.field public static final oppo_simple_list_item_1:I = 0x1060063
 
-.field public static final oppo_tabwidget_label_color_normal:I = 0x1060080
+.field public static final oppo_tabwidget_label_color_focus:I = 0x1060082
 
-.field public static final oppo_tabwidget_label_shadow_color:I = 0x1060082
+.field public static final oppo_tabwidget_label_color_normal:I = 0x1060081
+
+.field public static final oppo_tabwidget_label_shadow_color:I = 0x1060083
 
 .field public static final oppo_title_text_color:I = 0x10600c4
 
-.field public static final oppo_transparence:I = 0x1060090
+.field public static final oppo_transparence:I = 0x1060091
 
-.field public static final oppo_volume_panel_text_color:I = 0x10600b4
+.field public static final oppo_volume_panel_text_color:I = 0x10600b5
 
-.field public static final oppo_windowTitle_color:I = 0x10600b0
+.field public static final oppo_windowTitle_color:I = 0x10600b1
 
-.field public static final oppo_window_background_color:I = 0x10600b2
+.field public static final oppo_window_background_color:I = 0x10600b3
 
-.field public static final oppospringlistview_background_color:I = 0x10600a7
+.field public static final oppospringlistview_background_color:I = 0x10600a8
 
-.field public static final overlay_transparent_background:I = 0x1060085
+.field public static final overlay_transparent_background:I = 0x1060086
 
-.field public static final pathbar_text_color:I = 0x1060099
+.field public static final pathbar_text_color:I = 0x106009a
 
-.field public static final pathbar_text_shadow_color:I = 0x106009a
+.field public static final pathbar_text_shadow_color:I = 0x106009b
 
 .field public static final perms_dangerous_grp_color:I = 0x1060033
 
 .field public static final perms_dangerous_perm_color:I = 0x1060034
 
-.field public static final popup_menu_press_text_color:I = 0x106009c
+.field public static final popup_menu_press_text_color:I = 0x106009d
 
-.field public static final popup_menu_text_color:I = 0x106009b
+.field public static final popup_menu_text_color:I = 0x106009c
 
-.field public static final popupmenu_primary_text_dark:I = 0x10600d9
+.field public static final popupmenu_primary_text_dark:I = 0x10600da
 
 .field public static final primary_text_dark:I = 0x1060001
 
-.field public static final primary_text_dark_disable_only:I = 0x10600da
+.field public static final primary_text_dark_disable_only:I = 0x10600db
 
-.field public static final primary_text_dark_focused:I = 0x10600db
+.field public static final primary_text_dark_focused:I = 0x10600dc
 
 .field public static final primary_text_dark_nodisable:I = 0x1060002
 
-.field public static final primary_text_disable_only_holo_dark:I = 0x10600dc
+.field public static final primary_text_disable_only_holo_dark:I = 0x10600dd
 
-.field public static final primary_text_disable_only_holo_light:I = 0x10600dd
+.field public static final primary_text_disable_only_holo_light:I = 0x10600de
 
-.field public static final primary_text_focused_holo_dark:I = 0x10600de
+.field public static final primary_text_focused_holo_dark:I = 0x10600df
 
-.field public static final primary_text_holo_dark:I = 0x10600df
+.field public static final primary_text_holo_dark:I = 0x10600e0
 
-.field public static final primary_text_holo_light:I = 0x10600e0
+.field public static final primary_text_holo_light:I = 0x10600e1
 
 .field public static final primary_text_light:I = 0x1060003
 
-.field public static final primary_text_light_disable_only:I = 0x10600e1
+.field public static final primary_text_light_disable_only:I = 0x10600e2
 
 .field public static final primary_text_light_nodisable:I = 0x1060004
 
-.field public static final primary_text_nodisable_holo_dark:I = 0x10600e2
+.field public static final primary_text_nodisable_holo_dark:I = 0x10600e3
 
-.field public static final primary_text_nodisable_holo_light:I = 0x10600e3
+.field public static final primary_text_nodisable_holo_light:I = 0x10600e4
 
-.field public static final quickcontact_disambig:I = 0x106008a
+.field public static final quickcontact_disambig:I = 0x106008b
 
-.field public static final quickcontact_disambig_divider:I = 0x106008b
+.field public static final quickcontact_disambig_divider:I = 0x106008c
 
-.field public static final right_color:I = 0x106008d
+.field public static final right_color:I = 0x106008e
 
 .field public static final safe_mode_text:I = 0x106001c
 
-.field public static final scrollview_background_color:I = 0x106007f
+.field public static final scrollview_background_color:I = 0x1060080
 
-.field public static final search_bar_background:I = 0x106006e
+.field public static final search_bar_background:I = 0x106006f
 
-.field public static final search_bar_edit_text_hint_color:I = 0x1060075
+.field public static final search_bar_edit_text_hint_color:I = 0x1060076
 
-.field public static final search_url_text:I = 0x10600e4
+.field public static final search_url_text:I = 0x10600e5
 
-.field public static final search_url_text_holo:I = 0x10600e5
+.field public static final search_url_text_holo:I = 0x10600e6
 
 .field public static final search_url_text_normal:I = 0x1060036
 
@@ -403,35 +405,35 @@
 
 .field public static final secondary_text_dark_nodisable:I = 0x1060006
 
-.field public static final secondary_text_holo_dark:I = 0x10600e6
+.field public static final secondary_text_holo_dark:I = 0x10600e7
 
-.field public static final secondary_text_holo_light:I = 0x10600e7
+.field public static final secondary_text_holo_light:I = 0x10600e8
 
 .field public static final secondary_text_light:I = 0x1060007
 
 .field public static final secondary_text_light_nodisable:I = 0x1060008
 
-.field public static final secondary_text_nodisable_holo_dark:I = 0x10600e8
+.field public static final secondary_text_nodisable_holo_dark:I = 0x10600e9
 
-.field public static final secondary_text_nodisable_holo_light:I = 0x10600e9
+.field public static final secondary_text_nodisable_holo_light:I = 0x10600ea
 
-.field public static final secondary_text_nofocus:I = 0x10600ea
+.field public static final secondary_text_nofocus:I = 0x10600eb
 
-.field public static final sect_secondary:I = 0x1060089
+.field public static final sect_secondary:I = 0x106008a
 
 .field public static final shadow:I = 0x1060035
 
-.field public static final shortcut_text_shadow_color:I = 0x10600a5
+.field public static final shortcut_text_shadow_color:I = 0x10600a6
 
-.field public static final shortcutbutton_text_color:I = 0x10600eb
+.field public static final shortcutbutton_text_color:I = 0x10600ec
 
-.field public static final shortcutlist_item_text_color:I = 0x10600ec
+.field public static final shortcutlist_item_text_color:I = 0x10600ed
 
 .field public static final sliding_tab_text_color_active:I = 0x106003a
 
 .field public static final sliding_tab_text_color_shadow:I = 0x106003b
 
-.field public static final sliding_text_color:I = 0x10600a6
+.field public static final sliding_text_color:I = 0x10600a7
 
 .field public static final small_text_color:I = 0x10600c7
 
@@ -445,47 +447,47 @@
 
 .field public static final status_bar_latest_event_title_color:I = 0x10600cf
 
-.field public static final statusbar_baseicon_text_color:I = 0x1060079
+.field public static final statusbar_baseicon_text_color:I = 0x106007a
 
-.field public static final statusbar_button_text_color:I = 0x106007d
+.field public static final statusbar_button_text_color:I = 0x106007e
 
-.field public static final statusbar_dateview_text_color:I = 0x106007a
+.field public static final statusbar_dateview_text_color:I = 0x106007b
 
-.field public static final statusbar_expanded_bg_color:I = 0x106007c
+.field public static final statusbar_expanded_bg_color:I = 0x106007d
 
-.field public static final statusbar_list_title_color:I = 0x106007e
+.field public static final statusbar_list_title_color:I = 0x106007f
 
-.field public static final statusbar_tackerview_text_color:I = 0x106007b
+.field public static final statusbar_tackerview_text_color:I = 0x106007c
 
 .field public static final suggestion_highlight_text:I = 0x1060031
 
 .field public static final tab_indicator_text:I = 0x1060009
 
-.field public static final tab_indicator_text_v4:I = 0x10600ed
+.field public static final tab_indicator_text_v4:I = 0x10600ee
 
-.field public static final tab_normal_text_color:I = 0x1060083
+.field public static final tab_normal_text_color:I = 0x1060084
 
-.field public static final tab_select_text_color:I = 0x1060084
+.field public static final tab_select_text_color:I = 0x1060085
 
 .field public static final tertiary_text_dark:I = 0x1060010
 
-.field public static final tertiary_text_holo_dark:I = 0x10600ee
+.field public static final tertiary_text_holo_dark:I = 0x10600ef
 
-.field public static final tertiary_text_holo_light:I = 0x10600ef
+.field public static final tertiary_text_holo_light:I = 0x10600f0
 
 .field public static final tertiary_text_light:I = 0x1060011
 
-.field public static final textColorIconOverlay:I = 0x1060087
+.field public static final textColorIconOverlay:I = 0x1060088
 
-.field public static final textColorIconOverlayShadow:I = 0x1060088
+.field public static final textColorIconOverlayShadow:I = 0x1060089
 
-.field public static final text_color_link:I = 0x1060071
+.field public static final text_color_link:I = 0x1060072
 
-.field public static final text_disabled_color:I = 0x106006a
+.field public static final text_disabled_color:I = 0x106006b
 
-.field public static final title_bar_button_text_color:I = 0x1060072
+.field public static final title_bar_button_text_color:I = 0x1060073
 
-.field public static final touchsearch_popupwin_default_textcolor:I = 0x10600a8
+.field public static final touchsearch_popupwin_default_textcolor:I = 0x10600a9
 
 .field public static final transparent:I = 0x106000d
 
@@ -495,7 +497,7 @@
 
 .field public static final widget_edittext_dark:I = 0x106000a
 
-.field public static final widget_extractedittext_dark:I = 0x10600f0
+.field public static final widget_extractedittext_dark:I = 0x10600f1
 
 
 # direct methods

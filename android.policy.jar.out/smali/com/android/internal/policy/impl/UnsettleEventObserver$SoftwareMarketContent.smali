@@ -25,13 +25,13 @@
     .parameter "handler"
 
     .prologue
-    .line 172
+    .line 199
     iput-object p1, p0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SoftwareMarketContent;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
 
-    .line 173
+    .line 200
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
-    .line 174
+    .line 201
     return-void
 .end method
 
@@ -42,7 +42,7 @@
     .parameter "selfChange"
 
     .prologue
-    .line 177
+    .line 204
     new-instance v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SoftwareMarketThread;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SoftwareMarketContent;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -51,6 +51,6 @@
 
     invoke-virtual {v0}, Lcom/android/internal/policy/impl/UnsettleEventObserver$SoftwareMarketThread;->start()V
 
-    .line 178
+    .line 205
     return-void
 .end method

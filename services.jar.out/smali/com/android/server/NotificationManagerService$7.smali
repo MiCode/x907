@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 1565
+    .line 1589
     iput-object p1, p0, Lcom/android/server/NotificationManagerService$7;->this$0:Lcom/android/server/NotificationManagerService;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .parameter "arg1"
 
     .prologue
-    .line 1568
+    .line 1592
     iget-object v0, p0, Lcom/android/server/NotificationManagerService$7;->this$0:Lcom/android/server/NotificationManagerService;
 
     #getter for: Lcom/android/server/NotificationManagerService;->mNotificationDialogItems:Ljava/util/ArrayList;
@@ -53,7 +53,7 @@
 
     monitor-enter v1
 
-    .line 1570
+    .line 1594
     :try_start_0
     iget-object v0, p0, Lcom/android/server/NotificationManagerService$7;->this$0:Lcom/android/server/NotificationManagerService;
 
@@ -62,7 +62,7 @@
     #calls: Lcom/android/server/NotificationManagerService;->dismissMessageBoxLocked(Z)Z
     invoke-static {v0, v2}, Lcom/android/server/NotificationManagerService;->access$3000(Lcom/android/server/NotificationManagerService;Z)Z
 
-    .line 1571
+    .line 1595
     iget-object v0, p0, Lcom/android/server/NotificationManagerService$7;->this$0:Lcom/android/server/NotificationManagerService;
 
     #getter for: Lcom/android/server/NotificationManagerService;->mSound:Lcom/android/server/NotificationPlayer;
@@ -72,7 +72,7 @@
 
     invoke-virtual {v0}, Lcom/android/server/NotificationPlayer;->stop()V
 
-    .line 1572
+    .line 1596
     iget-object v0, p0, Lcom/android/server/NotificationManagerService$7;->this$0:Lcom/android/server/NotificationManagerService;
 
     #getter for: Lcom/android/server/NotificationManagerService;->mVibrator:Landroid/os/Vibrator;
@@ -82,13 +82,13 @@
 
     invoke-virtual {v0}, Landroid/os/Vibrator;->cancel()V
 
-    .line 1573
+    .line 1597
     monitor-exit v1
 
-    .line 1574
+    .line 1598
     return-void
 
-    .line 1573
+    .line 1597
     :catchall_0
     move-exception v0
 

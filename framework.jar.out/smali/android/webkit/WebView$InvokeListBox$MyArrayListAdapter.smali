@@ -94,7 +94,7 @@
     goto :goto_0
 
     :cond_2
-    const v0, 0x1090114
+    const v0, 0x1090115
 
     goto :goto_0
 .end method

@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 230
+    .line 257
     iput-object p1, p0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SoftwareMarketThread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
@@ -40,10 +40,10 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 233
+    .line 260
     const/4 v8, 0x0
 
-    .line 235
+    .line 262
     .local v8, count:I
     iget-object v0, p0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SoftwareMarketThread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
 
@@ -69,11 +69,11 @@
 
     move-result-object v7
 
-    .line 238
+    .line 265
     .local v7, c:Landroid/database/Cursor;
     if-eqz v7, :cond_0
 
-    .line 242
+    .line 269
     :try_start_0
     invoke-interface {v7}, Landroid/database/Cursor;->getCount()I
     :try_end_0
@@ -81,10 +81,10 @@
 
     move-result v8
 
-    .line 246
+    .line 273
     invoke-interface {v7}, Landroid/database/Cursor;->close()V
 
-    .line 249
+    .line 276
     :cond_0
     new-instance v6, Landroid/content/Intent;
 
@@ -92,7 +92,7 @@
 
     invoke-direct {v6, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 250
+    .line 277
     .local v6, SoftMktIntent:Landroid/content/Intent;
     const-string v0, "pakeageName"
 
@@ -100,7 +100,7 @@
 
     invoke-virtual {v6, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 252
+    .line 279
     const-string v0, "-- huzhaohui--"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -123,22 +123,22 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 253
+    .line 280
     const-string v0, "number"
 
     invoke-virtual {v6, v0, v8}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 254
+    .line 281
     iget-object v0, p0, Lcom/android/internal/policy/impl/UnsettleEventObserver$SoftwareMarketThread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
 
     iget-object v0, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0, v6}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 255
+    .line 282
     return-void
 
-    .line 246
+    .line 273
     .end local v6           #SoftMktIntent:Landroid/content/Intent;
     :catchall_0
     move-exception v0

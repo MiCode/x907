@@ -258,18 +258,15 @@
     .locals 4
 
     .prologue
-    .line 144
     new-instance v0, Landroid/content/Intent;
 
-    const-string/jumbo v2, "android.intent.action.RINGTONE_PICKER"
+    const-string v2, "android.intent.action.RINGTONE_PICKER"
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 146
     .local v0, intent:Landroid/content/Intent;
     invoke-virtual {p0, v0}, Landroid/preference/RingtonePreference;->onPrepareRingtonePickerIntent(Landroid/content/Intent;)V
 
-    .line 147
     invoke-virtual {p0}, Landroid/preference/RingtonePreference;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v2

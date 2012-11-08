@@ -88,7 +88,7 @@
     .line 220
     iget-object v4, p0, Lcom/oppo/preference/OppoPreferenceActivity$HeaderAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v5, 0x10900b3
+    const v5, 0x10900b4
 
     invoke-virtual {v4, v5, p3, v6}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 

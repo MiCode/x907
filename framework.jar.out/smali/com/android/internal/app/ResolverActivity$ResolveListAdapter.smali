@@ -997,7 +997,7 @@
     .line 449
     iget-object v1, p0, Lcom/android/internal/app/ResolverActivity$ResolveListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v2, 0x10900cc
+    const v2, 0x10900cd
 
     const/4 v3, 0x0
 

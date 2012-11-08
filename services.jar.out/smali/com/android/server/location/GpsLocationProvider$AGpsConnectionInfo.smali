@@ -70,51 +70,51 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 2293
+    .line 2300
     iput-object p1, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->this$0:Lcom/android/server/location/GpsLocationProvider;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2294
+    .line 2301
     iput p2, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->mCMConnType:I
 
-    .line 2295
+    .line 2302
     iput p3, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->mAgpsType:I
 
-    .line 2296
+    .line 2303
     const/4 v0, 0x3
 
     if-ne v0, p2, :cond_0
 
-    .line 2297
+    .line 2304
     const-string v0, "enableSUPL"
 
     iput-object v0, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->mPHConnFeatureStr:Ljava/lang/String;
 
-    .line 2301
+    .line 2308
     :goto_0
     iput-object v1, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->mAPN:Ljava/lang/String;
 
-    .line 2302
+    .line 2309
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->mState:I
 
-    .line 2303
+    .line 2310
     iput-object v1, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->mIPv4Addr:Ljava/net/InetAddress;
 
-    .line 2304
+    .line 2311
     iput-object v1, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->mIPv6Addr:Ljava/net/InetAddress;
 
-    .line 2305
+    .line 2312
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->mBearerType:I
 
-    .line 2306
+    .line 2313
     return-void
 
-    .line 2299
+    .line 2306
     :cond_0
     const-string v0, "enableMMS"
 
@@ -131,7 +131,7 @@
     .parameter "x3"
 
     .prologue
-    .line 2264
+    .line 2271
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;-><init>(Lcom/android/server/location/GpsLocationProvider;II)V
 
     return-void
@@ -142,7 +142,7 @@
     .parameter "x0"
 
     .prologue
-    .line 2264
+    .line 2271
     iget v0, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->mAgpsType:I
 
     return v0
@@ -153,7 +153,7 @@
     .parameter "x0"
 
     .prologue
-    .line 2264
+    .line 2271
     iget-object v0, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->mPHConnFeatureStr:Ljava/lang/String;
 
     return-object v0
@@ -164,7 +164,7 @@
     .parameter "x0"
 
     .prologue
-    .line 2264
+    .line 2271
     iget v0, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->mState:I
 
     return v0
@@ -176,7 +176,7 @@
     .parameter "x1"
 
     .prologue
-    .line 2264
+    .line 2271
     iput p1, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->mState:I
 
     return p1
@@ -187,7 +187,7 @@
     .parameter "x0"
 
     .prologue
-    .line 2264
+    .line 2271
     iget-object v0, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->mAPN:Ljava/lang/String;
 
     return-object v0
@@ -199,7 +199,7 @@
     .parameter "x1"
 
     .prologue
-    .line 2264
+    .line 2271
     iput-object p1, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->mAPN:Ljava/lang/String;
 
     return-object p1
@@ -210,7 +210,7 @@
     .parameter "x0"
 
     .prologue
-    .line 2264
+    .line 2271
     iget v0, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->mBearerType:I
 
     return v0
@@ -222,7 +222,7 @@
     .parameter "x1"
 
     .prologue
-    .line 2264
+    .line 2271
     iput p1, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->mBearerType:I
 
     return p1
@@ -233,7 +233,7 @@
     .parameter "x0"
 
     .prologue
-    .line 2264
+    .line 2271
     iget-object v0, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->mIPv4Addr:Ljava/net/InetAddress;
 
     return-object v0
@@ -245,7 +245,7 @@
     .parameter "x1"
 
     .prologue
-    .line 2264
+    .line 2271
     iput-object p1, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->mIPv4Addr:Ljava/net/InetAddress;
 
     return-object p1
@@ -256,7 +256,7 @@
     .parameter "x0"
 
     .prologue
-    .line 2264
+    .line 2271
     iget v0, p0, Lcom/android/server/location/GpsLocationProvider$AGpsConnectionInfo;->mCMConnType:I
 
     return v0

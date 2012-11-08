@@ -168,7 +168,7 @@
     .line 199
     const/16 v1, 0xb
 
-    const v2, 0x10900dc
+    const v2, 0x10900dd
 
     invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
@@ -1038,7 +1038,7 @@
 
     move-object/from16 v19, v0
 
-    const v20, 0x1060078
+    const v20, 0x1060079
 
     invoke-virtual/range {v19 .. v20}, Landroid/widget/ListView;->setBackgroundResource(I)V
 

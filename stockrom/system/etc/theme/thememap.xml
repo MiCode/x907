@@ -40,31 +40,31 @@
 		<item>ic_launcher_smsmms.png</item>
 	</Module>
     
-	<Module name="NearMe_GameCenter" path="/system/app/NearMe_GameCenter.apk">
+	<Module name="NearMeGameCenter" path="/system/app/GameCenter.apk">
 		<item>ic_launcher_nearme_gamecenter.png</item>
 	</Module>
     
-	<Module name="NearMe_Market" path="/system/app/NearMe_Market.apk">
+	<Module name="NearMeMarket" path="/system/app/NearMeMarket.apk">
 		<item>ic_launcher_nearme_market.png</item>
 	</Module>
     
-	<Module name="NearMe_Music" path="/system/app/NearMe_Music.apk">
+	<Module name="NearMeMusic" path="/system/app/NearMeMusic.apk">
 		<item>ic_launcher_nearme_music.png</item>
 	</Module>
     
-	<Module name="NearMe_CloudNote" path="/system/app/NearMe_CloudNote.apk">
+	<Module name="NearMeNote" path="/system/app/NearMeNote.apk">
 		<item>ic_launcher_nearme_note.png</item>
 	</Module>
     
-	<Module name="NearMe_OTA" path="/system/app/NearMe_OTA.apk">
-		<item>ic_launcher_nearme_ota.png.png</item>
+	<Module name="NearMeOTA" path="/system/app/NearMeOTA.apk">
+		<item>ic_launcher_nearme_ota.png</item>
 	</Module>
     
-	<Module name="NearMe_Reader" path="/system/app/NearMe_Reader.apk">
+	<Module name="NearMeReader" path="/system/app/NearMeReader.apk">
 		<item>ic_launcher_nearme_reader.png</item>
 	</Module>
     
-	<Module name="NearMe_Sync" path="/system/app/NearMe_Sync.apk">
+	<Module name="NearMeSync" path="/system/app/NearMeSync.apk">
 		<item>ic_launcher_nearme_sync.png</item>
 	</Module>
 
@@ -115,8 +115,9 @@
 		<item>hotseat_phone_normal.png</item>
 		<item>hotseat_todesktop_focused.png</item>
 		<item>hotseat_todesktop_normal.png</item>
+        	<item>iphone_style_bg.png</item>
 		<item>ic_launcher_3dpreview_icon_focused.png</item>
-		<item>ic_launcher_3dpreview_icon_normal.png</item><div></div>
+		<item>ic_launcher_3dpreview_icon_normal.png</item>
 		<item>ic_launcher_mainmenu_default_bg.png</item>
 		<item>ic_launcher_trashcan.png</item>
 		<item>ic_launcher_trashcan_hover.png</item>
@@ -125,6 +126,11 @@
 		<item>ic_launcher_folder.png</item>
 		<item>ic_launcher_folder_full.png</item>
 		<item>ic_launcher_folder_open.png</item>
+	        <item>ic_launcher_nearme_market.png</item>
+	        <item>ic_launcher_nearme_reader.png</item>
+	        <item>ic_launcher_nearme_note.png</item>
+	        <item>ic_launcher_nearme_gamecenter.png</item>
+	        <item>ic_launcher_nearme_sync.png</item>
 	</Module>
     
 	<Module name="OppoMusic" path="/system/app/OppoMusic.apk">
@@ -166,57 +172,13 @@
 		<item>ic_launcher_video.png</item>
 	</Module>
 	
-	<!-- NearMeNote ---------------------------------------------------------->
-	<Module name="NearMeNote" path="/system/app/NearMeNote.apk"> 
-		<item>ic_launcher_nearme_note.png</item>
-	</Module>
-	
-  <!-- NearMusic ---------------------------------------------------------->
-	<Module name="NearMeMusic" path="/system/app/NearMeMusic">
-		<item>ic_launcher_nearme_music.png</item>
-	</Module>
-	
-	<!-- NearMarket ----------------------------------------------------------->
-	
-	<Module name="NearMeMarket" path="/system/app/NearMeMarket">
-		<item>ic_launcher_nearme_market.png</item>
-	</Module>
-
-	<!-- NearMeReader ------------------------------------------------------------>
-
-	<Module name="NearMeReader" path="/system/app/NearMeReader">
-		<item>ic_launcher_nearme_reader.png</item>
-	</Module>
-	
-	<!-- NearMeGameCenter ---------------------------------------------------------->
-
-	<Module name="NearMeGameCenter" path="/system/app/GameCenter">
-		<item>ic_launcher_nearme_gamecenter.png</item>
-	</Module>
-	
-	<!-- NearMeSync ------------------------------------------------------------------>
-
-	<Module name="NearMeSync" path="/system/app/NearMeSync">
-		<item>ic_launcher_nearme_sync.png</item>
-	</Module>
-	
- 	<!-- -NearMeOta --------------------------------------------------------------------->
-	<Module name="NearMeOta" path="/system/app/NearMeOta">
-		<item>ic_launcher_nearme_ota.png</item>
-	</Module>
-	
 	<!-- OppoLockNow------------------------------------------------------------->
-	<Module name="OppoLockNow" path="/system/app/OppoLockNow">
+	<Module name="OppoLockNow" path="/system/app/OppoLockNow.apk">
 		<item>ic_launcher_locknow.png</item>
 	</Module>
 	
-	<!--NearMeOTA --------------------------------------------------------------->
-	<Module name="NearMeOTA" path="/system/app/NearMeOTA">
-		<item>ic_launcher_nearme_ota.png</item>
-	</Module>
-	
 	<!--Feedback----------------------------------------------------------------------->
-	<Module name="Feedback" path="/system/app/Feedback">
+	<Module name="Feedback" path="/system/app/Feedback.apk">
 		<item>ic_launcher_nearme_feedback.png</item>
 	</Module>
 	

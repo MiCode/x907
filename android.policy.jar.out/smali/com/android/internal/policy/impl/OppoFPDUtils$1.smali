@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 112
+    .line 117
     iput-object p1, p0, Lcom/android/internal/policy/impl/OppoFPDUtils$1;->val$c:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
@@ -38,7 +38,7 @@
     .locals 9
 
     .prologue
-    .line 117
+    .line 122
     const-string v6, "window"
 
     invoke-static {v6}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
@@ -49,7 +49,7 @@
 
     move-result-object v5
 
-    .line 121
+    .line 126
     .local v5, wm:Landroid/view/IWindowManager;
     const/4 v6, 0x1
 
@@ -58,7 +58,7 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 128
+    .line 133
     :goto_0
     const-string v6, "ctl.start"
 
@@ -66,12 +66,12 @@
 
     invoke-static {v6, v7}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 129
+    .line 134
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
 
-    .line 130
+    .line 135
     .local v1, animStartTime:J
     const-string v6, "OppoFPDUtils"
 
@@ -79,11 +79,11 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 131
+    .line 136
     #calls: Lcom/android/internal/policy/impl/OppoFPDUtils;->setSystemServerReboot()V
     invoke-static {}, Lcom/android/internal/policy/impl/OppoFPDUtils;->access$000()V
 
-    .line 132
+    .line 137
     const-string v6, "activity"
 
     invoke-static {v6}, Landroid/os/ServiceManager;->checkService(Ljava/lang/String;)Landroid/os/IBinder;
@@ -94,11 +94,11 @@
 
     move-result-object v0
 
-    .line 133
+    .line 138
     .local v0, am:Landroid/app/IActivityManager;
     if-eqz v0, :cond_0
 
-    .line 137
+    .line 142
     const/16 v6, 0xbb8
 
     :try_start_1
@@ -106,39 +106,40 @@
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 143
+    .line 151
     :cond_0
     :goto_1
-    invoke-static {}, Lcom/android/internal/policy/impl/OppoFPDUtils;->unmount()V
-
-    .line 146
     const-string v6, "ctl.stop"
 
     const-string v7, "media"
 
     invoke-static {v6, v7}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 147
+    .line 152
     #calls: Lcom/android/internal/policy/impl/OppoFPDUtils;->turnOffHDMI()V
     invoke-static {}, Lcom/android/internal/policy/impl/OppoFPDUtils;->access$100()V
 
-    .line 148
+    .line 153
     iget-object v6, p0, Lcom/android/internal/policy/impl/OppoFPDUtils$1;->val$c:Landroid/content/Context;
 
     invoke-static {v6}, Lcom/android/internal/policy/impl/OppoFPDUtils;->changeAPMSettingsIfNecessary(Landroid/content/Context;)V
 
-    .line 149
+    .line 154
     iget-object v6, p0, Lcom/android/internal/policy/impl/OppoFPDUtils$1;->val$c:Landroid/content/Context;
 
     invoke-static {v6}, Lcom/android/internal/policy/impl/OppoFPDUtils;->applyNewAPMSettings(Landroid/content/Context;)V
 
-    .line 150
+    .line 155
     iget-object v6, p0, Lcom/android/internal/policy/impl/OppoFPDUtils$1;->val$c:Landroid/content/Context;
 
     #calls: Lcom/android/internal/policy/impl/OppoFPDUtils;->checkRadioState(Landroid/content/Context;J)V
     invoke-static {v6, v1, v2}, Lcom/android/internal/policy/impl/OppoFPDUtils;->access$200(Landroid/content/Context;J)V
 
-    .line 151
+    .line 156
+    #calls: Lcom/android/internal/policy/impl/OppoFPDUtils;->resetModem()V
+    invoke-static {}, Lcom/android/internal/policy/impl/OppoFPDUtils;->access$300()V
+
+    .line 157
     const-string v6, "sys.fpd_reboot_server"
 
     const-string v7, "0"
@@ -147,7 +148,7 @@
 
     move-result-object v4
 
-    .line 152
+    .line 158
     .local v4, tmp:Ljava/lang/String;
     const-string v6, "OppoFPDUtils"
 
@@ -177,24 +178,24 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 156
+    .line 162
     invoke-static {}, Lcom/android/internal/policy/impl/OppoFPDUtils;->turnOffButtonLight()V
 
-    .line 157
+    .line 163
     #calls: Lcom/android/internal/policy/impl/OppoFPDUtils;->crashSystemServer()V
-    invoke-static {}, Lcom/android/internal/policy/impl/OppoFPDUtils;->access$300()V
+    invoke-static {}, Lcom/android/internal/policy/impl/OppoFPDUtils;->access$400()V
 
-    .line 158
+    .line 164
     return-void
 
-    .line 123
+    .line 128
     .end local v0           #am:Landroid/app/IActivityManager;
     .end local v1           #animStartTime:J
     .end local v4           #tmp:Ljava/lang/String;
     :catch_0
     move-exception v3
 
-    .line 125
+    .line 130
     .local v3, exc:Landroid/os/RemoteException;
     const-string v6, "OppoFPDUtils"
 
@@ -204,7 +205,7 @@
 
     goto :goto_0
 
-    .line 139
+    .line 144
     .end local v3           #exc:Landroid/os/RemoteException;
     .restart local v0       #am:Landroid/app/IActivityManager;
     .restart local v1       #animStartTime:J

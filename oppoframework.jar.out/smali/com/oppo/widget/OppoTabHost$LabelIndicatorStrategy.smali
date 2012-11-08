@@ -84,7 +84,7 @@
 
     .line 716
     .local v3, tabIndicatorId:I
-    const v3, 0x10900f3
+    const v3, 0x10900f4
 
     .line 717
     iget-object v5, p0, Lcom/oppo/widget/OppoTabHost$LabelIndicatorStrategy;->this$0:Lcom/oppo/widget/OppoTabHost;
@@ -132,7 +132,7 @@
 
     move-result-object v5
 
-    const v6, 0x10600ed
+    const v6, 0x10600ee
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColorStateList(I)Landroid/content/res/ColorStateList;
 

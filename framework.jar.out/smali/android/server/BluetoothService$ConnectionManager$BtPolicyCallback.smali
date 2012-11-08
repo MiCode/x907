@@ -36,24 +36,24 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 977
+    .line 989
     iput-object p1, p0, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->this$1:Landroid/server/BluetoothService$ConnectionManager;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 963
+    .line 975
     iput v1, p0, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mDesiredAmpPolicy:I
 
-    .line 964
+    .line 976
     iput v1, p0, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mCurrentAmpPolicy:I
 
-    .line 965
+    .line 977
     iput v1, p0, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mHandle:I
 
-    .line 978
+    .line 990
     iput-object p2, p0, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mCallback:Landroid/bluetooth/IBluetoothCallback;
 
-    .line 979
+    .line 991
     #calls: Landroid/server/BluetoothService$ConnectionManager;->validateAmpPolicy(I)I
     invoke-static {p1, p3}, Landroid/server/BluetoothService$ConnectionManager;->access$500(Landroid/server/BluetoothService$ConnectionManager;I)I
 
@@ -61,14 +61,14 @@
 
     iput v1, p0, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mDesiredAmpPolicy:I
 
-    .line 980
+    .line 992
     invoke-virtual {p1, p3}, Landroid/server/BluetoothService$ConnectionManager;->getEffectiveAmpPolicy(I)I
 
     move-result v1
 
     iput v1, p0, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mCurrentAmpPolicy:I
 
-    .line 984
+    .line 996
     :try_start_0
     #getter for: Landroid/server/BluetoothService$ConnectionManager;->mBtPolicyHandlesAvailable:Ljava/util/LinkedList;
     invoke-static {p1}, Landroid/server/BluetoothService$ConnectionManager;->access$400(Landroid/server/BluetoothService$ConnectionManager;)Ljava/util/LinkedList;
@@ -87,7 +87,7 @@
 
     iput v1, p0, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mHandle:I
 
-    .line 985
+    .line 997
     const-string v1, "BluetoothService"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -124,15 +124,15 @@
     :try_end_0
     .catch Ljava/util/NoSuchElementException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 994
+    .line 1006
     :goto_0
     return-void
 
-    .line 986
+    .line 998
     :catch_0
     move-exception v0
 
-    .line 987
+    .line 999
     .local v0, e:Ljava/util/NoSuchElementException;
     #getter for: Landroid/server/BluetoothService$ConnectionManager;->mBtPolicyHandle:I
     invoke-static {p1}, Landroid/server/BluetoothService$ConnectionManager;->access$600(Landroid/server/BluetoothService$ConnectionManager;)I
@@ -143,14 +143,14 @@
 
     if-ge v1, v2, :cond_0
 
-    .line 988
+    .line 1000
     invoke-static {p1}, Landroid/server/BluetoothService$ConnectionManager;->access$604(Landroid/server/BluetoothService$ConnectionManager;)I
 
     move-result v1
 
     iput v1, p0, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mHandle:I
 
-    .line 989
+    .line 1001
     const-string v1, "BluetoothService"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -187,7 +187,7 @@
 
     goto :goto_0
 
-    .line 991
+    .line 1003
     :cond_0
     const-string v1, "BluetoothService"
 
@@ -204,7 +204,7 @@
     .locals 1
 
     .prologue
-    .line 974
+    .line 986
     iget v0, p0, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mHandle:I
 
     return v0
@@ -215,7 +215,7 @@
     .parameter "handle"
 
     .prologue
-    .line 968
+    .line 980
     const-string v0, "BluetoothService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -250,12 +250,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 969
+    .line 981
     const/4 v0, 0x0
 
     iput v0, p0, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mHandle:I
 
-    .line 970
+    .line 982
     iget-object v0, p0, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->this$1:Landroid/server/BluetoothService$ConnectionManager;
 
     #getter for: Landroid/server/BluetoothService$ConnectionManager;->mBtPolicyHandlesAvailable:Ljava/util/LinkedList;

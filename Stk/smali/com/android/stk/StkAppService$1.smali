@@ -25,7 +25,7 @@
     .locals 3
 
     .prologue
-    .line 1152
+    .line 1167
     invoke-static {}, Lcom/android/internal/telephony/cat/LaunchBrowserMode;->values()[Lcom/android/internal/telephony/cat/LaunchBrowserMode;
 
     move-result-object v0
@@ -496,7 +496,7 @@
 
     goto/16 :goto_3
 
-    .line 1152
+    .line 1167
     :catch_13
     move-exception v0
 

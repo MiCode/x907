@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 259
+    .line 325
     iput-object p1, p0, Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailThread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
@@ -42,10 +42,10 @@
 
     const/4 v5, 0x0
 
-    .line 263
+    .line 329
     const/4 v7, 0x0
 
-    .line 265
+    .line 331
     .local v7, count:I
     iget-object v0, p0, Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailThread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
 
@@ -77,11 +77,11 @@
 
     move-result-object v6
 
-    .line 269
+    .line 335
     .local v6, c:Landroid/database/Cursor;
     if-nez v6, :cond_0
 
-    .line 271
+    .line 337
     const-string v0, "StatusBar"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -104,11 +104,11 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 274
+    .line 340
     :cond_0
     if-eqz v6, :cond_1
 
-    .line 278
+    .line 344
     :try_start_0
     invoke-interface {v6}, Landroid/database/Cursor;->moveToFirst()Z
 
@@ -119,7 +119,7 @@
 
     if-nez v0, :cond_3
 
-    .line 280
+    .line 346
     const/4 v0, 0x0
 
     invoke-interface {v6, v0}, Landroid/database/Cursor;->getInt(I)I
@@ -128,7 +128,7 @@
 
     add-int/2addr v7, v0
 
-    .line 278
+    .line 344
     invoke-interface {v6}, Landroid/database/Cursor;->moveToNext()Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -136,11 +136,11 @@
 
     goto :goto_0
 
-    .line 283
+    .line 349
     :catch_0
     move-exception v8
 
-    .line 285
+    .line 351
     .local v8, e:Landroid/database/CursorIndexOutOfBoundsException;
     :try_start_1
     const-string v0, "StatusBar"
@@ -151,10 +151,10 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 289
+    .line 355
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
-    .line 292
+    .line 358
     .end local v8           #e:Landroid/database/CursorIndexOutOfBoundsException;
     :cond_1
     :goto_1
@@ -167,20 +167,20 @@
 
     if-eq v0, v7, :cond_2
 
-    .line 293
+    .line 359
     iget-object v0, p0, Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailThread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
 
     #setter for: Lcom/android/internal/policy/impl/UnsettleEventObserver;->mOldEmailCount:I
     invoke-static {v0, v7}, Lcom/android/internal/policy/impl/UnsettleEventObserver;->access$202(Lcom/android/internal/policy/impl/UnsettleEventObserver;I)I
 
-    .line 294
+    .line 360
     new-instance v9, Landroid/content/Intent;
 
     const-string v0, "com.oppo.lockscreeneventNO"
 
     invoke-direct {v9, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 295
+    .line 361
     .local v9, mmsIntent:Landroid/content/Intent;
     const-string v0, "pakeageName"
 
@@ -188,17 +188,17 @@
 
     invoke-virtual {v9, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 296
+    .line 362
     const-string v0, "emailnotifytime"
 
     invoke-virtual {v9, v0, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 297
+    .line 363
     const-string v0, "number"
 
     invoke-virtual {v9, v0, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 298
+    .line 364
     iget-object v0, p0, Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailThread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -228,19 +228,19 @@
     #calls: Lcom/android/internal/policy/impl/UnsettleEventObserver;->writeFile1(Ljava/lang/String;)V
     invoke-static {v0, v1}, Lcom/android/internal/policy/impl/UnsettleEventObserver;->access$300(Lcom/android/internal/policy/impl/UnsettleEventObserver;Ljava/lang/String;)V
 
-    .line 299
+    .line 365
     iget-object v0, p0, Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailThread;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
 
     iget-object v0, v0, Lcom/android/internal/policy/impl/UnsettleEventObserver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0, v9}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 301
+    .line 367
     .end local v9           #mmsIntent:Landroid/content/Intent;
     :cond_2
     return-void
 
-    .line 289
+    .line 355
     :cond_3
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 

@@ -25,13 +25,13 @@
     .parameter "handler"
 
     .prologue
-    .line 185
+    .line 212
     iput-object p1, p0, Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailContent;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
 
-    .line 186
+    .line 213
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
-    .line 187
+    .line 214
     return-void
 .end method
 
@@ -42,7 +42,7 @@
     .parameter "selfChange"
 
     .prologue
-    .line 191
+    .line 218
     new-instance v0, Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailThread;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailContent;->this$0:Lcom/android/internal/policy/impl/UnsettleEventObserver;
@@ -51,6 +51,6 @@
 
     invoke-virtual {v0}, Lcom/android/internal/policy/impl/UnsettleEventObserver$EmailThread;->start()V
 
-    .line 192
+    .line 219
     return-void
 .end method

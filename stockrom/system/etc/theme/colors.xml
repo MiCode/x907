@@ -39,7 +39,7 @@
     <color name="online_filemanager_multilistview_cache_color">#00ffffff</color>
     <color name="online_filemanager_dialog_progress_color">#88000000</color>
     <color name="online_filemanager_rename_file_color">#ff40464b</color>
-
+    <color name="online_filemanager_sortview_text_color">#ff40464b</color>
     <!-- Calendar -->
     <color name="online_calendar_widget_mon_week_day">#FF40464B</color>
     <color name="online_calendar_today_text_color">#FF40464B</color>
@@ -91,8 +91,9 @@
     <color name="online_quicksearchbox_oppoedittext">#ff40464b</color>
 
     <!-- Email -->
-    <color name="online_email_message_list_item_unread">#ffe1e1e1</color>
+    <color name="online_email_message_list_item_unread">#ffcfe1ed</color>
     <color name="online_email_setup_edit_text_color">#ff57b5d5</color>
+    <color name="online_email_setup_edit_hint_color">#ff969696</color>
     <color name="online_email_title_account_name_color">#fffefefe</color>
     <color name="online_email_setup_note_text_color">#ffcccccc</color>
     <color name="online_email_setup_account_label_color">#ff40464b</color>
@@ -142,6 +143,10 @@
     <color name="online_contact_data_hint_color">#ff969696</color>
     <color name="online_contact_title_color">#ff40464b</color>
     <color name="online_contact_title_hint_color">#00000000</color>
+    <color name="online_contact_def_lv_name">#ff40464b</color>
+    <color name="online_contact_def_lv_label">#ff787878</color>
+    <color name="online_contact_def_lv_name_press">#ff40464b</color>
+    <color name="online_contact_def_lv_label_press">#ff787878</color>
 
     <!-- Feedback -->
     <color name="online_feedback_list_bg">#FFEBEBEB</color>
@@ -174,6 +179,9 @@
     <color name="online_settings_shortcut_color">#0040464b</color>
     <color name="online_settings_ownerinfo_color">#ffebebeb</color>
     <color name="online_settings_oppo_EditText_color">#ff40464b</color>
+	<color name="online_settings_btn_more_color">#ffb6d3dc</color>
+	<color name="online_notification_center_mask">#90fdfdfd</color>
+	<color name="online_notification_center_txtcolor">#ff40464b</color>
 
     <!-- Browser -->
     <color name="online_browser_primary_color">#fffefefe</color>
@@ -197,7 +205,7 @@
     
     <!-- Compass -->
     <color name="internal_compass_themecolor">#1b232e</color>
-	<color name="internal_compass_angle_text">#ffffff</color>
+		<color name="internal_compass_angle_text">#ffffff</color>
 
     <!-- framework color -->
     <color name="online_bg_color">#fffefefe</color>  
@@ -241,7 +249,7 @@
     
     <!-- Operation Manual -->
     <color name="internal_operationmanual_themecolor">#1b232e</color>
-	<color name="internal_operationmanual_angle_text">#ffffff</color>
+		<color name="internal_operationmanual_angle_text">#ffffff</color>
 
     <!-- framework -->
     
@@ -255,6 +263,8 @@
 
     <color name="list_large_text_color_normal">#ff40464b</color>
     <color name="list_large_text_color_pressed">#ff40464b</color>
+    
+    <color name="oppo_simple_list_item_1">#ff40464b</color>
 
     <!-- Dialog -->
     <color name="oppo_alert_dialog_title_text_color">#ff40464b</color>
@@ -296,10 +306,15 @@
     <!--ScrollView-->
     <color name="scrollview_background_color">#ffebebeb</color>    
     
+    <!--DatePicker-->
+    <color name="oppo_datepicker_button_text_color">#ff40464b</color>
+    <color name="oppo_datepicker_button_text_color_selected">#ffffffff</color>
+    
     <!-- Others -->
     <color name="oppo_windowTitle_color">#00ffffff</color>
     <color name="oppo_inputmethod_text_color">#ff40464b</color>
     <color name="oppo_volume_panal_text_color">#ff40464b</color>
-		<color name="oppo_volume_panel_text_color">#ff40464b</color>
+	<color name="oppo_volume_panel_text_color">#ff40464b</color>
     <color name="oppo_checkbox_text_color">#ff40464b</color>
+    
 </resources>

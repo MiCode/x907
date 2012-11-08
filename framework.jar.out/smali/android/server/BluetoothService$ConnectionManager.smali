@@ -64,38 +64,38 @@
 
     const/4 v1, 0x0
 
-    .line 952
+    .line 964
     iput-object p1, p0, Landroid/server/BluetoothService$ConnectionManager;->this$0:Landroid/server/BluetoothService;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 953
+    .line 965
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
     iput-object v0, p0, Landroid/server/BluetoothService$ConnectionManager;->mConnectionList:Ljava/util/LinkedList;
 
-    .line 954
+    .line 966
     iput-boolean v1, p0, Landroid/server/BluetoothService$ConnectionManager;->mScoAudioActive:Z
 
-    .line 955
+    .line 967
     iput-boolean v1, p0, Landroid/server/BluetoothService$ConnectionManager;->mA2dpAudioActive:Z
 
-    .line 956
+    .line 968
     iput-boolean v2, p0, Landroid/server/BluetoothService$ConnectionManager;->mUseWifiForBtTransfers:Z
 
-    .line 958
+    .line 970
     iput v2, p0, Landroid/server/BluetoothService$ConnectionManager;->mBtPolicyHandle:I
 
-    .line 959
+    .line 971
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
     iput-object v0, p0, Landroid/server/BluetoothService$ConnectionManager;->mBtPolicyHandlesAvailable:Ljava/util/LinkedList;
 
-    .line 961
+    .line 973
     return-void
 .end method
 
@@ -105,7 +105,7 @@
     .parameter "x1"
 
     .prologue
-    .line 952
+    .line 964
     invoke-direct {p0, p1}, Landroid/server/BluetoothService$ConnectionManager;-><init>(Landroid/server/BluetoothService;)V
 
     return-void
@@ -116,7 +116,7 @@
     .parameter "x0"
 
     .prologue
-    .line 952
+    .line 964
     iget-object v0, p0, Landroid/server/BluetoothService$ConnectionManager;->mBtPolicyHandlesAvailable:Ljava/util/LinkedList;
 
     return-object v0
@@ -128,7 +128,7 @@
     .parameter "x1"
 
     .prologue
-    .line 952
+    .line 964
     invoke-direct {p0, p1}, Landroid/server/BluetoothService$ConnectionManager;->validateAmpPolicy(I)I
 
     move-result v0
@@ -141,7 +141,7 @@
     .parameter "x0"
 
     .prologue
-    .line 952
+    .line 964
     iget v0, p0, Landroid/server/BluetoothService$ConnectionManager;->mBtPolicyHandle:I
 
     return v0
@@ -152,7 +152,7 @@
     .parameter "x0"
 
     .prologue
-    .line 952
+    .line 964
     iget v0, p0, Landroid/server/BluetoothService$ConnectionManager;->mBtPolicyHandle:I
 
     add-int/lit8 v0, v0, 0x1
@@ -166,10 +166,10 @@
     .locals 7
 
     .prologue
-    .line 1083
+    .line 1095
     const/4 v3, 0x1
 
-    .line 1084
+    .line 1096
     .local v3, result:Z
     iget-object v5, p0, Landroid/server/BluetoothService$ConnectionManager;->mConnectionList:Ljava/util/LinkedList;
 
@@ -177,7 +177,7 @@
 
     move-result-object v2
 
-    .line 1085
+    .line 1097
     .local v2, it:Ljava/util/ListIterator;,"Ljava/util/ListIterator<Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;>;"
     :cond_0
     :goto_0
@@ -187,14 +187,14 @@
 
     if-eqz v5, :cond_1
 
-    .line 1086
+    .line 1098
     invoke-interface {v2}, Ljava/util/ListIterator;->next()Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;
 
-    .line 1087
+    .line 1099
     .local v4, thisBtPolicyCallback:Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;
     iget v5, v4, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mDesiredAmpPolicy:I
 
@@ -202,30 +202,30 @@
 
     move-result v0
 
-    .line 1088
+    .line 1100
     .local v0, allowedPolicy:I
     iget v5, v4, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mCurrentAmpPolicy:I
 
     if-eq v0, v5, :cond_0
 
-    .line 1090
+    .line 1102
     :try_start_0
     iget-object v5, v4, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mCallback:Landroid/bluetooth/IBluetoothCallback;
 
     invoke-interface {v5, v0}, Landroid/bluetooth/IBluetoothCallback;->onAmpPolicyChange(I)V
 
-    .line 1091
+    .line 1103
     iput v0, v4, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mCurrentAmpPolicy:I
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    .line 1092
+    .line 1104
     :catch_0
     move-exception v1
 
-    .line 1093
+    .line 1105
     .local v1, e:Landroid/os/RemoteException;
     const-string v5, "BluetoothService"
 
@@ -233,12 +233,12 @@
 
     invoke-static {v5, v6, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 1094
+    .line 1106
     const/4 v3, 0x0
 
     goto :goto_0
 
-    .line 1098
+    .line 1110
     .end local v0           #allowedPolicy:I
     .end local v1           #e:Landroid/os/RemoteException;
     .end local v4           #thisBtPolicyCallback:Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;
@@ -251,7 +251,7 @@
     .parameter "policy"
 
     .prologue
-    .line 998
+    .line 1010
     const/4 v0, 0x1
 
     if-eq p1, v0, :cond_0
@@ -260,7 +260,7 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 1002
+    .line 1014
     .end local p1
     :cond_0
     :goto_0
@@ -280,7 +280,7 @@
     .parameter "handle"
 
     .prologue
-    .line 1019
+    .line 1031
     monitor-enter p0
 
     :try_start_0
@@ -290,7 +290,7 @@
 
     move-result-object v0
 
-    .line 1020
+    .line 1032
     .local v0, it:Ljava/util/ListIterator;,"Ljava/util/ListIterator<Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;>;"
     :cond_0
     invoke-interface {v0}, Ljava/util/ListIterator;->hasNext()Z
@@ -299,37 +299,37 @@
 
     if-eqz v2, :cond_1
 
-    .line 1021
+    .line 1033
     invoke-interface {v0}, Ljava/util/ListIterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;
 
-    .line 1022
+    .line 1034
     .local v1, thisBtPolicyCallback:Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;
     iget v2, v1, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mHandle:I
 
     if-ne v2, p1, :cond_0
 
-    .line 1023
+    .line 1035
     invoke-virtual {v1, p1}, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->removeHandle(I)Z
 
-    .line 1024
+    .line 1036
     iget-object v2, p0, Landroid/server/BluetoothService$ConnectionManager;->mConnectionList:Ljava/util/LinkedList;
 
     invoke-virtual {v2, v1}, Ljava/util/LinkedList;->remove(Ljava/lang/Object;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1028
+    .line 1040
     .end local v1           #thisBtPolicyCallback:Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;
     :cond_1
     monitor-exit p0
 
     return-void
 
-    .line 1019
+    .line 1031
     .end local v0           #it:Ljava/util/ListIterator;,"Ljava/util/ListIterator<Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;>;"
     :catchall_0
     move-exception v2
@@ -344,7 +344,7 @@
     .parameter "policy"
 
     .prologue
-    .line 1006
+    .line 1018
     monitor-enter p0
 
     :try_start_0
@@ -362,11 +362,11 @@
 
     if-nez v0, :cond_1
 
-    .line 1007
+    .line 1019
     :cond_0
     const/4 v0, 0x0
 
-    .line 1009
+    .line 1021
     :goto_0
     monitor-exit p0
 
@@ -382,7 +382,7 @@
 
     goto :goto_0
 
-    .line 1006
+    .line 1018
     :catchall_0
     move-exception v0
 
@@ -397,7 +397,7 @@
     .parameter "initialPolicy"
 
     .prologue
-    .line 1013
+    .line 1025
     monitor-enter p0
 
     :try_start_0
@@ -405,13 +405,13 @@
 
     invoke-direct {v0, p0, p1, p2}, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;-><init>(Landroid/server/BluetoothService$ConnectionManager;Landroid/bluetooth/IBluetoothCallback;I)V
 
-    .line 1014
+    .line 1026
     .local v0, bpc:Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;
     iget-object v1, p0, Landroid/server/BluetoothService$ConnectionManager;->mConnectionList:Ljava/util/LinkedList;
 
     invoke-virtual {v1, v0}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
 
-    .line 1015
+    .line 1027
     invoke-virtual {v0}, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->getHandle()I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -422,7 +422,7 @@
 
     return v1
 
-    .line 1013
+    .line 1025
     .end local v0           #bpc:Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;
     :catchall_0
     move-exception v1
@@ -437,7 +437,7 @@
     .parameter "active"
 
     .prologue
-    .line 1064
+    .line 1076
     monitor-enter p0
 
     :try_start_0
@@ -463,26 +463,26 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1066
+    .line 1078
     iget-boolean v0, p0, Landroid/server/BluetoothService$ConnectionManager;->mA2dpAudioActive:Z
 
     if-eq v0, p1, :cond_0
 
-    .line 1067
+    .line 1079
     iput-boolean p1, p0, Landroid/server/BluetoothService$ConnectionManager;->mA2dpAudioActive:Z
 
-    .line 1068
+    .line 1080
     invoke-direct {p0}, Landroid/server/BluetoothService$ConnectionManager;->updateConnectionAmpPolicies()Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1070
+    .line 1082
     :cond_0
     monitor-exit p0
 
     return-void
 
-    .line 1064
+    .line 1076
     :catchall_0
     move-exception v0
 
@@ -497,12 +497,12 @@
     .parameter "policy"
 
     .prologue
-    .line 1031
+    .line 1043
     monitor-enter p0
 
     const/4 v3, 0x1
 
-    .line 1032
+    .line 1044
     .local v3, result:Z
     :try_start_0
     iget-object v5, p0, Landroid/server/BluetoothService$ConnectionManager;->mConnectionList:Ljava/util/LinkedList;
@@ -511,18 +511,18 @@
 
     move-result-object v2
 
-    .line 1033
+    .line 1045
     .local v2, it:Ljava/util/ListIterator;,"Ljava/util/ListIterator<Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;>;"
     invoke-direct {p0, p2}, Landroid/server/BluetoothService$ConnectionManager;->validateAmpPolicy(I)I
 
     move-result p2
 
-    .line 1034
+    .line 1046
     invoke-virtual {p0, p2}, Landroid/server/BluetoothService$ConnectionManager;->getEffectiveAmpPolicy(I)I
 
     move-result v0
 
-    .line 1035
+    .line 1047
     .local v0, allowedPolicy:I
     :cond_0
     invoke-interface {v2}, Ljava/util/ListIterator;->hasNext()Z
@@ -531,42 +531,42 @@
 
     if-eqz v5, :cond_1
 
-    .line 1036
+    .line 1048
     invoke-interface {v2}, Ljava/util/ListIterator;->next()Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;
 
-    .line 1037
+    .line 1049
     .local v4, thisBtPolicyCallback:Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;
     iget v5, v4, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mHandle:I
 
     if-ne v5, p1, :cond_0
 
-    .line 1038
+    .line 1050
     iget v5, v4, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mCurrentAmpPolicy:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     if-eq v5, v0, :cond_1
 
-    .line 1040
+    .line 1052
     :try_start_1
     iget-object v5, v4, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mCallback:Landroid/bluetooth/IBluetoothCallback;
 
     invoke-interface {v5, v0}, Landroid/bluetooth/IBluetoothCallback;->onAmpPolicyChange(I)V
 
-    .line 1041
+    .line 1053
     iput v0, v4, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mCurrentAmpPolicy:I
 
-    .line 1042
+    .line 1054
     iput p2, v4, Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;->mDesiredAmpPolicy:I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 1051
+    .line 1063
     .end local v4           #thisBtPolicyCallback:Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;
     :cond_1
     :goto_0
@@ -574,12 +574,12 @@
 
     return v3
 
-    .line 1043
+    .line 1055
     .restart local v4       #thisBtPolicyCallback:Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;
     :catch_0
     move-exception v1
 
-    .line 1044
+    .line 1056
     .local v1, e:Landroid/os/RemoteException;
     :try_start_2
     const-string v5, "BluetoothService"
@@ -590,13 +590,13 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 1045
+    .line 1057
     const/4 v3, 0x0
 
-    .line 1046
+    .line 1058
     goto :goto_0
 
-    .line 1031
+    .line 1043
     .end local v0           #allowedPolicy:I
     .end local v1           #e:Landroid/os/RemoteException;
     .end local v2           #it:Ljava/util/ListIterator;,"Ljava/util/ListIterator<Landroid/server/BluetoothService$ConnectionManager$BtPolicyCallback;>;"
@@ -614,7 +614,7 @@
     .parameter "active"
 
     .prologue
-    .line 1055
+    .line 1067
     monitor-enter p0
 
     :try_start_0
@@ -640,26 +640,26 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1057
+    .line 1069
     iget-boolean v0, p0, Landroid/server/BluetoothService$ConnectionManager;->mScoAudioActive:Z
 
     if-eq v0, p1, :cond_0
 
-    .line 1058
+    .line 1070
     iput-boolean p1, p0, Landroid/server/BluetoothService$ConnectionManager;->mScoAudioActive:Z
 
-    .line 1059
+    .line 1071
     invoke-direct {p0}, Landroid/server/BluetoothService$ConnectionManager;->updateConnectionAmpPolicies()Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1061
+    .line 1073
     :cond_0
     monitor-exit p0
 
     return-void
 
-    .line 1055
+    .line 1067
     :catchall_0
     move-exception v0
 
@@ -673,7 +673,7 @@
     .parameter "useWifi"
 
     .prologue
-    .line 1073
+    .line 1085
     monitor-enter p0
 
     :try_start_0
@@ -699,26 +699,26 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1075
+    .line 1087
     iget-boolean v0, p0, Landroid/server/BluetoothService$ConnectionManager;->mUseWifiForBtTransfers:Z
 
     if-eq v0, p1, :cond_0
 
-    .line 1076
+    .line 1088
     iput-boolean p1, p0, Landroid/server/BluetoothService$ConnectionManager;->mUseWifiForBtTransfers:Z
 
-    .line 1077
+    .line 1089
     invoke-direct {p0}, Landroid/server/BluetoothService$ConnectionManager;->updateConnectionAmpPolicies()Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1079
+    .line 1091
     :cond_0
     monitor-exit p0
 
     return-void
 
-    .line 1073
+    .line 1085
     :catchall_0
     move-exception v0
 

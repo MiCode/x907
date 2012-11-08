@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 711
+    .line 716
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions$8;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -41,12 +41,12 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 713
+    .line 718
     iget v1, p1, Landroid/os/Message;->what:I
 
     if-nez v1, :cond_1
 
-    .line 714
+    .line 719
     iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions$8;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
     #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mDialog:Landroid/app/AlertDialog;
@@ -56,7 +56,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 715
+    .line 720
     iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions$8;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
     #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mDialog:Landroid/app/AlertDialog;
@@ -66,18 +66,18 @@
 
     invoke-virtual {v1}, Landroid/app/AlertDialog;->dismiss()V
 
-    .line 726
+    .line 731
     :cond_0
     :goto_0
     return-void
 
-    .line 717
+    .line 722
     :cond_1
     iget v1, p1, Landroid/os/Message;->what:I
 
     if-ne v1, v0, :cond_0
 
-    .line 719
+    .line 724
     iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions$8;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
     #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mAudioManager:Landroid/media/AudioManager;
@@ -93,7 +93,7 @@
 
     if-eq v1, v2, :cond_2
 
-    .line 721
+    .line 726
     .local v0, silentModeOn:Z
     :goto_1
     iget-object v2, p0, Lcom/android/internal/policy/impl/GlobalActions$8;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
@@ -106,7 +106,7 @@
     #setter for: Lcom/android/internal/policy/impl/GlobalActions;->mSilentModeState:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
     invoke-static {v2, v1}, Lcom/android/internal/policy/impl/GlobalActions;->access$1302(Lcom/android/internal/policy/impl/GlobalActions;Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;)Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 
-    .line 722
+    .line 727
     iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions$8;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
     #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mSilentModeToggle:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;
@@ -123,7 +123,7 @@
 
     invoke-virtual {v1, v2}, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->updateState(Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;)V
 
-    .line 724
+    .line 729
     iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions$8;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
     #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mAdapter:Lcom/android/internal/policy/impl/GlobalActions$MyAdapter;
@@ -135,14 +135,14 @@
 
     goto :goto_0
 
-    .line 719
+    .line 724
     .end local v0           #silentModeOn:Z
     :cond_2
     const/4 v0, 0x0
 
     goto :goto_1
 
-    .line 721
+    .line 726
     .restart local v0       #silentModeOn:Z
     :cond_3
     sget-object v1, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;->Off:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;

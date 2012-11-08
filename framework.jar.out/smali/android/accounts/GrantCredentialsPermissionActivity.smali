@@ -67,7 +67,7 @@
     .line 139
     iget-object v1, p0, Landroid/accounts/GrantCredentialsPermissionActivity;->mInflater:Landroid/view/LayoutInflater;
 
-    const v2, 0x10900a9
+    const v2, 0x10900aa
 
     const/4 v3, 0x0
 

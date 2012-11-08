@@ -1818,7 +1818,7 @@
     .line 508
     sget-object v6, Lcom/oppo/widget/OppoAppSecurityPermissions;->mRes:Landroid/content/res/Resources;
 
-    const v7, 0x10600bf
+    const v7, 0x10600d8
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
@@ -1829,7 +1829,7 @@
     .line 509
     sget-object v6, Lcom/oppo/widget/OppoAppSecurityPermissions;->mRes:Landroid/content/res/Resources;
 
-    const v7, 0x10600bf
+    const v7, 0x10600d8
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
@@ -3573,7 +3573,7 @@
 
     sget-object v1, Lcom/oppo/widget/OppoAppSecurityPermissions;->mRes:Landroid/content/res/Resources;
 
-    const v2, 0x10600bf
+    const v2, 0x10600d8
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColorStateList(I)Landroid/content/res/ColorStateList;
 

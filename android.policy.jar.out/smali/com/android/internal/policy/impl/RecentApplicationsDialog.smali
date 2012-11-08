@@ -782,7 +782,7 @@
     invoke-virtual {v6, v7}, Landroid/view/Window;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 102
-    const v7, 0x10900c7
+    const v7, 0x10900c8
 
     invoke-virtual {p0, v7}, Lcom/android/internal/policy/impl/RecentApplicationsDialog;->setContentView(I)V
 

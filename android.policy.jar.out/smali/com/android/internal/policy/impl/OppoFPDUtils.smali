@@ -50,7 +50,7 @@
 
 .field public static final KEY_SYSTEM_PID:Ljava/lang/String; = "sys.system_pid"
 
-.field public static final KEY_TOUCH_APP_PID:Ljava/lang/String; = "sys.touch_app_pid"
+.field public static final KEY_TOUCH_APP_PID:Ljava/lang/String; = "persist.sys.touch_app_pid"
 
 .field private static final SERVER_BOOT_REASON_FPD:Ljava/lang/String; = "sys.fpd_reboot_server"
 
@@ -93,48 +93,48 @@
     .locals 3
 
     .prologue
-    .line 43
+    .line 46
     const-string v0, "android.action.exit_FPD_mode"
 
     sput-object v0, Lcom/android/internal/policy/impl/OppoFPDUtils;->ACTION_EXIT_FPD_MODE:Ljava/lang/String;
 
-    .line 44
+    .line 47
     const-string v0, "android.action.start_persist_apps"
 
     sput-object v0, Lcom/android/internal/policy/impl/OppoFPDUtils;->ACTION_START_PERSIST_APP:Ljava/lang/String;
 
-    .line 45
+    .line 48
     const-string v0, "android.action.key_power"
 
     sput-object v0, Lcom/android/internal/policy/impl/OppoFPDUtils;->ACTION_KEY_EVENT:Ljava/lang/String;
 
-    .line 46
+    .line 49
     const-string v0, "android.action.touch_activity"
 
     sput-object v0, Lcom/android/internal/policy/impl/OppoFPDUtils;->ACTION_TOUCH_ACTIVITY:Ljava/lang/String;
 
-    .line 247
+    .line 279
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
     sput-object v0, Lcom/android/internal/policy/impl/OppoFPDUtils;->sBlackPackage:Ljava/util/HashSet;
 
-    .line 248
+    .line 280
     sget-object v0, Lcom/android/internal/policy/impl/OppoFPDUtils;->sBlackPackage:Ljava/util/HashSet;
 
     const-string v1, "com.android.stk"
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 280
+    .line 312
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lcom/android/internal/policy/impl/OppoFPDUtils;->sBlackActions:Ljava/util/HashMap;
 
-    .line 281
+    .line 313
     sget-object v0, Lcom/android/internal/policy/impl/OppoFPDUtils;->sBlackActions:Ljava/util/HashMap;
 
     const-string v1, "android.intent.action.BATTERY_CHANGED"
@@ -143,7 +143,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 282
+    .line 314
     sget-object v0, Lcom/android/internal/policy/impl/OppoFPDUtils;->sBlackActions:Ljava/util/HashMap;
 
     const-string v1, "android.intent.action.BOOT_COMPLETED"
@@ -152,10 +152,10 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 490
+    .line 515
     invoke-static {}, Lcom/android/internal/policy/impl/OppoFPDUtils;->tryShowBootAnimation()V
 
-    .line 492
+    .line 517
     return-void
 .end method
 
@@ -163,10 +163,10 @@
     .locals 0
 
     .prologue
-    .line 41
+    .line 44
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 399
+    .line 424
     return-void
 .end method
 
@@ -174,7 +174,7 @@
     .locals 0
 
     .prologue
-    .line 41
+    .line 44
     invoke-static {}, Lcom/android/internal/policy/impl/OppoFPDUtils;->setSystemServerReboot()V
 
     return-void
@@ -184,7 +184,7 @@
     .locals 0
 
     .prologue
-    .line 41
+    .line 44
     invoke-static {}, Lcom/android/internal/policy/impl/OppoFPDUtils;->turnOffHDMI()V
 
     return-void
@@ -196,7 +196,7 @@
     .parameter "x1"
 
     .prologue
-    .line 41
+    .line 44
     invoke-static {p0, p1, p2}, Lcom/android/internal/policy/impl/OppoFPDUtils;->checkRadioState(Landroid/content/Context;J)V
 
     return-void
@@ -206,7 +206,17 @@
     .locals 0
 
     .prologue
-    .line 41
+    .line 44
+    invoke-static {}, Lcom/android/internal/policy/impl/OppoFPDUtils;->resetModem()V
+
+    return-void
+.end method
+
+.method static synthetic access$400()V
+    .locals 0
+
+    .prologue
+    .line 44
     invoke-static {}, Lcom/android/internal/policy/impl/OppoFPDUtils;->crashSystemServer()V
 
     return-void
@@ -217,16 +227,16 @@
     .parameter "context"
 
     .prologue
-    .line 395
+    .line 420
     new-instance v0, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;
 
     invoke-direct {v0}, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;-><init>()V
 
-    .line 396
+    .line 421
     .local v0, h:Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;
     invoke-virtual {v0, p0}, Lcom/android/internal/policy/impl/OppoFPDUtils$AirplaneModeHelper;->applyAirplaneMode(Landroid/content/Context;)V
 
-    .line 397
+    .line 422
     return-void
 .end method
 
@@ -239,12 +249,12 @@
 
     const/4 v0, 0x0
 
-    .line 358
+    .line 383
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    .line 359
+    .line 384
     .local v1, contentResolver:Landroid/content/ContentResolver;
     const-string v3, "airplane_mode_on"
 
@@ -256,38 +266,38 @@
 
     move v0, v2
 
-    .line 361
+    .line 386
     .local v0, airplaneModeOn:Z
     :cond_0
     if-nez v0, :cond_1
 
-    .line 363
+    .line 388
     const-string v3, "OppoFPDUtils"
 
     const-string v4, "need change apm to 1"
 
     invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 364
+    .line 389
     const-string v3, "airplane_mode_on"
 
     invoke-static {v1, v3, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 366
+    .line 391
     const-string v2, "OppoFPDUtils"
 
     const-string v3, "set KEY_LAST_AIRPLANE_MODE 0"
 
     invoke-static {v2, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 367
+    .line 392
     const-string v2, "persist.sys.last_apm"
 
     const-string v3, "0"
 
     invoke-static {v2, v3}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 371
+    .line 396
     :cond_1
     return-void
 .end method
@@ -297,12 +307,12 @@
     .parameter "intent"
 
     .prologue
-    .line 292
+    .line 324
     invoke-virtual {p0}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 293
+    .line 325
     .local v0, action:Ljava/lang/String;
     sget-object v2, Lcom/android/internal/policy/impl/OppoFPDUtils;->sBlackActions:Ljava/util/HashMap;
 
@@ -312,7 +322,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 295
+    .line 327
     .local v1, to:Ljava/lang/String;
     const-string v2, "OppoFPDUtils"
 
@@ -352,7 +362,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 296
+    .line 328
     const-string v2, "timestamp"
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -361,10 +371,10 @@
 
     invoke-virtual {p0, v2, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;J)Landroid/content/Intent;
 
-    .line 297
+    .line 329
     invoke-virtual {p0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 299
+    .line 331
     return-void
 .end method
 
@@ -374,7 +384,7 @@
     .parameter "animStartTime"
 
     .prologue
-    .line 167
+    .line 198
     :try_start_0
     const-string v5, "phone"
 
@@ -386,24 +396,24 @@
 
     move-result-object v3
 
-    .line 168
+    .line 199
     .local v3, phone:Lcom/android/internal/telephony/ITelephony;
     invoke-interface {v3}, Lcom/android/internal/telephony/ITelephony;->isRadioOn()Z
 
     move-result v4
 
-    .line 169
+    .line 200
     .local v4, radioOn:Z
     if-eqz v4, :cond_1
 
-    .line 171
+    .line 202
     const-string v5, "OppoFPDUtils"
 
     const-string v6, "turn off radio timeout, fall to shutdown"
 
     invoke-static {v5, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 173
+    .line 204
     const-wide/16 v5, 0x1f40
 
     add-long/2addr v5, p1
@@ -416,7 +426,7 @@
 
     sub-long v1, v5, v7
 
-    .line 174
+    .line 205
     .local v1, leftTime:J
     const-wide/16 v5, 0x0
 
@@ -424,25 +434,25 @@
 
     if-lez v5, :cond_0
 
-    .line 178
+    .line 209
     :try_start_1
     invoke-static {v1, v2}, Ljava/lang/Thread;->sleep(J)V
     :try_end_1
     .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 184
+    .line 215
     :cond_0
     :goto_0
     :try_start_2
     invoke-static {p0}, Lcom/android/internal/policy/impl/OppoFPDUtils;->vibrate(Landroid/content/Context;)V
 
-    .line 185
-    invoke-static {}, Landroid/os/Power;->shutdown()V
+    .line 217
+    invoke-static {}, Lcom/android/internal/policy/impl/OppoFPDUtils;->shutDownAtFPDMode()V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
-    .line 193
+    .line 225
     .end local v1           #leftTime:J
     .end local v3           #phone:Lcom/android/internal/telephony/ITelephony;
     .end local v4           #radioOn:Z
@@ -450,17 +460,17 @@
     :goto_1
     return-void
 
-    .line 188
+    .line 220
     :catch_0
     move-exception v0
 
-    .line 190
+    .line 222
     .local v0, e:Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_1
 
-    .line 180
+    .line 211
     .end local v0           #e:Ljava/lang/Exception;
     .restart local v1       #leftTime:J
     .restart local v3       #phone:Lcom/android/internal/telephony/ITelephony;
@@ -475,14 +485,14 @@
     .locals 2
 
     .prologue
-    .line 563
+    .line 598
     const-string v0, "sys.fpd_reboot_server"
 
     const-string v1, "0"
 
     invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 564
+    .line 599
     return-void
 .end method
 
@@ -490,7 +500,7 @@
     .locals 2
 
     .prologue
-    .line 76
+    .line 81
     const-string v0, "sys.system_pid"
 
     const-string v1, "0"
@@ -509,7 +519,7 @@
 
     invoke-static {v0}, Landroid/os/Process;->killProcess(I)V
 
-    .line 83
+    .line 88
     return-void
 .end method
 
@@ -518,12 +528,12 @@
     .parameter "t"
 
     .prologue
-    .line 270
+    .line 302
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0, p0}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
 
-    .line 271
+    .line 303
     .local v0, y:Landroid/content/Intent;
     const-string v1, "fpd_passby"
 
@@ -531,7 +541,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 272
+    .line 304
     return-object p0
 .end method
 
@@ -539,7 +549,7 @@
     .locals 2
 
     .prologue
-    .line 649
+    .line 700
     const-string v0, "ro.bootmode"
 
     const-string v1, "normal"
@@ -556,12 +566,12 @@
     .parameter "intent"
 
     .prologue
-    .line 303
+    .line 335
     invoke-virtual {p0}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 304
+    .line 336
     .local v0, action:Ljava/lang/String;
     sget-object v1, Lcom/android/internal/policy/impl/OppoFPDUtils;->sBlackActions:Ljava/util/HashMap;
 
@@ -577,21 +587,21 @@
     .parameter "t"
 
     .prologue
-    .line 223
+    .line 255
     invoke-virtual {p0}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
     move-result-object v1
 
-    .line 224
+    .line 256
     .local v1, n:Landroid/content/ComponentName;
     if-eqz v1, :cond_1
 
-    .line 226
+    .line 258
     invoke-virtual {v1}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 228
+    .line 260
     .local v2, p:Ljava/lang/String;
     sget-object v3, Lcom/android/internal/policy/impl/OppoFPDUtils;->sBlackPackage:Ljava/util/HashSet;
 
@@ -599,11 +609,11 @@
 
     move-result v0
 
-    .line 229
+    .line 261
     .local v0, forbid:Z
     if-eqz v0, :cond_0
 
-    .line 231
+    .line 263
     const-string v3, "OppoFPDUtils"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -632,7 +642,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 235
+    .line 267
     .end local v0           #forbid:Z
     .end local v2           #p:Ljava/lang/String;
     :cond_0
@@ -652,7 +662,7 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 257
+    .line 289
     :try_start_0
     const-string v3, "fpd_passby"
 
@@ -660,7 +670,7 @@
 
     move-result-object v0
 
-    .line 258
+    .line 290
     .local v0, b:Ljava/lang/String;
     if-eqz v0, :cond_0
 
@@ -674,24 +684,24 @@
 
     if-eqz v3, :cond_0
 
-    .line 263
+    .line 295
     .end local v0           #b:Ljava/lang/String;
     :goto_0
     return v2
 
-    .line 258
+    .line 290
     .restart local v0       #b:Ljava/lang/String;
     :cond_0
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 260
+    .line 292
     .end local v0           #b:Ljava/lang/String;
     :catch_0
     move-exception v1
 
-    .line 262
+    .line 294
     .local v1, e:Ljava/lang/Exception;
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
@@ -702,7 +712,7 @@
     .locals 3
 
     .prologue
-    .line 68
+    .line 73
     const-string v0, "1"
 
     const-string v1, "sys.disable_sys_keys"
@@ -725,7 +735,7 @@
     .parameter "t"
 
     .prologue
-    .line 240
+    .line 272
     const-string v0, "android.intent.category.HOME"
 
     invoke-virtual {p0, v0}, Landroid/content/Intent;->hasCategory(Ljava/lang/String;)Z
@@ -736,7 +746,7 @@
 .end method
 
 .method public static isPassByIntent(Landroid/content/Intent;)Z
-    .locals 4
+    .locals 3
     .parameter "intent"
 
     .prologue
@@ -744,76 +754,53 @@
 
     const/4 v0, 0x1
 
-    .line 310
+    .line 342
     invoke-static {}, Lcom/android/internal/policy/impl/OppoFPDUtils;->isFPDMode()Z
 
     move-result v2
 
     if-nez v2, :cond_1
 
-    .line 344
+    .line 369
     :cond_0
     :goto_0
     return v0
 
-    .line 314
+    .line 347
     :cond_1
-    const-string v2, "android.intent.action.SCREEN_OFF"
-
-    invoke-virtual {p0}, Landroid/content/Intent;->getAction()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    .line 318
-    const-string v1, "fpdmode"
-
-    const-string v2, "true"
-
-    invoke-virtual {p0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    goto :goto_0
-
-    .line 322
-    :cond_2
     invoke-static {p0}, Lcom/android/internal/policy/impl/OppoFPDUtils;->hasSpecialExtra(Landroid/content/Intent;)Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 329
+    .line 354
     invoke-static {p0}, Lcom/android/internal/policy/impl/OppoFPDUtils;->hasForbiddenActions(Landroid/content/Intent;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 356
+    invoke-static {p0}, Lcom/android/internal/policy/impl/OppoFPDUtils;->changeActions(Landroid/content/Intent;)V
+
+    goto :goto_0
+
+    .line 359
+    :cond_2
+    invoke-static {p0}, Lcom/android/internal/policy/impl/OppoFPDUtils;->hasForbiddenComponent(Landroid/content/Intent;)Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
-    .line 331
-    invoke-static {p0}, Lcom/android/internal/policy/impl/OppoFPDUtils;->changeActions(Landroid/content/Intent;)V
-
-    goto :goto_0
-
-    .line 334
-    :cond_3
-    invoke-static {p0}, Lcom/android/internal/policy/impl/OppoFPDUtils;->hasForbiddenComponent(Landroid/content/Intent;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_4
-
     move v0, v1
 
-    .line 336
+    .line 361
     goto :goto_0
 
-    .line 338
-    :cond_4
+    .line 363
+    :cond_3
     invoke-static {p0}, Lcom/android/internal/policy/impl/OppoFPDUtils;->isHome(Landroid/content/Intent;)Z
 
     move-result v2
@@ -822,7 +809,7 @@
 
     move v0, v1
 
-    .line 340
+    .line 365
     goto :goto_0
 .end method
 
@@ -830,7 +817,7 @@
     .locals 3
 
     .prologue
-    .line 555
+    .line 590
     const-string v0, "1"
 
     const-string v1, "sys.fpd_reboot_server"
@@ -852,60 +839,112 @@
     .locals 2
 
     .prologue
-    .line 199
+    .line 231
     const-string v0, "OppoFPDUtils"
 
     const-string v1, "exit fdp mode faild and touch app died, restart zygote"
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 200
+    .line 232
     const-string v0, "sys.disable_sys_keys"
 
     const-string v1, "0"
 
     invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 201
+    .line 233
     const-string v0, "sys.fpd_reboot_server"
 
     const-string v1, "0"
 
     invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 202
+    .line 234
     const-string v0, "ctl.stop"
 
     const-string v1, "tbootanim"
 
     invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 203
+    .line 235
     const-string v0, "ctl.stop"
 
     const-string v1, "bootanim"
 
     invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 204
+    .line 236
     const-string v0, "ctl.stop"
 
     const-string v1, "rbootanim"
 
     invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 207
-    const-string v0, "sys.touch_app_pid"
+    .line 239
+    const-string v0, "persist.sys.touch_app_pid"
 
     const-string v1, "0"
 
     invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 209
+    .line 241
     invoke-static {}, Lcom/android/internal/policy/impl/OppoFPDUtils;->crashSystemServer()V
 
-    .line 211
+    .line 243
     return-void
+.end method
+
+.method private static resetModem()V
+    .locals 4
+
+    .prologue
+    .line 174
+    :try_start_0
+    new-instance v1, Ljava/io/OutputStreamWriter;
+
+    new-instance v2, Ljava/io/FileOutputStream;
+
+    const-string v3, "/proc/modem_shutdown"
+
+    invoke-direct {v2, v3}, Ljava/io/FileOutputStream;-><init>(Ljava/lang/String;)V
+
+    invoke-direct {v1, v2}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;)V
+
+    .line 177
+    .local v1, osw:Ljava/io/OutputStreamWriter;
+    const/16 v2, 0x52
+
+    invoke-virtual {v1, v2}, Ljava/io/OutputStreamWriter;->append(C)Ljava/io/Writer;
+
+    .line 179
+    invoke-virtual {v1}, Ljava/io/OutputStreamWriter;->flush()V
+
+    .line 180
+    invoke-virtual {v1}, Ljava/io/OutputStreamWriter;->close()V
+
+    .line 182
+    const-string v2, "OppoFPDUtils"
+
+    const-string v3, "resetModem"
+
+    invoke-static {v2, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 189
+    :goto_0
+    return-void
+
+    .line 184
+    :catch_0
+    move-exception v0
+
+    .line 186
+    .local v0, e:Ljava/lang/Exception;
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    goto :goto_0
 .end method
 
 .method public static restartSystem(Landroid/content/Context;)V
@@ -913,14 +952,14 @@
     .parameter "c"
 
     .prologue
-    .line 111
+    .line 116
     new-instance v0, Lcom/android/internal/policy/impl/OppoFPDUtils$1;
 
     invoke-direct {v0, p0}, Lcom/android/internal/policy/impl/OppoFPDUtils$1;-><init>(Landroid/content/Context;)V
 
     invoke-virtual {v0}, Lcom/android/internal/policy/impl/OppoFPDUtils$1;->start()V
 
-    .line 160
+    .line 166
     return-void
 .end method
 
@@ -929,7 +968,7 @@
     .parameter "c"
 
     .prologue
-    .line 377
+    .line 402
     const-string v2, "persist.sys.last_apm"
 
     const-string v3, "-1"
@@ -938,7 +977,7 @@
 
     move-result-object v1
 
-    .line 379
+    .line 404
     .local v1, persist:Ljava/lang/String;
     const-string v2, "0"
 
@@ -948,19 +987,19 @@
 
     if-eqz v2, :cond_0
 
-    .line 382
+    .line 407
     const-string v2, "OppoFPDUtils"
 
     const-string v3, "need restore apm mode to 0"
 
     invoke-static {v2, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 383
+    .line 408
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 384
+    .line 409
     .local v0, contentResolver:Landroid/content/ContentResolver;
     const-string v2, "airplane_mode_on"
 
@@ -968,7 +1007,7 @@
 
     invoke-static {v0, v2, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 386
+    .line 411
     .end local v0           #contentResolver:Landroid/content/ContentResolver;
     :cond_0
     const-string v2, "OppoFPDUtils"
@@ -977,14 +1016,14 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 387
+    .line 412
     const-string v2, "persist.sys.last_apm"
 
     const-string v3, "-1"
 
     invoke-static {v2, v3}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 389
+    .line 414
     return-void
 .end method
 
@@ -992,14 +1031,37 @@
     .locals 2
 
     .prologue
-    .line 559
+    .line 594
     const-string v0, "sys.fpd_reboot_server"
 
     const-string v1, "1"
 
     invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 560
+    .line 595
+    return-void
+.end method
+
+.method public static shutDownAtFPDMode()V
+    .locals 2
+
+    .prologue
+    .line 521
+    const-string v0, "persist.sys.touch_app_pid"
+
+    const-string v1, "0"
+
+    invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 524
+    const-string v0, "shutdown directly at FPD mode"
+
+    invoke-static {v0}, Lcom/android/internal/app/ShutdownThread;->appendLogToFile(Ljava/lang/String;)V
+
+    .line 526
+    invoke-static {}, Landroid/os/Power;->shutdown()V
+
+    .line 527
     return-void
 .end method
 
@@ -1007,66 +1069,101 @@
     .locals 7
 
     .prologue
-    .line 568
+    .line 603
     const/4 v2, 0x1
 
-    .line 569
+    .line 604
     .local v2, normalBootServer:Z
     const/4 v0, 0x0
 
-    .line 570
+    .line 614
     .local v0, isFPDReboot:Z
+    const-string v4, "0"
+
+    const-string v5, "persist.sys.touch_app_pid"
+
+    const-string v6, "0"
+
+    invoke-static {v5, v6}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_0
+
+    .line 616
+    const-string v4, "persist.sys.touch_app_pid"
+
+    const-string v5, "0"
+
+    invoke-static {v4, v5}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 617
+    const-string v4, "OppoFPDUtils"
+
+    const-string v5, "unknown error may occured at the last FPD mode, enter FPD mode again"
+
+    invoke-static {v4, v5}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 618
+    invoke-static {}, Lcom/android/internal/policy/impl/OppoFPDUtils;->setSystemServerReboot()V
+
+    .line 621
+    :cond_0
     invoke-static {}, Lcom/android/internal/policy/impl/OppoFPDUtils;->isSystemServerRebooting()Z
 
     move-result v4
 
-    if-eqz v4, :cond_1
+    if-eqz v4, :cond_2
 
-    .line 572
+    .line 623
     const-string v4, "OppoFPDUtils"
 
     const-string v5, "FPD [server reboot]"
 
     invoke-static {v4, v5}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 573
+    .line 624
     const/4 v0, 0x1
 
-    .line 574
+    .line 625
     const/4 v2, 0x0
 
-    .line 611
+    .line 662
     :goto_0
-    if-nez v2, :cond_0
+    if-nez v2, :cond_1
 
+    if-eqz v0, :cond_8
+
+    .line 664
+    :cond_1
     if-eqz v0, :cond_7
 
-    .line 613
-    :cond_0
-    if-eqz v0, :cond_6
-
-    .line 632
+    .line 683
     :goto_1
-    if-eqz v2, :cond_8
+    if-eqz v2, :cond_9
 
-    .line 634
+    .line 685
     const-string v4, "sys.disable_sys_keys"
 
     const-string v5, "0"
 
     invoke-static {v4, v5}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 643
+    .line 694
     :goto_2
     return-void
 
-    .line 579
-    :cond_1
+    .line 630
+    :cond_2
     invoke-static {}, Lcom/android/internal/policy/impl/OppoFPDUtils;->getKernelBootReason()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 582
+    .line 633
     .local v1, kernelBootReason:Ljava/lang/String;
     const-string v4, "charger"
 
@@ -1074,7 +1171,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_2
+    if-nez v4, :cond_3
 
     const-string v4, "modem"
 
@@ -1082,13 +1179,13 @@
 
     move-result v4
 
-    if-eqz v4, :cond_3
+    if-eqz v4, :cond_4
 
-    .line 585
-    :cond_2
+    .line 636
+    :cond_3
     const/4 v2, 0x0
 
-    .line 586
+    .line 637
     const-string v4, "OppoFPDUtils"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -1119,17 +1216,17 @@
 
     goto :goto_0
 
-    .line 588
-    :cond_3
+    .line 639
+    :cond_4
     const-string v4, "rtc"
 
     invoke-virtual {v4, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
-    if-eqz v4, :cond_5
+    if-eqz v4, :cond_6
 
-    .line 590
+    .line 641
     const-string v4, "persist.sys.poweralarm.target"
 
     const-string v5, "0"
@@ -1138,7 +1235,7 @@
 
     move-result-object v3
 
-    .line 591
+    .line 642
     .local v3, targetPackage:Ljava/lang/String;
     const-string v4, "OppoFPDUtils"
 
@@ -1168,32 +1265,32 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 592
+    .line 643
     const-string v4, "com.android.settings"
 
     invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
-    if-eqz v4, :cond_4
+    if-eqz v4, :cond_5
 
-    .line 595
+    .line 646
     const/4 v2, 0x1
 
     goto :goto_0
 
-    .line 599
-    :cond_4
+    .line 650
+    :cond_5
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 605
+    .line 656
     .end local v3           #targetPackage:Ljava/lang/String;
-    :cond_5
+    :cond_6
     const/4 v2, 0x1
 
-    .line 606
+    .line 657
     const-string v4, "OppoFPDUtils"
 
     const-string v5, "FPD [normal boot]"
@@ -1202,16 +1299,16 @@
 
     goto/16 :goto_0
 
-    .line 621
+    .line 672
     .end local v1           #kernelBootReason:Ljava/lang/String;
-    :cond_6
+    :cond_7
     const-string v4, "ctl.start"
 
     const-string v5, "bootanim"
 
     invoke-static {v4, v5}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 622
+    .line 673
     const-string v4, "OppoFPDUtils"
 
     const-string v5, "animation bootanim"
@@ -1220,15 +1317,15 @@
 
     goto/16 :goto_1
 
-    .line 627
-    :cond_7
+    .line 678
+    :cond_8
     const-string v4, "ctl.start"
 
     const-string v5, "tbootanim"
 
     invoke-static {v4, v5}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 628
+    .line 679
     const-string v4, "OppoFPDUtils"
 
     const-string v5, "animation tbootanim"
@@ -1237,8 +1334,8 @@
 
     goto/16 :goto_1
 
-    .line 638
-    :cond_8
+    .line 689
+    :cond_9
     const-string v4, "sys.disable_sys_keys"
 
     const-string v5, "1"
@@ -1252,7 +1349,7 @@
     .locals 4
 
     .prologue
-    .line 498
+    .line 533
     :try_start_0
     const-string v2, "power"
 
@@ -1264,21 +1361,21 @@
 
     move-result-object v1
 
-    .line 499
+    .line 534
     .local v1, pm:Landroid/os/IPowerManager;
     invoke-interface {v1}, Landroid/os/IPowerManager;->turnoffBrightness()V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 506
+    .line 541
     :goto_0
     return-void
 
-    .line 501
+    .line 536
     :catch_0
     move-exception v0
 
-    .line 503
+    .line 538
     .local v0, e:Landroid/os/RemoteException;
     const-string v2, "OppoFPDUtils"
 
@@ -1293,7 +1390,7 @@
     .locals 4
 
     .prologue
-    .line 88
+    .line 93
     const-string v2, "hdmi"
 
     invoke-static {v2}, Landroid/os/ServiceManager;->checkService(Ljava/lang/String;)Landroid/os/IBinder;
@@ -1304,17 +1401,17 @@
 
     move-result-object v1
 
-    .line 92
+    .line 97
     .local v1, hdmi:Landroid/os/IHDMIService;
     if-eqz v1, :cond_0
 
-    .line 95
+    .line 100
     const/4 v2, 0x0
 
     :try_start_0
     invoke-interface {v1, v2}, Landroid/os/IHDMIService;->setHDMIOutput(Z)V
 
-    .line 96
+    .line 101
     const-string v2, "OppoFPDUtils"
 
     const-string v3, "setHDMIOutput false"
@@ -1323,16 +1420,16 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 106
+    .line 111
     :cond_0
     :goto_0
     return-void
 
-    .line 100
+    .line 105
     :catch_0
     move-exception v0
 
-    .line 102
+    .line 107
     .local v0, ex:Landroid/os/RemoteException;
     const-string v2, "OppoFPDUtils"
 
@@ -1347,7 +1444,7 @@
     .locals 4
 
     .prologue
-    .line 525
+    .line 560
     const-string v2, "mount"
 
     invoke-static {v2}, Landroid/os/ServiceManager;->checkService(Ljava/lang/String;)Landroid/os/IBinder;
@@ -1358,21 +1455,21 @@
 
     move-result-object v1
 
-    .line 529
+    .line 564
     .local v1, mount:Landroid/os/storage/IMountService;
     if-eqz v1, :cond_0
 
-    .line 531
+    .line 566
     const/4 v2, 0x0
 
     :try_start_0
     invoke-interface {v1, v2}, Landroid/os/storage/IMountService;->shutdown(Landroid/os/storage/IMountShutdownObserver;)V
 
-    .line 543
+    .line 578
     :goto_0
     return-void
 
-    .line 535
+    .line 570
     :cond_0
     const-string v2, "OppoFPDUtils"
 
@@ -1384,11 +1481,11 @@
 
     goto :goto_0
 
-    .line 538
+    .line 573
     :catch_0
     move-exception v0
 
-    .line 540
+    .line 575
     .local v0, e:Ljava/lang/Exception;
     const-string v2, "OppoFPDUtils"
 
@@ -1404,10 +1501,10 @@
     .parameter "c"
 
     .prologue
-    .line 510
+    .line 545
     const-wide/16 v0, 0xc8
 
-    .line 511
+    .line 546
     .local v0, milliseconds:J
     const-string v3, "vibrator"
 
@@ -1417,21 +1514,21 @@
 
     check-cast v2, Landroid/os/Vibrator;
 
-    .line 512
+    .line 547
     .local v2, vib:Landroid/os/Vibrator;
     invoke-virtual {v2, v0, v1}, Landroid/os/Vibrator;->vibrate(J)V
 
-    .line 515
+    .line 550
     :try_start_0
     invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 521
+    .line 556
     :goto_0
     return-void
 
-    .line 517
+    .line 552
     :catch_0
     move-exception v3
 

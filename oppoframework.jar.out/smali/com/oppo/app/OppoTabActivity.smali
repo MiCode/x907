@@ -74,7 +74,7 @@
     if-nez v1, :cond_0
 
     .line 196
-    const v1, 0x10900f1
+    const v1, 0x10900f2
 
     invoke-virtual {p0, v1}, Lcom/oppo/app/OppoTabActivity;->setContentView(I)V
 

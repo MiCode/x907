@@ -78,7 +78,7 @@
     .locals 1
 
     .prologue
-    .line 2148
+    .line 2175
     const-string v0, "content://telephony/carriers"
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -94,7 +94,7 @@
     .locals 0
 
     .prologue
-    .line 2144
+    .line 2171
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void

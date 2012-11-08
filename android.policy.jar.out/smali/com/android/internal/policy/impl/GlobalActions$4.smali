@@ -26,7 +26,7 @@
     .parameter "x1"
 
     .prologue
-    .line 244
+    .line 249
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions$4;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
     invoke-direct {p0, p2, p3}, Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;-><init>(II)V
@@ -40,21 +40,21 @@
     .locals 3
 
     .prologue
-    .line 247
+    .line 252
     const-string v0, "GlobalActions"
 
     const-string v1, "Rebooting device.."
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 248
+    .line 253
     const-string v0, "ro.SHUT_DOWN_DEVICE"
 
     const-string v1, "1"
 
     invoke-static {v0, v1}, Ljava/lang/System;->setProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 249
+    .line 254
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$4;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
     #getter for: Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
@@ -68,7 +68,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/android/internal/app/ShutdownThread;->reboot(Landroid/content/Context;Ljava/lang/String;Z)V
 
-    .line 250
+    .line 255
     return-void
 .end method
 
@@ -76,7 +76,7 @@
     .locals 1
 
     .prologue
-    .line 257
+    .line 262
     const/4 v0, 0x1
 
     return v0
@@ -86,7 +86,7 @@
     .locals 1
 
     .prologue
-    .line 253
+    .line 258
     const/4 v0, 0x1
 
     return v0
