@@ -28,6 +28,17 @@ if [ $1 = "MiuiGallery" ];then
 fi
 
 if [ $1 = "Settings" ];then
+
+    cp $1/BatteryHistoryChart.patch out/
+    cd out
+    $GIT_APPLY BatteryHistoryChart.patch
+    cd ..
+    for file in `find $2 -name *.rej`
+    do
+	echo "Settings patch fail"
+        exit 1
+    done
+
 	echo "replace functions"
 	$PORT_ROOT/x907/replace_functions_IccCard.sh $2
 fi
