@@ -2,9 +2,9 @@
 <ScrollView android:background="@android:color/alert_dialog_content_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/oppo_alert_dialog_content_text_color" android:id="@id/music_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
-        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/oppo_alert_dialog_content_text_color" android:id="@id/image_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
-        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/oppo_alert_dialog_content_text_color" android:id="@id/vedio_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
-        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/oppo_alert_dialog_content_text_color" android:id="@id/other_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/music_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/image_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/vedio_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/other_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
     </LinearLayout>
 </ScrollView>
