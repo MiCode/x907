@@ -53,7 +53,7 @@ name="OppoBluetooth.apk" certificate="build/target/product/security/platform.x50
 name="OppoCalculator.apk" certificate="PRESIGNED" private_key=""
 name="OppoCalendar.apk" certificate="PRESIGNED" private_key=""
 name="OppoCalendarWidget.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
-name="OppoCamera.apk" certificate="PRESIGNED" private_key=""
+name="OppoCamera.apk" certificate="build/target/product/security/testkey.x509.pem" private_key="build/target/product/security/testkey.pk8"
 name="OppoClock.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
 name="OppoCompass.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
 name="OppoContactWidget.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
