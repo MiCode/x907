@@ -419,7 +419,7 @@
     :cond_2
     invoke-direct {p0}, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->initLockByFindDevice()V
 
-    invoke-direct {p0}, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->hideKeyBoardViewIfNeed()V
+    #invoke-direct {p0}, Lcom/android/internal/policy/impl/PasswordUnlockScreen;->hideKeyBoardViewIfNeed()V
 
     return-void
 
