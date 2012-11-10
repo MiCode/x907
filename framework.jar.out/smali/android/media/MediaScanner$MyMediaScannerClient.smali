@@ -1009,7 +1009,7 @@
 
     move-result v19
 
-    if-eqz v19, :cond_16
+    if-eqz v19, :cond_7
 
     .line 901
     move-object/from16 v0, p0
@@ -1020,34 +1020,6 @@
 
     #getter for: Landroid/media/MediaScanner;->mAudioUri:Landroid/net/Uri;
     invoke-static/range {v19 .. v19}, Landroid/media/MediaScanner;->access$2100(Landroid/media/MediaScanner;)Landroid/net/Uri;
-
-    move-result-object v14
-
-    goto/16 :goto_2
-
-    .line 902
-    :cond_16
-    move-object/from16 v0, p0
-
-    iget v0, v0, Landroid/media/MediaScanner$MyMediaScannerClient;->mFileType:I
-
-    move/from16 v19, v0
-
-    invoke-static/range {v19 .. v19}, Landroid/media/MediaFile;->isOtherFileType(I)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_7
-
-    .line 903
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Landroid/media/MediaScanner$MyMediaScannerClient;->this$0:Landroid/media/MediaScanner;
-
-    move-object/from16 v19, v0
-
-    #getter for: Landroid/media/MediaScanner;->mOtherFileUri:Landroid/net/Uri;
-    invoke-static/range {v19 .. v19}, Landroid/media/MediaScanner;->access$2200(Landroid/media/MediaScanner;)Landroid/net/Uri;
 
     move-result-object v14
 
