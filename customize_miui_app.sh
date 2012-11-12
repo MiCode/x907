@@ -42,3 +42,7 @@ if [ $1 = "Settings" ];then
 	echo "replace functions"
 	$PORT_ROOT/x907/replace_functions_IccCard.sh $2
 fi
+
+if [ $1 = "ThemeManager" ];then
+	$XMLMERGYTOOL $1/res/values $2/res/values
+fi
