@@ -53,6 +53,9 @@
 
 .field protected final mUpdateMonitor:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
+.field protected mBackSpaceButton:Landroid/view/View;
+
+.field protected mOkButton:Landroid/widget/TextView;
 
 # direct methods
 .method static constructor <clinit>()V
@@ -98,10 +101,8 @@
 
     const/4 v2, 0x0
 
-    .line 111
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
-    .line 90
     const/16 v0, 0x8
 
     new-array v0, v0, [I
@@ -110,47 +111,36 @@
 
     iput-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mEnteredPin:[I
 
-    .line 91
     iput v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mEnteredDigits:I
 
-    .line 93
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mSimUnlockProgressDialog:Landroid/app/ProgressDialog;
 
-    .line 180
     new-instance v0, Lcom/android/internal/policy/impl/SimUnlockScreen$2;
 
     invoke-direct {v0, p0}, Lcom/android/internal/policy/impl/SimUnlockScreen$2;-><init>(Lcom/android/internal/policy/impl/SimUnlockScreen;)V
 
     iput-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mHandler:Landroid/os/Handler;
 
-    .line 112
     iput-object p3, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mUpdateMonitor:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
-    .line 113
     iput-object p4, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mCallback:Lcom/android/internal/policy/impl/KeyguardScreenCallback;
 
-    .line 114
     iput-object p1, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mContext:Landroid/content/Context;
 
-    .line 116
     iget v0, p2, Landroid/content/res/Configuration;->orientation:I
 
     iput v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mCreationOrientation:I
 
-    .line 117
     iget v0, p2, Landroid/content/res/Configuration;->hardKeyboardHidden:I
 
     iput v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mKeyboardHidden:I
 
-    .line 118
     iput-object p5, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
-    .line 119
     invoke-virtual {p0, p1}, Lcom/android/internal/policy/impl/SimUnlockScreen;->layoutType(Landroid/content/Context;)V
 
-    .line 120
     const v0, 0x1020358
 
     invoke-virtual {p0, v0}, Lcom/android/internal/policy/impl/SimUnlockScreen;->findViewById(I)Landroid/view/View;
@@ -161,7 +151,6 @@
 
     iput-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mHeaderText:Landroid/widget/TextView;
 
-    .line 121
     const v0, 0x102035a
 
     invoke-virtual {p0, v0}, Lcom/android/internal/policy/impl/SimUnlockScreen;->findViewById(I)Landroid/view/View;
@@ -172,24 +161,46 @@
 
     iput-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mPinText:Landroid/widget/TextView;
 
-    .line 134
+    const v0, 0x102035b
+
+    invoke-virtual {p0, v0}, Lcom/android/internal/policy/impl/SimUnlockScreen;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mBackSpaceButton:Landroid/view/View;
+
+    iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mBackSpaceButton:Landroid/view/View;
+
+    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    const v0, 0x102033e
+
+    invoke-virtual {p0, v0}, Lcom/android/internal/policy/impl/SimUnlockScreen;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mOkButton:Landroid/widget/TextView;
+
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mHeaderText:Landroid/widget/TextView;
 
     const v1, 0x10402d8
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 135
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mPinText:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setFocusable(Z)V
 
-    .line 136
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mPinText:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setLongClickable(Z)V
 
-    .line 146
+    iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mOkButton:Landroid/widget/TextView;
+    
+    invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
     move-result-object v0
@@ -200,7 +211,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 147
     new-instance v0, Lcom/android/internal/policy/impl/MSimKeyguardStatusViewManager;
 
     move-object v1, p0
@@ -215,39 +225,32 @@
 
     iput-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mKeyguardStatusViewManager:Lcom/android/internal/policy/impl/KeyguardStatusViewManager;
 
-    .line 154
     :goto_0
     invoke-virtual {p0, v5}, Lcom/android/internal/policy/impl/SimUnlockScreen;->setFocusableInTouchMode(Z)V
 
-    .line 157
     new-instance v6, Landroid/content/IntentFilter;
 
     invoke-direct {v6}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 158
     .local v6, filter:Landroid/content/IntentFilter;
     const-string v0, "android.intent.action.SIM_STATE_CHANGED"
 
     invoke-virtual {v6, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 160
     new-instance v0, Lcom/android/internal/policy/impl/SimUnlockScreen$1;
 
     invoke-direct {v0, p0}, Lcom/android/internal/policy/impl/SimUnlockScreen$1;-><init>(Lcom/android/internal/policy/impl/SimUnlockScreen;)V
 
     iput-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mAirModeChangedBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 174
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mAirModeChangedBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1, v6}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 176
     return-void
 
-    .line 150
     .end local v6           #filter:Landroid/content/IntentFilter;
     :cond_0
     new-instance v0, Lcom/android/internal/policy/impl/KeyguardStatusViewManager;
@@ -266,7 +269,6 @@
 
     goto :goto_0
 
-    .line 90
     :array_0
     .array-data 0x4
         0x0t 0x0t 0x0t 0x0t
@@ -460,13 +462,14 @@
 .end method
 
 .method protected layoutType(Landroid/content/Context;)V
-    .locals 5
+    .locals 4
     .parameter "context"
 
     .prologue
-    const/4 v4, 0x1
+    const/4 v1, 0x0
+    
+    const/4 v2, 0x1
 
-    .line 193
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
@@ -475,70 +478,24 @@
     .local v0, inflater:Landroid/view/LayoutInflater;
     iget v3, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mKeyboardHidden:I
 
-    if-ne v3, v4, :cond_1
+    if-ne v3, v2, :cond_0
 
-    .line 197
-    const v3, 0x1090092
+    const v3, 0x109006f
 
-    invoke-virtual {v0, v3, p0, v4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    .line 204
-    const v3, 0x10203ac
-
-    invoke-virtual {p0, v3}, Lcom/android/internal/policy/impl/SimUnlockScreen;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/oppo/widget/OppoShortCutButton;
-
-    .line 205
-    .local v1, landShortCutBtn:Lcom/oppo/widget/OppoShortCutButton;
-    if-eqz v1, :cond_0
-
-    .line 206
-    new-instance v3, Lcom/android/internal/policy/impl/SimUnlockScreen$3;
-
-    invoke-direct {v3, p0}, Lcom/android/internal/policy/impl/SimUnlockScreen$3;-><init>(Lcom/android/internal/policy/impl/SimUnlockScreen;)V
-
-    invoke-virtual {v1, v3}, Lcom/oppo/widget/OppoShortCutButton;->setShortButtonListener(Lcom/oppo/widget/OppoShortCutButton$OnShortCutButtonListener;)V
-
-    .line 253
-    .end local v1           #landShortCutBtn:Lcom/oppo/widget/OppoShortCutButton;
-    :cond_0
+    invoke-virtual {v0, v3, p0, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    
     :goto_0
     return-void
 
-    .line 225
-    :cond_1
-    const v3, 0x1090093
-
-    invoke-virtual {v0, v3, p0, v4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    .line 226
+    :cond_0
+    const v3, 0x1090070
+    
+    invoke-virtual {v0, v3, p0, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    
     new-instance v3, Lcom/android/internal/policy/impl/SimUnlockScreen$TouchInput;
 
     invoke-direct {v3, p0}, Lcom/android/internal/policy/impl/SimUnlockScreen$TouchInput;-><init>(Lcom/android/internal/policy/impl/SimUnlockScreen;)V
-
-    .line 232
-    const v3, 0x1020362
-
-    invoke-virtual {p0, v3}, Lcom/android/internal/policy/impl/SimUnlockScreen;->findViewById(I)Landroid/view/View;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/oppo/widget/OppoShortCutButton;
-
-    .line 233
-    .local v2, portShortCutBtn:Lcom/oppo/widget/OppoShortCutButton;
-    if-eqz v2, :cond_0
-
-    .line 234
-    new-instance v3, Lcom/android/internal/policy/impl/SimUnlockScreen$4;
-
-    invoke-direct {v3, p0}, Lcom/android/internal/policy/impl/SimUnlockScreen$4;-><init>(Lcom/android/internal/policy/impl/SimUnlockScreen;)V
-
-    invoke-virtual {v2, v3}, Lcom/oppo/widget/OppoShortCutButton;->setShortButtonListener(Lcom/oppo/widget/OppoShortCutButton$OnShortCutButtonListener;)V
-
+    
     goto :goto_0
 .end method
 
@@ -567,12 +524,57 @@
 .end method
 
 .method public onClick(Landroid/view/View;)V
-    .locals 0
+    .locals 3
     .parameter "v"
 
     .prologue
-    .line 347
+    iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mBackSpaceButton:Landroid/view/View;
+
+    if-ne p1, v2, :cond_2
+
+    iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mPinText:Landroid/widget/TextView;
+
+    invoke-virtual {v2}, Landroid/widget/TextView;->getEditableText()Landroid/text/Editable;
+
+    move-result-object v0
+
+    .local v0, digits:Landroid/text/Editable;
+    invoke-interface {v0}, Landroid/text/Editable;->length()I
+
+    move-result v1
+
+    .local v1, len:I
+    if-lez v1, :cond_0
+
+    add-int/lit8 v2, v1, -0x1
+
+    invoke-interface {v0, v2, v1}, Landroid/text/Editable;->delete(II)Landroid/text/Editable;
+
+    iget v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mEnteredDigits:I
+
+    add-int/lit8 v2, v2, -0x1
+
+    iput v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mEnteredDigits:I
+
+    :cond_0
+    iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mCallback:Lcom/android/internal/policy/impl/KeyguardScreenCallback;
+
+    invoke-interface {v2}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->pokeWakelock()V
+
+    .end local v0           #digits:Landroid/text/Editable;
+    .end local v1           #len:I
+    :cond_1
+    :goto_0
     return-void
+
+    :cond_2
+    iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mOkButton:Landroid/widget/TextView;
+
+    if-ne p1, v2, :cond_1
+
+    invoke-virtual {p0}, Lcom/android/internal/policy/impl/SimUnlockScreen;->checkPin()V
+
+    goto :goto_0
 .end method
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
@@ -591,71 +593,54 @@
 .end method
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
-    .locals 5
+    .locals 3
     .parameter "keyCode"
     .parameter "event"
 
     .prologue
-    const/4 v2, 0x0
-
     const/4 v1, 0x1
 
-    .line 427
-    const/4 v3, 0x4
+    const/4 v2, 0x4
 
-    if-ne p1, v3, :cond_1
+    if-ne p1, v2, :cond_1
 
-    .line 430
-    iget-object v3, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mPinText:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mCallback:Lcom/android/internal/policy/impl/KeyguardScreenCallback;
 
-    const-string v4, ""
+    invoke-interface {v2}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->goToLockScreen()V
 
-    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 431
-    iput v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mEnteredDigits:I
-
-    .line 453
     :cond_0
     :goto_0
     return v1
 
-    .line 435
     :cond_1
-    sget-object v3, Lcom/android/internal/policy/impl/SimUnlockScreen;->DIGITS:[C
+    sget-object v2, Lcom/android/internal/policy/impl/SimUnlockScreen;->DIGITS:[C
 
-    invoke-virtual {p2, v3}, Landroid/view/KeyEvent;->getMatch([C)C
+    invoke-virtual {p2, v2}, Landroid/view/KeyEvent;->getMatch([C)C
 
     move-result v0
 
-    .line 436
     .local v0, match:C
     if-eqz v0, :cond_2
 
-    .line 437
     add-int/lit8 v2, v0, -0x30
 
     invoke-virtual {p0, v2}, Lcom/android/internal/policy/impl/SimUnlockScreen;->reportDigit(I)V
 
     goto :goto_0
 
-    .line 440
     :cond_2
-    const/16 v3, 0x43
+    const/16 v2, 0x43
 
-    if-ne p1, v3, :cond_3
+    if-ne p1, v2, :cond_3
 
-    .line 441
     iget v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mEnteredDigits:I
 
     if-lez v2, :cond_0
 
-    .line 442
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mPinText:Landroid/widget/TextView;
 
     invoke-virtual {v2, p1, p2}, Landroid/widget/TextView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
-    .line 443
     iget v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreen;->mEnteredDigits:I
 
     add-int/lit8 v2, v2, -0x1
@@ -664,21 +649,18 @@
 
     goto :goto_0
 
-    .line 448
     :cond_3
-    const/16 v3, 0x42
+    const/16 v2, 0x42
 
-    if-ne p1, v3, :cond_4
+    if-ne p1, v2, :cond_4
 
-    .line 449
     invoke-virtual {p0}, Lcom/android/internal/policy/impl/SimUnlockScreen;->checkPin()V
 
     goto :goto_0
 
     :cond_4
-    move v1, v2
+    const/4 v1, 0x0
 
-    .line 453
     goto :goto_0
 .end method
 

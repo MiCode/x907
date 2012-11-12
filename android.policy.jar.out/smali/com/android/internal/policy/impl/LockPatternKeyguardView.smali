@@ -1428,7 +1428,7 @@
     .sparse-switch
         0x0 -> :sswitch_2
         0x10000 -> :sswitch_2
-        0x20000 -> :sswitch_0
+        0x20000 -> :sswitch_1
         0x40000 -> :sswitch_1
         0x50000 -> :sswitch_1
         0x60000 -> :sswitch_1

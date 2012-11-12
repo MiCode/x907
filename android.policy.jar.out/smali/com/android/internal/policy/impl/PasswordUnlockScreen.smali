@@ -372,9 +372,9 @@
     if-eqz v1, :cond_1
 
     .line 228
-    const/4 v1, 0x0
+    #const/4 v1, 0x0
 
-    invoke-virtual {v12, v1}, Landroid/view/View;->setVisibility(I)V
+    #invoke-virtual {v12, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 229
     const/4 v7, 0x1
