@@ -636,7 +636,7 @@
     if-nez p1, :cond_2
 
     .line 484
-    const-string v1, "Notifying registrants: PERSO_LOCKED"
+    const-string v1, "Notifying registrants: NETWORK_LOCKED"
 
     invoke-direct {p0, v1}, Lcom/android/internal/telephony/UiccCardApplication;->log(Ljava/lang/String;)V
 
@@ -662,7 +662,7 @@
     .restart local v0       #ar:Landroid/os/AsyncResult;
     :cond_2
     :try_start_2
-    const-string v1, "Notifying 1 registrant: PERSO_LOCKED"
+    const-string v1, "Notifying 1 registrant: NETWORK_LOCKED"
 
     invoke-direct {p0, v1}, Lcom/android/internal/telephony/UiccCardApplication;->log(Ljava/lang/String;)V
 
