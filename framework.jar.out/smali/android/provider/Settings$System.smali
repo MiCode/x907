@@ -2090,20 +2090,6 @@
     .parameter "value"
 
     .prologue
-    .line 940
-    const-string/jumbo v0, "stay_on_while_plugged_in"
-
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 941
-    const/4 p2, 0x0
-
-    .line 944
-    :cond_0
     invoke-static {p2}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
     move-result-object v0
