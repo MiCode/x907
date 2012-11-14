@@ -995,7 +995,7 @@
         0x2t 0x0t 0x0t 0x0t
         0x3t 0x0t 0x0t 0x0t
         0x4t 0x0t 0x0t 0x0t
-        0x5t 0x0t 0x0t 0x0t
+        0x2t 0x0t 0x0t 0x0t
         0x6t 0x0t 0x0t 0x0t
         0x1t 0x0t 0x0t 0x0t
         0x0t 0x0t 0x0t 0x0t
@@ -8173,6 +8173,8 @@
 
     move-result-object v2
 
+    goto :goto_miui_0
+
     .line 1272
     .local v2, lastAudibleSettingName:Ljava/lang/String;
     if-ne v11, v7, :cond_0
@@ -8264,6 +8266,7 @@
     .end local v0           #i:I
     .end local v5           #size:I
     :cond_0
+    :goto_miui_0
     iget-object v8, p0, Landroid/media/AudioService;->mContentResolver:Landroid/content/ContentResolver;
 
     sget-object v9, Landroid/media/AudioManager;->DEFAULT_STREAM_VOLUME:[I

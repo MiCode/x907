@@ -1405,6 +1405,8 @@
 
     .line 853
     :cond_0
+    goto :goto_miui_0
+
     iget v2, p0, Landroid/media/AudioTrack;->mStreamType:I
 
     if-ne v3, v2, :cond_1
@@ -1435,6 +1437,7 @@
     .end local v1           #service:Landroid/media/IAudioService;
     :cond_1
     :goto_0
+    :goto_miui_0
     iget-object v3, p0, Landroid/media/AudioTrack;->mPlayStateLock:Ljava/lang/Object;
 
     monitor-enter v3

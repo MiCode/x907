@@ -231,6 +231,7 @@
     .line 783
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
+    goto :goto_miui_0
     .line 785
     if-ne v2, p1, :cond_0
 
@@ -260,6 +261,7 @@
     .end local v1           #service:Landroid/media/IAudioService;
     :cond_0
     :goto_0
+    :goto_miui_0
     invoke-direct {p0, p1, p2}, Landroid/media/ToneGenerator;->native_setup(II)V
 
     .line 801

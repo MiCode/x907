@@ -1387,7 +1387,8 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 1399
+    goto :goto_miui_0
+
     if-ne v2, p1, :cond_0
 
     .line 1401
@@ -1416,6 +1417,7 @@
     .end local v1           #service:Landroid/media/IAudioService;
     :cond_0
     :goto_0
+    :goto_miui_0
     invoke-virtual {p0, p1}, Landroid/media/MediaPlayer;->setAudioStreamType_l(I)V
 
     .line 1414

@@ -1600,6 +1600,8 @@
     const/4 v2, 0x1
 
     :try_start_0
+    goto :goto_miui_0
+
     sget-object v3, Landroid/media/AudioManager;->DEFAULT_STREAM_VOLUME:[I
 
     const/4 v4, 0x1
@@ -1610,7 +1612,7 @@
 
     invoke-interface {v1, v2, v3, v4}, Landroid/media/IAudioService;->setStreamVolume(III)V
 
-    .line 1421
+    :goto_miui_0
     invoke-interface {v1, p1}, Landroid/media/IAudioService;->playSoundEffect(I)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1677,6 +1679,8 @@
     const/4 v2, 0x1
 
     :try_start_0
+    goto :goto_miui_0
+
     sget-object v3, Landroid/media/AudioManager;->DEFAULT_STREAM_VOLUME:[I
 
     const/4 v4, 0x1
@@ -1687,7 +1691,7 @@
 
     invoke-interface {v1, v2, v3, v4}, Landroid/media/IAudioService;->setStreamVolume(III)V
 
-    .line 1456
+    :goto_miui_0
     invoke-interface {v1, p1, p2}, Landroid/media/IAudioService;->playSoundEffectVolume(IF)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0

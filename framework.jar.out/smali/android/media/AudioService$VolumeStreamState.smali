@@ -83,6 +83,8 @@
 
     iput v1, p0, Landroid/media/AudioService$VolumeStreamState;->mIndexMax:I
 
+    goto :goto_miui_0
+
     .line 1939
     const/4 v1, 0x1
 
@@ -157,6 +159,7 @@
 
     .line 1947
     :cond_0
+    :goto_miui_0
     iget-object v1, p0, Landroid/media/AudioService$VolumeStreamState;->mVolumeIndexSettingName:Ljava/lang/String;
 
     sget-object v2, Landroid/media/AudioManager;->DEFAULT_STREAM_VOLUME:[I
