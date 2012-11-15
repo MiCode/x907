@@ -822,7 +822,7 @@
     iput-wide v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mLastHomeKeyTime:J
 
     .line 568
-    iput-boolean v4, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mHomeKeyDoubleClickEnable:Z
+    iput-boolean v3, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mHomeKeyDoubleClickEnable:Z
 
     .line 574
     new-instance v0, Lcom/android/internal/policy/impl/PhoneWindowManager$3;
