@@ -105,3 +105,4 @@ name="VideoGallery.apk" certificate="build/target/product/security/media.x509.pe
 name="VpnDialogs.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
 name="WAPPushManager.apk" certificate="PRESIGNED" private_key=""
 name="Wiper.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
+name="StockSettings.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"

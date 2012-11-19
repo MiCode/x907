@@ -49,3 +49,6 @@ local-zip-misc:
 	rm -rf out/ZIP/system/media/poweroff.mp3
 	rm -rf out/ZIP/system/media/poweron.mp3
 	rm -rf out/ZIP/system/media/rbootanimation.zip
+
+	@echo add StockSettings.apk
+	cp other/StockSettings.apk out/ZIP/system/app/StockSettings.apk

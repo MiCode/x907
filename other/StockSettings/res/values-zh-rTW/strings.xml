@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stock_settings">附加設置</string>
+    <string name="power_save_mode">自動調節螢幕電量</string>
+    <string name="intelligent_battery_charger_title">智慧充電模式</string>
+    <string name="intelligent_battery_charger_summary_on">當手機電量低於80%時，保護套給手機電池充電</string>
+    <string name="intelligent_battery_charger_summary_off">保護套給手機電池充電至100%</string>
+    <string name="intelligent_battery_supply_title">手動充電模式</string>
+    <string name="intelligent_battery_supply_summary_on">保護套內電池給手機充電</string>
+    <string name="intelligent_battery_supply_summary_off">保護套內電池停止給手機充電</string>
+</resources>

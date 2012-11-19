@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="0">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="700" android:drawable="@drawable/battery_charger_01" />
+            <item android:duration="600" android:drawable="@drawable/battery_charger_05" />
+            <item android:duration="600" android:drawable="@drawable/battery_charger_10" />
+            <item android:duration="600" android:drawable="@drawable/battery_charger_15" />
+            <item android:duration="600" android:drawable="@drawable/battery_charger_20" />
+            <item android:duration="600" android:drawable="@drawable/battery_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="5">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="700" android:drawable="@drawable/battery_charger_01" />
+            <item android:duration="600" android:drawable="@drawable/battery_charger_05" />
+            <item android:duration="600" android:drawable="@drawable/battery_charger_10" />
+            <item android:duration="600" android:drawable="@drawable/battery_charger_15" />
+            <item android:duration="600" android:drawable="@drawable/battery_charger_20" />
+            <item android:duration="600" android:drawable="@drawable/battery_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="20">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="800" android:drawable="@drawable/battery_charger_05" />
+            <item android:duration="600" android:drawable="@drawable/battery_charger_10" />
+            <item android:duration="600" android:drawable="@drawable/battery_charger_15" />
+            <item android:duration="600" android:drawable="@drawable/battery_charger_20" />
+            <item android:duration="600" android:drawable="@drawable/battery_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="40">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="1000" android:drawable="@drawable/battery_charger_10" />
+            <item android:duration="800" android:drawable="@drawable/battery_charger_15" />
+            <item android:duration="800" android:drawable="@drawable/battery_charger_20" />
+            <item android:duration="800" android:drawable="@drawable/battery_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="60">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="1000" android:drawable="@drawable/battery_charger_15" />
+            <item android:duration="1000" android:drawable="@drawable/battery_charger_20" />
+            <item android:duration="1000" android:drawable="@drawable/battery_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="80">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="1000" android:drawable="@drawable/battery_charger_20" />
+            <item android:duration="1000" android:drawable="@drawable/battery_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="100">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="1500" android:drawable="@drawable/battery_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="110">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="1500" android:drawable="@drawable/battery_charger_full" />
+        </animation-list>
+    </item>
+</level-list>
