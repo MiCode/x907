@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/boot_charger_empty" android:maxLevel="0" />
+    <item android:drawable="@drawable/boot_charger_01" android:maxLevel="4" />
+    <item android:drawable="@drawable/boot_charger_02" android:maxLevel="8" />
+    <item android:drawable="@drawable/boot_charger_03" android:maxLevel="12" />
+    <item android:drawable="@drawable/boot_charger_04" android:maxLevel="16" />
+    <item android:drawable="@drawable/boot_charger_05" android:maxLevel="20" />
+    <item android:drawable="@drawable/boot_charger_06" android:maxLevel="24" />
+    <item android:drawable="@drawable/boot_charger_07" android:maxLevel="28" />
+    <item android:drawable="@drawable/boot_charger_08" android:maxLevel="32" />
+    <item android:drawable="@drawable/boot_charger_09" android:maxLevel="36" />
+    <item android:drawable="@drawable/boot_charger_10" android:maxLevel="40" />
+    <item android:drawable="@drawable/boot_charger_11" android:maxLevel="44" />
+    <item android:drawable="@drawable/boot_charger_12" android:maxLevel="48" />
+    <item android:drawable="@drawable/boot_charger_13" android:maxLevel="52" />
+    <item android:drawable="@drawable/boot_charger_14" android:maxLevel="56" />
+    <item android:drawable="@drawable/boot_charger_15" android:maxLevel="60" />
+    <item android:drawable="@drawable/boot_charger_16" android:maxLevel="64" />
+    <item android:drawable="@drawable/boot_charger_17" android:maxLevel="68" />
+    <item android:drawable="@drawable/boot_charger_18" android:maxLevel="72" />
+    <item android:drawable="@drawable/boot_charger_19" android:maxLevel="76" />
+    <item android:drawable="@drawable/boot_charger_20" android:maxLevel="80" />
+    <item android:drawable="@drawable/boot_charger_21" android:maxLevel="84" />
+    <item android:drawable="@drawable/boot_charger_22" android:maxLevel="88" />
+    <item android:drawable="@drawable/boot_charger_23" android:maxLevel="92" />
+    <item android:drawable="@drawable/boot_charger_24" android:maxLevel="96" />
+    <item android:drawable="@drawable/boot_charger_25" android:maxLevel="100" />
+    <item android:drawable="@drawable/boot_charger_25" android:maxLevel="110" />
+</level-list>

@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="0">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_empty" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_01" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_02" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_03" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_04" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_05" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_06" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_07" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_08" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_09" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_10" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_11" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_12" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_13" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_14" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_15" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_16" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_17" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_18" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="4">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_01" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_02" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_03" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_04" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_05" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_06" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_07" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_08" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_09" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_10" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_11" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_12" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_13" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_14" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_15" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_16" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_17" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_18" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="8">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_02" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_03" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_04" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_05" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_06" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_07" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_08" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_09" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_10" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_11" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_12" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_13" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_14" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_15" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_16" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_17" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_18" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="12">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_03" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_04" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_05" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_06" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_07" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_08" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_09" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_10" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_11" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_12" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_13" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_14" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_15" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_16" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_17" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_18" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="16">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_04" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_05" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_06" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_07" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_08" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_09" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_10" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_11" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_12" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_13" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_14" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_15" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_16" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_17" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_18" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="20">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_05" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_06" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_07" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_08" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_09" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_10" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_11" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_12" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_13" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_14" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_15" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_16" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_17" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_18" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="24">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_06" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_07" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_08" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_09" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_10" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_11" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_12" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_13" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_14" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_15" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_16" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_17" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_18" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="28">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_07" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_08" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_09" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_10" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_11" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_12" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_13" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_14" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_15" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_16" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_17" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_18" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="32">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_08" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_09" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_10" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_11" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_12" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_13" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_14" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_15" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_16" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_17" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_18" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="36">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_09" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_10" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_11" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_12" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_13" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_14" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_15" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_16" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_17" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_18" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="40">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_10" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_11" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_12" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_13" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_14" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_15" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_16" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_17" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_18" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="44">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_11" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_12" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_13" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_14" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_15" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_16" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_17" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_18" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="48">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_12" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_13" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_14" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_15" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_16" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_17" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_18" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="52">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_13" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_14" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_15" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_16" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_17" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_18" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="56">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_14" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_15" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_16" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_17" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_18" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="60">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_15" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_16" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_17" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_18" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="64">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_16" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_17" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_18" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="68">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_17" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_18" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="72">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_18" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="76">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_19" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="80">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_20" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="84">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_21" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="88">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_22" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="92">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_23" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="96">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_24" />
+            <item android:duration="200" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="100">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_25" />
+        </animation-list>
+    </item>
+    <item android:maxLevel="110">
+        <animation-list android:oneshot="false"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:duration="500" android:drawable="@drawable/boot_charger_full" />
+        </animation-list>
+    </item>
+</level-list>

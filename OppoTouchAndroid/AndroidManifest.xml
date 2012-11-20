@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" android:versionCode="15" android:versionName="4.0.3-eng.oppo.svn7841.20121026.172043" android:manufacture="oppo" package="com.oppo.test"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:theme_res="http://schemas.android.com/apk/res/theme_res">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.HACK_SYSTEM_KEYCODE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-sdk android:minSdkVersion="5" android:targetSdkVersion="15" />
+    <application android:icon="@drawable/preview" android:configChanges="keyboardHidden|orientation">
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name=".StartupActivity" android:taskAffinity="" android:excludeFromRecents="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.alarmclock.alarmclock.STARTUP_CHOICE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name=".TouchActivity" android:excludeFromRecents="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.action.touch_activity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
