@@ -72538,6 +72538,16 @@
     .line 14722
     iget-object v13, v4, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
 
+    const-string v14, "com.android.deskclock"
+
+    invoke-virtual {v13, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v13
+
+    if-nez v13, :cond_miui_0
+
+    iget-object v13, v4, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
+
     const-string v14, "com.android.alarmclock"
 
     invoke-virtual {v13, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -72554,6 +72564,7 @@
 
     if-ne v13, v14, :cond_3
 
+    :cond_miui_0
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v13

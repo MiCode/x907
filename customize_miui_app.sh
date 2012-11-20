@@ -46,3 +46,18 @@ fi
 if [ $1 = "ThemeManager" ];then
 	$XMLMERGYTOOL $1/res/values $2/res/values
 fi
+
+if [ $1 = "DeskClock" ];then
+
+    cp $1/DeskClock.patch out/
+    cd out
+    $GIT_APPLY DeskClock.patch
+    cd ..
+    for file in `find $2 -name *.rej`
+    do
+        echo "DeskClock patch fail"
+        exit 1
+    done
+
+fi
+

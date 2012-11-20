@@ -237,9 +237,17 @@
 
     move-result v9
 
+    if-nez v9, :cond_miui_1
+
+    const-string v9, "com.android.deskclock.ALARM_ALERT"
+
+    invoke-virtual {v9, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v9
+
     if-eqz v9, :cond_7
 
-    .line 621
+    :cond_miui_1
     const/4 v9, 0x1
 
     invoke-static {v9}, Landroid/os/Power;->setScreenState(Z)I
@@ -319,9 +327,17 @@
 
     move-result v9
 
+    if-nez v9, :cond_miui_0
+
+    const-string v9, "com.android.deskclock"
+
+    invoke-virtual {v9, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v9
+
     if-eqz v9, :cond_8
 
-    .line 637
+    :cond_miui_0
     iget-object v9, p0, Lcom/oppo/test/TouchActivity$4;->this$0:Lcom/oppo/test/TouchActivity;
 
     #calls: Lcom/oppo/test/TouchActivity;->restoreLCDBackLight()V
@@ -339,7 +355,6 @@
 
     if-eqz v9, :cond_9
 
-    .line 644
     iget-object v9, p0, Lcom/oppo/test/TouchActivity$4;->this$0:Lcom/oppo/test/TouchActivity;
 
     #getter for: Lcom/oppo/test/TouchActivity;->mTimerBootWakeLock:Landroid/os/PowerManager$WakeLock;

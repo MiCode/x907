@@ -1,0 +1,183 @@
+From 77820bf54e3c13bbc37ff27cbf08a1bf1fe907c6 Mon Sep 17 00:00:00 2001
+From: mochangming <mochangming@xiaomi.com>
+Date: Tue, 20 Nov 2012 12:23:35 +0800
+Subject: [PATCH] DeskClock patch for x907
+
+---
+ DeskClock/AndroidManifest.xml                      |    1 +
+ .../android/deskclock/AlarmAlertFullScreen.smali   |   48 +++++++++++-
+ .../android/deskclock/AlarmInitReceiver$1.smali    |   82 ++++++++++----------
+ .../com/android/deskclock/AlarmInitReceiver.smali  |   78 ++++++++++++++----
+ DeskClock/smali/com/android/deskclock/Alarms.smali |   14 +---
+ 5 files changed, 153 insertions(+), 70 deletions(-)
+
+--- a/DeskClock/AndroidManifest.xml
++++ b/DeskClock/AndroidManifest.xml
+@@ -58,6 +58,7 @@
+                 <action android:name="android.intent.action.TIME_SET" />
+                 <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                 <action android:name="android.intent.action.LOCALE_CHANGED" />
++                <action android:name="android.fpd.boot_completed" />
+             </intent-filter>
+         </receiver>
+         <receiver android:label="@string/analog_gadget" android:icon="@mipmap/ic_widget_analog_clock" android:name="com.android.alarmclock.AnalogAppWidgetProvider">
+--- a/DeskClock/smali/com/android/deskclock/AlarmAlertFullScreen.smali
++++ b/DeskClock/smali/com/android/deskclock/AlarmAlertFullScreen.smali
+@@ -104,6 +104,10 @@
+     .parameter "killed"
+ 
+     .prologue
++    const/4 v1, 0x1
++
++    invoke-direct {p0, v1}, Lcom/android/deskclock/AlarmAlertFullScreen;->sendAlarmBroadCast(I)V
++
+     if-eqz p1, :cond_1
+ 
+     const-string v1, "Alarm killed"
+@@ -287,6 +291,47 @@
+     .end sparse-switch
+ .end method
+ 
++.method private sendAlarmBroadCast(I)V
++    .locals 2
++    .parameter "type"
++
++    .prologue
++    const/4 v0, 0x0
++
++    .local v0, action:Ljava/lang/String;
++    packed-switch p1, :pswitch_data_0
++
++    :goto_0
++    if-eqz v0, :cond_0
++
++    new-instance v1, Landroid/content/Intent;
++
++    invoke-direct {v1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
++
++    invoke-virtual {p0, v1}, Lcom/android/deskclock/AlarmAlertFullScreen;->sendBroadcast(Landroid/content/Intent;)V
++
++    :cond_0
++    return-void
++
++    :pswitch_0
++    const-string v0, "com.android.alarmclock.alarmclock.SNOOZE"
++
++    goto :goto_0
++
++    :pswitch_1
++    const-string v0, "com.android.alarmclock.alarmclock.STARTUP_CHOICE"
++
++    goto :goto_0
++
++    nop
++
++    :pswitch_data_0
++    .packed-switch 0x0
++        :pswitch_0
++        :pswitch_1
++    .end packed-switch
++.end method
++
+ .method private setAlarmAlertFullScreenView(Landroid/content/Intent;)V
+     .locals 14
+     .parameter "intent"
+@@ -679,6 +724,8 @@
+     return-void
+ 
+     :cond_0
++    invoke-direct {p0, v8}, Lcom/android/deskclock/AlarmAlertFullScreen;->sendAlarmBroadCast(I)V
++
+     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+ 
+     move-result-wide v0
+--- a/DeskClock/smali/com/android/deskclock/AlarmInitReceiver$1.smali
++++ b/DeskClock/smali/com/android/deskclock/AlarmInitReceiver$1.smali
+@@ -82,7 +82,9 @@
+ 
+     invoke-virtual {v0, v11}, Lmiui/net/FirewallManager;->addOneShotFlag(I)V
+ 
+-    sget-boolean v0, Lmiui/os/Build;->IS_XIAOMI:Z
++    iget-object v0, p0, Lcom/android/deskclock/AlarmInitReceiver$1;->this$0:Lcom/android/deskclock/AlarmInitReceiver;
++
++    iget-boolean v0, v0, Lcom/android/deskclock/AlarmInitReceiver;->mCanAlert:Z
+ 
+     if-eqz v0, :cond_3
+ 
+--- a/DeskClock/smali/com/android/deskclock/AlarmInitReceiver.smali
++++ b/DeskClock/smali/com/android/deskclock/AlarmInitReceiver.smali
+@@ -3,6 +3,10 @@
+ .source "AlarmInitReceiver.java"
+ 
+ 
++# instance fields
++.field public mCanAlert:Z
++
++
+ # direct methods
+ .method public constructor <init>()V
+     .locals 0
+@@ -84,6 +88,38 @@
+     return-wide v2
+ .end method
+ 
++.method private getIntentAction(Landroid/content/Intent;)Ljava/lang/String;
++    .locals 2
++    .parameter "intent"
++
++    .prologue
++    invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
++
++    move-result-object v0
++
++    .local v0, action:Ljava/lang/String;
++    const/4 v1, 0x0
++
++    iput-boolean v1, p0, Lcom/android/deskclock/AlarmInitReceiver;->mCanAlert:Z
++
++    const-string v1, "android.fpd.boot_completed"
++
++    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
++
++    move-result v1
++
++    if-eqz v1, :cond_0
++
++    const-string v0, "android.intent.action.BOOT_COMPLETED"
++
++    const/4 v1, 0x1
++
++    iput-boolean v1, p0, Lcom/android/deskclock/AlarmInitReceiver;->mCanAlert:Z
++
++    :cond_0
++    return-object v0
++.end method
++
+ 
+ # virtual methods
+ .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+@@ -92,7 +128,7 @@
+     .parameter "intent"
+ 
+     .prologue
+-    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
++    invoke-direct {p0, p2}, Lcom/android/deskclock/AlarmInitReceiver;->getIntentAction(Landroid/content/Intent;)Ljava/lang/String;
+ 
+     move-result-object v2
+ 
+--- a/DeskClock/smali/com/android/deskclock/Alarms.smali
++++ b/DeskClock/smali/com/android/deskclock/Alarms.smali
+@@ -1126,7 +1126,9 @@
+     move-result-object v4
+ 
+     .local v4, sender:Landroid/app/PendingIntent;
+-    invoke-virtual {v0, v10, p2, p3, v4}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
++    const/4 v8, 0x4
++
++    invoke-virtual {v0, v8, p2, p3, v4}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
+ 
+     invoke-static {p0, v11}, Lcom/android/deskclock/Alarms;->setStatusBarIcon(Landroid/content/Context;Z)V
+ 
+-- 
+1.7.5.4
+

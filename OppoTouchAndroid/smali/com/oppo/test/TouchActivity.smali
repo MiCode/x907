@@ -1266,18 +1266,19 @@
 
     invoke-virtual {v1, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 523
     const-string v4, "android.intent.action.BATTERY_CHANGED"
 
     invoke-virtual {v1, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 524
     const-string v4, "com.android.alarmclock.alarmclock.ALARM_ALERT"
 
     invoke-virtual {v1, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 525
     const-string v4, "com.android.alarmclock.alarmclock.SNOOZE"
+
+    invoke-virtual {v1, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    const-string v4, "com.android.deskclock.ALARM_ALERT"
 
     invoke-virtual {v1, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
