@@ -20,7 +20,8 @@ local-miui-removed-apps := SettingsProvider MediaProvider Stk Bluetooth
 # All apps need to be removed from original ZIP file
 local-phone-apps := SettingsProvider ApplicationsProvider MediaProvider DefaultContainerService CertInstaller DrmProvider \
 		SharedStorageBackup OppoCamera UserDictionaryProvider Stk Wiper Provision LiveWallpapersPicker \
-		BackupRestoreConfirmation LiveWallpapers WAPPushManager VpnDialogs OppoTouchAndroid OppoBluetooth
+		BackupRestoreConfirmation LiveWallpapers WAPPushManager VpnDialogs OppoTouchAndroid OppoBluetooth \
+		OppoMusic
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
