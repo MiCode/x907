@@ -1028,6 +1028,11 @@
     .line 447
     const/4 v1, -0x1
 
+    :goto_miui_0
+    iget-object v0, p0, Lcom/android/internal/telephony/AdnRecordCache;->mAdnCacheManager:Lcom/android/internal/telephony/AdnCacheManager;
+
+    invoke-virtual {v0, p1}, Lcom/android/internal/telephony/AdnCacheManager;->handleNonExistentAdnRecord(I)V
+
     goto :goto_0
 
     .line 450
@@ -1103,7 +1108,7 @@
     .line 462
     const/4 v1, -0x1
 
-    goto/16 :goto_0
+    goto/16 :goto_miui_0
 
     .line 456
     :cond_4
@@ -1113,6 +1118,10 @@
 
     .line 465
     :cond_5
+    iget-object v1, p0, Lcom/android/internal/telephony/AdnRecordCache;->mAdnCacheManager:Lcom/android/internal/telephony/AdnCacheManager;
+
+    invoke-virtual {v1, p1, p2, p3}, Lcom/android/internal/telephony/AdnCacheManager;->handleUpdateAdnRecord(ILcom/android/internal/telephony/AdnRecord;Lcom/android/internal/telephony/AdnRecord;)V
+
     iget-object v1, p0, Lcom/android/internal/telephony/AdnRecordCache;->userWriteResponse:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
