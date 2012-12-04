@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/stock_settings"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-        <CheckBoxPreference
-            android:key="power_save_method"
-            android:title="@string/power_save_mode"
-            android:persistent="false" />
-    
-       <CheckBoxPreference
-           android:key="toggle_smart_charge"
-           android:title="@string/intelligent_battery_charger_title"
-           android:summaryOn="@string/intelligent_battery_charger_summary_on"
-           android:summaryOff="@string/intelligent_battery_charger_summary_off"
-           android:disableDependentsState="true"
-           android:persistent="false" />
-    
-       <CheckBoxPreference
-           android:key="toggle_supply_charge"
-           android:title="@string/intelligent_battery_supply_title"
-           android:summaryOn="@string/intelligent_battery_supply_summary_on"
-           android:summaryOff="@string/intelligent_battery_supply_summary_off"
-           android:dependency="toggle_smart_charge"
-           android:persistent="false" />
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/stock_settings" >
 
-       <com.android.stocksettings.IntelligentBatteryLevelPreference android:key="charger_level_view"/>
+    <CheckBoxPreference
+        android:key="touchkey_light"
+        android:persistent="false"
+        android:title="@string/touchkey_light" />
+    <CheckBoxPreference
+        android:key="power_save_method"
+        android:persistent="false"
+        android:title="@string/power_save_mode" />
+    <CheckBoxPreference
+        android:disableDependentsState="true"
+        android:key="toggle_smart_charge"
+        android:persistent="false"
+        android:summaryOff="@string/intelligent_battery_charger_summary_off"
+        android:summaryOn="@string/intelligent_battery_charger_summary_on"
+        android:title="@string/intelligent_battery_charger_title" />
+    <CheckBoxPreference
+        android:dependency="toggle_smart_charge"
+        android:key="toggle_supply_charge"
+        android:persistent="false"
+        android:summaryOff="@string/intelligent_battery_supply_summary_off"
+        android:summaryOn="@string/intelligent_battery_supply_summary_on"
+        android:title="@string/intelligent_battery_supply_title" />
+
+    <com.android.stocksettings.IntelligentBatteryLevelPreference android:key="charger_level_view" />
+
 </PreferenceScreen>

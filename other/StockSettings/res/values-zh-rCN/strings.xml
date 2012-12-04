@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="stock_settings">附加设置</string>
+    <string name="touchkey_light">按键背光</string>
     <string name="power_save_mode">自动调节屏幕电量</string>
     <string name="intelligent_battery_charger_title">智能充电模式</string>
     <string name="intelligent_battery_charger_summary_on">当手机电量低于80%时，保护套给手机电池充电</string>
@@ -8,4 +10,5 @@
     <string name="intelligent_battery_supply_title">手动充电模式</string>
     <string name="intelligent_battery_supply_summary_on">保护套内电池给手机充电</string>
     <string name="intelligent_battery_supply_summary_off">保护套内电池停止给手机充电</string>
+
 </resources>

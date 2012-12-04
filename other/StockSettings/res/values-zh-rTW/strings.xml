@@ -2,6 +2,7 @@
 <resources>
     <string name="stock_settings">附加設置</string>
     <string name="power_save_mode">自動調節螢幕電量</string>
+    <string name="touchkey_light">按鍵背光</string>
     <string name="intelligent_battery_charger_title">智慧充電模式</string>
     <string name="intelligent_battery_charger_summary_on">當手機電量低於80%時，保護套給手機電池充電</string>
     <string name="intelligent_battery_charger_summary_off">保護套給手機電池充電至100%</string>

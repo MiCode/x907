@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
+
     <string name="stock_settings">Stock Settings</string>
+    <string name="touchkey_light">Touch key light</string>
     <string name="power_save_mode">Auto adjust screen power</string>
     <string name="intelligent_battery_charger_title">Smart charge mode</string>
     <string name="intelligent_battery_charger_summary_on">When the phone battery below 80%, the protective sleeve to recharge phones</string>
@@ -8,4 +10,5 @@
     <string name="intelligent_battery_supply_title">Manual charging mode</string>
     <string name="intelligent_battery_supply_summary_on">Protective sleeve battery charging your mobile phone</string>
     <string name="intelligent_battery_supply_summary_off">Protective sleeve battery to stop charging your mobile phone</string>
+
 </resources>
