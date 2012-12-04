@@ -19,6 +19,8 @@ if [ $1 = "Phone" ];then
         cat $file >> $dstfile
     done
 
+    $XMLMERGYTOOL $1/res/values $2/res/values
+
 	echo "replace functions"
 	$PORT_ROOT/x907/replace_functions_IccCard.sh $2
 fi
